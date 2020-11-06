@@ -26,19 +26,22 @@ class LoadDataset:
 class LoadSSJ500k(LoadDataset):
     def __init__(self):
         super().__init__(
-            "data/datasets/ssj500k/ssj500k.conllu/sl_ssj-ud_v2.4",
+            "data/datasets/ssj500k/",
             "conll"
         )
 
     def load(self, set: str) -> pd.DataFrame:
-        raw_data = pyconll.load_from_file(f"{self.base_fname}-{set}.conllu")
+        raw_data = pyconll.load_from_file(f"{self.base_fname}{set}_ner.conllu")
         data = []
-        for sentence in raw_data:
+        for id, sentence in enumerate(raw_data):
             for word in sentence:
                 if word.upos == 'PROPN':  # check if the token is a NER
-                    data.append({"form": word.form, "upos": word.upos, "ner": True})
+                    annotation = list(word.misc.keys())[0]
+                    # some undocumented annotations "O", for now classified as other
+                    annotation = annotation if annotation != "O" else "othr"
+                    data.append({"word": word.form, "sentence": id, "ner": annotation})
                 else:
-                    data.append({"form": word.form, "upos": word.upos, "ner": False})
+                    data.append({"word": word.form, "sentence": id, "ner": "othr"})
         return pd.DataFrame(data)
 
     def train(self) -> pd.DataFrame:
