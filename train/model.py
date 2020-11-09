@@ -1,3 +1,5 @@
+from typing import Any
+
 import pandas as pd
 from utils.load_dataset import LoadDataset
 
@@ -6,7 +8,7 @@ class Model:
     def __init__(self, load_dataset: LoadDataset) -> None:
         self.load_dataset = load_dataset
 
-    def convert_input(self, input_data: pd.DataFrame) -> pd.DataFrame:
+    def convert_input(self, input_data: pd.DataFrame) -> Any:
         """
             Convert the data to the correct input format for the model
             By default, we assume that it is already in the correct format
