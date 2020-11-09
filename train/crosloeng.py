@@ -3,7 +3,9 @@ import numpy as np
 import torch
 
 from typing import Union
-from transformers import BertTokenizer, BertConfig, BertForTokenClassification, AdamW
+from tqdm import trange, tqdm
+from torch.utils.data import TensorDataset, DataLoader, RandomSampler
+from transformers import BertTokenizer, BertForTokenClassification, AdamW, get_linear_schedule_with_warmup
 from keras.preprocessing.sequence import pad_sequences
 
 from train.model import Model
@@ -11,7 +13,7 @@ from utils.load_dataset import LoadDataset, LoadSSJ500k
 
 
 class BertModel(Model):
-    def __init__(self, load_dataset: LoadDataset):
+    def __init__(self, load_dataset: LoadDataset, epochs: int = 3, max_grad_norm: float = 1.0):
         super().__init__(load_dataset)
         self.tokenizer = BertTokenizer.from_pretrained(
             'data/models/cro-slo-eng-bert',
@@ -19,6 +21,10 @@ class BertModel(Model):
             do_lower_case=False
         )
         self.MAX_LENGTH = 128  # max input length
+        self.BATCH_SIZE = 32  # max input length
+        self.epochs = epochs
+        self.max_grad_norm = max_grad_norm
+        self.device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 
     def dataset_encoding(self, data: pd.DataFrame) -> (dict, dict):
         possible_tags = np.append(data["ner"].unique(), ["PAD"])
@@ -26,7 +32,7 @@ class BertModel(Model):
         code2tag = {val: key for key, val in tag2code.items()}
         return tag2code, code2tag
 
-    def convert_input(self, input_data: pd.DataFrame) -> (np.ndarray, np.ndarray, np.ndarray):
+    def convert_input(self, input_data: pd.DataFrame) -> DataLoader:
         tag2code, code2tag = self.dataset_encoding(input_data)
         tokens = []
         tags = []  # NER tags
@@ -42,41 +48,103 @@ class BertModel(Model):
             sentence_ids = self.tokenizer.convert_tokens_to_ids(sentence_tokens)
             tokens.append(sentence_ids)
             tags.append(sentence_tags)
-
-        tokens = pad_sequences(
+        # padding is required to spill the  in case there are sentences longer than 128 words
+        tokens = torch.tensor(pad_sequences(
             tokens,
             maxlen=self.MAX_LENGTH,
             dtype="long",
             value=0.0,
             truncating="post",
             padding="post"
-        )
-        tags = pad_sequences(
+        ))
+        tags = torch.tensor(pad_sequences(
             tokens,
             maxlen=self.MAX_LENGTH,
             dtype="long",
             value=tag2code["PAD"],
             truncating="post",
             padding="post"
-        )
-        masks = np.array([[float(token != 0.0) for token in sentence] for sentence in tokens])
+        ))
+        masks = torch.tensor(np.array([[float(token != 0.0) for token in sentence] for sentence in tokens]))
+        data = TensorDataset(tokens, masks, tags)
+        sampler = RandomSampler(data)
+        return DataLoader(data, sampler=sampler, batch_size=self.BATCH_SIZE)
 
-        return tokens, tags, masks
+    def flat_accuracy(self, preds, labels) -> float:
+        pred_flat = np.argmax(preds, axis=2).flatten()
+        labels_flat = labels.flatten()
+        return np.sum(pred_flat == labels_flat) / float(len(labels_flat))
 
-    def train(self, train_data: Union[pd.DataFrame, None] = None) -> None:
+    def train(
+            self,
+            train_data: Union[pd.DataFrame, None] = None,
+            validation_data: Union[pd.DataFrame, None] = None
+    ) -> None:
         if not train_data:
             train_data = self.load_dataset.train()
-        tokens, tags, masks = self.convert_input(train_data)
+        if not validation_data:
+            validation_data = self.load_dataset.dev()
+        train_data = self.convert_input(train_data)
+        validation_data = self.convert_input(validation_data)
+        model = BertForTokenClassification.from_pretrained(
+            'data/models/cro-slo-eng-bert',
+            num_labels=0,
+            output_attentions=False,
+            output_hidden_states=False
+        )
 
-        # model = BertForTokenClassification.from_pretrained(
-        #     'data/models/cro-slo-eng-bert',
-        #     num_labels=0,
-        #     output_attentions=False,
-        #     output_hidden_states=False
-        # )
+        model_parameters = list(model.named_parameters())
+        no_decay = ['bias', 'gamma', 'beta']
+        optimizer_parameters = [
+            {
+                'params': [p for n, p in model_parameters if not any(nd in n for nd in no_decay)],
+                'weight_decay_rate': 0.01
+            },
+            {
+                'params': [p for n, p in model_parameters if any(nd in n for nd in no_decay)],
+                'weight_decay_rate': 0.0
+            }
+        ]
+        optimizer = AdamW(
+            optimizer_parameters,
+            lr=3e-5,
+            eps=1e-8
+        )
+
+        total_steps = len(train_data) * self.epochs
+        scheduler = get_linear_schedule_with_warmup(
+            optimizer,
+            num_warmup_steps=1000,
+            num_training_steps=total_steps
+        )
+
+        for _ in trange(self.epochs, desc="Epoch"):
+            model.train()
+            total_loss = 0
+
+            for step, batch in tqdm(enumerate(train_data)):
+                batch_tokens, batch_masks, batch_tags = tuple(t.to(self.device) for t in batch)
+
+                # reset the grads
+                model.zero_grad()
+
+                outputs = model(
+                    batch_tokens,
+                    token_type_ids=None,
+                    attention_mask=batch_masks,
+                    labels=batch_tags
+                )
+
+                print(outputs)
+
+                loss = outputs[0]
+
+                loss.backward()
+                break
+            break
+
         # TODO: train the model
         # TODO: save the model!
-        print(train_data.head())
 
     def test(self, test_data: pd.DataFrame) -> None:
         pass
@@ -84,6 +152,7 @@ class BertModel(Model):
 
 if __name__ == '__main__':
     dataLoader = LoadSSJ500k()
+    print(torch.__version__)
     bert = BertModel(dataLoader)
     bert.train()
     print("Here go the CroSloEng model specifics")
