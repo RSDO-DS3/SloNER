@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import torch
+import transformers
 import random
 
 from typing import Union
@@ -8,6 +9,7 @@ from tqdm import trange, tqdm
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler
 from transformers import BertTokenizer, BertForTokenClassification, AdamW, get_linear_schedule_with_warmup
 from keras.preprocessing.sequence import pad_sequences
+from seqeval.metrics import f1_score
 
 from train.model import Model
 from utils.load_dataset import LoadDataset, LoadSSJ500k
@@ -80,9 +82,9 @@ class BertModel(Model):
         if not validation_data:
             validation_data = self.load_dataset.dev()
 
-        print(self.tag2code)
-
         train_data = self.convert_input(train_data)
+        validation_data = self.convert_input(validation_data)
+
         model = BertForTokenClassification.from_pretrained(
             'data/models/cro-slo-eng-bert',
             num_labels=len(self.tag2code),
@@ -115,19 +117,20 @@ class BertModel(Model):
             num_training_steps=total_steps
         )
 
+        # ensure reproducibility
+        # TODO: try out different seed values
         seed_val = 42
-
         random.seed(seed_val)
         np.random.seed(seed_val)
         torch.manual_seed(seed_val)
         torch.cuda.manual_seed_all(seed_val)
 
-        loss_values = []
-        model.train()
+        training_loss, validation_loss = [], []
 
         for _ in trange(self.epochs, desc="Epoch"):
+            model.train()
             total_loss = 0
-
+            # train:
             for step, batch in tqdm(enumerate(train_data)):
                 batch_tokens, batch_masks, batch_tags = tuple(t.to(self.device) for t in batch)
 
@@ -141,24 +144,68 @@ class BertModel(Model):
                     labels=batch_tags
                 )
 
-                print(outputs)
+                loss = outputs[0]
+                loss.backward()
+                total_loss += loss.item()
 
-                # loss = outputs[0]
+                # preventing exploding gradients
+                torch.nn.utils.clip_grad_norm_(parameters=model.parameters(), max_norm=self.max_grad_norm)
 
-                # loss.backward()
-                break
-            break
+                # update the parameters
+                optimizer.step()
 
-        # TODO: train the model
-        # TODO: save the model!
+                # update the learning rate (lr)
+                scheduler.step()
+
+            avg_epoch_train_loss = total_loss/len(train_data)
+            print(f"Avg train loss = {avg_epoch_train_loss}")
+            training_loss.append(avg_epoch_train_loss)
+
+            # validate:
+            eval_loss, eval_accuracy = 0., 0.
+            eval_steps, eval_examples = 0, 0
+            eval_predictions, eval_labels = [], []
+            model.eval()
+            for batch in tqdm(validation_data):
+                batch_tokens, batch_masks, batch_tags = tuple(t.to(self.device) for t in batch)
+                with torch.no_grad():
+                    outputs = model(
+                        batch_tokens,
+                        token_type_ids=None,
+                        attention_mask=batch_masks,
+                        labels=batch_tags
+                    )
+                logits = outputs[1].detach().cpu().numpy()
+                label_ids = batch_tags.to('cpu').numpy()
+
+                eval_loss += outputs[0].mean().item()
+                eval_accuracy += self.flat_accuracy(logits, label_ids)
+                eval_predictions.extend([list(p) for p in np.argmax(logits, axis=2)])
+                eval_labels.extend(label_ids)
+
+                eval_examples += batch_tokens.size(0)
+                eval_steps += 1
+
+            eval_loss = eval_loss / eval_steps
+            validation_loss.append(eval_loss)
+            print(f"Validation loss: {eval_loss}")
+            print(f"Validation accuracy: {eval_accuracy/eval_steps}")
+            pred_tags = [self.code2tag[p_i] for p, l in zip(eval_predictions, eval_labels)
+                                            for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]
+            valid_tags = [self.code2tag[l_i] for p, l in zip(eval_predictions, eval_labels)
+                                            for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]
+            print(f"Validation F-1 score: {f1_score(pred_tags, valid_tags)}")
+        print("Saving the model...")
+        torch.save(model, 'data/models/cro-slo-eng-bert-ssj500k')
+        print("Done!")
 
     def test(self, test_data: pd.DataFrame) -> None:
         pass
 
 
 if __name__ == '__main__':
+    print(f"Pytorch version: {torch.__version__}")
+    print(f"Transformers version: {transformers.__version__}")
     dataLoader = LoadSSJ500k()
-    print(torch.__version__)
     bert = BertModel(dataLoader)
     bert.train()
-    print("Here go the CroSloEng model specifics")

@@ -14,3 +14,11 @@ conda env create -f environment.yml
 conda env export > environment.yml
 ```
 
+```bash
+# !!! assuming the workdir is the repository path.
+
+# to run a file:
+PYTHONPATH=. python <path_to_file>
+# e.g.
+PYTHONPATH=. python train/crosloeng.py
+```

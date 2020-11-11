@@ -2,9 +2,9 @@ name: ner
 channels:
   - gwerbin
   - pyconll
+  - anaconda
   - conda-forge
   - pytorch
-  - anaconda
   - defaults
 dependencies:
   - _libgcc_mutex=0.1=main
