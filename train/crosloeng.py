@@ -7,7 +7,8 @@ import random
 from typing import Union
 from tqdm import trange, tqdm
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler
-from transformers import BertTokenizer, BertForTokenClassification, AdamW, get_linear_schedule_with_warmup
+from transformers import BertTokenizer, BertForTokenClassification, AdamW
+from transformers import get_linear_schedule_with_warmup, PreTrainedModel
 from keras.preprocessing.sequence import pad_sequences
 from seqeval.metrics import f1_score
 
@@ -125,7 +126,7 @@ class BertModel(Model):
         torch.manual_seed(seed_val)
         torch.cuda.manual_seed_all(seed_val)
 
-        training_loss, validation_loss = [], []
+        training_loss, valition_loss = [], []
 
         for _ in trange(self.epochs, desc="Epoch"):
             model.train()
@@ -156,48 +157,57 @@ class BertModel(Model):
 
                 # update the learning rate (lr)
                 scheduler.step()
+                break
 
             avg_epoch_train_loss = total_loss/len(train_data)
             print(f"Avg train loss = {avg_epoch_train_loss}")
             training_loss.append(avg_epoch_train_loss)
 
             # validate:
-            eval_loss, eval_accuracy = 0., 0.
-            eval_steps, eval_examples = 0, 0
-            eval_predictions, eval_labels = [], []
-            model.eval()
-            for batch in tqdm(validation_data):
-                batch_tokens, batch_masks, batch_tags = tuple(t.to(self.device) for t in batch)
-                with torch.no_grad():
-                    outputs = model(
-                        batch_tokens,
-                        token_type_ids=None,
-                        attention_mask=batch_masks,
-                        labels=batch_tags
-                    )
-                logits = outputs[1].detach().cpu().numpy()
-                label_ids = batch_tags.to('cpu').numpy()
+            val_loss = self.__test(model, validation_data)
+            valition_loss.append(loss)
 
-                eval_loss += outputs[0].mean().item()
-                eval_accuracy += self.flat_accuracy(logits, label_ids)
-                eval_predictions.extend([list(p) for p in np.argmax(logits, axis=2)])
-                eval_labels.extend(label_ids)
-
-                eval_examples += batch_tokens.size(0)
-                eval_steps += 1
-
-            eval_loss = eval_loss / eval_steps
-            validation_loss.append(eval_loss)
-            print(f"Validation loss: {eval_loss}")
-            print(f"Validation accuracy: {eval_accuracy/eval_steps}")
-            pred_tags = [self.code2tag[p_i] for p, l in zip(eval_predictions, eval_labels)
-                                            for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]
-            valid_tags = [self.code2tag[l_i] for p, l in zip(eval_predictions, eval_labels)
-                                            for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]
-            print(f"Validation F-1 score: {f1_score(pred_tags, valid_tags)}")
+            break
         print("Saving the model...")
         torch.save(model, 'data/models/cro-slo-eng-bert-ssj500k')
         print("Done!")
+
+    def __test(self, model: PreTrainedModel, data: DataLoader) -> float:
+        total_loss = []
+        eval_loss, eval_accuracy = 0., 0.
+        eval_steps, eval_examples = 0, 0
+        eval_predictions, eval_labels = [], []
+        model.eval()
+        for batch in tqdm(data):
+            batch_tokens, batch_masks, batch_tags = tuple(t.to(self.device) for t in batch)
+            with torch.no_grad():
+                outputs = model(
+                    batch_tokens,
+                    token_type_ids=None,
+                    attention_mask=batch_masks,
+                    labels=batch_tags
+                )
+            logits = outputs[1].detach().cpu().numpy()
+            label_ids = batch_tags.to('cpu').numpy()
+
+            eval_loss += outputs[0].mean().item()
+            eval_accuracy += self.flat_accuracy(logits, label_ids)
+            eval_predictions.extend([list(p) for p in np.argmax(logits, axis=2)])
+            eval_labels.extend(label_ids)
+
+            eval_examples += batch_tokens.size(0)
+            eval_steps += 1
+
+        eval_loss = eval_loss / eval_steps
+        total_loss.append(eval_loss)
+        print(f"Validation loss: {eval_loss}")
+        print(f"Validation accuracy: {eval_accuracy / eval_steps}")
+        pred_tags = [self.code2tag[p_i] for p, l in zip(eval_predictions, eval_labels)
+                     for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]
+        valid_tags = [self.code2tag[l_i] for p, l in zip(eval_predictions, eval_labels)
+                      for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]
+        print(f"Validation F-1 score: {f1_score(pred_tags, valid_tags)}")
+        return eval_loss
 
     def test(self, test_data: pd.DataFrame) -> None:
         pass
