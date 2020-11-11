@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import torch
+import random
 
 from typing import Union
 from tqdm import trange, tqdm
@@ -25,15 +26,9 @@ class BertModel(Model):
         self.epochs = epochs
         self.max_grad_norm = max_grad_norm
         self.device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+        self.tag2code, self.code2tag = self.load_dataset.encoding()
 
-    def dataset_encoding(self, data: pd.DataFrame) -> (dict, dict):
-        possible_tags = np.append(data["ner"].unique(), ["PAD"])
-        tag2code = {tag: code for code, tag in enumerate(possible_tags)}
-        code2tag = {val: key for key, val in tag2code.items()}
-        return tag2code, code2tag
-
-    def convert_input(self, input_data: pd.DataFrame) -> DataLoader:
-        tag2code, code2tag = self.dataset_encoding(input_data)
+    def convert_input(self, input_data: pd.DataFrame):
         tokens = []
         tags = []  # NER tags
 
@@ -43,7 +38,7 @@ class BertModel(Model):
             for id, word_row in data.iterrows():
                 word_tokens = self.tokenizer.tokenize(word_row["word"])
                 sentence_tokens.extend(word_tokens)
-                sentence_tags.extend([tag2code[word_row["ner"]]] * len(word_tokens))
+                sentence_tags.extend([self.tag2code[word_row["ner"]]] * len(word_tokens))
 
             sentence_ids = self.tokenizer.convert_tokens_to_ids(sentence_tokens)
             tokens.append(sentence_ids)
@@ -58,10 +53,10 @@ class BertModel(Model):
             padding="post"
         ))
         tags = torch.tensor(pad_sequences(
-            tokens,
+            tags,
             maxlen=self.MAX_LENGTH,
             dtype="long",
-            value=tag2code["PAD"],
+            value=self.tag2code["PAD"],
             truncating="post",
             padding="post"
         ))
@@ -81,14 +76,16 @@ class BertModel(Model):
             validation_data: Union[pd.DataFrame, None] = None
     ) -> None:
         if not train_data:
-            train_data = self.load_dataset.train()
+            train_data = self.load_dataset.train(test=False)
         if not validation_data:
             validation_data = self.load_dataset.dev()
+
+        print(self.tag2code)
+
         train_data = self.convert_input(train_data)
-        validation_data = self.convert_input(validation_data)
         model = BertForTokenClassification.from_pretrained(
             'data/models/cro-slo-eng-bert',
-            num_labels=0,
+            num_labels=len(self.tag2code),
             output_attentions=False,
             output_hidden_states=False
         )
@@ -114,12 +111,21 @@ class BertModel(Model):
         total_steps = len(train_data) * self.epochs
         scheduler = get_linear_schedule_with_warmup(
             optimizer,
-            num_warmup_steps=1000,
+            num_warmup_steps=0,
             num_training_steps=total_steps
         )
 
+        seed_val = 42
+
+        random.seed(seed_val)
+        np.random.seed(seed_val)
+        torch.manual_seed(seed_val)
+        torch.cuda.manual_seed_all(seed_val)
+
+        loss_values = []
+        model.train()
+
         for _ in trange(self.epochs, desc="Epoch"):
-            model.train()
             total_loss = 0
 
             for step, batch in tqdm(enumerate(train_data)):
@@ -137,9 +143,9 @@ class BertModel(Model):
 
                 print(outputs)
 
-                loss = outputs[0]
+                # loss = outputs[0]
 
-                loss.backward()
+                # loss.backward()
                 break
             break
 

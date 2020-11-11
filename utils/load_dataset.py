@@ -1,5 +1,6 @@
 import pandas as pd
 import pyconll
+import numpy as np
 
 
 class LoadDataset:
@@ -10,7 +11,7 @@ class LoadDataset:
     def load(self, set: str) -> pd.DataFrame:
         return pd.DataFrame()
 
-    def train(self) -> pd.DataFrame:
+    def train(self, test: bool = False) -> pd.DataFrame:
         return pd.DataFrame()
 
     def dev(self) -> pd.DataFrame:
@@ -21,6 +22,9 @@ class LoadDataset:
 
     def test(self) -> pd.DataFrame:
         return pd.DataFrame()
+
+    def encoding(self) -> (dict, dict):
+        return {}, {}
 
 
 class LoadSSJ500k(LoadDataset):
@@ -44,7 +48,7 @@ class LoadSSJ500k(LoadDataset):
                     data.append({"word": word.form, "sentence": id, "ner": "othr"})
         return pd.DataFrame(data)
 
-    def train(self) -> pd.DataFrame:
+    def train(self, test: bool = False) -> pd.DataFrame:
         return self.load('train')
 
     def dev(self) -> pd.DataFrame:
@@ -52,6 +56,13 @@ class LoadSSJ500k(LoadDataset):
 
     def test(self) -> pd.DataFrame:
         return self.load('test')
+
+    def encoding(self, test: bool = False):
+        data = self.load('train')
+        possible_tags = np.append(data["ner"].unique(), ["PAD"])
+        tag2code = {tag: code for code, tag in enumerate(possible_tags)}
+        code2tag = {val: key for key, val in tag2code.items()}
+        return tag2code, code2tag
 
 
 if __name__ == '__main__':

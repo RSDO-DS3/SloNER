@@ -234,5 +234,6 @@ dmypy.json
 *.code-workspace
 
 data/models/
+data/datasets/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,vscode
