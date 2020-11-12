@@ -10,7 +10,7 @@ from torch.utils.data import TensorDataset, DataLoader, RandomSampler
 from transformers import BertTokenizer, BertForTokenClassification, AdamW
 from transformers import get_linear_schedule_with_warmup, PreTrainedModel
 from keras.preprocessing.sequence import pad_sequences
-from seqeval.metrics import f1_score
+from seqeval.metrics import f1_score, accuracy_score, classification_report
 
 from train.model import Model
 from utils.load_dataset import LoadDataset, LoadSSJ500k
@@ -83,9 +83,12 @@ class BertModel(Model):
         if not validation_data:
             validation_data = self.load_dataset.dev()
 
+        print("Loading the training data...")
         train_data = self.convert_input(train_data)
+        print("Loading the validation data...")
         validation_data = self.convert_input(validation_data)
 
+        print("Loading the pre-trained model...")
         model = BertForTokenClassification.from_pretrained(
             'data/models/cro-slo-eng-bert',
             num_labels=len(self.tag2code),
@@ -126,8 +129,8 @@ class BertModel(Model):
         torch.manual_seed(seed_val)
         torch.cuda.manual_seed_all(seed_val)
 
-        training_loss, valition_loss = [], []
-
+        training_loss, validation_loss = [], []
+        print("Training the model...")
         for _ in trange(self.epochs, desc="Epoch"):
             model.train()
             total_loss = 0
@@ -164,16 +167,21 @@ class BertModel(Model):
             training_loss.append(avg_epoch_train_loss)
 
             # validate:
-            val_loss = self.__test(model, validation_data)
-            valition_loss.append(loss)
+            val_loss, val_acc, val_f1, val_report = self.__test(model, validation_data)
+            validation_loss.append(val_loss)
+            print(f"Validation loss: {val_loss}")
+            print(f"Validation accuracy: {val_acc}")
+            print(f"Validation F1 score: {val_f1}")
+            print(f"Classification report:")
+            print(f"{val_report}")
 
-            break
+        # TODO: visualize the loss
+
         print("Saving the model...")
-        torch.save(model, 'data/models/cro-slo-eng-bert-ssj500k')
+        torch.save(model, 'data/models/cro-slo-eng-bert-ssj500k.pk')
         print("Done!")
 
-    def __test(self, model: PreTrainedModel, data: DataLoader) -> float:
-        total_loss = []
+    def __test(self, model: PreTrainedModel, data: DataLoader) -> (float, float, float, str):
         eval_loss, eval_accuracy = 0., 0.
         eval_steps, eval_examples = 0, 0
         eval_predictions, eval_labels = [], []
@@ -199,23 +207,34 @@ class BertModel(Model):
             eval_steps += 1
 
         eval_loss = eval_loss / eval_steps
-        total_loss.append(eval_loss)
-        print(f"Validation loss: {eval_loss}")
-        print(f"Validation accuracy: {eval_accuracy / eval_steps}")
-        pred_tags = [self.code2tag[p_i] for p, l in zip(eval_predictions, eval_labels)
+
+        predicted_tags = [self.code2tag[p_i] for p, l in zip(eval_predictions, eval_labels)
                      for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]
         valid_tags = [self.code2tag[l_i] for p, l in zip(eval_predictions, eval_labels)
                       for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]
-        print(f"Validation F-1 score: {f1_score(pred_tags, valid_tags)}")
-        return eval_loss
+        score_acc = accuracy_score(valid_tags, predicted_tags)
+        score_f1 = f1_score(valid_tags, predicted_tags)
+        report = classification_report(valid_tags, predicted_tags)
+        return eval_loss, score_acc, score_f1, report
 
-    def test(self, test_data: pd.DataFrame) -> None:
-        pass
-
+    def test(self, test_data: Union[pd.DataFrame, None] = None) -> None:
+        if not test_data:
+            test_data = self.load_dataset.test()
+        model = torch.load(
+            'data/models/cro-slo-eng-bert-ssj500k.pk',
+            map_location=torch.device('cpu')
+        )
+        test_data = self.convert_input(test_data)
+        _, acc, f1, report = self.__test(model, test_data)
+        print(f"Testing accuracy: {acc}")
+        print(f"Testing F1 score: {f1}")
+        print(f"Testing classification report:")
+        print(f"{report}")
 
 if __name__ == '__main__':
     print(f"Pytorch version: {torch.__version__}")
     print(f"Transformers version: {transformers.__version__}")
     dataLoader = LoadSSJ500k()
     bert = BertModel(dataLoader)
-    bert.train()
+    # bert.train()
+    bert.test()
