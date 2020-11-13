@@ -235,5 +235,6 @@ dmypy.json
 
 data/models/
 data/datasets/
+data/ne/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,vscode
