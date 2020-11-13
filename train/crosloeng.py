@@ -231,6 +231,7 @@ class BertModel(Model):
         print(f"Testing classification report:")
         print(f"{report}")
 
+
 if __name__ == '__main__':
     print(f"Pytorch version: {torch.__version__}")
     print(f"Transformers version: {transformers.__version__}")
