@@ -7,6 +7,12 @@ import time
 
 from tqdm import tqdm
 from bs4 import BeautifulSoup
+from itertools import groupby
+
+
+def all_equal(iterable):
+    g = groupby(iterable)
+    return next(g, True) and not next(g, False)
 
 
 def list_dir(dirpath: str) -> (list, list):
@@ -92,12 +98,36 @@ def extract_gigafida_nes(in_dir: str, out_dir: str):
         process_gigafida_chunk(f"{in_dir}/{chunk_name}", chunk_out_dir)
         print(f"Finished processing in: {time.time() - process_time:.3f}")
 
-        # delete the extracted files
+        # delete the extracted file_names
         del_time = time.time()
         delete_dir(chunk_dir)
         print(f"Finished deleting in: {time.time() - del_time:.3f}")
         print(f"Finished processing chunk {chunk_name} in: {time.time() - chunk_time:.3f}")
     print(f"Finished all processing in: {time.time() - start_time:.3f}")
+
+
+def combine_data(path: str, file_names: list) -> dict:
+    chunk_csv = {
+        "per": pd.DataFrame(),
+        "deriv-per": pd.DataFrame(),
+        "org": pd.DataFrame(),
+        "loc": pd.DataFrame(),
+        "misc": pd.DataFrame(),
+    }
+    for fname in file_names:
+        f_path = f"{path}/{fname}"
+        try:
+            data = pd.read_csv(f_path)
+            for ne_type in chunk_csv.keys():
+                ne = data.loc[(data["type"] == f"B-{ne_type}") | (data["type"] == f"I-{ne_type}")]
+                chunk_csv[ne_type] = pd.concat([chunk_csv[ne_type], ne], ignore_index=True)
+        except Exception as e:
+            # usually this is an empty file
+            if "No columns" not in str(e):
+                print(f"Error: {str(e)}", file=sys.stderr)
+    for ne_type, ne_data in chunk_csv.items():
+        ne_data.to_csv(f"{path}-{ne_type}.csv", index=False)
+    return chunk_csv
 
 
 def combine_chunk_csvs(in_dir: str):
@@ -108,31 +138,74 @@ def combine_chunk_csvs(in_dir: str):
         print(f"Merging chunk {dname}")
         dpath = f"{in_dir}/{dname}"
         _, files = list_dir(dpath)
+        chunk_csv = combine_data(dpath, files)
         chunk_all = pd.DataFrame()
-        chunk_csv = {
-            "per": pd.DataFrame(),
-            "deriv-per": pd.DataFrame(),
-            "org": pd.DataFrame(),
-            "loc": pd.DataFrame(),
-            "misc": pd.DataFrame(),
-        }
-        for fname in files:
-            f_path = f"{dpath}/{fname}"
-            try:
-                data = pd.read_csv(f_path)
-                for ne_type in chunk_csv.keys():
-                    ne = data.loc[(data["type"] == f"B-{ne_type}") | (data["type"] == f"I-{ne_type}")]
-                    chunk_csv[ne_type] = pd.concat([chunk_csv[ne_type], ne], ignore_index=True)
-                chunk_all = pd.concat([chunk_all, data], ignore_index=True)
-            except Exception as e:
-                # usually this is an empty file
-                if "No columns" not in str(e):
-                    print(f"Error: {str(e)}", file=sys.stderr)
-        for ne_type, ne_data in chunk_csv.items():
-            ne_data.to_csv(f"{dpath}-{ne_type}.csv", index=False)
+        for _, data in chunk_csv.items():
+            chunk_all = pd.concat([chunk_all, data])
         chunk_all.to_csv(f"{dpath}.csv", index=False)
     print(f"Finished merging CSVs in {time.time() - start_time:.3f}")
     # all_data.to_csv(f"{in_dir}.csv", index=False)
+
+
+def merge_rows(data: pd.DataFrame, indices: list) -> dict:
+    # print(f"Merging rows: {indices}")
+    entity = []
+    lemma = []
+    msd = []
+    type = []
+    for i in indices:
+        entity.append(str(data["word"].iloc[i]))
+        lemma.append(str(data["lemma"].iloc[i]))
+        msd.append(data["msd"].iloc[i])
+        type.append(data["type"].iloc[i])
+    entity = " ".join(entity)
+    lemma = " ".join(lemma)
+    type = type[0]
+    # print(f"Named entity: {entity}")
+    # print(f"Lemma: {lemma}")
+    # print(f"Type: {type}")
+    msd = msd[0] if all_equal(msd) else ";".join(msd)
+    # print(f"Msd: {msd}, {all_equal(msd)}")
+    return pd.Series({"word": entity, "lemma": lemma, "msd": msd, "type": type})
+
+
+def merge_nes(in_dir: str):
+    _, fnames = list_dir(in_dir)
+    for fname in tqdm(fnames):
+        if "merged" in fname:
+            continue
+        fpath = f"{in_dir}/{fname}"
+        print(f"Working on: {fpath}")
+        merged_path = ".".join(fpath.split(".")[:-1]) + "-merged.csv"
+        if os.path.exists(merged_path) and os.path.isfile(merged_path):
+            # file already exists
+            continue
+        data = pd.read_csv(fpath)
+        merged_data = []
+        merge_indices = []
+        merged_entities = 0
+        print(f"Shape of data: {data.shape}")
+        for i in tqdm(range(len(data))):
+            row = data.iloc[i]
+            row_type = row["type"]
+            if row_type[:2] == "I-":
+                if merge_indices:
+                    merge_indices.append(i)
+                else:
+                    merge_indices = [i - 1, i]
+                continue
+            if merge_indices:
+                row = merge_rows(data, merge_indices)
+                merged_entities += 1
+                merge_indices = []
+            row["type"] = "-".join(row["type"].split("-")[1:])
+            merged_data.append(row)
+        print(f"Number of merged entities: {merged_entities}")
+        print(f"Size of orig {data.shape[0]},\nSize of merged: {len(merged_data)}")
+        diff = data.shape[0] - len(merged_data) == merged_entities
+        print(f"Diff is: {diff}")
+        print(f"Writing merged data to: {merged_path}")
+        pd.DataFrame(merged_data).to_csv(merged_path, index=False)
 
 
 if __name__ == '__main__':
@@ -140,5 +213,6 @@ if __name__ == '__main__':
     gigafida_dir = './data/datasets/gigafida2.1'  # relative to workdir
     gigafida_out_dir = './data/ne/gigafida/'
     # extract_gigafida_nes(gigafida_dir, gigafida_out_dir)
-    combine_chunk_csvs(gigafida_out_dir)
+    # combine_chunk_csvs(gigafida_out_dir)
+    merge_nes(gigafida_out_dir)
 
