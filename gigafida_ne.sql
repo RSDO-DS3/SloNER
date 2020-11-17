@@ -18,6 +18,25 @@ create index named_entities_lemma_index
 create index named_entities_type_index
 	on rsdo.named_entities (type);
 
+create table rsdo.merged_named_entities
+(
+	word varchar,
+	lemma varchar,
+	msd varchar,
+	entity_type varchar
+);
+
+alter table rsdo.merged_named_entities owner to postgres;
+
+create index merged_named_entities_word_index
+	on rsdo.merged_named_entities (word);
+
+create index merged_named_entities_lemma_index
+	on rsdo.merged_named_entities (lemma);
+
+create index merged_named_entities_type_index
+	on rsdo.merged_named_entities (entity_type);
+
 -- Insert data with bash one-liner:
 -- for a in {00..99}; do psql -d gigafida -c "COPY rsdo.named_entities FROM '/path/to/repo>/NER/data/ne/gigafida/GF$a.csv' delimiter ',' CSV HEADER;"; done
 

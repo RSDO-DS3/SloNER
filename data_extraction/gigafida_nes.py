@@ -147,7 +147,7 @@ def combine_chunk_csvs(in_dir: str):
     # all_data.to_csv(f"{in_dir}.csv", index=False)
 
 
-def merge_rows(data: pd.DataFrame, indices: list) -> dict:
+def merge_rows(data: pd.DataFrame, indices: list) -> pd.Series:
     # print(f"Merging rows: {indices}")
     entity = []
     lemma = []
@@ -171,9 +171,8 @@ def merge_rows(data: pd.DataFrame, indices: list) -> dict:
 
 def merge_nes(in_dir: str):
     _, fnames = list_dir(in_dir)
+    fnames = [fname for fname in fnames if "-" not in fname]
     for fname in tqdm(fnames):
-        if "merged" in fname:
-            continue
         fpath = f"{in_dir}/{fname}"
         print(f"Working on: {fpath}")
         merged_path = ".".join(fpath.split(".")[:-1]) + "-merged.csv"
@@ -188,6 +187,7 @@ def merge_nes(in_dir: str):
         for i in tqdm(range(len(data))):
             row = data.iloc[i]
             row_type = row["type"]
+            row["type"] = row["type"][2:]
             if row_type[:2] == "I-":
                 if merge_indices:
                     merge_indices.append(i)
@@ -195,10 +195,10 @@ def merge_nes(in_dir: str):
                     merge_indices = [i - 1, i]
                 continue
             if merge_indices:
-                row = merge_rows(data, merge_indices)
+                prev_row = merge_rows(data, merge_indices)
+                merged_data[-1] = prev_row
                 merged_entities += 1
                 merge_indices = []
-            row["type"] = "-".join(row["type"].split("-")[1:])
             merged_data.append(row)
         print(f"Number of merged entities: {merged_entities}")
         print(f"Size of orig {data.shape[0]},\nSize of merged: {len(merged_data)}")
