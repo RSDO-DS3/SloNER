@@ -1,7 +1,7 @@
 from typing import Any
 
 import pandas as pd
-from utils.load_dataset import LoadDataset
+from src.utils.load_dataset import LoadDataset
 
 
 class Model:

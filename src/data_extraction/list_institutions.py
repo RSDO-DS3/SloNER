@@ -18,4 +18,4 @@ if __name__ == '__main__':
             institutions.append(title.find('h3').get_text().strip())
         sleep(5)
     df = pd.DataFrame(institutions, columns=["InstitutionName"])
-    df.to_csv('../data/institution_names.csv', index=False, quoting=csv.QUOTE_ALL)
+    df.to_csv('data/institution_names.csv', index=False, quoting=csv.QUOTE_ALL)

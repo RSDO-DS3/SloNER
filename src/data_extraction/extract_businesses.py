@@ -40,4 +40,4 @@ if __name__ == '__main__':
         except:
             print(f"Failed to parse {ElementTree.dump(business)}")
     df = pd.DataFrame(data)
-    df.to_csv("../data/businesses.csv", index=False, quoting=csv.QUOTE_ALL)
+    df.to_csv("data/businesses.csv", index=False, quoting=csv.QUOTE_ALL)

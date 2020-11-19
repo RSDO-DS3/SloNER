@@ -7,4 +7,4 @@ unique_holidays = df['IME_PRAZNIKA'].unique()
 
 holidays = pd.DataFrame(unique_holidays, columns=["IME_PRAZNIKA"])
 
-holidays.to_csv('../data/seznampraznikov.csv', index=False, quoting=csv.QUOTE_ALL)
+holidays.to_csv('data/seznampraznikov.csv', index=False, quoting=csv.QUOTE_ALL)

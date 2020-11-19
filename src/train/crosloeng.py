@@ -12,8 +12,8 @@ from transformers import get_linear_schedule_with_warmup, PreTrainedModel
 from keras.preprocessing.sequence import pad_sequences
 from seqeval.metrics import f1_score, accuracy_score, classification_report
 
-from train.model import Model
-from utils.load_dataset import LoadDataset, LoadSSJ500k
+from src.train.model import Model
+from src.utils.load_dataset import LoadDataset, LoadSSJ500k
 
 
 class BertModel(Model):
