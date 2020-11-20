@@ -17,10 +17,21 @@ from src.utils.load_dataset import LoadDataset, LoadSSJ500k
 
 
 class BertModel(Model):
-    def __init__(self, load_dataset: LoadDataset, epochs: int = 3, max_grad_norm: float = 1.0):
+    def __init__(
+        self, 
+        load_dataset: LoadDataset, 
+        epochs: int = 3, 
+        max_grad_norm: float = 1.0,
+        input_model_path: str = 'data/models/cro-slo-eng-bert',  # this is a directory
+        output_model_path: str = 'data/models/cro-slo-eng-bert-ssj500k.pk',  # this is a file
+        tune_entire_model: bool = True
+    ):
         super().__init__(load_dataset)
+        self.input_model_path = input_model_path
+        self.output_model_path = output_model_path
+        self.tune_entire_model = tune_entire_model
         self.tokenizer = BertTokenizer.from_pretrained(
-            'data/models/cro-slo-eng-bert',
+            self.input_model_path,
             from_pt=True,
             do_lower_case=False
         )
@@ -48,7 +59,8 @@ class BertModel(Model):
             sentence_ids = self.tokenizer.convert_tokens_to_ids(sentence_tokens)
             tokens.append(sentence_ids)
             tags.append(sentence_tags)
-        # padding is required to spill the  in case there are sentences longer than 128 words
+        # padding is required to spill the sentence tokens in case there are sentences longer than 128 words
+        # or to fill in the missing places to 128 (self.MAX_LENGTH)
         tokens = torch.as_tensor(pad_sequences(
             tokens,
             maxlen=self.MAX_LENGTH,
@@ -92,25 +104,30 @@ class BertModel(Model):
 
         print("Loading the pre-trained model...")
         model = BertForTokenClassification.from_pretrained(
-            'data/models/cro-slo-eng-bert',
+            self.input_model_path,
             num_labels=len(self.tag2code),
             output_attentions=False,
             output_hidden_states=False
         )
         model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
 
-        model_parameters = list(model.named_parameters())
-        no_decay = ['bias', 'gamma', 'beta']
-        optimizer_parameters = [
-            {
-                'params': [p for n, p in model_parameters if not any(nd in n for nd in no_decay)],
-                'weight_decay_rate': 0.01
-            },
-            {
-                'params': [p for n, p in model_parameters if any(nd in n for nd in no_decay)],
-                'weight_decay_rate': 0.0
-            }
-        ]
+        if self.tune_entire_model:
+            model_parameters = list(model.named_parameters())
+            no_decay = ['bias', 'gamma', 'beta']
+            optimizer_parameters = [
+                {
+                    'params': [p for n, p in model_parameters if not any(nd in n for nd in no_decay)],
+                    'weight_decay_rate': 0.01
+                },
+                {
+                    'params': [p for n, p in model_parameters if any(nd in n for nd in no_decay)],
+                    'weight_decay_rate': 0.0
+                }
+            ]
+        else:
+            model_parameters = list(model.named_parameters())
+            optimizer_parameters = [{"params": [p for n, p in model_parameters]}]
+
         optimizer = AdamW(
             optimizer_parameters,
             lr=3e-5,
@@ -180,21 +197,21 @@ class BertModel(Model):
         # TODO: visualize the loss
 
         print("Saving the model...")
-        torch.save(model, 'data/models/cro-slo-eng-bert-ssj500k.pk')
+        torch.save(model, self.output_model_path)
         print("Done!")
     
     def translate(self, predictions: list, labels: list) -> (list, list):
-        t_p, t_l = [], []
+        translated_predictions, translated_labels = [], []
         for preds, labs in zip(predictions, labels):
-            c_p, c_l = [], []
+            sentence_predictions, sentence_labels = [], []
             for p, l in zip(preds, labs):
                 if l == self.tag2code["PAD"]:
                     continue
-                c_p.append(self.code2tag[p])
-                c_l.append(self.code2tag[l])
-            t_p.append(c_p)
-            t_l.append(c_l)
-        return t_p, t_l
+                sentence_predictions.append(self.code2tag[p])
+                sentence_labels.append(self.code2tag[l])
+            translated_predictions.append(sentence_predictions)
+            translated_labels.append(sentence_labels)
+        return translated_predictions, translated_labels
 
     def __test(self, model: PreTrainedModel, data: DataLoader) -> (float, float, float, str):
         eval_loss, eval_accuracy = 0., 0.
@@ -222,30 +239,21 @@ class BertModel(Model):
             eval_steps += 1
 
         eval_loss = eval_loss / eval_steps
-        # print(f"Labels: {eval_labels}\n------------")
-        # print(f"Predictions: {eval_predictions}\n------------")
-        # print("\n------------\n------------")
-        # predicted_tags = [[self.code2tag[p_i] for p, l in zip(eval_predictions, eval_labels)
-        #              for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]]
-        # valid_tags = [[self.code2tag[l_i] for p, l in zip(eval_predictions, eval_labels)
-        #               for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]]
-        # predicted_tags = [list(map(lambda x: self.code2tag[x[0]], filter(lambda x: self.code2tag[x[1]] != "PAD", e))) for e in zip(eval_predictions, eval_labels)]
-        # valid_tags = [list(map(lambda x: self.code2tag[x[1]], filter(lambda x: self.code2tag[x[1]] != "PAD", e))) for e in zip(eval_predictions, eval_labels)]
+        
         predicted_tags, valid_tags = self.translate(eval_predictions, eval_labels)
-        # print(f"Labels: {valid_tags}\n------------")
-        # print(f"Predictions: {predicted_tags}\n------------")
-        # print("\n------------\n------------")
+
         score_acc = accuracy_score(valid_tags, predicted_tags)
         score_f1 = f1_score(valid_tags, predicted_tags)
         report = classification_report(valid_tags, predicted_tags)
+
         return eval_loss, score_acc, score_f1, report
 
     def test(self, test_data: Union[pd.DataFrame, None] = None) -> None:
         if not test_data:
             test_data = self.load_dataset.test()
-        print("Loading the model...")
+        print("Loading the trained model...")
         model = torch.load(
-            'data/models/cro-slo-eng-bert-ssj500k.pk',
+            self.output_model_path,
             map_location=torch.device(self.device)
         )
         print("Loading the testing data...")
@@ -254,8 +262,7 @@ class BertModel(Model):
         _, acc, f1, report = self.__test(model, test_data)
         print(f"Testing accuracy: {acc}")
         print(f"Testing F1 score: {f1}")
-        print(f"Testing classification report:")
-        print(f"{report}")
+        print(f"Testing classification report:\n{report}")
         print("Done.")
 
 
@@ -263,6 +270,11 @@ if __name__ == '__main__':
     print(f"Pytorch version: {torch.__version__}")
     print(f"Transformers version: {transformers.__version__}")
     dataLoader = LoadSSJ500k()
-    bert = BertModel(dataLoader)
-    # bert.train()
+    bert = BertModel(
+        dataLoader,
+        input_model_path='data/models/cro-slo-eng-bert',
+        output_model_path='data/models/cro-slo-eng-bert-ssj500k-head.pk',
+        tune_entire_model=False
+    )
+    bert.train()
     bert.test()
