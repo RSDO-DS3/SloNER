@@ -28,8 +28,10 @@ class BertModel(Model):
         self.BATCH_SIZE = 32  # max input length
         self.epochs = epochs
         self.max_grad_norm = max_grad_norm
-        self.device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        print(f"Using device: {self.device}")
         self.tag2code, self.code2tag = self.load_dataset.encoding()
+        print(f"tags: ", self.tag2code.keys())
 
     def convert_input(self, input_data: pd.DataFrame):
         tokens = []
@@ -47,23 +49,23 @@ class BertModel(Model):
             tokens.append(sentence_ids)
             tags.append(sentence_tags)
         # padding is required to spill the  in case there are sentences longer than 128 words
-        tokens = torch.tensor(pad_sequences(
+        tokens = torch.as_tensor(pad_sequences(
             tokens,
             maxlen=self.MAX_LENGTH,
             dtype="long",
             value=0.0,
             truncating="post",
             padding="post"
-        ))
-        tags = torch.tensor(pad_sequences(
+        )).to(self.device)
+        tags = torch.as_tensor(pad_sequences(
             tags,
             maxlen=self.MAX_LENGTH,
             dtype="long",
             value=self.tag2code["PAD"],
             truncating="post",
             padding="post"
-        ))
-        masks = torch.tensor(np.array([[float(token != 0.0) for token in sentence] for sentence in tokens]))
+        )).to(self.device)
+        masks = torch.as_tensor(np.array([[float(token != 0.0) for token in sentence] for sentence in tokens])).to(self.device)
         data = TensorDataset(tokens, masks, tags)
         sampler = RandomSampler(data)
         return DataLoader(data, sampler=sampler, batch_size=self.BATCH_SIZE)
@@ -95,6 +97,7 @@ class BertModel(Model):
             output_attentions=False,
             output_hidden_states=False
         )
+        model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
 
         model_parameters = list(model.named_parameters())
         no_decay = ['bias', 'gamma', 'beta']
@@ -160,7 +163,6 @@ class BertModel(Model):
 
                 # update the learning rate (lr)
                 scheduler.step()
-                break
 
             avg_epoch_train_loss = total_loss/len(train_data)
             print(f"Avg train loss = {avg_epoch_train_loss}")
@@ -180,6 +182,19 @@ class BertModel(Model):
         print("Saving the model...")
         torch.save(model, 'data/models/cro-slo-eng-bert-ssj500k.pk')
         print("Done!")
+    
+    def translate(self, predictions: list, labels: list) -> (list, list):
+        t_p, t_l = [], []
+        for preds, labs in zip(predictions, labels):
+            c_p, c_l = [], []
+            for p, l in zip(preds, labs):
+                if l == self.tag2code["PAD"]:
+                    continue
+                c_p.append(self.code2tag[p])
+                c_l.append(self.code2tag[l])
+            t_p.append(c_p)
+            t_l.append(c_l)
+        return t_p, t_l
 
     def __test(self, model: PreTrainedModel, data: DataLoader) -> (float, float, float, str):
         eval_loss, eval_accuracy = 0., 0.
@@ -207,11 +222,19 @@ class BertModel(Model):
             eval_steps += 1
 
         eval_loss = eval_loss / eval_steps
-
-        predicted_tags = [self.code2tag[p_i] for p, l in zip(eval_predictions, eval_labels)
-                     for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]
-        valid_tags = [self.code2tag[l_i] for p, l in zip(eval_predictions, eval_labels)
-                      for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]
+        # print(f"Labels: {eval_labels}\n------------")
+        # print(f"Predictions: {eval_predictions}\n------------")
+        # print("\n------------\n------------")
+        # predicted_tags = [[self.code2tag[p_i] for p, l in zip(eval_predictions, eval_labels)
+        #              for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]]
+        # valid_tags = [[self.code2tag[l_i] for p, l in zip(eval_predictions, eval_labels)
+        #               for p_i, l_i in zip(p, l) if self.code2tag[l_i] != "PAD"]]
+        # predicted_tags = [list(map(lambda x: self.code2tag[x[0]], filter(lambda x: self.code2tag[x[1]] != "PAD", e))) for e in zip(eval_predictions, eval_labels)]
+        # valid_tags = [list(map(lambda x: self.code2tag[x[1]], filter(lambda x: self.code2tag[x[1]] != "PAD", e))) for e in zip(eval_predictions, eval_labels)]
+        predicted_tags, valid_tags = self.translate(eval_predictions, eval_labels)
+        # print(f"Labels: {valid_tags}\n------------")
+        # print(f"Predictions: {predicted_tags}\n------------")
+        # print("\n------------\n------------")
         score_acc = accuracy_score(valid_tags, predicted_tags)
         score_f1 = f1_score(valid_tags, predicted_tags)
         report = classification_report(valid_tags, predicted_tags)
@@ -220,16 +243,20 @@ class BertModel(Model):
     def test(self, test_data: Union[pd.DataFrame, None] = None) -> None:
         if not test_data:
             test_data = self.load_dataset.test()
+        print("Loading the model...")
         model = torch.load(
             'data/models/cro-slo-eng-bert-ssj500k.pk',
-            map_location=torch.device('cpu')
+            map_location=torch.device(self.device)
         )
+        print("Loading the testing data...")
         test_data = self.convert_input(test_data)
+        print("Testing the model...")
         _, acc, f1, report = self.__test(model, test_data)
         print(f"Testing accuracy: {acc}")
         print(f"Testing F1 score: {f1}")
         print(f"Testing classification report:")
         print(f"{report}")
+        print("Done.")
 
 
 if __name__ == '__main__':

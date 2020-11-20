@@ -42,10 +42,11 @@ class LoadSSJ500k(LoadDataset):
                 if word.upos == 'PROPN':  # check if the token is a NER
                     annotation = list(word.misc.keys())[0]
                     # some undocumented annotations "O", for now classified as other
-                    annotation = annotation if annotation != "O" else "I-othr"
-                    data.append({"word": word.form, "sentence": id, "ner": annotation.split("-")[1]})
+                    # annotation = annotation if annotation != "O" else "B-O"
+                    # data.append({"word": word.form, "sentence": id, "ner": annotation.split("-")[1].upper()})
+                    data.append({"word": word.form, "sentence": id, "ner": annotation.upper()})
                 else:
-                    data.append({"word": word.form, "sentence": id, "ner": "othr"})
+                    data.append({"word": word.form, "sentence": id, "ner": "O"})
         return pd.DataFrame(data)
 
     def train(self, test: bool = False) -> pd.DataFrame:
