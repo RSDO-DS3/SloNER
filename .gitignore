@@ -9,6 +9,13 @@
 # User-specific stuff
 .idea
 
+# All sqfs files which are the container images
+*.sqfs
+containers/
+logs/
+*.out
+*.err
+
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
 # since they will be recreated, and may cause churn.  Uncomment if using
