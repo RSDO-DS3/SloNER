@@ -7,8 +7,10 @@ import time
 
 from tqdm import tqdm
 from bs4 import BeautifulSoup
+from lxml import etree
 from itertools import groupby
 
+parser = etree.XMLParser()
 
 def all_equal(iterable):
     g = groupby(iterable)
@@ -42,18 +44,31 @@ def delete_dir(dname: str) -> bool:
 
 
 def extract_nes(dname: str) -> pd.DataFrame:
+    # Efficient XML parsing as per: https://www.ibm.com/developerworks/xml/library/x-hiperfparse/
     nes = []
-    with open(dname) as f:
-        data = BeautifulSoup(f, 'lxml')
-        segs = data.find_all("seg", {"type": "name"})
-        for seg in segs:
-            for i, w in enumerate(seg.find_all("w")):
-                nes.append({
-                    "word": w.getText(),
-                    "lemma": w["lemma"],
-                    "msd": w["msd"],
-                    "type": f'{"B" if i == 0 else "I"}-{seg["subtype"]}'
-                })
+    context = etree.iterparse(fr"{dname}", events=("start",), tag="{http://www.tei-c.org/ns/1.0}seg")
+    for action, seg in context:
+        subtype = seg.attrib['subtype']
+        word = ""
+        lemma = ""
+        msd = ""
+        for w in seg:
+            if w.tag != "{http://www.tei-c.org/ns/1.0}w":
+                continue
+            word += f" {w.text}"
+            lemma += f" {w.attrib['lemma']}"
+            msd += f" {w.attrib['ana'].split(':')[1]}"
+        seg.clear()
+        for ancestor in seg.xpath('ancestor-or-self::*'):
+            while ancestor.getprevious() is not None:
+                del ancestor.getparent()[0]
+        nes.append({
+            "word": word,
+            "lemma": lemma,
+            "msd": msd,
+            "type": subtype
+        })
+    del context
     return pd.DataFrame(nes)
 
 
@@ -212,7 +227,7 @@ if __name__ == '__main__':
     print("Extracting Gigafida's NEs")
     gigafida_dir = './data/datasets/gigafida2.1'  # relative to workdir
     gigafida_out_dir = './data/ne/gigafida/'
-    # extract_gigafida_nes(gigafida_dir, gigafida_out_dir)
+    extract_gigafida_nes(gigafida_dir, gigafida_out_dir)
     # combine_chunk_csvs(gigafida_out_dir)
     merge_nes(gigafida_out_dir)
 
