@@ -4,7 +4,7 @@ set -euo pipefail
 SLURM_ACCOUNT=rsdo
 SLURM_PARTITION=rsdo
 
-echo "Running the setup:"
+echo "Running the BERT setup:"
 
 SETUP=$(\
     sbatch \
@@ -14,9 +14,9 @@ SETUP=$(\
         ./bin/run-setup.sh
 )
 
-echo "Setup id is $SETUP"
+echo "The BERT setup ID is: $SETUP"
 
-echo "Running the train:"
+echo "Running the BERT training:"
 
 TRAIN=$(\
     sbatch \
@@ -24,7 +24,19 @@ TRAIN=$(\
         -p $SLURM_PARTITION \
         --dependency=afterok:$SETUP \
         --parsable \
-        ./bin/run-container.sh
+        ./bin/run-bert-train.sh
 )
 
-echo "Train id is: $TRAIN"
+echo "The BERT training ID is: $TRAIN"
+
+echo "Runnnig the BERT testing:"
+TEST=$(\
+    sbatch \
+        -A $SLURM_ACCOUNT \
+        -p $SLURM_PARTITION \
+        --dependency=afterok:$TRAIN \
+        --parsable \
+        ./bin/run-bert-test.sh
+)
+
+echo "The BERT testing ID is: $TEST"

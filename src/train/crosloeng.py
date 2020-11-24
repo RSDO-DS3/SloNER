@@ -3,6 +3,8 @@ import numpy as np
 import torch
 import transformers
 import random
+import os
+import argparse
 
 from typing import Union
 from tqdm import trange, tqdm
@@ -29,7 +31,11 @@ class BertModel(Model):
         super().__init__(load_dataset)
         self.input_model_path = input_model_path
         self.output_model_path = output_model_path
+        print(f"Output model at: {output_model_path}")
+        
+        print(f"Tuning entire model: {tune_entire_model}")
         self.tune_entire_model = tune_entire_model
+
         self.tokenizer = BertTokenizer.from_pretrained(
             self.input_model_path,
             from_pt=True,
@@ -150,7 +156,7 @@ class BertModel(Model):
         torch.cuda.manual_seed_all(seed_val)
 
         training_loss, validation_loss = [], []
-        print("Training the model...")
+        print(f"Training the model for {self.epochs} epochs...")
         for _ in trange(self.epochs, desc="Epoch"):
             model.train()
             total_loss = 0
@@ -251,6 +257,9 @@ class BertModel(Model):
     def test(self, test_data: Union[pd.DataFrame, None] = None) -> None:
         if not test_data:
             test_data = self.load_dataset.test()
+        if not os.path.exists(self.output_model_path):
+            raise Exception(f"A model with the given parameters has not been trained yet,"\
+            f" or is not located at `{self.output_model_path}`.")
         print("Loading the trained model...")
         model = torch.load(
             self.output_model_path,
@@ -265,16 +274,38 @@ class BertModel(Model):
         print(f"Testing classification report:\n{report}")
         print("Done.")
 
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--train', action='store_true')
+    parser.add_argument('--epochs', type=int, default=3)
+    parser.add_argument('--test', action='store_true')
+    parser.add_argument('--full-finetuning', action='store_true')
+    return parser.parse_args()
 
-if __name__ == '__main__':
-    print(f"Pytorch version: {torch.__version__}")
-    print(f"Transformers version: {transformers.__version__}")
+def main():
+    args = parse_args()
+    print(f"Training: {args.train}")
+    print(f"Epochs: {args.epochs}")
+    print(f"Full finetuning: {args.full_finetuning}")
+    print(f"Testing: {args.test}")
+    # print(f"Pytorch version: {torch.__version__}")
+    # print(f"Transformers version: {transformers.__version__}")
     dataLoader = LoadSSJ500k()
     bert = BertModel(
         dataLoader,
-        input_model_path='data/models/cro-slo-eng-bert',
-        output_model_path='data/models/cro-slo-eng-bert-ssj500k-head.pk',
-        tune_entire_model=False
+        epochs=args.epochs,
+        input_model_path='./data/models/cro-slo-eng-bert',
+        output_model_path=f'./data/models/cro-slo-eng-bert-ssj500k'\
+                            f'-{args.epochs}-epochs'\
+                            f"{'-finetuned' if args.full_finetuning else ''}.pk",
+        tune_entire_model=args.full_finetuning
     )
-    bert.train()
-    bert.test()
+    
+    if args.train:
+        bert.train()
+    
+    if args.test:
+        bert.test()
+
+if __name__ == '__main__':
+    main()
