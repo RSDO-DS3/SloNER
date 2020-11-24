@@ -46,7 +46,7 @@ def delete_dir(dname: str) -> bool:
 def extract_nes(dname: str) -> pd.DataFrame:
     # Efficient XML parsing as per: https://www.ibm.com/developerworks/xml/library/x-hiperfparse/
     nes = []
-    context = etree.iterparse(fr"{dname}", events=("start",), tag="{http://www.tei-c.org/ns/1.0}seg")
+    context = etree.iterparse(fr"{dname}", events=("end",), tag="{http://www.tei-c.org/ns/1.0}seg")
     for action, seg in context:
         subtype = seg.attrib['subtype']
         word = ""
@@ -63,13 +63,16 @@ def extract_nes(dname: str) -> pd.DataFrame:
             while ancestor.getprevious() is not None:
                 del ancestor.getparent()[0]
         nes.append({
-            "word": word,
-            "lemma": lemma,
-            "msd": msd,
-            "type": subtype
+            "word": word.strip(),
+            "lemma": lemma.strip(),
+            "msd": msd.strip(),
+            "type": subtype.strip()
         })
     del context
-    return pd.DataFrame(nes)
+    fdata = pd.DataFrame(nes)
+    if fdata.isnull().sum().sum():
+        print(f"THERE IS A NULL IN {dname}")
+    return fdata
 
 
 def process_gigafida_chunk(in_dir: str, out_dir: str) -> None:
@@ -229,5 +232,5 @@ if __name__ == '__main__':
     gigafida_out_dir = './data/ne/gigafida/'
     extract_gigafida_nes(gigafida_dir, gigafida_out_dir)
     # combine_chunk_csvs(gigafida_out_dir)
-    merge_nes(gigafida_out_dir)
+    # merge_nes(gigafida_out_dir)
 

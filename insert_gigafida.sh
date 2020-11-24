@@ -1,8 +1,14 @@
+#!/bin/bash
+
 set -euo pipefail
 
-REPO_PATH=/home/pr3mar/rsdo
+DIRS=`ls -d $PWD/data/ne/gigafida/*/`
 
-for a in {00..99};
+for a in $DIRS;
 do
-  psql -d gigafida -c "COPY rsdo.merged_named_entities FROM '$REPO_PATH/NER/data/ne/gigafida/GF$a-merged.csv' delimiter ',' CSV HEADER;";
+  files=`ls $a*.csv`
+  for f in $files
+  do
+    psql -d gigafida -c "COPY rsdo.named_entities FROM '$f' delimiter ',' CSV HEADER;";
+  done
 done
