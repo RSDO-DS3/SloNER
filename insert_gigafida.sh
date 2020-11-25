@@ -6,6 +6,7 @@ DIRS=`ls -d $PWD/data/ne/gigafida/*/`
 
 for a in $DIRS;
 do
+  echo "$a"
   files=`ls $a*.csv`
   for f in $files
   do
