@@ -293,8 +293,8 @@ class BertModel(Model):
             print(f"Testing accuracy: {acc}")
             print(f"Testing F1 score: {f1}")
             print(f"Testing classification report:\n{report}")
-        print(f"Average accuracy: {np.mean(avg_acc):.3f}")
-        print(f"Average f1: {np.mean(avg_f1):.3f}")
+        print(f"Average accuracy: {np.mean(avg_acc):.4f}")
+        print(f"Average f1: {np.mean(avg_f1):.4f}")
         print("Done.")
 
 def parse_args():

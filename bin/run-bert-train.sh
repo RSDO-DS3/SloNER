@@ -18,10 +18,8 @@ echo "$SLURM_JOB_ID -> Training the model..."
 # with the current directory (.) mounted
 srun \
     --container-image "$CONTAINER_IMAGE_PATH" \
-    --container-save "$CONTAINER_IMAGE_PATH" \
-    --container-remap-root \
     --container-mounts "$PWD":/workspace,/shared/datasets/rsdo:/data \
-    --container-entrypoint /workspace/bin/exec-bert.sh --train --epochs 3
+    --container-entrypoint /workspace/bin/exec-bert.sh --train
 
 echo "$SLURM_JOB_ID -> Done."
 

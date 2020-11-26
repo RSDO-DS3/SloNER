@@ -19,7 +19,7 @@ if [ ! -e "$CONTAINER_IMAGE_PATH" ]; then
         --container-image pytorch/pytorch:1.7.0-cuda11.0-cudnn8-runtime \
         --container-save "$CONTAINER_IMAGE_PATH" \
         --container-mounts "$PWD":/workspace \
-        --container-entrypoint /workspace/bin/setup-container.sh
+        --container-entrypoint /workspace/bin/exec-setup.sh
 
     echo "Image is created."
 else
