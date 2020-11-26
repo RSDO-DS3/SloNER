@@ -9,6 +9,8 @@
 # User-specific stuff
 .idea
 
+figures/
+
 # All sqfs files which are the container images
 *.sqfs
 containers/

@@ -5,6 +5,7 @@ import transformers
 import random
 import os
 import argparse
+import time
 
 from typing import Union
 from tqdm import trange, tqdm
@@ -13,9 +14,11 @@ from transformers import BertTokenizer, BertForTokenClassification, AdamW
 from transformers import get_linear_schedule_with_warmup, PreTrainedModel
 from keras.preprocessing.sequence import pad_sequences
 from seqeval.metrics import f1_score, accuracy_score, classification_report
+from matplotlib import pyplot as plt
 
 from src.train.model import Model
 from src.utils.load_dataset import LoadDataset, LoadSSJ500k
+from src.utils.utils import list_dir
 
 
 class BertModel(Model):
@@ -25,12 +28,14 @@ class BertModel(Model):
         epochs: int = 3, 
         max_grad_norm: float = 1.0,
         input_model_path: str = 'data/models/cro-slo-eng-bert',  # this is a directory
-        output_model_path: str = 'data/models/cro-slo-eng-bert-ssj500k.pk',  # this is a file
+        output_model_path: str = 'data/models/cro-slo-eng-bert-ssj500k/',  # this is the output dir
+        output_model_fname: str = 'cro-slo-eng-bert-ssj500k',  # this is the output file name, the current time is appended automatically and `.pk`
         tune_entire_model: bool = True
     ):
         super().__init__(load_dataset)
         self.input_model_path = input_model_path
         self.output_model_path = output_model_path
+        self.output_model_fname = output_model_fname
         print(f"Output model at: {output_model_path}")
         
         print(f"Tuning entire model: {tune_entire_model}")
@@ -200,10 +205,18 @@ class BertModel(Model):
             print(f"Classification report:")
             print(f"{val_report}")
 
-        # TODO: visualize the loss
+        out_fname = f"{self.output_model_fname}-{time.time()}"
 
-        print("Saving the model...")
-        torch.save(model, self.output_model_path)
+        fig, ax = plt.subplots()
+        ax.plot(training_loss, label="Traing loss")
+        ax.plot(validation_loss, label="Validation loss")
+        ax.legend()
+        ax.set_title("Model Loss")
+        fig.savefig(f"./figures/{out_fname}-loss.png")
+
+        out_fname = f"{self.output_model_path}/{out_fname}.pk"
+        print(f"Saving the model at: {out_fname}")
+        torch.save(model, out_fname)
         print("Done!")
     
     def translate(self, predictions: list, labels: list) -> (list, list):
@@ -257,26 +270,37 @@ class BertModel(Model):
     def test(self, test_data: Union[pd.DataFrame, None] = None) -> None:
         if not test_data:
             test_data = self.load_dataset.test()
-        if not os.path.exists(self.output_model_path):
+        if not (os.path.exists(self.output_model_path) and os.path.isdir(self.output_model_path)):
             raise Exception(f"A model with the given parameters has not been trained yet,"\
             f" or is not located at `{self.output_model_path}`.")
-        print("Loading the trained model...")
-        model = torch.load(
-            self.output_model_path,
-            map_location=torch.device(self.device)
-        )
+        _, models = list_dir(self.output_model_path)
+        models = [model_fname for model_fname in models if model_fname.startswith(self.output_model_fname)]
+        if not models:
+            raise Exception(f"There are no trained models with the given criteria: `{self.output_model_fname}`")
+
         print("Loading the testing data...")
         test_data = self.convert_input(test_data)
-        print("Testing the model...")
-        _, acc, f1, report = self.__test(model, test_data)
-        print(f"Testing accuracy: {acc}")
-        print(f"Testing F1 score: {f1}")
-        print(f"Testing classification report:\n{report}")
+        avg_acc, avg_f1, reports = [], [], []
+        for model_fname in models:
+            print(f"Loading {model_fname}...")
+            model = torch.load(
+                f"{self.output_model_path}/{model_fname}",
+                map_location=torch.device(self.device)
+            )
+            _, acc, f1, report = self.__test(model, test_data)
+            avg_acc.append(acc)
+            avg_f1.append(f1)
+            print(f"Testing accuracy: {acc}")
+            print(f"Testing F1 score: {f1}")
+            print(f"Testing classification report:\n{report}")
+        print(f"Average accuracy: {np.mean(avg_acc):.3f}")
+        print(f"Average f1: {np.mean(avg_f1):.3f}")
         print("Done.")
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--train', action='store_true')
+    parser.add_argument('--train-iterations', type=int, default=1)
     parser.add_argument('--epochs', type=int, default=3)
     parser.add_argument('--test', action='store_true')
     parser.add_argument('--full-finetuning', action='store_true')
@@ -285,6 +309,7 @@ def parse_args():
 def main():
     args = parse_args()
     print(f"Training: {args.train}")
+    print(f"Train iterations: {args.train_iterations}")
     print(f"Epochs: {args.epochs}")
     print(f"Full finetuning: {args.full_finetuning}")
     print(f"Testing: {args.test}")
@@ -295,14 +320,17 @@ def main():
         dataLoader,
         epochs=args.epochs,
         input_model_path='./data/models/cro-slo-eng-bert',
-        output_model_path=f'./data/models/cro-slo-eng-bert-ssj500k'\
-                            f'-{args.epochs}-epochs'\
-                            f"{'-finetuned' if args.full_finetuning else ''}.pk",
+        output_model_path=f'./data/models/cro-slo-eng-bert-ssj500k',
+        output_model_fname=f'cro-slo-eng-bert-ssj500k'\
+                            f"{'-finetuned' if args.full_finetuning else ''}"\
+                            f'-{args.epochs}-epochs',
         tune_entire_model=args.full_finetuning
     )
     
     if args.train:
-        bert.train()
+        for i in range(args.train_iterations):
+            print(f"Building training model {i + 1}")
+            bert.train()
     
     if args.test:
         bert.test()
