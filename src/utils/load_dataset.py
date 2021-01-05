@@ -26,7 +26,11 @@ class LoadDataset:
         return pd.DataFrame()
 
     def encoding(self) -> (dict, dict):
-        return {}, {}
+        data = self.load('train')
+        possible_tags = np.append(data["ner"].unique(), ["PAD"])
+        tag2code = {tag: code for code, tag in enumerate(possible_tags)}
+        code2tag = {val: key for key, val in tag2code.items()}
+        return tag2code, code2tag
 
 
 class LoadSSJ500k(LoadDataset):
@@ -60,13 +64,6 @@ class LoadSSJ500k(LoadDataset):
 
     def test(self) -> pd.DataFrame:
         return self.load('test')
-
-    def encoding(self, test: bool = False):
-        data = self.load('train')
-        possible_tags = np.append(data["ner"].unique(), ["PAD"])
-        tag2code = {tag: code for code, tag in enumerate(possible_tags)}
-        code2tag = {val: key for key, val in tag2code.items()}
-        return tag2code, code2tag
 
 
 class LoadBSNLP(LoadDataset):
@@ -122,16 +119,17 @@ class LoadBSNLP(LoadDataset):
 
     def test(self) -> pd.DataFrame:
         return self.load('test')
-
-    def encoding(self) -> (dict, dict):
-        return {}, {}
     
 
 if __name__ == '__main__':
     loader = LoadBSNLP("sl")
     # loader = LoadSSJ500k()
+    tag2code, code2tag = loader.encoding()
+    print(f"tag2code: {tag2code}")
+    print(f"code2tag: {code2tag}")
 
     train_data = loader.train()
+    print(train_data.head(10))
     print(f"Train data: {train_data.shape[0]}, NERs: {train_data.loc[train_data['ner'] != 'O'].shape[0]}")
     print(train_data['ner'].value_counts())
     

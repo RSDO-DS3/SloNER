@@ -17,7 +17,7 @@ from seqeval.metrics import f1_score, accuracy_score, classification_report
 from matplotlib import pyplot as plt
 
 from src.train.model import Model
-from src.utils.load_dataset import LoadDataset, LoadSSJ500k
+from src.utils.load_dataset import LoadDataset, LoadSSJ500k, LoadBSNLP
 from src.utils.utils import list_dir
 
 
@@ -63,7 +63,7 @@ class BertModel(Model):
             sentence_tokens = []
             sentence_tags = []
             for id, word_row in data.iterrows():
-                word_tokens = self.tokenizer.tokenize(word_row["word"])
+                word_tokens = self.tokenizer.tokenize(str(word_row["word"]))
                 sentence_tokens.extend(word_tokens)
                 sentence_tags.extend([self.tag2code[word_row["ner"]]] * len(word_tokens))
 
@@ -316,13 +316,15 @@ def main():
     # print(f"Pytorch version: {torch.__version__}")
     # print(f"Transformers version: {transformers.__version__}")
     dataLoader = LoadSSJ500k()
+    # dataLoader = LoadBSNLP('sl')
     bert = BertModel(
         dataLoader,
         epochs=args.epochs,
-        # input_model_path='./data/models/cro-slo-eng-bert',
-        input_model_path='./data/models/bert-base-multilingual-uncased',
-        output_model_path=f'./data/models/bert-base-multilingual-uncased-ssj500k',
-        output_model_fname=f'bert-base-multilingual-uncased-ssj500k'\
+        input_model_path='./data/models/cro-slo-eng-bert',
+        output_model_path=f'./data/models/cro-slo-eng-bert-bsnlp',
+        # input_model_path='./data/models/bert-base-multilingual-uncased',
+        # output_model_path=f'./data/models/bert-base-multilingual-uncased-ssj500k',
+        output_model_fname=f'cro-slo-eng-bert-bsnlp'\
                             f"{'-finetuned' if args.full_finetuning else ''}"\
                             f'-{args.epochs}-epochs',
         tune_entire_model=args.full_finetuning
