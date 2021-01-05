@@ -319,9 +319,10 @@ def main():
     bert = BertModel(
         dataLoader,
         epochs=args.epochs,
-        input_model_path='./data/models/cro-slo-eng-bert',
-        output_model_path=f'./data/models/cro-slo-eng-bert-ssj500k',
-        output_model_fname=f'cro-slo-eng-bert-ssj500k'\
+        # input_model_path='./data/models/cro-slo-eng-bert',
+        input_model_path='./data/models/bert-base-multilingual-uncased',
+        output_model_path=f'./data/models/bert-base-multilingual-uncased-ssj500k',
+        output_model_fname=f'bert-base-multilingual-uncased-ssj500k'\
                             f"{'-finetuned' if args.full_finetuning else ''}"\
                             f'-{args.epochs}-epochs',
         tune_entire_model=args.full_finetuning
