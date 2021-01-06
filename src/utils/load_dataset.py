@@ -122,7 +122,7 @@ class LoadBSNLP(LoadDataset):
     
 
 if __name__ == '__main__':
-    loader = LoadBSNLP("sl")
+    loader = LoadBSNLP("pl")
     # loader = LoadSSJ500k()
     tag2code, code2tag = loader.encoding()
     print(f"tag2code: {tag2code}")

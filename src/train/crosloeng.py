@@ -99,9 +99,9 @@ class BertModel(Model):
         return np.sum(pred_flat == labels_flat) / float(len(labels_flat))
 
     def train(
-            self,
-            train_data: Union[pd.DataFrame, None] = None,
-            validation_data: Union[pd.DataFrame, None] = None
+        self,
+        train_data: Union[pd.DataFrame, None] = None,
+        validation_data: Union[pd.DataFrame, None] = None
     ) -> None:
         if not train_data:
             train_data = self.load_dataset.train(test=False)
@@ -214,9 +214,17 @@ class BertModel(Model):
         ax.set_title("Model Loss")
         fig.savefig(f"./figures/{out_fname}-loss.png")
 
-        out_fname = f"{self.output_model_path}/{out_fname}.pk"
+        out_fname = f"{self.output_model_path}/{out_fname}"
         print(f"Saving the model at: {out_fname}")
-        torch.save(model, out_fname)
+        torch.save(model, f"{out_fname}.pk")
+        torch.save({
+                "epoch": self.epochs,
+                "model_state_dict": model.state_dict(),
+                "optimizer_state_dict": optimizer.state_dict(),
+                "loss": loss,
+            }, 
+            f"{out_fname}_weights"
+        )
         print("Done!")
     
     def translate(self, predictions: list, labels: list) -> (list, list):
@@ -268,13 +276,13 @@ class BertModel(Model):
         return eval_loss, score_acc, score_f1, report
 
     def test(self, test_data: Union[pd.DataFrame, None] = None) -> None:
-        if not test_data:
+        if test_data is None:
             test_data = self.load_dataset.test()
         if not (os.path.exists(self.output_model_path) and os.path.isdir(self.output_model_path)):
             raise Exception(f"A model with the given parameters has not been trained yet,"\
             f" or is not located at `{self.output_model_path}`.")
         _, models = list_dir(self.output_model_path)
-        models = [model_fname for model_fname in models if model_fname.startswith(self.output_model_fname)]
+        models = [model_fname for model_fname in models if model_fname.startswith(self.output_model_fname) and model_fname.endswith('.pk')]
         if not models:
             raise Exception(f"There are no trained models with the given criteria: `{self.output_model_fname}`")
 
@@ -313,18 +321,18 @@ def main():
     print(f"Epochs: {args.epochs}")
     print(f"Full finetuning: {args.full_finetuning}")
     print(f"Testing: {args.test}")
-    # print(f"Pytorch version: {torch.__version__}")
-    # print(f"Transformers version: {transformers.__version__}")
-    dataLoader = LoadSSJ500k()
-    # dataLoader = LoadBSNLP('sl')
+    model_name = "bert-base-multilingual-uncased"  # "cro-slo-eng-bert"
+    train_dataset = "bsnlp"  # "ssj500k"
+    test_dataset = "bsnlp"
+    # dataLoader = LoadSSJ500k()
+    dataLoader = LoadBSNLP('sl')
+    testDataLoader = LoadBSNLP('sl')
     bert = BertModel(
         dataLoader,
         epochs=args.epochs,
-        input_model_path='./data/models/cro-slo-eng-bert',
-        output_model_path=f'./data/models/cro-slo-eng-bert-bsnlp',
-        # input_model_path='./data/models/bert-base-multilingual-uncased',
-        # output_model_path=f'./data/models/bert-base-multilingual-uncased-ssj500k',
-        output_model_fname=f'cro-slo-eng-bert-bsnlp'\
+        input_model_path=f'./data/models/{model_name}',
+        output_model_path=f'./data/models/{model_name}-{train_dataset}',
+        output_model_fname=f'{model_name}-{train_dataset}'\
                             f"{'-finetuned' if args.full_finetuning else ''}"\
                             f'-{args.epochs}-epochs',
         tune_entire_model=args.full_finetuning
@@ -336,7 +344,7 @@ def main():
             bert.train()
     
     if args.test:
-        bert.test()
+        bert.test(test_data=testDataLoader.test())
 
 if __name__ == '__main__':
     main()
