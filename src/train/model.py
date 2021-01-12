@@ -17,7 +17,7 @@ class Model:
         """
         return input_data
 
-    def train(self, train_data: pd.DataFrame) -> None:
+    def train(self, model, train_data: pd.DataFrame, validation_data: pd.DataFrame):
         pass
 
     def test(self, test_data: pd.DataFrame) -> None:

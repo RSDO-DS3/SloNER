@@ -100,27 +100,19 @@ class BertModel(Model):
 
     def train(
         self,
+        model,
         train_data: Union[pd.DataFrame, None] = None,
         validation_data: Union[pd.DataFrame, None] = None
-    ) -> None:
-        if not train_data:
+    ):
+        if train_data is None:
             train_data = self.load_dataset.train(test=False)
-        if not validation_data:
+        if validation_data is None:
             validation_data = self.load_dataset.dev()
 
         print("Loading the training data...")
         train_data = self.convert_input(train_data)
         print("Loading the validation data...")
         validation_data = self.convert_input(validation_data)
-
-        print("Loading the pre-trained model...")
-        model = BertForTokenClassification.from_pretrained(
-            self.input_model_path,
-            num_labels=len(self.tag2code),
-            output_attentions=False,
-            output_hidden_states=False
-        )
-        model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
 
         if self.tune_entire_model:
             model_parameters = list(model.named_parameters())
@@ -226,6 +218,7 @@ class BertModel(Model):
             f"{out_fname}_weights"
         )
         print("Done!")
+        return model
     
     def translate(self, predictions: list, labels: list) -> (list, list):
         translated_predictions, translated_labels = [], []
@@ -322,14 +315,17 @@ def main():
     print(f"Full finetuning: {args.full_finetuning}")
     print(f"Testing: {args.test}")
     model_name = "cro-slo-eng-bert"  # "bert-base-multilingual-cased"
-    train_dataset = "bsnlp"  # "ssj500k"
+    train_dataset = "ssj500k-bsnlp"  # ""
     test_dataset = "bsnlp"
-    # dataLoader = LoadSSJ500k()
-    dataLoader = LoadBSNLP('sl')
+    ssj500k_dataLoader = LoadSSJ500k()
+    bsnlp_dataLoader = LoadBSNLP('sl')
+    tag2code, code2tag = bsnlp_dataLoader.encoding()
+
     # testDataLoader = LoadBSNLP('sl')
     testDataLoader = LoadSSJ500k()
+    
     bert = BertModel(
-        dataLoader,
+        bsnlp_dataLoader,
         epochs=args.epochs,
         input_model_path=f'./data/models/{model_name}',
         output_model_path=f'./data/models/{model_name}-{train_dataset}',
@@ -338,11 +334,30 @@ def main():
                             f'-{args.epochs}-epochs',
         tune_entire_model=args.full_finetuning
     )
+
+    print("Loading the pre-trained model...")
+    model = BertForTokenClassification.from_pretrained(
+        f'./data/models/{model_name}',
+        num_labels=len(tag2code),
+        output_attentions=False,
+        output_hidden_states=False
+    )
+    model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
     
     if args.train:
-        for i in range(args.train_iterations):
-            print(f"Building training model {i + 1}")
-            bert.train()
+        train_data = [
+            ssj500k_dataLoader.train(),
+            bsnlp_dataLoader.train()
+        ]
+
+
+        validation_data = [
+            ssj500k_dataLoader.dev(),
+            bsnlp_dataLoader.dev()
+        ]
+        
+        for t, v in zip(train_data, validation_data):
+            model = bert.train(model, train_data=t, validation_data=v)
     
     if args.test:
         bert.test(test_data=testDataLoader.test())

@@ -13,7 +13,7 @@ class LoadDataset:
     def load(self, set: str) -> pd.DataFrame:
         return pd.DataFrame()
 
-    def train(self, test: bool = False) -> pd.DataFrame:
+    def train(self) -> pd.DataFrame:
         return pd.DataFrame()
 
     def dev(self) -> pd.DataFrame:
@@ -56,7 +56,7 @@ class LoadSSJ500k(LoadDataset):
                     data.append({"word": word.form, "sentence": id, "ner": "O"})
         return pd.DataFrame(data)
 
-    def train(self, test: bool = False) -> pd.DataFrame:
+    def train(self) -> pd.DataFrame:
         return self.load('train')
 
     def dev(self) -> pd.DataFrame:
@@ -108,7 +108,7 @@ class LoadBSNLP(LoadDataset):
             "test": test_data,
         }[set]
 
-    def train(self, test: bool = False) -> pd.DataFrame:
+    def train(self) -> pd.DataFrame:
         return self.load('train')
 
     def dev(self) -> pd.DataFrame:
