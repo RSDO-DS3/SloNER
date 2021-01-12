@@ -321,12 +321,13 @@ def main():
     print(f"Epochs: {args.epochs}")
     print(f"Full finetuning: {args.full_finetuning}")
     print(f"Testing: {args.test}")
-    model_name = "bert-base-multilingual-uncased"  # "cro-slo-eng-bert"
+    model_name = "cro-slo-eng-bert"  # "bert-base-multilingual-cased"
     train_dataset = "bsnlp"  # "ssj500k"
     test_dataset = "bsnlp"
     # dataLoader = LoadSSJ500k()
     dataLoader = LoadBSNLP('sl')
-    testDataLoader = LoadBSNLP('sl')
+    # testDataLoader = LoadBSNLP('sl')
+    testDataLoader = LoadSSJ500k()
     bert = BertModel(
         dataLoader,
         epochs=args.epochs,
