@@ -14,6 +14,8 @@ CONTAINER_IMAGE_PATH="$PWD/containers/pytorch-image.sqfs"
 
 if [ ! -e "$CONTAINER_IMAGE_PATH" ]; then
     echo "Creating the container image at $CONTAINER_IMAGE_PATH..."
+    # xantipa uses Singularity containers, we need the appropriate image
+    # singularity build ./containers/sing-container.sif docker://pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime
 
     srun \
         --container-image pytorch/pytorch:1.7.0-cuda11.0-cudnn8-runtime \
