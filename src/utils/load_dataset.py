@@ -5,6 +5,8 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from src.utils.utils import list_dir
 
+# pd.set_option('display.max_rows', None)  # only for debugging purposes
+
 class LoadDataset:
     def __init__(self, base_fname: str, format: str):
         self.base_fname = base_fname
@@ -88,24 +90,21 @@ class LoadBSNLP(LoadDataset):
                 df = df.drop(columns=['docId'])
                 df = df.rename(columns={"sentenceId": "sentence", "text": "word", "ner": "ner"})
                 data = pd.concat([data, df])
-        train_data, test_data = train_test_split(
-                                    data,
+        num_sentences = data['sentence'].unique()
+        train_sentences, test_sentences = train_test_split(
+                                    num_sentences,
                                     test_size=0.2,
                                     random_state=self.random_state,
-                                    shuffle=True,
-                                    stratify=data['ner']
                                 )
-        val_data, test_data = train_test_split(
-                                    test_data,
+        val_sentences, test_sentences = train_test_split(
+                                    test_sentences,
                                     test_size=0.5,
                                     random_state=self.random_state,
-                                    shuffle=True,
-                                    stratify=test_data['ner']
                                 )
         return {
-            "train": train_data,
-            "dev": val_data,
-            "test": test_data,
+            "train": data.loc[data['sentence'].isin(train_sentences)],
+            "dev": data.loc[data['sentence'].isin(test_sentences)],
+            "test": data.loc[data['sentence'].isin(val_sentences)],
         }[set]
 
     def train(self) -> pd.DataFrame:
@@ -122,7 +121,7 @@ class LoadBSNLP(LoadDataset):
     
 
 if __name__ == '__main__':
-    loader = LoadBSNLP("pl")
+    loader = LoadBSNLP("sl")
     # loader = LoadSSJ500k()
     tag2code, code2tag = loader.encoding()
     print(f"tag2code: {tag2code}")
@@ -132,6 +131,7 @@ if __name__ == '__main__':
     print(train_data.head(10))
     print(f"Train data: {train_data.shape[0]}, NERs: {train_data.loc[train_data['ner'] != 'O'].shape[0]}")
     print(train_data['ner'].value_counts())
+    # print(train_data)
     
     dev_data = loader.dev()
     print(f"Validation data: {dev_data.shape[0]}, NERs: {dev_data.loc[dev_data['ner'] != 'O'].shape[0]}")

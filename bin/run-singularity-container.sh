@@ -10,4 +10,4 @@
 
 CONTAINER_IMAGE_PATH="$PWD/containers/sing-container.img"
 
-singularity run --nv $CONTAINER_IMAGE_PATH bin/exec-bert.sh --epochs 5 --test
+singularity run --nv $CONTAINER_IMAGE_PATH bin/exec-bert.sh --train --epochs 5 --test
