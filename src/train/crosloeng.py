@@ -314,8 +314,8 @@ def main():
     print(f"Epochs: {args.epochs}")
     print(f"Full finetuning: {args.full_finetuning}")
     print(f"Testing: {args.test}")
-    model_name = "bert-base-multilingual-uncased" #  "cro-slo-eng-bert"
-    train_dataset = "ssj500k"
+    model_name = "cro-slo-eng-bert" # "bert-base-multilingual-cased" 
+    train_dataset = "ssj500k-bsnlp"
     dataLoaders = {
         "ssj500k": LoadSSJ500k(),
         "bsnlp": LoadBSNLP('sl')
