@@ -205,7 +205,7 @@ class BertModel(Model):
         ax.legend()
         ax.set_title("Model Loss")
         fig.savefig(f"./figures/{out_fname}-loss.png")
-
+        # TODO: move this out of the training loop
         out_fname = f"{self.output_model_path}/{out_fname}"
         print(f"Saving the model at: {out_fname}")
         torch.save(model, f"{out_fname}.pk")
@@ -314,18 +314,17 @@ def main():
     print(f"Epochs: {args.epochs}")
     print(f"Full finetuning: {args.full_finetuning}")
     print(f"Testing: {args.test}")
-    model_name = "cro-slo-eng-bert"  # "bert-base-multilingual-cased"
-    train_dataset = "ssj500k-bsnlp"  # ""
-    test_dataset = "bsnlp"
-    ssj500k_dataLoader = LoadSSJ500k()
-    bsnlp_dataLoader = LoadBSNLP('sl')
-    tag2code, code2tag = bsnlp_dataLoader.encoding()
+    model_name = "bert-base-multilingual-uncased" #  "cro-slo-eng-bert"
+    train_dataset = "ssj500k"
+    dataLoaders = {
+        "ssj500k": LoadSSJ500k(),
+        "bsnlp": LoadBSNLP('sl')
+    }
+    skip_training = [] # add the name of the dataset which should be skipped during training
 
-    # testDataLoader = LoadBSNLP('sl')
-    testDataLoader = LoadSSJ500k()
-    
+    tag2code, code2tag = dataLoaders["bsnlp"].encoding()
     bert = BertModel(
-        bsnlp_dataLoader,
+        dataLoaders["bsnlp"],
         epochs=args.epochs,
         input_model_path=f'./data/models/{model_name}',
         output_model_path=f'./data/models/{model_name}-{train_dataset}',
@@ -335,32 +334,26 @@ def main():
         tune_entire_model=args.full_finetuning
     )
 
-    print("Loading the pre-trained model...")
-    model = BertForTokenClassification.from_pretrained(
-        f'./data/models/{model_name}',
-        num_labels=len(tag2code),
-        output_attentions=False,
-        output_hidden_states=False
-    )
-    model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
-    
     if args.train:
-        train_data = [
-            ssj500k_dataLoader.train(),
-            bsnlp_dataLoader.train()
-        ]
-
-
-        validation_data = [
-            ssj500k_dataLoader.dev(),
-            bsnlp_dataLoader.dev()
-        ]
+        print("Loading the pre-trained model...")
+        model = BertForTokenClassification.from_pretrained(
+            f'./data/models/{model_name}',
+            num_labels=len(tag2code),
+            output_attentions=False,
+            output_hidden_states=False
+        )
+        model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
         
-        for t, v in zip(train_data, validation_data):
-            model = bert.train(model, train_data=t, validation_data=v)
+        for dataset, dataloader in dataLoaders.items():
+            if dataset in skip_training:
+                continue
+            print(f'Training on `{dataset}`')
+            model = bert.train(model, train_data=dataloader.test(), validation_data=dataloader.dev())
     
     if args.test:
-        bert.test(test_data=testDataLoader.test())
+        for dataset, dataloader in dataLoaders.items():
+            print(f"Testing on `{dataset}`")
+            bert.test(test_data=dataloader.test())
 
 if __name__ == '__main__':
     main()
