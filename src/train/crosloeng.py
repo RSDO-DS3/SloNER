@@ -335,7 +335,7 @@ def main():
     print(f"Full finetuning: {args.full_finetuning}")
     print(f"Testing: {args.test}")
 
-    tag2code, code2tag = LoadBSNLP("si").encoding()
+    tag2code, code2tag = LoadBSNLP("sl").encoding()
     model_names = [
         "cro-slo-eng-bert",
         "bert-base-multilingual-cased",

@@ -3,7 +3,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 # SBATCH --gpus-per-task=1
-#SBATCH --time=45:00
+#SBATCH --time=2:45:00
 #SBATCH --output=logs/NER-BERT-train-%J.out
 #SBATCH --error=logs/NER-BERT-train-%J.err
 #SBATCH --job-name="NER-BERT-train"

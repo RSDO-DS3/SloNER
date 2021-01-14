@@ -87,7 +87,7 @@ class LoadBSNLP(LoadDataset):
             for fname in files:
                 df = pd.read_csv(f"{base_path}/{fname}")
                 df = df[['docId', 'sentenceId', 'text', 'ner']]
-                df['sentenceId'] =  df['docId'].astype(str) + '-' + df['sentenceId'].astype('str')
+                df['sentenceId'] = df['docId'].astype(str) + '-' + df['sentenceId'].astype('str')
                 df = df.drop(columns=['docId'])
                 df = df.rename(columns={"sentenceId": "sentence", "text": "word", "ner": "ner"})
                 data = pd.concat([data, df])
@@ -134,21 +134,21 @@ class LoadCombined(LoadDataset):
         return pd.DataFrame()
 
     def train(self) -> pd.DataFrame:
-        data = pd.DataFrame
+        data = pd.DataFrame()
         for loader in self.loaders:
             loader_data = loader.train()
             data = pd.concat([data, loader_data])
         return data
 
     def dev(self) -> pd.DataFrame:
-        data = pd.DataFrame
+        data = pd.DataFrame()
         for loader in self.loaders:
             loader_data = loader.dev()
             data = pd.concat([data, loader_data])
         return data
 
     def test(self) -> pd.DataFrame:
-        data = pd.DataFrame
+        data = pd.DataFrame()
         for loader in self.loaders:
             loader_data = loader.test()
             data = pd.concat([data, loader_data])
