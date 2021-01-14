@@ -100,15 +100,47 @@ class BertModel(Model):
 
     def train(
         self,
+        data_loaders: list,
+        skip_training: list
+    ):
+        print("Loading the pre-trained model...")
+        model = BertForTokenClassification.from_pretrained(
+            self.input_model_path,
+            num_labels=len(self.tag2code),
+            output_attentions=False,
+            output_hidden_states=False
+        )
+        model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
+        
+        for dataset, dataloader in data_loaders.items():
+            if dataset in skip_training:
+                continue
+            print(f'Training on `{dataset}`')
+            model = self.__train(model, train_data=dataloader.train(), validation_data=dataloader.dev())
+
+        out_fname = f"{self.output_model_path}/{out_fname}"
+        print(f"Saving the model at: {out_fname}")
+        torch.save(model, f"{out_fname}.pk")
+        torch.save({
+                "epoch": self.epochs,
+                "model_state_dict": model.state_dict(),
+                "optimizer_state_dict": optimizer.state_dict(),
+                "loss": loss,
+            }, 
+            f"{out_fname}_weights"
+        )
+        print("Done!")
+
+    def __train(
+        self,
         model,
-        train_data: Union[pd.DataFrame, None] = None,
-        validation_data: Union[pd.DataFrame, None] = None
+        train_data: pd.DataFrame,
+        validation_data: pd.DataFrame
     ):
         if train_data is None:
             train_data = self.load_dataset.train(test=False)
         if validation_data is None:
             validation_data = self.load_dataset.dev()
-
         print("Loading the training data...")
         train_data = self.convert_input(train_data)
         print("Loading the validation data...")
@@ -204,20 +236,9 @@ class BertModel(Model):
         ax.plot(validation_loss, label="Validation loss")
         ax.legend()
         ax.set_title("Model Loss")
+        ax.set_ylabel("Loss")
+        ax.set_xlabel("Epoch")
         fig.savefig(f"./figures/{out_fname}-loss.png")
-        # TODO: move this out of the training loop
-        out_fname = f"{self.output_model_path}/{out_fname}"
-        print(f"Saving the model at: {out_fname}")
-        torch.save(model, f"{out_fname}.pk")
-        torch.save({
-                "epoch": self.epochs,
-                "model_state_dict": model.state_dict(),
-                "optimizer_state_dict": optimizer.state_dict(),
-                "loss": loss,
-            }, 
-            f"{out_fname}_weights"
-        )
-        print("Done!")
         return model
     
     def translate(self, predictions: list, labels: list) -> (list, list):
@@ -316,15 +337,13 @@ def main():
     print(f"Testing: {args.test}")
     model_name = "cro-slo-eng-bert" # "bert-base-multilingual-cased" 
     train_dataset = "ssj500k-bsnlp"
-    dataLoaders = {
+    data_loaders = {
         "ssj500k": LoadSSJ500k(),
         "bsnlp": LoadBSNLP('sl')
     }
     skip_training = [] # add the name of the dataset which should be skipped during training
-
-    tag2code, code2tag = dataLoaders["bsnlp"].encoding()
     bert = BertModel(
-        dataLoaders["bsnlp"],
+        data_loaders["bsnlp"],
         epochs=args.epochs,
         input_model_path=f'./data/models/{model_name}',
         output_model_path=f'./data/models/{model_name}-{train_dataset}',
@@ -335,23 +354,10 @@ def main():
     )
 
     if args.train:
-        print("Loading the pre-trained model...")
-        model = BertForTokenClassification.from_pretrained(
-            f'./data/models/{model_name}',
-            num_labels=len(tag2code),
-            output_attentions=False,
-            output_hidden_states=False
-        )
-        model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
-        
-        for dataset, dataloader in dataLoaders.items():
-            if dataset in skip_training:
-                continue
-            print(f'Training on `{dataset}`')
-            model = bert.train(model, train_data=dataloader.test(), validation_data=dataloader.dev())
+        bert.train(data_loaders, skip_training)
     
     if args.test:
-        for dataset, dataloader in dataLoaders.items():
+        for dataset, dataloader in data_loaders.items():
             print(f"Testing on `{dataset}`")
             bert.test(test_data=dataloader.test())
 
