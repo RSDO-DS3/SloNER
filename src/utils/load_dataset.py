@@ -7,12 +7,13 @@ from src.utils.utils import list_dir
 
 # pd.set_option('display.max_rows', None)  # only for debugging purposes
 
+
 class LoadDataset:
     def __init__(self, base_fname: str, format: str):
         self.base_fname = base_fname
         self.data_format = format
 
-    def load(self, set: str) -> pd.DataFrame:
+    def load(self, dset: str) -> pd.DataFrame:
         return pd.DataFrame()
 
     def train(self) -> pd.DataFrame:
@@ -28,7 +29,7 @@ class LoadDataset:
         return pd.DataFrame()
 
     def encoding(self) -> (dict, dict):
-        data = self.load('train')
+        data = self.train()
         possible_tags = np.append(data["ner"].unique(), ["PAD"])
         tag2code = {tag: code for code, tag in enumerate(possible_tags)}
         code2tag = {val: key for key, val in tag2code.items()}
@@ -42,8 +43,8 @@ class LoadSSJ500k(LoadDataset):
             "conll"
         )
 
-    def load(self, set: str) -> pd.DataFrame:
-        raw_data = pyconll.load_from_file(f"{self.base_fname}{set}_ner.conllu")
+    def load(self, dset: str) -> pd.DataFrame:
+        raw_data = pyconll.load_from_file(f"{self.base_fname}{dset}_ner.conllu")
         data = []
         for id, sentence in enumerate(raw_data):
             for word in sentence:
@@ -77,7 +78,7 @@ class LoadBSNLP(LoadDataset):
         self.lang = lang
         self.random_state = 42
 
-    def load(self, set: str) -> pd.DataFrame:
+    def load(self, dset: str) -> pd.DataFrame:
         dirs, _ = list_dir(self.base_fname)
         data = pd.DataFrame()
         for directory in dirs:
@@ -105,7 +106,7 @@ class LoadBSNLP(LoadDataset):
             "train": data.loc[data['sentence'].isin(train_sentences)],
             "dev": data.loc[data['sentence'].isin(test_sentences)],
             "test": data.loc[data['sentence'].isin(val_sentences)],
-        }[set]
+        }[dset]
 
     def train(self) -> pd.DataFrame:
         return self.load('train')
@@ -118,11 +119,46 @@ class LoadBSNLP(LoadDataset):
 
     def test(self) -> pd.DataFrame:
         return self.load('test')
-    
+
+
+class LoadCombined(LoadDataset):
+    def __init__(self, loaders: list):
+        super().__init__(
+            f"combined_datasets:{','.join([l.base_fname for l in loaders])}",
+            "csv"
+        )
+        self.random_state = 42
+        self.loaders = loaders
+
+    def load(self, set: str) -> pd.DataFrame:
+        return pd.DataFrame()
+
+    def train(self) -> pd.DataFrame:
+        data = pd.DataFrame
+        for loader in self.loaders:
+            loader_data = loader.train()
+            data = pd.concat([data, loader_data])
+        return data
+
+    def dev(self) -> pd.DataFrame:
+        data = pd.DataFrame
+        for loader in self.loaders:
+            loader_data = loader.dev()
+            data = pd.concat([data, loader_data])
+        return data
+
+    def test(self) -> pd.DataFrame:
+        data = pd.DataFrame
+        for loader in self.loaders:
+            loader_data = loader.test()
+            data = pd.concat([data, loader_data])
+        return data
+
 
 if __name__ == '__main__':
-    loader = LoadBSNLP("sl")
+    # loader = LoadBSNLP("sl")
     # loader = LoadSSJ500k()
+    loader = LoadCombined([LoadBSNLP("sl"), LoadSSJ500k()])
     tag2code, code2tag = loader.encoding()
     print(f"tag2code: {tag2code}")
     print(f"code2tag: {code2tag}")

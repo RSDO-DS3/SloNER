@@ -7,7 +7,6 @@ import os
 import argparse
 import time
 
-from typing import Union
 from tqdm import trange, tqdm
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler
 from transformers import BertTokenizer, BertForTokenClassification, AdamW
@@ -17,14 +16,16 @@ from seqeval.metrics import f1_score, accuracy_score, classification_report
 from matplotlib import pyplot as plt
 
 from src.train.model import Model
-from src.utils.load_dataset import LoadDataset, LoadSSJ500k, LoadBSNLP
+from src.utils.load_dataset import LoadSSJ500k, LoadBSNLP, LoadCombined
 from src.utils.utils import list_dir
 
 
+# noinspection PyPackageRequirements
 class BertModel(Model):
     def __init__(
         self, 
-        load_dataset: LoadDataset, 
+        tag2code,
+        code2tag,
         epochs: int = 3, 
         max_grad_norm: float = 1.0,
         input_model_path: str = 'data/models/cro-slo-eng-bert',  # this is a directory
@@ -32,7 +33,7 @@ class BertModel(Model):
         output_model_fname: str = 'cro-slo-eng-bert-ssj500k',  # this is the output file name, the current time is appended automatically and `.pk`
         tune_entire_model: bool = True
     ):
-        super().__init__(load_dataset)
+        super().__init__()
         self.input_model_path = input_model_path
         self.output_model_path = output_model_path
         self.output_model_fname = output_model_fname
@@ -52,8 +53,9 @@ class BertModel(Model):
         self.max_grad_norm = max_grad_norm
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print(f"Using device: {self.device}")
-        self.tag2code, self.code2tag = self.load_dataset.encoding()
+        self.tag2code, self.code2tag = tag2code, code2tag
         print(f"tags: ", self.tag2code.keys())
+        self.save_weights = False
 
     def convert_input(self, input_data: pd.DataFrame):
         tokens = []
@@ -100,8 +102,7 @@ class BertModel(Model):
 
     def train(
         self,
-        data_loaders: list,
-        skip_training: list
+        data_loaders: dict
     ):
         print("Loading the pre-trained model...")
         model = BertForTokenClassification.from_pretrained(
@@ -111,24 +112,24 @@ class BertModel(Model):
             output_hidden_states=False
         )
         model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
+        optimizer, loss = None, None
         
         for dataset, dataloader in data_loaders.items():
-            if dataset in skip_training:
-                continue
             print(f'Training on `{dataset}`')
-            model = self.__train(model, train_data=dataloader.train(), validation_data=dataloader.dev())
+            model, optimizer, loss = self.__train(model, train_data=dataloader.train(), validation_data=dataloader.dev())
 
-        out_fname = f"{self.output_model_path}/{out_fname}"
+        out_fname = f"{self.output_model_path}/{self.output_model_fname}-{time.time()}"
         print(f"Saving the model at: {out_fname}")
         torch.save(model, f"{out_fname}.pk")
-        torch.save({
-                "epoch": self.epochs,
-                "model_state_dict": model.state_dict(),
-                "optimizer_state_dict": optimizer.state_dict(),
-                "loss": loss,
-            }, 
-            f"{out_fname}_weights"
-        )
+        if self.save_weights:
+            torch.save({
+                    "epoch": self.epochs,
+                    "model_state_dict": model.state_dict(),
+                    "optimizer_state_dict": optimizer.state_dict(),
+                    "loss": loss,
+                },
+                f"{out_fname}_weights"
+            )
         print("Done!")
 
     def __train(
@@ -137,10 +138,6 @@ class BertModel(Model):
         train_data: pd.DataFrame,
         validation_data: pd.DataFrame
     ):
-        if train_data is None:
-            train_data = self.load_dataset.train(test=False)
-        if validation_data is None:
-            validation_data = self.load_dataset.dev()
         print("Loading the training data...")
         train_data = self.convert_input(train_data)
         print("Loading the validation data...")
@@ -184,7 +181,7 @@ class BertModel(Model):
         torch.manual_seed(seed_val)
         torch.cuda.manual_seed_all(seed_val)
 
-        training_loss, validation_loss = [], []
+        training_loss, validation_loss, loss = [], [], None
         print(f"Training the model for {self.epochs} epochs...")
         for _ in trange(self.epochs, desc="Epoch"):
             model.train()
@@ -239,7 +236,7 @@ class BertModel(Model):
         ax.set_ylabel("Loss")
         ax.set_xlabel("Epoch")
         fig.savefig(f"./figures/{out_fname}-loss.png")
-        return model
+        return model, optimizer, loss
     
     def translate(self, predictions: list, labels: list) -> (list, list):
         translated_predictions, translated_labels = [], []
@@ -289,9 +286,7 @@ class BertModel(Model):
 
         return eval_loss, score_acc, score_f1, report
 
-    def test(self, test_data: Union[pd.DataFrame, None] = None) -> None:
-        if test_data is None:
-            test_data = self.load_dataset.test()
+    def test(self, test_data: pd.DataFrame) -> float:
         if not (os.path.exists(self.output_model_path) and os.path.isdir(self.output_model_path)):
             raise Exception(f"A model with the given parameters has not been trained yet,"\
             f" or is not located at `{self.output_model_path}`.")
@@ -316,8 +311,11 @@ class BertModel(Model):
             print(f"Testing F1 score: {f1}")
             print(f"Testing classification report:\n{report}")
         print(f"Average accuracy: {np.mean(avg_acc):.4f}")
-        print(f"Average f1: {np.mean(avg_f1):.4f}")
+        f1 = np.mean(avg_f1)[0]
+        print(f"Average f1: {f1:.4f}")
         print("Done.")
+        return f1
+
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -328,6 +326,7 @@ def parse_args():
     parser.add_argument('--full-finetuning', action='store_true')
     return parser.parse_args()
 
+
 def main():
     args = parse_args()
     print(f"Training: {args.train}")
@@ -335,31 +334,68 @@ def main():
     print(f"Epochs: {args.epochs}")
     print(f"Full finetuning: {args.full_finetuning}")
     print(f"Testing: {args.test}")
-    model_name = "cro-slo-eng-bert" # "bert-base-multilingual-cased" 
-    train_dataset = "ssj500k-bsnlp"
-    data_loaders = {
+
+    tag2code, code2tag = LoadBSNLP("si").encoding()
+    model_names = [
+        "cro-slo-eng-bert",
+        "bert-base-multilingual-cased",
+        "bert-base-multilingual-uncased"
+    ]
+    train_datasets = {
+        "ssj500k-bsnlp-iterative": {
+            "ssj500k": LoadSSJ500k(),
+            "": LoadBSNLP('sl')
+        },
+        "ssj500k-bsnlp-combined": {
+            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP('sl')])
+        },
+        "ssj500k": {
+            "ssj500k": LoadSSJ500k()
+        },
+        "bsnlp": {
+            "bsnlp": LoadBSNLP('sl')
+        }
+    }
+    test_datasets = {
         "ssj500k": LoadSSJ500k(),
         "bsnlp": LoadBSNLP('sl')
     }
-    skip_training = [] # add the name of the dataset which should be skipped during training
-    bert = BertModel(
-        data_loaders["bsnlp"],
-        epochs=args.epochs,
-        input_model_path=f'./data/models/{model_name}',
-        output_model_path=f'./data/models/{model_name}-{train_dataset}',
-        output_model_fname=f'{model_name}-{train_dataset}'\
-                            f"{'-finetuned' if args.full_finetuning else ''}"\
-                            f'-{args.epochs}-epochs',
-        tune_entire_model=args.full_finetuning
-    )
+    test_f1_scores = []
+    for model_name in model_names:
+        print(f"Working on model: `{model_name}`...")
+        for train_bundle, loaders in train_datasets.items():
+            bert = BertModel(
+                tag2code=tag2code,
+                code2tag=code2tag,
+                epochs=args.epochs,
+                input_model_path=f'./data/models/{model_name}',
+                output_model_path=f'./data/models/{model_name}-{train_bundle}',
+                output_model_fname=f'{model_name}-{train_bundle}'
+                                   f"{'-finetuned' if args.full_finetuning else ''}"
+                                   f'-{args.epochs}-epochs',
+                tune_entire_model=args.full_finetuning
+            )
 
-    if args.train:
-        bert.train(data_loaders, skip_training)
-    
-    if args.test:
-        for dataset, dataloader in data_loaders.items():
-            print(f"Testing on `{dataset}`")
-            bert.test(test_data=dataloader.test())
+            if args.train:
+                print(f"Training data bundle: `{train_bundle}`")
+                bert.train(loaders)
+
+            if args.test:
+                for test_dataset, dataloader in test_datasets.items():
+                    print(f"Testing on `{test_dataset}`")
+                    f1 = bert.test(test_data=dataloader.test())
+                    test_f1_scores.append({
+                        "train_bundle": train_bundle,
+                        "fine_tined": args.full_finetuning,
+                        "epochs": args.epochs,
+                        "test_dataset": test_dataset,
+                        "f1_score": f1
+                    })
+                    print(f"[{train_bundle}][{test_dataset}] F1 = {f1}")
+    scores = pd.DataFrame(test_f1_scores)
+    print(scores)
+    scores.to_csv(f'./data/models/f1_scores-{time.time()}.csv')
+
 
 if __name__ == '__main__':
     main()

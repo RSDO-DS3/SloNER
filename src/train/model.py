@@ -5,8 +5,8 @@ from src.utils.load_dataset import LoadDataset
 
 
 class Model:
-    def __init__(self, load_dataset: LoadDataset) -> None:
-        self.load_dataset = load_dataset
+    def __init__(self) -> None:
+        pass
 
     def convert_input(self, input_data: pd.DataFrame) -> Any:
         """
@@ -17,8 +17,8 @@ class Model:
         """
         return input_data
 
-    def train(self, model, train_data: pd.DataFrame, validation_data: pd.DataFrame):
+    def train(self, data_loaders: dict):
         pass
 
-    def test(self, test_data: pd.DataFrame) -> None:
+    def test(self, test_data: pd.DataFrame) -> float:
         pass
