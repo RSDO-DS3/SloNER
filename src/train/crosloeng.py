@@ -14,6 +14,7 @@ from transformers import get_linear_schedule_with_warmup, PreTrainedModel
 from keras.preprocessing.sequence import pad_sequences
 from seqeval.metrics import f1_score, accuracy_score, classification_report
 from matplotlib import pyplot as plt
+from itertools import product
 
 from src.train.model import Model
 from src.utils.load_dataset import LoadSSJ500k, LoadBSNLP, LoadCombined
@@ -311,7 +312,7 @@ class BertModel(Model):
             print(f"Testing F1 score: {f1}")
             print(f"Testing classification report:\n{report}")
         print(f"Average accuracy: {np.mean(avg_acc):.4f}")
-        f1 = np.mean(avg_f1)[0]
+        f1 = np.mean(avg_f1)
         print(f"Average f1: {f1:.4f}")
         print("Done.")
         return f1
@@ -337,14 +338,15 @@ def main():
 
     tag2code, code2tag = LoadBSNLP("sl").encoding()
     model_names = [
-        "cro-slo-eng-bert",
-        "bert-base-multilingual-cased",
-        "bert-base-multilingual-uncased"
+        # "cro-slo-eng-bert",
+        # "bert-base-multilingual-cased",
+        # "bert-base-multilingual-uncased"
+        "sloberta-1.0"
     ]
     train_datasets = {
         "ssj500k-bsnlp-iterative": {
             "ssj500k": LoadSSJ500k(),
-            "": LoadBSNLP('sl')
+            "bsnlp": LoadBSNLP('sl')
         },
         "ssj500k-bsnlp-combined": {
             "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP('sl')])
@@ -361,7 +363,7 @@ def main():
         "bsnlp": LoadBSNLP('sl')
     }
     test_f1_scores = []
-    for model_name in model_names:
+    for model_name, fine_tuning in product(model_names, [True, False]):
         print(f"Working on model: `{model_name}`...")
         for train_bundle, loaders in train_datasets.items():
             bert = BertModel(
@@ -371,9 +373,9 @@ def main():
                 input_model_path=f'./data/models/{model_name}',
                 output_model_path=f'./data/models/{model_name}-{train_bundle}',
                 output_model_fname=f'{model_name}-{train_bundle}'
-                                   f"{'-finetuned' if args.full_finetuning else ''}"
+                                   f"{'-finetuned' if fine_tuning else ''}"
                                    f'-{args.epochs}-epochs',
-                tune_entire_model=args.full_finetuning
+                tune_entire_model=fine_tuning
             )
 
             if args.train:
@@ -385,8 +387,9 @@ def main():
                     print(f"Testing on `{test_dataset}`")
                     f1 = bert.test(test_data=dataloader.test())
                     test_f1_scores.append({
+                        "model_name": model_name,
+                        "fine_tuned": fine_tuning,
                         "train_bundle": train_bundle,
-                        "fine_tined": args.full_finetuning,
                         "epochs": args.epochs,
                         "test_dataset": test_dataset,
                         "f1_score": f1
@@ -394,7 +397,7 @@ def main():
                     print(f"[{train_bundle}][{test_dataset}] F1 = {f1}")
     scores = pd.DataFrame(test_f1_scores)
     print(scores)
-    scores.to_csv(f'./data/models/f1_scores-{time.time()}.csv')
+    scores.to_csv(f'./data/models/f1_scores-{time.time()}.csv', index=False)
 
 
 if __name__ == '__main__':
