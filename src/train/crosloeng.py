@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import torch
-import transformers
 import random
 import os
 import argparse
@@ -9,7 +8,7 @@ import time
 
 from tqdm import trange, tqdm
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler
-from transformers import AutoTokenizer, AutoModelForTokenClassification, BertTokenizer, BertForTokenClassification, AdamW
+from transformers import AutoTokenizer, AutoModelForTokenClassification, AdamW
 from transformers import get_linear_schedule_with_warmup, PreTrainedModel
 from keras.preprocessing.sequence import pad_sequences
 from seqeval.metrics import f1_score, accuracy_score, classification_report
@@ -19,9 +18,9 @@ from itertools import product
 from src.train.model import Model
 from src.utils.load_dataset import LoadSSJ500k, LoadBSNLP, LoadCombined
 from src.utils.utils import list_dir
+from src.train.bert_crf import BertCRFForTokenClassification
 
 
-# noinspection PyPackageRequirements
 class BertModel(Model):
     def __init__(
         self, 
@@ -107,7 +106,8 @@ class BertModel(Model):
         data_loaders: dict
     ):
         print("Loading the pre-trained model...")
-        model = AutoModelForTokenClassification.from_pretrained(
+        # model = AutoModelForTokenClassification.from_pretrained(
+        model = BertCRFForTokenClassification.from_pretrained(
             self.input_model_path,
             num_labels=len(self.tag2code),
             output_attentions=False,
@@ -339,10 +339,10 @@ def main():
 
     tag2code, code2tag = LoadBSNLP("sl").encoding()
     model_names = [
-        # "cro-slo-eng-bert",
+        "cro-slo-eng-bert",
         # "bert-base-multilingual-cased",
         # "bert-base-multilingual-uncased"
-        "sloberta-1.0"
+        # "sloberta-1.0"
     ]
     train_datasets = {
         "ssj500k-bsnlp-iterative": {
