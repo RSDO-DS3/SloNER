@@ -9,7 +9,7 @@ import time
 
 from tqdm import trange, tqdm
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler
-from transformers import BertTokenizer, BertForTokenClassification, AdamW
+from transformers import AutoTokenizer, AutoModelForTokenClassification, BertTokenizer, BertForTokenClassification, AdamW
 from transformers import get_linear_schedule_with_warmup, PreTrainedModel
 from keras.preprocessing.sequence import pad_sequences
 from seqeval.metrics import f1_score, accuracy_score, classification_report
@@ -43,10 +43,11 @@ class BertModel(Model):
         print(f"Tuning entire model: {tune_entire_model}")
         self.tune_entire_model = tune_entire_model
 
-        self.tokenizer = BertTokenizer.from_pretrained(
+        self.tokenizer = AutoTokenizer.from_pretrained(
             self.input_model_path,
             from_pt=True,
-            do_lower_case=False
+            do_lower_case=False,
+            use_fast=False
         )
         self.MAX_LENGTH = 128  # max input length
         self.BATCH_SIZE = 32  # max input length
@@ -106,7 +107,7 @@ class BertModel(Model):
         data_loaders: dict
     ):
         print("Loading the pre-trained model...")
-        model = BertForTokenClassification.from_pretrained(
+        model = AutoModelForTokenClassification.from_pretrained(
             self.input_model_path,
             num_labels=len(self.tag2code),
             output_attentions=False,
