@@ -97,6 +97,7 @@ class BertModel(Model):
         return DataLoader(data, sampler=sampler, batch_size=self.BATCH_SIZE)
 
     def flat_accuracy(self, preds, labels) -> float:
+        print(f"Preds size = {preds.shape}")
         pred_flat = np.argmax(preds, axis=2).flatten()
         labels_flat = labels.flatten()
         return np.sum(pred_flat == labels_flat) / float(len(labels_flat))
@@ -106,8 +107,8 @@ class BertModel(Model):
         data_loaders: dict
     ):
         print("Loading the pre-trained model...")
-        # model = AutoModelForTokenClassification.from_pretrained(
-        model = BertCRFForTokenClassification.from_pretrained(
+        model = AutoModelForTokenClassification.from_pretrained(
+        # model = BertCRFForTokenClassification.from_pretrained(
             self.input_model_path,
             num_labels=len(self.tag2code),
             output_attentions=False,
@@ -197,7 +198,6 @@ class BertModel(Model):
 
                 outputs = model(
                     batch_tokens,
-                    token_type_ids=None,
                     attention_mask=batch_masks,
                     labels=batch_tags
                 )
@@ -220,6 +220,7 @@ class BertModel(Model):
             training_loss.append(avg_epoch_train_loss)
 
             # validate:
+            model.eval()
             val_loss, val_acc, val_f1, val_report = self.__test(model, validation_data)
             validation_loss.append(val_loss)
             print(f"Validation loss: {val_loss}")
@@ -263,7 +264,6 @@ class BertModel(Model):
             with torch.no_grad():
                 outputs = model(
                     batch_tokens,
-                    token_type_ids=None,
                     attention_mask=batch_masks,
                     labels=batch_tags
                 )

@@ -77,13 +77,21 @@ class LoadBSNLP(LoadDataset):
         )
         self.lang = lang
         self.random_state = 42
+        self.dataset_dirs = {
+            "train": ['trump'],
+            "dev": ['ec'],
+            "test": ['ec'],
+        }
 
     def load(self, dset: str) -> pd.DataFrame:
         dirs, _ = list_dir(self.base_fname)
         data = pd.DataFrame()
         for directory in dirs:
+            if directory not in self.dataset_dirs[dset]:
+                continue
             base_path = f"{self.base_fname}/{directory}/{self.lang}"
             _, files = list_dir(base_path)
+            print(f'directory: {directory}')
             for fname in files:
                 df = pd.read_csv(f"{base_path}/{fname}")
                 df = df[['docId', 'sentenceId', 'text', 'ner']]
@@ -91,21 +99,19 @@ class LoadBSNLP(LoadDataset):
                 df = df.drop(columns=['docId'])
                 df = df.rename(columns={"sentenceId": "sentence", "text": "word", "ner": "ner"})
                 data = pd.concat([data, df])
-        num_sentences = data['sentence'].unique()
-        train_sentences, test_sentences = train_test_split(
-                                    num_sentences,
-                                    test_size=0.2,
-                                    random_state=self.random_state,
-                                )
-        val_sentences, test_sentences = train_test_split(
-                                    test_sentences,
-                                    test_size=0.5,
-                                    random_state=self.random_state,
-                                )
+        test_sentences, val_sentences = [], []
+        if dset in ['test', 'dev']:
+            sentence_ids = data['sentence'].unique()
+            val_sentences, test_sentences = train_test_split(
+                                        sentence_ids,
+                                        test_size=0.5,
+                                        random_state=self.random_state,
+                                    )
         return {
-            "train": data.loc[data['sentence'].isin(train_sentences)],
-            "dev": data.loc[data['sentence'].isin(test_sentences)],
-            "test": data.loc[data['sentence'].isin(val_sentences)],
+            # "train": data.loc[data['sentence'].isin(train_sentences)],
+            "train": data,
+            "dev": data.loc[data['sentence'].isin(val_sentences)],
+            "test": data.loc[data['sentence'].isin(test_sentences)],
         }[dset]
 
     def train(self) -> pd.DataFrame:
@@ -156,23 +162,23 @@ class LoadCombined(LoadDataset):
 
 
 if __name__ == '__main__':
-    # loader = LoadBSNLP("sl")
+    loader = LoadBSNLP("sl")
     # loader = LoadSSJ500k()
-    loader = LoadCombined([LoadBSNLP("sl"), LoadSSJ500k()])
+    # loader = LoadCombined([LoadBSNLP("sl"), LoadSSJ500k()])
     tag2code, code2tag = loader.encoding()
     print(f"tag2code: {tag2code}")
     print(f"code2tag: {code2tag}")
 
     train_data = loader.train()
-    print(train_data.head(10))
+    # print(train_data.head(10))
     print(f"Train data: {train_data.shape[0]}, NERs: {train_data.loc[train_data['ner'] != 'O'].shape[0]}")
-    print(train_data['ner'].value_counts())
+    # print(train_data['ner'].value_counts())
     # print(train_data)
     
     dev_data = loader.dev()
     print(f"Validation data: {dev_data.shape[0]}, NERs: {dev_data.loc[dev_data['ner'] != 'O'].shape[0]}")
-    print(dev_data['ner'].value_counts())
+    # print(dev_data['ner'].value_counts())
     
     test_data = loader.test()
     print(f"Test data: {test_data.shape[0]}, NERs: {test_data.loc[test_data['ner'] != 'O'].shape[0]}")
-    print(test_data['ner'].value_counts())
+    # print(test_data['ner'].value_counts())

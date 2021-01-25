@@ -1,5 +1,6 @@
 import torch
 import pandas as pd
+import numpy as np
 
 from transformers import BertPreTrainedModel, BertModel
 from torch.nn.functional import log_softmax
@@ -16,19 +17,23 @@ class BertCRFForTokenClassification(BertPreTrainedModel):
         self.init_weights()
         self.crf = CRF(self.num_labels)
 
-    def forward(self, input_ids, attn_masks, labels=None):
-        outputs = self.bert(input_ids, attn_masks)
+    def forward(self, input_ids, attention_mask, labels=None):
+        outputs = self.bert(input_ids, attention_mask)
+        print(f"OUTPUTS {np.ndim(outputs)}")
+        print(f"OUTPUTS[0] {outputs[0].shape}")
         sequence_output = outputs[0]
         sequence_output = self.dropout(sequence_output)
         emission = self.classifier(sequence_output)
-        attn_masks = attn_masks.type(torch.uint8)
-        if labels is not None:
-            # loss = -self.crf.forward(log_softmax(emission, 2), labels, mask=attn_masks)
-            loss = -self.crf.forward(emission, labels, mask=attn_masks)
+        attention_mask = attention_mask.type(torch.uint8)
+        if self.training:
+            # loss = -self.crf.forward(log_softmax(emission, 2), labels, mask=attention_mask)
+            loss = -self.crf.forward(emission, labels, mask=attention_mask)
+            print(f"CRF LOSS DIMENSION: {loss.shape}, content: {loss}")
             return loss
         else:
-            pred = self.crf.viterbi_decode(emission, attn_masks)
-            return pred
+            pred = np.array(self.crf.viterbi_decode(emission, attention_mask))
+            print(f"CRF PRED DIMENSION: {pred.shape}, content: {pred}")
+            return torch.FloatTensor(pred).to("cuda" if torch.cuda.is_available() else "cpu")
 
 
 if __name__ == '__main__':
