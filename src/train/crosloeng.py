@@ -97,7 +97,7 @@ class BertModel(Model):
         return DataLoader(data, sampler=sampler, batch_size=self.BATCH_SIZE)
 
     def flat_accuracy(self, preds, labels) -> float:
-        print(f"Preds size = {preds.shape}")
+        # print(f"Preds size = {preds.shape}")
         pred_flat = np.argmax(preds, axis=2).flatten()
         labels_flat = labels.flatten()
         return np.sum(pred_flat == labels_flat) / float(len(labels_flat))
@@ -293,7 +293,7 @@ class BertModel(Model):
             raise Exception(f"A model with the given parameters has not been trained yet,"\
             f" or is not located at `{self.output_model_path}`.")
         _, models = list_dir(self.output_model_path)
-        models = [model_fname for model_fname in models if model_fname.startswith(self.output_model_fname) and model_fname.endswith('.pk')]
+        models = [model_fname for model_fname in models if model_fname.startswith(self.output_model_fname) and model_fname.endswith('.pk')][-1:] # test only the last model
         if not models:
             raise Exception(f"There are no trained models with the given criteria: `{self.output_model_fname}`")
 
@@ -339,10 +339,10 @@ def main():
 
     tag2code, code2tag = LoadBSNLP("sl").encoding()
     model_names = [
-        "cro-slo-eng-bert",
-        # "bert-base-multilingual-cased",
-        # "bert-base-multilingual-uncased"
-        # "sloberta-1.0"
+        # "cro-slo-eng-bert",
+        "bert-base-multilingual-cased",
+        "bert-base-multilingual-uncased",
+        "sloberta-1.0"
     ]
     train_datasets = {
         "ssj500k-bsnlp-iterative": {
