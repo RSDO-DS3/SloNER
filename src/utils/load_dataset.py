@@ -72,47 +72,27 @@ class LoadSSJ500k(LoadDataset):
 class LoadBSNLP(LoadDataset):
     def __init__(self, lang: str):
         super().__init__(
-            "data/datasets/bsnlp/merged",
+            "data/datasets/bsnlp",
             "csv"
         )
         self.lang = lang
         self.random_state = 42
-        self.dataset_dirs = {
-            "train": ['trump'],
-            "dev": ['ec'],
-            "test": ['ec'],
-        }
+        self.merge_misc = True
 
     def load(self, dset: str) -> pd.DataFrame:
         dirs, _ = list_dir(self.base_fname)
         data = pd.DataFrame()
         for directory in dirs:
-            if directory not in self.dataset_dirs[dset]:
-                continue
-            base_path = f"{self.base_fname}/{directory}/{self.lang}"
-            _, files = list_dir(base_path)
-            print(f'directory: {directory}')
-            for fname in files:
-                df = pd.read_csv(f"{base_path}/{fname}")
-                df = df[['docId', 'sentenceId', 'text', 'ner']]
-                df['sentenceId'] = df['docId'].astype(str) + '-' + df['sentenceId'].astype('str')
-                df = df.drop(columns=['docId'])
-                df = df.rename(columns={"sentenceId": "sentence", "text": "word", "ner": "ner"})
-                data = pd.concat([data, df])
-        test_sentences, val_sentences = [], []
-        if dset in ['test', 'dev']:
-            sentence_ids = data['sentence'].unique()
-            val_sentences, test_sentences = train_test_split(
-                                        sentence_ids,
-                                        test_size=0.5,
-                                        random_state=self.random_state,
-                                    )
-        return {
-            # "train": data.loc[data['sentence'].isin(train_sentences)],
-            "train": data,
-            "dev": data.loc[data['sentence'].isin(val_sentences)],
-            "test": data.loc[data['sentence'].isin(test_sentences)],
-        }[dset]
+            fname = f"{self.base_fname}/{directory}/splits/{self.lang}/{dset}_{self.lang}.csv"
+            df = pd.read_csv(f"{fname}")
+            df = df[['docId', 'sentenceId', 'text', 'ner']]
+            df['sentenceId'] = df['docId'].astype(str) + '-' + df['sentenceId'].astype('str')
+            if self.merge_misc:
+                df['ner'] = df['ner'].map(lambda x: x.replace("PRO", "MISC").replace("EVT", "MISC"))
+            df = df.drop(columns=['docId'])
+            df = df.rename(columns={"sentenceId": "sentence", "text": "word", "ner": "ner"})
+            data = pd.concat([data, df])
+        return data
 
     def train(self) -> pd.DataFrame:
         return self.load('train')
