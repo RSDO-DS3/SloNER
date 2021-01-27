@@ -3,6 +3,8 @@ import numpy as np
 import torch
 import random
 import os
+import sys
+import logging
 import argparse
 import time
 
@@ -19,6 +21,13 @@ from src.train.model import Model
 from src.utils.load_dataset import LoadSSJ500k, LoadBSNLP, LoadCombined
 from src.utils.utils import list_dir
 from src.train.bert_crf import BertCRFForTokenClassification
+
+logging.basicConfig(
+    stream=sys.stdout,
+    level=logging.DEBUG,
+    format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+)
+logger = logging.getLogger('TrainEvalModels')
 
 
 class BertModel(Model):
@@ -37,9 +46,9 @@ class BertModel(Model):
         self.input_model_path = input_model_path
         self.output_model_path = output_model_path
         self.output_model_fname = output_model_fname
-        print(f"Output model at: {output_model_path}")
+        logger.info(f"Output model at: {output_model_path}")
         
-        print(f"Tuning entire model: {tune_entire_model}")
+        logger.info(f"Tuning entire model: {tune_entire_model}")
         self.tune_entire_model = tune_entire_model
 
         self.tokenizer = AutoTokenizer.from_pretrained(
@@ -53,9 +62,9 @@ class BertModel(Model):
         self.epochs = epochs
         self.max_grad_norm = max_grad_norm
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        print(f"Using device: {self.device}")
+        logger.info(f"Using device: {self.device}")
         self.tag2code, self.code2tag = tag2code, code2tag
-        print(f"tags: ", self.tag2code.keys())
+        logger.info(f"tags: ", self.tag2code.keys())
         self.save_weights = False
 
     def convert_input(self, input_data: pd.DataFrame):
@@ -97,7 +106,7 @@ class BertModel(Model):
         return DataLoader(data, sampler=sampler, batch_size=self.BATCH_SIZE)
 
     def flat_accuracy(self, preds, labels) -> float:
-        # print(f"Preds size = {preds.shape}")
+        # logger.info(f"Preds size = {preds.shape}")  # for debugging the CRF part of the code
         pred_flat = np.argmax(preds, axis=2).flatten()
         labels_flat = labels.flatten()
         return np.sum(pred_flat == labels_flat) / float(len(labels_flat))
@@ -106,7 +115,7 @@ class BertModel(Model):
         self,
         data_loaders: dict
     ):
-        print("Loading the pre-trained model...")
+        logger.info("Loading the pre-trained model...")
         model = AutoModelForTokenClassification.from_pretrained(
         # model = BertCRFForTokenClassification.from_pretrained(
             self.input_model_path,
@@ -118,11 +127,11 @@ class BertModel(Model):
         optimizer, loss = None, None
         
         for dataset, dataloader in data_loaders.items():
-            print(f'Training on `{dataset}`')
+            logger.info(f'Training on `{dataset}`')
             model, optimizer, loss = self.__train(model, train_data=dataloader.train(), validation_data=dataloader.dev())
 
         out_fname = f"{self.output_model_path}/{self.output_model_fname}-{time.time()}"
-        print(f"Saving the model at: {out_fname}")
+        logger.info(f"Saving the model at: {out_fname}")
         torch.save(model, f"{out_fname}.pk")
         if self.save_weights:
             torch.save({
@@ -133,7 +142,7 @@ class BertModel(Model):
                 },
                 f"{out_fname}_weights"
             )
-        print("Done!")
+        logger.info("Done!")
 
     def __train(
         self,
@@ -141,9 +150,9 @@ class BertModel(Model):
         train_data: pd.DataFrame,
         validation_data: pd.DataFrame
     ):
-        print("Loading the training data...")
+        logger.info("Loading the training data...")
         train_data = self.convert_input(train_data)
-        print("Loading the validation data...")
+        logger.info("Loading the validation data...")
         validation_data = self.convert_input(validation_data)
 
         if self.tune_entire_model:
@@ -185,7 +194,7 @@ class BertModel(Model):
         torch.cuda.manual_seed_all(seed_val)
 
         training_loss, validation_loss, loss = [], [], None
-        print(f"Training the model for {self.epochs} epochs...")
+        logger.info(f"Training the model for {self.epochs} epochs...")
         for _ in trange(self.epochs, desc="Epoch"):
             model.train()
             total_loss = 0
@@ -216,18 +225,17 @@ class BertModel(Model):
                 scheduler.step()
 
             avg_epoch_train_loss = total_loss/len(train_data)
-            print(f"Avg train loss = {avg_epoch_train_loss}")
+            logger.info(f"Avg train loss = {avg_epoch_train_loss}")
             training_loss.append(avg_epoch_train_loss)
 
             # validate:
             model.eval()
             val_loss, val_acc, val_f1, val_report = self.__test(model, validation_data)
             validation_loss.append(val_loss)
-            print(f"Validation loss: {val_loss}")
-            print(f"Validation accuracy: {val_acc}")
-            print(f"Validation F1 score: {val_f1}")
-            print(f"Classification report:")
-            print(f"{val_report}")
+            logger.info(f"Validation loss: {val_loss}")
+            logger.info(f"Validation accuracy: {val_acc}")
+            logger.info(f"Validation F1 score: {val_f1}")
+            logger.info(f"Classification report:", val_report)
 
         out_fname = f"{self.output_model_fname}-{time.time()}"
 
@@ -297,11 +305,11 @@ class BertModel(Model):
         if not models:
             raise Exception(f"There are no trained models with the given criteria: `{self.output_model_fname}`")
 
-        print("Loading the testing data...")
+        logger.info("Loading the testing data...")
         test_data = self.convert_input(test_data)
         avg_acc, avg_f1, reports = [], [], []
         for model_fname in models:
-            print(f"Loading {model_fname}...")
+            logger.info(f"Loading {model_fname}...")
             model = torch.load(
                 f"{self.output_model_path}/{model_fname}",
                 map_location=torch.device(self.device)
@@ -309,13 +317,13 @@ class BertModel(Model):
             _, acc, f1, report = self.__test(model, test_data)
             avg_acc.append(acc)
             avg_f1.append(f1)
-            print(f"Testing accuracy: {acc}")
-            print(f"Testing F1 score: {f1}")
-            print(f"Testing classification report:\n{report}")
-        print(f"Average accuracy: {np.mean(avg_acc):.4f}")
+            logger.info(f"Testing accuracy: {acc}")
+            logger.info(f"Testing F1 score: {f1}")
+            logger.info(f"Testing classification report:\n{report}")
+        logger.info(f"Average accuracy: {np.mean(avg_acc):.4f}")
         f1 = np.mean(avg_f1)
-        print(f"Average f1: {f1:.4f}")
-        print("Done.")
+        logger.info(f"Average f1: {f1:.4f}")
+        logger.info("Done.")
         return f1
 
 
@@ -331,15 +339,15 @@ def parse_args():
 
 def main():
     args = parse_args()
-    print(f"Training: {args.train}")
-    print(f"Train iterations: {args.train_iterations}")
-    print(f"Epochs: {args.epochs}")
-    print(f"Full finetuning: {args.full_finetuning}")
-    print(f"Testing: {args.test}")
+    logger.info(f"Training: {args.train}")
+    logger.info(f"Train iterations: {args.train_iterations}")
+    logger.info(f"Epochs: {args.epochs}")
+    logger.info(f"Full finetuning: {args.full_finetuning}")
+    logger.info(f"Testing: {args.test}")
 
     tag2code, code2tag = LoadBSNLP("sl").encoding()
     model_names = [
-        # "cro-slo-eng-bert",
+        "cro-slo-eng-bert",
         "bert-base-multilingual-cased",
         "bert-base-multilingual-uncased",
         "sloberta-1.0"
@@ -365,7 +373,7 @@ def main():
     }
     test_f1_scores = []
     for model_name, fine_tuning in product(model_names, [True, False]):
-        print(f"Working on model: `{model_name}`...")
+        logger.info(f"Working on model: `{model_name}`...")
         for train_bundle, loaders in train_datasets.items():
             bert = BertModel(
                 tag2code=tag2code,
@@ -380,12 +388,12 @@ def main():
             )
 
             if args.train:
-                print(f"Training data bundle: `{train_bundle}`")
+                logger.info(f"Training data bundle: `{train_bundle}`")
                 bert.train(loaders)
 
             if args.test:
                 for test_dataset, dataloader in test_datasets.items():
-                    print(f"Testing on `{test_dataset}`")
+                    logger.info(f"Testing on `{test_dataset}`")
                     f1 = bert.test(test_data=dataloader.test())
                     test_f1_scores.append({
                         "model_name": model_name,
@@ -395,9 +403,9 @@ def main():
                         "test_dataset": test_dataset,
                         "f1_score": f1
                     })
-                    print(f"[{train_bundle}][{test_dataset}] F1 = {f1}")
+                    logger.info(f"[{train_bundle}][{test_dataset}] F1 = {f1}")
     scores = pd.DataFrame(test_f1_scores)
-    print(scores)
+    logger.info('Scores = ', scores)
     scores.to_csv(f'./data/models/f1_scores-{time.time()}.csv', index=False)
 
 
