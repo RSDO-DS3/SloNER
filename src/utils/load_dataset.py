@@ -72,7 +72,7 @@ class LoadSSJ500k(LoadDataset):
 class LoadBSNLP(LoadDataset):
     def __init__(self, lang: str):
         super().__init__(
-            "data/datasets/bsnlp",
+            "data/datasets/bsnlp/merged",
             "csv"
         )
         self.lang = lang
