@@ -20,5 +20,5 @@ class Model:
     def train(self, data_loaders: dict):
         pass
 
-    def test(self, test_data: pd.DataFrame) -> float:
+    def test(self, test_data: pd.DataFrame) -> (float, float, float):
         pass

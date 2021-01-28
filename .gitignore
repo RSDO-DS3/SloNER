@@ -246,6 +246,9 @@ data/best_*
 data/models/
 data/datasets/
 data/ne/
+data/runs
+!data/runs/*.png
+!data/runs/*.csv
 misc/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,vscode

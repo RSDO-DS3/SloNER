@@ -71,12 +71,26 @@ class LoadSSJ500k(LoadDataset):
 
 
 class LoadBSNLP(LoadDataset):
-    def __init__(self, lang: str, merge_misc: bool = True, print_debug: bool = False):
+    def __init__(
+        self,
+        lang: str = 'all',
+        year: str = 'all',
+        merge_misc: bool = True,
+        print_debug: bool = False
+    ):
         super().__init__(
             "data/datasets/bsnlp",
             "csv",
             print_debug=print_debug,
         )
+        datasets = {
+            "2017": ["ec", "trump"],
+            "2021": ["asia_bibi", "brexit", "nord_stream", "other", "ryanair"],
+            "all": ["ec", "trump", "asia_bibi", "brexit", "nord_stream", "other", "ryanair"],
+        }
+        if year not in datasets:
+            raise Exception(f"Invalid subset chosen: {year}")
+        self.dirs = datasets[year]
         self.langs = ['bg', 'cs', 'pl', 'ru', 'sl', 'uk']
         if lang in self.langs:
             self.lang = [lang]
@@ -92,6 +106,8 @@ class LoadBSNLP(LoadDataset):
         dirs, _ = list_dir(self.base_fname)
         data = pd.DataFrame()
         for directory in dirs:
+            if directory not in self.dirs:
+                continue
             for lang in self.langs:
                 fname = f"{self.base_fname}/{directory}/splits/{lang}/{dset}_{lang}.csv"
                 try:

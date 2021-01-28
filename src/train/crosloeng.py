@@ -14,7 +14,7 @@ from torch.utils.data import TensorDataset, DataLoader, RandomSampler
 from transformers import AutoTokenizer, AutoModelForTokenClassification, AdamW
 from transformers import get_linear_schedule_with_warmup, PreTrainedModel
 from keras.preprocessing.sequence import pad_sequences
-from seqeval.metrics import f1_score, accuracy_score, classification_report
+from seqeval.metrics import f1_score, precision_score, recall_score, accuracy_score, classification_report
 from matplotlib import pyplot as plt
 from itertools import product
 
@@ -33,22 +33,23 @@ logger = logging.getLogger('TrainEvalModels')
 
 class BertModel(Model):
     def __init__(
-        self, 
+        self,
         tag2code,
         code2tag,
-        epochs: int = 3, 
+        output_model_path: str,  # this is the output dir
+        output_model_fname: str,   # this is the output file name
+        tune_entire_model: bool,
+        epochs: int = 3,
         max_grad_norm: float = 1.0,
         input_model_path: str = 'data/models/cro-slo-eng-bert',  # this is a directory
-        output_model_path: str = 'data/models/cro-slo-eng-bert-ssj500k/',  # this is the output dir
-        output_model_fname: str = 'cro-slo-eng-bert-ssj500k',  # this is the output file name, the current time is appended automatically and `.pk`
-        tune_entire_model: bool = True
+
     ):
         super().__init__()
         self.input_model_path = input_model_path
         self.output_model_path = output_model_path
         self.output_model_fname = output_model_fname
         logger.info(f"Output model at: {output_model_path}")
-        
+
         logger.info(f"Tuning entire model: {tune_entire_model}")
         self.tune_entire_model = tune_entire_model
 
@@ -116,7 +117,7 @@ class BertModel(Model):
         self,
         data_loaders: dict
     ):
-        logger.info("Loading the pre-trained model...")
+        logger.info(f"Loading the pre-trained model `{self.input_model_path}`...")
         model = AutoModelForTokenClassification.from_pretrained(
         # model = BertCRFForTokenClassification.from_pretrained(
             self.input_model_path,
@@ -126,12 +127,12 @@ class BertModel(Model):
         )
         model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
         optimizer, loss = None, None
-        
+
         for dataset, dataloader in data_loaders.items():
             logger.info(f'Training on `{dataset}`')
             model, optimizer, loss = self.__train(model, train_data=dataloader.train(), validation_data=dataloader.dev())
 
-        out_fname = f"{self.output_model_path}/{self.output_model_fname}-{time.time()}"
+        out_fname = f"{self.output_model_path}/{self.output_model_fname}"
         logger.info(f"Saving the model at: {out_fname}")
         torch.save(model, f"{out_fname}.pk")
         if self.save_weights:
@@ -226,19 +227,16 @@ class BertModel(Model):
                 scheduler.step()
 
             avg_epoch_train_loss = total_loss/len(train_data)
-            logger.info(f"Avg train loss = {avg_epoch_train_loss}")
+            logger.info(f"Avg train loss = {avg_epoch_train_loss:.4f}")
             training_loss.append(avg_epoch_train_loss)
 
             # validate:
             model.eval()
-            val_loss, val_acc, val_f1, val_report = self.__test(model, validation_data)
+            val_loss, val_acc, val_f1, val_p, val_r, val_report = self.__test(model, validation_data)
             validation_loss.append(val_loss)
-            logger.info(f"Validation loss: {val_loss}")
-            logger.info(f"Validation accuracy: {val_acc}")
-            logger.info(f"Validation F1 score: {val_f1}")
-            logger.info(f"Classification report: {val_report}")
-
-        out_fname = f"{self.output_model_fname}-{time.time()}"
+            logger.info(f"Validation loss: {val_loss:.4f}")
+            logger.info(f"Validation accuracy: {val_acc:.4f}, P: {val_p:.4f}, R: {val_r:.4f}, F1 score: {val_f1:.4f}")
+            logger.info(f"Classification report:\n{val_report}")
 
         fig, ax = plt.subplots()
         ax.plot(training_loss, label="Traing loss")
@@ -247,9 +245,9 @@ class BertModel(Model):
         ax.set_title("Model Loss")
         ax.set_ylabel("Loss")
         ax.set_xlabel("Epoch")
-        fig.savefig(f"./figures/{out_fname}-loss.png")
+        fig.savefig(f"{self.output_model_path}/{self.output_model_fname}-loss.png")
         return model, optimizer, loss
-    
+
     def translate(self, predictions: list, labels: list) -> (list, list):
         translated_predictions, translated_labels = [], []
         for preds, labs in zip(predictions, labels):
@@ -263,7 +261,7 @@ class BertModel(Model):
             translated_labels.append(sentence_labels)
         return translated_predictions, translated_labels
 
-    def __test(self, model: PreTrainedModel, data: DataLoader) -> (float, float, float, str):
+    def __test(self, model: PreTrainedModel, data: DataLoader) -> (float, float, float, float, float, str):
         eval_loss, eval_accuracy = 0., 0.
         eval_steps, eval_examples = 0, 0
         eval_predictions, eval_labels = [], []
@@ -288,19 +286,21 @@ class BertModel(Model):
             eval_steps += 1
 
         eval_loss = eval_loss / eval_steps
-        
+
         predicted_tags, valid_tags = self.translate(eval_predictions, eval_labels)
 
         score_acc = accuracy_score(valid_tags, predicted_tags)
         score_f1 = f1_score(valid_tags, predicted_tags)
+        score_p = precision_score(valid_tags, predicted_tags)
+        score_r = recall_score(valid_tags, predicted_tags)
         report = classification_report(valid_tags, predicted_tags)
 
-        return eval_loss, score_acc, score_f1, report
+        return eval_loss, score_acc, score_f1, score_p, score_r, report
 
-    def test(self, test_data: pd.DataFrame) -> float:
+    def test(self, test_data: pd.DataFrame) -> (float, float, float):
         if not (os.path.exists(self.output_model_path) and os.path.isdir(self.output_model_path)):
-            raise Exception(f"A model with the given parameters has not been trained yet,"\
-            f" or is not located at `{self.output_model_path}`.")
+            raise Exception(f"A model with the given parameters has not been trained yet,"
+                            f" or is not located at `{self.output_model_path}`.")
         _, models = list_dir(self.output_model_path)
         models = [model_fname for model_fname in models if model_fname.startswith(self.output_model_fname) and model_fname.endswith('.pk')][-1:] # test only the last model
         if not models:
@@ -308,24 +308,27 @@ class BertModel(Model):
 
         logger.info("Loading the testing data...")
         test_data = self.convert_input(test_data)
-        avg_acc, avg_f1, reports = [], [], []
+        avg_acc, avg_f1, avg_p, avg_r, reports = [], [], [], [], []
         for model_fname in models:
             logger.info(f"Loading {model_fname}...")
             model = torch.load(
                 f"{self.output_model_path}/{model_fname}",
                 map_location=torch.device(self.device)
             )
-            _, acc, f1, report = self.__test(model, test_data)
+            _, acc, f1, p, r, report = self.__test(model, test_data)
             avg_acc.append(acc)
             avg_f1.append(f1)
+            avg_p.append(p)
+            avg_r.append(r)
             logger.info(f"Testing accuracy: {acc}")
             logger.info(f"Testing F1 score: {f1}")
             logger.info(f"Testing classification report:\n{report}")
         logger.info(f"Average accuracy: {np.mean(avg_acc):.4f}")
         f1 = np.mean(avg_f1)
-        logger.info(f"Average f1: {f1:.4f}")
-        logger.info("Done.")
-        return f1
+        p = np.mean(avg_p)
+        r = np.mean(avg_r)
+        logger.info(f"Average P: {p:.4f}, R: {r:.4f}, F1: {f1:.4f}")
+        return p, r, f1
 
 
 def parse_args():
@@ -350,7 +353,7 @@ def main():
     # TODO: save models from a run in their own directory.
 
     run_time = datetime.now().isoformat()[:-7]  # exclude the ms
-    run_path = f'./data/runs/{run_time}'
+    run_path = f'./data/runs/run_{run_time}'
     logger.info(f'Running path: `{run_path}`')
     os.mkdir(run_path)
 
@@ -358,26 +361,48 @@ def main():
         "cro-slo-eng-bert",
         "bert-base-multilingual-cased",
         "bert-base-multilingual-uncased",
-        "sloberta-1.0"
+        "sloberta-1.0",
     ]
     train_datasets = {
-        "ssj500k-bsnlp-iterative": {
+        "ssj500k-bsnlp2017-iterative": {
             "ssj500k": LoadSSJ500k(),
-            "bsnlp": LoadBSNLP('sl')
+            "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
         },
-        "ssj500k-bsnlp-combined": {
-            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP('sl')])
+        "ssj500k-bsnlp2017-combined": {
+            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2017')]),
+        },
+        "ssj500k-bsnlp2021-iterative": {
+            "ssj500k": LoadSSJ500k(),
+            "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        },
+        "ssj500k-bsnlp2021-combined": {
+            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2021')]),
+        },
+        "ssj500k-bsnlp-all-iterative": {
+            "ssj500k": LoadSSJ500k(),
+            "bsnlp2017": LoadBSNLP(lang='sl', year='all'),
+        },
+        "ssj500k-bsnlp-all-combined": {
+            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='all')]),
         },
         "ssj500k": {
-            "ssj500k": LoadSSJ500k()
+            "ssj500k": LoadSSJ500k(),
         },
-        "bsnlp": {
-            "bsnlp": LoadBSNLP('sl')
-        }
+        "bsnlp2017": {
+            "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
+        },
+        "bsnlp2021": {
+            "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        },
+        "bsnlp-all": {
+            "bsnlp-all": LoadBSNLP(lang='sl', year='all'),
+        },
     }
     test_datasets = {
         "ssj500k": LoadSSJ500k(),
-        "bsnlp": LoadBSNLP('sl')
+        "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
+        "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        "bsnlp-all": LoadBSNLP(lang='sl', year='all')
     }
     test_f1_scores = []
     for model_name, fine_tuning in product(model_names, [True, False]):
@@ -402,19 +427,21 @@ def main():
             if args.test:
                 for test_dataset, dataloader in test_datasets.items():
                     logger.info(f"Testing on `{test_dataset}`")
-                    f1 = bert.test(test_data=dataloader.test())
+                    p, r, f1 = bert.test(test_data=dataloader.test())
                     test_f1_scores.append({
                         "model_name": model_name,
                         "fine_tuned": fine_tuning,
                         "train_bundle": train_bundle,
                         "epochs": args.epochs,
                         "test_dataset": test_dataset,
+                        "precision_score": p,
+                        "recall_score": r,
                         "f1_score": f1
                     })
-                    logger.info(f"[{train_bundle}][{test_dataset}] F1 = {f1}")
+                    logger.info(f"[{train_bundle}][{test_dataset}] P = {p:.4f}, R = {r:.4f}, F1 = {f1:.4f}")
     scores = pd.DataFrame(test_f1_scores)
-    logger.info(f'Scores = {scores}')
-    scores.to_csv(f'./data/models/f1_scores-{time.time()}.csv', index=False)
+    logger.info(f'Entire training suite is done.')
+    scores.to_csv(f'{run_path}/training_scores-{time.time()}.csv', index=False)
 
 
 if __name__ == '__main__':
