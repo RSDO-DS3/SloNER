@@ -64,7 +64,7 @@ class BertModel(Model):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         logger.info(f"Using device: {self.device}")
         self.tag2code, self.code2tag = tag2code, code2tag
-        logger.info(f"tags: ", self.tag2code.keys())
+        logger.info(f"tags: {self.tag2code.keys()}')
         self.save_weights = False
 
     def convert_input(self, input_data: pd.DataFrame):
@@ -235,7 +235,7 @@ class BertModel(Model):
             logger.info(f"Validation loss: {val_loss}")
             logger.info(f"Validation accuracy: {val_acc}")
             logger.info(f"Validation F1 score: {val_f1}")
-            logger.info(f"Classification report:", val_report)
+            logger.info(f"Classification report: {val_report}')
 
         out_fname = f"{self.output_model_fname}-{time.time()}"
 
@@ -346,6 +346,7 @@ def main():
     logger.info(f"Testing: {args.test}")
 
     tag2code, code2tag = LoadBSNLP("sl").encoding()
+    # TODO: save models from a run in their own directory.
     model_names = [
         "cro-slo-eng-bert",
         "bert-base-multilingual-cased",
@@ -405,7 +406,7 @@ def main():
                     })
                     logger.info(f"[{train_bundle}][{test_dataset}] F1 = {f1}")
     scores = pd.DataFrame(test_f1_scores)
-    logger.info('Scores = ', scores)
+    logger.info(f'Scores = {scores}')
     scores.to_csv(f'./data/models/f1_scores-{time.time()}.csv', index=False)
 
 
