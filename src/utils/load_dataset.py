@@ -9,9 +9,10 @@ from src.utils.utils import list_dir
 
 
 class LoadDataset:
-    def __init__(self, base_fname: str, format: str):
+    def __init__(self, base_fname: str, format: str, print_debug: bool = False):
         self.base_fname = base_fname
         self.data_format = format
+        self.print_debug = print_debug
 
     def load(self, dset: str) -> pd.DataFrame:
         return pd.DataFrame()
@@ -70,28 +71,41 @@ class LoadSSJ500k(LoadDataset):
 
 
 class LoadBSNLP(LoadDataset):
-    def __init__(self, lang: str):
+    def __init__(self, lang: str, merge_misc: bool = True, print_debug: bool = False):
         super().__init__(
             "data/datasets/bsnlp",
-            "csv"
+            "csv",
+            print_debug=print_debug,
         )
-        self.lang = lang
+        self.langs = ['bg', 'cs', 'pl', 'ru', 'sl', 'uk']
+        if lang in self.langs:
+            self.lang = [lang]
+        elif lang == 'all':
+            self.lang = self.langs
+        else:
+            raise Exception("Invalid language option.")
         self.random_state = 42
-        self.merge_misc = True
+        self.merge_misc = merge_misc
+        # TODO: add different seed option
 
     def load(self, dset: str) -> pd.DataFrame:
         dirs, _ = list_dir(self.base_fname)
         data = pd.DataFrame()
         for directory in dirs:
-            fname = f"{self.base_fname}/{directory}/splits/{self.lang}/{dset}_{self.lang}.csv"
-            df = pd.read_csv(f"{fname}")
-            df = df[['docId', 'sentenceId', 'text', 'ner']]
-            df['sentenceId'] = df['docId'].astype(str) + '-' + df['sentenceId'].astype('str')
-            if self.merge_misc:
-                df['ner'] = df['ner'].map(lambda x: x.replace("PRO", "MISC").replace("EVT", "MISC"))
-            df = df.drop(columns=['docId'])
-            df = df.rename(columns={"sentenceId": "sentence", "text": "word", "ner": "ner"})
-            data = pd.concat([data, df])
+            for lang in self.langs:
+                fname = f"{self.base_fname}/{directory}/splits/{lang}/{dset}_{lang}.csv"
+                try:
+                    df = pd.read_csv(f"{fname}")
+                except:
+                    if self.print_debug: print(f"[{directory}] skipping {lang}.")
+                    continue
+                df = df[['docId', 'sentenceId', 'text', 'ner']]
+                df['sentenceId'] = df['docId'].astype(str) + '-' + df['sentenceId'].astype('str')
+                if self.merge_misc:
+                    df['ner'] = df['ner'].map(lambda x: x.replace("PRO", "MISC").replace("EVT", "MISC"))
+                df = df.drop(columns=['docId'])
+                df = df.rename(columns={"sentenceId": "sentence", "text": "word", "ner": "ner"})
+                data = pd.concat([data, df])
         return data
 
     def train(self) -> pd.DataFrame:

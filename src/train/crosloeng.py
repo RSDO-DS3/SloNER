@@ -8,6 +8,7 @@ import logging
 import argparse
 import time
 
+from datetime import datetime
 from tqdm import trange, tqdm
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler
 from transformers import AutoTokenizer, AutoModelForTokenClassification, AdamW
@@ -64,7 +65,7 @@ class BertModel(Model):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         logger.info(f"Using device: {self.device}")
         self.tag2code, self.code2tag = tag2code, code2tag
-        logger.info(f"tags: {self.tag2code.keys()}')
+        logger.info(f"tags: {self.tag2code.keys()}")
         self.save_weights = False
 
     def convert_input(self, input_data: pd.DataFrame):
@@ -235,7 +236,7 @@ class BertModel(Model):
             logger.info(f"Validation loss: {val_loss}")
             logger.info(f"Validation accuracy: {val_acc}")
             logger.info(f"Validation F1 score: {val_f1}")
-            logger.info(f"Classification report: {val_report}')
+            logger.info(f"Classification report: {val_report}")
 
         out_fname = f"{self.output_model_fname}-{time.time()}"
 
@@ -347,6 +348,12 @@ def main():
 
     tag2code, code2tag = LoadBSNLP("sl").encoding()
     # TODO: save models from a run in their own directory.
+
+    run_time = datetime.now().isoformat()[:-7]  # exclude the ms
+    run_path = f'./data/runs/{run_time}'
+    logger.info(f'Running path: `{run_path}`')
+    os.mkdir(run_path)
+
     model_names = [
         "cro-slo-eng-bert",
         "bert-base-multilingual-cased",
@@ -381,11 +388,11 @@ def main():
                 code2tag=code2tag,
                 epochs=args.epochs,
                 input_model_path=f'./data/models/{model_name}',
-                output_model_path=f'./data/models/{model_name}-{train_bundle}',
+                output_model_path=run_path,
                 output_model_fname=f'{model_name}-{train_bundle}'
                                    f"{'-finetuned' if fine_tuning else ''}"
                                    f'-{args.epochs}-epochs',
-                tune_entire_model=fine_tuning
+                tune_entire_model=fine_tuning,
             )
 
             if args.train:
