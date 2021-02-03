@@ -7,6 +7,7 @@ import sys
 import logging
 import argparse
 import time
+import transformers
 
 from datetime import datetime
 from tqdm import trange, tqdm
@@ -82,6 +83,8 @@ class BertModel(Model):
                 sentence_tags.extend([self.tag2code[word_row["ner"]]] * len(word_tokens))
 
             sentence_ids = self.tokenizer.convert_tokens_to_ids(sentence_tokens)
+            if len(sentence_ids) > self.MAX_LENGTH:
+                logger.error(f"SENTENCE {sentence} LONGER THAN {self.MAX_LENGTH}: {len(sentence_ids)}")
             tokens.append(sentence_ids)
             tags.append(sentence_tags)
         # padding is required to spill the sentence tokens in case there are sentences longer than 128 words
@@ -107,11 +110,8 @@ class BertModel(Model):
         sampler = RandomSampler(data)
         return DataLoader(data, sampler=sampler, batch_size=self.BATCH_SIZE)
 
-    def flat_accuracy(self, preds, labels) -> float:
-        # logger.info(f"Preds size = {preds.shape}")  # for debugging the CRF part of the code
-        pred_flat = np.argmax(preds, axis=2).flatten()
-        labels_flat = labels.flatten()
-        return np.sum(pred_flat == labels_flat) / float(len(labels_flat))
+    def convert_output(self):
+        pass
 
     def train(
         self,
@@ -122,10 +122,14 @@ class BertModel(Model):
         # model = BertCRFForTokenClassification.from_pretrained(
             self.input_model_path,
             num_labels=len(self.tag2code),
+            label2id=self.tag2code,
+            id2label=self.code2tag,
             output_attentions=False,
             output_hidden_states=False
         )
-        model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
+        # model = torch.nn.DataParallel(model.cuda(), device_ids=[0])
+        # model = model.cuda()
+        model = model.to(self.device)
         optimizer, loss = None, None
 
         for dataset, dataloader in data_loaders.items():
@@ -135,6 +139,8 @@ class BertModel(Model):
         out_fname = f"{self.output_model_path}/{self.output_model_fname}"
         logger.info(f"Saving the model at: {out_fname}")
         torch.save(model, f"{out_fname}.pk")
+        model.save_pretrained(out_fname)
+        self.tokenizer.save_pretrained(out_fname)
         if self.save_weights:
             torch.save({
                     "epoch": self.epochs,
@@ -262,7 +268,7 @@ class BertModel(Model):
         return translated_predictions, translated_labels
 
     def __test(self, model: PreTrainedModel, data: DataLoader) -> (float, float, float, float, float, str):
-        eval_loss, eval_accuracy = 0., 0.
+        eval_loss = 0.
         eval_steps, eval_examples = 0, 0
         eval_predictions, eval_labels = [], []
         model.eval()
@@ -278,7 +284,6 @@ class BertModel(Model):
             label_ids = batch_tags.to('cpu').numpy()
 
             eval_loss += outputs[0].mean().item()
-            eval_accuracy += self.flat_accuracy(logits, label_ids)
             eval_predictions.extend([list(p) for p in np.argmax(logits, axis=2)])
             eval_labels.extend(label_ids)
 
@@ -320,8 +325,8 @@ class BertModel(Model):
             avg_f1.append(f1)
             avg_p.append(p)
             avg_r.append(r)
-            logger.info(f"Testing accuracy: {acc}")
-            logger.info(f"Testing F1 score: {f1}")
+            logger.info(f"Testing accuracy: {acc:.4f}")
+            logger.info(f"Testing F1 score: {f1:.4f}")
             logger.info(f"Testing classification report:\n{report}")
         logger.info(f"Average accuracy: {np.mean(avg_acc):.4f}")
         f1 = np.mean(avg_f1)
@@ -348,9 +353,11 @@ def main():
     logger.info(f"Epochs: {args.epochs}")
     logger.info(f"Full finetuning: {args.full_finetuning}")
     logger.info(f"Testing: {args.test}")
+    logger.info(f"Torch version {torch.__version__}")
+    logger.info(f"Transformers version {transformers.__version__}")
 
+    # TODO: Fix this
     tag2code, code2tag = LoadBSNLP("sl").encoding()
-    # TODO: save models from a run in their own directory.
 
     run_time = datetime.now().isoformat()[:-7]  # exclude the ms
     run_path = f'./data/runs/run_{run_time}'
@@ -358,54 +365,54 @@ def main():
     os.mkdir(run_path)
 
     model_names = [
-        "cro-slo-eng-bert",
+        # "cro-slo-eng-bert",
         "bert-base-multilingual-cased",
-        "bert-base-multilingual-uncased",
-        "sloberta-1.0",
+        # "bert-base-multilingual-uncased",
+        # "sloberta-1.0",
     ]
     train_datasets = {
-        "ssj500k-bsnlp2017-iterative": {
-            "ssj500k": LoadSSJ500k(),
-            "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
-        },
-        "ssj500k-bsnlp2017-combined": {
-            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2017')]),
-        },
-        "ssj500k-bsnlp2021-iterative": {
-            "ssj500k": LoadSSJ500k(),
-            "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
-        },
-        "ssj500k-bsnlp2021-combined": {
-            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2021')]),
-        },
-        "ssj500k-bsnlp-all-iterative": {
-            "ssj500k": LoadSSJ500k(),
-            "bsnlp2017": LoadBSNLP(lang='sl', year='all'),
-        },
-        "ssj500k-bsnlp-all-combined": {
-            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='all')]),
-        },
+        # "ssj500k-bsnlp2017-iterative": {
+        #     "ssj500k": LoadSSJ500k(),
+        #     "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
+        # },
+        # "ssj500k-bsnlp2017-combined": {
+        #     "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2017')]),
+        # },
+        # "ssj500k-bsnlp2021-iterative": {
+        #     "ssj500k": LoadSSJ500k(),
+        #     "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        # },
+        # "ssj500k-bsnlp2021-combined": {
+        #     "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2021')]),
+        # },
+        # "ssj500k-bsnlp-all-iterative": {
+        #     "ssj500k": LoadSSJ500k(),
+        #     "bsnlp2017": LoadBSNLP(lang='sl', year='all'),
+        # },
+        # "ssj500k-bsnlp-all-combined": {
+        #     "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='all')]),
+        # },
         "ssj500k": {
             "ssj500k": LoadSSJ500k(),
         },
-        "bsnlp2017": {
-            "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
-        },
-        "bsnlp2021": {
-            "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
-        },
-        "bsnlp-all": {
-            "bsnlp-all": LoadBSNLP(lang='sl', year='all'),
-        },
+        # "bsnlp2017": {
+        #     "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
+        # },
+        # "bsnlp2021": {
+        #     "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        # },
+        # "bsnlp-all": {
+        #     "bsnlp-all": LoadBSNLP(lang='sl', year='all'),
+        # },
     }
     test_datasets = {
         "ssj500k": LoadSSJ500k(),
-        "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
-        "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
-        "bsnlp-all": LoadBSNLP(lang='sl', year='all')
+        # "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
+        # "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        # "bsnlp-all": LoadBSNLP(lang='sl', year='all')
     }
     test_f1_scores = []
-    for model_name, fine_tuning in product(model_names, [True, False]):
+    for model_name, fine_tuning in product(model_names, [True]): #, False]):
         logger.info(f"Working on model: `{model_name}`...")
         for train_bundle, loaders in train_datasets.items():
             bert = BertModel(

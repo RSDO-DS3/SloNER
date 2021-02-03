@@ -3,10 +3,10 @@
 # build a new container:
 singularity build <local_target>.sif docker://<URL>
 # e.g.
-singularity build ./containers/sing-pavlov-container.sif docker://pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime
+singularity build ./containers/container.sif docker://pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime
 
 # install dependencies within the container
-singularity exec ./containers/sing-pavlov-container.sif pip install -r requirements.txt
+singularity exec ./containers/container.sif pip install -r requirements.txt
 
 # run the container
 singularity run --nv ./containers/sing-container.sif

@@ -74,7 +74,6 @@ tqdm
 traitlets==5.0.5
 transformers==3.5.1
 typing-extensions==3.7.4.3
-urllib3==1.26.2
 wcwidth==0.2.5
 Werkzeug==1.0.1
 wrapt==1.12.1
