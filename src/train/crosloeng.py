@@ -365,51 +365,51 @@ def main():
     os.mkdir(run_path)
 
     model_names = [
-        # "cro-slo-eng-bert",
+        "cro-slo-eng-bert",
         "bert-base-multilingual-cased",
-        # "bert-base-multilingual-uncased",
-        # "sloberta-1.0",
+        "bert-base-multilingual-uncased",
+        "sloberta-1.0",
     ]
     train_datasets = {
-        # "ssj500k-bsnlp2017-iterative": {
-        #     "ssj500k": LoadSSJ500k(),
-        #     "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
-        # },
-        # "ssj500k-bsnlp2017-combined": {
-        #     "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2017')]),
-        # },
-        # "ssj500k-bsnlp2021-iterative": {
-        #     "ssj500k": LoadSSJ500k(),
-        #     "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
-        # },
-        # "ssj500k-bsnlp2021-combined": {
-        #     "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2021')]),
-        # },
-        # "ssj500k-bsnlp-all-iterative": {
-        #     "ssj500k": LoadSSJ500k(),
-        #     "bsnlp2017": LoadBSNLP(lang='sl', year='all'),
-        # },
-        # "ssj500k-bsnlp-all-combined": {
-        #     "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='all')]),
-        # },
+        "ssj500k-bsnlp2017-iterative": {
+            "ssj500k": LoadSSJ500k(),
+            "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
+        },
+        "ssj500k-bsnlp2017-combined": {
+            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2017')]),
+        },
+        "ssj500k-bsnlp2021-iterative": {
+            "ssj500k": LoadSSJ500k(),
+            "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        },
+        "ssj500k-bsnlp2021-combined": {
+            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2021')]),
+        },
+        "ssj500k-bsnlp-all-iterative": {
+            "ssj500k": LoadSSJ500k(),
+            "bsnlp2017": LoadBSNLP(lang='sl', year='all'),
+        },
+        "ssj500k-bsnlp-all-combined": {
+            "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='all')]),
+        },
         "ssj500k": {
             "ssj500k": LoadSSJ500k(),
         },
-        # "bsnlp2017": {
-        #     "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
-        # },
-        # "bsnlp2021": {
-        #     "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
-        # },
-        # "bsnlp-all": {
-        #     "bsnlp-all": LoadBSNLP(lang='sl', year='all'),
-        # },
+        "bsnlp2017": {
+            "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
+        },
+        "bsnlp2021": {
+            "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        },
+        "bsnlp-all": {
+            "bsnlp-all": LoadBSNLP(lang='sl', year='all'),
+        },
     }
     test_datasets = {
         "ssj500k": LoadSSJ500k(),
-        # "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
-        # "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
-        # "bsnlp-all": LoadBSNLP(lang='sl', year='all')
+        "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
+        "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        "bsnlp-all": LoadBSNLP(lang='sl', year='all')
     }
     test_f1_scores = []
     for model_name, fine_tuning in product(model_names, [True]): #, False]):
