@@ -51,9 +51,13 @@ class MakePrediction:
             ne['modelTokens'] = 1
             while j < len(raw_nes) and raw_nes[j]['word'].startswith('##'):
                 if raw_nes[j]['index'] != (raw_nes[j - 1]['index'] + 1):
-                    raise Exception("Tokens are not coming one after the other")
-                if raw_nes[j]['entity'] != raw_nes[j - 1]['entity']:
-                    raise Exception("Tokens not the same type")
+                    print("Tokens are not coming one after the other, skipping")
+                    break
+                # if raw_nes[j]['entity'] != raw_nes[j - 1]['entity']:
+                #     # TODO: some smart merging technique:
+                #     #   - get all tokens
+                #     #   - determine the type by majority vote
+                #     raise Exception("Tokens not the same type")
                 ne['word'] += f'{raw_nes[j]["word"][2:]}'
                 ne['score'] = (ne['score'] + raw_nes[j]['score']) / 2
                 ne['modelTokens'] += 1

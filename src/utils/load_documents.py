@@ -38,18 +38,18 @@ class LoadBSNLPDocuments(LoadDocuments):
     def load(
         self,
         ftype: str,
-        fun: Callable
+        fun: Callable  # NOTE: all functions must return `dict` type with `docId` available
     ) -> dict:
         data = {}
         for dataset in self.dirs:
             data[dataset] = {}
             for lang in self.langs:
-                data[dataset][lang] = []
+                data[dataset][lang] = {}
                 path = f'{self.path}/{dataset}/{ftype}/{lang}'
                 _, files = list_dir(path)
                 for fname in files:
                     result = fun(f'{path}/{fname}')
-                    data[dataset][lang].append(result)
+                    data[dataset][lang][result['docId']] = result
         return data
 
     def load_raw(self) -> dict:
