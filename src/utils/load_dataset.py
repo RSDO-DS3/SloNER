@@ -4,6 +4,7 @@ import numpy as np
 
 from sklearn.model_selection import train_test_split
 from src.utils.utils import list_dir
+from typing import Iterable
 
 # pd.set_option('display.max_rows', None)  # only for debugging purposes
 
@@ -71,6 +72,8 @@ class LoadSSJ500k(LoadDataset):
 
 
 class LoadBSNLP(LoadDataset):
+    langs = ['bg', 'cs', 'pl', 'ru', 'sl', 'uk']
+
     def __init__(
         self,
         lang: str = 'all',
@@ -91,7 +94,6 @@ class LoadBSNLP(LoadDataset):
         if year not in datasets:
             raise Exception(f"Invalid subset chosen: {year}")
         self.dirs = datasets[year]
-        self.langs = ['bg', 'cs', 'pl', 'ru', 'sl', 'uk']
         if lang in self.langs:
             self.lang = [lang]
         elif lang == 'all':

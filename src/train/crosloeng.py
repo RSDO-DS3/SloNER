@@ -8,6 +8,8 @@ import logging
 import argparse
 import time
 import transformers
+import json
+import pathlib
 
 from datetime import datetime
 from tqdm import trange, tqdm
@@ -362,15 +364,15 @@ def main():
     run_time = datetime.now().isoformat()[:-7]  # exclude the ms
     run_path = f'./data/runs/run_{run_time}'
     logger.info(f'Running path: `{run_path}`')
-    os.mkdir(run_path)
+    pathlib.Path(run_path).mkdir(parents=True)
 
     model_names = [
-        "cro-slo-eng-bert",
+        # "cro-slo-eng-bert",
         "bert-base-multilingual-cased",
-        "bert-base-multilingual-uncased",
-        "sloberta-1.0",
+        # "bert-base-multilingual-uncased",
+        # "sloberta-1.0",
     ]
-    train_datasets = {
+    slo_train_datasets = {
         "ssj500k-bsnlp2017-iterative": {
             "ssj500k": LoadSSJ500k(),
             "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
@@ -405,14 +407,20 @@ def main():
             "bsnlp-all": LoadBSNLP(lang='sl', year='all'),
         },
     }
-    test_datasets = {
+    slo_test_datasets = {
         "ssj500k": LoadSSJ500k(),
         "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
         "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
         "bsnlp-all": LoadBSNLP(lang='sl', year='all')
     }
+    years = ['2021', 'all']
+    langs = ['all']
+    langs.extend(LoadBSNLP.langs)
+
+    train_datasets = {f"bsnlp-{year}-{lang}": {f"bsnlp-{year}-{lang}": LoadBSNLP(lang=lang, year=year)} for lang, year in product(langs, years)}
+    test_datasets = {f"bsnlp-{year}-{lang}": LoadBSNLP(lang=lang, year=year) for lang, year in product(langs, years)}
     test_f1_scores = []
-    for model_name, fine_tuning in product(model_names, [True]): #, False]):
+    for model_name, fine_tuning in product(model_names, [True, False]):
         logger.info(f"Working on model: `{model_name}`...")
         for train_bundle, loaders in train_datasets.items():
             bert = BertModel(
@@ -446,9 +454,9 @@ def main():
                         "f1_score": f1
                     })
                     logger.info(f"[{train_bundle}][{test_dataset}] P = {p:.4f}, R = {r:.4f}, F1 = {f1:.4f}")
-    scores = pd.DataFrame(test_f1_scores)
+                scores = pd.DataFrame(test_f1_scores)
+                scores.to_csv(f'{run_path}/training_scores-{time.time()}.csv', index=False)
     logger.info(f'Entire training suite is done.')
-    scores.to_csv(f'{run_path}/training_scores-{time.time()}.csv', index=False)
 
 
 if __name__ == '__main__':
