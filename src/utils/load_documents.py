@@ -49,6 +49,7 @@ class LoadBSNLPDocuments(LoadDocuments):
                 _, files = list_dir(path)
                 for fname in files:
                     result = fun(f'{path}/{fname}')
+                    result['fname'] = fname
                     data[dataset][lang][result['docId']] = result
         return data
 

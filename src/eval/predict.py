@@ -2,6 +2,8 @@ import json
 
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 from transformers import pipeline
+from collections import defaultdict
+from operator import itemgetter
 
 from src.utils.load_dataset import LoadBSNLP
 
@@ -12,7 +14,7 @@ class MakePrediction:
         model_path: str = f'./data/models/bert-base-multilingual-cased-other',
     ):
         """
-            A class to extract all the NE predictions from a given document
+            A class to extract all the NE predictions from a given tokens
         :param model_path: path to a HuggingFace-transformers pre-trained model for the NER task, such as BERT Base Multilingual (Un)Cased
         """
         self.model_path = model_path
@@ -49,6 +51,8 @@ class MakePrediction:
                 continue
             j = i + 1
             ne['modelTokens'] = 1
+            category = defaultdict(lambda: 0)
+            category[ne['entity']] += 1
             while j < len(raw_nes) and raw_nes[j]['word'].startswith('##'):
                 if raw_nes[j]['index'] != (raw_nes[j - 1]['index'] + 1):
                     print("Tokens are not coming one after the other, skipping")
@@ -61,7 +65,9 @@ class MakePrediction:
                 ne['word'] += f'{raw_nes[j]["word"][2:]}'
                 ne['score'] = (ne['score'] + raw_nes[j]['score']) / 2
                 ne['modelTokens'] += 1
+                category[raw_nes[j]['entity']] += 1
                 j += 1
+            ne['entity'] = max(category.items(), key=itemgetter(1))[0]
             nes.append(ne)
         return nes
 
@@ -97,7 +103,7 @@ class MakePrediction:
         merge_nes: bool = False,
     ) -> list:
         """
-            Get the NEs from a particular document [stored in data], provided as a whole string.
+            Get the NEs from a particular tokens [stored in data], provided as a whole string.
         :param data: The input data from which the NEs are extracted
         :param merge_nes: Indicator to merge the entities together, i.e. B-XXX and I-XXX into XXX
         :return:
