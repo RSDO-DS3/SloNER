@@ -6,9 +6,7 @@ import os
 import sys
 import logging
 import argparse
-import time
 import transformers
-import json
 import pathlib
 
 from datetime import datetime
