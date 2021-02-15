@@ -85,8 +85,8 @@ class BertModel(Model):
                 sentence_tags.extend([self.tag2code[word_row["ner"]]] * len(word_tokens))
 
             sentence_ids = self.tokenizer.convert_tokens_to_ids(sentence_tokens)
-            if len(sentence_ids) > self.MAX_LENGTH:
-                logger.error(f"SENTENCE {sentence} LONGER THAN {self.MAX_LENGTH}: {len(sentence_ids)}")
+            # if len(sentence_ids) > self.MAX_LENGTH:
+            #     logger.error(f"SENTENCE {sentence} LONGER THAN {self.MAX_LENGTH}: {len(sentence_ids)}")
             tokens.append(sentence_ids)
             tags.append(sentence_tags)
         # padding is required to spill the sentence tokens in case there are sentences longer than 128 words
@@ -305,11 +305,13 @@ class BertModel(Model):
         return eval_loss, score_acc, score_f1, score_p, score_r, report
 
     def test(self, test_data: pd.DataFrame) -> (float, float, float):
+        logger.info(f"output model path: {self.output_model_path}")
         if not (os.path.exists(self.output_model_path) and os.path.isdir(self.output_model_path)):
             raise Exception(f"A model with the given parameters has not been trained yet,"
                             f" or is not located at `{self.output_model_path}`.")
-        _, models = list_dir(self.output_model_path)
-        models = [model_fname for model_fname in models if model_fname.startswith(self.output_model_fname) and model_fname.endswith('.pk')][-1:] # test only the last model
+        models, _ = list_dir(self.output_model_path)
+        models = [model_fname for model_fname in models if model_fname.startswith(self.output_model_fname)]
+        print("Models:", models)
         if not models:
             raise Exception(f"There are no trained models with the given criteria: `{self.output_model_fname}`")
 
@@ -318,10 +320,19 @@ class BertModel(Model):
         avg_acc, avg_f1, avg_p, avg_r, reports = [], [], [], [], []
         for model_fname in models:
             logger.info(f"Loading {model_fname}...")
-            model = torch.load(
+            # model = torch.load(
+            #     f"{self.output_model_path}/{model_fname}",
+            #     map_location=torch.device(self.device)
+            # )
+            model = AutoModelForTokenClassification.from_pretrained(
                 f"{self.output_model_path}/{model_fname}",
-                map_location=torch.device(self.device)
+                num_labels=len(self.tag2code),
+                label2id=self.tag2code,
+                id2label=self.code2tag,
+                output_attentions=False,
+                output_hidden_states=False
             )
+            model = model.to(self.device)
             _, acc, f1, p, r, report = self.__test(model, test_data)
             avg_acc.append(acc)
             avg_f1.append(f1)
@@ -344,6 +355,7 @@ def parse_args():
     parser.add_argument('--train-iterations', type=int, default=1)
     parser.add_argument('--epochs', type=int, default=3)
     parser.add_argument('--test', action='store_true')
+    parser.add_argument('--run-path', type=str, default=None)
     parser.add_argument('--full-finetuning', action='store_true')
     return parser.parse_args()
 
@@ -360,11 +372,14 @@ def main():
 
     # TODO: Fix this
     tag2code, code2tag = LoadBSNLP("sl").encoding()
-
-    run_time = datetime.now().isoformat()[:-7]  # exclude the ms
-    run_path = f'./data/runs/run_{run_time}'
-    logger.info(f'Running path: `{run_path}`')
-    pathlib.Path(run_path).mkdir(parents=True)
+    if not args.run_path:
+        run_time = datetime.now().isoformat()[:-7]  # exclude the ms
+        run_path = f'./data/runs/run_{run_time}'
+        pathlib.Path(run_path).mkdir(parents=True)
+    else:
+        run_path = args.run_path
+        run_time = run_path[4:]
+    logger.info(f'Running path: `{run_path}`, run time: `{run_time}`')
 
     model_names = [
         # "cro-slo-eng-bert",
@@ -454,8 +469,9 @@ def main():
                         "f1_score": f1
                     })
                     logger.info(f"[{train_bundle}][{test_dataset}] P = {p:.4f}, R = {r:.4f}, F1 = {f1:.4f}")
-                scores = pd.DataFrame(test_f1_scores)
-                scores.to_csv(f'{run_path}/training_scores-{time.time()}.csv', index=False)
+    if args.test:
+        scores = pd.DataFrame(test_f1_scores)
+        scores.to_csv(f'{run_path}/training_scores-{run_time}.csv', index=False)
     logger.info(f'Entire training suite is done.')
 
 

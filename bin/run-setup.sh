@@ -10,7 +10,7 @@
 
 set -euo pipefail
 
-CONTAINER_IMAGE_PATH="$PWD/containers/pytorch-image.sqfs"
+CONTAINER_IMAGE_PATH="$PWD/containers/pytorch-image-new.sqfs"
 
 if [ ! -e "$CONTAINER_IMAGE_PATH" ]; then
     echo "Creating the container image at $CONTAINER_IMAGE_PATH..."
