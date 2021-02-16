@@ -207,7 +207,7 @@ class BertModel(Model):
             model.train()
             total_loss = 0
             # train:
-            for step, batch in tqdm(enumerate(train_data)):
+            for step, batch in tqdm(enumerate(train_data), desc='Batch'):
                 batch_tokens, batch_masks, batch_tags = tuple(t.to(self.device) for t in batch)
 
                 # reset the grads
@@ -303,7 +303,6 @@ class BertModel(Model):
         return eval_loss, score_acc, score_f1, score_p, score_r, report
 
     def test(self, test_data: pd.DataFrame) -> (float, float, float):
-        logger.info(f"output model path: {self.output_model_path}")
         if not (os.path.exists(self.output_model_path) and os.path.isdir(self.output_model_path)):
             raise Exception(f"A model with the given parameters has not been trained yet,"
                             f" or is not located at `{self.output_model_path}`.")
@@ -336,8 +335,7 @@ class BertModel(Model):
             avg_f1.append(f1)
             avg_p.append(p)
             avg_r.append(r)
-            logger.info(f"Testing accuracy: {acc:.4f}")
-            logger.info(f"Testing F1 score: {f1:.4f}")
+            logger.info(f"Testing P: {p:.4f}, R: {r:.4f}, F1: {f1:.4f}")
             logger.info(f"Testing classification report:\n{report}")
         logger.info(f"Average accuracy: {np.mean(avg_acc):.4f}")
         f1 = np.mean(avg_f1)
@@ -430,8 +428,38 @@ def main():
     langs = ['all']
     langs.extend(LoadBSNLP.langs)
 
-    train_datasets = {f"bsnlp-{year}-{lang}": {f"bsnlp-{year}-{lang}": LoadBSNLP(lang=lang, year=year)} for lang, year in product(langs, years)}
-    test_datasets = {f"bsnlp-{year}-{lang}": LoadBSNLP(lang=lang, year=year) for lang, year in product(langs, years)}
+    # train_datasets = {f"bsnlp-{year}-{lang}": {f"bsnlp-{year}-{lang}": LoadBSNLP(lang=lang, year=year)} for lang, year in product(langs, years)}
+    # test_datasets = {f"bsnlp-{year}-{lang}": LoadBSNLP(lang=lang, year=year) for lang, year in product(langs, years)}
+    train_datasets = {
+        'bsnlp-2021-bg': {'bsnlp-2021-bg': LoadBSNLP(lang='bg', year='2021')},
+        'bsnlp-all-bg': {'bsnlp-all-bg': LoadBSNLP(lang='bg', year='all')},
+        'bsnlp-2021-cs': {'bsnlp-2021-cs': LoadBSNLP(lang='cs', year='2021')},
+        'bsnlp-all-cs': {'bsnlp-all-cs': LoadBSNLP(lang='cs', year='all')},
+        'bsnlp-2021-pl': {'bsnlp-2021-pl': LoadBSNLP(lang='pl', year='2021')},
+        'bsnlp-all-pl': {'bsnlp-all-pl': LoadBSNLP(lang='pl', year='all')},
+        'bsnlp-2021-ru': {'bsnlp-2021-ru': LoadBSNLP(lang='ru', year='2021')},
+        'bsnlp-all-ru': {'bsnlp-all-ru': LoadBSNLP(lang='ru', year='all')},
+        'bsnlp-2021-sl': {'bsnlp-2021-sl': LoadBSNLP(lang='sl', year='2021')},
+        'bsnlp-all-sl': {'bsnlp-all-sl': LoadBSNLP(lang='sl', year='all')},
+        'bsnlp-2021-uk': {'bsnlp-2021-uk': LoadBSNLP(lang='uk', year='2021')},
+        'bsnlp-all-uk': {'bsnlp-all-uk': LoadBSNLP(lang='uk', year='all')},
+        'bsnlp-2021-all': {'bsnlp-2021-all': LoadBSNLP(lang='all', year='2021')},
+        'bsnlp-all-all': {'bsnlp-all-all': LoadBSNLP(lang='all', year='all')},
+    }
+    test_datasets = {
+        "bsnlp-2021-bg": LoadBSNLP(lang='bg', year='2021'),
+        "bsnlp-all-bg": LoadBSNLP(lang='bg', year='all'),
+        "bsnlp-2021-cs": LoadBSNLP(lang='cs', year='2021'),
+        "bsnlp-all-cs": LoadBSNLP(lang='cs', year='all'),
+        "bsnlp-2021-pl": LoadBSNLP(lang='pl', year='2021'),
+        "bsnlp-all-pl": LoadBSNLP(lang='pl', year='all'),
+        "bsnlp-2021-ru": LoadBSNLP(lang='ru', year='2021'),
+        "bsnlp-all-ru": LoadBSNLP(lang='ru', year='all'),
+        "bsnlp-2021-sl": LoadBSNLP(lang='sl', year='2021'),
+        "bsnlp-all-sl": LoadBSNLP(lang='sl', year='all'),
+        "bsnlp-2021-uk": LoadBSNLP(lang='uk', year='2021'),
+        "bsnlp-all-uk": LoadBSNLP(lang='uk', year='all'),
+    }
     test_f1_scores = []
     for model_name, fine_tuning in product(model_names, [True, False]):
         logger.info(f"Working on model: `{model_name}`...")

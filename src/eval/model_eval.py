@@ -1,5 +1,8 @@
 import json
 import argparse
+import tqdm
+import logging
+import sys
 
 from collections import defaultdict
 
@@ -7,6 +10,17 @@ from src.eval.predict import MakePrediction
 from src.utils.load_documents import LoadBSNLPDocuments
 from src.utils.update_documents import UpdateBSNLPDocuments
 from src.utils.utils import list_dir
+
+
+logging.basicConfig(
+    stream=sys.stdout,
+    level=logging.DEBUG,
+    format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+)
+logger = logging.getLogger('TrainEvalModels')
+
+DEBUG = False
+warnings = []
 
 
 def parse_args():
@@ -42,7 +56,9 @@ def ungroup_sentences(
                 token[pred_key] = tags[tag_i]['entity']
                 updated += 1
             elif updated == 0 and f"{token['text']}".startswith(f"{tag['word']}"):
-                print(f"[WARNING] PARTIAL MATCH: {tag['word']} ({tag['entity']}) -> {token['text']} {token['ner']}")
+                warn = f"[WARNING] PARTIAL MATCH: {tag['word']} ({tag['entity']}) -> {token['text']} {token['ner']}"
+                warnings.append(warn)
+                if DEBUG: logger.info(warn)
                 token[pred_key] = tags[tag_i]['entity']
                 updated += 1
         used += 1 if updated > 0 else 0
@@ -50,8 +66,9 @@ def ungroup_sentences(
             unused_tags.append(tag)
 
     if len(unused_tags) > 0:
-        print(f"Unused tags: {[(tag['word'], tag['entity']) for tag in unused_tags]}")
-
+        warn = f"Unused tags: {[(tag['word'], tag['entity']) for tag in unused_tags]}"
+        warnings.append(warn)
+        if DEBUG: logger.info(warn)
     return tokens
 
 
@@ -61,33 +78,41 @@ def main():
     lang = args.lang
 
     models, _ = list_dir(run_path)
-    print(f"Models to predict: {models}")
+    logger.info(f"Models to predict: {models}")
 
     loader = LoadBSNLPDocuments(lang=lang)
     updater = UpdateBSNLPDocuments(lang=lang)
     data = loader.load_merged()
 
     predictions = {}
-    for model in models:
+    tmodel = tqdm.tqdm(models, desc="Model")
+    for model in tmodel:
         model_name = model.split('/')[-1]
         model_path = f'{run_path}/{model}'
-        print(f"Working on `{model_path}`...")
+        tmodel.set_description(f'Model: {model_name}')
         predictor = MakePrediction(model_path=model_path)
         predictions[model_name] = {}
-        for dataset, langs in data.items():
+        tdset = tqdm.tqdm(data.items(), desc="Dataset")
+        for dataset, langs in tdset:
+            tdset.set_description(f'Dataset: {dataset}')
             predictions[model_name][dataset] = {}
-            for lang, docs in langs.items():
+            tlang = tqdm.tqdm(langs.items(), desc="Language")
+            for lang, docs in tlang:
+                tlang.set_description(f'Lang: {tlang}')
                 predictions[model_name][dataset][lang] = {}
-                for docId, doc in docs.items():
+                for docId, doc in tqdm.tqdm(docs.items(), desc="Docs"):
                     tokens = []
-                    for sentence in group_sentences(doc['content']).values():
+                    for sentence in tqdm.tqdm(group_sentences(doc['content']).values(), f"Sentences {docId}"):
                         tokens.extend(predictor.get_ners(sentence))
                     predictions[model_name][dataset][lang][docId] = tokens
                     doc['content'] = ungroup_sentences(tokens, doc['content'], pred_key=f'{model_name}-NER')
     updater.update_merged(data)
-    print(predictions)
+    logger.info(predictions)
     with open(f'{run_path}/all_predictions.json', 'w') as f:
         json.dump(predictions, f)
+    logger.info("Warnings that occcured:")
+    logger.info(f"{warnings}")
+    logger.info("Done.")
 
 
 if __name__ == '__main__':
