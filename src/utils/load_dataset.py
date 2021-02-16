@@ -103,8 +103,8 @@ class LoadBSNLP(LoadDataset):
             raise Exception("Invalid language option.")
         self.random_state = 42
         self.merge_misc = merge_misc
-        if merge_misc and not misc_data_only:
-            print("WARNING: weird combination? don't merge misc and misc data only?")
+        if merge_misc and misc_data_only:
+            print("WARNING: weird combination? merge misc and misc data only?")
         self.misc_data_only = misc_data_only
 
     def load(self, dset: str) -> pd.DataFrame:
@@ -179,7 +179,7 @@ class LoadCombined(LoadDataset):
 
 
 if __name__ == '__main__':
-    loader = LoadBSNLP(lang="all", year='2021', misc_data_only=True, merge_misc=False)
+    loader = LoadBSNLP(lang="all", year='2021', merge_misc=False)
     # loader = LoadSSJ500k()
     # loader = LoadCombined([LoadBSNLP("sl"), LoadSSJ500k()])
     tag2code, code2tag = loader.encoding()

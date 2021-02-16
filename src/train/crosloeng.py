@@ -366,8 +366,6 @@ def main():
     logger.info(f"Torch version {torch.__version__}")
     logger.info(f"Transformers version {transformers.__version__}")
 
-    # TODO: Fix this
-    tag2code, code2tag = LoadBSNLP("sl").encoding()
     if not args.run_path:
         run_time = datetime.now().isoformat()[:-7]  # exclude the ms
         run_path = f'./data/runs/run_{run_time}'
@@ -424,41 +422,42 @@ def main():
         "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
         "bsnlp-all": LoadBSNLP(lang='sl', year='all')
     }
-    years = ['2021', 'all']
-    langs = ['all']
-    langs.extend(LoadBSNLP.available_langs)
 
-    # train_datasets = {f"bsnlp-{year}-{langs}": {f"bsnlp-{year}-{langs}": LoadBSNLP(langs=langs, year=year)} for langs, year in product(available_langs, years)}
-    # test_datasets = {f"bsnlp-{year}-{langs}": LoadBSNLP(langs=langs, year=year) for langs, year in product(available_langs, years)}
+    # TODO: Fix this
+    tag2code, code2tag = LoadBSNLP("sl", year='2021', merge_misc=False).encoding()
+
     train_datasets = {
-        'bsnlp-2021-bg': {'bsnlp-2021-bg': LoadBSNLP(lang='bg', year='2021')},
-        'bsnlp-all-bg': {'bsnlp-all-bg': LoadBSNLP(lang='bg', year='all')},
-        'bsnlp-2021-cs': {'bsnlp-2021-cs': LoadBSNLP(lang='cs', year='2021')},
-        'bsnlp-all-cs': {'bsnlp-all-cs': LoadBSNLP(lang='cs', year='all')},
-        'bsnlp-2021-pl': {'bsnlp-2021-pl': LoadBSNLP(lang='pl', year='2021')},
-        'bsnlp-all-pl': {'bsnlp-all-pl': LoadBSNLP(lang='pl', year='all')},
-        'bsnlp-2021-ru': {'bsnlp-2021-ru': LoadBSNLP(lang='ru', year='2021')},
-        'bsnlp-all-ru': {'bsnlp-all-ru': LoadBSNLP(lang='ru', year='all')},
-        'bsnlp-2021-sl': {'bsnlp-2021-sl': LoadBSNLP(lang='sl', year='2021')},
-        'bsnlp-all-sl': {'bsnlp-all-sl': LoadBSNLP(lang='sl', year='all')},
-        'bsnlp-2021-uk': {'bsnlp-2021-uk': LoadBSNLP(lang='uk', year='2021')},
-        'bsnlp-all-uk': {'bsnlp-all-uk': LoadBSNLP(lang='uk', year='all')},
-        'bsnlp-2021-all': {'bsnlp-2021-all': LoadBSNLP(lang='all', year='2021')},
-        'bsnlp-all-all': {'bsnlp-all-all': LoadBSNLP(lang='all', year='all')},
+        'bsnlp-2021-bg': {'bsnlp-2021-bg': LoadBSNLP(lang='bg', year='2021', merge_misc=False)},
+        'bsnlp-2021-cs': {'bsnlp-2021-cs': LoadBSNLP(lang='cs', year='2021', merge_misc=False)},
+        'bsnlp-2021-pl': {'bsnlp-2021-pl': LoadBSNLP(lang='pl', year='2021', merge_misc=False)},
+        'bsnlp-2021-ru': {'bsnlp-2021-ru': LoadBSNLP(lang='ru', year='2021', merge_misc=False)},
+        'bsnlp-2021-sl': {'bsnlp-2021-sl': LoadBSNLP(lang='sl', year='2021', merge_misc=False)},
+        'bsnlp-2021-uk': {'bsnlp-2021-uk': LoadBSNLP(lang='uk', year='2021', merge_misc=False)},
+        'bsnlp-2021-all': {'bsnlp-2021-all': LoadBSNLP(lang='all', year='2021', merge_misc=False)},
+        # 'bsnlp-all-bg': {'bsnlp-all-bg': LoadBSNLP(lang='bg', year='all')},
+        # 'bsnlp-all-cs': {'bsnlp-all-cs': LoadBSNLP(lang='cs', year='all')},
+        # 'bsnlp-all-pl': {'bsnlp-all-pl': LoadBSNLP(lang='pl', year='all')},
+        # 'bsnlp-all-ru': {'bsnlp-all-ru': LoadBSNLP(lang='ru', year='all')},
+        # 'bsnlp-all-sl': {'bsnlp-all-sl': LoadBSNLP(lang='sl', year='all')},
+        # 'bsnlp-all-uk': {'bsnlp-all-uk': LoadBSNLP(lang='uk', year='all')},
+        # 'bsnlp-all-all': {'bsnlp-all-all': LoadBSNLP(lang='all', year='all')},
     }
     test_datasets = {
-        "bsnlp-2021-bg": LoadBSNLP(lang='bg', year='2021'),
-        "bsnlp-all-bg": LoadBSNLP(lang='bg', year='all'),
-        "bsnlp-2021-cs": LoadBSNLP(lang='cs', year='2021'),
-        "bsnlp-all-cs": LoadBSNLP(lang='cs', year='all'),
-        "bsnlp-2021-pl": LoadBSNLP(lang='pl', year='2021'),
-        "bsnlp-all-pl": LoadBSNLP(lang='pl', year='all'),
-        "bsnlp-2021-ru": LoadBSNLP(lang='ru', year='2021'),
-        "bsnlp-all-ru": LoadBSNLP(lang='ru', year='all'),
-        "bsnlp-2021-sl": LoadBSNLP(lang='sl', year='2021'),
-        "bsnlp-all-sl": LoadBSNLP(lang='sl', year='all'),
-        "bsnlp-2021-uk": LoadBSNLP(lang='uk', year='2021'),
-        "bsnlp-all-uk": LoadBSNLP(lang='uk', year='all'),
+        "bsnlp-2021-bg": LoadBSNLP(lang='bg', year='2021', merge_misc=False),
+        "bsnlp-2021-cs": LoadBSNLP(lang='cs', year='2021', merge_misc=False),
+        "bsnlp-2021-pl": LoadBSNLP(lang='pl', year='2021', merge_misc=False),
+        "bsnlp-2021-ru": LoadBSNLP(lang='ru', year='2021', merge_misc=False),
+        "bsnlp-2021-sl": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
+        "bsnlp-2021-uk": LoadBSNLP(lang='uk', year='2021', merge_misc=False),
+        "bsnlp-2021-all": LoadBSNLP(lang='all', year='2021', merge_misc=False),
+
+        # Do not have EVT and PRO because 2017 data doesn't have it
+        # "bsnlp-all-bg": LoadBSNLP(lang='bg', year='all'),
+        # "bsnlp-all-cs": LoadBSNLP(lang='cs', year='all'),
+        # "bsnlp-all-pl": LoadBSNLP(lang='pl', year='all'),
+        # "bsnlp-all-ru": LoadBSNLP(lang='ru', year='all'),
+        # "bsnlp-all-sl": LoadBSNLP(lang='sl', year='all'),
+        # "bsnlp-all-uk": LoadBSNLP(lang='uk', year='all'),
     }
     test_f1_scores = []
     for model_name, fine_tuning in product(model_names, [True, False]):
