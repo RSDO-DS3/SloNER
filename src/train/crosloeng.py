@@ -426,10 +426,10 @@ def main():
     }
     years = ['2021', 'all']
     langs = ['all']
-    langs.extend(LoadBSNLP.langs)
+    langs.extend(LoadBSNLP.available_langs)
 
-    # train_datasets = {f"bsnlp-{year}-{lang}": {f"bsnlp-{year}-{lang}": LoadBSNLP(lang=lang, year=year)} for lang, year in product(langs, years)}
-    # test_datasets = {f"bsnlp-{year}-{lang}": LoadBSNLP(lang=lang, year=year) for lang, year in product(langs, years)}
+    # train_datasets = {f"bsnlp-{year}-{langs}": {f"bsnlp-{year}-{langs}": LoadBSNLP(langs=langs, year=year)} for langs, year in product(available_langs, years)}
+    # test_datasets = {f"bsnlp-{year}-{langs}": LoadBSNLP(langs=langs, year=year) for langs, year in product(available_langs, years)}
     train_datasets = {
         'bsnlp-2021-bg': {'bsnlp-2021-bg': LoadBSNLP(lang='bg', year='2021')},
         'bsnlp-all-bg': {'bsnlp-all-bg': LoadBSNLP(lang='bg', year='all')},

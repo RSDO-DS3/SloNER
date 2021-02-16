@@ -72,13 +72,14 @@ class LoadSSJ500k(LoadDataset):
 
 
 class LoadBSNLP(LoadDataset):
-    langs = ['bg', 'cs', 'pl', 'ru', 'sl', 'uk']
+    available_langs = ['bg', 'cs', 'pl', 'ru', 'sl', 'uk']
 
     def __init__(
         self,
         lang: str = 'all',
         year: str = 'all',
         merge_misc: bool = True,
+        misc_data_only: bool = False,
         print_debug: bool = False
     ):
         super().__init__(
@@ -94,15 +95,17 @@ class LoadBSNLP(LoadDataset):
         if year not in datasets:
             raise Exception(f"Invalid subset chosen: {year}")
         self.dirs = datasets[year]
-        if lang in self.langs:
-            self.lang = [lang]
+        if lang in self.available_langs:
+            self.langs = [lang]
         elif lang == 'all':
-            self.lang = self.langs
+            self.langs = self.available_langs
         else:
             raise Exception("Invalid language option.")
         self.random_state = 42
         self.merge_misc = merge_misc
-        # TODO: add different seed option
+        if merge_misc and not misc_data_only:
+            print("WARNING: weird combination? don't merge misc and misc data only?")
+        self.misc_data_only = misc_data_only
 
     def load(self, dset: str) -> pd.DataFrame:
         dirs, _ = list_dir(self.base_fname)
@@ -121,6 +124,8 @@ class LoadBSNLP(LoadDataset):
                 df['sentenceId'] = df['docId'].astype(str) + '-' + df['sentenceId'].astype('str')
                 if self.merge_misc:
                     df['ner'] = df['ner'].map(lambda x: x.replace("PRO", "MISC").replace("EVT", "MISC"))
+                if self.misc_data_only:
+                    df['ner'] = df['ner'].map(lambda x: "O" if x[2:] in ["PER", "LOC", "ORG"] else x)
                 df = df.drop(columns=['docId'])
                 df = df.rename(columns={"sentenceId": "sentence", "text": "word", "ner": "ner"})
                 data = pd.concat([data, df])
@@ -174,7 +179,7 @@ class LoadCombined(LoadDataset):
 
 
 if __name__ == '__main__':
-    loader = LoadBSNLP("sl")
+    loader = LoadBSNLP(lang="all", year='2021', misc_data_only=True, merge_misc=False)
     # loader = LoadSSJ500k()
     # loader = LoadCombined([LoadBSNLP("sl"), LoadSSJ500k()])
     tag2code, code2tag = loader.encoding()
@@ -184,13 +189,13 @@ if __name__ == '__main__':
     train_data = loader.train()
     # print(train_data.head(10))
     print(f"Train data: {train_data.shape[0]}, NERs: {train_data.loc[train_data['ner'] != 'O'].shape[0]}")
-    # print(train_data['ner'].value_counts())
+    print(train_data['ner'].value_counts())
     # print(train_data)
     
     dev_data = loader.dev()
     print(f"Validation data: {dev_data.shape[0]}, NERs: {dev_data.loc[dev_data['ner'] != 'O'].shape[0]}")
-    # print(dev_data['ner'].value_counts())
+    print(dev_data['ner'].value_counts())
     
     test_data = loader.test()
     print(f"Test data: {test_data.shape[0]}, NERs: {test_data.loc[test_data['ner'] != 'O'].shape[0]}")
-    # print(test_data['ner'].value_counts())
+    print(test_data['ner'].value_counts())
