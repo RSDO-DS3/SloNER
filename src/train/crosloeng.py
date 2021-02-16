@@ -376,7 +376,7 @@ def main():
         pathlib.Path(run_path).mkdir(parents=True)
     else:
         run_path = args.run_path
-        run_time = run_path[4:]
+        run_time = run_path.split('/')[-1][4:]
     logger.info(f'Running path: `{run_path}`, run time: `{run_time}`')
 
     model_names = [
