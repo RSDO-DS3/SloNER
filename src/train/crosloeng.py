@@ -138,18 +138,8 @@ class BertModel(Model):
 
         out_fname = f"{self.output_model_path}/{self.output_model_fname}"
         logger.info(f"Saving the model at: {out_fname}")
-        torch.save(model, f"{out_fname}.pk")
         model.save_pretrained(out_fname)
         self.tokenizer.save_pretrained(out_fname)
-        if self.save_weights:
-            torch.save({
-                    "epoch": self.epochs,
-                    "model_state_dict": model.state_dict(),
-                    "optimizer_state_dict": optimizer.state_dict(),
-                    "loss": loss,
-                },
-                f"{out_fname}_weights"
-            )
         logger.info("Done!")
 
     def __train(
@@ -317,10 +307,6 @@ class BertModel(Model):
         avg_acc, avg_f1, avg_p, avg_r, reports = [], [], [], [], []
         for model_fname in models:
             logger.info(f"Loading {model_fname}...")
-            # model = torch.load(
-            #     f"{self.output_model_path}/{model_fname}",
-            #     map_location=torch.device(self.device)
-            # )
             model = AutoModelForTokenClassification.from_pretrained(
                 f"{self.output_model_path}/{model_fname}",
                 num_labels=len(self.tag2code),
@@ -376,12 +362,12 @@ def main():
     logger.info(f'Running path: `{run_path}`, run time: `{run_time}`')
 
     model_names = [
-        # "cro-slo-eng-bert",
+        "cro-slo-eng-bert",
         "bert-base-multilingual-cased",
-        # "bert-base-multilingual-uncased",
-        # "sloberta-1.0",
+        "bert-base-multilingual-uncased",
+        "sloberta-1.0",
     ]
-    slo_train_datasets = {
+    slo_ssj_train_datasets = {
         "ssj500k-bsnlp2017-iterative": {
             "ssj500k": LoadSSJ500k(),
             "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
@@ -416,17 +402,31 @@ def main():
             "bsnlp-all": LoadBSNLP(lang='sl', year='all'),
         },
     }
-    slo_test_datasets = {
+    slo_ssj_test_datasets = {
         "ssj500k": LoadSSJ500k(),
         "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
         "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
         "bsnlp-all": LoadBSNLP(lang='sl', year='all')
     }
+    slo_train_datasets = {
+        "bsnlp2021": {
+            "bsnlp2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
+        },
+        "bsnlp-all": {
+            "bsnlp-all": LoadBSNLP(lang='sl', year='all', merge_misc=False),
+        },
+    }
+    slo_test_datasets = {
+        # "ssj500k": LoadSSJ500k(),
+        # "bsnlp2017": LoadBSNLP(lang='sl', year='2017', merge_misc=False),
+        "bsnlp2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
+        "bsnlp-all": LoadBSNLP(lang='sl', year='all', merge_misc=False)
+    }
 
     # TODO: Fix this
     tag2code, code2tag = LoadBSNLP("sl", year='2021', merge_misc=False).encoding()
 
-    train_datasets = {
+    multi_lang_train_datasets = {
         'bsnlp-2021-bg': {'bsnlp-2021-bg': LoadBSNLP(lang='bg', year='2021', merge_misc=False)},
         'bsnlp-2021-cs': {'bsnlp-2021-cs': LoadBSNLP(lang='cs', year='2021', merge_misc=False)},
         'bsnlp-2021-pl': {'bsnlp-2021-pl': LoadBSNLP(lang='pl', year='2021', merge_misc=False)},
@@ -442,7 +442,7 @@ def main():
         # 'bsnlp-all-uk': {'bsnlp-all-uk': LoadBSNLP(lang='uk', year='all')},
         # 'bsnlp-all-all': {'bsnlp-all-all': LoadBSNLP(lang='all', year='all')},
     }
-    test_datasets = {
+    multi_lang_test_datasets = {
         "bsnlp-2021-bg": LoadBSNLP(lang='bg', year='2021', merge_misc=False),
         "bsnlp-2021-cs": LoadBSNLP(lang='cs', year='2021', merge_misc=False),
         "bsnlp-2021-pl": LoadBSNLP(lang='pl', year='2021', merge_misc=False),
@@ -462,7 +462,7 @@ def main():
     test_f1_scores = []
     for model_name, fine_tuning in product(model_names, [True, False]):
         logger.info(f"Working on model: `{model_name}`...")
-        for train_bundle, loaders in train_datasets.items():
+        for train_bundle, loaders in slo_train_datasets.items():
             bert = BertModel(
                 tag2code=tag2code,
                 code2tag=code2tag,
@@ -480,7 +480,7 @@ def main():
                 bert.train(loaders)
 
             if args.test:
-                for test_dataset, dataloader in test_datasets.items():
+                for test_dataset, dataloader in slo_test_datasets.items():
                     logger.info(f"Testing on `{test_dataset}`")
                     p, r, f1 = bert.test(test_data=dataloader.test())
                     test_f1_scores.append({
