@@ -3,6 +3,7 @@ import argparse
 import tqdm
 import logging
 import sys
+import multiprocessing
 
 from collections import defaultdict
 
@@ -72,6 +73,46 @@ def ungroup_sentences(
     return tokens
 
 
+def parallel_loop(
+    input: (str, str, str),
+) -> dict:
+    run_path = input[0]
+    clang = input[1]
+    model = input[2]
+
+    loader = LoadBSNLPDocuments(lang=clang)
+
+    model_name = model.split('/')[-1]
+    model_path = f'{run_path}/{model}'
+
+    predictor = MakePrediction(model_path=model_path)
+    logger.info(f"Predicting for {model_name}")
+
+    updater = UpdateBSNLPDocuments(lang=clang, path=f'{run_path}/bsnlp/{model_name}')
+    predictions = {}
+    data = loader.load_merged()
+    tdset = tqdm.tqdm(data.items(), desc="Dataset")
+    for dataset, langs in tdset:
+        tdset.set_description(f'Dataset: {dataset}')
+        tlang = tqdm.tqdm(langs.items(), desc="Language")
+        predictions[dataset] = {}
+        for lang, docs in tlang:
+            predictions[dataset][lang] = {}
+            tlang.set_description(f'Lang: {tlang}')
+            for docId, doc in tqdm.tqdm(docs.items(), desc="Docs"):
+                tokens = []
+                for sentence in group_sentences(doc['content']).values():
+                    tokens.extend(predictor.get_ners(sentence))
+                doc['content'] = ungroup_sentences(tokens, doc['content'])  # , pred_key=f'{model_name}-NER')
+                predictions[dataset][lang][docId] = tokens
+    updater.update_merged(data)
+    logger.info(f"Done predicting for {model_name}")
+    return {
+        'model': model_name,
+        'preds': predictions
+    }
+
+
 def main():
     args = parse_args()
     run_path = args.run_path if args.run_path is not None else "./data/models/"
@@ -79,39 +120,10 @@ def main():
 
     models, _ = list_dir(run_path)
     logger.info(f"Models to predict: {models}")
+    pool = multiprocessing.Pool(multiprocessing.cpu_count() - 1)
 
-    loader = LoadBSNLPDocuments(lang=lang)
-
-    predictions = {}
-    tmodel = tqdm.tqdm(models, desc="Model")
-    for model in tmodel:
-        model_name = model.split('/')[-1]
-        model_path = f'{run_path}/{model}'
-
-        tmodel.set_description(f'Model: {model_name}')
-        predictor = MakePrediction(model_path=model_path)
-        logger.info(f"Predicting for {model_name}")
-        predictions[model_name] = {}
-
-        updater = UpdateBSNLPDocuments(lang=lang, path=f'{run_path}/bsnlp/{model_name}')
-
-        data = loader.load_merged()
-        tdset = tqdm.tqdm(data.items(), desc="Dataset")
-        for dataset, langs in tdset:
-            tdset.set_description(f'Dataset: {dataset}')
-            predictions[model_name][dataset] = {}
-            tlang = tqdm.tqdm(langs.items(), desc="Language")
-            for lang, docs in tlang:
-                tlang.set_description(f'Lang: {tlang}')
-                predictions[model_name][dataset][lang] = {}
-                for docId, doc in tqdm.tqdm(docs.items(), desc="Docs"):
-                    tokens = []
-                    for sentence in group_sentences(doc['content']).values():
-                        tokens.extend(predictor.get_ners(sentence))
-                    predictions[model_name][dataset][lang][docId] = tokens
-                    doc['content'] = ungroup_sentences(tokens, doc['content'])  #, pred_key=f'{model_name}-NER')
-        updater.update_merged(data)
-        logger.info(f"Done predicting for {model_name}")
+    tmodel = tqdm.tqdm(list(map(lambda x: (run_path, lang, x), models)), desc="Model")
+    predictions = pool.map(parallel_loop, tmodel)
     logger.info(predictions)
     with open(f'{run_path}/all_predictions.json', 'w') as f:
         json.dump(predictions, f)
