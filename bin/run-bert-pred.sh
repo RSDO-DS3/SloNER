@@ -19,7 +19,7 @@ echo "$SLURM_JOB_ID -> Predicting from the model..."
 srun \
     --container-image "$CONTAINER_IMAGE_PATH" \
     --container-mounts "$PWD":/workspace,/shared/datasets/rsdo:/data \
-    --container-entrypoint /workspace/bin/exec-pred.sh --run-path "./data/runs/run_2021-02-12T15:08:40"
+    --container-entrypoint /workspace/bin/exec-pred.sh --run-path "./data/runs/run_2021-02-16T11:43:57"
 
 echo "$SLURM_JOB_ID -> Done."
 

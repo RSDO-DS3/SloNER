@@ -370,16 +370,16 @@ def main():
     slo_ssj_train_datasets = {
         "ssj500k-bsnlp2017-iterative": {
             "ssj500k": LoadSSJ500k(),
-            "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
+            "bsnlp-2017": LoadBSNLP(lang='sl', year='2017'),
         },
-        "ssj500k-bsnlp2017-combined": {
+        "ssj500k-bsnlp-2017-combined": {
             "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2017')]),
         },
-        "ssj500k-bsnlp2021-iterative": {
+        "ssj500k-bsnlp-2021-iterative": {
             "ssj500k": LoadSSJ500k(),
             "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
         },
-        "ssj500k-bsnlp2021-combined": {
+        "ssj500k-bsnlp-2021-combined": {
             "combined": LoadCombined([LoadSSJ500k(), LoadBSNLP(lang='sl', year='2021')]),
         },
         "ssj500k-bsnlp-all-iterative": {
@@ -392,11 +392,11 @@ def main():
         "ssj500k": {
             "ssj500k": LoadSSJ500k(),
         },
-        "bsnlp2017": {
-            "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
+        "bsnlp-2017": {
+            "bsnlp-2017": LoadBSNLP(lang='sl', year='2017'),
         },
-        "bsnlp2021": {
-            "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        "bsnlp-2021": {
+            "bsnlp-2021": LoadBSNLP(lang='sl', year='2021'),
         },
         "bsnlp-all": {
             "bsnlp-all": LoadBSNLP(lang='sl', year='all'),
@@ -404,23 +404,18 @@ def main():
     }
     slo_ssj_test_datasets = {
         "ssj500k": LoadSSJ500k(),
-        "bsnlp2017": LoadBSNLP(lang='sl', year='2017'),
-        "bsnlp2021": LoadBSNLP(lang='sl', year='2021'),
+        "bsnlp-2017": LoadBSNLP(lang='sl', year='2017'),
+        "bsnlp-2021": LoadBSNLP(lang='sl', year='2021'),
         "bsnlp-all": LoadBSNLP(lang='sl', year='all')
     }
+
     slo_train_datasets = {
-        "bsnlp2021": {
-            "bsnlp2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
-        },
-        "bsnlp-all": {
-            "bsnlp-all": LoadBSNLP(lang='sl', year='all', merge_misc=False),
-        },
+        "bsnlp-2021": {
+            "bsnlp-2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
+        }
     }
     slo_test_datasets = {
-        # "ssj500k": LoadSSJ500k(),
-        # "bsnlp2017": LoadBSNLP(lang='sl', year='2017', merge_misc=False),
-        "bsnlp2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
-        "bsnlp-all": LoadBSNLP(lang='sl', year='all', merge_misc=False)
+        "bsnlp-2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
     }
 
     # TODO: Fix this
