@@ -14,14 +14,15 @@ class UpdateBSNLPDocuments(UpdateDocuments):
         self,
         year: str = 'all',
         lang: str = 'all',
+        path: str = './data/datasets/bsnlp',
     ) -> None:
         super(UpdateBSNLPDocuments, self).__init__(
-            path="./data/datasets/bsnlp"
+            path=path
         )
         datasets = {
             "2017": ["ec", "trump"],
             "2021": ["asia_bibi", "brexit", "nord_stream", "other", "ryanair"],
-            "all": ["ec", "trump", "asia_bibi", "brexit", "nord_stream", "other", "ryanair"],
+            "all":  ["ec", "trump", "asia_bibi", "brexit", "nord_stream", "other", "ryanair"],
         }
         if year not in datasets:
             raise Exception(f"Invalid subset chosen: {year}")

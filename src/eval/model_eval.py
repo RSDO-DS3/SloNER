@@ -81,17 +81,21 @@ def main():
     logger.info(f"Models to predict: {models}")
 
     loader = LoadBSNLPDocuments(lang=lang)
-    updater = UpdateBSNLPDocuments(lang=lang)
-    data = loader.load_merged()
 
     predictions = {}
     tmodel = tqdm.tqdm(models, desc="Model")
     for model in tmodel:
         model_name = model.split('/')[-1]
         model_path = f'{run_path}/{model}'
+
         tmodel.set_description(f'Model: {model_name}')
         predictor = MakePrediction(model_path=model_path)
+        logger.info(f"Predicting for {model_name}")
         predictions[model_name] = {}
+
+        updater = UpdateBSNLPDocuments(lang=lang, path=f'{run_path}/bsnlp/{model_name}')
+
+        data = loader.load_merged()
         tdset = tqdm.tqdm(data.items(), desc="Dataset")
         for dataset, langs in tdset:
             tdset.set_description(f'Dataset: {dataset}')
@@ -102,11 +106,12 @@ def main():
                 predictions[model_name][dataset][lang] = {}
                 for docId, doc in tqdm.tqdm(docs.items(), desc="Docs"):
                     tokens = []
-                    for sentence in tqdm.tqdm(group_sentences(doc['content']).values(), f"Sentences {docId}"):
+                    for sentence in group_sentences(doc['content']).values():
                         tokens.extend(predictor.get_ners(sentence))
                     predictions[model_name][dataset][lang][docId] = tokens
-                    doc['content'] = ungroup_sentences(tokens, doc['content'], pred_key=f'{model_name}-NER')
-    updater.update_merged(data)
+                    doc['content'] = ungroup_sentences(tokens, doc['content'])  #, pred_key=f'{model_name}-NER')
+        updater.update_merged(data)
+        logger.info(f"Done predicting for {model_name}")
     logger.info(predictions)
     with open(f'{run_path}/all_predictions.json', 'w') as f:
         json.dump(predictions, f)

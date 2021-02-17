@@ -1,4 +1,6 @@
 import json
+import logging
+import sys
 
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 from transformers import pipeline
@@ -6,6 +8,14 @@ from collections import defaultdict
 from operator import itemgetter
 
 from src.utils.load_dataset import LoadBSNLP
+
+
+logging.basicConfig(
+    stream=sys.stdout,
+    level=logging.INFO,
+    format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+)
+logger = logging.getLogger('MakePrediction')
 
 
 class MakePrediction:
@@ -55,19 +65,14 @@ class MakePrediction:
             category[ne['entity']] += 1
             while j < len(raw_nes) and raw_nes[j]['word'].startswith('##'):
                 if raw_nes[j]['index'] != (raw_nes[j - 1]['index'] + 1):
-                    print("Tokens are not coming one after the other, skipping")
+                    logger.debug("Tokens are not coming one after the other, skipping")
                     break
-                # if raw_nes[j]['entity'] != raw_nes[j - 1]['entity']:
-                #     # TODO: some smart merging technique:
-                #     #   - get all tokens
-                #     #   - determine the type by majority vote
-                #     raise Exception("Tokens not the same type")
                 ne['word'] += f'{raw_nes[j]["word"][2:]}'
                 ne['score'] = (ne['score'] + raw_nes[j]['score']) / 2
                 ne['modelTokens'] += 1
                 category[raw_nes[j]['entity']] += 1
                 j += 1
-            ne['entity'] = max(category.items(), key=itemgetter(1))[0]
+            ne['entity'] = max(category.items(), key=itemgetter(1))[0]  # majority voting
             nes.append(ne)
         return nes
 
@@ -124,5 +129,5 @@ if __name__ == '__main__':
         "Irena Grmek Košnik iz kranjske območne enote Nacionalnega inštituta za javno zdravje (NIJZ) je povedala, da so bili izvidi torkovega ponovnega testiranja popolnoma drugačni od ponedeljkovega, ko je bilo pozitivnih kar 146 od 1090 testiranih."
         "Italijanski predsednik Sergio Mattarella Mariu Draghiju podelil mandat za sestavo vlade"
     )
-    print(json.dumps(res))  # does not pretty-print UTF-8 chars
-    print(res)
+    logger.info(f'{json.dumps(res)}')  # does not pretty-print UTF-8 chars
+    logger.info(f'{res}')
