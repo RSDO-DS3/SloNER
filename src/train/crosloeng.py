@@ -364,10 +364,10 @@ def main():
     logger.info(f'Running path: `{run_path}`, run time: `{run_time}`')
 
     model_names = [
-        # "cro-slo-eng-bert",
-        # "bert-base-multilingual-cased",
-        # "bert-base-multilingual-uncased",
-        # "sloberta-1.0",
+        "cro-slo-eng-bert",
+        "bert-base-multilingual-cased",
+        "bert-base-multilingual-uncased",
+        "sloberta-1.0",
         "sloberta-2.0",
     ]
     slo_ssj_train_datasets = {
@@ -412,6 +412,19 @@ def main():
         "bsnlp-all": LoadBSNLP(lang='sl', year='all')
     }
 
+
+    # TODO: Fix this
+    tag2code, code2tag = LoadBSNLP("sl", year='2021', merge_misc=False, misc_data_only=True).encoding()
+
+    slo_ssj_train_misc_datasets = {
+        "bsnlp-2021": {
+            "bsnlp-2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False, misc_data_only=True),
+        }
+    }
+    slo_ssj_test_misc_datasets = {
+        "bsnlp-2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False, misc_data_only=True),
+    }
+
     slo_train_datasets = {
         "bsnlp-2021": {
             "bsnlp-2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
@@ -421,9 +434,6 @@ def main():
         "bsnlp-2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
     }
 
-    # TODO: Fix this
-    tag2code, code2tag = LoadBSNLP("sl", year='2021', merge_misc=False).encoding()
-
     multi_lang_train_datasets = {
         'bsnlp-2021-bg': {'bsnlp-2021-bg': LoadBSNLP(lang='bg', year='2021', merge_misc=False)},
         'bsnlp-2021-cs': {'bsnlp-2021-cs': LoadBSNLP(lang='cs', year='2021', merge_misc=False)},
@@ -432,13 +442,6 @@ def main():
         'bsnlp-2021-sl': {'bsnlp-2021-sl': LoadBSNLP(lang='sl', year='2021', merge_misc=False)},
         'bsnlp-2021-uk': {'bsnlp-2021-uk': LoadBSNLP(lang='uk', year='2021', merge_misc=False)},
         'bsnlp-2021-all': {'bsnlp-2021-all': LoadBSNLP(lang='all', year='2021', merge_misc=False)},
-        # 'bsnlp-all-bg': {'bsnlp-all-bg': LoadBSNLP(lang='bg', year='all')},
-        # 'bsnlp-all-cs': {'bsnlp-all-cs': LoadBSNLP(lang='cs', year='all')},
-        # 'bsnlp-all-pl': {'bsnlp-all-pl': LoadBSNLP(lang='pl', year='all')},
-        # 'bsnlp-all-ru': {'bsnlp-all-ru': LoadBSNLP(lang='ru', year='all')},
-        # 'bsnlp-all-sl': {'bsnlp-all-sl': LoadBSNLP(lang='sl', year='all')},
-        # 'bsnlp-all-uk': {'bsnlp-all-uk': LoadBSNLP(lang='uk', year='all')},
-        # 'bsnlp-all-all': {'bsnlp-all-all': LoadBSNLP(lang='all', year='all')},
     }
     multi_lang_test_datasets = {
         "bsnlp-2021-bg": LoadBSNLP(lang='bg', year='2021', merge_misc=False),
@@ -448,19 +451,11 @@ def main():
         "bsnlp-2021-sl": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
         "bsnlp-2021-uk": LoadBSNLP(lang='uk', year='2021', merge_misc=False),
         "bsnlp-2021-all": LoadBSNLP(lang='all', year='2021', merge_misc=False),
-
-        # Do not have EVT and PRO because 2017 data doesn't have it
-        # "bsnlp-all-bg": LoadBSNLP(lang='bg', year='all'),
-        # "bsnlp-all-cs": LoadBSNLP(lang='cs', year='all'),
-        # "bsnlp-all-pl": LoadBSNLP(lang='pl', year='all'),
-        # "bsnlp-all-ru": LoadBSNLP(lang='ru', year='all'),
-        # "bsnlp-all-sl": LoadBSNLP(lang='sl', year='all'),
-        # "bsnlp-all-uk": LoadBSNLP(lang='uk', year='all'),
     }
     test_f1_scores = []
     for model_name, fine_tuning in product(model_names, [True, False]):
         logger.info(f"Working on model: `{model_name}`...")
-        for train_bundle, loaders in slo_train_datasets.items():
+        for train_bundle, loaders in slo_ssj_train_misc_datasets.items():
             bert = BertModel(
                 tag2code=tag2code,
                 code2tag=code2tag,
@@ -478,7 +473,7 @@ def main():
                 bert.train(loaders)
 
             if args.test:
-                for test_dataset, dataloader in slo_test_datasets.items():
+                for test_dataset, dataloader in slo_ssj_test_misc_datasets.items():
                     logger.info(f"Testing on `{test_dataset}`")
                     p, r, f1 = bert.test(test_data=dataloader.test())
                     test_f1_scores.append({
