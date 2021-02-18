@@ -73,22 +73,20 @@ def ungroup_sentences(
     return tokens
 
 
-def parallel_loop(
-    input: (str, str, str),
+def looper(
+    run_path: str,
+    clang: str,
+    model: str,
 ) -> dict:
-    run_path = input[0]
-    clang = input[1]
-    model = input[2]
-
     loader = LoadBSNLPDocuments(lang=clang)
 
     model_name = model.split('/')[-1]
-    model_path = f'{run_path}/{model}'
+    model_path = f'{run_path}/models/{model}'
 
     predictor = MakePrediction(model_path=model_path)
     logger.info(f"Predicting for {model_name}")
 
-    updater = UpdateBSNLPDocuments(lang=clang, path=f'{run_path}/bsnlp/{model_name}')
+    updater = UpdateBSNLPDocuments(lang=clang, path=f'{run_path}/predictions/bsnlp/{model_name}')
     predictions = {}
     data = loader.load_merged()
     tdset = tqdm.tqdm(data.items(), desc="Dataset")
@@ -118,17 +116,28 @@ def main():
     run_path = args.run_path if args.run_path is not None else "./data/models/"
     lang = args.lang
 
-    models, _ = list_dir(run_path)
-    logger.info(f"Models to predict: {models}")
-    pool = multiprocessing.Pool(multiprocessing.cpu_count() - 1)
+    print(f"Run path: {run_path}")
+    print(f"Langs: {lang}")
 
-    tmodel = tqdm.tqdm(list(map(lambda x: (run_path, lang, x), models)), desc="Model")
-    predictions = pool.map(parallel_loop, tmodel)
+    models, _ = list_dir(f'{run_path}/models')
+    logger.info(f"Models to predict: {models}")
+    pool = multiprocessing.Pool(8)
+
+    # tmodel = tqdm.tqdm(list(map(lambda x: (run_path, lang, x), models)), desc="Model")
+    # predictions = pool.map(looper, tmodel)
+    # predictions = list(map(looper, tmodel))
+    predictions = []
+    for model in tqdm.tqdm(models, desc="Model"):
+        predictions.append(looper(run_path, lang, model))
     logger.info(predictions)
+    
     with open(f'{run_path}/all_predictions.json', 'w') as f:
         json.dump(predictions, f)
+    
     logger.info("Warnings that occcured:")
     logger.info(f"{warnings}")
+    with open(f'{run_path}/pred_warnings.json', 'w') as f:
+        json.dump(warnings, f, indent=4)
     logger.info("Done.")
 
 

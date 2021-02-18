@@ -12,4 +12,3 @@ CONTAINER_IMAGE_PATH="$PWD/containers/sing-container.sif"
 
 # singularity run --nv $CONTAINER_IMAGE_PATH bin/exec-bert.sh --full-finetuning --epochs 5 --test # --train
 singularity run --nv $CONTAINER_IMAGE_PATH bin/exec-bert.sh --epochs 5 --test --train 
-# singularity run --nv $CONTAINER_IMAGE_PATH bin/exec-pred.sh

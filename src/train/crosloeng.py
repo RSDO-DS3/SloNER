@@ -355,17 +355,20 @@ def main():
     if not args.run_path:
         run_time = datetime.now().isoformat()[:-7]  # exclude the ms
         run_path = f'./data/runs/run_{run_time}'
-        pathlib.Path(run_path).mkdir(parents=True)
     else:
         run_path = args.run_path
         run_time = run_path.split('/')[-1][4:]
+
+    pathlib.Path(run_path).mkdir(parents=True, exist_ok=True)
+    pathlib.Path(f'{run_path}/models').mkdir(parents=True, exist_ok=True)
     logger.info(f'Running path: `{run_path}`, run time: `{run_time}`')
 
     model_names = [
-        "cro-slo-eng-bert",
-        "bert-base-multilingual-cased",
-        "bert-base-multilingual-uncased",
-        "sloberta-1.0",
+        # "cro-slo-eng-bert",
+        # "bert-base-multilingual-cased",
+        # "bert-base-multilingual-uncased",
+        # "sloberta-1.0",
+        "sloberta-2.0",
     ]
     slo_ssj_train_datasets = {
         "ssj500k-bsnlp2017-iterative": {
@@ -463,7 +466,7 @@ def main():
                 code2tag=code2tag,
                 epochs=args.epochs,
                 input_model_path=f'./data/models/{model_name}',
-                output_model_path=run_path,
+                output_model_path=f'{run_path}/models',
                 output_model_fname=f'{model_name}-{train_bundle}'
                                    f"{'-finetuned' if fine_tuning else ''}"
                                    f'-{args.epochs}-epochs',

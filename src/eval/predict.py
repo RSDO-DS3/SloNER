@@ -44,6 +44,7 @@ class MakePrediction:
             model=self.model,
             tokenizer=self.tokenizer,
             framework="pt",
+            device=0,
         )
 
     def __merge_tokenized_nes(
