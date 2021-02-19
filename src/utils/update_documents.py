@@ -84,7 +84,7 @@ class UpdateBSNLPDocuments(UpdateDocuments):
     def update_predicted(self, new_data) -> None:
         def update_predicted(fpath: str, doc: dict) -> None:
             df = doc['content']
-            if 'calcLemma' not in df.index:
+            if 'calcLemma' not in df.columns:
                 print(f"MISSING LEMMA: `{fpath}`")
                 df['calcLemma'] = 'xxx'
             df['calcClId'] = 'xxx'
