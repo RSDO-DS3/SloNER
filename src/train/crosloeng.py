@@ -58,7 +58,8 @@ class BertModel(Model):
             self.input_model_path,
             from_pt=True,
             do_lower_case=False,
-            use_fast=False
+            use_fast=False,
+
         )
         self.MAX_LENGTH = 128  # max input length
         self.BATCH_SIZE = 32  # max input length
@@ -73,6 +74,7 @@ class BertModel(Model):
     def convert_input(self, input_data: pd.DataFrame):
         tokens = []
         tags = []  # NER tags
+        # TODO: add doc, sentence, token ids
 
         for sentence, data in input_data.groupby("sentence"):
             sentence_tokens = []
@@ -274,9 +276,11 @@ class BertModel(Model):
                 )
             logits = outputs[1].detach().cpu().numpy()
             label_ids = batch_tags.to('cpu').numpy()
+            toks = batch_tokens.to('cpu').numpy()
 
             eval_loss += outputs[0].mean().item()
-            tokens.extend(self.tokenizer.convert_ids_to_tokens(batch_tokens))
+            batch_toks = [self.tokenizer.convert_ids_to_tokens(sentence) for sentence in toks]
+            tokens.extend(batch_toks)
             eval_predictions.extend([list(p) for p in np.argmax(logits, axis=2)])
             eval_labels.extend(label_ids)
 
@@ -286,8 +290,9 @@ class BertModel(Model):
         eval_loss = eval_loss / eval_steps
 
         predicted_tags, valid_tags, tokens = self.translate(eval_predictions, eval_labels, tokens)
-        for t, p, v in zip(tokens, predicted_tags, valid_tags):
-            print(t, p, v)
+        for st, sp, sv in zip(tokens, predicted_tags, valid_tags):
+            for t, p, v in zip(st, sp, sv):
+                logger.info(f"row = {t}, {p}, {v}")
 
         score_acc = accuracy_score(valid_tags, predicted_tags)
         score_f1 = f1_score(valid_tags, predicted_tags)
@@ -376,8 +381,6 @@ def main():
         "sloberta-2.0",
     ]
 
-    # TODO: Fix this
-    tag2code, code2tag = LoadBSNLP("sl", year='2021').encoding()
     slo_ssj_train_datasets = {
         "ssj500k-bsnlp2017-iterative": {
             "ssj500k": LoadSSJ500k(),
@@ -429,6 +432,8 @@ def main():
         "bsnlp-2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False, misc_data_only=True),
     }
 
+    # TODO: Fix this
+    tag2code, code2tag = LoadBSNLP("sl", year='2021', merge_misc=False).encoding()
     slo_train_datasets = {
         "bsnlp-2021": {
             "bsnlp-2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False),
@@ -459,7 +464,7 @@ def main():
     test_f1_scores = []
     for model_name, fine_tuning in product(model_names, [True, False]):
         logger.info(f"Working on model: `{model_name}`...")
-        for train_bundle, loaders in slo_ssj_train_datasets.items():
+        for train_bundle, loaders in slo_train_datasets.items():
             bert = BertModel(
                 tag2code=tag2code,
                 code2tag=code2tag,
@@ -477,7 +482,7 @@ def main():
                 bert.train(loaders)
 
             if args.test:
-                for test_dataset, dataloader in slo_ssj_test_datasets.items():
+                for test_dataset, dataloader in slo_test_datasets.items():
                     logger.info(f"Testing on `{test_dataset}`")
                     p, r, f1 = bert.test(test_data=dataloader.test())
                     test_f1_scores.append({
