@@ -15,9 +15,10 @@ class LoadBSNLPDocuments(LoadDocuments):
         self,
         year: str = 'all',
         lang: str = 'all',
+        path: str = './data/datasets/bsnlp',
     ) -> None:
         super(LoadBSNLPDocuments, self).__init__(
-            path="./data/datasets/bsnlp"
+            path=path
         )
         datasets = {
             "2017": ["ec", "trump"],
@@ -77,6 +78,16 @@ class LoadBSNLPDocuments(LoadDocuments):
                 'content': df
             }
         return self.load('merged', merged_loader)
+
+    def load_predicted(self) -> dict:
+        def predicted_loader(fpath: str) -> dict:
+            df = pd.read_csv(fpath)
+            docId = df.iloc[0]['docId']
+            return {
+                'docId': docId,
+                'content': df
+            }
+        return self.load('predicted', predicted_loader)
 
     def load_annotated(self):
         def annotated_loader(fpath: str) -> dict:

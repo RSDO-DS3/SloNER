@@ -1,6 +1,7 @@
 import json
 import logging
 import sys
+import pandas as pd
 
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 from transformers import pipeline
@@ -12,7 +13,7 @@ from src.utils.load_dataset import LoadBSNLP
 
 logging.basicConfig(
     stream=sys.stdout,
-    level=logging.INFO,
+    level=logging.DEBUG,
     format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
 )
 logger = logging.getLogger('MakePrediction')
@@ -74,6 +75,7 @@ class MakePrediction:
                 ne['modelTokens'] += 1
                 category[raw_nes[j]['entity']] += 1
                 j += 1
+            ne['word'] = ne['word'].replace('▁', '')
             ne['entity'] = max(category.items(), key=itemgetter(1))[0]  # majority voting
             nes.append(ne)
         return nes
@@ -124,8 +126,9 @@ class MakePrediction:
 
 if __name__ == '__main__':
     tag2code, code2tag = LoadBSNLP("sl").encoding()
-    model_path = f'./data/models/bert-base-multilingual-cased-other'
-    predictor = MakePrediction(model_path=model_path)
+    # model_path = f'./data/models/bert-base-multilingual-cased-other'
+    model_path = './data/runs/run_2021-02-17T11:42:19_slo-models/models/sloberta-1.0-bsnlp-2021-5-epochs'
+    predictor = MakePrediction(model_path=model_path, use_device=-1)
 
     res = predictor.get_ners(
         "Irena Grmek Košnik iz kranjske območne enote Nacionalnega inštituta za javno zdravje (NIJZ) je povedala, da so bili izvidi torkovega ponovnega testiranja popolnoma drugačni od ponedeljkovega, ko je bilo pozitivnih kar 146 od 1090 testiranih."

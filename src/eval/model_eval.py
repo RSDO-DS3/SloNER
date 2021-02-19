@@ -4,8 +4,9 @@ import tqdm
 import logging
 import sys
 import multiprocessing
-from torch.cuda import device_count
+import pandas as pd
 
+from torch.cuda import device_count
 from collections import defaultdict
 
 from src.eval.predict import MakePrediction
@@ -44,7 +45,6 @@ def ungroup_sentences(
     tokens: list,
     pred_key: str = 'calcNer',
 ) -> list:
-    tag_i = 0
     for token in tokens:
         token[pred_key] = 'O'
     used = 0
@@ -55,13 +55,13 @@ def ungroup_sentences(
         updated = 0
         for token in tokens:
             if f"{token['text']}" == f"{tag['word']}":
-                token[pred_key] = tags[tag_i]['entity']
+                token[pred_key] = tag['entity']
                 updated += 1
             elif updated == 0 and f"{token['text']}".startswith(f"{tag['word']}"):
                 warn = f"[WARNING] PARTIAL MATCH: {tag['word']} ({tag['entity']}) -> {token['text']} {token['ner']}"
                 warnings.append(warn)
                 if DEBUG: logger.info(warn)
-                token[pred_key] = tags[tag_i]['entity']
+                token[pred_key] = tag['entity']
                 updated += 1
         used += 1 if updated > 0 else 0
         if updated == 0:
@@ -94,7 +94,7 @@ def looper(
     model_path = f'{run_path}/models/{model}'
 
     predictor = MakePrediction(model_path=model_path, use_device=0 if device_count() > 0 else -1)
-    pred_misc = None if clang != 'sl' else MakePrediction(model_path='TODO', use_device=1 if device_count() > 1 else -1)
+    pred_misc = None  # if clang != 'sl' else MakePrediction(model_path='TODO', use_device=1 if device_count() > 1 else -1)
     logger.info(f"Predicting for {model_name}")
 
     updater = UpdateBSNLPDocuments(lang=clang, path=f'{run_path}/predictions/bsnlp/{model_name}')

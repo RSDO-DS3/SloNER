@@ -55,5 +55,44 @@ class UpdateBSNLPDocuments(UpdateDocuments):
     def update_merged(self, new_data) -> None:
         def update_merged(fpath: str, doc: dict) -> None:
             df = pd.DataFrame(doc['content'])
-            df.to_csv(fpath)
+            df.to_csv(fpath, index=False)
         self.__update('predicted', new_data, update_merged)
+
+    def __merge_records(
+        self,
+        nes: pd.DataFrame
+    ) -> pd.DataFrame:
+        """
+            Merges the NEs in the form of the expected output
+        :param nes:
+        :return:
+        """
+        nes = nes.to_dict(orient='records')
+        merged = []
+        for i, ne in enumerate(nes):
+            if ne['calcNer'].startswith('I-'):
+                continue
+            j = i + 1
+            while j < len(nes) and not nes[j]['calcNer'].startswith('B-'):
+                ne['text'] = f'{ne["text"]} {nes[j]["text"]}'
+                ne['calcLemma'] = f'{ne["calcLemma"]} {nes[j]["calcLemma"]}'
+                j += 1
+            ne['calcNer'] = ne['calcNer'][2:]
+            merged.append(ne)
+        return pd.DataFrame(merged)
+
+    def update_predicted(self, new_data) -> None:
+        def update_predicted(fpath: str, doc: dict) -> None:
+            df = doc['content']
+            if 'calcLemma' not in df.index:
+                print(f"MISSING LEMMA: `{fpath}`")
+                df['calcLemma'] = 'xxx'
+            df['calcClId'] = 'xxx'
+            df = df[['text', 'calcLemma', 'calcNer', 'calcClId']]
+            df = df.loc[~df['calcNer'].isin(['O'])]
+            df = self.__merge_records(df)
+            df = df.drop_duplicates(subset=['text'])
+            with open(f'{fpath}.out', 'w') as f:
+                f.write(f'{doc["docId"]}\n')
+                df.to_csv(f,  sep='\t', header=False, index=False)
+        self.__update('out', new_data, update_predicted)
