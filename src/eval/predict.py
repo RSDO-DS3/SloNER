@@ -13,7 +13,7 @@ from src.utils.load_dataset import LoadBSNLP
 
 logging.basicConfig(
     stream=sys.stdout,
-    level=logging.DEBUG,
+    level=logging.INFO,
     format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
 )
 logger = logging.getLogger('MakePrediction')
