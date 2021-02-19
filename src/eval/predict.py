@@ -22,6 +22,7 @@ class MakePrediction:
     def __init__(
         self,
         model_path: str = f'./data/models/bert-base-multilingual-cased-other',
+        use_device: int = 0
     ):
         """
             A class to extract all the NE predictions from a given tokens
@@ -44,7 +45,7 @@ class MakePrediction:
             model=self.model,
             tokenizer=self.tokenizer,
             framework="pt",
-            device=0,
+            device=use_device,
         )
 
     def __merge_tokenized_nes(

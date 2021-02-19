@@ -4,6 +4,7 @@ import tqdm
 import logging
 import sys
 import multiprocessing
+from torch.cuda import device_count
 
 from collections import defaultdict
 
@@ -73,6 +74,15 @@ def ungroup_sentences(
     return tokens
 
 
+def merge_misc_tokens(
+    sentence_tokens: list,
+    misc_tokens: list,
+    classified_tokens: list,
+) -> list:
+
+    return sentence_tokens
+
+
 def looper(
     run_path: str,
     clang: str,
@@ -83,7 +93,8 @@ def looper(
     model_name = model.split('/')[-1]
     model_path = f'{run_path}/models/{model}'
 
-    predictor = MakePrediction(model_path=model_path)
+    predictor = MakePrediction(model_path=model_path, use_device=0 if device_count() > 0 else -1)
+    pred_misc = None if clang != 'sl' else MakePrediction(model_path='TODO', use_device=1 if device_count() > 1 else -1)
     logger.info(f"Predicting for {model_name}")
 
     updater = UpdateBSNLPDocuments(lang=clang, path=f'{run_path}/predictions/bsnlp/{model_name}')
@@ -100,7 +111,14 @@ def looper(
             for docId, doc in tqdm.tqdm(docs.items(), desc="Docs"):
                 tokens = []
                 for sentence in group_sentences(doc['content']).values():
-                    tokens.extend(predictor.get_ners(sentence))
+                    sentence_tokens = predictor.get_ners(sentence)
+                    if pred_misc is not None:
+                        misc = list(filter(lambda x: x in ['B-MISC', 'I-MISC'], tokens))
+                        if len(misc) > 0:
+                            misc_tokens = pred_misc.get_ners(sentence)
+                            sentence_tokens = merge_misc_tokens(sentence_tokens, misc, misc_tokens)
+                    tokens.extend(sentence_tokens)
+
                 doc['content'] = ungroup_sentences(tokens, doc['content'])  # , pred_key=f'{model_name}-NER')
                 predictions[dataset][lang][docId] = tokens
     updater.update_merged(data)
