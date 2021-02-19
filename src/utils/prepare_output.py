@@ -17,10 +17,10 @@ def convert_files(
     run_path: str,
     lang: str = 'sl'
 ) -> None:
-    dirs, _ = list_dir(run_path)
+    dirs, _ = list_dir(f'{run_path}/models')
     for dir in dirs:
-        loader = LoadBSNLPDocuments(lang=lang, path=f'{run_path}/{dir}')
-        updater = UpdateBSNLPDocuments(lang=lang, path=f'{run_path}/{dir}')
+        loader = LoadBSNLPDocuments(lang=lang, path=f'{run_path}/predictions/bsnlp/{dir}')
+        updater = UpdateBSNLPDocuments(lang=lang, path=f'{run_path}/out/{dir}')
         data = loader.load_predicted()
         updater.update_predicted(data)
         break

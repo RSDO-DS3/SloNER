@@ -244,23 +244,25 @@ class BertModel(Model):
         fig.savefig(f"{self.output_model_path}/{self.output_model_fname}-loss.png")
         return model, optimizer, loss
 
-    def translate(self, predictions: list, labels: list) -> (list, list):
-        translated_predictions, translated_labels = [], []
-        for preds, labs in zip(predictions, labels):
-            sentence_predictions, sentence_labels = [], []
-            for p, l in zip(preds, labs):
+    def translate(self, predictions: list, labels: list, tokens) -> (list, list, list):
+        translated_predictions, translated_labels, translated_tokens = [], [], []
+        for preds, labs, toks in zip(predictions, labels, tokens):
+            sentence_predictions, sentence_labels, sentence_tokens = [], [], []
+            for p, l, t in zip(preds, labs, toks):
                 if l == self.tag2code["PAD"]:
                     continue
+                sentence_tokens.append(t)
                 sentence_predictions.append(self.code2tag[p])
                 sentence_labels.append(self.code2tag[l])
+            translated_tokens.append(sentence_tokens)
             translated_predictions.append(sentence_predictions)
             translated_labels.append(sentence_labels)
-        return translated_predictions, translated_labels
+        return translated_predictions, translated_labels, translated_tokens
 
     def __test(self, model: PreTrainedModel, data: DataLoader) -> (float, float, float, float, float, str):
         eval_loss = 0.
         eval_steps, eval_examples = 0, 0
-        eval_predictions, eval_labels = [], []
+        tokens, eval_predictions, eval_labels = [], [], []
         model.eval()
         for batch in tqdm(data):
             batch_tokens, batch_masks, batch_tags = tuple(t.to(self.device) for t in batch)
@@ -274,6 +276,7 @@ class BertModel(Model):
             label_ids = batch_tags.to('cpu').numpy()
 
             eval_loss += outputs[0].mean().item()
+            tokens.extend(self.tokenizer.convert_ids_to_tokens(batch_tokens))
             eval_predictions.extend([list(p) for p in np.argmax(logits, axis=2)])
             eval_labels.extend(label_ids)
 
@@ -282,7 +285,9 @@ class BertModel(Model):
 
         eval_loss = eval_loss / eval_steps
 
-        predicted_tags, valid_tags = self.translate(eval_predictions, eval_labels)
+        predicted_tags, valid_tags, tokens = self.translate(eval_predictions, eval_labels, tokens)
+        for t, p, v in zip(tokens, predicted_tags, valid_tags):
+            print(t, p, v)
 
         score_acc = accuracy_score(valid_tags, predicted_tags)
         score_f1 = f1_score(valid_tags, predicted_tags)

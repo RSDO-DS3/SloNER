@@ -95,4 +95,4 @@ class UpdateBSNLPDocuments(UpdateDocuments):
             with open(f'{fpath}.out', 'w') as f:
                 f.write(f'{doc["docId"]}\n')
                 df.to_csv(f,  sep='\t', header=False, index=False)
-        self.__update('out', new_data, update_predicted)
+        self.__update('', new_data, update_predicted)
