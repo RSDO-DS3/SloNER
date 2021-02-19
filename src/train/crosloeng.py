@@ -370,6 +370,9 @@ def main():
         "sloberta-1.0",
         "sloberta-2.0",
     ]
+
+    # TODO: Fix this
+    tag2code, code2tag = LoadBSNLP("sl", year='2021').encoding()
     slo_ssj_train_datasets = {
         "ssj500k-bsnlp2017-iterative": {
             "ssj500k": LoadSSJ500k(),
@@ -412,10 +415,6 @@ def main():
         "bsnlp-all": LoadBSNLP(lang='sl', year='all')
     }
 
-
-    # TODO: Fix this
-    tag2code, code2tag = LoadBSNLP("sl", year='2021', merge_misc=False, misc_data_only=True).encoding()
-
     slo_ssj_train_misc_datasets = {
         "bsnlp-2021": {
             "bsnlp-2021": LoadBSNLP(lang='sl', year='2021', merge_misc=False, misc_data_only=True),
@@ -455,7 +454,7 @@ def main():
     test_f1_scores = []
     for model_name, fine_tuning in product(model_names, [True, False]):
         logger.info(f"Working on model: `{model_name}`...")
-        for train_bundle, loaders in slo_ssj_train_misc_datasets.items():
+        for train_bundle, loaders in slo_ssj_train_datasets.items():
             bert = BertModel(
                 tag2code=tag2code,
                 code2tag=code2tag,
@@ -473,7 +472,7 @@ def main():
                 bert.train(loaders)
 
             if args.test:
-                for test_dataset, dataloader in slo_ssj_test_misc_datasets.items():
+                for test_dataset, dataloader in slo_ssj_test_datasets.items():
                     logger.info(f"Testing on `{test_dataset}`")
                     p, r, f1 = bert.test(test_data=dataloader.test())
                     test_f1_scores.append({
