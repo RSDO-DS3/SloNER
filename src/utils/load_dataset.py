@@ -73,11 +73,17 @@ class LoadSSJ500k(LoadDataset):
 
 class LoadBSNLP(LoadDataset):
     available_langs = ['bg', 'cs', 'pl', 'ru', 'sl', 'uk']
+    datasets = {
+        "2017": ["ec", "trump"],
+        "2021": ["asia_bibi", "brexit", "nord_stream", "other", "ryanair"],
+        "all": ["ec", "trump", "asia_bibi", "brexit", "nord_stream", "other", "ryanair"],
+    }
 
     def __init__(
         self,
         lang: str = 'all',
         year: str = 'all',
+        data_set: str = 'all',
         merge_misc: bool = True,
         misc_data_only: bool = False,
         print_debug: bool = False
@@ -87,20 +93,26 @@ class LoadBSNLP(LoadDataset):
             "csv",
             print_debug=print_debug,
         )
-        datasets = {
-            "2017": ["ec", "trump"],
-            "2021": ["asia_bibi", "brexit", "nord_stream", "other", "ryanair"],
-            "all": ["ec", "trump", "asia_bibi", "brexit", "nord_stream", "other", "ryanair"],
-        }
-        if year not in datasets:
-            raise Exception(f"Invalid subset chosen: {year}")
-        self.dirs = datasets[year]
+        # assert year
+        if year not in self.datasets:
+            raise Exception(f"Invalid year chosen: {year}")
+
+        # assert dataset
+        if data_set in self.datasets[year]:
+            self.data_set = [data_set]
+        elif data_set == 'all':
+            self.data_set = self.datasets[year]
+        else:
+            raise Exception(f"Invalid dataset chosen: {data_set}")
+
+        # assert language
         if lang in self.available_langs:
             self.langs = [lang]
         elif lang == 'all':
             self.langs = self.available_langs
         else:
-            raise Exception("Invalid language option.")
+            raise Exception(f"Invalid language option: {lang}")
+
         self.random_state = 42
         self.merge_misc = merge_misc
         if merge_misc and misc_data_only:
@@ -110,23 +122,22 @@ class LoadBSNLP(LoadDataset):
     def load(self, dset: str) -> pd.DataFrame:
         dirs, _ = list_dir(self.base_fname)
         data = pd.DataFrame()
-        for directory in dirs:
-            if directory not in self.dirs:
+        for dataset in dirs:
+            if dataset not in self.data_set:
                 continue
             for lang in self.langs:
-                fname = f"{self.base_fname}/{directory}/splits/{lang}/{dset}_{lang}.csv"
+                fname = f"{self.base_fname}/{dataset}/splits/{lang}/{dset}_{lang}.csv"
                 try:
                     df = pd.read_csv(f"{fname}")
                 except:
-                    if self.print_debug: print(f"[{directory}] skipping {lang}.")
+                    if self.print_debug: print(f"[{dataset}] skipping {lang}.")
                     continue
-                df = df[['docId', 'sentenceId', 'text', 'ner']]
-                df['sentenceId'] = df['docId'].astype(str) + '-' + df['sentenceId'].astype('str')
+                df['sentenceId'] = df['docId'].astype(str) + ';' + df['sentenceId'].astype('str') # + '-' + df['tokenId'].astype(str)
                 if self.merge_misc:
                     df['ner'] = df['ner'].map(lambda x: x.replace("PRO", "MISC").replace("EVT", "MISC"))
                 if self.misc_data_only:
                     df['ner'] = df['ner'].map(lambda x: "O" if x[2:] in ["PER", "LOC", "ORG"] else x)
-                df = df.drop(columns=['docId'])
+                df = df[['sentenceId', 'tokenId', 'text', 'ner']]
                 df = df.rename(columns={"sentenceId": "sentence", "text": "word", "ner": "ner"})
                 data = pd.concat([data, df])
         return data
@@ -190,6 +201,7 @@ if __name__ == '__main__':
     # print(train_data.head(10))
     print(f"Train data: {train_data.shape[0]}, NERs: {train_data.loc[train_data['ner'] != 'O'].shape[0]}")
     print(train_data['ner'].value_counts())
+    print(train_data.value_counts())
     # print(train_data)
     
     dev_data = loader.dev()
