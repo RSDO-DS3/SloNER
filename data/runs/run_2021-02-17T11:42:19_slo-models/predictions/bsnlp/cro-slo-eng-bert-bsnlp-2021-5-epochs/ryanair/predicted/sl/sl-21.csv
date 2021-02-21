@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-21,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-21,0,2,pred,,pred,Si,ADP,O,,O
 sl-21,0,3,novim,,nov,Agpmsi,ADJ,O,,O
@@ -58,8 +58,8 @@ sl-21,2,21,naslednji,,naslednji,Agpmsay,ADJ,O,,O
 sl-21,2,22,teden,,teden,Ncmsan,NOUN,O,,O
 sl-21,2,23,.,,.,Z,PUNCT,O,,O
 sl-21,3,1,Švedski,Švedski,švedski,Agpmsny,ADJ,B-ORG,ORG-SPF-Svensk-Pilotförening,B-ORG
-sl-21,3,2,sindikat,sindikat,sindikat,Ncmsn,NOUN,I-ORG,ORG-SPF-Svensk-Pilotförening,O
-sl-21,3,3,pilotov,pilotov,pilot,Ncmpg,NOUN,I-ORG,ORG-SPF-Svensk-Pilotförening,O
+sl-21,3,2,sindikat,sindikat,sindikat,Ncmsn,NOUN,I-ORG,ORG-SPF-Svensk-Pilotförening,I-ORG
+sl-21,3,3,pilotov,pilotov,pilot,Ncmpg,NOUN,I-ORG,ORG-SPF-Svensk-Pilotförening,I-ORG
 sl-21,3,4,(,,(,Z,PUNCT,O,,O
 sl-21,3,5,SPF,SPF,SPF,Npmsn,PROPN,B-ORG,ORG-SPF-Svensk-Pilotförening,B-ORG
 sl-21,3,6,),,),Z,PUNCT,O,,O
@@ -294,7 +294,7 @@ sl-21,14,17,je,,biti,Va-r3s-n,AUX,O,,O
 sl-21,14,18,tik,,tik,Rgp,ADV,O,,O
 sl-21,14,19,pred,,pred,Si,ADP,O,,O
 sl-21,14,20,lanskim,,lanski,Agpmsi,ADJ,O,,O
-sl-21,14,21,božičem,,božič,Ncmsi,NOUN,O,,B-EVT
+sl-21,14,21,božičem,,božič,Ncmsi,NOUN,O,,O
 sl-21,14,22,izognil,,izogniti,Vmep-sm,VERB,O,,O
 sl-21,14,23,seriji,,serija,Ncfsd,NOUN,O,,O
 sl-21,14,24,stavk,,stavka,Ncfpg,NOUN,O,,O

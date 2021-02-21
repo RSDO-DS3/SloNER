@@ -1,8 +1,8 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-40,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-40,0,2,potnikom,,potnik,Ncmpd,NOUN,O,,O
 sl-40,0,3,noče,,hoteti,Vmpr3s-y,VERB,O,,O
-sl-40,0,4,izplačati,,izplačati,Vmbn,VERB,O,,B-ORG
+sl-40,0,4,izplačati,,izplačati,Vmbn,VERB,O,,O
 sl-40,0,5,odškodnin,,odškodnina,Ncfpg,NOUN,O,,O
 sl-40,0,6,za,,za,Sa,ADP,O,,O
 sl-40,0,7,odpovedane,,odpovedan,Appmpa,ADJ,O,,O
@@ -18,7 +18,7 @@ sl-40,1,1,Samo,,samo,Q,PART,O,,O
 sl-40,1,2,zato,,zato,Rgp,ADV,O,,O
 sl-40,1,3,",",,",",Z,PUNCT,O,,O
 sl-40,1,4,ker,,ker,Cs,SCONJ,O,,O
-sl-40,1,5,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-40,1,5,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-40,1,6,noče,,hoteti,Vmpr3s-y,VERB,O,,O
 sl-40,1,7,plačati,,plačati,Vmen,VERB,O,,O
 sl-40,1,8,odškodnine,,odškodnina,Ncfsg,NOUN,O,,O
@@ -77,11 +77,11 @@ sl-40,4,10,250,,250,Mdc,NUM,O,,O
 sl-40,4,11,evrov,,evro,Ncmpg,NOUN,O,,O
 sl-40,4,12,odškodnine,,odškodnina,Ncfsg,NOUN,O,,O
 sl-40,4,13,",",,",",Z,PUNCT,O,,O
-sl-40,4,14,vendar,,vendar,Cc,CCONJ,O,,B-ORG
+sl-40,4,14,vendar,,vendar,Cc,CCONJ,O,,O
 sl-40,4,15,pa,,pa,Cc,CCONJ,O,,O
 sl-40,4,16,so,,biti,Va-r3p-n,AUX,O,,O
 sl-40,4,17,v,,v,Sl,ADP,O,,O
-sl-40,4,18,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,O
+sl-40,4,18,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-40,4,19,to,,ta,Pd-fsa,DET,O,,O
 sl-40,4,20,možnost,,možnost,Ncfsa,NOUN,O,,O
 sl-40,4,21,zavrnili,,zavrniti,Vmep-pm,VERB,O,,O
@@ -125,7 +125,7 @@ sl-40,6,1,Zveza,Zveza,zveza,Ncfsn,NOUN,B-ORG,ORG-Slovene-Consumers'-Association,
 sl-40,6,2,potrošnikov,potrošnikov,potrošnik,Ncmpg,NOUN,I-ORG,ORG-Slovene-Consumers'-Association,I-ORG
 sl-40,6,3,Slovenije,Slovenije,Slovenija,Npfsg,PROPN,I-ORG,ORG-Slovene-Consumers'-Association,I-ORG
 sl-40,6,4,(,,(,Z,PUNCT,O,,O
-sl-40,6,5,ZPS,ZPS,ZPS,Npfsn,PROPN,B-ORG,ORG-Slovene-Consumers'-Association,O
+sl-40,6,5,ZPS,ZPS,ZPS,Npfsn,PROPN,B-ORG,ORG-Slovene-Consumers'-Association,B-ORG
 sl-40,6,6,),,),Z,PUNCT,O,,O
 sl-40,6,7,pa,,pa,Cc,CCONJ,O,,O
 sl-40,6,8,je,,biti,Va-r3s-n,AUX,O,,O
@@ -171,7 +171,7 @@ sl-40,7,8,se,,se,Px------y,PRON,O,,O
 sl-40,7,9,najprej,,najprej,Rgs,ADV,O,,O
 sl-40,7,10,obrnite,,obrniti,Vmem2p,VERB,O,,O
 sl-40,7,11,na,,na,Sa,ADP,O,,O
-sl-40,7,12,Ryanair,Ryanair,Ryanair,Npmsan,PROPN,B-ORG,ORG-Ryanair,O
+sl-40,7,12,Ryanair,Ryanair,Ryanair,Npmsan,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-40,7,13,in,,in,Cc,CCONJ,O,,O
 sl-40,7,14,poskušajte,,poskušati,Vmpm2p,VERB,O,,O
 sl-40,7,15,skupaj,,skupaj,Rgp,ADV,O,,O
@@ -223,7 +223,7 @@ sl-40,9,5,pod,,pod,Sa,ADP,O,,O
 sl-40,9,6,izredne,,izreden,Agpfpa,ADJ,O,,O
 sl-40,9,7,razmere,,razmera,Ncfpa,NOUN,O,,O
 sl-40,10,1,Na,,na,Sl,ADP,O,,O
-sl-40,10,2,ZPS,ZPS,ZPS,Npfsl,PROPN,B-ORG,ORG-Slovene-Consumers'-Association,O
+sl-40,10,2,ZPS,ZPS,ZPS,Npfsl,PROPN,B-ORG,ORG-Slovene-Consumers'-Association,B-ORG
 sl-40,10,3,poudarjajo,,poudarjati,Vmpr3p,VERB,O,,O
 sl-40,10,4,",",,",",Z,PUNCT,O,,O
 sl-40,10,5,da,,da,Cs,SCONJ,O,,O
@@ -252,7 +252,7 @@ sl-40,11,7,",",,",",Z,PUNCT,O,,O
 sl-40,11,8,če,,če,Cs,SCONJ,O,,O
 sl-40,11,9,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-40,11,10,je,,biti,Va-r3s-n,AUX,O,,O
-sl-40,11,11,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-40,11,11,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-40,11,12,obvestil,,obvestiti,Vmep-sm,VERB,O,,O
 sl-40,11,13,o,,o,Sl,ADP,O,,O
 sl-40,11,14,odpovedi,,odpoved,Ncfsl,NOUN,O,,O
@@ -410,7 +410,7 @@ sl-40,15,14,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-40,15,15,je,,on,Pp3fsg--y,PRON,O,,O
 sl-40,15,16,ni,,biti,Va-r3s-y,VERB,O,,O
 sl-40,15,17,treba,,treba,Rgp,ADV,O,,O
-sl-40,16,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-40,16,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-40,16,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-40,16,3,sicer,,sicer,Q,PART,O,,O
 sl-40,16,4,v,,v,Sl,ADP,O,,O
@@ -465,7 +465,7 @@ sl-40,17,26,javnost,,javnost,Ncfsa,NOUN,O,,O
 sl-40,17,27,",",,",",Z,PUNCT,O,,O
 sl-40,17,28,da,,da,Cs,SCONJ,O,,O
 sl-40,17,29,zadnje,,zadnji,Agpfsg,ADJ,O,,O
-sl-40,17,30,Ryanairove,Ryanair,Ryanairov,Aspfsg,ADJ,B-ORG,ORG-Ryanair,O
+sl-40,17,30,Ryanairove,Ryanair,Ryanairov,Aspfsg,ADJ,B-ORG,ORG-Ryanair,B-ORG
 sl-40,17,31,stavke,,stavka,Ncfsg,NOUN,O,,O
 sl-40,17,32,ne,,ne,Q,PART,O,,O
 sl-40,17,33,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -491,7 +491,7 @@ sl-40,17,52,Jakin,Jakin,Jakin,Npmsn,PROPN,I-PER,PER-Matjaž-Jakin,I-PER
 sl-40,17,53,iz,,iz,Sg,ADP,O,,O
 sl-40,17,54,Svetovalne,,svetovalen,Agpfsg,ADJ,O,,O
 sl-40,17,55,pisarne,,pisarna,Ncfsg,NOUN,O,,O
-sl-40,17,56,ZPS,ZPS,ZPS,Npmsn,PROPN,B-ORG,ORG-Slovene-Consumers'-Association,O
+sl-40,17,56,ZPS,ZPS,ZPS,Npmsn,PROPN,B-ORG,ORG-Slovene-Consumers'-Association,B-ORG
 sl-40,17,57,.,,.,Z,PUNCT,O,,O
 sl-40,18,1,Potrošnikom,,potrošnik,Ncmpd,NOUN,O,,O
 sl-40,18,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -521,7 +521,7 @@ sl-40,19,5,najprej,,najprej,Rgs,ADV,O,,O
 sl-40,19,6,nasloviti,,nasloviti,Vmen,VERB,O,,O
 sl-40,19,7,neposredno,,neposredno,Rgp,ADV,O,,O
 sl-40,19,8,na,,na,Sa,ADP,O,,O
-sl-40,19,9,Ryanair,Ryanair,Ryanair,Npmsan,PROPN,B-ORG,ORG-Ryanair,O
+sl-40,19,9,Ryanair,Ryanair,Ryanair,Npmsan,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-40,19,10,.,,.,Z,PUNCT,O,,O
 sl-40,20,1,Če,,če,Cs,SCONJ,O,,O
 sl-40,20,2,se,,se,Px------y,PRON,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-92,0,1,Trumpovo,Trump,Trumpov,Aspnsn,ADJ,B-PER,PER-Donald-Trump,B-PER
 sl-92,0,2,napenjanje,,napenjanje,Ncnsn,NOUN,O,,O
 sl-92,0,3,mišic,,mišica,Ncfpg,NOUN,O,,O
@@ -11,8 +11,8 @@ sl-92,1,4,trgih,,trg,Ncmpl,NOUN,O,,O
 sl-92,1,5,ostajajo,,ostajati,Vmpr3p,VERB,O,,O
 sl-92,1,6,zaskrbljeni,,zaskrbljen,Appmpn,ADJ,O,,O
 sl-92,1,7,.,,.,Z,PUNCT,O,,O
-sl-92,2,1,Bela,Bela,bel,Agpfsn,ADJ,B-ORG,ORG-White-House,B-ORG
-sl-92,2,2,hiša,hiša,hiša,Ncfsn,NOUN,I-ORG,ORG-White-House,I-ORG
+sl-92,2,1,Bela,Bela,bel,Agpfsn,ADJ,B-ORG,ORG-White-House,O
+sl-92,2,2,hiša,hiša,hiša,Ncfsn,NOUN,I-ORG,ORG-White-House,O
 sl-92,2,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-92,2,4,namreč,,namreč,Cc,CCONJ,O,,O
 sl-92,2,5,sredi,,sredi,Sg,ADP,O,,O
@@ -35,7 +35,7 @@ sl-92,2,21,videonadzor,,videonadzor,Ncmsan,NOUN,O,,O
 sl-92,2,22,Hikvision,Hikvision,Hikvision,Npmsn,PROPN,B-ORG,ORG-Hikvision,B-ORG
 sl-92,2,23,.,,.,Z,PUNCT,O,,O
 sl-92,3,1,Med,,med,Si,ADP,O,,O
-sl-92,3,2,kitajskimi,,kitajski,Agpnpi,ADJ,O,,B-LOC
+sl-92,3,2,kitajskimi,,kitajski,Agpnpi,ADJ,O,,O
 sl-92,3,3,tehnološkimi,,tehnološki,Agpnpi,ADJ,O,,O
 sl-92,3,4,podjetji,,podjetje,Ncnpi,NOUN,O,,O
 sl-92,3,5,se,,se,Px------y,PRON,O,,O
@@ -151,14 +151,14 @@ sl-92,8,15,dolar,,dolar,Ncmsan,NOUN,O,,O
 sl-92,8,16,znižala,,znižati,Vmep-sf,VERB,O,,O
 sl-92,8,17,.,,.,Z,PUNCT,O,,O
 sl-92,9,1,Kitajska,,kitajski,Agpnpn,ADJ,O,,B-LOC
-sl-92,9,2,letalska,,letalski,Agpnpn,ADJ,O,,B-PRO
+sl-92,9,2,letalska,,letalski,Agpnpn,ADJ,O,,O
 sl-92,9,3,podjetja,,podjetje,Ncnpn,NOUN,O,,O
 sl-92,9,4,",",,",",Z,PUNCT,O,,O
 sl-92,9,5,med,,med,Si,ADP,O,,O
 sl-92,9,6,njimi,,on,Pp3mpi,PRON,O,,O
 sl-92,9,7,tudi,,tudi,Q,PART,O,,O
 sl-92,9,8,Air,Air,Air,Npmsn,PROPN,B-ORG,ORG-Air-China,B-ORG
-sl-92,9,9,China,China,China,Npmsn,PROPN,I-ORG,ORG-Air-China,B-ORG
+sl-92,9,9,China,China,China,Npmsn,PROPN,I-ORG,ORG-Air-China,I-ORG
 sl-92,9,10,in,,in,Cc,CCONJ,O,,O
 sl-92,9,11,China,China,China,Npmsn,PROPN,B-ORG,ORG-China-Southern-Airlines,B-ORG
 sl-92,9,12,Southern,Southern,Southern,Npmsn,PROPN,I-ORG,ORG-China-Southern-Airlines,I-ORG
@@ -176,7 +176,7 @@ sl-92,9,23,letal,,letalo,Ncnpg,NOUN,O,,B-PRO
 sl-92,9,24,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737-800,I-PRO
 sl-92,9,25,-,-,-,Z,PUNCT,I-PRO,PRO-Boeing-737-800,I-PRO
 sl-92,9,26,800,800,800,Mdc,NUM,I-PRO,PRO-Boeing-737-800,I-PRO
-sl-92,9,27,max.,max,max.,Y,X,I-PRO,PRO-Boeing-737-800,I-PRO
+sl-92,9,27,max.,max,max.,Y,X,I-PRO,PRO-Boeing-737-800,O
 sl-92,9,28,Delnica,,delnica,Ncfsn,NOUN,O,,O
 sl-92,9,29,Boeinga,Boeing,Boeing,Npmsg,PROPN,B-ORG,ORG-Boeing,B-ORG
 sl-92,9,30,pa,,pa,Cc,CCONJ,O,,O
@@ -290,7 +290,7 @@ sl-92,13,20,in,,in,Cc,CCONJ,O,,O
 sl-92,13,21,dosegla,,doseči,Vmep-pn,VERB,O,,O
 sl-92,13,22,raven,,raven,Ncfsa,NOUN,O,,O
 sl-92,13,23,"97,9.",,"97,9.",Mdo,NUM,O,,O
-sl-92,14,1,OECD,OECD,OECD,Npfsn,PROPN,B-ORG,ORG-OECD-Organisation-for-Economic-Co-operation-and-Development,B-ORG
+sl-92,14,1,OECD,OECD,OECD,Npfsn,PROPN,B-ORG,ORG-OECD-Organisation-for-Economic-Co-operation-and-Development,B-LOC
 sl-92,14,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-92,14,3,v,,v,Sl,ADP,O,,O
 sl-92,14,4,okviru,,okvir,Ncmsl,NOUN,O,,O

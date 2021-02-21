@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-9,0,1,Domišljija,,domišljija,Ncfsn,NOUN,O,,O
 sl-9,0,2,uličnih,,uličen,Agpmpg,ADJ,O,,O
 sl-9,0,3,performerjev,,performer,Ncmpg,NOUN,O,,O
@@ -92,8 +92,8 @@ sl-9,6,4,kos,,kos,Ncmsan,NOUN,O,,O
 sl-9,6,5,lepenke,,lepenka,Ncfsg,NOUN,O,,O
 sl-9,6,6,v,,v,Sl,ADP,O,,O
 sl-9,6,7,bližini,,bližina,Ncfsl,NOUN,O,,O
-sl-9,6,8,morskih,morske,morski,Agpfpg,ADJ,B-PRO,PRO-Zadar-Sea-Organ,B-ORG
-sl-9,6,9,orgel,orgle,orgle,Ncfpg,NOUN,I-PRO,PRO-Zadar-Sea-Organ,I-PRO
+sl-9,6,8,morskih,morske,morski,Agpfpg,ADJ,B-PRO,PRO-Zadar-Sea-Organ,B-PRO
+sl-9,6,9,orgel,orgle,orgle,Ncfpg,NOUN,I-PRO,PRO-Zadar-Sea-Organ,I-ORG
 sl-9,6,10,",",,",",Z,PUNCT,O,,O
 sl-9,6,11,ki,,ki,Cs,SCONJ,O,,O
 sl-9,6,12,sicer,,sicer,Q,PART,O,,O

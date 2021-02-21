@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-167,0,1,(,,(,Z,PUNCT,O,,O
 sl-167,0,2,PORTRET,,portret,Ncmsn,NOUN,O,,O
 sl-167,0,3,TEDNA,,teden,Ncmsg,NOUN,O,,O
@@ -35,7 +35,7 @@ sl-167,2,14,popelje,,popeljati,Vmer3s,VERB,O,,O
 sl-167,2,15,iz,,iz,Sg,ADP,O,,O
 sl-167,2,16,Evropske,Evropska,evropski,Agpfsg,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-167,2,17,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-European-Union,I-ORG
-sl-167,2,18,-,,-,Z,PUNCT,O,,B-PER
+sl-167,2,18,-,,-,Z,PUNCT,O,,O
 sl-167,2,19,z,,z,Si,ADP,O,,O
 sl-167,2,20,dogovorom,,dogovor,Ncmsi,NOUN,O,,O
 sl-167,2,21,ali,,ali,Cc,CCONJ,O,,O
@@ -83,7 +83,7 @@ sl-167,3,39,Združenemu,Združeno,združen,Appnsd,ADJ,B-LOC,GPE-Great-Britain,B-
 sl-167,3,40,kraljestvu,kraljestvo,kraljestvo,Ncnsd,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-167,3,41,Velike,Velike,velik,Agpfsg,ADJ,I-LOC,GPE-Great-Britain,I-LOC
 sl-167,3,42,Britanije,Britanije,Britanija,Npfsg,PROPN,I-LOC,GPE-Great-Britain,I-LOC
-sl-167,3,43,in,in,in,Cc,CCONJ,I-LOC,GPE-Great-Britain,O
+sl-167,3,43,in,in,in,Cc,CCONJ,I-LOC,GPE-Great-Britain,I-LOC
 sl-167,3,44,Severne,Severne,severen,Agpfsg,ADJ,I-LOC,GPE-Great-Britain,I-LOC
 sl-167,3,45,Irske,Irske,Irska,Npfsg,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-167,3,46,ter,ter,ter,Cc,CCONJ,I-LOC,GPE-Great-Britain,O
@@ -115,7 +115,7 @@ sl-167,5,3,namreč,,namreč,Cc,CCONJ,O,,O
 sl-167,5,4,prejel,,prejeti,Vmep-sm,VERB,O,,O
 sl-167,5,5,55-letni,,ffrleten,Agpmsny,ADJ,O,,O
 sl-167,5,6,Alexander,Alexander,Alexander,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
-sl-167,5,7,Boris,Boris,Boris,Npmsn,PROPN,I-PER,PER-Boris-Johnson,B-PER
+sl-167,5,7,Boris,Boris,Boris,Npmsn,PROPN,I-PER,PER-Boris-Johnson,I-PER
 sl-167,5,8,de,de,de,Xf,X,I-PER,PER-Boris-Johnson,I-PER
 sl-167,5,9,Pfeffel,Pfeffel,Pfeffel,Npmsn,PROPN,I-PER,PER-Boris-Johnson,I-PER
 sl-167,5,10,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,I-PER
@@ -162,7 +162,7 @@ sl-167,7,11,Churchillovega,Churchill,Churchillov,Aspmsg,ADJ,B-PER,PER-Winston-Ch
 sl-167,7,12,mandata,,mandat,Ncmsg,NOUN,O,,O
 sl-167,7,13,zapletla,,zaplesti,Vmep-sf,VERB,O,,O
 sl-167,7,14,v,,v,Sa,ADP,O,,O
-sl-167,7,15,vojno,,vojna,Ncfsa,NOUN,O,,I-EVT
+sl-167,7,15,vojno,,vojna,Ncfsa,NOUN,O,,O
 sl-167,7,16,s,,z,Si,ADP,O,,O
 sl-167,7,17,Hitlerjevo,Hitler,Hitlerjev,Aspfsi,ADJ,B-PER,PER-Adolf-Hitler,B-PER
 sl-167,7,18,Nemčijo,Nemčija,Nemčija,Npfsi,PROPN,B-LOC,GPE-Germany,B-LOC
@@ -193,7 +193,7 @@ sl-167,7,42,ne,,ne,Q,PART,O,,O
 sl-167,7,43,bi,,biti,Va-c,AUX,O,,O
 sl-167,7,44,zgodilo,,zgoditi,Vmep-sn,VERB,O,,O
 sl-167,7,45,.,,.,Z,PUNCT,O,,O
-sl-167,8,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-167,8,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-167,8,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-167,8,3,namreč,,namreč,Cc,CCONJ,O,,O
 sl-167,8,4,trdno,,trdno,Rgp,ADV,O,,O
@@ -212,7 +212,7 @@ sl-167,8,16,bolj,,bolj,Rgc,ADV,O,,O
 sl-167,8,17,oddalji,,oddaljiti,Vmer3s,VERB,O,,O
 sl-167,8,18,od,,od,Sg,ADP,O,,O
 sl-167,8,19,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,B-LOC
-sl-167,8,20,-,,-,Z,PUNCT,O,,B-PER
+sl-167,8,20,-,,-,Z,PUNCT,O,,O
 sl-167,8,21,zlepa,,zlepa,Rgp,ADV,O,,O
 sl-167,8,22,ali,,ali,Cc,CCONJ,O,,O
 sl-167,8,23,zgrda,,zgrda,Vmen,VERB,O,,O
@@ -228,7 +228,7 @@ sl-167,9,8,besednjaku,,besednjak,Ncmsl,NOUN,O,,O
 sl-167,9,9,.,,.,Z,PUNCT,O,,O
 sl-167,10,1,Nihče,,nihče,Pz-msn,PRON,O,,O
 sl-167,10,2,od,,od,Sg,ADP,O,,O
-sl-167,10,3,britanskih,,britanski,Agpmpg,ADJ,O,,B-ORG
+sl-167,10,3,britanskih,,britanski,Agpmpg,ADJ,O,,O
 sl-167,10,4,politikov,,politik,Ncmpg,NOUN,O,,O
 sl-167,10,5,verjetno,,verjetno,Rgp,ADV,O,,O
 sl-167,10,6,ne,,ne,Q,PART,O,,O
@@ -236,7 +236,7 @@ sl-167,10,7,sovraži,,sovražiti,Vmpr3s,VERB,O,,O
 sl-167,10,8,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-167,10,9,bolj,,bolj,Rgc,ADV,O,,O
 sl-167,10,10,kot,,kot,Cs,SCONJ,O,,O
-sl-167,10,11,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-167,10,11,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-167,11,1,Z,,z,Si,ADP,O,,O
 sl-167,11,2,zagovarjanjem,,zagovarjanje,Ncnsi,NOUN,O,,O
 sl-167,11,3,odhoda,,odhod,Ncmsg,NOUN,O,,O
@@ -267,7 +267,7 @@ sl-167,11,27,v,,v,Sa,ADP,O,,O
 sl-167,11,28,visoko,,visok,Agpfsa,ADJ,O,,O
 sl-167,11,29,politiko,,politika,Ncfsa,NOUN,O,,O
 sl-167,11,30,.,,.,Z,PUNCT,O,,O
-sl-167,12,1,Resda,,resda,Rgp,ADV,O,,B-PER
+sl-167,12,1,Resda,,resda,Rgp,ADV,O,,O
 sl-167,12,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-167,12,3,imel,,imeti,Vmpp-sm,VERB,O,,O
 sl-167,12,4,na,,na,Sl,ADP,O,,O
@@ -318,7 +318,7 @@ sl-167,13,16,",",,",",Z,PUNCT,O,,O
 sl-167,13,17,glasnejši,,glasen,Agcmsny,ADJ,O,,O
 sl-167,13,18,je,,biti,Va-r3s-n,AUX,O,,O
 sl-167,13,19,bil,,biti,Va-p-sm,AUX,O,,O
-sl-167,13,20,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-167,13,20,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-167,13,21,.,,.,Z,PUNCT,O,,O
 sl-167,14,1,Evropska,Evropska,evropski,Agpfsn,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-167,14,2,unija,unija,unija,Ncfsn,NOUN,I-ORG,ORG-European-Union,I-ORG
@@ -379,12 +379,12 @@ sl-167,15,38,Theresa,Theresa,Theresa,Npfsn,PROPN,B-PER,PER-Theresa-May,B-PER
 sl-167,15,39,May,May,May,Npfsn,PROPN,I-PER,PER-Theresa-May,I-PER
 sl-167,15,40,",",,",",Z,PUNCT,O,,O
 sl-167,15,41,je,,biti,Va-r3s-n,AUX,O,,O
-sl-167,15,42,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-167,15,42,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-167,15,43,postal,,postati,Vmep-sm,VERB,O,,O
 sl-167,15,44,zunanji,,zunanji,Agpmsny,ADJ,O,,O
 sl-167,15,45,minister,,minister,Ncmsn,NOUN,O,,O
 sl-167,15,46,.,,.,Z,PUNCT,O,,O
-sl-167,16,1,Ki,,ki,Cs,SCONJ,O,,O
+sl-167,16,1,Ki,,ki,Cs,SCONJ,O,,B-PER
 sl-167,16,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-167,16,3,glede,,glede,Sg,ADP,O,,O
 sl-167,16,4,pogajanj,,pogajanje,Ncnpg,NOUN,O,,O
@@ -450,10 +450,10 @@ sl-167,17,11,",",,",",Z,PUNCT,O,,O
 sl-167,17,12,da,,da,Cs,SCONJ,O,,O
 sl-167,17,13,je,,biti,Va-r3s-n,AUX,O,,O
 sl-167,17,14,bil,,biti,Va-p-sm,AUX,O,,O
-sl-167,17,15,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-167,17,15,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-167,17,16,"""",,"""",Z,PUNCT,O,,O
 sl-167,17,17,mali,,mali,Agpmsny,ADJ,O,,O
-sl-167,17,18,trump,Trump,trump,Ncmsn,NOUN,B-PER,PER-Donald-Trump,O
+sl-167,17,18,trump,Trump,trump,Ncmsn,NOUN,B-PER,PER-Donald-Trump,B-PER
 sl-167,17,19,"""",,"""",Z,PUNCT,O,,O
 sl-167,17,20,",",,",",Z,PUNCT,O,,O
 sl-167,17,21,ko,,ko,Cs,SCONJ,O,,O
@@ -649,7 +649,7 @@ sl-167,27,15,"""",,"""",Z,PUNCT,O,,O
 sl-167,27,16,mu,,on,Pp3msd--y,PRON,O,,O
 sl-167,27,17,je,,biti,Va-r3s-n,AUX,O,,O
 sl-167,27,18,odgovoril,,odgovoriti,Vmep-sm,VERB,O,,O
-sl-167,27,19,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-167,27,19,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-167,27,20,.,,.,Z,PUNCT,O,,O
 sl-167,28,1,"""",,"""",Z,PUNCT,O,,O
 sl-167,28,2,Moji,,moj,Ps1mpns,DET,O,,O
@@ -683,7 +683,7 @@ sl-167,31,2,zagnan,,zagnan,Appmsnn,ADJ,O,,O
 sl-167,31,3,podpornik,,podpornik,Ncmsn,NOUN,O,,O
 sl-167,31,4,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-167,31,5,je,,biti,Va-r3s-n,AUX,O,,O
-sl-167,31,6,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-167,31,6,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-167,31,7,že,,že,Q,PART,O,,O
 sl-167,31,8,večkrat,,večkrat,Rgc,ADV,O,,O
 sl-167,31,9,izrazil,,izraziti,Vmep-sm,VERB,O,,O
@@ -762,7 +762,7 @@ sl-167,34,15,olje,,olje,Ncnsa,NOUN,O,,O
 sl-167,34,16,",",,",",Z,PUNCT,O,,O
 sl-167,34,17,"""",,"""",Z,PUNCT,O,,O
 sl-167,34,18,tako,,tako,Rgp,ADV,O,,O
-sl-167,34,19,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-167,34,19,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-167,34,20,.,,.,Z,PUNCT,O,,O
 sl-167,35,1,"""",,"""",Z,PUNCT,O,,O
 sl-167,35,2,Nismo,,biti,Va-r1p-y,AUX,O,,O
@@ -770,7 +770,7 @@ sl-167,35,3,se,,se,Px------y,PRON,O,,O
 sl-167,35,4,pridružili,,pridružiti,Vmep-pm,VERB,O,,O
 sl-167,35,5,skupnemu,,skupen,Agpmsd,ADJ,O,,O
 sl-167,35,6,trgu,,trg,Ncmsd,NOUN,O,,O
-sl-167,35,7,-,,-,Z,PUNCT,O,,B-PER
+sl-167,35,7,-,,-,Z,PUNCT,O,,O
 sl-167,35,8,s,,z,Si,ADP,O,,O
 sl-167,35,9,čimer,,kar,Pr-nsi,PRON,O,,O
 sl-167,35,10,smo,,biti,Va-r1p-n,AUX,O,,O
@@ -779,7 +779,7 @@ sl-167,35,12,Novozelandce,Novozelandci,Novozelandec,Npmpa,PROPN,B-PER,GPE-New-Ze
 sl-167,35,13,in,,in,Cc,CCONJ,O,,O
 sl-167,35,14,njihovo,,njihov,Ps3nsap,DET,O,,O
 sl-167,35,15,maslo,,maslo,Ncnsa,NOUN,O,,O
-sl-167,35,16,-,,-,Z,PUNCT,O,,B-PER
+sl-167,35,16,-,,-,Z,PUNCT,O,,O
 sl-167,35,17,",",,",",Z,PUNCT,O,,O
 sl-167,35,18,da,,da,Cs,SCONJ,O,,O
 sl-167,35,19,bi,,biti,Va-c,AUX,O,,O
@@ -809,7 +809,7 @@ sl-167,37,1,Medtem,,medtem,Rgp,ADV,O,,O
 sl-167,37,2,ko,,ko,Cs,SCONJ,O,,O
 sl-167,37,3,novinarji,,novinar,Ncmpn,NOUN,O,,O
 sl-167,37,4,resnih,,resen,Agpmpg,ADJ,O,,O
-sl-167,37,5,britanskih,,britanski,Agpmpg,ADJ,O,,B-ORG
+sl-167,37,5,britanskih,,britanski,Agpmpg,ADJ,O,,O
 sl-167,37,6,medijev,,medij,Ncmpg,NOUN,O,,O
 sl-167,37,7,analizirajo,,analizirati,Vmbr3p,VERB,O,,O
 sl-167,37,8,prve,,prvi,Mlofpa,ADJ,O,,O
@@ -995,7 +995,7 @@ sl-167,44,1,Rojen,,rojen,Appmsnn,ADJ,O,,O
 sl-167,44,2,v,,v,Sl,ADP,O,,O
 sl-167,44,3,zlati,,zlat,Agpfsl,ADJ,O,,O
 sl-167,44,4,zibelki,,zibelka,Ncfsl,NOUN,O,,O
-sl-167,45,1,Zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-167,45,1,Zdaj,,zdaj,Rgp,ADV,O,,O
 sl-167,45,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-167,45,3,torej,,torej,Rgp,ADV,O,,O
 sl-167,45,4,ta,,ta,Pd-msn,DET,O,,O
@@ -1089,12 +1089,12 @@ sl-167,47,24,je,,biti,Va-r3s-n,AUX,O,,O
 sl-167,47,25,dala,,dati,Vmep-sf,VERB,O,,O
 sl-167,47,26,kar,,kar,Rgp,ADV,O,,O
 sl-167,47,27,20,,20,Mdc,NUM,O,,O
-sl-167,47,28,britanskih,,britanski,Agpmpg,ADJ,O,,B-ORG
+sl-167,47,28,britanskih,,britanski,Agpmpg,ADJ,O,,O
 sl-167,47,29,premierov,,premier,Ncmpg,NOUN,O,,O
 sl-167,47,30,od,,od,Sg,ADP,O,,O
 sl-167,47,31,dosedanjih,,dosedanji,Agpmpg,ADJ,O,,O
 sl-167,47,32,55,,55,Mdc,NUM,O,,O
-sl-167,47,33,-,,-,Z,PUNCT,O,,B-PER
+sl-167,47,33,-,,-,Z,PUNCT,O,,O
 sl-167,47,34,med,,med,Si,ADP,O,,O
 sl-167,47,35,njimi,,on,Pp3mpi,PRON,O,,O
 sl-167,47,36,sta,,biti,Va-r3d-n,AUX,O,,O
@@ -1288,7 +1288,7 @@ sl-167,54,19,",",,",",Z,PUNCT,O,,O
 sl-167,54,20,zlasti,,zlasti,Q,PART,O,,O
 sl-167,54,21,gospodarske,,gospodarski,Agpfsg,ADJ,O,,O
 sl-167,54,22,.,,.,Z,PUNCT,O,,O
-sl-167,55,1,Zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-167,55,1,Zdaj,,zdaj,Rgp,ADV,O,,O
 sl-167,55,2,ostaja,,ostajati,Vmpr3s,VERB,O,,O
 sl-167,55,3,za,,za,Sa,ADP,O,,O
 sl-167,55,4,nasprotnike,,nasprotnik,Ncmpa,NOUN,O,,O

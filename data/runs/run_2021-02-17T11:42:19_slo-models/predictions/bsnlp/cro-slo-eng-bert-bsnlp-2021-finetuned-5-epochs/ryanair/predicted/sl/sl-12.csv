@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-12,0,1,Let,,leto,Ncnpg,NOUN,O,,O
 sl-12,0,2,iz,,iz,Sg,ADP,O,,O
 sl-12,0,3,pekla,,pekel,Ncmsg,NOUN,O,,O
@@ -107,7 +107,7 @@ sl-12,4,23,mladeniči,,mladenič,Ncmpn,NOUN,O,,O
 sl-12,4,24,namenjena,,namenjen,Appfsn,ADJ,O,,O
 sl-12,4,25,na,,na,Sa,ADP,O,,O
 sl-12,4,26,festival,,festival,Ncmsan,NOUN,O,,O
-sl-12,4,27,Hard,Hard,Hard,Npmsn,PROPN,B-EVT,EVT-Hard-Island,B-EVT
+sl-12,4,27,Hard,Hard,Hard,Npmsn,PROPN,B-EVT,EVT-Hard-Island,B-PRO
 sl-12,4,28,Island,Island,Island,Npmsn,PROPN,I-EVT,EVT-Hard-Island,I-PRO
 sl-12,4,29,v,,v,Sa,ADP,O,,O
 sl-12,4,30,Zrće,Zrće,Zrće,Npmsan,PROPN,B-LOC,LOC-Zrće,B-LOC

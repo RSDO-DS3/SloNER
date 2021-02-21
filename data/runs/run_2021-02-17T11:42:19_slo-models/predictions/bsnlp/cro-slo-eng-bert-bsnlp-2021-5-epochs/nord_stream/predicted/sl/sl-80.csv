@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-80,0,1,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-80,0,2,in,,in,Cc,CCONJ,O,,O
 sl-80,0,3,Ukrajina,Ukrajina,Ukrajina,Npfsn,PROPN,B-LOC,GPE-Ukraine,B-LOC
@@ -42,7 +42,7 @@ sl-80,1,28,velikana,,velikan,Ncmsg,NOUN,O,,O
 sl-80,1,29,Gazprom,Gazprom,Gazprom,Npmsn,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-80,1,30,in,,in,Cc,CCONJ,O,,O
 sl-80,1,31,urada,,urad,Ncmsg,NOUN,O,,O
-sl-80,1,32,ukrajinskega,,ukrajinski,Agpmsg,ADJ,O,,B-LOC
+sl-80,1,32,ukrajinskega,,ukrajinski,Agpmsg,ADJ,O,,O
 sl-80,1,33,predsednika,,predsednik,Ncmsg,NOUN,O,,O
 sl-80,1,34,Volodimirja,Volodimir,Volodimir,Npmsg,PROPN,B-PER,PER-Volodymyr-Zelensky,B-PER
 sl-80,1,35,Zelenskega,Zelenski,Zelenski,Npmsg,PROPN,I-PER,PER-Volodymyr-Zelensky,I-PER
@@ -155,10 +155,10 @@ sl-80,6,12,profilu,,profil,Ncmsl,NOUN,O,,O
 sl-80,6,13,na,,na,Sl,ADP,O,,O
 sl-80,6,14,Facebooku,Facebook,Facebook,Npmsl,PROPN,B-PRO,PRO-Facebook,B-PRO
 sl-80,6,15,sporočil,,sporočiti,Vmep-sm,VERB,O,,O
-sl-80,6,16,ukrajinski,,ukrajinski,Agpmsny,ADJ,O,,B-LOC
+sl-80,6,16,ukrajinski,,ukrajinski,Agpmsny,ADJ,O,,O
 sl-80,6,17,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-80,6,18,Volodimir,Volodimir,Volodimir,Npmsn,PROPN,B-PER,PER-Volodymyr-Zelensky,B-PER
-sl-80,6,19,Zelenski,Zelenski,Zelenski,Npmsn,PROPN,I-PER,PER-Volodymyr-Zelensky,B-PER
+sl-80,6,19,Zelenski,Zelenski,Zelenski,Npmsn,PROPN,I-PER,PER-Volodymyr-Zelensky,I-PER
 sl-80,6,20,.,,.,Z,PUNCT,O,,O
 sl-80,7,1,Ruski,,ruski,Agpmsny,ADJ,O,,O
 sl-80,7,2,premier,,premier,Ncmsn,NOUN,O,,O
@@ -208,7 +208,7 @@ sl-80,8,17,nato,,nato,Rgp,ADV,O,,O
 sl-80,8,18,pa,,pa,Cc,CCONJ,O,,O
 sl-80,8,19,od,,od,Sg,ADP,O,,O
 sl-80,8,20,leta,,leto,Ncnsg,NOUN,O,,O
-sl-80,8,21,2021,,2021,Mdc,NUM,O,,I-PRO
+sl-80,8,21,2021,,2021,Mdc,NUM,O,,O
 sl-80,8,22,do,,do,Sg,ADP,O,,O
 sl-80,8,23,2024,,2024,Mdc,NUM,O,,O
 sl-80,8,24,vsaj,,vsaj,Q,PART,O,,O

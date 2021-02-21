@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-75,0,1,Hiter,,hiter,Agpmsnn,ADJ,O,,O
 sl-75,0,2,pregled,,pregled,Ncmsn,NOUN,O,,O
 sl-75,0,3,:,,:,Z,PUNCT,O,,O

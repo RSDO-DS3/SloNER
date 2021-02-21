@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-175,0,1,Turčija,Turčija,Turčija,Npfsn,PROPN,B-LOC,GPE-Turkey,B-LOC
 sl-175,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-175,0,3,",",,",",Z,PUNCT,O,,O
@@ -236,9 +236,9 @@ sl-175,10,10,po,,po,Sl,ADP,O,,O
 sl-175,10,11,pisanju,,pisanje,Ncnsl,NOUN,O,,O
 sl-175,10,12,ameriškega,,ameriški,Agpmsg,ADJ,O,,O
 sl-175,10,13,časnika,,časnik,Ncmsg,NOUN,O,,O
-sl-175,10,14,New,New,New,Npmsn,PROPN,B-PRO,PRO-The-New-York-Times,B-PRO
-sl-175,10,15,York,York,York,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,B-PRO
-sl-175,10,16,Times,Times,Times,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,I-PRO
+sl-175,10,14,New,New,New,Npmsn,PROPN,B-PRO,PRO-The-New-York-Times,B-ORG
+sl-175,10,15,York,York,York,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,I-ORG
+sl-175,10,16,Times,Times,Times,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,I-ORG
 sl-175,10,17,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-175,10,18,znano,,znan,Appnsn,ADJ,O,,O
 sl-175,10,19,",",,",",Z,PUNCT,O,,O
@@ -272,7 +272,7 @@ sl-175,11,20,vojske,,vojska,Ncfsg,NOUN,O,,O
 sl-175,11,21,.,,.,Z,PUNCT,O,,O
 sl-175,12,1,Domnevno,,domnevno,Rgp,ADV,O,,O
 sl-175,12,2,48-letni,,4rvleten,Agpmsny,ADJ,O,,O
-sl-175,12,3,Iračan,Iračan,Iračan,Npmsn,PROPN,B-PER,GPE-Iraq,B-PER
+sl-175,12,3,Iračan,Iračan,Iračan,Npmsn,PROPN,B-PER,GPE-Iraq,O
 sl-175,12,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-175,12,5,nasilno,,nasilen,Agpnsa,ADJ,O,,O
 sl-175,12,6,džihadistično,,džihadističen,Agpnsa,ADJ,O,,O

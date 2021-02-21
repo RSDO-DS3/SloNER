@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-44,0,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-44,0,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-LOC
 sl-44,0,2,močno,,močno,Rgp,ADV,O,,O
 sl-44,0,3,povečala,,povečati,Vmep-sf,VERB,O,,O
 sl-44,0,4,uvoz,,uvoz,Ncmsan,NOUN,O,,O
@@ -32,7 +32,7 @@ sl-44,1,20,komisije,komisija,komisija,Ncfsg,NOUN,I-ORG,ORG-European-Commission,I
 sl-44,1,21,Jean-Claude,Jean-Claude,Jeanlclaude,Npmsn,PROPN,B-PER,PER-Jean-Claude-Juncker,B-PER
 sl-44,1,22,Juncker,Juncker,Juncker,Npmsn,PROPN,I-PER,PER-Jean-Claude-Juncker,I-PER
 sl-44,1,23,julija,,julij,Ncmsg,NOUN,O,,O
-sl-44,1,24,2018,,2018,Mdc,NUM,O,,I-PRO
+sl-44,1,24,2018,,2018,Mdc,NUM,O,,O
 sl-44,1,25,odpotoval,,odpotovati,Vmep-sm,VERB,O,,O
 sl-44,1,26,k,,k,Sd,ADP,O,,O
 sl-44,1,27,Trumpu,Trump,Trump,Npmsd,PROPN,B-PER,PER-Donald-Trump,B-PER
@@ -103,14 +103,14 @@ sl-44,4,4,na,,na,Sl,ADP,O,,O
 sl-44,4,5,današnji,,današnji,Agpfsl,ADJ,O,,O
 sl-44,4,6,konferenci,,konferenca,Ncfsl,NOUN,O,,O
 sl-44,4,7,v,,v,Sl,ADP,O,,O
-sl-44,4,8,Bruslju,Bruselj,Bruselj,Npmsl,PROPN,B-LOC,GPE-Brussels,O
+sl-44,4,8,Bruslju,Bruselj,Bruselj,Npmsl,PROPN,B-LOC,GPE-Brussels,B-LOC
 sl-44,4,9,ponovil,,ponoviti,Vmep-sm,VERB,O,,O
 sl-44,4,10,ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-44,4,11,minister,,minister,Ncmsn,NOUN,O,,O
 sl-44,4,12,za,,za,Sa,ADP,O,,O
 sl-44,4,13,energetiko,,energetika,Ncfsa,NOUN,O,,O
 sl-44,4,14,Rick,Rick,Rick,Npmsn,PROPN,B-PER,PER-Rick-Perry,B-PER
-sl-44,4,15,Perry,Perry,Perry,Npmsn,PROPN,I-PER,PER-Rick-Perry,B-PER
+sl-44,4,15,Perry,Perry,Perry,Npmsn,PROPN,I-PER,PER-Rick-Perry,I-PER
 sl-44,4,16,.,,.,Z,PUNCT,O,,O
 sl-44,5,1,Zaradi,,zaradi,Sg,ADP,O,,O
 sl-44,5,2,Severnega,Severni,severen,Agpmsg,ADJ,B-PRO,PRO-Nord-Stream-2,B-PRO
@@ -415,8 +415,8 @@ sl-44,20,10,z,,z,Sg,ADP,O,,O
 sl-44,20,11,nemškega,nemški,nemški,Agpmsg,ADJ,B-ORG,ORG-DiW-Berlin-German-Institute-for-Economic-Research,O
 sl-44,20,12,Inštituta,Inštituta,inštitut,Ncmsg,NOUN,I-ORG,ORG-DiW-Berlin-German-Institute-for-Economic-Research,O
 sl-44,20,13,za,za,za,Sa,ADP,I-ORG,ORG-DiW-Berlin-German-Institute-for-Economic-Research,O
-sl-44,20,14,gospodarske,gospodarske,gospodarski,Agpfpa,ADJ,I-ORG,ORG-DiW-Berlin-German-Institute-for-Economic-Research,O
-sl-44,20,15,raziskave,raziskave,raziskava,Ncfpa,NOUN,I-ORG,ORG-DiW-Berlin-German-Institute-for-Economic-Research,O
+sl-44,20,14,gospodarske,gospodarske,gospodarski,Agpfpa,ADJ,I-ORG,ORG-DiW-Berlin-German-Institute-for-Economic-Research,I-ORG
+sl-44,20,15,raziskave,raziskave,raziskava,Ncfpa,NOUN,I-ORG,ORG-DiW-Berlin-German-Institute-for-Economic-Research,I-ORG
 sl-44,20,16,.,,.,Z,PUNCT,O,,O
 sl-44,21,1,"""",,"""",Z,PUNCT,O,,O
 sl-44,21,2,Smiselno,,smiseln,Agpnsn,ADJ,O,,O

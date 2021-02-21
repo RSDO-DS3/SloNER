@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-4,0,1,V,,v,Sl,ADP,O,,O
 sl-4,0,2,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
 sl-4,0,3,bodo,,biti,Va-f3p-n,AUX,O,,O
@@ -111,7 +111,7 @@ sl-4,6,17,spet,,spet,Rgp,ADV,O,,O
 sl-4,6,18,izvršujejo,,izvrševati,Vmpr3p,VERB,O,,O
 sl-4,6,19,.,,.,Z,PUNCT,O,,O
 sl-4,7,1,"""",,"""",Z,PUNCT,O,,O
-sl-4,7,2,Kongres,Kongres,kongres,Ncmsn,NOUN,B-ORG,ORG-United-States-Congress,O
+sl-4,7,2,Kongres,Kongres,kongres,Ncmsn,NOUN,B-ORG,ORG-United-States-Congress,B-ORG
 sl-4,7,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,7,4,izrecno,,izrecno,Rgp,ADV,O,,O
 sl-4,7,5,dovolil,,dovoliti,Vmep-sm,VERB,O,,O
@@ -198,7 +198,7 @@ sl-4,11,6,splošno,,splošen,Agpnsa,ADJ,O,,O
 sl-4,11,7,nimajo,,imeti,Vmpr3p-y,VERB,O,,O
 sl-4,11,8,težav,,težava,Ncfpg,NOUN,O,,O
 sl-4,11,9,",",,",",Z,PUNCT,O,,O
-sl-4,11,10,demokrati,Demokrati,demokrat,Ncmpn,NOUN,B-PER,ORG-Democratic-Party-USA,B-PER
+sl-4,11,10,demokrati,Demokrati,demokrat,Ncmpn,NOUN,B-PER,ORG-Democratic-Party-USA,O
 sl-4,11,11,pa,,pa,Cc,CCONJ,O,,O
 sl-4,11,12,imajo,,imeti,Vmpr3p-n,VERB,O,,O
 sl-4,11,13,mešana,,mešan,Appnpa,ADJ,O,,O

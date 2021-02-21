@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-141,0,1,Velika,Velika,velik,Agpfsn,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-141,0,2,Britanija,Britanija,Britanija,Npfsn,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-141,0,3,lahko,,lahko,Rgp,ADV,O,,O
@@ -93,10 +93,10 @@ sl-141,4,12,odločitve,,odločitev,Ncfsg,NOUN,O,,O
 sl-141,4,13,o,,o,Sl,ADP,O,,O
 sl-141,4,14,izstopu,,izstop,Ncmsl,NOUN,O,,O
 sl-141,4,15,iz,,iz,Sg,ADP,O,,O
-sl-141,4,16,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-141,4,16,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-141,4,17,ostala,,ostati,Vmep-sf,VERB,O,,O
 sl-141,4,18,članica,,članica,Ncfsn,NOUN,O,,O
-sl-141,4,19,unije,,unija,Ncfsg,NOUN,O,,I-ORG
+sl-141,4,19,unije,,unija,Ncfsg,NOUN,O,,O
 sl-141,4,20,",",,",",Z,PUNCT,O,,O
 sl-141,4,21,njen,,njen,Ps3msnsf,DET,O,,O
 sl-141,4,22,status,,status,Ncmsn,NOUN,O,,O
@@ -146,7 +146,7 @@ sl-141,5,30,umakne,,umakniti,Vmer3s,VERB,O,,O
 sl-141,5,31,napoved,,napoved,Ncfsa,NOUN,O,,O
 sl-141,5,32,odhoda,,odhod,Ncmsg,NOUN,O,,O
 sl-141,5,33,iz,,iz,Sg,ADP,O,,O
-sl-141,5,34,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-141,5,34,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-141,5,35,.,,.,Z,PUNCT,O,,O
 sl-141,6,1,Pobudo,,pobuda,Ncfsa,NOUN,O,,O
 sl-141,6,2,za,,za,Sa,ADP,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-75,0,1,Hiter,,hiter,Agpmsnn,ADJ,O,,O
 sl-75,0,2,pregled,,pregled,Ncmsn,NOUN,O,,O
 sl-75,0,3,:,,:,Z,PUNCT,O,,O
@@ -361,7 +361,7 @@ sl-75,49,12,Seville,Sevilla,Seville,Npmsn,PROPN,B-LOC,GPE-Seville,B-LOC
 sl-75,49,13,",",,",",Z,PUNCT,O,,O
 sl-75,49,14,Valencia,Valencia,Valencia,Npfsn,PROPN,B-LOC,GPE-Valencia,B-LOC
 sl-75,50,1,Wizzair,Wizzair,Wizzair,Npmsn,PROPN,B-ORG,ORG-Wizz-Air,B-ORG
-sl-75,51,1,Izrael,Izrael,Izrael,Npmsn,PROPN,B-LOC,GPE-Israel,B-LOC
+sl-75,51,1,Izrael,Izrael,Izrael,Npmsn,PROPN,B-LOC,GPE-Israel,I-LOC
 sl-75,51,2,:,,:,Z,PUNCT,O,,O
 sl-75,51,3,Tel,Tel,Tel,Npmsn,PROPN,B-LOC,GPE-Tel-Aviv,B-LOC
 sl-75,51,4,Aviv,Aviv,Aviv,Npmsn,PROPN,I-LOC,GPE-Tel-Aviv,I-LOC

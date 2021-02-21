@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-24,0,1,Sodobni,,sodoben,Agpmpn,ADJ,O,,O
 sl-24,0,2,mediji,,medij,Ncmpn,NOUN,O,,O
 sl-24,0,3,",",,",",Z,PUNCT,O,,O
@@ -7,8 +7,8 @@ sl-24,0,5,delujejo,,delovati,Vmpr3p,VERB,O,,O
 sl-24,0,6,",",,",",Z,PUNCT,O,,O
 sl-24,0,7,škodijo,,škoditi,Vmbr3p,VERB,O,,O
 sl-24,0,8,demokraciji,,demokracija,Ncfsd,NOUN,O,,O
-sl-24,1,1,Mark,Mark,Mark,Npmsn,PROPN,B-PER,PER-Mark-Egan,O
-sl-24,1,2,Egan,Egan,Egan,Npmsn,PROPN,I-PER,PER-Mark-Egan,O
+sl-24,1,1,Mark,Mark,Mark,Npmsn,PROPN,B-PER,PER-Mark-Egan,B-PER
+sl-24,1,2,Egan,Egan,Egan,Npmsn,PROPN,I-PER,PER-Mark-Egan,I-PER
 sl-24,1,3,:,,:,Z,PUNCT,O,,O
 sl-24,1,4,”,,”,Z,PUNCT,O,,O
 sl-24,1,5,Občinstvo,,občinstvo,Ncnsn,NOUN,O,,O
@@ -19,9 +19,9 @@ sl-24,1,9,dobro,,dobro,Rgp,ADV,O,,O
 sl-24,1,10,narejene,,narejen,Appfsg,ADJ,O,,O
 sl-24,1,11,zgodbe,,zgodba,Ncfsg,NOUN,O,,O
 sl-24,1,12,.,,.,Z,PUNCT,O,,O
-sl-24,1,13,”,,”,Z,PUNCT,O,,O
-sl-24,2,1,Mark,Mark,Mark,Npmsn,PROPN,B-PER,PER-Mark-Egan,O
-sl-24,2,2,Egan,Egan,Egan,Npmsn,PROPN,I-PER,PER-Mark-Egan,O
+sl-24,1,13,”,,”,Z,PUNCT,O,,B-PER
+sl-24,2,1,Mark,Mark,Mark,Npmsn,PROPN,B-PER,PER-Mark-Egan,B-PER
+sl-24,2,2,Egan,Egan,Egan,Npmsn,PROPN,I-PER,PER-Mark-Egan,I-PER
 sl-24,2,3,",",,",",Z,PUNCT,O,,O
 sl-24,2,4,nekdanji,,nekdanji,Agpmsny,ADJ,O,,O
 sl-24,2,5,novinar,,novinar,Ncmsn,NOUN,O,,O
@@ -61,14 +61,14 @@ sl-24,4,2,ste,,biti,Va-r2p-n,AUX,O,,O
 sl-24,4,3,kot,,kot,Cs,SCONJ,O,,O
 sl-24,4,4,novinar,,novinar,Ncmsn,NOUN,O,,O
 sl-24,4,5,pri,,pri,Sl,ADP,O,,O
-sl-24,4,6,BBC,BBC,BBC,Npmsl,PROPN,B-ORG,ORG-BBC-Ltd,O
+sl-24,4,6,BBC,BBC,BBC,Npmsl,PROPN,B-ORG,ORG-BBC-Ltd,B-ORG
 sl-24,4,7,",",,",",Z,PUNCT,O,,O
 sl-24,4,8,sedaj,,sedaj,Rgp,ADV,O,,O
 sl-24,4,9,vodite,,voditi,Vmpr2p,VERB,O,,O
 sl-24,4,10,podjetje,,podjetje,Ncnsa,NOUN,O,,O
-sl-24,4,11,Purple,Purple,Purple,Npmsn,PROPN,B-ORG,ORG-Purple-Bridge-Media,O
-sl-24,4,12,Bridge,Bridge,Bridge,Npmsn,PROPN,I-ORG,ORG-Purple-Bridge-Media,O
-sl-24,4,13,Media,Media,Media,Npmsn,PROPN,I-ORG,ORG-Purple-Bridge-Media,O
+sl-24,4,11,Purple,Purple,Purple,Npmsn,PROPN,B-ORG,ORG-Purple-Bridge-Media,B-ORG
+sl-24,4,12,Bridge,Bridge,Bridge,Npmsn,PROPN,I-ORG,ORG-Purple-Bridge-Media,I-ORG
+sl-24,4,13,Media,Media,Media,Npmsn,PROPN,I-ORG,ORG-Purple-Bridge-Media,I-ORG
 sl-24,4,14,",",,",",Z,PUNCT,O,,O
 sl-24,4,15,ki,,ki,Cs,SCONJ,O,,O
 sl-24,4,16,promovira,,promovirati,Vmbr3s,VERB,O,,O
@@ -93,7 +93,7 @@ sl-24,5,5,na,,na,Sa,ADP,O,,O
 sl-24,5,6,povabilo,,povabilo,Ncnsa,NOUN,O,,O
 sl-24,5,7,Društva,Društvo,društvo,Ncnsg,NOUN,B-ORG,ORG-Slovene-Association-of-Journalists,O
 sl-24,5,8,novinarjev,novinarjev,novinar,Ncmpg,NOUN,I-ORG,ORG-Slovene-Association-of-Journalists,O
-sl-24,5,9,Slovenije,Slovenije,Slovenija,Npfsg,PROPN,I-ORG,ORG-Slovene-Association-of-Journalists,O
+sl-24,5,9,Slovenije,Slovenije,Slovenija,Npfsg,PROPN,I-ORG,ORG-Slovene-Association-of-Journalists,B-ORG
 sl-24,5,10,.,,.,Z,PUNCT,O,,O
 sl-24,6,1,Kako,,kako,Rgp,ADV,O,,O
 sl-24,6,2,usklajujete,,usklajevati,Vmpr2p,VERB,O,,O
@@ -110,7 +110,7 @@ sl-24,7,5,in,,in,Cc,CCONJ,O,,O
 sl-24,7,6,tudi,,tudi,Q,PART,O,,O
 sl-24,7,7,član,,član,Ncmsn,NOUN,O,,O
 sl-24,7,8,akademije,,akademija,Ncfsg,NOUN,O,,O
-sl-24,7,9,EBU,EBU,EBU,Npmsn,PROPN,B-ORG,ORG-EBU-European-Broadcasting-Union,O
+sl-24,7,9,EBU,EBU,EBU,Npmsn,PROPN,B-ORG,ORG-EBU-European-Broadcasting-Union,B-ORG
 sl-24,7,10,.,,.,Z,PUNCT,O,,O
 sl-24,8,1,V,,v,Sl,ADP,O,,O
 sl-24,8,2,preteklosti,,preteklost,Ncfsl,NOUN,O,,O
@@ -524,8 +524,8 @@ sl-24,30,23,le,,le,Q,PART,O,,O
 sl-24,30,24,mogoče,,mogoč,Agpnsn,ADJ,O,,O
 sl-24,30,25,.,,.,Z,PUNCT,O,,O
 sl-24,30,26,"""",,"""",Z,PUNCT,O,,O
-sl-24,31,1,Mark,Mark,Mark,Npmsn,PROPN,B-PER,PER-Mark-Egan,O
-sl-24,31,2,Egan,Egan,Egan,Npmsn,PROPN,I-PER,PER-Mark-Egan,O
+sl-24,31,1,Mark,Mark,Mark,Npmsn,PROPN,B-PER,PER-Mark-Egan,B-PER
+sl-24,31,2,Egan,Egan,Egan,Npmsn,PROPN,I-PER,PER-Mark-Egan,I-PER
 sl-24,31,3,:,,:,Z,PUNCT,O,,O
 sl-24,31,4,Na,,na,Sa,ADP,O,,O
 sl-24,31,5,čuden,,čuden,Agpmsan,ADJ,O,,O
@@ -562,7 +562,7 @@ sl-24,32,2,na,,na,Sa,ADP,O,,O
 sl-24,32,3,vaše,,vaš,Ps2fpap,DET,O,,O
 sl-24,32,4,izkušnje,,izkušnja,Ncfpa,NOUN,O,,O
 sl-24,32,5,pri,,pri,Sl,ADP,O,,O
-sl-24,32,6,BBC,BBC,BBC,Npmsl,PROPN,B-ORG,ORG-BBC-Ltd,O
+sl-24,32,6,BBC,BBC,BBC,Npmsl,PROPN,B-ORG,ORG-BBC-Ltd,B-ORG
 sl-24,32,7,",",,",",Z,PUNCT,O,,O
 sl-24,32,8,kjer,,kjer,Cs,SCONJ,O,,O
 sl-24,32,9,obstaja,,obstajati,Vmpr3s,VERB,O,,O
@@ -908,8 +908,8 @@ sl-24,49,10,posamezne,,posamezen,Agpmpa,ADJ,O,,O
 sl-24,49,11,bralce,,bralec,Ncmpa,NOUN,O,,O
 sl-24,49,12,.,,.,Z,PUNCT,O,,O
 sl-24,50,1,New,New,New,Npmsn,PROPN,B-PRO,PRO-The-New-York-Times,O
-sl-24,50,2,York,York,York,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,O
-sl-24,50,3,Times,Times,Times,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,O
+sl-24,50,2,York,York,York,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,B-ORG
+sl-24,50,3,Times,Times,Times,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,I-ORG
 sl-24,50,4,denimo,,deti,Vmem1p,VERB,O,,O
 sl-24,50,5,sodeluje,,sodelovati,Vmpr3s,VERB,O,,O
 sl-24,50,6,s,,z,Si,ADP,O,,O
@@ -928,7 +928,7 @@ sl-24,51,1,Skoraj,,skoraj,Q,PART,O,,O
 sl-24,51,2,gre,,iti,Vmbr3s,VERB,O,,O
 sl-24,51,3,za,,za,Sa,ADP,O,,O
 sl-24,51,4,model,,model,Ncmsan,NOUN,O,,O
-sl-24,51,5,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-24,51,5,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-24,51,6,:,,:,Z,PUNCT,O,,O
 sl-24,51,7,dobička,,dobiček,Ncmsg,NOUN,O,,O
 sl-24,51,8,ne,,ne,Q,PART,O,,O
@@ -985,7 +985,7 @@ sl-24,52,27,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-24,52,28,najbolje,,dobro,Rgs,ADV,O,,O
 sl-24,52,29,nagovorili,,nagovoriti,Vmep-pm,VERB,O,,O
 sl-24,52,30,bralce,,bralec,Ncmpa,NOUN,O,,O
-sl-24,52,31,članka,,članek,Ncmsg,NOUN,O,,O
+sl-24,52,31,članka,,članek,Ncmsg,NOUN,O,,B-ORG
 sl-24,52,32,.,,.,Z,PUNCT,O,,O
 sl-24,53,1,Poslovni,,posloven,Agpmpn,ADJ,O,,O
 sl-24,53,2,modeli,,model,Ncmpn,NOUN,O,,O
@@ -1242,7 +1242,7 @@ sl-24,71,9,naredil,,narediti,Vmep-sm,VERB,O,,O
 sl-24,71,10,zgodbo,,zgodba,Ncfsa,NOUN,O,,O
 sl-24,71,11,z,,z,Sg,ADP,O,,O
 sl-24,71,12,jugovzhoda,jugovzhod,jugovzhod,Ncmsg,NOUN,B-LOC,LOC-Southeast-England,B-LOC
-sl-24,71,13,Anglije,Anglije,Anglija,Npfsg,PROPN,I-LOC,LOC-Southeast-England,O
+sl-24,71,13,Anglije,Anglije,Anglija,Npfsg,PROPN,I-LOC,LOC-Southeast-England,I-LOC
 sl-24,71,14,o,,o,Sl,ADP,O,,O
 sl-24,71,15,podjetju,,podjetje,Ncnsl,NOUN,O,,O
 sl-24,71,16,",",,",",Z,PUNCT,O,,O
@@ -1265,7 +1265,7 @@ sl-24,72,6,med,,med,Si,ADP,O,,O
 sl-24,72,7,glavnimi,,glaven,Agpfpi,ADJ,O,,O
 sl-24,72,8,novicami,,novica,Ncfpi,NOUN,O,,O
 sl-24,72,9,na,,na,Sl,ADP,O,,O
-sl-24,72,10,BBC,BBC,BBC,Npmsl,PROPN,B-ORG,ORG-BBC-Ltd,O
+sl-24,72,10,BBC,BBC,BBC,Npmsl,PROPN,B-ORG,ORG-BBC-Ltd,B-ORG
 sl-24,72,11,",",,",",Z,PUNCT,O,,O
 sl-24,72,12,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-24,72,13,povzela,,povzeti,Vmep-sf,VERB,O,,O
@@ -1384,7 +1384,7 @@ sl-24,78,10,zdi,,zdeti,Vmpr3s,VERB,O,,O
 sl-24,78,11,pomembno,,pomemben,Agpnsn,ADJ,O,,O
 sl-24,78,12,tudi,,tudi,Q,PART,O,,O
 sl-24,78,13,za,,za,Sa,ADP,O,,O
-sl-24,78,14,družbo,,družba,Ncfsa,NOUN,O,,O
+sl-24,78,14,družbo,,družba,Ncfsa,NOUN,O,,B-LOC
 sl-24,78,15,.,,.,Z,PUNCT,O,,O
 sl-24,78,16,"""",,"""",Z,PUNCT,O,,O
 sl-24,79,1,Pravite,,praviti,Vmbr2p,VERB,O,,O
@@ -1518,7 +1518,7 @@ sl-24,86,7,",",,",",Z,PUNCT,O,,O
 sl-24,86,8,ki,,ki,Cs,SCONJ,O,,O
 sl-24,86,9,so,,biti,Va-r3p-n,VERB,O,,O
 sl-24,86,10,v,,v,Sl,ADP,O,,O
-sl-24,86,11,družbi,,družba,Ncfsl,NOUN,O,,O
+sl-24,86,11,družbi,,družba,Ncfsl,NOUN,O,,B-LOC
 sl-24,86,12,",",,",",Z,PUNCT,O,,O
 sl-24,86,13,ampak,,ampak,Cc,CCONJ,O,,O
 sl-24,86,14,se,,se,Px------y,PRON,O,,O
@@ -1639,7 +1639,7 @@ sl-24,96,3,predstavite,,predstaviti,Vmer2p,VERB,O,,O
 sl-24,96,4,obojega,,oboj,Pg-nsg,DET,O,,O
 sl-24,96,5,",",,",",Z,PUNCT,O,,O
 sl-24,96,6,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-24,96,7,občinstvo,,občinstvo,Ncnsn,NOUN,O,,O
+sl-24,96,7,občinstvo,,občinstvo,Ncnsn,NOUN,O,,B-PER
 sl-24,96,8,pogledalo,,pogledati,Vmep-sn,VERB,O,,O
 sl-24,96,9,skozi,,skozi,Sa,ADP,O,,O
 sl-24,96,10,okno,,okno,Ncnsa,NOUN,O,,O
@@ -1676,8 +1676,8 @@ sl-24,96,40,dnevno,,dnevno,Rgp,ADV,O,,O
 sl-24,96,41,izkusijo,,izkusiti,Vmer3p,VERB,O,,O
 sl-24,96,42,.,,.,Z,PUNCT,O,,O
 sl-24,97,1,Novinar,,novinar,Ncmsn,NOUN,O,,O
-sl-24,97,2,Carl,Carl,Carl,Npmsn,PROPN,B-PER,PER-Carl-Bernstein,O
-sl-24,97,3,Bernstein,Bernstein,Bernstein,Npmsn,PROPN,I-PER,PER-Carl-Bernstein,O
+sl-24,97,2,Carl,Carl,Carl,Npmsn,PROPN,B-PER,PER-Carl-Bernstein,B-PER
+sl-24,97,3,Bernstein,Bernstein,Bernstein,Npmsn,PROPN,I-PER,PER-Carl-Bernstein,I-PER
 sl-24,97,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-24,97,5,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-24,97,6,",",,",",Z,PUNCT,O,,O
@@ -1729,7 +1729,7 @@ sl-24,100,6,veliko,,veliko,Rgp,DET,O,,O
 sl-24,100,7,novinarjev,,novinar,Ncmpg,NOUN,O,,O
 sl-24,100,8,živi,,živeti,Vmpr3s,VERB,O,,O
 sl-24,100,9,v,,v,Sl,ADP,O,,O
-sl-24,100,10,mehurčku,,mehurček,Ncmsl,NOUN,O,,O
+sl-24,100,10,mehurčku,,mehurček,Ncmsl,NOUN,O,,B-LOC
 sl-24,100,11,.,,.,Z,PUNCT,O,,O
 sl-24,101,1,Da,,da,Cs,SCONJ,O,,O
 sl-24,101,2,mnogi,,mnog,Pi-mpn,DET,O,,O
@@ -1887,7 +1887,7 @@ sl-24,108,5,različnih,,različen,Agpmpg,ADJ,O,,O
 sl-24,108,6,poskusov,,poskus,Ncmpg,NOUN,O,,O
 sl-24,108,7,.,,.,Z,PUNCT,O,,O
 sl-24,109,1,Za,,za,Sa,ADP,O,,O
-sl-24,109,2,Norveško,Norveška,Norveška,Npfsa,PROPN,B-LOC,GPE-Norway,O
+sl-24,109,2,Norveško,Norveška,Norveška,Npfsa,PROPN,B-LOC,GPE-Norway,B-LOC
 sl-24,109,3,vem,,vedeti,Vmpr1s,VERB,O,,O
 sl-24,109,4,",",,",",Z,PUNCT,O,,O
 sl-24,109,5,da,,da,Cs,SCONJ,O,,O
@@ -1904,7 +1904,7 @@ sl-24,109,15,se,,se,Px------y,PRON,O,,O
 sl-24,109,16,večinoma,,večinoma,Rgp,ADV,O,,O
 sl-24,109,17,financirajo,,financirati,Vmbr3p,VERB,O,,O
 sl-24,109,18,iz,,iz,Sg,ADP,O,,O
-sl-24,109,19,naročnin,,naročnina,Ncfpg,NOUN,O,,O
+sl-24,109,19,naročnin,,naročnina,Ncfpg,NOUN,O,,B-LOC
 sl-24,109,20,.,,.,Z,PUNCT,O,,O
 sl-24,110,1,S,,z,Si,ADP,O,,O
 sl-24,110,2,tem,,ta,Pd-nsi,DET,O,,O
@@ -1960,10 +1960,10 @@ sl-24,113,19,primeru,,primer,Ncmsl,NOUN,O,,O
 sl-24,113,20,požara,,požar,Ncmsg,NOUN,O,,O
 sl-24,113,21,v,,v,Sl,ADP,O,,O
 sl-24,113,22,stavbi,,stavba,Ncfsl,NOUN,O,,O
-sl-24,113,23,Grenfell,Grenfell,Grenfell,Npmsn,PROPN,B-LOC,LOC-Grenfell-Tower,O
-sl-24,113,24,Tower,Tower,Tower,Npmsn,PROPN,I-LOC,LOC-Grenfell-Tower,O
+sl-24,113,23,Grenfell,Grenfell,Grenfell,Npmsn,PROPN,B-LOC,LOC-Grenfell-Tower,B-LOC
+sl-24,113,24,Tower,Tower,Tower,Npmsn,PROPN,I-LOC,LOC-Grenfell-Tower,I-LOC
 sl-24,113,25,v,,v,Sl,ADP,O,,O
-sl-24,113,26,Londonu,London,London,Npmsl,PROPN,B-LOC,GPE-London,O
+sl-24,113,26,Londonu,London,London,Npmsl,PROPN,B-LOC,GPE-London,B-LOC
 sl-24,113,27,.,,.,Z,PUNCT,O,,O
 sl-24,114,1,Okoli,,okoli,Sg,ADP,O,,O
 sl-24,114,2,takih,,tak,Pd-mpg,DET,O,,O
@@ -2362,11 +2362,11 @@ sl-24,135,14,je,,biti,Va-r3s-n,AUX,O,,O
 sl-24,135,15,največ,,največ,Rgs,DET,O,,O
 sl-24,135,16,oglasov,,oglas,Ncmpg,NOUN,O,,O
 sl-24,135,17,plačal,,plačati,Vmep-sm,VERB,O,,O
-sl-24,135,18,Jeb,Jeb,Jeb,Npmsn,PROPN,B-PER,PER-Jeb-Bush,O
-sl-24,135,19,Bush,Bush,Bush,Npmsn,PROPN,I-PER,PER-Jeb-Bush,O
+sl-24,135,18,Jeb,Jeb,Jeb,Npmsn,PROPN,B-PER,PER-Jeb-Bush,B-PER
+sl-24,135,19,Bush,Bush,Bush,Npmsn,PROPN,I-PER,PER-Jeb-Bush,I-PER
 sl-24,135,20,",",,",",Z,PUNCT,O,,O
 sl-24,135,21,a,,a,Cc,CCONJ,O,,O
-sl-24,135,22,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,O
+sl-24,135,22,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-24,135,23,je,,biti,Va-r3s-n,AUX,O,,O
 sl-24,135,24,bil,,biti,Va-p-sm,AUX,O,,O
 sl-24,135,25,neprimerljivo,,neprimerljivo,Rgp,ADV,O,,O
@@ -2414,7 +2414,7 @@ sl-24,138,1,Novinarji,,novinar,Ncmpn,NOUN,O,,O
 sl-24,138,2,pogosto,,pogosto,Rgp,ADV,O,,O
 sl-24,138,3,živijo,,živeti,Vmpr3p,VERB,O,,O
 sl-24,138,4,v,,v,Sl,ADP,O,,O
-sl-24,138,5,mehurčku,,mehurček,Ncmsl,NOUN,O,,O
+sl-24,138,5,mehurčku,,mehurček,Ncmsl,NOUN,O,,B-LOC
 sl-24,138,6,in,,in,Cc,CCONJ,O,,O
 sl-24,138,7,nimajo,,imeti,Vmpr3p-y,VERB,O,,O
 sl-24,138,8,stika,,stik,Ncmsg,NOUN,O,,O
@@ -2451,7 +2451,7 @@ sl-24,140,3,vse,,ves,Pg-mpa,DET,O,,O
 sl-24,140,4,druge,,drug,Mlpmpa,ADJ,O,,O
 sl-24,140,5,ljudi,,človek,Ncmpa,NOUN,O,,O
 sl-24,140,6,v,,v,Sl,ADP,O,,O
-sl-24,140,7,družbi,,družba,Ncfsl,NOUN,O,,O
+sl-24,140,7,družbi,,družba,Ncfsl,NOUN,O,,B-LOC
 sl-24,140,8,.,,.,Z,PUNCT,O,,O
 sl-24,141,1,Ta,,ta,Pd-msn,DET,O,,O
 sl-24,141,2,problem,,problem,Ncmsn,NOUN,O,,O
@@ -2519,7 +2519,7 @@ sl-24,145,10,se,,se,Px------y,PRON,O,,O
 sl-24,145,11,pripravljeni,,pripravljen,Appmpn,ADJ,O,,O
 sl-24,145,12,odzvati,,odzvati,Vmen,VERB,O,,O
 sl-24,145,13,.,,.,Z,PUNCT,O,,O
-sl-24,146,1,BBC,BBC,BBC,Npmsn,PROPN,B-ORG,ORG-BBC-Ltd,O
+sl-24,146,1,BBC,BBC,BBC,Npmsn,PROPN,B-ORG,ORG-BBC-Ltd,B-PER
 sl-24,146,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-24,146,3,ugotovil,,ugotoviti,Vmep-sm,VERB,O,,O
 sl-24,146,4,",",,",",Z,PUNCT,O,,O
@@ -2784,7 +2784,7 @@ sl-24,161,15,",",,",",Z,PUNCT,O,,O
 sl-24,161,16,ki,,ki,Cs,SCONJ,O,,O
 sl-24,161,17,obstajajo,,obstajati,Vmpr3p,VERB,O,,O
 sl-24,161,18,v,,v,Sl,ADP,O,,O
-sl-24,161,19,družbi,,družba,Ncfsl,NOUN,O,,O
+sl-24,161,19,družbi,,družba,Ncfsl,NOUN,O,,B-LOC
 sl-24,161,20,.,,.,Z,PUNCT,O,,O
 sl-24,162,1,Gre,,iti,Vmbr3s,VERB,O,,O
 sl-24,162,2,za,,za,Sa,ADP,O,,O
@@ -2844,7 +2844,7 @@ sl-24,167,4,je,,biti,Va-r3s-n,VERB,O,,O
 sl-24,167,5,danes,,danes,Rgp,ADV,O,,O
 sl-24,167,6,težko,,težko,Agpnsn,ADJ,O,,O
 sl-24,167,7,premagati,,premagati,Vmen,VERB,O,,O
-sl-24,167,8,twitter,twitter,twitter,Ncmsan,NOUN,B-PRO,PRO-Twitter,O
+sl-24,167,8,twitter,twitter,twitter,Ncmsan,NOUN,B-PRO,PRO-Twitter,B-PRO
 sl-24,167,9,.,,.,Z,PUNCT,O,,O
 sl-24,168,1,Torej,,torej,Cc,CCONJ,O,,O
 sl-24,168,2,ne,,ne,Q,PART,O,,O
@@ -2997,7 +2997,7 @@ sl-24,178,6,migrantov,,migrant,Ncmpg,NOUN,O,,O
 sl-24,178,7,in,,in,Cc,CCONJ,O,,O
 sl-24,178,8,tujcev,,tujec,Ncmpg,NOUN,O,,O
 sl-24,178,9,v,,v,Sl,ADP,O,,O
-sl-24,178,10,državi,,država,Ncfsl,NOUN,O,,O
+sl-24,178,10,državi,,država,Ncfsl,NOUN,O,,B-LOC
 sl-24,178,11,",",,",",Z,PUNCT,O,,O
 sl-24,178,12,potem,,potem,Rgp,ADV,O,,O
 sl-24,178,13,počnemo,,početi,Vmbr1p,VERB,O,,O
@@ -3036,8 +3036,8 @@ sl-24,181,13,k,,k,Sd,ADP,O,,O
 sl-24,181,14,vzponu,,vzpon,Ncmsd,NOUN,O,,O
 sl-24,181,15,avtoritarizma,,avtoritarizem,Ncmsg,NOUN,O,,O
 sl-24,181,16,.,,.,Z,PUNCT,O,,O
-sl-24,182,1,Helmut,Helmut,Helmut,Npmsn,PROPN,B-PER,PER-Helmut-Schmidt,O
-sl-24,182,2,Schmidt,Schmidt,Schmidt,Npmsn,PROPN,I-PER,PER-Helmut-Schmidt,O
+sl-24,182,1,Helmut,Helmut,Helmut,Npmsn,PROPN,B-PER,PER-Helmut-Schmidt,B-PER
+sl-24,182,2,Schmidt,Schmidt,Schmidt,Npmsn,PROPN,I-PER,PER-Helmut-Schmidt,I-PER
 sl-24,182,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-24,182,4,v,,v,Sa,ADP,O,,O
 sl-24,182,5,intervju,,intervju,Ncmsan,NOUN,O,,O
@@ -3229,7 +3229,7 @@ sl-24,192,22,ponudil,,ponuditi,Vmep-sm,VERB,O,,O
 sl-24,192,23,",",,",",Z,PUNCT,O,,O
 sl-24,192,24,drugačna,,drugačen,Agpfsn,ADJ,O,,O
 sl-24,192,25,.,,.,Z,PUNCT,O,,O
-sl-24,193,1,BBC,BBC,BBC,Npmsn,PROPN,B-ORG,ORG-BBC-Ltd,O
+sl-24,193,1,BBC,BBC,BBC,Npmsn,PROPN,B-ORG,ORG-BBC-Ltd,B-PER
 sl-24,193,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-24,193,3,naredil,,narediti,Vmep-sm,VERB,O,,O
 sl-24,193,4,prispevek,,prispevek,Ncmsan,NOUN,O,,O

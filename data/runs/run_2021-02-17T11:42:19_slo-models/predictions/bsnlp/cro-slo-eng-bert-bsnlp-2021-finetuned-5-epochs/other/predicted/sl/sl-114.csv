@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-114,0,1,Skupina,,skupina,Ncfsn,NOUN,O,,O
 sl-114,0,2,migrantov,,migrant,Ncmpg,NOUN,O,,O
 sl-114,0,3,v,,v,Sl,ADP,O,,O
@@ -15,7 +15,7 @@ sl-114,0,13,na,,na,Sa,ADP,O,,O
 sl-114,0,14,Hrvaško,Hrvaška,Hrvaška,Npfsa,PROPN,B-LOC,GPE-Croatia,B-LOC
 sl-114,1,1,Policija,,policija,Ncfsn,NOUN,O,,O
 sl-114,1,2,unsko-sanskega,unsko-sanski,unskonsanski,Agpmsg,ADJ,B-LOC,GPE-Una-Sana-Canton,B-LOC
-sl-114,1,3,kantona,kanton,kanton,Ncmsg,NOUN,I-LOC,GPE-Una-Sana-Canton,B-LOC
+sl-114,1,3,kantona,kanton,kanton,Ncmsg,NOUN,I-LOC,GPE-Una-Sana-Canton,I-LOC
 sl-114,1,4,s,,z,Si,ADP,O,,O
 sl-114,1,5,sedežem,,sedež,Ncmsi,NOUN,O,,O
 sl-114,1,6,v,,v,Sl,ADP,O,,O
@@ -57,7 +57,7 @@ sl-114,2,7,BiH,BiH,Bih,Npfsl,PROPN,B-LOC,GPE-Bosnia-and-Herzegovina,B-LOC
 sl-114,2,8,na,,na,Sl,ADP,O,,O
 sl-114,2,9,območju,,območje,Ncnsl,NOUN,O,,O
 sl-114,2,10,Bosanske,Bosanska,bosanski,Agpfsg,ADJ,B-LOC,GPE-Bosanska-Krupa,B-LOC
-sl-114,2,11,Krupe,Krupa,Krupa,Npfsg,PROPN,I-LOC,GPE-Bosanska-Krupa,B-LOC
+sl-114,2,11,Krupe,Krupa,Krupa,Npfsg,PROPN,I-LOC,GPE-Bosanska-Krupa,I-LOC
 sl-114,2,12,ob,,ob,Sl,ADP,O,,O
 sl-114,2,13,meji,,meja,Ncfsl,NOUN,O,,O
 sl-114,2,14,s,,z,Si,ADP,O,,O
@@ -144,11 +144,11 @@ sl-114,4,35,je,,biti,Va-r3s-n,AUX,O,,O
 sl-114,4,36,dodal,,dodati,Vmep-sm,VERB,O,,O
 sl-114,4,37,.,,.,Z,PUNCT,O,,O
 sl-114,5,1,Načelnik,,načelnik,Ncmsn,NOUN,O,,O
-sl-114,5,2,hrvaške,hrvaška,hrvaški,Agpfsg,ADJ,B-ORG,ORG-Croatian-Border-Police,B-LOC
-sl-114,5,3,obmejne,obmejna,obmejen,Agpfsg,ADJ,I-ORG,ORG-Croatian-Border-Police,O
-sl-114,5,4,policije,policija,policija,Ncfsg,NOUN,I-ORG,ORG-Croatian-Border-Police,O
+sl-114,5,2,hrvaške,hrvaška,hrvaški,Agpfsg,ADJ,B-ORG,ORG-Croatian-Border-Police,B-ORG
+sl-114,5,3,obmejne,obmejna,obmejen,Agpfsg,ADJ,I-ORG,ORG-Croatian-Border-Police,I-ORG
+sl-114,5,4,policije,policija,policija,Ncfsg,NOUN,I-ORG,ORG-Croatian-Border-Police,I-ORG
 sl-114,5,5,Zoran,Zoran,Zoran,Npmsn,PROPN,B-PER,PER-Zoran-Ničeno,B-PER
-sl-114,5,6,Ničeno,Ničeno,Ničeno,Npmsn,PROPN,I-PER,PER-Zoran-Ničeno,B-PER
+sl-114,5,6,Ničeno,Ničeno,Ničeno,Npmsn,PROPN,I-PER,PER-Zoran-Ničeno,I-PER
 sl-114,5,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-114,5,8,pred,,pred,Si,ADP,O,,O
 sl-114,5,9,kratkim,,kratek,Agpmsi,ADJ,O,,O
@@ -242,7 +242,7 @@ sl-114,7,14,imajo,,imeti,Vmpr3p-n,VERB,O,,O
 sl-114,7,15,stik,,stik,Ncmsan,NOUN,O,,O
 sl-114,7,16,samo,,samo,Q,PART,O,,O
 sl-114,7,17,s,,z,Si,ADP,O,,O
-sl-114,7,18,hrvaškim,,hrvaški,Agpnsi,ADJ,O,,B-LOC
+sl-114,7,18,hrvaškim,,hrvaški,Agpnsi,ADJ,O,,O
 sl-114,7,19,ozemljem,,ozemlje,Ncnsi,NOUN,O,,O
 sl-114,7,20,«,,«,Z,PUNCT,O,,O
 sl-114,8,1,»,,»,Z,PUNCT,O,,O
@@ -387,7 +387,7 @@ sl-114,14,18,in,,in,Cc,CCONJ,O,,O
 sl-114,14,19,naprej,,naprej,Rgp,ADV,O,,O
 sl-114,14,20,proti,,proti,Sd,ADP,O,,O
 sl-114,14,21,zahodni,zahodna,zahoden,Agpfsd,ADJ,B-LOC,LOC-Western-Europe,B-LOC
-sl-114,14,22,Evropi,Evropa,Evropa,Npfsd,PROPN,I-LOC,LOC-Western-Europe,B-LOC
+sl-114,14,22,Evropi,Evropa,Evropa,Npfsd,PROPN,I-LOC,LOC-Western-Europe,I-LOC
 sl-114,14,23,",",,",",Z,PUNCT,O,,O
 sl-114,14,24,ki,,ki,Cs,SCONJ,O,,O
 sl-114,14,25,je,,biti,Va-r3s-n,AUX,O,,O
@@ -426,7 +426,7 @@ sl-114,15,25,s,,z,Si,ADP,O,,O
 sl-114,15,26,Srbijo,Srbija,Srbija,Npfsi,PROPN,B-LOC,GPE-Serbia,B-LOC
 sl-114,15,27,in,,in,Cc,CCONJ,O,,O
 sl-114,15,28,Črno,Črna,črn,Agpfsi,ADJ,B-LOC,GPE-Montenegro,B-LOC
-sl-114,15,29,goro,gora,gora,Ncfsi,NOUN,I-LOC,GPE-Montenegro,B-LOC
+sl-114,15,29,goro,gora,gora,Ncfsi,NOUN,I-LOC,GPE-Montenegro,I-LOC
 sl-114,15,30,",",,",",Z,PUNCT,O,,O
 sl-114,15,31,od,,od,Sg,ADP,O,,O
 sl-114,15,32,koder,,koder,Cs,SCONJ,O,,O

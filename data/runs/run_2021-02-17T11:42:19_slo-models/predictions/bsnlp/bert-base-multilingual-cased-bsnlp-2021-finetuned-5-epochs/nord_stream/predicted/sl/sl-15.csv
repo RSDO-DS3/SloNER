@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-15,0,1,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
 sl-15,0,2,iz,,iz,Sg,ADP,O,,O
 sl-15,0,3,poroke,,poroka,Ncfsg,NOUN,O,,O
@@ -192,7 +192,7 @@ sl-15,10,8,o,,o,Sl,ADP,O,,O
 sl-15,10,9,možnosti,,možnost,Ncfsl,NOUN,O,,O
 sl-15,10,10,napotitve,,napotitev,Ncfsg,NOUN,O,,O
 sl-15,10,11,modrih,modre,moder,Agpfpg,ADJ,B-PER,ORG-United-Nations-Peacekeeping,B-ORG
-sl-15,10,12,čelad,čelade,čelada,Ncfpg,NOUN,I-PER,ORG-United-Nations-Peacekeeping,I-PRO
+sl-15,10,12,čelad,čelade,čelada,Ncfpg,NOUN,I-PER,ORG-United-Nations-Peacekeeping,O
 sl-15,10,13,ZN,ZN,ZN,Npfsg,PROPN,I-PER,ORG-United-Nations-Peacekeeping,B-ORG
 sl-15,10,14,",",,",",Z,PUNCT,O,,O
 sl-15,10,15,ki,,ki,Cs,SCONJ,O,,O
@@ -327,7 +327,7 @@ sl-15,17,15,predsednika,,predsednik,Ncmsg,NOUN,O,,O
 sl-15,17,16,Donalda,Donald,Donald,Npmsg,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-15,17,17,Trumpa,Trump,Trump,Npmsg,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-15,17,18,.,,.,Z,PUNCT,O,,O
-sl-15,18,1,Ta,,ta,Pd-msn,DET,O,,O
+sl-15,18,1,Ta,,ta,Pd-msn,DET,O,,B-PER
 sl-15,18,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-15,18,3,med,,med,Si,ADP,O,,O
 sl-15,18,4,drugim,,drug,Mlpnsi,ADJ,O,,O

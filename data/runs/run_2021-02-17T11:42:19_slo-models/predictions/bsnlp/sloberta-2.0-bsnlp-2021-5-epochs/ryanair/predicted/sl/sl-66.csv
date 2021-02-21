@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-66,0,1,Zamudil,,zamuditi,Vmep-sm,VERB,O,,O
 sl-66,0,2,letalo,,letalo,Ncnsa,NOUN,O,,O
 sl-66,0,3,",",,",",Z,PUNCT,O,,O
@@ -28,7 +28,7 @@ sl-66,1,15,pobegnil,,pobegniti,Vmep-sm,VERB,O,,O
 sl-66,1,16,na,,na,Sa,ADP,O,,O
 sl-66,1,17,letališko,,letališki,Agpfsa,ADJ,O,,O
 sl-66,1,18,ploščad,,ploščad,Ncfsa,NOUN,O,,O
-sl-66,1,19,in,,in,Cc,CCONJ,O,,B-ORG
+sl-66,1,19,in,,in,Cc,CCONJ,O,,O
 sl-66,1,20,poskusil,,poskusiti,Vmep-sm,VERB,O,,O
 sl-66,1,21,zaustaviti,,zaustaviti,Vmen,VERB,O,,O
 sl-66,1,22,Ryanairovo,Ryanair,Ryanairov,Aspnsa,ADJ,B-ORG,ORG-Ryanair,B-ORG
@@ -51,8 +51,8 @@ sl-66,2,6,",",,",",Z,PUNCT,O,,O
 sl-66,2,7,saj,,saj,Cc,CCONJ,O,,O
 sl-66,2,8,so,,biti,Va-r3p-n,AUX,O,,O
 sl-66,2,9,ga,,on,Pp3msa--y,PRON,O,,O
-sl-66,2,10,irski,,irski,Agpmpn,ADJ,O,,B-ORG
-sl-66,2,11,policisti,,policist,Ncmpn,NOUN,O,,B-PER
+sl-66,2,10,irski,,irski,Agpmpn,ADJ,O,,O
+sl-66,2,11,policisti,,policist,Ncmpn,NOUN,O,,O
 sl-66,2,12,in,,in,Cc,CCONJ,O,,O
 sl-66,2,13,zaposleni,,zaposlen,Appmpn,ADJ,O,,O
 sl-66,2,14,pri,,pri,Sl,ADP,O,,O
@@ -74,7 +74,7 @@ sl-66,3,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-66,3,10,na,,na,Sl,ADP,O,,O
 sl-66,3,11,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-66,3,12,v,,v,Sl,ADP,O,,O
-sl-66,3,13,Dublinu,Dublin,Dublin,Npmsl,PROPN,B-LOC,GPE-Dublin,O
+sl-66,3,13,Dublinu,Dublin,Dublin,Npmsl,PROPN,B-LOC,GPE-Dublin,B-LOC
 sl-66,3,14,pripetil,,pripetiti,Vmep-sm,VERB,O,,O
 sl-66,3,15,nenavaden,,nenavaden,Agpmsnn,ADJ,O,,O
 sl-66,3,16,incident,,incident,Ncmsn,NOUN,O,,O
@@ -83,7 +83,7 @@ sl-66,4,1,Eno,,en,Mlpnsn,NUM,O,,O
 sl-66,4,2,od,,od,Sg,ADP,O,,O
 sl-66,4,3,letal,,letalo,Ncnpg,NOUN,O,,O
 sl-66,4,4,nizkocenovnika,,nizkocenovnik,Ncmsg,NOUN,O,,O
-sl-66,4,5,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-66,4,5,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-66,4,6,",",,",",Z,PUNCT,O,,O
 sl-66,4,7,ki,,ki,Cs,SCONJ,O,,O
 sl-66,4,8,je,,biti,Va-r3s-n,AUX,O,,O
@@ -91,7 +91,7 @@ sl-66,4,9,bilo,,biti,Va-p-sn,AUX,O,,O
 sl-66,4,10,na,,na,Sl,ADP,O,,O
 sl-66,4,11,poti,,pot,Ncfsl,NOUN,O,,O
 sl-66,4,12,v,,v,Sa,ADP,O,,O
-sl-66,4,13,Amsterdam,Amsterdam,Amsterdam,Npmsan,PROPN,B-LOC,GPE-Amsterdam,O
+sl-66,4,13,Amsterdam,Amsterdam,Amsterdam,Npmsan,PROPN,B-LOC,GPE-Amsterdam,B-LOC
 sl-66,4,14,",",,",",Z,PUNCT,O,,O
 sl-66,4,15,se,,se,Px------y,PRON,O,,O
 sl-66,4,16,je,,biti,Va-r3s-n,AUX,O,,O
@@ -107,7 +107,7 @@ sl-66,4,25,neimenovani,,neimenovan,Agpmsny,ADJ,O,,O
 sl-66,4,26,moški,,moški,Ncmsn,NOUN,O,,O
 sl-66,4,27,stekel,,steči,Vmep-sm,VERB,O,,O
 sl-66,4,28,v,,v,Sa,ADP,O,,O
-sl-66,4,29,bližino,,bližina,Ncfsa,NOUN,O,,B-LOC
+sl-66,4,29,bližino,,bližina,Ncfsa,NOUN,O,,O
 sl-66,4,30,letala,,letalo,Ncnsg,NOUN,O,,O
 sl-66,4,31,in,,in,Cc,CCONJ,O,,O
 sl-66,4,32,pilotu,,pilot,Ncmsd,NOUN,O,,O
@@ -142,7 +142,7 @@ sl-66,6,3,stavke,,stavka,Ncfsg,NOUN,O,,O
 sl-66,6,4,kabinskega,,kabinski,Agpnsg,ADJ,O,,O
 sl-66,6,5,osebja,,osebje,Ncnsg,NOUN,O,,O
 sl-66,6,6,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-66,6,7,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-66,6,7,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-66,6,8,odpovedal,,odpovedati,Vmep-sm,VERB,O,,O
 sl-66,6,9,150,,150,Mdc,NUM,O,,O
 sl-66,6,10,letov,,let,Ncmpg,NOUN,O,,O
@@ -188,7 +188,7 @@ sl-66,8,15,za,,za,Sa,ADP,O,,O
 sl-66,8,16,medije,,medij,Ncmpa,NOUN,O,,O
 sl-66,8,17,povedal,,povedati,Vmep-sm,VERB,O,,O
 sl-66,8,18,predstavnik,,predstavnik,Ncmsn,NOUN,O,,O
-sl-66,8,19,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,O
+sl-66,8,19,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-66,8,20,.,,.,Z,PUNCT,O,,O
 sl-66,9,1,"""",,"""",Z,PUNCT,O,,O
 sl-66,9,2,Potnika,,potnik,Ncmdn,NOUN,O,,O
@@ -242,7 +242,7 @@ sl-66,10,26,pri,,pri,Sl,ADP,O,,O
 sl-66,10,27,irskem,,irski,Agpmsl,ADJ,O,,O
 sl-66,10,28,nizkocenovniku,,nizkocenovnik,Ncmsl,NOUN,O,,O
 sl-66,10,29,.,,.,Z,PUNCT,O,,O
-sl-66,11,1,Irski,,irski,Agpmpn,ADJ,O,,B-LOC
+sl-66,11,1,Irski,,irski,Agpmpn,ADJ,O,,B-ORG
 sl-66,11,2,policisti,,policist,Ncmpn,NOUN,O,,B-PER
 sl-66,11,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-66,11,4,pogumnega,,pogumen,Agpmsa,ADJ,O,,O
@@ -258,14 +258,14 @@ sl-66,11,13,bližnjo,,bližnji,Agpfsa,ADJ,O,,O
 sl-66,11,14,policijsko,,policijski,Agpfsa,ADJ,O,,O
 sl-66,11,15,postajo,,postaja,Ncfsa,NOUN,O,,O
 sl-66,11,16,.,,.,Z,PUNCT,O,,O
-sl-66,12,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-66,12,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-66,12,2,se,,se,Px------y,PRON,O,,O
 sl-66,12,3,pripravlja,,pripravljati,Vmpr3s,VERB,O,,O
 sl-66,12,4,na,,na,Sa,ADP,O,,O
 sl-66,12,5,stavko,,stavka,Ncfsa,NOUN,O,,O
 sl-66,13,1,Letalska,,letalski,Agpfsn,ADJ,O,,O
 sl-66,13,2,družba,,družba,Ncfsn,NOUN,O,,O
-sl-66,13,3,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-66,13,3,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-66,13,4,se,,se,Px------y,PRON,O,,O
 sl-66,13,5,sicer,,sicer,Q,PART,O,,O
 sl-66,13,6,pripravlja,,pripravljati,Vmpr3s,VERB,O,,O
@@ -311,7 +311,7 @@ sl-66,14,13,prevoznika,,prevoznik,Ncmsg,NOUN,O,,O
 sl-66,14,14,.,,.,Z,PUNCT,O,,O
 sl-66,15,1,Zaposleni,,zaposlen,Appmpn,ADJ,O,,O
 sl-66,15,2,pri,,pri,Sl,ADP,O,,O
-sl-66,15,3,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,O
+sl-66,15,3,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-66,15,4,sicer,,sicer,Q,PART,O,,O
 sl-66,15,5,že,,že,Q,PART,O,,O
 sl-66,15,6,dlje,,dolgo,Rgc,ADV,O,,O

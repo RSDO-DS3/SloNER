@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-144,0,1,Zagovarjal,,zagovarjati,Vmpp-sm,VERB,O,,O
 sl-144,0,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-144,0,3,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
@@ -16,7 +16,7 @@ sl-144,1,4,.,,.,Z,PUNCT,O,,O
 sl-144,2,1,Stoodstotni,,stoodstoten,Agpmsny,ADJ,O,,O
 sl-144,2,2,lastnik,,lastnik,Ncmsn,NOUN,O,,O
 sl-144,2,3,korporacije,korporacija,korporacija,Ncfsg,NOUN,B-ORG,ORG-Dyson-Corporation,B-ORG
-sl-144,2,4,Dyson,Dyson,Dyson,Npmsn,PROPN,I-ORG,ORG-Dyson-Corporation,I-PER
+sl-144,2,4,Dyson,Dyson,Dyson,Npmsn,PROPN,I-ORG,ORG-Dyson-Corporation,I-ORG
 sl-144,2,5,",",,",",Z,PUNCT,O,,O
 sl-144,2,6,ki,,ki,Cs,SCONJ,O,,O
 sl-144,2,7,je,,biti,Va-r3s-n,AUX,O,,O
@@ -46,7 +46,7 @@ sl-144,2,30,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-144,2,31,brez,,brez,Sg,ADP,O,,O
 sl-144,2,32,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-144,2,33,.,,.,Z,PUNCT,O,,O
-sl-144,3,1,Zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-144,3,1,Zdaj,,zdaj,Rgp,ADV,O,,O
 sl-144,3,2,pa,,pa,Cc,CCONJ,O,,O
 sl-144,3,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-144,3,4,71-letni,,v1rleten,Agpmsny,ADJ,O,,O
@@ -63,7 +63,7 @@ sl-144,3,14,vredno,,vreden,Agpnsa,ADJ,O,,O
 sl-144,3,15,bogastvo,,bogastvo,Ncnsa,NOUN,O,,O
 sl-144,3,16,začel,,začeti,Vmep-sm,VERB,O,,O
 sl-144,3,17,ustvarjati,,ustvarjati,Vmpn,VERB,O,,O
-sl-144,3,18,z,,z,Si,ADP,O,,B-LOC
+sl-144,3,18,z,,z,Si,ADP,O,,O
 sl-144,3,19,novodobnimi,,novodoben,Agpmpi,ADJ,O,,O
 sl-144,3,20,sesalniki,,sesalnik,Ncmpi,NOUN,O,,O
 sl-144,3,21,za,,za,Sa,ADP,O,,O
@@ -96,7 +96,7 @@ sl-144,4,4,bi,,biti,Va-c,AUX,O,,O
 sl-144,4,5,imela,,imeti,Vmpp-sf,VERB,O,,O
 sl-144,4,6,nobene,,noben,Pz-fsg,DET,O,,O
 sl-144,4,7,zveze,,zveza,Ncfsg,NOUN,O,,O
-sl-144,4,8,z,,z,Si,ADP,O,,B-LOC
+sl-144,4,8,z,,z,Si,ADP,O,,O
 sl-144,4,9,brexitom,brexit,brexit,Ncmsi,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-144,4,10,.,,.,Z,PUNCT,O,,O
 sl-144,5,1,Šlo,,iti,Vmbp-sn,VERB,O,,O
@@ -134,7 +134,7 @@ sl-144,9,5,davčno,,davčno,Rgp,ADV,O,,O
 sl-144,9,6,prijaznem,,prijazen,Agpmsl,ADJ,O,,O
 sl-144,9,7,Singapurju,Singapur,Singapur,Npmsl,PROPN,B-LOC,GPE-Singapore,B-LOC
 sl-144,9,8,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-144,9,9,Dyson,Dyson,Dyson,Npmsn,PROPN,B-PER,PER-James-Dyson,I-PER
+sl-144,9,9,Dyson,Dyson,Dyson,Npmsn,PROPN,B-PER,PER-James-Dyson,B-PER
 sl-144,9,10,plačeval,,plačevati,Vmpp-sm,VERB,O,,O
 sl-144,9,11,dva,,dva,Mlcmda,NUM,O,,O
 sl-144,9,12,odstotka,,odstotek,Ncmda,NOUN,O,,O
@@ -158,7 +158,7 @@ sl-144,10,4,ko,,ko,Cs,SCONJ,O,,O
 sl-144,10,5,ga,,on,Pp3msa--y,PRON,O,,O
 sl-144,10,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-144,10,7,tedanji,,tedanji,Agpmsny,ADJ,O,,O
-sl-144,10,8,konservativni,,konservativen,Agpmsny,ADJ,O,,B-ORG
+sl-144,10,8,konservativni,,konservativen,Agpmsny,ADJ,O,,O
 sl-144,10,9,premier,,premier,Ncmsn,NOUN,O,,O
 sl-144,10,10,David,David,David,Npmsn,PROPN,B-PER,PER-David-Cameron,B-PER
 sl-144,10,11,Cameron,Cameron,Cameron,Npmsn,PROPN,I-PER,PER-David-Cameron,I-PER
@@ -185,7 +185,7 @@ sl-144,10,31,niso,,biti,Va-r3p-y,AUX,O,,O
 sl-144,10,32,zgodile,,zgoditi,Vmep-pf,VERB,O,,O
 sl-144,10,33,.,,.,Z,PUNCT,O,,O
 sl-144,11,1,Zdaj,,zdaj,Rgp,ADV,O,,B-LOC
-sl-144,11,2,konservativna,,konservativen,Agpfsn,ADJ,O,,B-ORG
+sl-144,11,2,konservativna,,konservativen,Agpfsn,ADJ,O,,O
 sl-144,11,3,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-144,11,4,molči,,molčati,Vmpr3s,VERB,O,,O
 sl-144,11,5,",",,",",Z,PUNCT,O,,O
@@ -234,7 +234,7 @@ sl-144,14,5,kot,,kot,Cs,SCONJ,O,,O
 sl-144,14,6,nezaupnica,,nezaupnica,Ncfsn,NOUN,O,,O
 sl-144,14,7,ideji,,ideja,Ncfsd,NOUN,O,,O
 sl-144,14,8,o,,o,Sl,ADP,O,,O
-sl-144,14,9,brexitski,,brexitski,Agpfsl,ADJ,O,,O
+sl-144,14,9,brexitski,,brexitski,Agpfsl,ADJ,O,,B-EVT
 sl-144,14,10,Britaniji,Britanija,Britanija,Npfsl,PROPN,B-LOC,GPE-Great-Britain,B-LOC
 sl-144,14,11,.,,.,Z,PUNCT,O,,O
 sl-144,14,12,«,,«,Z,PUNCT,O,,O
@@ -254,7 +254,7 @@ sl-144,14,25,sporazum,,sporazum,Ncmsan,NOUN,O,,O
 sl-144,14,26,o,,o,Sl,ADP,O,,O
 sl-144,14,27,svobodni,,svoboden,Agpfsl,ADJ,O,,O
 sl-144,14,28,trgovini,,trgovina,Ncfsl,NOUN,O,,O
-sl-144,14,29,z,,z,Si,ADP,O,,B-LOC
+sl-144,14,29,z,,z,Si,ADP,O,,O
 sl-144,14,30,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-144,14,31,",",,",",Z,PUNCT,O,,O
 sl-144,14,32,ki,,ki,Cs,SCONJ,O,,O
@@ -287,7 +287,7 @@ sl-144,16,5,",",,",",Z,PUNCT,O,,O
 sl-144,16,6,ustanovitelj,,ustanovitelj,Ncmsn,NOUN,O,,O
 sl-144,16,7,in,,in,Cc,CCONJ,O,,O
 sl-144,16,8,direktor,,direktor,Ncmsn,NOUN,O,,O
-sl-144,16,9,korporacije,,korporacija,Ncfsg,NOUN,O,,B-ORG
+sl-144,16,9,korporacije,,korporacija,Ncfsg,NOUN,O,,O
 sl-144,16,10,Ineos,Ineos,Ineos,Npmsn,PROPN,B-ORG,ORG-Ineos,B-ORG
 sl-144,16,11,",",,",",Z,PUNCT,O,,O
 sl-144,16,12,čigar,,čigar,Pr----sm,DET,O,,O
@@ -395,7 +395,7 @@ sl-144,21,38,in,,in,Cc,CCONJ,O,,O
 sl-144,21,39,zdravil,,zdravilo,Ncnpg,NOUN,O,,O
 sl-144,21,40,.,,.,Z,PUNCT,O,,O
 sl-144,22,1,Nekdanji,,nekdanji,Agpmsny,ADJ,O,,O
-sl-144,22,2,konservativni,,konservativen,Agpmsny,ADJ,O,,O
+sl-144,22,2,konservativni,,konservativen,Agpmsny,ADJ,O,,B-ORG
 sl-144,22,3,(,,(,Z,PUNCT,O,,O
 sl-144,22,4,Cameronov,Cameron,Cameronov,Aspmsnn,ADJ,B-PER,PER-David-Cameron,B-PER
 sl-144,22,5,),,),Z,PUNCT,O,,O
@@ -461,7 +461,7 @@ sl-144,24,10,",",,",",Z,PUNCT,O,,O
 sl-144,24,11,ki,,ki,Cs,SCONJ,O,,O
 sl-144,24,12,ga,,on,Pp3msa--y,PRON,O,,O
 sl-144,24,13,je,,biti,Va-r3s-n,AUX,O,,O
-sl-144,24,14,z,,z,Si,ADP,O,,B-LOC
+sl-144,24,14,z,,z,Si,ADP,O,,O
 sl-144,24,15,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-144,24,16,sklenila,,skleniti,Vmep-sf,VERB,O,,O
 sl-144,24,17,vlada,,vlada,Ncfsn,NOUN,O,,O
@@ -506,7 +506,7 @@ sl-144,25,26,brexitski,,brexitski,Agpmsay,ADJ,O,,O
 sl-144,25,27,načrt,,načrt,Ncmsan,NOUN,O,,O
 sl-144,25,28,reformirala,,reformirati,Vmbp-sf,VERB,O,,O
 sl-144,25,29,.,,.,Z,PUNCT,O,,O
-sl-144,26,1,Rees-Mogg,Rees-Mogg,Reesxmogg,Npmsn,PROPN,B-PER,PER-Jacob-Rees-Mogg,O
+sl-144,26,1,Rees-Mogg,Rees-Mogg,Reesxmogg,Npmsn,PROPN,B-PER,PER-Jacob-Rees-Mogg,B-PER
 sl-144,26,2,pravi,,praviti,Vmbr3s,VERB,O,,O
 sl-144,26,3,",",,",",Z,PUNCT,O,,O
 sl-144,26,4,da,,da,Cs,SCONJ,O,,O
@@ -534,7 +534,7 @@ sl-144,26,25,pristati,,pristati,Vmen,VERB,O,,O
 sl-144,26,26,na,,na,Sa,ADP,O,,O
 sl-144,26,27,spremembe,,sprememba,Ncfpa,NOUN,O,,O
 sl-144,26,28,.,,.,Z,PUNCT,O,,O
-sl-144,27,1,Je,,biti,Va-r3s-n,AUX,O,,O
+sl-144,27,1,Je,,biti,Va-r3s-n,AUX,O,,B-PER
 sl-144,27,2,pa,,pa,Cc,CCONJ,O,,O
 sl-144,27,3,dodal,,dodati,Vmep-sm,VERB,O,,O
 sl-144,27,4,",",,",",Z,PUNCT,O,,O
@@ -559,7 +559,7 @@ sl-144,27,22,ki,,ki,Cs,SCONJ,O,,O
 sl-144,27,23,je,,biti,Va-r3s-n,AUX,O,,O
 sl-144,27,24,del,,del,Ncmsn,NOUN,O,,O
 sl-144,27,25,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
-sl-144,27,26,z,,z,Si,ADP,O,,B-LOC
+sl-144,27,26,z,,z,Si,ADP,O,,O
 sl-144,27,27,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-144,27,28,in,,in,Cc,CCONJ,O,,O
 sl-144,27,29,preprečuje,,preprečevati,Vmpr3s,VERB,O,,O
@@ -574,7 +574,7 @@ sl-144,27,37,(,,(,Z,PUNCT,O,,O
 sl-144,27,38,britansko,,britanski,Agpfsi,ADJ,O,,O
 sl-144,27,39,),,),Z,PUNCT,O,,O
 sl-144,27,40,Severno,Severna,severen,Agpfsi,ADJ,B-LOC,GPE-Northern-Ireland,B-LOC
-sl-144,27,41,Irsko,Irska,Irska,Npfsi,PROPN,I-LOC,GPE-Northern-Ireland,B-LOC
+sl-144,27,41,Irsko,Irska,Irska,Npfsi,PROPN,I-LOC,GPE-Northern-Ireland,I-LOC
 sl-144,27,42,in,,in,Cc,CCONJ,O,,O
 sl-144,27,43,Irsko,Irsko,Irska,Npfsi,PROPN,B-LOC,GPE-Ireland,B-LOC
 sl-144,27,44,.,,.,Z,PUNCT,O,,O
@@ -666,7 +666,7 @@ sl-144,33,6,",",,",",Z,PUNCT,O,,O
 sl-144,33,7,ko,,ko,Cs,SCONJ,O,,O
 sl-144,33,8,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-144,33,9,poslanci,,poslanec,Ncmpn,NOUN,O,,O
-sl-144,33,10,z,,z,Si,ADP,O,,B-LOC
+sl-144,33,10,z,,z,Si,ADP,O,,O
 sl-144,33,11,glasovanjem,,glasovanje,Ncnsi,NOUN,O,,O
 sl-144,33,12,o,,o,Sl,ADP,O,,O
 sl-144,33,13,predlogih,,predlog,Ncmpl,NOUN,O,,O
@@ -674,7 +674,7 @@ sl-144,33,14,različnih,,različen,Agpnpg,ADJ,O,,O
 sl-144,33,15,dopolnil,,dopolnilo,Ncnpg,NOUN,O,,O
 sl-144,33,16,k,,k,Sd,ADP,O,,O
 sl-144,33,17,sporazumu,,sporazum,Ncmsd,NOUN,O,,O
-sl-144,33,18,z,,z,Si,ADP,O,,B-LOC
+sl-144,33,18,z,,z,Si,ADP,O,,O
 sl-144,33,19,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-144,33,20,poskusili,,poskusiti,Vmep-pm,VERB,O,,O
 sl-144,33,21,prevzeti,,prevzeti,Vmen,VERB,O,,O

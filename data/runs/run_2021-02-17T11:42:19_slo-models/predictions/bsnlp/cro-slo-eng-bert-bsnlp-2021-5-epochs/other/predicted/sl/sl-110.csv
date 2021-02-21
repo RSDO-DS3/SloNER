@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-110,0,1,Piranski,,piranski,Agpmsny,ADJ,O,,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-110,0,1,Piranski,,piranski,Agpmsny,ADJ,O,,O
 sl-110,0,2,župan,,župan,Ncmsn,NOUN,O,,O
 sl-110,0,3,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-110,0,4,",",,",",Z,PUNCT,O,,O
@@ -40,7 +40,7 @@ sl-110,1,26,",",,",",Z,PUNCT,O,,O
 sl-110,1,27,odzval,,odzvati,Vmep-sm,VERB,O,,O
 sl-110,1,28,župan,,župan,Ncmsn,NOUN,O,,O
 sl-110,1,29,Đenio,Đenio,Đenio,Npmsn,PROPN,B-PER,PER-Đenio-Zadković,B-PER
-sl-110,1,30,Zadković,Zadković,Zadković,Npmsn,PROPN,I-PER,PER-Đenio-Zadković,B-PER
+sl-110,1,30,Zadković,Zadković,Zadković,Npmsn,PROPN,I-PER,PER-Đenio-Zadković,I-PER
 sl-110,1,31,.,,.,Z,PUNCT,O,,O
 sl-110,2,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-110,2,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -629,7 +629,7 @@ sl-110,29,3,na,,na,Sa,ADP,O,,O
 sl-110,29,4,predlog,,predlog,Ncmsan,NOUN,O,,O
 sl-110,29,5,občanov,,občan,Ncmpg,NOUN,O,,O
 sl-110,29,6,v,,v,Sl,ADP,O,,O
-sl-110,29,7,Sloveniji,Slovenija,Slovenija,Npfsl,PROPN,B-LOC,GPE-Slovenia,O
+sl-110,29,7,Sloveniji,Slovenija,Slovenija,Npfsl,PROPN,B-LOC,GPE-Slovenia,B-LOC
 sl-110,29,8,kljub,,kljub,Sd,ADP,O,,O
 sl-110,29,9,številnim,,številen,Agpmpd,ADJ,O,,O
 sl-110,29,10,poskusom,,poskus,Ncmpd,NOUN,O,,O

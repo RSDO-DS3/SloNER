@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-61,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-61,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-LOC
 sl-61,0,2,uvedel,,uvesti,Vmep-sm,VERB,O,,O
 sl-61,0,3,sankcije,,sankcija,Ncfpa,NOUN,O,,O
 sl-61,0,4,proti,,proti,Sd,ADP,O,,O
@@ -94,7 +94,7 @@ sl-61,3,18,od,,od,Sg,ADP,O,,O
 sl-61,3,19,tam,,tam,Rgp,ADV,O,,O
 sl-61,3,20,v,,v,Sa,ADP,O,,O
 sl-61,3,21,vzhodno,vzhodna,vzhoden,Agpfsa,ADJ,B-LOC,LOC-Eastern-Europe,B-LOC
-sl-61,3,22,Evropo,Evropa,Evropa,Npfsa,PROPN,I-LOC,LOC-Eastern-Europe,B-LOC
+sl-61,3,22,Evropo,Evropa,Evropa,Npfsa,PROPN,I-LOC,LOC-Eastern-Europe,I-LOC
 sl-61,3,23,.,,.,Z,PUNCT,O,,O
 sl-61,4,1,Ameriška,,ameriški,Agpfsn,ADJ,O,,O
 sl-61,4,2,administracija,,administracija,Ncfsn,NOUN,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-58,0,1,Perry,Perry,Perry,Npmsn,PROPN,B-PER,PER-Rick-Perry,B-PER
 sl-58,0,2,za,,za,Sa,ADP,O,,O
 sl-58,0,3,razpršitev,,razpršitev,Ncfsa,NOUN,O,,O
@@ -21,13 +21,13 @@ sl-58,1,9,pomen,,pomen,Ncmsan,NOUN,O,,O
 sl-58,1,10,varne,,varen,Agpfsg,ADJ,O,,O
 sl-58,1,11,in,,in,Cc,CCONJ,O,,O
 sl-58,1,12,suverene,,suveren,Agpfsg,ADJ,O,,O
-sl-58,1,13,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-58,1,13,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-58,1,14,za,,za,Sa,ADP,O,,O
 sl-58,1,15,ZDA,ZDA,ZDA,Npfpa,PROPN,B-LOC,GPE-USA,B-LOC
 sl-58,1,16,.,,.,Z,PUNCT,O,,O
 sl-58,2,1,Želi,,želeti,Vmpr3s,VERB,O,,O
 sl-58,2,2,si,,se,Px---d--y,PRON,O,,O
-sl-58,2,3,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-58,2,3,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-58,2,4,brez,,brez,Sg,ADP,O,,O
 sl-58,2,5,gospodarskih,,gospodarski,Agpmpg,ADJ,O,,O
 sl-58,2,6,",",,",",Z,PUNCT,O,,O
@@ -63,13 +63,13 @@ sl-58,3,1,Prav,,prav,Q,PART,O,,O
 sl-58,3,2,zato,,zato,Cc,CCONJ,O,,O
 sl-58,3,3,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-58,3,4,podpirajo,,podpirati,Vmpr3p,VERB,O,,O
-sl-58,3,5,pobudo,pobuda,pobuda,Ncfsa,NOUN,B-PRO,PRO-Three-Seas-Initiative,O
-sl-58,3,6,Tri,Tri,trije,Mlcnpa,NUM,I-PRO,PRO-Three-Seas-Initiative,I-EVT
-sl-58,3,7,morja,morja,morje,Ncnpa,NOUN,I-PRO,PRO-Three-Seas-Initiative,I-EVT
+sl-58,3,5,pobudo,pobuda,pobuda,Ncfsa,NOUN,B-PRO,PRO-Three-Seas-Initiative,B-PRO
+sl-58,3,6,Tri,Tri,trije,Mlcnpa,NUM,I-PRO,PRO-Three-Seas-Initiative,B-PRO
+sl-58,3,7,morja,morja,morje,Ncnpa,NOUN,I-PRO,PRO-Three-Seas-Initiative,I-PRO
 sl-58,3,8,in,,in,Cc,CCONJ,O,,O
 sl-58,3,9,oblikovanje,,oblikovanje,Ncnsa,NOUN,O,,O
 sl-58,3,10,energetske,energetska,energetski,Agpfsg,ADJ,B-ORG,ORG-Energy-union,O
-sl-58,3,11,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-Energy-union,O
+sl-58,3,11,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-Energy-union,I-ORG
 sl-58,3,12,",",,",",Z,PUNCT,O,,O
 sl-58,3,13,s,,z,Si,ADP,O,,O
 sl-58,3,14,katero,,kateri,Pq-fsi,DET,O,,O
@@ -540,7 +540,7 @@ sl-58,20,9,tudi,,tudi,Q,PART,O,,O
 sl-58,20,10,reaktor,,reaktor,Ncmsan,NOUN,O,,O
 sl-58,20,11,za,,za,Sa,ADP,O,,O
 sl-58,20,12,Nuklearno,Nuklearna,nuklearen,Agpfsa,ADJ,B-ORG,ORG-Krško-Nuclear-Power-Plant,B-ORG
-sl-58,20,13,elektrarno,elektrarna,elektrarna,Ncfsa,NOUN,I-ORG,ORG-Krško-Nuclear-Power-Plant,O
+sl-58,20,13,elektrarno,elektrarna,elektrarna,Ncfsa,NOUN,I-ORG,ORG-Krško-Nuclear-Power-Plant,I-ORG
 sl-58,20,14,Krško,Krško,Krško,Npnsn,PROPN,I-ORG,ORG-Krško-Nuclear-Power-Plant,I-ORG
 sl-58,20,15,",",,",",Z,PUNCT,O,,O
 sl-58,20,16,kjer,,kjer,Cs,SCONJ,O,,O
@@ -650,7 +650,7 @@ sl-58,24,16,predsedniškem,,predsedniški,Agpmsl,ADJ,O,,O
 sl-58,24,17,panelu,,panel,Ncmsl,NOUN,O,,O
 sl-58,24,18,v,,v,Sl,ADP,O,,O
 sl-58,24,19,okviru,,okvir,Ncmsl,NOUN,O,,O
-sl-58,24,20,vrha,vrh,vrh,Ncmsg,NOUN,B-EVT,,B-EVT
+sl-58,24,20,vrha,vrh,vrh,Ncmsg,NOUN,B-EVT,,I-EVT
 sl-58,24,21,pobude,pobuda,pobuda,Ncfsg,NOUN,I-EVT,,I-EVT
 sl-58,24,22,Tri,tri,trije,Mlcnpa,NUM,I-EVT,,I-EVT
 sl-58,24,23,morja,morje,morje,Ncnpa,NOUN,I-EVT,,I-EVT

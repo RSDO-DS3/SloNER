@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-30,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-30,0,2,odpoveduje,,odpovedovati,Vmpr3s,VERB,O,,O
 sl-30,0,3,lete,,let,Ncmpa,NOUN,O,,O
@@ -6,10 +6,10 @@ sl-30,0,4,",",,",",Z,PUNCT,O,,O
 sl-30,0,5,zapirajo,,zapirati,Vmpr3p,VERB,O,,O
 sl-30,0,6,tudi,,tudi,Q,PART,O,,O
 sl-30,0,7,baze,,baza,Ncfpn,NOUN,O,,O
-sl-30,0,8,na,,na,Sl,ADP,O,,B-ORG
+sl-30,0,8,na,,na,Sl,ADP,O,,O
 sl-30,0,9,letališčih,,letališče,Ncnpl,NOUN,O,,O
 sl-30,1,1,Največji,,velik,Agsmsny,ADJ,O,,O
-sl-30,1,2,evropski,,evropski,Agpmsny,ADJ,O,,B-PRO
+sl-30,1,2,evropski,,evropski,Agpmsny,ADJ,O,,O
 sl-30,1,3,nizko,,nizko,Rgp,ADV,O,,O
 sl-30,1,4,cenovni,,cenoven,Agpmsny,ADJ,O,,O
 sl-30,1,5,prevoznik,,prevoznik,Ncmsn,NOUN,O,,O
@@ -19,7 +19,7 @@ sl-30,1,8,135,,135,Mdc,NUM,O,,O
 sl-30,1,9,modelov,,model,Ncmpg,NOUN,O,,O
 sl-30,1,10,letala,,letalo,Ncnsg,NOUN,O,,O
 sl-30,1,11,boeing,boeing,boeing,Ncmsn,NOUN,B-PRO,PRO-Boeing-737-Max,B-PRO
-sl-30,1,12,737,737,737,Mdc,NUM,I-PRO,PRO-Boeing-737-Max,B-PRO
+sl-30,1,12,737,737,737,Mdc,NUM,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-30,1,13,xax,max,xax,Ncmsn,NOUN,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-30,1,14,",",,",",Z,PUNCT,O,,O
 sl-30,1,15,ki,,ki,Cs,SCONJ,O,,O
@@ -46,7 +46,7 @@ sl-30,1,35,umrlo,,umreti,Vmep-sn,VERB,O,,O
 sl-30,1,36,346,,346,Mdc,NUM,O,,O
 sl-30,1,37,ljudi,,človek,Ncmpg,NOUN,O,,O
 sl-30,1,38,.,,.,Z,PUNCT,O,,O
-sl-30,2,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,B-LOC
+sl-30,2,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-30,2,2,proizvajalec,,proizvajalec,Ncmsn,NOUN,O,,O
 sl-30,2,3,letal,,letalo,Ncnpg,NOUN,O,,O
 sl-30,2,4,še,,še,Q,PART,O,,O
@@ -69,7 +69,7 @@ sl-30,2,20,.,,.,Z,PUNCT,O,,O
 sl-30,3,1,Posledično,,posledično,Rgp,ADV,O,,O
 sl-30,3,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-30,3,3,iz,,iz,Sg,ADP,O,,O
-sl-30,3,4,irskega,,irski,Agpnsg,ADJ,O,,B-ORG
+sl-30,3,4,irskega,,irski,Agpnsg,ADJ,O,,O
 sl-30,3,5,podjetja,,podjetje,Ncnsg,NOUN,O,,O
 sl-30,3,6,sporočili,,sporočiti,Vmep-pm,VERB,O,,O
 sl-30,3,7,",",,",",Z,PUNCT,O,,O
@@ -103,14 +103,14 @@ sl-30,5,4,predvidevali,,predvidevati,Vmpp-pm,VERB,O,,O
 sl-30,5,5,",",,",",Z,PUNCT,O,,O
 sl-30,5,6,da,,da,Cs,SCONJ,O,,O
 sl-30,5,7,se,,se,Px------y,PRON,O,,O
-sl-30,5,8,bo,,biti,Va-f3s-n,AUX,O,,B-PRO
+sl-30,5,8,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-30,5,9,število,,število,Ncnsn,NOUN,O,,O
 sl-30,5,10,gibalo,,gibati,Vmpp-sn,VERB,O,,O
 sl-30,5,11,okoli,,okoli,Rgp,ADV,O,,O
 sl-30,5,12,162,,162,Mdc,NUM,O,,O
 sl-30,5,13,milijonov,,milijon,Ncmpg,NOUN,O,,O
 sl-30,5,14,.,,.,Z,PUNCT,O,,O
-sl-30,6,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-30,6,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-30,6,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-30,6,3,hkrati,,hkrati,Rgp,ADV,O,,O
 sl-30,6,4,pričel,,pričeti,Vmep-sm,VERB,O,,O
@@ -122,7 +122,7 @@ sl-30,6,9,",",,",",Z,PUNCT,O,,O
 sl-30,6,10,ki,,ki,Cs,SCONJ,O,,O
 sl-30,6,11,bi,,biti,Va-c,AUX,O,,O
 sl-30,6,12,se,,se,Px------y,PRON,O,,O
-sl-30,6,13,jim,,on,Pp3mpd--y,PRON,O,,B-LOC
+sl-30,6,13,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-30,6,14,lahko,,lahko,Rgp,ADV,O,,O
 sl-30,6,15,odpovedali,,odpovedati,Vmep-pm,VERB,O,,O
 sl-30,6,16,do,,do,Sg,ADP,O,,O
@@ -143,13 +143,13 @@ sl-30,7,11,da,,da,Cs,SCONJ,O,,O
 sl-30,7,12,ostajajo,,ostajati,Vmpr3p,VERB,O,,O
 sl-30,7,13,zavezani,,zavezan,Appmpn,ADJ,O,,O
 sl-30,7,14,letalu,letalo,letalo,Ncnsd,NOUN,B-PRO,PRO-Boeing-737-Max,B-PRO
-sl-30,7,15,737,737,737,Mdc,NUM,I-PRO,PRO-Boeing-737-Max,O
+sl-30,7,15,737,737,737,Mdc,NUM,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-30,7,16,Max,Max,Max,Npmsn,PROPN,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-30,7,17,in,,in,Cc,CCONJ,O,,O
 sl-30,7,18,upajo,,upati,Vmpr3p,VERB,O,,O
 sl-30,7,19,",",,",",Z,PUNCT,O,,O
 sl-30,7,20,da,,da,Cs,SCONJ,O,,O
-sl-30,7,21,bo,,biti,Va-f3s-n,AUX,O,,B-PRO
+sl-30,7,21,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-30,7,22,lahko,,lahko,Rgp,ADV,O,,O
 sl-30,7,23,ponovno,,ponovno,Rgp,ADV,O,,O
 sl-30,7,24,letelo,,leteti,Vmpp-sn,VERB,O,,O

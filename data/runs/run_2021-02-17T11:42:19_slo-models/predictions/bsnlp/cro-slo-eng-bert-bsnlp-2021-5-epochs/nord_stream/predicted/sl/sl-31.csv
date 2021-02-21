@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-31,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-31,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,O
 sl-31,0,2,v,,v,Sl,ADP,O,,O
 sl-31,0,3,trgovini,,trgovina,Ncfsl,NOUN,O,,O
 sl-31,0,4,s,,z,Si,ADP,O,,O
@@ -41,7 +41,7 @@ sl-31,2,13,gre,,iti,Vmbr3s,VERB,O,,O
 sl-31,2,14,ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-31,2,15,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-31,2,16,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-31,2,17,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-31,2,17,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-31,2,18,na,,na,Sa,ADP,O,,O
 sl-31,2,19,še,,še,Q,PART,O,,O
 sl-31,2,20,enega,,en,Mlpmsa,NUM,O,,O
@@ -69,9 +69,9 @@ sl-31,3,17,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-31,3,18,",",,",",Z,PUNCT,O,,O
 sl-31,3,19,odstopil,,odstopiti,Vmep-sm,VERB,O,,O
 sl-31,3,20,od,,od,Sg,ADP,O,,O
-sl-31,3,21,pariškega,,pariški,Agpmsg,ADJ,O,,O
+sl-31,3,21,pariškega,,pariški,Agpmsg,ADJ,O,,B-PRO
 sl-31,3,22,podnebnega,,podneben,Agpmsg,ADJ,O,,O
-sl-31,3,23,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
+sl-31,3,23,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
 sl-31,3,24,in,,in,Cc,CCONJ,O,,O
 sl-31,3,25,predčasno,,predčasno,Rgp,ADV,O,,O
 sl-31,3,26,odvihral,,odvihrati,Vmep-sm,VERB,O,,O
@@ -123,7 +123,7 @@ sl-31,4,22,bi,,biti,Va-c,AUX,O,,O
 sl-31,4,23,se,,se,Px------y,PRON,O,,O
 sl-31,4,24,lahko,,lahko,Rgp,ADV,O,,O
 sl-31,4,25,srečanje,,srečanje,Ncnsn,NOUN,O,,O
-sl-31,4,26,29,,29,Mdc,NUM,O,,I-PRO
+sl-31,4,26,29,,29,Mdc,NUM,O,,O
 sl-31,4,27,najvišjih,,visok,Agsmpg,ADJ,O,,O
 sl-31,4,28,predstavnikov,,predstavnik,Ncmpg,NOUN,O,,O
 sl-31,4,29,končalo,,končati,Vmep-sn,VERB,O,,O
@@ -346,7 +346,7 @@ sl-31,14,18,ga,,on,Pp3msa--y,PRON,O,,O
 sl-31,14,19,je,,biti,Va-r3s-n,AUX,O,,O
 sl-31,14,20,nadzorovala,,nadzorovati,Vmpp-sf,VERB,O,,O
 sl-31,14,21,Sovjetska,Sovjetska,sovjetski,Agpfsn,ADJ,B-LOC,GPE-Soviet-Union-USSR,B-LOC
-sl-31,14,22,zveza,zveza,zveza,Ncfsn,NOUN,I-LOC,GPE-Soviet-Union-USSR,B-LOC
+sl-31,14,22,zveza,zveza,zveza,Ncfsn,NOUN,I-LOC,GPE-Soviet-Union-USSR,I-LOC
 sl-31,14,23,.,,.,Z,PUNCT,O,,O
 sl-31,15,1,"""",,"""",Z,PUNCT,O,,O
 sl-31,15,2,Zelo,,zelo,Rgp,ADV,O,,O
@@ -571,7 +571,7 @@ sl-31,23,23,ali,,ali,Cc,CCONJ,O,,O
 sl-31,23,24,razloga,,razlog,Ncmsg,NOUN,O,,O
 sl-31,23,25,"""",,"""",Z,PUNCT,O,,O
 sl-31,23,26,.,,.,Z,PUNCT,O,,O
-sl-31,24,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
+sl-31,24,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-LOC
 sl-31,24,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-31,24,3,zato,,zato,Cc,CCONJ,O,,O
 sl-31,24,4,trgovinskemu,,trgovinski,Agpnsd,ADJ,O,,O
@@ -843,7 +843,7 @@ sl-31,35,31,podaljšanje,,podaljšanje,Ncnsa,NOUN,O,,O
 sl-31,35,32,finančne,,finančen,Agpfsg,ADJ,O,,O
 sl-31,35,33,pomoči,,pomoč,Ncfsg,NOUN,O,,O
 sl-31,35,34,za,,za,Sa,ADP,O,,O
-sl-31,35,35,afganistanske,,afganistanski,Agpfpa,ADJ,O,,B-LOC
+sl-31,35,35,afganistanske,,afganistanski,Agpfpa,ADJ,O,,O
 sl-31,35,36,varnostne,,varnosten,Agpfpa,ADJ,O,,O
 sl-31,35,37,sile,,sila,Ncfpa,NOUN,O,,O
 sl-31,35,38,do,,do,Sg,ADP,O,,O

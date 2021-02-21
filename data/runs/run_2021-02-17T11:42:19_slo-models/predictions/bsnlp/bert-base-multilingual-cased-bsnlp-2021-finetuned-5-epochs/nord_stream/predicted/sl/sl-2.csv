@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-2,0,1,Porošenko,Porošenko,Porošenko,Npmsn,PROPN,B-PER,PER-Petro-Poroshenko,B-PER
 sl-2,0,2,pozval,,pozvati,Vmep-sm,VERB,O,,O
 sl-2,0,3,Nato,Nato,Nato,Npmsan,PROPN,B-ORG,ORG-NATO,B-ORG
@@ -85,7 +85,7 @@ sl-2,2,34,pri,,pri,Sl,ADP,O,,O
 sl-2,2,35,nezakonito,,nezakonito,Rgp,ADV,O,,O
 sl-2,2,36,priključenem,,priključen,Appmsl,ADJ,O,,O
 sl-2,2,37,polotoku,,polotok,Ncmsl,NOUN,O,,O
-sl-2,2,38,Krim,Krim,Krim,Npmsn,PROPN,B-LOC,GPE-Crimea,B-LOC
+sl-2,2,38,Krim,Krim,Krim,Npmsn,PROPN,B-LOC,GPE-Crimea,I-LOC
 sl-2,2,39,zasegla,,zaseči,Vmep-sf,VERB,O,,O
 sl-2,2,40,tri,,trije,Mlcnpa,NUM,O,,O
 sl-2,2,41,ukrajinska,,ukrajinski,Agpnpa,ADJ,O,,O
@@ -202,7 +202,7 @@ sl-2,9,5,stari,,star,Agpmsay,ADJ,O,,O
 sl-2,9,6,ruski,ruski,ruski,Agpmsay,ADJ,B-LOC,GPE-Russian-Empire,O
 sl-2,9,7,imperij,imperij,imperij,Ncmsan,NOUN,I-LOC,GPE-Russian-Empire,O
 sl-2,9,8,.,,.,Z,PUNCT,O,,O
-sl-2,10,1,Sebe,,se,Px---a,PRON,O,,O
+sl-2,10,1,Sebe,,se,Px---a,PRON,O,,B-PER
 sl-2,10,2,vidi,,videti,Vmbr3s,VERB,O,,O
 sl-2,10,3,kot,,kot,Cs,SCONJ,O,,O
 sl-2,10,4,ruskega,,ruski,Agpmsa,ADJ,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-119,0,1,Turčija,Turčija,Turčija,Npfsn,PROPN,B-LOC,GPE-Turkey,B-LOC
 sl-119,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-119,0,3,",",,",",Z,PUNCT,O,,O
@@ -137,7 +137,7 @@ sl-119,6,19,v,,v,Sl,ADP,O,,O
 sl-119,6,20,skrajni,,skrajen,Agpfsl,ADJ,O,,O
 sl-119,6,21,skupini,,skupina,Ncfsl,NOUN,O,,O
 sl-119,6,22,.,,.,Z,PUNCT,O,,O
-sl-119,7,1,Turški,,turški,Agpmpn,ADJ,O,,B-LOC
+sl-119,7,1,Turški,,turški,Agpmpn,ADJ,O,,O
 sl-119,7,2,predstavniki,,predstavnik,Ncmpn,NOUN,O,,O
 sl-119,7,3,",",,",",Z,PUNCT,O,,O
 sl-119,7,4,ki,,ki,Cs,SCONJ,O,,O
@@ -275,8 +275,8 @@ sl-119,12,10,po,,po,Sl,ADP,O,,O
 sl-119,12,11,pisanju,,pisanje,Ncnsl,NOUN,O,,O
 sl-119,12,12,ameriškega,,ameriški,Agpmsg,ADJ,O,,O
 sl-119,12,13,časnika,,časnik,Ncmsg,NOUN,O,,O
-sl-119,12,14,New,New,New,Npmsn,PROPN,B-ORG,ORG-New-York-Times,B-PRO
-sl-119,12,15,York,York,York,Npmsn,PROPN,I-ORG,ORG-New-York-Times,B-ORG
+sl-119,12,14,New,New,New,Npmsn,PROPN,B-ORG,ORG-New-York-Times,B-ORG
+sl-119,12,15,York,York,York,Npmsn,PROPN,I-ORG,ORG-New-York-Times,I-ORG
 sl-119,12,16,Times,Times,Times,Npmsn,PROPN,I-ORG,ORG-New-York-Times,I-ORG
 sl-119,12,17,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-119,12,18,znano,,znan,Appnsn,ADJ,O,,O

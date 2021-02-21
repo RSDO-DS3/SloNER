@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-71,0,1,Notorična,,notoričen,Agpfsn,ADJ,O,,O
 sl-71,0,2,slepa,,slep,Agpfsn,ADJ,O,,O
 sl-71,0,3,potnica,,potnica,Ncfsn,NOUN,O,,O
@@ -103,7 +103,7 @@ sl-71,8,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-71,8,8,na,,na,Sl,ADP,O,,O
 sl-71,8,9,letališču,letališče,letališče,Ncnsl,NOUN,B-LOC,LOC-O'Hare-International-Airport,B-LOC
 sl-71,8,10,O,O,o,Sl,ADP,I-LOC,LOC-O'Hare-International-Airport,I-LOC
-sl-71,8,11,’,’,’,Z,PUNCT,I-LOC,LOC-O'Hare-International-Airport,O
+sl-71,8,11,’,’,’,Z,PUNCT,I-LOC,LOC-O'Hare-International-Airport,I-LOC
 sl-71,8,12,Hare,Hare,Hare,Npmsn,PROPN,I-LOC,LOC-O'Hare-International-Airport,I-LOC
 sl-71,8,13,v,,v,Sl,ADP,O,,O
 sl-71,8,14,Chicagu,Chicago,Chicago,Npmsl,PROPN,B-LOC,GPE-Chicago,B-LOC
@@ -199,7 +199,7 @@ sl-71,13,11,tedaj,,tedaj,Rgp,ADV,O,,O
 sl-71,13,12,nemočen,,nemočen,Agpmsnn,ADJ,O,,O
 sl-71,13,13,sodnik,,sodnik,Ncmsn,NOUN,O,,O
 sl-71,13,14,William,William,William,Npmsn,PROPN,B-PER,PER-William-Raines,B-PER
-sl-71,13,15,Raines,Raines,Raines,Npmsn,PROPN,I-PER,PER-William-Raines,B-PER
+sl-71,13,15,Raines,Raines,Raines,Npmsn,PROPN,I-PER,PER-William-Raines,I-PER
 sl-71,13,16,.,,.,Z,PUNCT,O,,O
 sl-71,14,1,Domneval,,domnevati,Vmpp-sm,VERB,O,,O
 sl-71,14,2,je,,biti,Va-r3s-n,AUX,O,,O

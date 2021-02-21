@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-19,0,1,Bank,Bank,bank,Xf,X,B-ORG,ORG-Bank-of-England,B-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-19,0,1,Bank,Bank,bank,Xf,X,B-ORG,ORG-Bank-of-England,I-ORG
 sl-19,0,2,of,of,of,Xf,X,I-ORG,ORG-Bank-of-England,I-ORG
 sl-19,0,3,England,England,England,Npmsn,PROPN,I-ORG,ORG-Bank-of-England,I-ORG
 sl-19,0,4,:,,:,Z,PUNCT,O,,O
@@ -31,8 +31,8 @@ sl-19,1,14,ključnih,,ključen,Agpfpg,ADJ,O,,O
 sl-19,1,15,transakcij,,transakcija,Ncfpg,NOUN,O,,O
 sl-19,1,16,",",,",",Z,PUNCT,O,,O
 sl-19,1,17,in,,in,Cc,CCONJ,O,,O
-sl-19,1,18,centralna,,centralen,Agpfsn,ADJ,O,,I-ORG
-sl-19,1,19,banka,,banka,Ncfsn,NOUN,O,,I-ORG
+sl-19,1,18,centralna,,centralen,Agpfsn,ADJ,O,,B-ORG
+sl-19,1,19,banka,,banka,Ncfsn,NOUN,O,,O
 sl-19,1,20,je,,biti,Va-r3s-n,AUX,O,,O
 sl-19,1,21,v,,v,Sl,ADP,O,,O
 sl-19,1,22,povzetku,,povzetek,Ncmsl,NOUN,O,,O
@@ -138,7 +138,7 @@ sl-19,3,37,predvideti,,predvideti,Vmen,VERB,O,,O
 sl-19,3,38,.,,.,Z,PUNCT,O,,O
 sl-19,4,1,V,,v,Sl,ADP,O,,O
 sl-19,4,2,centralni,,centralen,Agpfsl,ADJ,O,,B-ORG
-sl-19,4,3,banki,,banka,Ncfsl,NOUN,O,,O
+sl-19,4,3,banki,,banka,Ncfsl,NOUN,O,,I-ORG
 sl-19,4,4,so,,biti,Va-r3p-n,AUX,O,,O
 sl-19,4,5,sicer,,sicer,Q,PART,O,,O
 sl-19,4,6,priznali,,priznati,Vmep-pm,VERB,O,,O
@@ -217,7 +217,7 @@ sl-19,8,5,še,,še,Q,PART,O,,O
 sl-19,8,6,okrepili,,okrepiti,Vmep-pm,VERB,O,,O
 sl-19,8,7,operacije,,operacija,Ncfpa,NOUN,O,,O
 sl-19,8,8,refinanciranja,,refinanciranje,Ncnsg,NOUN,O,,O
-sl-19,8,9,bank,,banka,Ncfpg,NOUN,O,,I-ORG
+sl-19,8,9,bank,,banka,Ncfpg,NOUN,O,,O
 sl-19,8,10,",",,",",Z,PUNCT,O,,O
 sl-19,8,11,ki,,ki,Cs,SCONJ,O,,O
 sl-19,8,12,bodo,,biti,Va-f3p-n,VERB,O,,O
@@ -235,7 +235,7 @@ sl-19,8,23,novem,,nov,Agpnsl,ADJ,O,,O
 sl-19,8,24,pa,,pa,Cc,CCONJ,O,,O
 sl-19,8,25,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-19,8,26,britanske,,britanski,Agpfpn,ADJ,O,,O
-sl-19,8,27,banke,,banka,Ncfpn,NOUN,O,,I-ORG
+sl-19,8,27,banke,,banka,Ncfpn,NOUN,O,,O
 sl-19,8,28,lahko,,lahko,Rgp,ADV,O,,O
 sl-19,8,29,dostopale,,dostopati,Vmpp-pf,VERB,O,,O
 sl-19,8,30,tudi,,tudi,Q,PART,O,,O

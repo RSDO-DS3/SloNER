@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-62,0,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-62,0,2,proti,,proti,Sd,ADP,O,,O
 sl-62,0,3,nekaterim,,nekateri,Pi-mpd,DET,O,,O
@@ -26,7 +26,7 @@ sl-62,1,15,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-62,1,16,–,,–,Z,PUNCT,O,,O
 sl-62,1,17,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
 sl-62,1,18,tok,,tok,Ncmsn,NOUN,O,,I-PRO
-sl-62,1,19,2.,,2.,Mdo,NUM,O,,I-PRO
+sl-62,1,19,2.,,2.,Mdo,NUM,O,,O
 sl-62,1,20,Kremelj,Kremelj,Kremelj,Npmsn,PROPN,B-ORG,ORG-Kremlin,B-ORG
 sl-62,1,21,in,,in,Cc,CCONJ,O,,O
 sl-62,1,22,Berlin,Berlin,Berlin,Npmsn,PROPN,B-LOC,GPE-Berlin,B-LOC
@@ -37,7 +37,7 @@ sl-62,1,26,Severni,Severni,severen,Agpmsny,ADJ,B-PRO,PRO-Nord-Stream-2,B-PRO
 sl-62,1,27,tok,tok,tok,Ncmsn,NOUN,I-PRO,PRO-Nord-Stream-2,I-PRO
 sl-62,1,28,2,2,2,Mdc,NUM,I-PRO,PRO-Nord-Stream-2,I-PRO
 sl-62,1,29,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-62,1,30,zgrajen,,zgrajen,Appmsnn,ADJ,O,,B-ORG
+sl-62,1,30,zgrajen,,zgrajen,Appmsnn,ADJ,O,,O
 sl-62,1,31,kljub,,kljub,Sd,ADP,O,,O
 sl-62,1,32,ameriškim,,ameriški,Agpfpd,ADJ,O,,O
 sl-62,1,33,sankcijam,,sankcija,Ncfpd,NOUN,O,,O
@@ -55,7 +55,7 @@ sl-62,1,44,odnose,,odnos,Ncmpa,NOUN,O,,O
 sl-62,1,45,.,,.,Z,PUNCT,O,,O
 sl-62,2,1,Ameriški,Ameriški,ameriški,Agpmsny,ADJ,B-ORG,ORG-United-States-Congress,B-ORG
 sl-62,2,2,kongres,kongres,kongres,Ncmsn,NOUN,I-ORG,ORG-United-States-Congress,I-ORG
-sl-62,2,3,je,,biti,Va-r3s-n,AUX,O,,B-PER
+sl-62,2,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-62,2,4,potrdil,,potrditi,Vmep-sm,VERB,O,,O
 sl-62,2,5,kazni,,kazen,Ncfpa,NOUN,O,,O
 sl-62,2,6,za,,za,Sa,ADP,O,,O
@@ -69,7 +69,7 @@ sl-62,2,13,",",,",",Z,PUNCT,O,,O
 sl-62,2,14,zakonodajo,,zakonodaja,Ncfsa,NOUN,O,,O
 sl-62,2,15,pa,,pa,Cc,CCONJ,O,,O
 sl-62,2,16,mora,,morati,Vmpr3s,VERB,O,,O
-sl-62,2,17,tako,,tako,Rgp,ADV,O,,B-ORG
+sl-62,2,17,tako,,tako,Rgp,ADV,O,,O
 sl-62,2,18,podpisati,,podpisati,Vmen,VERB,O,,O
 sl-62,2,19,le,,le,Q,PART,O,,O
 sl-62,2,20,še,,še,Q,PART,O,,O
@@ -96,7 +96,7 @@ sl-62,3,15,so,,biti,Va-r3p-n,AUX,O,,O
 sl-62,3,16,danes,,danes,Rgp,ADV,O,,O
 sl-62,3,17,sporočili,,sporočiti,Vmep-pm,VERB,O,,O
 sl-62,3,18,iz,,iz,Sg,ADP,O,,O
-sl-62,3,19,Kremlja,Kremelj,Kremelj,Npmsg,PROPN,B-ORG,ORG-Kremlin,O
+sl-62,3,19,Kremlja,Kremelj,Kremelj,Npmsg,PROPN,B-ORG,ORG-Kremlin,B-ORG
 sl-62,3,20,.,,.,Z,PUNCT,O,,O
 sl-62,4,1,Potezo,,poteza,Ncfsa,NOUN,O,,O
 sl-62,4,2,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
@@ -144,8 +144,8 @@ sl-62,6,21,AFP,AFP,AFP,Npmsn,PROPN,B-ORG,ORG-AFP-Agence-France-Press,B-ORG
 sl-62,6,22,odzval,,odzvati,Vmep-sm,VERB,O,,O
 sl-62,6,23,tiskovni,,tiskoven,Agpmsny,ADJ,O,,O
 sl-62,6,24,predstavnik,,predstavnik,Ncmsn,NOUN,O,,O
-sl-62,6,25,Kremlja,Kremelj,Kremelj,Npmsg,PROPN,B-ORG,ORG-Kremlin,O
-sl-62,6,26,Dmitrij,Dmitrij,Dmitrij,Npmsn,PROPN,B-PER,PER-Dmitry-Peskov,O
+sl-62,6,25,Kremlja,Kremelj,Kremelj,Npmsg,PROPN,B-ORG,ORG-Kremlin,B-ORG
+sl-62,6,26,Dmitrij,Dmitrij,Dmitrij,Npmsn,PROPN,B-PER,PER-Dmitry-Peskov,B-PER
 sl-62,6,27,Peskov,Peskov,Peskov,Npmsn,PROPN,I-PER,PER-Dmitry-Peskov,I-PER
 sl-62,6,28,.,,.,Z,PUNCT,O,,O
 sl-62,7,1,Po,,po,Sl,ADP,O,,O
@@ -184,7 +184,7 @@ sl-62,7,33,manj,,manj,Rgc,DET,O,,O
 sl-62,7,34,konkurenčne,,konkurenčen,Agpmpa,ADJ,O,,O
 sl-62,7,35,proizvode,,proizvod,Ncmpa,NOUN,O,,O
 sl-62,7,36,.,,.,Z,PUNCT,O,,O
-sl-62,8,1,Evropske,,evropski,Agpmpa,ADJ,O,,B-LOC
+sl-62,8,1,Evropske,,evropski,Agpmpa,ADJ,O,,O
 sl-62,8,2,potrošnike,,potrošnik,Ncmpa,NOUN,O,,O
 sl-62,8,3,tako,,tako,Rgp,ADV,O,,O
 sl-62,8,4,čaka,,čakati,Vmpr3s,VERB,O,,O
@@ -208,7 +208,7 @@ sl-62,10,2,kongres,kongres,kongres,Ncmsn,NOUN,I-ORG,ORG-United-States-Congress,I
 sl-62,10,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-62,10,4,v,,v,Sa,ADP,O,,O
 sl-62,10,5,738,,738,Mdc,NUM,O,,O
-sl-62,10,6,milijard,,milijarda,Ncfpg,NOUN,O,,B-PER
+sl-62,10,6,milijard,,milijarda,Ncfpg,NOUN,O,,O
 sl-62,10,7,dolarjev,,dolar,Ncmpg,NOUN,O,,O
 sl-62,10,8,vreden,,vreden,Agpmsnn,ADJ,O,,O
 sl-62,10,9,proračunski,,proračunski,Agpmsay,ADJ,O,,O
@@ -231,7 +231,7 @@ sl-62,10,25,.,,.,Z,PUNCT,O,,O
 sl-62,11,1,Sankcije,,sankcija,Ncfpn,NOUN,O,,O
 sl-62,11,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-62,11,3,šle,,iti,Vmbp-pf,VERB,O,,O
-sl-62,11,4,z,,z,Si,ADP,O,,B-ORG
+sl-62,11,4,z,,z,Si,ADP,O,,O
 sl-62,11,5,lahkoto,,lahkota,Ncfsi,NOUN,O,,O
 sl-62,11,6,tako,,tako,Rgp,ADV,O,,O
 sl-62,11,7,skozi,,skozi,Sa,ADP,O,,O
@@ -270,15 +270,15 @@ sl-62,12,26,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-62,12,27,oslabil,,oslabiti,Vmep-sm,VERB,O,,O
 sl-62,12,28,vezi,,vez,Ncfpa,NOUN,O,,O
 sl-62,12,29,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
-sl-62,12,30,z,,z,Si,ADP,O,,B-ORG
+sl-62,12,30,z,,z,Si,ADP,O,,O
 sl-62,12,31,Nemčijo,Nemčija,Nemčija,Npfsi,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-62,12,32,in,,in,Cc,CCONJ,O,,O
-sl-62,12,33,Evropo,Evropa,Evropa,Npfsi,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-62,12,33,Evropo,Evropa,Evropa,Npfsi,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-62,12,34,.,,.,Z,PUNCT,O,,O
 sl-62,13,1,Problematizirajo,,problematizirati,Vmbr3p,VERB,O,,O
 sl-62,13,2,tudi,,tudi,Q,PART,O,,O
 sl-62,13,3,plinovod,,plinovod,Ncmsan,NOUN,O,,O
-sl-62,13,4,Turški,Turški,turški,Agpmsny,ADJ,B-PRO,PRO-TurkStream,O
+sl-62,13,4,Turški,Turški,turški,Agpmsny,ADJ,B-PRO,PRO-TurkStream,B-PRO
 sl-62,13,5,tok,tok,tok,Ncmsn,NOUN,I-PRO,PRO-TurkStream,I-PRO
 sl-62,13,6,",",,",",Z,PUNCT,O,,O
 sl-62,13,7,ki,,ki,Cs,SCONJ,O,,O
@@ -360,7 +360,7 @@ sl-62,16,12,energetskega,,energetski,Agpmsg,ADJ,O,,O
 sl-62,16,13,velikana,,velikan,Ncmsg,NOUN,O,,O
 sl-62,16,14,Gazprom,Gazprom,Gazprom,Npmsn,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-62,16,15,.,,.,Z,PUNCT,O,,O
-sl-62,17,1,Rusi,Rusi,Rus,Npmpn,PROPN,B-PER,GPE-Russia,B-PER
+sl-62,17,1,Rusi,Rusi,Rus,Npmpn,PROPN,B-PER,GPE-Russia,O
 sl-62,17,2,napovedujejo,,napovedovati,Vmpr3p,VERB,O,,O
 sl-62,17,3,",",,",",Z,PUNCT,O,,O
 sl-62,17,4,da,,da,Cs,SCONJ,O,,O

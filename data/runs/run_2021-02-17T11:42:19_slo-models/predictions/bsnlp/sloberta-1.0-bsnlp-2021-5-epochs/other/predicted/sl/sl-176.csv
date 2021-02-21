@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-176,0,1,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,B-PER
 sl-176,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-176,0,3,",",,",",Z,PUNCT,O,,O
@@ -7,7 +7,7 @@ sl-176,0,5,se,,se,Px------y,PRON,O,,O
 sl-176,0,6,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-176,0,7,pogovarjal,,pogovarjati,Vmpp-sm,VERB,O,,O
 sl-176,0,8,z,,z,Si,ADP,O,,O
-sl-176,0,9,Janšo,Janša,Janša,Npmsi,PROPN,B-PER,PER-Janez-Janša,I-PER
+sl-176,0,9,Janšo,Janša,Janša,Npmsi,PROPN,B-PER,PER-Janez-Janša,B-PER
 sl-176,0,10,:,,:,Z,PUNCT,O,,O
 sl-176,0,11,Smo,,biti,Va-r1p-n,AUX,O,,O
 sl-176,0,12,trden,,trden,Agpmsnn,ADJ,O,,O
@@ -17,7 +17,7 @@ sl-176,0,15,vlade,,vlada,Ncfsg,NOUN,O,,O
 sl-176,1,1,Predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-176,1,2,SMC,SMC,SMC,Npfsg,PROPN,B-ORG,ORG-Modern-Centre-Party,B-ORG
 sl-176,1,3,Zdravko,Zdravko,Zdravko,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,B-PER
-sl-176,1,4,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,I-PER,PER-Zdravko-Počivalšek,O
+sl-176,1,4,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,I-PER,PER-Zdravko-Počivalšek,I-PER
 sl-176,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-176,1,6,zatrdil,,zatrditi,Vmep-sm,VERB,O,,O
 sl-176,1,7,",",,",",Z,PUNCT,O,,O
@@ -56,7 +56,7 @@ sl-176,2,13,",",,",",Z,PUNCT,O,,O
 sl-176,2,14,je,,biti,Va-r3s-n,AUX,O,,O
 sl-176,2,15,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-176,2,16,.,,.,Z,PUNCT,O,,O
-sl-176,3,1,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,O
+sl-176,3,1,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,B-PER
 sl-176,3,2,ob,,ob,Sl,ADP,O,,O
 sl-176,3,3,tem,,ta,Pd-nsl,DET,O,,O
 sl-176,3,4,napoveduje,,napovedovati,Vmpr3s,VERB,O,,O
@@ -76,15 +76,15 @@ sl-176,3,17,in,,in,Cc,CCONJ,O,,O
 sl-176,3,18,programskega,,programski,Agpmsa,ADJ,O,,O
 sl-176,3,19,vodjo,,vodja,Ncmsay,NOUN,O,,O
 sl-176,3,20,.,,.,Z,PUNCT,O,,O
-sl-176,4,1,Zdravko,Zdravko,Zdravko,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,O
-sl-176,4,2,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,I-PER,PER-Zdravko-Počivalšek,O
+sl-176,4,1,Zdravko,Zdravko,Zdravko,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,B-PER
+sl-176,4,2,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,I-PER,PER-Zdravko-Počivalšek,I-PER
 sl-176,5,1,Predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-176,5,2,SMC,SMC,SMC,Npmsn,PROPN,B-ORG,ORG-Modern-Centre-Party,B-ORG
 sl-176,5,3,in,,in,Cc,CCONJ,O,,O
 sl-176,5,4,gospodarski,,gospodarski,Agpmsny,ADJ,O,,O
 sl-176,5,5,minister,,minister,Ncmsn,NOUN,O,,O
-sl-176,5,6,Zdravko,Zdravko,Zdravko,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,O
-sl-176,5,7,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,I-PER,PER-Zdravko-Počivalšek,O
+sl-176,5,6,Zdravko,Zdravko,Zdravko,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,B-PER
+sl-176,5,7,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,I-PER,PER-Zdravko-Počivalšek,I-PER
 sl-176,5,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-176,5,9,v,,v,Sl,ADP,O,,O
 sl-176,5,10,izjavi,,izjava,Ncfsl,NOUN,O,,O
@@ -154,7 +154,7 @@ sl-176,6,33,",",,",",Z,PUNCT,O,,O
 sl-176,6,34,kaj,,kaj,Pq-nsn,PRON,O,,O
 sl-176,6,35,bo,,biti,Va-f3s-n,VERB,O,,O
 sl-176,6,36,",",,",",Z,PUNCT,O,,O
-sl-176,6,37,ko,,ko,Cs,SCONJ,O,,B-PER
+sl-176,6,37,ko,,ko,Cs,SCONJ,O,,O
 sl-176,6,38,bo,,biti,Va-f3s-n,VERB,O,,O
 sl-176,6,39,",",,",",Z,PUNCT,O,,O
 sl-176,6,40,če,,če,Cs,SCONJ,O,,O
@@ -205,7 +205,7 @@ sl-176,9,21,z,,z,Si,ADP,O,,O
 sl-176,9,22,vsemi,,ves,Pg-mpi,DET,O,,O
 sl-176,9,23,.,,.,Z,PUNCT,O,,O
 sl-176,9,24,"""",,"""",Z,PUNCT,O,,O
-sl-176,10,1,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,O
+sl-176,10,1,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,B-PER
 sl-176,10,2,sicer,,sicer,Q,PART,O,,O
 sl-176,10,3,napoveduje,,napovedovati,Vmpr3s,VERB,O,,O
 sl-176,10,4,reorganizacijo,,reorganizacija,Ncfsa,NOUN,O,,O
@@ -241,7 +241,7 @@ sl-176,11,27,odslej,,odslej,Rgp,ADV,O,,O
 sl-176,11,28,igrala,,igrati,Vmpp-sf,VERB,O,,O
 sl-176,11,29,"""",,"""",Z,PUNCT,O,,O
 sl-176,11,30,malce,,malce,Rgp,ADV,O,,O
-sl-176,11,31,bolj,,bolj,Rgc,ADV,O,,I-PER
+sl-176,11,31,bolj,,bolj,Rgc,ADV,O,,O
 sl-176,11,32,na,,na,Sa,ADP,O,,O
 sl-176,11,33,trdo,,trdo,Rgp,ADV,O,,O
 sl-176,11,34,"""",,"""",Z,PUNCT,O,,O
@@ -294,7 +294,7 @@ sl-176,12,10,",",,",",Z,PUNCT,O,,O
 sl-176,12,11,"""",,"""",Z,PUNCT,O,,O
 sl-176,12,12,je,,biti,Va-r3s-n,AUX,O,,O
 sl-176,12,13,dodal,,dodati,Vmep-sm,VERB,O,,O
-sl-176,12,14,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,O
+sl-176,12,14,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,B-PER
 sl-176,12,15,.,,.,Z,PUNCT,O,,O
 sl-176,13,1,Z,,z,Sg,ADP,O,,O
 sl-176,13,2,mesta,,mesto,Ncnsg,NOUN,O,,O
@@ -339,7 +339,7 @@ sl-176,15,16,"""",,"""",Z,PUNCT,O,,O
 sl-176,15,17,",",,",",Z,PUNCT,O,,O
 sl-176,15,18,pa,,pa,Cc,CCONJ,O,,O
 sl-176,15,19,je,,biti,Va-r3s-n,AUX,O,,O
-sl-176,15,20,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,O
+sl-176,15,20,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,B-PER
 sl-176,15,21,odgovoril,,odgovoriti,Vmep-sm,VERB,O,,O
 sl-176,15,22,z,,z,Si,ADP,O,,O
 sl-176,15,23,besedami,,beseda,Ncfpi,NOUN,O,,O
@@ -364,7 +364,7 @@ sl-176,15,41,v,,v,Sl,ADP,O,,O
 sl-176,15,42,stranki,,stranka,Ncfsl,NOUN,O,,O
 sl-176,15,43,"""",,"""",Z,PUNCT,O,,O
 sl-176,15,44,.,,.,Z,PUNCT,O,,O
-sl-176,16,1,Ta,,ta,Pd-fsn,DET,O,,O
+sl-176,16,1,Ta,,ta,Pd-fsn,DET,O,,B-LOC
 sl-176,16,2,po,,po,Sl,ADP,O,,O
 sl-176,16,3,njegovih,,njegov,Ps3fplsm,DET,O,,O
 sl-176,16,4,navedbah,,navedba,Ncfpl,NOUN,O,,O
@@ -404,7 +404,7 @@ sl-176,17,20,Cerarja,Cerar,Cerar,Npmsg,PROPN,I-PER,PER-Miro-Cerar,I-PER
 sl-176,17,21,",",,",",Z,PUNCT,O,,O
 sl-176,17,22,pa,,pa,Cc,CCONJ,O,,O
 sl-176,17,23,je,,biti,Va-r3s-n,AUX,O,,O
-sl-176,17,24,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,O
+sl-176,17,24,Počivalšek,Počivalšek,Počivalšek,Npmsn,PROPN,B-PER,PER-Zdravko-Počivalšek,B-PER
 sl-176,17,25,odgovoril,,odgovoriti,Vmep-sm,VERB,O,,O
 sl-176,17,26,",",,",",Z,PUNCT,O,,O
 sl-176,17,27,da,,da,Cs,SCONJ,O,,O

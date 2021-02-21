@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-93,0,1,Wizzair,Wizz,Wizzair,Npmsn,PROPN,B-ORG,ORG-Wizz-Air,B-ORG
 sl-93,0,2,z,,z,Si,ADP,O,,O
 sl-93,0,3,zimsko,,zimski,Agpfsi,ADJ,O,,O
@@ -24,13 +24,13 @@ sl-93,1,12,služi,,služiti,Vmpr3s,VERB,O,,O
 sl-93,1,13,tudi,,tudi,Q,PART,O,,O
 sl-93,1,14,kot,,kot,Cs,SCONJ,O,,O
 sl-93,1,15,drugo,,drug,Mlpnsa,ADJ,O,,O
-sl-93,1,16,letališče,,letališče,Ncnsa,NOUN,O,,I-LOC
+sl-93,1,16,letališče,,letališče,Ncnsa,NOUN,O,,O
 sl-93,1,17,za,,za,Sa,ADP,O,,O
 sl-93,1,18,Bruselj,Bruselj,Bruselj,Npmsan,PROPN,B-LOC,GPE-Brussles,B-LOC
 sl-93,1,19,",",,",",Z,PUNCT,O,,O
 sl-93,1,20,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-93,1,21,Wizz,Wizz,Wizz,Npmsn,PROPN,B-ORG,ORG-Wizz-Air,B-ORG
-sl-93,1,22,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Wizz-Air,B-ORG
+sl-93,1,22,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Wizz-Air,I-ORG
 sl-93,1,23,v,,v,Sl,ADP,O,,O
 sl-93,1,24,zimski,,zimski,Agpfsl,ADJ,O,,O
 sl-93,1,25,sezoni,,sezona,Ncfsl,NOUN,O,,O

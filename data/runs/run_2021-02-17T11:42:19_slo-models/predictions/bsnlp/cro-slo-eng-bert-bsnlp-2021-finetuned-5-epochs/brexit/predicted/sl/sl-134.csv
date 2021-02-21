@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-134,0,1,Po,,po,Sl,ADP,O,,O
 sl-134,0,2,odločitvi,,odločitev,Ncfsl,NOUN,O,,O
 sl-134,0,3,za,,za,Sa,ADP,O,,O
@@ -129,7 +129,7 @@ sl-134,4,5,lotili,,lotiti,Vmep-pm,VERB,O,,O
 sl-134,4,6,raziskovalci,,raziskovalec,Ncmpn,NOUN,O,,O
 sl-134,4,7,z,,z,Sg,ADP,O,,O
 sl-134,4,8,londonskega,londonski,londonski,Agpmsg,ADJ,B-LOC,ORG-King's-College-London,B-LOC
-sl-134,4,9,kraljevega,kraljevi,kraljev,Agpmsg,ADJ,I-LOC,ORG-King's-College-London,B-ORG
+sl-134,4,9,kraljevega,kraljevi,kraljev,Agpmsg,ADJ,I-LOC,ORG-King's-College-London,I-LOC
 sl-134,4,10,kolidža,kolidž,kolidž,Ncmsg,NOUN,I-LOC,ORG-King's-College-London,I-LOC
 sl-134,4,11,",",,",",Z,PUNCT,O,,O
 sl-134,4,12,poroča,,poročati,Vmpr3s,VERB,O,,O
@@ -346,14 +346,14 @@ sl-134,11,34,AFP,AFP,AFP,Npmsan,PROPN,B-ORG,ORG-AFP-Agence-France-Press,B-ORG
 sl-134,11,35,komentiral,,komentirati,Vmbp-sm,VERB,O,,O
 sl-134,11,36,predavatelj,,predavatelj,Ncmsn,NOUN,O,,O
 sl-134,11,37,s,,z,Sg,ADP,O,,O
-sl-134,11,38,kraljevega,kraljevi,kraljev,Agpmsg,ADJ,B-LOC,ORG-King's-College-London,B-ORG
+sl-134,11,38,kraljevega,kraljevi,kraljev,Agpmsg,ADJ,B-LOC,ORG-King's-College-London,B-LOC
 sl-134,11,39,kolidža,kolidži,kolidž,Ncmsg,NOUN,I-LOC,ORG-King's-College-London,I-LOC
 sl-134,11,40,in,,in,Cc,CCONJ,O,,O
 sl-134,11,41,profesor,,profesor,Ncmsn,NOUN,O,,O
 sl-134,11,42,na,,na,Sl,ADP,O,,O
 sl-134,11,43,Harvardu,Harvard,Harvard,Npmsl,PROPN,B-ORG,ORG-Harvard-University,B-ORG
 sl-134,11,44,Sotiris,Sotiris,Sotiris,Npmsn,PROPN,B-PER,PER-Sotiris-Vandoros,B-PER
-sl-134,11,45,Vandoros,Vandoros,Vandoros,Npmsn,PROPN,I-PER,PER-Sotiris-Vandoros,B-PER
+sl-134,11,45,Vandoros,Vandoros,Vandoros,Npmsn,PROPN,I-PER,PER-Sotiris-Vandoros,I-PER
 sl-134,11,46,.,,.,Z,PUNCT,O,,O
 sl-134,12,1,Ob,,ob,Sl,ADP,O,,O
 sl-134,12,2,tem,,ta,Pd-nsl,DET,O,,O
@@ -506,10 +506,10 @@ sl-134,18,8,v,,v,Sl,ADP,O,,O
 sl-134,18,9,strokovni,,strokoven,Agpfsl,ADJ,O,,O
 sl-134,18,10,publikaciji,,publikacija,Ncfsl,NOUN,O,,O
 sl-134,18,11,Journal,Journal,Journal,Npmsn,PROPN,B-PRO,PRO-Journal-of-Epidemiology-and-Community-Health,B-PRO
-sl-134,18,12,of,of,of,Xf,X,I-PRO,PRO-Journal-of-Epidemiology-and-Community-Health,O
+sl-134,18,12,of,of,of,Xf,X,I-PRO,PRO-Journal-of-Epidemiology-and-Community-Health,I-PRO
 sl-134,18,13,Epidemiology,Epidemiology,epidemiology,Xf,X,I-PRO,PRO-Journal-of-Epidemiology-and-Community-Health,I-PRO
-sl-134,18,14,and,and,and,Xf,X,I-PRO,PRO-Journal-of-Epidemiology-and-Community-Health,O
-sl-134,18,15,Community,Community,Community,Npmsn,PROPN,I-PRO,PRO-Journal-of-Epidemiology-and-Community-Health,B-LOC
+sl-134,18,14,and,and,and,Xf,X,I-PRO,PRO-Journal-of-Epidemiology-and-Community-Health,I-PRO
+sl-134,18,15,Community,Community,Community,Npmsn,PROPN,I-PRO,PRO-Journal-of-Epidemiology-and-Community-Health,I-PRO
 sl-134,18,16,Health,Health,Health,Npmsn,PROPN,I-PRO,PRO-Journal-of-Epidemiology-and-Community-Health,I-PRO
 sl-134,18,17,",",,",",Z,PUNCT,O,,O
 sl-134,18,18,so,,biti,Va-r3p-n,AUX,O,,O

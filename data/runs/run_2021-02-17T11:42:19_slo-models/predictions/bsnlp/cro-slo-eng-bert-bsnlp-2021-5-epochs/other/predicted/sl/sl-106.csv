@@ -1,10 +1,10 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-106,0,1,Milanič,Milanič,Milanič,Npmsn,PROPN,B-PER,PER-Darko-Milanič,B-PER
 sl-106,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-106,0,3,",",,",",Z,PUNCT,O,,O
 sl-106,0,4,da,,da,Cs,SCONJ,O,,O
 sl-106,0,5,je,,biti,Va-r3s-n,AUX,O,,O
-sl-106,0,6,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,B-LOC
+sl-106,0,6,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,B-ORG
 sl-106,0,7,tehnično,,tehnično,Rgp,ADV,O,,O
 sl-106,0,8,boljši,,dober,Agcmsny,ADJ,O,,O
 sl-106,0,9,od,,od,Sg,ADP,O,,O
@@ -39,9 +39,9 @@ sl-106,1,27,kroga,,krog,Ncmsg,NOUN,O,,O
 sl-106,1,28,kvalifikacij,,kvalifikacija,Ncfpg,NOUN,O,,O
 sl-106,1,29,za,,za,Sa,ADP,O,,O
 sl-106,1,30,ligo,,liga,Ncfsa,NOUN,O,,O
-sl-106,1,31,prvakov,,prvak,Ncmpg,NOUN,O,,O
+sl-106,1,31,prvakov,,prvak,Ncmpg,NOUN,O,,I-EVT
 sl-106,1,32,s,,z,Si,ADP,O,,O
-sl-106,1,33,švedskim,,švedski,Agpmsi,ADJ,O,,B-LOC
+sl-106,1,33,švedskim,,švedski,Agpmsi,ADJ,O,,O
 sl-106,1,34,prvakom,,prvak,Ncmsi,NOUN,O,,O
 sl-106,1,35,AIK,AIK,AIK,Npmsn,PROPN,B-ORG,ORG-AIK-Fotboll,B-ORG
 sl-106,1,36,.,,.,Z,PUNCT,O,,O
@@ -50,7 +50,7 @@ sl-106,2,2,prvaki,,prvak,Ncmpn,NOUN,O,,O
 sl-106,2,3,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-106,2,4,na,,na,Sl,ADP,O,,O
 sl-106,2,5,Friends,Friends,Friends,Npmsn,PROPN,B-LOC,LOC-Friends-Arena,B-LOC
-sl-106,2,6,Areni,Arena,Arena,Npfsl,PROPN,I-LOC,LOC-Friends-Arena,B-LOC
+sl-106,2,6,Areni,Arena,Arena,Npfsl,PROPN,I-LOC,LOC-Friends-Arena,I-LOC
 sl-106,2,7,na,,na,Sl,ADP,O,,O
 sl-106,2,8,obrobju,,obrobje,Ncnsl,NOUN,O,,O
 sl-106,2,9,švedske,Švedska,švedski,Agpfsg,ADJ,B-LOC,GPE-Sweden,B-LOC
@@ -63,7 +63,7 @@ sl-106,2,15,prve,,prvi,Mlofsg,ADJ,O,,O
 sl-106,2,16,tekme,,tekma,Ncfsg,NOUN,O,,O
 sl-106,2,17,v,,v,Sl,ADP,O,,O
 sl-106,2,18,Ljudskem,Ljudski,ljudski,Agpmsl,ADJ,B-LOC,LOC-Stadion-Ljudski-Vrt,B-LOC
-sl-106,2,19,vrtu,vrt,vrt,Ncmsl,NOUN,I-LOC,LOC-Stadion-Ljudski-Vrt,B-LOC
+sl-106,2,19,vrtu,vrt,vrt,Ncmsl,NOUN,I-LOC,LOC-Stadion-Ljudski-Vrt,I-LOC
 sl-106,2,20,",",,",",Z,PUNCT,O,,O
 sl-106,2,21,na,,na,Sl,ADP,O,,O
 sl-106,2,22,kateri,,kateri,Pq-fsl,DET,O,,O
@@ -85,7 +85,7 @@ sl-106,3,2,napovedal,,napovedati,Vmep-sm,VERB,O,,O
 sl-106,3,3,igro,,igra,Ncfsa,NOUN,O,,O
 sl-106,3,4,na,,na,Sa,ADP,O,,O
 sl-106,3,5,zmago,,zmaga,Ncfsa,NOUN,O,,O
-sl-106,4,1,Mariboru,Maribor,Maribor,Npmsd,PROPN,B-LOC,GPE-Maribor,B-LOC
+sl-106,4,1,Mariboru,Maribor,Maribor,Npmsd,PROPN,B-LOC,GPE-Maribor,O
 sl-106,4,2,gre,,iti,Vmbr3s,VERB,O,,O
 sl-106,4,3,trenutno,,trenutno,Rgp,ADV,O,,O
 sl-106,4,4,v,,v,Sl,ADP,O,,O
@@ -128,9 +128,9 @@ sl-106,5,16,na,,na,Sa,ADP,O,,O
 sl-106,5,17,Švedsko,Švedska,Švedska,Npfsa,PROPN,B-LOC,GPE-Sweden,B-LOC
 sl-106,5,18,napovedal,,napovedati,Vmep-sm,VERB,O,,O
 sl-106,5,19,trener,,trener,Ncmsn,NOUN,O,,O
-sl-106,5,20,Maribora,Maribor,Maribor,Npmsg,PROPN,B-LOC,GPE-Maribor,B-LOC
+sl-106,5,20,Maribora,Maribor,Maribor,Npmsg,PROPN,B-LOC,GPE-Maribor,B-ORG
 sl-106,5,21,Darko,Darko,Darko,Npmsn,PROPN,B-PER,PER-Darko-Milanič,B-PER
-sl-106,5,22,Milanič,Milanič,Milanič,Npmsn,PROPN,I-PER,PER-Darko-Milanič,B-PER
+sl-106,5,22,Milanič,Milanič,Milanič,Npmsn,PROPN,I-PER,PER-Darko-Milanič,I-PER
 sl-106,5,23,.,,.,Z,PUNCT,O,,O
 sl-106,6,1,Mariborčani,Mariborčani,Mariborčan,Npmpn,PROPN,B-PER,GPE-Maribor,O
 sl-106,6,2,se,,se,Px------y,PRON,O,,O
@@ -349,9 +349,9 @@ sl-106,17,1,V,,v,Sa,ADP,O,,O
 sl-106,17,2,ekipo,,ekipa,Ncfsa,NOUN,O,,O
 sl-106,17,3,se,,se,Px------y,PRON,O,,O
 sl-106,17,4,vračata,,vračati,Vmpr3d,VERB,O,,O
-sl-106,17,5,Cretu,Cretu,Cretu,Npmsn,PROPN,B-PER,PER-Alexandru-Cretu,B-ORG
+sl-106,17,5,Cretu,Cretu,Cretu,Npmsn,PROPN,B-PER,PER-Alexandru-Cretu,B-LOC
 sl-106,17,6,in,,in,Cc,CCONJ,O,,O
-sl-106,17,7,Kronavater,Kronaveter,Kronavater,Npmsn,PROPN,B-PER,PER-Rok-Kronaveter,I-PER
+sl-106,17,7,Kronavater,Kronaveter,Kronavater,Npmsn,PROPN,B-PER,PER-Rok-Kronaveter,B-LOC
 sl-106,17,8,",",,",",Z,PUNCT,O,,O
 sl-106,17,9,ki,,ki,Cs,SCONJ,O,,O
 sl-106,17,10,sta,,biti,Va-r3d-n,AUX,O,,O
@@ -594,7 +594,7 @@ sl-106,28,34,3:1.,,3:1.,Mdo,NUM,O,,O
 sl-106,29,1,Tudi,,tudi,Q,PART,O,,O
 sl-106,29,2,v,,v,Sl,ADP,O,,O
 sl-106,29,3,Ljudskem,Ljudski,ljudski,Agpmsl,ADJ,B-LOC,LOC-Stadion-Ljudski-Vrt,B-LOC
-sl-106,29,4,vrtu,vrt,vrt,Ncmsl,NOUN,I-LOC,LOC-Stadion-Ljudski-Vrt,B-LOC
+sl-106,29,4,vrtu,vrt,vrt,Ncmsl,NOUN,I-LOC,LOC-Stadion-Ljudski-Vrt,I-LOC
 sl-106,29,5,se,,se,Px------y,PRON,O,,O
 sl-106,29,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-106,29,7,švedski,Švedska,švedski,Agpmsny,ADJ,B-LOC,GPE-Sweden,O

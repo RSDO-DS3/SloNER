@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-44,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-44,0,2,in,,in,Cc,CCONJ,O,,O
 sl-44,0,3,nemški,,nemški,Agpmpn,ADJ,O,,O
@@ -194,7 +194,7 @@ sl-44,10,17,zaposleni,,zaposlen,Appmpn,ADJ,O,,O
 sl-44,10,18,v,,v,Sl,ADP,O,,O
 sl-44,10,19,skladu,,sklad,Ncmsl,NOUN,O,,O
 sl-44,10,20,z,,z,Si,ADP,O,,O
-sl-44,10,21,irsko,,irski,Agpfsi,ADJ,O,,O
+sl-44,10,21,irsko,,irski,Agpfsi,ADJ,O,,B-LOC
 sl-44,10,22,zakonodajo,,zakonodaja,Ncfsi,NOUN,O,,O
 sl-44,10,23,.,,.,Z,PUNCT,O,,O
 sl-44,11,1,To,,ta,Pd-nsn,DET,O,,O
@@ -320,7 +320,7 @@ sl-44,18,9,v,,v,Sl,ADP,O,,O
 sl-44,18,10,37,,37,Mdc,NUM,O,,O
 sl-44,18,11,državah,,država,Ncfpl,NOUN,O,,O
 sl-44,18,12,.,,.,Z,PUNCT,O,,O
-sl-44,19,1,Podjetje,,podjetje,Ncnsn,NOUN,O,,O
+sl-44,19,1,Podjetje,,podjetje,Ncnsn,NOUN,O,,B-LOC
 sl-44,19,2,zaposluje,,zaposlovati,Vmpr3s,VERB,O,,O
 sl-44,19,3,okoli,,okoli,Rgp,ADV,O,,O
 sl-44,19,4,14.500,,14.500,Mdc,NUM,O,,O
@@ -344,5 +344,5 @@ sl-44,19,21,evrov,,evro,Ncmpg,NOUN,O,,O
 sl-44,19,22,dobička,,dobiček,Ncmsg,NOUN,O,,O
 sl-44,19,23,.,,.,Z,PUNCT,O,,O
 sl-44,19,24,(,,(,Z,PUNCT,O,,O
-sl-44,19,25,sta,sta,sta,X,X,B-ORG,ORG-Slovenian-Press-Agency,O
+sl-44,19,25,sta,sta,sta,X,X,B-ORG,ORG-Slovenian-Press-Agency,B-ORG
 sl-44,19,26,),,),Z,PUNCT,O,,O

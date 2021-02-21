@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-25,0,1,Zakaj,,zakaj,Rgp,ADV,O,,O
 sl-25,0,2,tisti,,tisti,Pd-mpn,DET,O,,O
 sl-25,0,3,",",,",",Z,PUNCT,O,,O
@@ -166,7 +166,7 @@ sl-25,7,10,izsledkih,,izsledek,Ncmpl,NOUN,O,,O
 sl-25,7,11,študije,,študija,Ncfsg,NOUN,O,,O
 sl-25,7,12,pravi,,praviti,Vmbr3s,VERB,O,,O
 sl-25,7,13,Ryan,Ryan,Ryan,Npmsn,PROPN,B-PER,PER-Ryan-Buell,B-PER
-sl-25,7,14,Buell,Buell,Buell,Npmsn,PROPN,I-PER,PER-Ryan-Buell,B-PER
+sl-25,7,14,Buell,Buell,Buell,Npmsn,PROPN,I-PER,PER-Ryan-Buell,I-PER
 sl-25,7,15,",",,",",Z,PUNCT,O,,O
 sl-25,7,16,vodja,,vodja,Ncmsn,NOUN,O,,O
 sl-25,7,17,raziskave,,raziskava,Ncfsg,NOUN,O,,O
@@ -256,7 +256,7 @@ sl-25,10,29,je,,biti,Va-r3s-n,AUX,O,,O
 sl-25,10,30,še,,še,Q,PART,O,,O
 sl-25,10,31,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-25,10,32,.,,.,Z,PUNCT,O,,O
-sl-25,11,1,Buella,Buell,Buell,Npmsay,PROPN,B-PER,PER-Ryan-Buell,O
+sl-25,11,1,Buella,Buell,Buell,Npmsay,PROPN,B-PER,PER-Ryan-Buell,B-PER
 sl-25,11,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-25,11,3,za,,za,Sa,ADP,O,,O
 sl-25,11,4,raziskavo,,raziskava,Ncfsa,NOUN,O,,O
@@ -319,7 +319,7 @@ sl-25,12,22,",",,",",Z,PUNCT,O,,O
 sl-25,12,23,jasno,,jasen,Agpnsn,ADJ,O,,O
 sl-25,12,24,vsem,,ves,Pg-mpd,DET,O,,O
 sl-25,12,25,.,,.,Z,PUNCT,O,,O
-sl-25,13,1,Buella,Buell,Buell,Npmsay,PROPN,B-PER,PER-Ryan-Buell,O
+sl-25,13,1,Buella,Buell,Buell,Npmsay,PROPN,B-PER,PER-Ryan-Buell,B-PER
 sl-25,13,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-25,13,3,zanimalo,,zanimati,Vmpp-sn,VERB,O,,O
 sl-25,13,4,",",,",",Z,PUNCT,O,,O
@@ -501,7 +501,7 @@ sl-25,22,20,odstotkov,,odstotek,Ncmpg,NOUN,O,,O
 sl-25,22,21,dlje,,dolgo,Rgc,ADV,O,,O
 sl-25,22,22,.,,.,Z,PUNCT,O,,O
 sl-25,23,1,Raziskovalec,,raziskovalec,Ncmsn,NOUN,O,,O
-sl-25,23,2,Buell,Buell,Buell,Npmsn,PROPN,B-PER,PER-Ryan-Buell,O
+sl-25,23,2,Buell,Buell,Buell,Npmsn,PROPN,B-PER,PER-Ryan-Buell,B-PER
 sl-25,23,3,čakajočim,,čakajoč,Appmpd,ADJ,O,,O
 sl-25,23,4,odsvetuje,,odsvetovati,Vmer3s,VERB,O,,O
 sl-25,23,5,menjavanje,,menjavanje,Ncnsa,NOUN,O,,O

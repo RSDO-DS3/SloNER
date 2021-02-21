@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-66,0,1,V,,v,Sa,ADP,O,,O
 sl-66,0,2,Bolgarijo,Bolgarija,Bolgarija,Npfsa,PROPN,B-LOC,GPE-Bulgaria,B-LOC
 sl-66,0,3,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -43,7 +43,7 @@ sl-66,2,5,na,,na,Sl,ADP,O,,O
 sl-66,2,6,turško-bolgarski,,turško-bolgarski,Agpfsl,ADJ,O,,O
 sl-66,2,7,meji,,meja,Ncfsl,NOUN,O,,O
 sl-66,2,8,Strnadja,Strnadja,Strnadja,Npfsn,PROPN,B-LOC,LOC-Strnadja-2,B-LOC
-sl-66,2,9,2,2,2,Mdc,NUM,I-LOC,LOC-Strnadja-2,I-PRO
+sl-66,2,9,2,2,2,Mdc,NUM,I-LOC,LOC-Strnadja-2,I-LOC
 sl-66,2,10,",",,",",Z,PUNCT,O,,O
 sl-66,2,11,poroča,,poročati,Vmpr3s,VERB,O,,O
 sl-66,2,12,francoska,,francoski,Agpfsn,ADJ,O,,O

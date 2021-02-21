@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-168,0,1,Gove,Gove,Gove,Npfpn,PROPN,B-PER,PER-Michael-Gove,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-168,0,1,Gove,Gove,Gove,Npfpn,PROPN,B-PER,PER-Michael-Gove,B-ORG
 sl-168,0,2,:,,:,Z,PUNCT,O,,O
 sl-168,0,3,London,London,London,Npmsn,PROPN,B-LOC,GPE-London,B-LOC
 sl-168,0,4,se,,se,Px------y,PRON,O,,O
@@ -129,7 +129,7 @@ sl-168,8,28,ne,,ne,Q,PART,O,,O
 sl-168,8,29,bodo,,biti,Va-f3p-n,VERB,O,,O
 sl-168,8,30,«,,«,Z,PUNCT,O,,O
 sl-168,8,31,.,,.,Z,PUNCT,O,,O
-sl-168,9,1,Sunday,Sunday,Sunday,Npmsn,PROPN,B-PRO,PRO-The-Sunday-Times,B-PRO
+sl-168,9,1,Sunday,Sunday,Sunday,Npmsn,PROPN,B-PRO,PRO-The-Sunday-Times,B-ORG
 sl-168,9,2,Times,Times,Times,Npmsn,PROPN,I-PRO,PRO-The-Sunday-Times,I-PRO
 sl-168,9,3,ob,,ob,Sl,ADP,O,,O
 sl-168,9,4,tem,,ta,Pd-nsl,DET,O,,O
@@ -216,7 +216,7 @@ sl-168,11,8,500,,500,Mdc,NUM,O,,O
 sl-168,11,9,novih,,nov,Agpmpg,ADJ,O,,O
 sl-168,11,10,pripadnikov,,pripadnik,Ncmpg,NOUN,O,,O
 sl-168,11,11,mejne,,mejen,Agpfsg,ADJ,O,,O
-sl-168,11,12,policije,,policija,Ncfsg,NOUN,O,,O
+sl-168,11,12,policije,,policija,Ncfsg,NOUN,O,,I-ORG
 sl-168,11,13,in,,in,Cc,CCONJ,O,,O
 sl-168,11,14,izboljšanje,,izboljšanje,Ncnsa,NOUN,O,,O
 sl-168,11,15,infrastrukture,,infrastruktura,Ncfsg,NOUN,O,,O
@@ -230,8 +230,8 @@ sl-168,12,4,svojem,,svoj,Px-msl,DET,O,,O
 sl-168,12,5,nastopnem,,nastopen,Agpmsl,ADJ,O,,O
 sl-168,12,6,govoru,,govor,Ncmsl,NOUN,O,,O
 sl-168,12,7,v,,v,Sl,ADP,O,,O
-sl-168,12,8,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,B-LOC
-sl-168,12,9,parlamentu,parlament,parlament,Ncmsl,NOUN,I-ORG,ORG-British-Parlament,O
+sl-168,12,8,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,B-ORG
+sl-168,12,9,parlamentu,parlament,parlament,Ncmsl,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-168,12,10,v,,v,Sa,ADP,O,,O
 sl-168,12,11,četrtek,,četrtek,Ncmsan,NOUN,O,,O
 sl-168,12,12,obljubil,,obljubiti,Vmep-sm,VERB,O,,O
@@ -274,7 +274,7 @@ sl-168,14,1,Glavno,,glaven,Agpnsn,ADJ,O,,O
 sl-168,14,2,jabolko,,jabolko,Ncnsn,NOUN,O,,O
 sl-168,14,3,spora,,spor,Ncmsg,NOUN,O,,O
 sl-168,14,4,je,,biti,Va-r3s-n,AUX,O,,O
-sl-168,14,5,irsko,,irski,Agpnsn,ADJ,O,,B-LOC
+sl-168,14,5,irsko,,irski,Agpnsn,ADJ,O,,O
 sl-168,14,6,varovalo,,varovati,Vmpp-sn,VERB,O,,O
 sl-168,14,7,",",,",",Z,PUNCT,O,,O
 sl-168,14,8,katerega,,kateri,Pq-msa,DET,O,,O
@@ -303,7 +303,7 @@ sl-168,14,30,dosegli,,doseči,Vmep-pm,VERB,O,,O
 sl-168,14,31,trgovinskega,,trgovinski,Agpmsg,ADJ,O,,O
 sl-168,14,32,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-168,14,33,.,,.,Z,PUNCT,O,,O
-sl-168,15,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+sl-168,15,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-PER
 sl-168,15,2,vztraja,,vztrajati,Vmpr3s,VERB,O,,O
 sl-168,15,3,",",,",",Z,PUNCT,O,,O
 sl-168,15,4,da,,da,Cs,SCONJ,O,,O

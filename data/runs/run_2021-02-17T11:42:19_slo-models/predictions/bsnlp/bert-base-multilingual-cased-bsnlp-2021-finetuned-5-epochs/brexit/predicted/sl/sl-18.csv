@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-18,0,1,Pred,,pred,Si,ADP,O,,O
 sl-18,0,2,Britanci,Britanci,Britanec,Npmpi,PROPN,B-PER,GPE-Great-Britain,B-PER
 sl-18,0,3,po,,po,Sl,ADP,O,,O
@@ -86,7 +86,7 @@ sl-18,5,1,Predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-18,5,2,Evropskega,Evropski,evropski,Agpmsg,ADJ,B-ORG,ORG-European-Council,B-ORG
 sl-18,5,3,sveta,svet,svet,Ncmsg,NOUN,I-ORG,ORG-European-Council,I-ORG
 sl-18,5,4,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Tusk,B-PER
-sl-18,5,5,Tusk,Tusk,Tusk,Npmsn,PROPN,I-PER,PER-Donald-Tusk,B-PER
+sl-18,5,5,Tusk,Tusk,Tusk,Npmsn,PROPN,I-PER,PER-Donald-Tusk,I-PER
 sl-18,5,6,ugotavlja,,ugotavljati,Vmpr3s,VERB,O,,O
 sl-18,5,7,",",,",",Z,PUNCT,O,,O
 sl-18,5,8,da,,da,Cs,SCONJ,O,,O
@@ -97,7 +97,7 @@ sl-18,5,12,May,May,May,Npfsd,PROPN,I-PER,PER-Theresa-May,I-PER
 sl-18,5,13,ne,,ne,Q,PART,O,,O
 sl-18,5,14,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-18,5,15,uspelo,,uspeti,Vmep-sn,VERB,O,,O
-sl-18,5,16,parlamenta,,parlament,Ncmsg,NOUN,O,,I-ORG
+sl-18,5,16,parlamenta,,parlament,Ncmsg,NOUN,O,,O
 sl-18,5,17,prepričati,,prepričati,Vmen,VERB,O,,O
 sl-18,5,18,",",,",",Z,PUNCT,O,,O
 sl-18,5,19,naj,,naj,Cs,SCONJ,O,,O
@@ -127,7 +127,7 @@ sl-18,6,14,ali,,ali,Cc,CCONJ,O,,O
 sl-18,6,15,podaljšanje,,podaljšanje,Ncnsn,NOUN,O,,O
 sl-18,6,16,članstva,,članstvo,Ncnsg,NOUN,O,,O
 sl-18,6,17,v,,v,Sl,ADP,O,,O
-sl-18,6,18,uniji,,unija,Ncfsl,NOUN,O,,I-ORG
+sl-18,6,18,uniji,,unija,Ncfsl,NOUN,O,,O
 sl-18,6,19,po,,po,Sl,ADP,O,,O
 sl-18,6,20,29.,,29.,Mdo,NUM,O,,O
 sl-18,6,21,marcu,,marec,Ncmsl,NOUN,O,,O
@@ -586,7 +586,7 @@ sl-18,27,2,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-18,27,3,sicer,,sicer,Q,PART,O,,O
 sl-18,27,4,jutri,,jutri,Rgp,ADV,O,,O
 sl-18,27,5,nagovorila,,nagovoriti,Vmep-sf,VERB,O,,O
-sl-18,27,6,britanski,,britanski,Agpmsay,ADJ,O,,O
+sl-18,27,6,britanski,,britanski,Agpmsay,ADJ,O,,B-ORG
 sl-18,27,7,parlament,,parlament,Ncmsan,NOUN,O,,I-ORG
 sl-18,27,8,",",,",",Z,PUNCT,O,,O
 sl-18,27,9,ki,,ki,Cs,SCONJ,O,,O
@@ -625,7 +625,7 @@ sl-18,28,20,s,,z,Si,ADP,O,,O
 sl-18,28,21,katerim,,kateri,Pq-msi,DET,O,,O
 sl-18,28,22,bi,,biti,Va-c,AUX,O,,O
 sl-18,28,23,lahko,,lahko,Rgp,ADV,O,,O
-sl-18,28,24,parlament,,parlament,Ncmsn,NOUN,O,,I-ORG
+sl-18,28,24,parlament,,parlament,Ncmsn,NOUN,O,,O
 sl-18,28,25,zahteval,,zahtevati,Vmbp-sm,VERB,O,,O
 sl-18,28,26,preložitev,,preložitev,Ncfsa,NOUN,O,,O
 sl-18,28,27,izstopa,,izstop,Ncmsg,NOUN,O,,O
@@ -660,7 +660,7 @@ sl-18,29,18,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-18,29,19,",",,",",Z,PUNCT,O,,O
 sl-18,29,20,in,,in,Cc,CCONJ,O,,O
 sl-18,29,21,ne,,ne,Q,PART,O,,O
-sl-18,29,22,parlament,,parlament,Ncmsn,NOUN,O,,I-ORG
+sl-18,29,22,parlament,,parlament,Ncmsn,NOUN,O,,O
 sl-18,29,23,.,,.,Z,PUNCT,O,,O
 sl-18,30,1,Danes,,danes,Rgp,ADV,O,,O
 sl-18,30,2,pa,,pa,Cc,CCONJ,O,,O
@@ -694,7 +694,7 @@ sl-18,30,29,.,,.,Z,PUNCT,O,,O
 sl-18,31,1,Nadzora,,nadzor,Ncmsg,NOUN,O,,O
 sl-18,31,2,nad,,nad,Si,ADP,O,,O
 sl-18,31,3,brexitom,brexit,brexit,Ncmsi,NOUN,B-EVT,EVT-Brexit,B-EVT
-sl-18,31,4,parlament,,parlament,Ncmsn,NOUN,O,,I-ORG
+sl-18,31,4,parlament,,parlament,Ncmsn,NOUN,O,,O
 sl-18,31,5,s,,z,Si,ADP,O,,O
 sl-18,31,6,tem,,ta,Pd-nsi,DET,O,,O
 sl-18,31,7,dopolnilom,,dopolnilo,Ncnsi,NOUN,O,,O
@@ -717,7 +717,7 @@ sl-18,32,12,v,,v,Sl,ADP,O,,O
 sl-18,32,13,Evropski,Evropska,evropski,Agpfsl,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-18,32,14,uniji,unija,unija,Ncfsl,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-18,32,15,?,,?,Z,PUNCT,O,,O
-sl-18,33,1,Britanski,,britanski,Agpmsny,ADJ,O,,B-PER
+sl-18,33,1,Britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-18,33,2,The,The,the,Xf,X,B-PRO,PRO-The-Guardian,B-PRO
 sl-18,33,3,Guardian,Guardian,Guardian,Npmsn,PROPN,I-PRO,PRO-The-Guardian,I-PRO
 sl-18,33,4,poroča,,poročati,Vmpr3s,VERB,O,,O

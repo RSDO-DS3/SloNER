@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-31,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-31,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-ORG
 sl-31,0,2,v,,v,Sl,ADP,O,,O
 sl-31,0,3,trgovini,,trgovina,Ncfsl,NOUN,O,,O
 sl-31,0,4,s,,z,Si,ADP,O,,O
@@ -41,7 +41,7 @@ sl-31,2,13,gre,,iti,Vmbr3s,VERB,O,,O
 sl-31,2,14,ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-31,2,15,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-31,2,16,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-31,2,17,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-31,2,17,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-31,2,18,na,,na,Sa,ADP,O,,O
 sl-31,2,19,še,,še,Q,PART,O,,O
 sl-31,2,20,enega,,en,Mlpmsa,NUM,O,,O
@@ -123,7 +123,7 @@ sl-31,4,22,bi,,biti,Va-c,AUX,O,,O
 sl-31,4,23,se,,se,Px------y,PRON,O,,O
 sl-31,4,24,lahko,,lahko,Rgp,ADV,O,,O
 sl-31,4,25,srečanje,,srečanje,Ncnsn,NOUN,O,,O
-sl-31,4,26,29,,29,Mdc,NUM,O,,I-PRO
+sl-31,4,26,29,,29,Mdc,NUM,O,,O
 sl-31,4,27,najvišjih,,visok,Agsmpg,ADJ,O,,O
 sl-31,4,28,predstavnikov,,predstavnik,Ncmpg,NOUN,O,,O
 sl-31,4,29,končalo,,končati,Vmep-sn,VERB,O,,O
@@ -517,7 +517,7 @@ sl-31,21,15,uvedle,,uvesti,Vmep-pf,VERB,O,,O
 sl-31,21,16,desetodstotne,,desetodstoten,Agpfpa,ADJ,O,,O
 sl-31,21,17,carine,,carina,Ncfpa,NOUN,O,,O
 sl-31,21,18,.,,.,Z,PUNCT,O,,O
-sl-31,22,1,Washington,Washington,Washington,Npmsn,PROPN,B-LOC,GPE-WashingtonDC,B-LOC
+sl-31,22,1,Washington,Washington,Washington,Npmsn,PROPN,B-LOC,GPE-WashingtonDC,B-PER
 sl-31,22,2,se,,se,Px------y,PRON,O,,O
 sl-31,22,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-31,22,4,tako,,tako,Rgp,ADV,O,,O
@@ -873,8 +873,8 @@ sl-31,35,61,na,,na,Sa,ADP,O,,O
 sl-31,35,62,ruske,,ruski,Agpfpa,ADJ,O,,O
 sl-31,35,63,in,,in,Cc,CCONJ,O,,O
 sl-31,35,64,druge,,drug,Mlpfpa,ADJ,O,,O
-sl-31,35,65,grožnje,,grožnja,Ncfpa,NOUN,O,,O
-sl-31,35,66,.,,.,Z,PUNCT,O,,O
+sl-31,35,65,grožnje,,grožnja,Ncfpa,NOUN,O,,
+sl-31,35,66,.,,.,Z,PUNCT,O,,
 sl-31,36,1,Če,,če,Cs,SCONJ,O,,O
 sl-31,36,2,se,,se,Px------y,PRON,O,,O
 sl-31,36,3,bo,,biti,Va-f3s-n,AUX,O,,O

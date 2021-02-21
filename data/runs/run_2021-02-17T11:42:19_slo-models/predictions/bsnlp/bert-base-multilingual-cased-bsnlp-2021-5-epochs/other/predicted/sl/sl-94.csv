@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-94,0,1,V,,v,Sl,ADP,O,,O
 sl-94,0,2,Bolgariji,Bolgarija,Bolgarija,Npfsl,PROPN,B-LOC,GPE-Bulgaria,B-LOC
 sl-94,0,3,v,,v,Sl,ADP,O,,O

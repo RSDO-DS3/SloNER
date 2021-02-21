@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-19,0,1,Evropski,Evropski,evropski,Agpmsny,ADJ,B-ORG,ORG-European-Parliament,B-ORG
 sl-19,0,2,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-European-Parliament,I-ORG
 sl-19,0,3,za,,za,Sa,ADP,O,,O
@@ -53,7 +53,7 @@ sl-19,2,15,jih,,on,Pp3mpg--y,PRON,O,,O
 sl-19,2,16,je,,biti,Va-r3s-n,AUX,O,,O
 sl-19,2,17,vzdržalo,,vzdržati,Vmep-sn,VERB,O,,O
 sl-19,2,18,.,,.,Z,PUNCT,O,,O
-sl-19,3,1,Evropski,Evropski,evropski,Agpmpn,ADJ,B-PER,ORG-European-Parliament,B-ORG
+sl-19,3,1,Evropski,Evropski,evropski,Agpmpn,ADJ,B-PER,ORG-European-Parliament,B-PER
 sl-19,3,2,poslanci,poslanci,poslanec,Ncmpn,NOUN,I-PER,ORG-European-Parliament,I-PER
 sl-19,3,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-19,3,4,v,,v,Sl,ADP,O,,O
@@ -64,7 +64,7 @@ sl-19,3,8,da,,da,Cs,SCONJ,O,,O
 sl-19,3,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-19,3,10,po,,po,Sl,ADP,O,,O
 sl-19,3,11,letu,,leto,Ncnsl,NOUN,O,,O
-sl-19,3,12,2015,,2015,Mdc,NUM,O,,I-PRO
+sl-19,3,12,2015,,2015,Mdc,NUM,O,,O
 sl-19,3,13,prišlo,,priti,Vmep-sn,VERB,O,,O
 sl-19,3,14,do,,do,Sg,ADP,O,,O
 sl-19,3,15,novih,,nov,Agpfpg,ADJ,O,,O
@@ -98,7 +98,7 @@ sl-19,3,42,ter,,ter,Cc,CCONJ,O,,O
 sl-19,3,43,agresivne,,agresiven,Agpfpn,ADJ,O,,O
 sl-19,3,44,dejavnosti,,dejavnost,Ncfpn,NOUN,O,,O
 sl-19,3,45,v,,v,Sl,ADP,O,,O
-sl-19,3,46,Ukrajini,Ukrajina,Ukrajina,Npfsl,PROPN,B-LOC,GPE-Ukraine,I-LOC
+sl-19,3,46,Ukrajini,Ukrajina,Ukrajina,Npfsl,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-19,3,47,.,,.,Z,PUNCT,O,,O
 sl-19,4,1,Prav,,prav,Q,PART,O,,O
 sl-19,4,2,tako,,tako,Rgp,ADV,O,,O
@@ -219,7 +219,7 @@ sl-19,8,23,sodelovanje,,sodelovanje,Ncnsa,NOUN,O,,O
 sl-19,8,24,",",,",",Z,PUNCT,O,,O
 sl-19,8,25,so,,biti,Va-r3p-n,AUX,O,,O
 sl-19,8,26,poudarili,,poudariti,Vmep-pm,VERB,O,,O
-sl-19,8,27,poslanci,,poslanec,Ncmpn,NOUN,O,,I-PER
+sl-19,8,27,poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-19,8,28,.,,.,Z,PUNCT,O,,O
 sl-19,9,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-19,9,2,dodajajo,,dodajati,Vmpr3p,VERB,O,,O
@@ -254,7 +254,7 @@ sl-19,9,30,spoštovati,,spoštovati,Vmpn,VERB,O,,O
 sl-19,9,31,mednarodno,,mednaroden,Agpnsa,ADJ,O,,O
 sl-19,9,32,pravo,,pravo,Ncnsa,NOUN,O,,O
 sl-19,9,33,.,,.,Z,PUNCT,O,,O
-sl-19,10,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,B-PER
+sl-19,10,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-19,10,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-19,10,3,obsodili,,obsoditi,Vmep-pm,VERB,O,,O
 sl-19,10,4,rusko,,ruski,Agpfsa,ADJ,O,,O
@@ -388,7 +388,7 @@ sl-19,14,25,trg,,trg,Ncmsan,NOUN,O,,O
 sl-19,14,26,Evropske,Evropska,evropski,Agpfsg,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-19,14,27,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-19,14,28,.,,.,Z,PUNCT,O,,O
-sl-19,15,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,B-PER
+sl-19,15,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-19,15,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-19,15,3,zaskrbljeni,,zaskrbljen,Appmpn,ADJ,O,,O
 sl-19,15,4,tudi,,tudi,Q,PART,O,,O
@@ -451,6 +451,6 @@ sl-19,16,36,spor,,spor,Ncmsan,NOUN,O,,O
 sl-19,16,37,o,,o,Sl,ADP,O,,O
 sl-19,16,38,imenu,,ime,Ncnsl,NOUN,O,,O
 sl-19,16,39,nekdanje,,nekdanji,Agpfsg,ADJ,O,,O
-sl-19,16,40,jugoslovanske,,jugoslovanski,Agpfsg,ADJ,O,,B-LOC
+sl-19,16,40,jugoslovanske,,jugoslovanski,Agpfsg,ADJ,O,,O
 sl-19,16,41,republike,,republika,Ncfsg,NOUN,O,,O
 sl-19,16,42,.,,.,Z,PUNCT,O,,O

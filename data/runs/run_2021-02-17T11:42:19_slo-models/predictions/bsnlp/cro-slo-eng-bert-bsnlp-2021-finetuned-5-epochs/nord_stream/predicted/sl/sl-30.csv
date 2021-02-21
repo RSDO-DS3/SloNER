@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-30,0,1,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-30,0,1,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-ORG
 sl-30,0,2,in,,in,Cc,CCONJ,O,,O
 sl-30,0,3,Xi,Xi,XI,Npmsn,PROPN,B-PER,PER-Xi-Jinping,B-PER
 sl-30,0,4,odprla,,odpreti,Vmep-dm,VERB,O,,O
@@ -55,7 +55,7 @@ sl-30,1,43,",",,",",Z,PUNCT,O,,O
 sl-30,1,44,povedal,,povedati,Vmep-sm,VERB,O,,O
 sl-30,1,45,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
 sl-30,1,46,.,,.,Z,PUNCT,O,,O
-sl-30,2,1,Xi,Xi,XI,Npmsn,PROPN,B-PER,PER-Xi-Jinping,B-PER
+sl-30,2,1,Xi,Xi,XI,Npmsn,PROPN,B-PER,PER-Xi-Jinping,O
 sl-30,2,2,pa,,pa,Cc,CCONJ,O,,O
 sl-30,2,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-30,2,4,poudaril,,poudariti,Vmep-sm,VERB,O,,O
@@ -101,7 +101,7 @@ sl-30,4,1,Izvršni,,izvršen,Agpmsny,ADJ,O,,O
 sl-30,4,2,direktor,,direktor,Ncmsn,NOUN,O,,O
 sl-30,4,3,Gazproma,Gazprom,Gazprom,Npmsg,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-30,4,4,Aleksej,Aleksej,Aleksej,Npmsn,PROPN,B-PER,PER-Aleksey-Miller,B-PER
-sl-30,4,5,Miller,Miller,Miller,Npmsn,PROPN,I-PER,PER-Aleksey-Miller,B-PER
+sl-30,4,5,Miller,Miller,Miller,Npmsn,PROPN,I-PER,PER-Aleksey-Miller,I-PER
 sl-30,4,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-30,4,7,na,,na,Sl,ADP,O,,O
 sl-30,4,8,slovesnosti,,slovesnost,Ncfsl,NOUN,O,,O
@@ -128,7 +128,7 @@ sl-30,5,5,plinovodni,,plinovoden,Agpmsay,ADJ,O,,O
 sl-30,5,6,sistem,,sistem,Ncmsan,NOUN,O,,O
 sl-30,5,7,Ljudske,Ljudska,ljudski,Agpfsg,ADJ,B-LOC,GPE-China,B-LOC
 sl-30,5,8,republike,republika,republika,Ncfsg,NOUN,I-LOC,GPE-China,I-LOC
-sl-30,5,9,Kitajske,Kitajska,Kitajska,Npfsg,PROPN,I-LOC,GPE-China,B-LOC
+sl-30,5,9,Kitajske,Kitajska,Kitajska,Npfsg,PROPN,I-LOC,GPE-China,I-LOC
 sl-30,5,10,",",,",",Z,PUNCT,O,,O
 sl-30,5,11,«,,«,Z,PUNCT,O,,O
 sl-30,5,12,je,,biti,Va-r3s-n,AUX,O,,O
@@ -137,7 +137,7 @@ sl-30,5,14,tem,,ta,Pd-nsl,DET,O,,O
 sl-30,5,15,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-30,5,16,Miller,,Miller,Npmsn,PROPN,O,,B-PER
 sl-30,5,17,.,,.,Z,PUNCT,O,,O
-sl-30,6,1,Plin,,plin,Ncmsn,NOUN,O,,O
+sl-30,6,1,Plin,,plin,Ncmsn,NOUN,O,,B-PER
 sl-30,6,2,potuje,,potovati,Vmpr3s,VERB,O,,O
 sl-30,6,3,s,,z,Sg,ADP,O,,O
 sl-30,6,4,Čajandinskega,,čajandinski,Agpnsg,ADJ,O,,B-LOC
@@ -169,7 +169,7 @@ sl-30,7,5,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
 sl-30,7,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-30,7,7,stekla,,steči,Vmep-sf,VERB,O,,O
 sl-30,7,8,septembra,,september,Ncmsg,NOUN,O,,O
-sl-30,7,9,2014,,2014,Mdc,NUM,O,,I-PRO
+sl-30,7,9,2014,,2014,Mdc,NUM,O,,O
 sl-30,8,1,Gazprom,Gazprom,Gazprom,Npmsn,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-30,8,2,in,,in,Cc,CCONJ,O,,O
 sl-30,8,3,kitajski,Kitajska,kitajski,Agpmsny,ADJ,B-LOC,GPE-China,O

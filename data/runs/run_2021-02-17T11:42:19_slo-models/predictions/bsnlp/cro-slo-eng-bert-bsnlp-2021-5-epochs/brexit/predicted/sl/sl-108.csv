@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-108,0,1,Krimexit,Krimexit,Krimexit,Npmsn,PROPN,B-EVT,EVT-Crimexit,B-EVT
 sl-108,0,2,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-108,0,3,brexit,brexit,brexit,Ncmsn,NOUN,B-EVT,EVT-Brexit,B-EVT
@@ -68,7 +68,7 @@ sl-108,4,9,Fransu,Frans,Frans,Npmsl,PROPN,B-PER,PER-Frans-Timmermans,B-PER
 sl-108,4,10,Timmermansu,Timmermans,Timmermans,Npmsl,PROPN,I-PER,PER-Frans-Timmermans,I-PER
 sl-108,4,11,(,,(,Z,PUNCT,O,,O
 sl-108,4,12,S,S,z,Si,ADP,B-ORG,ORG-SD-Progressive-Alliance-of-Socialists-and-Democrats,B-ORG
-sl-108,4,13,&,&,&,Z,SYM,I-ORG,ORG-SD-Progressive-Alliance-of-Socialists-and-Democrats,B-ORG
+sl-108,4,13,&,&,&,Z,SYM,I-ORG,ORG-SD-Progressive-Alliance-of-Socialists-and-Democrats,I-ORG
 sl-108,4,14,D,D,D,Ncmsn,NOUN,I-ORG,ORG-SD-Progressive-Alliance-of-Socialists-and-Democrats,I-ORG
 sl-108,4,15,),,),Z,PUNCT,O,,O
 sl-108,4,16,",",,",",Z,PUNCT,O,,O
@@ -89,7 +89,7 @@ sl-108,4,30,Zahradilu,Zahradil,Zahradil,Npmsl,PROPN,I-PER,PER-Jan-Zahradil,I-PER
 sl-108,4,31,(,,(,Z,PUNCT,O,,O
 sl-108,4,32,Evropski,Evropski,evropski,Agpmpn,ADJ,B-ORG,ORG-European-Conservatives-and-Reformists-Group,B-ORG
 sl-108,4,33,konservativci,konservativci,konservativec,Ncmpn,NOUN,I-ORG,ORG-European-Conservatives-and-Reformists-Group,I-ORG
-sl-108,4,34,in,in,in,Cc,CCONJ,I-ORG,ORG-European-Conservatives-and-Reformists-Group,O
+sl-108,4,34,in,in,in,Cc,CCONJ,I-ORG,ORG-European-Conservatives-and-Reformists-Group,I-ORG
 sl-108,4,35,reformisti,reformisti,reformist,Ncmpn,NOUN,I-ORG,ORG-European-Conservatives-and-Reformists-Group,I-ORG
 sl-108,4,36,),,),Z,PUNCT,O,,O
 sl-108,4,37,sodelovala,,sodelovati,Vmpp-sf,VERB,O,,O
@@ -460,12 +460,12 @@ sl-108,16,13,k,,k,Sd,ADP,O,,O
 sl-108,16,14,Rusiji,Rusija,Rusija,Npfsd,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-108,16,15,nezakonita,,nezakonit,Agpfsn,ADJ,O,,O
 sl-108,16,16,",",,",",Z,PUNCT,O,,O
-sl-108,16,17,polotok,,polotok,Ncmsan,NOUN,O,,I-LOC
+sl-108,16,17,polotok,,polotok,Ncmsan,NOUN,O,,O
 sl-108,16,18,pa,,pa,Cc,CCONJ,O,,O
 sl-108,16,19,je,,biti,Va-r3s-n,VERB,O,,O
 sl-108,16,20,treba,,treba,Rgp,ADV,O,,O
 sl-108,16,21,vrniti,,vrniti,Vmen,VERB,O,,O
 sl-108,16,22,pod,,pod,Sa,ADP,O,,O
-sl-108,16,23,ukrajinsko,,ukrajinski,Agpfsa,ADJ,O,,B-LOC
+sl-108,16,23,ukrajinsko,,ukrajinski,Agpfsa,ADJ,O,,O
 sl-108,16,24,oblast,,oblast,Ncfsa,NOUN,O,,O
 sl-108,16,25,.,,.,Z,PUNCT,O,,O

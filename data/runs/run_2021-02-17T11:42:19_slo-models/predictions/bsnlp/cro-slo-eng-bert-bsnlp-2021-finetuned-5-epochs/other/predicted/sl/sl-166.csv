@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-166,0,1,Zvzednico,,zvzednica,Ncfsa,NOUN,O,,O
 sl-166,0,2,Instagrama,Instagram,Instagram,Npmsg,PROPN,B-PRO,PRO-Instagram,B-PRO
 sl-166,0,3,prijeli,,prijeti,Vmep-pm,VERB,O,,O
@@ -28,7 +28,7 @@ sl-166,2,10,ki,,ki,Cs,SCONJ,O,,O
 sl-166,2,11,se,,se,Px------y,PRON,O,,O
 sl-166,2,12,je,,biti,Va-r3s-n,AUX,O,,O
 sl-166,2,13,na,,na,Sl,ADP,O,,O
-sl-166,2,14,Instagramu,Instagram,Instagram,Npmsl,PROPN,B-PRO,PRO-Instagram,O
+sl-166,2,14,Instagramu,Instagram,Instagram,Npmsl,PROPN,B-PRO,PRO-Instagram,B-PRO
 sl-166,2,15,bahala,,bahati,Vmpp-sf,VERB,O,,O
 sl-166,2,16,z,,z,Si,ADP,O,,O
 sl-166,2,17,s,,z,Si,ADP,O,,O
@@ -147,7 +147,7 @@ sl-166,6,15,.,,.,Z,PUNCT,O,,O
 sl-166,7,1,Fotografije,,fotografija,Ncfpn,NOUN,O,,O
 sl-166,7,2,na,,na,Sl,ADP,O,,O
 sl-166,7,3,njenem,,njen,Ps3mslsf,DET,O,,O
-sl-166,7,4,Instagram,Instagram,Instagram,Npmsn,PROPN,B-PRO,PRO-Instagram,O
+sl-166,7,4,Instagram,Instagram,Instagram,Npmsn,PROPN,B-PRO,PRO-Instagram,B-PRO
 sl-166,7,5,profilu,,profil,Ncmsl,NOUN,O,,O
 sl-166,7,6,so,,biti,Va-r3p-n,AUX,O,,O
 sl-166,7,7,spominjale,,spominjati,Vmpp-pf,VERB,O,,O
@@ -193,7 +193,7 @@ sl-166,9,1,Razvajala,,razvajati,Vmpp-sf,VERB,O,,O
 sl-166,9,2,se,,se,Px------y,PRON,O,,O
 sl-166,9,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-166,9,4,na,,na,Sl,ADP,O,,O
-sl-166,9,5,tajskih,,tajski,Agpmpl,ADJ,O,,B-LOC
+sl-166,9,5,tajskih,,tajski,Agpmpl,ADJ,O,,O
 sl-166,9,6,otokih,,otok,Ncmpl,NOUN,O,,O
 sl-166,9,7,.,,.,Z,PUNCT,O,,O
 sl-166,10,1,Blišča,,blišče,Ncnsg,NOUN,O,,O

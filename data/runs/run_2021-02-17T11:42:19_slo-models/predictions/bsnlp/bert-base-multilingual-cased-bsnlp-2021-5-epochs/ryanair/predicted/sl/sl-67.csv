@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-67,0,1,Letošnje,,letošnji,Agpnsn,ADJ,O,,O
 sl-67,0,2,leto,,leto,Ncnsa,NOUN,O,,O
 sl-67,0,3,pa,,pa,Cc,CCONJ,O,,O
@@ -544,7 +544,7 @@ sl-67,20,28,še,,še,Q,PART,O,,O
 sl-67,20,29,zlasti,,zlasti,Q,PART,O,,O
 sl-67,20,30,poleti,,poleti,Rgp,ADV,O,,O
 sl-67,20,31,.,,.,Z,PUNCT,O,,O
-sl-67,21,1,Julija,,julij,Ncmsg,NOUN,O,,O
+sl-67,21,1,Julija,,julij,Ncmsg,NOUN,O,,B-LOC
 sl-67,21,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-67,21,3,vsaj,,vsaj,Q,PART,O,,O
 sl-67,21,4,trikrat,,trikrat,Rgp,ADV,O,,O

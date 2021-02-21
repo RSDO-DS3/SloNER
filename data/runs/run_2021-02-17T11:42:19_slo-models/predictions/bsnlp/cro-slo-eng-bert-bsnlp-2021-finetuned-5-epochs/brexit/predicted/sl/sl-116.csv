@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-116,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-116,0,2,brez,,brez,Sg,ADP,O,,O
 sl-116,0,3,dogovora,,dogovor,Ncmsg,NOUN,O,,O
@@ -48,8 +48,8 @@ sl-116,2,23,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-116,2,24,morala,,morati,Vmpp-sf,VERB,O,,O
 sl-116,2,25,objaviti,,objaviti,Vmen,VERB,O,,O
 sl-116,2,26,.,,.,Z,PUNCT,O,,O
-sl-116,3,1,Britanski,Britanski,britanski,Agpmpn,ADJ,B-PER,PER-UK-MP,O
-sl-116,3,2,poslanci,poslanci,poslanec,Ncmpn,NOUN,I-PER,PER-UK-MP,O
+sl-116,3,1,Britanski,Britanski,britanski,Agpmpn,ADJ,B-PER,PER-UK-MP,B-PER
+sl-116,3,2,poslanci,poslanci,poslanec,Ncmpn,NOUN,I-PER,PER-UK-MP,I-PER
 sl-116,3,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-116,3,4,namreč,,namreč,Cc,CCONJ,O,,O
 sl-116,3,5,",",,",",Z,PUNCT,O,,O
@@ -92,7 +92,7 @@ sl-116,3,41,brez,,brez,Sg,ADP,O,,O
 sl-116,3,42,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-116,3,43,.,,.,Z,PUNCT,O,,O
 sl-116,4,1,Vodja,,vodja,Ncmsn,NOUN,O,,O
-sl-116,4,2,laburistov,laburisti,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-PER
+sl-116,4,2,laburistov,laburisti,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-ORG
 sl-116,4,3,Jeremy,Jeremy,Jeremy,Npmsn,PROPN,B-PER,PER-Jeremy-Corbyn,B-PER
 sl-116,4,4,Corbyn,Corbyn,Corbyn,Npmsn,PROPN,I-PER,PER-Jeremy-Corbyn,I-PER
 sl-116,4,5,je,,biti,Va-r3s-n,AUX,O,,O

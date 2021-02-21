@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-150,0,1,S,,z,Si,ADP,O,,O
 sl-150,0,2,pestjo,,pest,Ncfsi,NOUN,O,,O
 sl-150,0,3,mu,,on,Pp3msd--y,PRON,O,,O
@@ -183,7 +183,7 @@ sl-150,6,30,.,,.,Z,PUNCT,O,,O
 sl-150,7,1,Pretepeni,,pretepen,Appmsny,ADJ,O,,O
 sl-150,7,2,42-letni,,42rleten,Agpmsny,ADJ,O,,O
 sl-150,7,3,Marko,Marko,Marko,Npmsn,PROPN,B-PER,PER-Marko-Potočar,B-PER
-sl-150,7,4,Potočar,Potočar,Potočar,Npmsn,PROPN,I-PER,PER-Marko-Potočar,B-PER
+sl-150,7,4,Potočar,Potočar,Potočar,Npmsn,PROPN,I-PER,PER-Marko-Potočar,I-PER
 sl-150,7,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-150,7,6,v,,v,Sl,ADP,O,,O
 sl-150,7,7,incidentu,,incident,Ncmsl,NOUN,O,,O
@@ -192,11 +192,11 @@ sl-150,7,9,avgusta,,avgust,Ncmsg,NOUN,O,,O
 sl-150,7,10,lani,,lani,Rgp,ADV,O,,O
 sl-150,7,11,v,,v,Sl,ADP,O,,O
 sl-150,7,12,baru,bar,bar,Ncmsl,NOUN,B-LOC,LOC-bar-Klanček-near-Novo-mesto,B-LOC
-sl-150,7,13,Klanček,Klanček,Klanček,Npmsn,PROPN,I-LOC,LOC-bar-Klanček-near-Novo-mesto,B-LOC
-sl-150,7,14,v,v,v,Sl,ADP,I-LOC,LOC-bar-Klanček-near-Novo-mesto,O
-sl-150,7,15,Črmošnjicah,Črmošnjicah,Črmošnjice,Npfpl,PROPN,I-LOC,LOC-bar-Klanček-near-Novo-mesto,B-LOC
-sl-150,7,16,pri,pri,pri,Sl,ADP,I-LOC,LOC-bar-Klanček-near-Novo-mesto,O
-sl-150,7,17,Novem,Novem,nov,Agpnsl,ADJ,I-LOC,LOC-bar-Klanček-near-Novo-mesto,B-LOC
+sl-150,7,13,Klanček,Klanček,Klanček,Npmsn,PROPN,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
+sl-150,7,14,v,v,v,Sl,ADP,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
+sl-150,7,15,Črmošnjicah,Črmošnjicah,Črmošnjice,Npfpl,PROPN,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
+sl-150,7,16,pri,pri,pri,Sl,ADP,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
+sl-150,7,17,Novem,Novem,nov,Agpnsl,ADJ,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
 sl-150,7,18,mestu,mestu,mesto,Ncnsl,NOUN,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
 sl-150,7,19,utrpel,,utrpeti,Vmep-sm,VERB,O,,O
 sl-150,7,20,več,,več,Rgc,DET,O,,O
@@ -278,8 +278,8 @@ sl-150,10,12,ko,,ko,Cs,SCONJ,O,,O
 sl-150,10,13,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-150,10,14,prišla,,priti,Vmep-dm,VERB,O,,O
 sl-150,10,15,v,,v,Sa,ADP,O,,O
-sl-150,10,16,bar,bar,bar,Ncmsan,NOUN,B-LOC,LOC-bar-Klanček-near-Novo-mesto,O
-sl-150,10,17,Klanček,Klanček,Klanček,Npmsan,PROPN,I-LOC,LOC-bar-Klanček-near-Novo-mesto,B-LOC
+sl-150,10,16,bar,bar,bar,Ncmsan,NOUN,B-LOC,LOC-bar-Klanček-near-Novo-mesto,B-LOC
+sl-150,10,17,Klanček,Klanček,Klanček,Npmsan,PROPN,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
 sl-150,10,18,",",,",",Z,PUNCT,O,,O
 sl-150,10,19,začela,,začeti,Vmep-dm,VERB,O,,O
 sl-150,10,20,brez,,brez,Sg,ADP,O,,O
@@ -450,8 +450,8 @@ sl-150,19,10,let,,leto,Ncnpg,NOUN,O,,O
 sl-150,19,11,ne,,ne,Q,PART,O,,O
 sl-150,19,12,pije,,piti,Vmpr3s,VERB,O,,O
 sl-150,19,13,.,,.,Z,PUNCT,O,,O
-sl-150,20,1,Toda,,toda,Cc,CCONJ,O,,O
-sl-150,20,2,policisti,policisti,policist,Ncmpn,NOUN,B-PER,ORG-Slovenian-National-Police-Force,O
+sl-150,20,1,Toda,,toda,Cc,CCONJ,O,,B-PER
+sl-150,20,2,policisti,policisti,policist,Ncmpn,NOUN,B-PER,ORG-Slovenian-National-Police-Force,B-PER
 sl-150,20,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-150,20,4,ga,,on,Pp3msa--y,PRON,O,,O
 sl-150,20,5,od,,od,Sg,ADP,O,,O

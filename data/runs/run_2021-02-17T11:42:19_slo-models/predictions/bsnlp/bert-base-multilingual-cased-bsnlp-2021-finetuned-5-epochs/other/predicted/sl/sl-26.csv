@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-26,0,1,Šest,,šest,Mlc-pn,NUM,O,,O
 sl-26,0,2,desetletij,,desetletje,Ncnpg,NOUN,O,,O
 sl-26,0,3,med,,med,Si,ADP,O,,O
@@ -194,7 +194,7 @@ sl-26,5,50,ob,,ob,Sl,ADP,O,,O
 sl-26,5,51,šestdeseti,,šestdeseti,Mlofsl,ADJ,O,,O
 sl-26,5,52,obletnici,,obletnica,Ncfsl,NOUN,O,,O
 sl-26,5,53,.,,.,Z,PUNCT,O,,O
-sl-26,6,1,A,,a,Cc,CCONJ,O,,O
+sl-26,6,1,A,,a,Cc,CCONJ,O,,B-PER
 sl-26,6,2,še,,še,Q,PART,O,,O
 sl-26,6,3,leti,,leto,Ncnda,NOUN,O,,O
 sl-26,6,4,in,,in,Cc,CCONJ,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-125,0,1,Violeta,Violeta,Violeta,Npfsn,PROPN,B-PER,PER-Violeta-Musič-Smole,B-PER
 sl-125,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-125,0,3,",",,",",Z,PUNCT,O,,O
@@ -10,7 +10,7 @@ sl-125,0,8,fotografiral,,fotografirati,Vmbp-sm,VERB,O,,O
 sl-125,0,9,njeno,,njen,Ps3fsasf,DET,O,,O
 sl-125,0,10,hčerko,,hčerka,Ncfsa,NOUN,O,,O
 sl-125,1,1,Violeta,Violeta,Violeta,Npfsn,PROPN,B-PER,PER-Violeta-Musič-Smole,B-PER
-sl-125,1,2,Musič,Musič,Musič,Npfsn,PROPN,I-PER,PER-Violeta-Musič-Smole,B-PER
+sl-125,1,2,Musič,Musič,Musič,Npfsn,PROPN,I-PER,PER-Violeta-Musič-Smole,I-PER
 sl-125,1,3,Smole,Smole,Smole,Npfsn,PROPN,I-PER,PER-Violeta-Musič-Smole,I-PER
 sl-125,1,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-125,1,5,tožbo,,tožba,Ncfsa,NOUN,O,,O
@@ -30,7 +30,7 @@ sl-125,2,6,sosedovem,,sosedov,Aspmsl,ADJ,O,,O
 sl-125,2,7,telefonu,,telefon,Ncmsl,NOUN,O,,O
 sl-125,2,8,.,,.,Z,PUNCT,O,,O
 sl-125,3,1,Violeta,Violeta,Violeta,Npfsn,PROPN,B-PER,PER-Violeta-Musič-Smole,B-PER
-sl-125,3,2,Musič,Musič,Musič,Npfsn,PROPN,I-PER,PER-Violeta-Musič-Smole,B-PER
+sl-125,3,2,Musič,Musič,Musič,Npfsn,PROPN,I-PER,PER-Violeta-Musič-Smole,I-PER
 sl-125,3,3,Smole,Smole,Smole,Npfsn,PROPN,I-PER,PER-Violeta-Musič-Smole,I-PER
 sl-125,3,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-125,3,5,prepričana,,prepričan,Appfsn,ADJ,O,,O
@@ -78,7 +78,7 @@ sl-125,6,6,danes,,danes,Rgp,ADV,O,,O
 sl-125,6,7,verjame,,verjeti,Vmbr3s,VERB,O,,O
 sl-125,6,8,49-letna,,49rleten,Agpfsn,ADJ,O,,O
 sl-125,6,9,Violeta,Violeta,Violeta,Npfsn,PROPN,B-PER,PER-Violeta-Musič-Smole,B-PER
-sl-125,6,10,Musič,Musič,Musič,Npfsn,PROPN,I-PER,PER-Violeta-Musič-Smole,B-PER
+sl-125,6,10,Musič,Musič,Musič,Npfsn,PROPN,I-PER,PER-Violeta-Musič-Smole,I-PER
 sl-125,6,11,Smole,Smole,Smole,Npfsn,PROPN,I-PER,PER-Violeta-Musič-Smole,I-PER
 sl-125,6,12,",",,",",Z,PUNCT,O,,O
 sl-125,6,13,ki,,ki,Cs,SCONJ,O,,O
@@ -444,7 +444,7 @@ sl-125,22,35,fotografij,,fotografija,Ncfpg,NOUN,O,,O
 sl-125,22,36,Violetine,Violeta,violetin,Agpfsg,ADJ,B-PER,PER-Violeta-Musič-Smole,B-PER
 sl-125,22,37,hčere,,hči,Ncfsg,NOUN,O,,O
 sl-125,22,38,.,,.,Z,PUNCT,O,,O
-sl-125,23,1,Violeta,Violeta,Violeta,Npfsn,PROPN,B-PER,PER-Violeta-Musič-Smole,B-PER
+sl-125,23,1,Violeta,Violeta,Violeta,Npfsn,PROPN,B-PER,PER-Violeta-Musič-Smole,O
 sl-125,23,2,se,,se,Px------y,PRON,O,,O
 sl-125,23,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-125,23,4,precej,,precej,Rgp,ADV,O,,O
@@ -593,10 +593,10 @@ sl-125,29,7,…,,…,Z,PUNCT,O,,O
 sl-125,29,8,prav,,prav,Rgp,ADV,O,,O
 sl-125,29,9,.,,.,Z,PUNCT,O,,O
 sl-125,29,10,«,,«,Z,PUNCT,O,,O
-sl-125,30,1,Rubež,,rubež,Ncmsn,NOUN,O,,B-LOC
+sl-125,30,1,Rubež,,rubež,Ncmsn,NOUN,O,,B-PER
 sl-125,30,2,odnaša,,odnašati,Vmpr3s,VERB,O,,O
 sl-125,30,3,zemljišče,,zemljišče,Ncnsa,NOUN,O,,O
-sl-125,31,1,Violeta,Violeta,Violeta,Npfsn,PROPN,B-PER,PER-Violeta-Musič-Smole,B-PER
+sl-125,31,1,Violeta,Violeta,Violeta,Npfsn,PROPN,B-PER,PER-Violeta-Musič-Smole,O
 sl-125,31,2,se,,se,Px------y,PRON,O,,O
 sl-125,31,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-125,31,4,kanila,,kaniti,Vmep-sf,VERB,O,,O
@@ -741,7 +741,7 @@ sl-125,35,6,Zaradi,,zaradi,Sg,ADP,O,,O
 sl-125,35,7,tega,,ta,Pd-nsg,DET,O,,O
 sl-125,35,8,se,,se,Px------y,PRON,O,,O
 sl-125,35,9,nam,,jaz,Pp1-pd,PRON,O,,O
-sl-125,35,10,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-125,35,10,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-125,35,11,rubi,,rubiti,Vmpr3s,VERB,O,,O
 sl-125,35,12,.,,.,Z,PUNCT,O,,O
 sl-125,35,13,«,,«,Z,PUNCT,O,,O
@@ -782,7 +782,7 @@ sl-125,35,47,:,,:,Z,PUNCT,O,,O
 sl-125,35,48,»,,»,Z,PUNCT,O,,O
 sl-125,35,49,Ker,,ker,Cs,SCONJ,O,,O
 sl-125,35,50,pa,,pa,Cc,CCONJ,O,,O
-sl-125,35,51,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-125,35,51,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-125,35,52,ugotavljajo,,ugotavljati,Vmpr3p,VERB,O,,O
 sl-125,35,53,",",,",",Z,PUNCT,O,,O
 sl-125,35,54,da,,da,Cs,SCONJ,O,,O

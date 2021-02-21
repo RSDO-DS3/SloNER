@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-182,0,1,Polnar,Polnar,Polnar,Npmsn,PROPN,B-PER,PER-Robert-Polnar,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-182,0,1,Polnar,Polnar,Polnar,Npmsn,PROPN,B-PER,PER-Robert-Polnar,O
 sl-182,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-182,0,3,:,,:,Z,PUNCT,O,,O
 sl-182,0,4,Sem,,biti,Va-r1s-n,AUX,O,,O
@@ -20,10 +20,10 @@ sl-182,0,18,odslovili,,odsloviti,Vmep-pm,VERB,O,,O
 sl-182,1,1,Poslanec,,poslanec,Ncmsn,NOUN,O,,O
 sl-182,1,2,DeSUS,DeSUS,DeSUS,Npmsn,PROPN,B-ORG,ORG-Democratic-Party-of-Pensioners-of-Slovenia,B-ORG
 sl-182,1,3,Robert,Robert,Robert,Npmsn,PROPN,B-PER,PER-Robert-Polnar,B-PER
-sl-182,1,4,Polnar,Polnar,Polnar,Npmsn,PROPN,I-PER,PER-Robert-Polnar,B-PER
+sl-182,1,4,Polnar,Polnar,Polnar,Npmsn,PROPN,I-PER,PER-Robert-Polnar,I-PER
 sl-182,1,5,ne,,ne,Q,PART,O,,O
 sl-182,1,6,namerava,,nameravati,Vmpr3s,VERB,O,,O
-sl-182,1,7,zapustiti,,zapustiti,Vmen,VERB,O,,I-ORG
+sl-182,1,7,zapustiti,,zapustiti,Vmen,VERB,O,,O
 sl-182,1,8,poslanske,,poslanski,Agpfsg,ADJ,O,,O
 sl-182,1,9,skupine,,skupina,Ncfsg,NOUN,O,,O
 sl-182,1,10,",",,",",Z,PUNCT,O,,O
@@ -68,7 +68,7 @@ sl-182,3,3,vodja,,vodja,Ncmsn,NOUN,O,,O
 sl-182,3,4,poslancev,,poslanec,Ncmpg,NOUN,O,,O
 sl-182,3,5,DeSUS,DeSUS,DeSUS,Npmsn,PROPN,B-ORG,ORG-Democratic-Party-of-Pensioners-of-Slovenia,B-ORG
 sl-182,3,6,Franc,Franc,Franc,Npmsn,PROPN,B-PER,PER-Franc-Jurša,B-PER
-sl-182,3,7,Jurša,Jurša,Jurša,Npmsn,PROPN,I-PER,PER-Franc-Jurša,B-PER
+sl-182,3,7,Jurša,Jurša,Jurša,Npmsn,PROPN,I-PER,PER-Franc-Jurša,I-PER
 sl-182,3,8,napoveduje,,napovedovati,Vmpr3s,VERB,O,,O
 sl-182,3,9,",",,",",Z,PUNCT,O,,O
 sl-182,3,10,da,,da,Cs,SCONJ,O,,O
@@ -80,7 +80,7 @@ sl-182,3,15,pogovorili,,pogovoriti,Vmep-pm,VERB,O,,O
 sl-182,3,16,o,,o,Sl,ADP,O,,O
 sl-182,3,17,sodelovanju,,sodelovanje,Ncnsl,NOUN,O,,O
 sl-182,3,18,.,,.,Z,PUNCT,O,,O
-sl-182,4,1,Polnar,Polnar,Polnar,Npmsn,PROPN,B-PER,PER-Robert-Polnar,B-PER
+sl-182,4,1,Polnar,Polnar,Polnar,Npmsn,PROPN,B-PER,PER-Robert-Polnar,O
 sl-182,4,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-182,4,3,v,,v,Sa,ADP,O,,O
 sl-182,4,4,četrtek,,četrtek,Ncmsan,NOUN,O,,O
@@ -94,7 +94,7 @@ sl-182,4,11,proti,,proti,Sd,ADP,O,,O
 sl-182,4,12,imenovanju,,imenovanje,Ncnsd,NOUN,O,,O
 sl-182,4,13,Angelike,Angelika,Angelika,Npfsg,PROPN,B-PER,PER-Angelika-Mlinar,B-PER
 sl-182,4,14,Mlinar,Mlinar,Mlinar,Npfsg,PROPN,I-PER,PER-Angelika-Mlinar,I-PER
-sl-182,4,15,za,,za,Sa,ADP,O,,I-ORG
+sl-182,4,15,za,,za,Sa,ADP,O,,O
 sl-182,4,16,kohezijsko,,kohezijski,Agpfsa,ADJ,O,,O
 sl-182,4,17,ministrico,,ministrica,Ncfsa,NOUN,O,,O
 sl-182,4,18,",",,",",Z,PUNCT,O,,O
@@ -139,7 +139,7 @@ sl-182,6,4,pogovor,,pogovor,Ncmsan,NOUN,O,,O
 sl-182,6,5,z,,z,Si,ADP,O,,O
 sl-182,6,6,njim,,on,Pp3msi,PRON,O,,O
 sl-182,6,7,.,,.,Z,PUNCT,O,,O
-sl-182,7,1,Polnar,Polnar,Polnar,Npmsn,PROPN,B-PER,PER-Robert-Polnar,B-PER
+sl-182,7,1,Polnar,Polnar,Polnar,Npmsn,PROPN,B-PER,PER-Robert-Polnar,O
 sl-182,7,2,se,,se,Px------y,PRON,O,,O
 sl-182,7,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-182,7,4,danes,,danes,Rgp,ADV,O,,O
@@ -303,7 +303,7 @@ sl-182,13,17,kot,,kot,Cs,SCONJ,O,,O
 sl-182,13,18,doslej,,doslej,Rgp,ADV,O,,O
 sl-182,13,19,.,,.,Z,PUNCT,O,,O
 sl-182,14,1,Tako,,tako,Rgp,ADV,O,,O
-sl-182,14,2,Polnar,Polnar,Polnar,Npmsn,PROPN,B-PER,PER-Robert-Polnar,B-PER
+sl-182,14,2,Polnar,Polnar,Polnar,Npmsn,PROPN,B-PER,PER-Robert-Polnar,I-PER
 sl-182,14,3,napoveduje,,napovedovati,Vmpr3s,VERB,O,,O
 sl-182,14,4,",",,",",Z,PUNCT,O,,O
 sl-182,14,5,da,,da,Cs,SCONJ,O,,O
@@ -448,7 +448,7 @@ sl-182,18,38,bi,,biti,Va-c,AUX,O,,O
 sl-182,18,39,ga,,on,Pp3msa--y,PRON,O,,O
 sl-182,18,40,odstavljali,,odstavljati,Vmpp-pm,VERB,O,,O
 sl-182,18,41,.,,.,Z,PUNCT,O,,O
-sl-182,19,1,Jurša,Jurša,Jurša,Npmsn,PROPN,B-PER,PER-Franc-Jurša,B-PER
+sl-182,19,1,Jurša,Jurša,Jurša,Npmsn,PROPN,B-PER,PER-Franc-Jurša,O
 sl-182,19,2,pa,,pa,Cc,CCONJ,O,,O
 sl-182,19,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-182,19,4,v,,v,Sl,ADP,O,,O
@@ -547,7 +547,7 @@ sl-182,23,23,moraš,,morati,Vmpr2s,VERB,O,,O
 sl-182,23,24,včasih,,včasih,Rgp,ADV,O,,O
 sl-182,23,25,sodelovati,,sodelovati,Vmpn,VERB,O,,O
 sl-182,23,26,tudi,,tudi,Q,PART,O,,O
-sl-182,23,27,za,,za,Sa,ADP,O,,I-ORG
+sl-182,23,27,za,,za,Sa,ADP,O,,O
 sl-182,23,28,širši,,širok,Agcmsay,ADJ,O,,O
 sl-182,23,29,interes,,interes,Ncmsan,NOUN,O,,O
 sl-182,23,30,”,,”,Z,PUNCT,O,,O
@@ -571,7 +571,7 @@ sl-182,24,16,manjkajoči,,manjkajoč,Appmsny,ADJ,O,,O
 sl-182,24,17,glas,,glas,Ncmsn,NOUN,O,,O
 sl-182,24,18,lahko,,lahko,Rgp,ADV,O,,O
 sl-182,24,19,usoden,,usoden,Agpmsnn,ADJ,O,,O
-sl-182,24,20,za,,za,Sa,ADP,O,,I-ORG
+sl-182,24,20,za,,za,Sa,ADP,O,,O
 sl-182,24,21,pomembne,,pomemben,Agpmpa,ADJ,O,,O
 sl-182,24,22,projekte,,projekt,Ncmpa,NOUN,O,,O
 sl-182,24,23,ali,,ali,Cc,CCONJ,O,,O

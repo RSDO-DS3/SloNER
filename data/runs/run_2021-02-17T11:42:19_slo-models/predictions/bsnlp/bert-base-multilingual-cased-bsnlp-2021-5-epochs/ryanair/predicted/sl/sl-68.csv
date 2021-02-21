@@ -1,17 +1,17 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-68,0,1,(,,(,Z,PUNCT,O,,O
 sl-68,0,2,INTERVJU,,intervju,Ncmsn,NOUN,O,,O
 sl-68,0,3,),,),Z,PUNCT,O,,O
 sl-68,0,4,Filip,Filip,Filip,Npmsn,PROPN,B-PER,PER-Filip-Tobias,B-PER
-sl-68,0,5,Tobias,Tobias,Tobias,Npmsn,PROPN,I-PER,PER-Filip-Tobias,B-PER
+sl-68,0,5,Tobias,Tobias,Tobias,Npmsn,PROPN,I-PER,PER-Filip-Tobias,I-PER
 sl-68,0,6,:,,:,Z,PUNCT,O,,O
-sl-68,0,7,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,I-LOC
+sl-68,0,7,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-68,0,8,v,,v,Sl,ADP,O,,O
 sl-68,0,9,tujini,,tujina,Ncfsl,NOUN,O,,O
 sl-68,0,10,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-68,0,11,prepoznaven,,prepoznaven,Agpmsnn,ADJ,O,,O
 sl-68,1,1,Filip,Filip,Filip,Npmsn,PROPN,B-PER,PER-Filip-Tobias,B-PER
-sl-68,1,2,Tobias,Tobias,Tobias,Npmsn,PROPN,I-PER,PER-Filip-Tobias,B-PER
+sl-68,1,2,Tobias,Tobias,Tobias,Npmsn,PROPN,I-PER,PER-Filip-Tobias,I-PER
 sl-68,1,3,:,,:,Z,PUNCT,O,,O
 sl-68,1,4,”,,”,Z,PUNCT,O,,O
 sl-68,1,5,Če,,če,Cs,SCONJ,O,,O
@@ -55,7 +55,7 @@ sl-68,2,12,podpredsednik,,podpredsednik,Ncmsn,NOUN,O,,O
 sl-68,2,13,Turistično,Turistično,turističen,Agpnsn,ADJ,B-ORG,ORG-Turistično-gostinska-zbornica-Slovenije,B-ORG
 sl-68,2,14,gostinske,gostinska,gostinski,Agpfsg,ADJ,I-ORG,ORG-Turistično-gostinska-zbornica-Slovenije,I-ORG
 sl-68,2,15,zbornice,zbornica,zbornica,Ncfsg,NOUN,I-ORG,ORG-Turistično-gostinska-zbornica-Slovenije,I-ORG
-sl-68,2,16,Slovenije,Slovenije,Slovenija,Npfsg,PROPN,I-ORG,ORG-Turistično-gostinska-zbornica-Slovenije,B-LOC
+sl-68,2,16,Slovenije,Slovenije,Slovenija,Npfsg,PROPN,I-ORG,ORG-Turistično-gostinska-zbornica-Slovenije,I-ORG
 sl-68,2,17,in,,in,Cc,CCONJ,O,,O
 sl-68,2,18,član,,član,Ncmsn,NOUN,O,,O
 sl-68,2,19,upravnega,,upraven,Agpmsg,ADJ,O,,O
@@ -63,9 +63,9 @@ sl-68,2,20,odbora,,odbor,Ncmsg,NOUN,O,,O
 sl-68,2,21,Združenja,Združenje,združenje,Ncnsg,NOUN,B-ORG,ORG-ZTAS-Združenje-turističnih-agencij-Slovenije,B-ORG
 sl-68,2,22,turističnih,turističnih,turističen,Agpfpg,ADJ,I-ORG,ORG-ZTAS-Združenje-turističnih-agencij-Slovenije,I-ORG
 sl-68,2,23,agencij,agencij,agencija,Ncfpg,NOUN,I-ORG,ORG-ZTAS-Združenje-turističnih-agencij-Slovenije,I-ORG
-sl-68,2,24,Slovenije,Slovenije,Slovenija,Npfsg,PROPN,I-ORG,ORG-ZTAS-Združenje-turističnih-agencij-Slovenije,B-LOC
+sl-68,2,24,Slovenije,Slovenije,Slovenija,Npfsg,PROPN,I-ORG,ORG-ZTAS-Združenje-turističnih-agencij-Slovenije,I-ORG
 sl-68,2,25,Filip,Filip,Filip,Npmsn,PROPN,B-PER,PER-Filip-Tobias,B-PER
-sl-68,2,26,Tobias,Tobias,Tobias,Npmsn,PROPN,I-PER,PER-Filip-Tobias,B-PER
+sl-68,2,26,Tobias,Tobias,Tobias,Npmsn,PROPN,I-PER,PER-Filip-Tobias,I-PER
 sl-68,2,27,o,,o,Sl,ADP,O,,O
 sl-68,2,28,turizmu,,turizem,Ncmsl,NOUN,O,,O
 sl-68,2,29,",",,",",Z,PUNCT,O,,O
@@ -99,7 +99,7 @@ sl-68,4,2,pomembnega,,pomemben,Agpnsg,ADJ,O,,O
 sl-68,4,3,prinaša,,prinašati,Vmpr3s,VERB,O,,O
 sl-68,4,4,za,,za,Sa,ADP,O,,O
 sl-68,4,5,kupce,,kupec,Ncmpa,NOUN,O,,O
-sl-68,4,6,turističnih,,turističen,Agpfpg,ADJ,O,,I-ORG
+sl-68,4,6,turističnih,,turističen,Agpfpg,ADJ,O,,O
 sl-68,4,7,storitev,,storitev,Ncfpg,NOUN,O,,O
 sl-68,4,8,?,,?,Z,PUNCT,O,,O
 sl-68,5,1,"""",,"""",Z,PUNCT,O,,O
@@ -143,7 +143,7 @@ sl-68,6,17,in,,in,Cc,CCONJ,O,,O
 sl-68,6,18,še,,še,Q,PART,O,,O
 sl-68,6,19,katero,,kateri,Pq-fsa,DET,O,,O
 sl-68,6,20,od,,od,Sg,ADP,O,,O
-sl-68,6,21,turističnih,,turističen,Agpfpg,ADJ,O,,I-ORG
+sl-68,6,21,turističnih,,turističen,Agpfpg,ADJ,O,,O
 sl-68,6,22,storitev,,storitev,Ncfpg,NOUN,O,,O
 sl-68,6,23,",",,",",Z,PUNCT,O,,O
 sl-68,6,24,kot,,kot,Cs,SCONJ,O,,O
@@ -282,11 +282,11 @@ sl-68,13,15,predvečer,,predvečer,Ncmsan,NOUN,O,,O
 sl-68,13,16,intervjuja,,intervju,Ncmsg,NOUN,O,,O
 sl-68,13,17,je,,biti,Va-r3s-n,AUX,O,,O
 sl-68,13,18,na,,na,Sl,ADP,O,,O
-sl-68,13,19,Lentu,Lent,Lent,Npmsl,PROPN,B-EVT,EVT-Lent-Festival,B-PRO
+sl-68,13,19,Lentu,Lent,Lent,Npmsl,PROPN,B-EVT,EVT-Lent-Festival,B-EVT
 sl-68,13,20,poslušal,,poslušati,Vmpp-sm,VERB,O,,O
 sl-68,13,21,Toševo,Toše,Tošev,Aspfsa,ADJ,B-PER,PER-Toše-Proeski,B-PER
 sl-68,13,22,uglasbitev,,uglasbitev,Ncfsa,NOUN,O,,O
-sl-68,13,23,Prešerna,Prešeren,Prešeren,Npmsg,PROPN,B-PER,PER-France-Prešeren,I-ORG
+sl-68,13,23,Prešerna,Prešeren,Prešeren,Npmsg,PROPN,B-PER,PER-France-Prešeren,B-PER
 sl-68,13,24,",",,",",Z,PUNCT,O,,O
 sl-68,13,25,op.,,op.,Y,X,O,,O
 sl-68,13,26,a.,,A.,Y,X,O,,O
@@ -347,7 +347,7 @@ sl-68,16,5,toliko,,toliko,Rgp,DET,O,,O
 sl-68,16,6,zamudili,,zamuditi,Vmep-pm,VERB,O,,O
 sl-68,16,7,",",,",",Z,PUNCT,O,,O
 sl-68,16,8,da,,da,Cs,SCONJ,O,,O
-sl-68,16,9,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-68,16,9,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-68,16,10,v,,v,Sl,ADP,O,,O
 sl-68,16,11,zadnjem,,zadnji,Agpmsl,ADJ,O,,O
 sl-68,16,12,hipu,,hip,Ncmsl,NOUN,O,,O
@@ -724,7 +724,7 @@ sl-68,30,15,ostale,,ostal,Appfpa,ADJ,O,,O
 sl-68,30,16,regije,,regija,Ncfpa,NOUN,O,,O
 sl-68,30,17,.,,.,Z,PUNCT,O,,O
 sl-68,31,1,Tudi,,tudi,Q,PART,O,,O
-sl-68,31,2,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,I-LOC
+sl-68,31,2,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-68,31,3,beleži,,beležiti,Vmpr3s,VERB,O,,O
 sl-68,31,4,rast,,rast,Ncfsa,NOUN,O,,O
 sl-68,31,5,.,,.,Z,PUNCT,O,,O
@@ -796,7 +796,7 @@ sl-68,36,5,neprepoznavnost,,neprepoznavnost,Ncfsn,NOUN,O,,O
 sl-68,36,6,v,,v,Sl,ADP,O,,O
 sl-68,36,7,tujini,,tujina,Ncfsl,NOUN,O,,O
 sl-68,36,8,.,,.,Z,PUNCT,O,,O
-sl-68,37,1,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,I-LOC
+sl-68,37,1,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-68,37,2,v,,v,Sl,ADP,O,,O
 sl-68,37,3,tujini,,tujina,Ncfsl,NOUN,O,,O
 sl-68,37,4,ni,,biti,Va-r3s-y,VERB,O,,O
@@ -845,7 +845,7 @@ sl-68,38,30,in,,in,Cc,CCONJ,O,,O
 sl-68,38,31,nekaj,,nekaj,Pi-nsa,PRON,O,,O
 sl-68,38,32,dobili,,dobiti,Vmep-pm,VERB,O,,O
 sl-68,38,33,.,,.,Z,PUNCT,O,,O
-sl-68,39,1,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,I-LOC
+sl-68,39,1,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-68,39,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-68,39,3,bolj,,bolj,Rgc,ADV,O,,O
 sl-68,39,4,butična,,butičen,Agpfsn,ADJ,O,,O
@@ -935,7 +935,7 @@ sl-68,44,23,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-68,44,24,bila,,biti,Va-p-sf,AUX,O,,O
 sl-68,44,25,tako,,tako,Rgp,ADV,O,,O
 sl-68,44,26,prepoznana,,prepoznan,Appfsn,ADJ,O,,O
-sl-68,44,27,turistična,,turističen,Agpfsn,ADJ,O,,I-ORG
+sl-68,44,27,turistična,,turističen,Agpfsn,ADJ,O,,O
 sl-68,44,28,destinacija,,destinacija,Ncfsn,NOUN,O,,O
 sl-68,44,29,",",,",",Z,PUNCT,O,,O
 sl-68,44,30,da,,da,Cs,SCONJ,O,,O
@@ -995,7 +995,7 @@ sl-68,46,30,?,,?,Z,PUNCT,O,,O
 sl-68,47,1,"""",,"""",Z,PUNCT,O,,O
 sl-68,47,2,Rad,,rad,Rgp,ADV,O,,O
 sl-68,47,3,primerjam,,primerjati,Vmpr1s,VERB,O,,O
-sl-68,47,4,Maribor,Maribor,Maribor,Npmsan,PROPN,B-LOC,GPE-Maribor,I-LOC
+sl-68,47,4,Maribor,Maribor,Maribor,Npmsan,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-68,47,5,z,,z,Si,ADP,O,,O
 sl-68,47,6,Zadrom,Zadar,Zadar,Npmsi,PROPN,B-LOC,GPE-Zadar,B-LOC
 sl-68,47,7,.,,.,Z,PUNCT,O,,O
@@ -1037,7 +1037,7 @@ sl-68,51,3,področju,,področje,Ncnsl,NOUN,O,,O
 sl-68,51,4,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-68,51,5,bili,,biti,Va-p-df,AUX,O,,O
 sl-68,51,6,Hrvaška,Hrvaška,hrvaški,Agpfsn,ADJ,B-LOC,GPE-Croatia,B-LOC
-sl-68,51,7,turistična,,turističen,Agpfsn,ADJ,O,,I-ORG
+sl-68,51,7,turistična,,turističen,Agpfsn,ADJ,O,,O
 sl-68,51,8,zajednica,,zajednica,Ncfsn,NOUN,O,,O
 sl-68,51,9,in,,in,Cc,CCONJ,O,,O
 sl-68,51,10,država,,država,Ncfsn,NOUN,O,,O
@@ -1067,7 +1067,7 @@ sl-68,53,5,prepoznana,,prepoznan,Appfsn,ADJ,O,,O
 sl-68,53,6,tudi,,tudi,Q,PART,O,,O
 sl-68,53,7,kot,,kot,Cs,SCONJ,O,,O
 sl-68,53,8,letalska,,letalski,Agpfsn,ADJ,O,,O
-sl-68,53,9,turistična,,turističen,Agpfsn,ADJ,O,,I-ORG
+sl-68,53,9,turistična,,turističen,Agpfsn,ADJ,O,,O
 sl-68,53,10,destinacija,,destinacija,Ncfsn,NOUN,O,,O
 sl-68,53,11,",",,",",Z,PUNCT,O,,O
 sl-68,53,12,ne,,ne,Q,PART,O,,O
@@ -1081,7 +1081,7 @@ sl-68,53,19,.,,.,Z,PUNCT,O,,O
 sl-68,54,1,Če,,če,Cs,SCONJ,O,,O
 sl-68,54,2,pa,,pa,Cc,CCONJ,O,,O
 sl-68,54,3,gledamo,,gledati,Vmpr1p,VERB,O,,O
-sl-68,54,4,splitsko,,splitski,Agpnsa,ADJ,O,,O
+sl-68,54,4,splitsko,,splitski,Agpnsa,ADJ,O,,B-LOC
 sl-68,54,5,letališče,,letališče,Ncnsa,NOUN,O,,O
 sl-68,54,6,",",,",",Z,PUNCT,O,,O
 sl-68,54,7,pa,,pa,Cc,CCONJ,O,,O
@@ -1110,7 +1110,7 @@ sl-68,56,4,o,,o,Sl,ADP,O,,O
 sl-68,56,5,Jadranski,Jadranska,jadranski,Agpfsl,ADJ,B-LOC,LOC-Adriatic-Coast,B-LOC
 sl-68,56,6,obali,obala,obala,Ncfsl,NOUN,I-LOC,LOC-Adriatic-Coast,I-LOC
 sl-68,56,7,",",,",",Z,PUNCT,O,,O
-sl-68,56,8,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,I-LOC
+sl-68,56,8,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-68,56,9,pa,,pa,Cc,CCONJ,O,,O
 sl-68,56,10,",",,",",Z,PUNCT,O,,O
 sl-68,56,11,tudi,,tudi,Q,PART,O,,O
@@ -1125,7 +1125,7 @@ sl-68,56,19,more,,moči,Vmpr3s,VERB,O,,O
 sl-68,56,20,generirati,,generirati,Vmbn,VERB,O,,O
 sl-68,56,21,.,,.,Z,PUNCT,O,,O
 sl-68,57,1,"""",,"""",Z,PUNCT,O,,O
-sl-68,57,2,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,I-LOC
+sl-68,57,2,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-68,57,3,ne,,ne,Q,PART,O,,O
 sl-68,57,4,",",,",",Z,PUNCT,O,,O
 sl-68,57,5,ampak,,ampak,Cc,CCONJ,O,,O
@@ -1515,7 +1515,7 @@ sl-68,76,13,na,,na,Sa,ADP,O,,O
 sl-68,76,14,počitnice,,počitnice,Ncfpa,NOUN,O,,O
 sl-68,76,15,.,,.,Z,PUNCT,O,,O
 sl-68,77,1,V,,v,Sa,ADP,O,,O
-sl-68,77,2,Maribor,Maribor,Maribor,Npmsan,PROPN,B-LOC,GPE-Maribor,I-LOC
+sl-68,77,2,Maribor,Maribor,Maribor,Npmsan,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-68,77,3,in,,in,Cc,CCONJ,O,,O
 sl-68,77,4,zaledje,,zaledje,Ncnsa,NOUN,O,,O
 sl-68,77,5,",",,",",Z,PUNCT,O,,O
@@ -1549,7 +1549,7 @@ sl-68,79,8,koga,,kdo,Pq-msa,PRON,O,,O
 sl-68,79,9,si,,se,Px---d--y,PRON,O,,O
 sl-68,79,10,želi,,želeti,Vmpr3s,VERB,O,,O
 sl-68,79,11,?,,?,Z,PUNCT,O,,O
-sl-68,80,1,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,I-LOC
+sl-68,80,1,Maribor,Maribor,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-68,80,2,bi,,biti,Va-c,AUX,O,,O
 sl-68,80,3,imel,,imeti,Vmpp-sm,VERB,O,,O
 sl-68,80,4,tudi,,tudi,Q,PART,O,,O
@@ -1580,7 +1580,7 @@ sl-68,81,16,",",,",",Z,PUNCT,O,,O
 sl-68,81,17,da,,da,Cs,SCONJ,O,,O
 sl-68,81,18,gledamo,,gledati,Vmpr1p,VERB,O,,O
 sl-68,81,19,samo,,samo,Q,PART,O,,O
-sl-68,81,20,Maribor,Maribor,Maribor,Npmsan,PROPN,B-LOC,GPE-Maribor,I-LOC
+sl-68,81,20,Maribor,Maribor,Maribor,Npmsan,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-68,81,21,.,,.,Z,PUNCT,O,,O
 sl-68,82,1,Je,,biti,Va-r3s-n,VERB,O,,O
 sl-68,82,2,pa,,pa,Cc,CCONJ,O,,O
@@ -1609,7 +1609,7 @@ sl-68,82,24,Celje,Celje,Celje,Npnsn,PROPN,B-LOC,GPE-Celje,B-LOC
 sl-68,82,25,",",,",",Z,PUNCT,O,,O
 sl-68,82,26,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,B-LOC,GPE-Ljubljana,B-LOC
 sl-68,82,27,…,,…,Z,PUNCT,O,,O
-sl-68,83,1,Mariborsko,,mariborski,Agpnsn,ADJ,O,,B-LOC
+sl-68,83,1,Mariborsko,,mariborski,Agpnsn,ADJ,O,,O
 sl-68,83,2,letališče,,letališče,Ncnsn,NOUN,O,,O
 sl-68,83,3,v,,v,Sl,ADP,O,,O
 sl-68,83,4,Sloveniji,Slovenija,Slovenija,Npfsl,PROPN,B-LOC,GPE-Slovenia,B-LOC
@@ -1713,7 +1713,7 @@ sl-68,87,4,"""",,"""",Z,PUNCT,O,,O
 sl-68,88,1,Ampak,,ampak,Cc,CCONJ,O,,O
 sl-68,88,2,kdo,,kdo,Pq-msn,PRON,O,,O
 sl-68,88,3,je,,biti,Va-r3s-n,AUX,O,,O
-sl-68,88,4,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-68,88,4,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-68,88,5,prvi,,prvi,Mlomsn,ADJ,O,,O
 sl-68,88,6,",",,",",Z,PUNCT,O,,O
 sl-68,88,7,ki,,ki,Cs,SCONJ,O,,O
@@ -1728,7 +1728,7 @@ sl-68,89,3,Aerodroma,Aerodrom,Aerodrom,Npmsg,PROPN,B-LOC,ORG-Maribor-Edvard-Rusj
 sl-68,89,4,Maribor,Maribor,Maribor,Npmsn,PROPN,I-LOC,ORG-Maribor-Edvard-Rusjan-Airport,I-LOC
 sl-68,89,5,se,,se,Px------y,PRON,O,,O
 sl-68,89,6,do,,do,Sg,ADP,O,,O
-sl-68,89,7,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-68,89,7,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-68,89,8,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-68,89,9,čutilo,,čutiti,Vmpp-sn,VERB,O,,O
 sl-68,89,10,nagovorjeno,,nagovorjen,Appnsn,ADJ,O,,O
@@ -1764,7 +1764,7 @@ sl-68,90,22,.,,.,Z,PUNCT,O,,O
 sl-68,91,1,To,,ta,Pd-nsn,DET,O,,O
 sl-68,91,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-68,91,3,velikopotezni,,velikopotezen,Agpmsny,ADJ,O,,O
-sl-68,91,4,načrt,,načrt,Ncmsn,NOUN,O,,I-PRO
+sl-68,91,4,načrt,,načrt,Ncmsn,NOUN,O,,O
 sl-68,91,5,.,,.,Z,PUNCT,O,,O
 sl-68,92,1,Menim,,meniti,Vmpr1s,VERB,O,,O
 sl-68,92,2,",",,",",Z,PUNCT,O,,O
@@ -2097,7 +2097,7 @@ sl-68,110,5,z,,z,Si,ADP,O,,O
 sl-68,110,6,informacijami,,informacija,Ncfpi,NOUN,O,,O
 sl-68,110,7,",",,",",Z,PUNCT,O,,O
 sl-68,110,8,da,,da,Cs,SCONJ,O,,O
-sl-68,110,9,načrt,,načrt,Ncmsn,NOUN,O,,I-PRO
+sl-68,110,9,načrt,,načrt,Ncmsn,NOUN,O,,O
 sl-68,110,10,glede,,glede,Sg,ADP,O,,O
 sl-68,110,11,širitve,,širitev,Ncfsg,NOUN,O,,O
 sl-68,110,12,letališča,,letališče,Ncnsg,NOUN,O,,O
@@ -3047,7 +3047,7 @@ sl-68,154,5,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-68,154,6,",",,",",Z,PUNCT,O,,O
 sl-68,154,7,a,,a,Cc,CCONJ,O,,O
 sl-68,154,8,grem,,iti,Vmbr1s,VERB,O,,O
-sl-68,154,9,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-68,154,9,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-68,154,10,v,,v,Sa,ADP,O,,O
 sl-68,154,11,',,',Z,PUNCT,O,,O
 sl-68,154,12,penzijo,,penzija,Ncfsa,NOUN,O,,O
@@ -3187,7 +3187,7 @@ sl-68,159,4,mogli,,moči,Vmpp-pm,VERB,O,,O
 sl-68,159,5,biti,,biti,Va-n,AUX,O,,O
 sl-68,159,6,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-68,159,7,letalskega,,letalski,Agpmsg,ADJ,O,,O
-sl-68,159,8,centra,,center,Ncmsg,NOUN,O,,I-LOC
+sl-68,159,8,centra,,center,Ncmsg,NOUN,O,,O
 sl-68,159,9,",",,",",Z,PUNCT,O,,O
 sl-68,159,10,če,,če,Cs,SCONJ,O,,O
 sl-68,159,11,ne,,ne,Q,PART,O,,O
@@ -3275,7 +3275,7 @@ sl-68,164,1,Kam,,kam,Rgp,ADV,O,,O
 sl-68,164,2,gre,,iti,Vmbr3s,VERB,O,,O
 sl-68,164,3,direktor,,direktor,Ncmsn,NOUN,O,,O
 sl-68,164,4,turistične,,turističen,Agpfsg,ADJ,O,,O
-sl-68,164,5,agencije,,agencija,Ncfsg,NOUN,O,,B-ORG
+sl-68,164,5,agencije,,agencija,Ncfsg,NOUN,O,,O
 sl-68,164,6,na,,na,Sa,ADP,O,,O
 sl-68,164,7,letni,,leten,Agpmsay,ADJ,O,,O
 sl-68,164,8,dopust,,dopust,Ncmsan,NOUN,O,,O
@@ -3298,7 +3298,7 @@ sl-68,166,2,tudi,,tudi,Q,PART,O,,O
 sl-68,166,3,otroke,,otrok,Ncmpa,NOUN,O,,O
 sl-68,166,4,vprašamo,,vprašati,Vmer1p,VERB,O,,O
 sl-68,166,5,-,,-,Z,PUNCT,O,,O
-sl-68,166,6,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-68,166,6,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-68,166,7,so,,biti,Va-r3p-n,AUX,O,,O
 sl-68,166,8,že,,že,Q,PART,O,,O
 sl-68,166,9,dovolj,,dovolj,Rgp,DET,O,,O

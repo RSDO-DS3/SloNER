@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-38-2,0,1,Pogrešate,,pogrešati,Vmpr2p,VERB,O,,O
 sl-38-2,0,2,sneg,,sneg,Ncmsan,NOUN,O,,O
 sl-38-2,0,3,?,,?,Z,PUNCT,O,,O
@@ -14,7 +14,7 @@ sl-38-2,2,1,Zadnje,,zadnji,Agpmpa,ADJ,O,,O
 sl-38-2,2,2,dni,,dan,Ncmpa,NOUN,O,,O
 sl-38-2,2,3,se,,se,Px------y,PRON,O,,O
 sl-38-2,2,4,številni,,številen,Agpmpn,ADJ,O,,O
-sl-38-2,2,5,-,,-,Z,PUNCT,O,,B-LOC
+sl-38-2,2,5,-,,-,Z,PUNCT,O,,O
 sl-38-2,2,6,ne,,ne,Q,PART,O,,O
 sl-38-2,2,7,samo,,samo,Q,PART,O,,O
 sl-38-2,2,8,žičničarji,,žičničar,Ncmpn,NOUN,O,,O
@@ -223,7 +223,7 @@ sl-38-2,11,1,Višina,,višina,Ncfsn,NOUN,O,,O
 sl-38-2,11,2,snežne,,snežen,Agpfsg,ADJ,O,,O
 sl-38-2,11,3,odeje,,odeja,Ncfsg,NOUN,O,,O
 sl-38-2,11,4,v,,v,Sl,ADP,O,,O
-sl-38-2,11,5,Evropi,Evropa,Evropa,Npfsl,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-38-2,11,5,Evropi,Evropa,Evropa,Npfsl,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-38-2,11,6,.,,.,Z,PUNCT,O,,O
 sl-38-2,12,1,Na,,na,Sl,ADP,O,,O
 sl-38-2,12,2,karti,,karta,Ncfsl,NOUN,O,,O

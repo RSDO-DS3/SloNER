@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-71,0,1,Notorična,,notoričen,Agpfsn,ADJ,O,,O
 sl-71,0,2,slepa,,slep,Agpfsn,ADJ,O,,O
 sl-71,0,3,potnica,,potnica,Ncfsn,NOUN,O,,O
@@ -7,7 +7,7 @@ sl-71,1,2,Jean,Jean,Jean,Npfsn,PROPN,I-PER,PER-Marilyn-Jean-Hartman,I-PER
 sl-71,1,3,Hartman,Hartman,Hartman,Npfsn,PROPN,I-PER,PER-Marilyn-Jean-Hartman,I-PER
 sl-71,1,4,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-71,1,5,razkrila,,razkriti,Vmep-sf,VERB,O,,O
-sl-71,1,6,resnih,,resen,Agpfpg,ADJ,O,,I-LOC
+sl-71,1,6,resnih,,resen,Agpfpg,ADJ,O,,O
 sl-71,1,7,varnostnih,,varnosten,Agpfpg,ADJ,O,,O
 sl-71,1,8,lukenj,,luknja,Ncfpg,NOUN,O,,O
 sl-71,1,9,na,,na,Sl,ADP,O,,O
@@ -32,7 +32,7 @@ sl-71,2,11,.,,.,Z,PUNCT,O,,O
 sl-71,3,1,Večinoma,,večinoma,Rgp,ADV,O,,O
 sl-71,3,2,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-71,3,3,je,,biti,Va-r3s-n,AUX,O,,O
-sl-71,3,4,to,,ta,Pd-nsn,DET,O,,B-PER
+sl-71,3,4,to,,ta,Pd-nsn,DET,O,,O
 sl-71,3,5,uspelo,,uspeti,Vmep-sn,VERB,O,,O
 sl-71,3,6,preprečiti,,preprečiti,Vmen,VERB,O,,O
 sl-71,3,7,.,,.,Z,PUNCT,O,,O
@@ -93,7 +93,7 @@ sl-71,7,6,uspel,,uspeti,Vmep-sm,VERB,O,,O
 sl-71,7,7,največji,,velik,Agsmsny,ADJ,O,,O
 sl-71,7,8,podvig,,podvig,Ncmsn,NOUN,O,,O
 sl-71,7,9,.,,.,Z,PUNCT,O,,O
-sl-71,8,1,Brez,,brez,Sg,ADP,O,,B-ORG
+sl-71,8,1,Brez,,brez,Sg,ADP,O,,O
 sl-71,8,2,vozovnice,,vozovnica,Ncfsg,NOUN,O,,O
 sl-71,8,3,in,,in,Cc,CCONJ,O,,O
 sl-71,8,4,potnega,,poten,Agpmsg,ADJ,O,,O
@@ -104,14 +104,14 @@ sl-71,8,8,na,,na,Sl,ADP,O,,O
 sl-71,8,9,letališču,letališče,letališče,Ncnsl,NOUN,B-LOC,LOC-O'Hare-International-Airport,B-LOC
 sl-71,8,10,O,O,o,Sl,ADP,I-LOC,LOC-O'Hare-International-Airport,I-LOC
 sl-71,8,11,’,’,’,Z,PUNCT,I-LOC,LOC-O'Hare-International-Airport,I-LOC
-sl-71,8,12,Hare,Hare,Hare,Npmsn,PROPN,I-LOC,LOC-O'Hare-International-Airport,O
+sl-71,8,12,Hare,Hare,Hare,Npmsn,PROPN,I-LOC,LOC-O'Hare-International-Airport,I-LOC
 sl-71,8,13,v,,v,Sl,ADP,O,,O
-sl-71,8,14,Chicagu,Chicago,Chicago,Npmsl,PROPN,B-LOC,GPE-Chicago,O
+sl-71,8,14,Chicagu,Chicago,Chicago,Npmsl,PROPN,B-LOC,GPE-Chicago,B-LOC
 sl-71,8,15,vkrcala,,vkrcati,Vmep-sf,VERB,O,,O
 sl-71,8,16,na,,na,Sa,ADP,O,,O
 sl-71,8,17,čezatlantski,,čezatlantski,Agpmsay,ADJ,O,,O
 sl-71,8,18,let,,let,Ncmsan,NOUN,O,,O
-sl-71,8,19,British,British,British,Npmsn,PROPN,B-ORG,ORG-British-Airways,O
+sl-71,8,19,British,British,British,Npmsn,PROPN,B-ORG,ORG-British-Airways,B-ORG
 sl-71,8,20,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-British-Airways,I-ORG
 sl-71,8,21,in,,in,Cc,CCONJ,O,,O
 sl-71,8,22,odpotovala,,odpotovati,Vmep-sf,VERB,O,,O
@@ -119,7 +119,7 @@ sl-71,8,23,v,,v,Sa,ADP,O,,O
 sl-71,8,24,London,London,London,Npmsan,PROPN,B-LOC,GPE-London,B-LOC
 sl-71,8,25,.,,.,Z,PUNCT,O,,O
 sl-71,9,1,Na,,na,Sl,ADP,O,,O
-sl-71,9,2,letališču,letališče,letališče,Ncnsl,NOUN,B-LOC,LOC-Heathrow-Airport,B-LOC
+sl-71,9,2,letališču,letališče,letališče,Ncnsl,NOUN,B-LOC,LOC-Heathrow-Airport,O
 sl-71,9,3,Heathrow,Heathrow,Heathrow,Npmsn,PROPN,I-LOC,LOC-Heathrow-Airport,I-LOC
 sl-71,9,4,so,,biti,Va-r3p-n,AUX,O,,O
 sl-71,9,5,ji,,on,Pp3fsd--y,PRON,O,,O
@@ -199,7 +199,7 @@ sl-71,13,11,tedaj,,tedaj,Rgp,ADV,O,,O
 sl-71,13,12,nemočen,,nemočen,Agpmsnn,ADJ,O,,O
 sl-71,13,13,sodnik,,sodnik,Ncmsn,NOUN,O,,O
 sl-71,13,14,William,William,William,Npmsn,PROPN,B-PER,PER-William-Raines,B-PER
-sl-71,13,15,Raines,Raines,Raines,Npmsn,PROPN,I-PER,PER-William-Raines,B-PER
+sl-71,13,15,Raines,Raines,Raines,Npmsn,PROPN,I-PER,PER-William-Raines,I-PER
 sl-71,13,16,.,,.,Z,PUNCT,O,,O
 sl-71,14,1,Domneval,,domnevati,Vmpp-sm,VERB,O,,O
 sl-71,14,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -211,7 +211,7 @@ sl-71,14,7,odvisna,,odvisen,Agpfsn,ADJ,O,,O
 sl-71,14,8,od,,od,Sg,ADP,O,,O
 sl-71,14,9,pozornosti,,pozornost,Ncfsg,NOUN,O,,O
 sl-71,14,10,.,,.,Z,PUNCT,O,,O
-sl-71,15,1,Hartmanova,Hartman,Hartmanov,Aspfsn,ADJ,B-PER,PER-Marilyn-Jean-Hartman,O
+sl-71,15,1,Hartmanova,Hartman,Hartmanov,Aspfsn,ADJ,B-PER,PER-Marilyn-Jean-Hartman,B-PER
 sl-71,15,2,mu,,on,Pp3msd--y,PRON,O,,O
 sl-71,15,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-71,15,4,potožila,,potožiti,Vmep-sf,VERB,O,,O
@@ -232,7 +232,7 @@ sl-71,15,18,pobegne,,pobegniti,Vmer3s,VERB,O,,O
 sl-71,15,19,z,,z,Si,ADP,O,,O
 sl-71,15,20,letalom,,letalo,Ncnsi,NOUN,O,,O
 sl-71,15,21,.,,.,Z,PUNCT,O,,O
-sl-71,16,1,Raines,Raines,Raines,Npmsn,PROPN,B-PER,PER-William-Raines,O
+sl-71,16,1,Raines,Raines,Raines,Npmsn,PROPN,B-PER,PER-William-Raines,B-PER
 sl-71,16,2,jo,,on,Pp3fsa--y,PRON,O,,O
 sl-71,16,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-71,16,4,tedaj,,tedaj,Rgp,ADV,O,,O
@@ -253,13 +253,13 @@ sl-71,17,2,pa,,pa,Cc,CCONJ,O,,O
 sl-71,17,3,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-71,17,4,učinkovalo,,učinkovati,Vmpp-sn,VERB,O,,O
 sl-71,17,5,.,,.,Z,PUNCT,O,,O
-sl-71,18,1,Hartmanova,Hartman,Hartmanov,Aspfsn,ADJ,B-PER,PER-Marilyn-Jean-Hartman,O
+sl-71,18,1,Hartmanova,Hartman,Hartmanov,Aspfsn,ADJ,B-PER,PER-Marilyn-Jean-Hartman,B-PER
 sl-71,18,2,bržkone,,bržkone,Q,PART,O,,O
 sl-71,18,3,boleha,,bolehati,Vmpr3s,VERB,O,,O
 sl-71,18,4,za,,za,Sa,ADP,O,,O
 sl-71,18,5,obliko,,oblika,Ncfsa,NOUN,O,,O
 sl-71,18,6,paranoidne,,paranoiden,Agpfsg,ADJ,O,,O
-sl-71,18,7,shizofrenije,,shizofrenija,Ncfsg,NOUN,O,,B-ORG
+sl-71,18,7,shizofrenije,,shizofrenija,Ncfsg,NOUN,O,,O
 sl-71,18,8,",",,",",Z,PUNCT,O,,O
 sl-71,18,9,zaradi,,zaradi,Sg,ADP,O,,O
 sl-71,18,10,neozdravljive,,neozdravljiv,Agpfsg,ADJ,O,,O
@@ -278,9 +278,9 @@ sl-71,18,22,na,,na,Sa,ADP,O,,O
 sl-71,18,23,letala,,letalo,Ncnpa,NOUN,O,,O
 sl-71,18,24,.,,.,Z,PUNCT,O,,O
 sl-71,19,1,»,,»,Z,PUNCT,O,,O
-sl-71,19,2,Marilyn,Marilyn,Marilyn,Npfsn,PROPN,B-PER,PER-Marilyn-Jean-Hartman,O
+sl-71,19,2,Marilyn,Marilyn,Marilyn,Npfsn,PROPN,B-PER,PER-Marilyn-Jean-Hartman,B-PER
 sl-71,19,3,Jean,Jean,Jean,Npmsn,PROPN,I-PER,PER-Marilyn-Jean-Hartman,I-PER
-sl-71,19,4,Hartman,Hartman,Hartman,Npmsn,PROPN,I-PER,PER-Marilyn-Jean-Hartman,O
+sl-71,19,4,Hartman,Hartman,Hartman,Npmsn,PROPN,I-PER,PER-Marilyn-Jean-Hartman,I-PER
 sl-71,19,5,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-71,19,6,razkrila,,razkriti,Vmep-sf,VERB,O,,O
 sl-71,19,7,resnih,,resen,Agpfpg,ADJ,O,,O

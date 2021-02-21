@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-166,0,1,Zvzednico,,zvzednica,Ncfsa,NOUN,O,,O
 sl-166,0,2,Instagrama,Instagram,Instagram,Npmsg,PROPN,B-PRO,PRO-Instagram,B-PRO
 sl-166,0,3,prijeli,,prijeti,Vmep-pm,VERB,O,,O

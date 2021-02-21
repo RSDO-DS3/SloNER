@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-54,0,1,Kdo,,kdo,Pq-msn,PRON,O,,O
 sl-54,0,2,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-54,0,3,jokal,,jokati,Vmpp-sm,VERB,O,,O
@@ -48,7 +48,7 @@ sl-54,2,11,na,,na,Sa,ADP,O,,O
 sl-54,2,12,svoje,,svoj,Px-mpa,DET,O,,O
 sl-54,2,13,stroške,,strošek,Ncmpa,NOUN,O,,O
 sl-54,2,14,.,,.,Z,PUNCT,O,,O
-sl-54,3,1,Odkar,,odkar,Cs,SCONJ,O,,I-PER
+sl-54,3,1,Odkar,,odkar,Cs,SCONJ,O,,O
 sl-54,3,2,je,,biti,Va-r3s-n,VERB,O,,O
 sl-54,3,3,torej,,torej,Rgp,ADV,O,,O
 sl-54,3,4,v,,v,Sa,ADP,O,,O
@@ -137,7 +137,7 @@ sl-54,4,43,potniki,,potnik,Ncmpn,NOUN,O,,O
 sl-54,4,44,potujejo,,potovati,Vmpr3p,VERB,O,,O
 sl-54,4,45,v,,v,Sa,ADP,O,,O
 sl-54,4,46,San,San,San,Npmsan,PROPN,B-LOC,GPE-San-Francisco,B-LOC
-sl-54,4,47,Francisco,Francisco,Francisco,Npmsan,PROPN,I-LOC,GPE-San-Francisco,B-LOC
+sl-54,4,47,Francisco,Francisco,Francisco,Npmsan,PROPN,I-LOC,GPE-San-Francisco,I-LOC
 sl-54,4,48,in,,in,Cc,CCONJ,O,,O
 sl-54,4,49,nazaj,,nazaj,Rgp,ADV,O,,O
 sl-54,4,50,v,,v,Sa,ADP,O,,O
@@ -158,7 +158,7 @@ sl-54,5,8,lahko,,lahko,Rgp,ADV,O,,O
 sl-54,5,9,odpotujejo,,odpotovati,Vmer3p,VERB,O,,O
 sl-54,5,10,v,,v,Sa,ADP,O,,O
 sl-54,5,11,New,New,New,Npmsn,PROPN,B-LOC,GPE-New-York,B-LOC
-sl-54,5,12,York,York,York,Npmsan,PROPN,I-LOC,GPE-New-York,B-LOC
+sl-54,5,12,York,York,York,Npmsan,PROPN,I-LOC,GPE-New-York,I-LOC
 sl-54,5,13,prek,,prek,Sg,ADP,O,,O
 sl-54,5,14,Frankfurta,Frankfurt,Frankfurt,Npmsg,PROPN,B-LOC,GPE-Frankfurt-am-Main,B-LOC
 sl-54,5,15,ali,,ali,Cc,CCONJ,O,,O
@@ -363,7 +363,7 @@ sl-54,12,4,ob,,ob,Sl,ADP,O,,O
 sl-54,12,5,tem,,ta,Pd-nsl,DET,O,,O
 sl-54,12,6,najpomembnejša,,pomemben,Agsfsn,ADJ,O,,O
 sl-54,12,7,.,,.,Z,PUNCT,O,,O
-sl-54,13,1,O,,o,Sl,ADP,O,,I-PER
+sl-54,13,1,O,,o,Sl,ADP,O,,O
 sl-54,13,2,tem,,ta,Pd-nsl,DET,O,,O
 sl-54,13,3,zgovorno,,zgovorno,Rgp,ADV,O,,O
 sl-54,13,4,pričajo,,pričati,Vmpr3p,VERB,O,,O
@@ -487,7 +487,7 @@ sl-54,16,30,in,,in,Cc,CCONJ,O,,O
 sl-54,16,31,konkurentov,,konkurent,Ncmpg,NOUN,O,,O
 sl-54,16,32,",",,",",Z,PUNCT,O,,O
 sl-54,16,33,Michaela,Michael,Michael,Npmsg,PROPN,B-PER,PER-Michael-O'Leary,B-PER
-sl-54,16,34,O'Learyja,O'Leary,O'Leary,Npmsg,PROPN,I-PER,PER-Michael-O'Leary,O
+sl-54,16,34,O'Learyja,O'Leary,O'Leary,Npmsg,PROPN,I-PER,PER-Michael-O'Leary,I-PER
 sl-54,16,35,:,,:,Z,PUNCT,O,,O
 sl-54,16,36,»,,»,Z,PUNCT,O,,O
 sl-54,16,37,Naš,,naš,Ps1msnp,DET,O,,O
@@ -551,10 +551,10 @@ sl-54,16,94,delavskih,,delavski,Agpfpg,ADJ,O,,O
 sl-54,16,95,pravic,,pravica,Ncfpg,NOUN,O,,O
 sl-54,16,96,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-54,16,97,ob,,ob,Sl,ADP,O,,O
-sl-54,16,98,tem,,ta,Pd-nsl,DET,O,,O
-sl-54,16,99,poteptala,,poteptati,Vmep-sf,VERB,O,,O
-sl-54,16,100,),,),Z,PUNCT,O,,O
-sl-54,16,101,.,,.,Z,PUNCT,O,,O
+sl-54,16,98,tem,,ta,Pd-nsl,DET,O,,
+sl-54,16,99,poteptala,,poteptati,Vmep-sf,VERB,O,,
+sl-54,16,100,),,),Z,PUNCT,O,,
+sl-54,16,101,.,,.,Z,PUNCT,O,,
 sl-54,17,1,Tisti,,tisti,Pd-mpn,DET,O,,O
 sl-54,17,2,letalski,,letalski,Agpmpn,ADJ,O,,O
 sl-54,17,3,prevozniki,,prevoznik,Ncmpn,NOUN,O,,O
@@ -600,7 +600,7 @@ sl-54,19,1,Po,,po,Sl,ADP,O,,O
 sl-54,19,2,podatkih,,podatek,Ncmpl,NOUN,O,,O
 sl-54,19,3,tednika,,tednik,Ncmsg,NOUN,O,,O
 sl-54,19,4,The,The,the,Xf,X,B-PRO,PRO-The-Economist,B-PRO
-sl-54,19,5,Economist,Economist,Economist,Npmsn,PROPN,I-PRO,PRO-The-Economist,B-PRO
+sl-54,19,5,Economist,Economist,Economist,Npmsn,PROPN,I-PRO,PRO-The-Economist,I-PRO
 sl-54,19,6,trenutno,,trenutno,Rgp,ADV,O,,O
 sl-54,19,7,v,,v,Sl,ADP,O,,O
 sl-54,19,8,Evropi,Evropa,Evropa,Npfsl,PROPN,B-LOC,LOC-Europe,B-LOC
@@ -614,7 +614,7 @@ sl-54,19,15,linijami,,linija,Ncfpi,NOUN,O,,O
 sl-54,19,16,",",,",",Z,PUNCT,O,,O
 sl-54,19,17,v,,v,Sl,ADP,O,,O
 sl-54,19,18,Združenih,Združene,združen,Appfpl,ADJ,B-LOC,GPE-USA,B-LOC
-sl-54,19,19,državah,države,država,Ncfpl,NOUN,I-LOC,GPE-USA,B-LOC
+sl-54,19,19,državah,države,država,Ncfpl,NOUN,I-LOC,GPE-USA,I-LOC
 sl-54,19,20,pa,,pa,Cc,CCONJ,O,,O
 sl-54,19,21,59.,,59.,Mdo,NUM,O,,O
 sl-54,20,1,Še,,še,Q,PART,O,,O
@@ -683,7 +683,7 @@ sl-54,21,36,Cobalt,Cobalt,Cobalt,Npmsn,PROPN,B-ORG,ORG-Cobalt-Air,B-ORG
 sl-54,21,37,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Cobalt-Air,I-ORG
 sl-54,21,38,",",,",",Z,PUNCT,O,,O
 sl-54,21,39,nemški,,nemški,Agpmsny,ADJ,O,,O
-sl-54,21,40,Azur,Azur,Azur,Npmsn,PROPN,B-ORG,ORG-Azur-Air,I-ORG
+sl-54,21,40,Azur,Azur,Azur,Npmsn,PROPN,B-ORG,ORG-Azur-Air,B-ORG
 sl-54,21,41,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Azur-Air,I-ORG
 sl-54,21,42,",",,",",Z,PUNCT,O,,O
 sl-54,21,43,litovski,,litovski,Agpmsny,ADJ,O,,O

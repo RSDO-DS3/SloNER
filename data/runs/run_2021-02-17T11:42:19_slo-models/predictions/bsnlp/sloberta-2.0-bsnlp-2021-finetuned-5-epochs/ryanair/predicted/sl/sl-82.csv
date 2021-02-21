@@ -1,8 +1,8 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-82,0,1,(,,(,Z,PUNCT,O,,O
 sl-82,0,2,VIDEO,,video,Ncmsn,NOUN,O,,O
 sl-82,0,3,),,),Z,PUNCT,O,,O
-sl-82,0,4,Incident,,incident,Ncmsn,NOUN,O,,B-PRO
+sl-82,0,4,Incident,,incident,Ncmsn,NOUN,O,,O
 sl-82,0,5,na,,na,Sl,ADP,O,,O
 sl-82,0,6,letalu,,letalo,Ncnsl,NOUN,O,,O
 sl-82,0,7,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,B-ORG
@@ -15,7 +15,7 @@ sl-82,0,13,odgovarjal,,odgovarjati,Vmpp-sm,VERB,O,,O
 sl-82,1,1,Nizkocenovna,,nizkocenoven,Agpfsn,ADJ,O,,O
 sl-82,1,2,letalska,,letalski,Agpfsn,ADJ,O,,O
 sl-82,1,3,družba,,družba,Ncfsn,NOUN,O,,O
-sl-82,1,4,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-82,1,4,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-82,1,5,se,,se,Px------y,PRON,O,,O
 sl-82,1,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-82,1,7,znašla,,znajti,Vmep-sf,VERB,O,,O
@@ -107,7 +107,7 @@ sl-82,5,6,",",,",",Z,PUNCT,O,,O
 sl-82,5,7,pa,,pa,Cc,CCONJ,O,,O
 sl-82,5,8,ji,,on,Pp3fsd--y,PRON,O,,O
 sl-82,5,9,je,,biti,Va-r3s-n,AUX,O,,O
-sl-82,5,10,dejal,,dejati,Vmep-sm,VERB,O,,B-PRO
+sl-82,5,10,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-82,5,11,:,,:,Z,PUNCT,O,,O
 sl-82,5,12,"""",,"""",Z,PUNCT,O,,O
 sl-82,5,13,Ne,,ne,Q,PART,O,,O
@@ -199,7 +199,7 @@ sl-82,8,31,umaknila,,umakniti,Vmep-sf,VERB,O,,O
 sl-82,8,32,",",,",",Z,PUNCT,O,,O
 sl-82,8,33,da,,da,Cs,SCONJ,O,,O
 sl-82,8,34,je,,biti,Va-r3s-n,AUX,O,,O
-sl-82,8,35,lahko,,lahko,Rgp,ADV,O,,B-ORG
+sl-82,8,35,lahko,,lahko,Rgp,ADV,O,,O
 sl-82,8,36,sedel,,sedeti,Vmpp-sm,VERB,O,,O
 sl-82,8,37,na,,na,Sa,ADP,O,,O
 sl-82,8,38,svoj,,svoj,Px-msa,DET,O,,O
@@ -400,7 +400,7 @@ sl-82,16,19,napadene,,napaden,Appfsg,ADJ,O,,O
 sl-82,16,20,ženske,,ženska,Ncfsg,NOUN,O,,O
 sl-82,16,21,.,,.,Z,PUNCT,O,,O
 sl-82,17,1,"""",,"""",Z,PUNCT,O,,O
-sl-82,17,2,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-82,17,2,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-82,17,3,pogrnil,,pogrniti,Vmep-sm,VERB,O,,O
 sl-82,17,4,na,,na,Sl,ADP,O,,O
 sl-82,17,5,celotni,,celoten,Agpfsl,ADJ,O,,O
@@ -431,7 +431,7 @@ sl-82,18,22,pohvalili,,pohvaliti,Vmep-pm,VERB,O,,O
 sl-82,18,23,.,,.,Z,PUNCT,O,,O
 sl-82,19,1,No,,no,Q,PART,O,,O
 sl-82,19,2,",",,",",Z,PUNCT,O,,O
-sl-82,19,3,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-82,19,3,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-82,19,4,človeka,,človek,Ncmsg,NOUN,O,,O
 sl-82,19,5,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-82,19,6,odstranil,,odstraniti,Vmep-sm,VERB,O,,O
@@ -474,7 +474,7 @@ sl-82,22,1,Danes,,danes,Rgp,ADV,O,,O
 sl-82,22,2,pa,,pa,Cc,CCONJ,O,,O
 sl-82,22,3,britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-82,22,4,časopis,,časopis,Ncmsn,NOUN,O,,O
-sl-82,22,5,Indepentent,Independent,Indepentent,Npmsn,PROPN,B-PRO,PRO-The-Independent,O
+sl-82,22,5,Indepentent,Independent,Indepentent,Npmsn,PROPN,B-PRO,PRO-The-Independent,B-PRO
 sl-82,22,6,poroča,,poročati,Vmpr3s,VERB,O,,O
 sl-82,22,7,",",,",",Z,PUNCT,O,,O
 sl-82,22,8,da,,da,Cs,SCONJ,O,,O
@@ -493,7 +493,7 @@ sl-82,23,3,",",,",",Z,PUNCT,O,,O
 sl-82,23,4,sicer,,sicer,Q,PART,O,,O
 sl-82,23,5,član,,član,Ncmsn,NOUN,O,,O
 sl-82,23,6,opozicijske,,opozicijski,Agpfsg,ADJ,O,,O
-sl-82,23,7,laburistične,laburistična,laburističen,Agpfsg,ADJ,B-ORG,ORG-Labour-Party-UK,O
+sl-82,23,7,laburistične,laburistična,laburističen,Agpfsg,ADJ,B-ORG,ORG-Labour-Party-UK,B-ORG
 sl-82,23,8,stranke,stranka,stranka,Ncfsg,NOUN,I-ORG,ORG-Labour-Party-UK,I-ORG
 sl-82,23,9,in,,in,Cc,CCONJ,O,,O
 sl-82,23,10,minister,,minister,Ncmsn,NOUN,O,,O
@@ -510,7 +510,7 @@ sl-82,23,20,pravi,,praviti,Vmbr3s,VERB,O,,O
 sl-82,23,21,",",,",",Z,PUNCT,O,,O
 sl-82,23,22,da,,da,Cs,SCONJ,O,,O
 sl-82,23,23,je,,biti,Va-r3s-n,AUX,O,,O
-sl-82,23,24,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-82,23,24,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-82,23,25,pogrnil,,pogrniti,Vmep-sm,VERB,O,,O
 sl-82,23,26,na,,na,Sl,ADP,O,,O
 sl-82,23,27,celi,,cel,Agpfsl,ADJ,O,,O
@@ -554,12 +554,12 @@ sl-82,25,16,še,,še,Q,PART,O,,O
 sl-82,25,17,v,,v,Sl,ADP,O,,O
 sl-82,25,18,Španiji,Španija,Španija,Npfsl,PROPN,B-LOC,GPE-Spain,B-LOC
 sl-82,25,19,.,,.,Z,PUNCT,O,,O
-sl-82,26,1,In,,in,Cc,CCONJ,O,,B-PRO
+sl-82,26,1,In,,in,Cc,CCONJ,O,,O
 sl-82,26,2,če,,če,Cs,SCONJ,O,,O
 sl-82,26,3,bi,,biti,Va-c,AUX,O,,O
 sl-82,26,4,bila,,biti,Va-p-sf,AUX,O,,O
 sl-82,26,5,družba,,družba,Ncfsn,NOUN,O,,O
-sl-82,26,6,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-82,26,6,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-82,26,7,registrirana,,registriran,Appfsn,ADJ,O,,O
 sl-82,26,8,v,,v,Sl,ADP,O,,O
 sl-82,26,9,Veliki,Velika,velik,Agpfsl,ADJ,B-LOC,GPE-Great-Britain,B-LOC

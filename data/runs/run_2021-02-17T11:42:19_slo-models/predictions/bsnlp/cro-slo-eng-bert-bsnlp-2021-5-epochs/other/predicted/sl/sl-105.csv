@@ -1,8 +1,8 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-105,0,1,DRAMA,,drama,Ncfsn,NOUN,O,,O
 sl-105,0,2,V,,v,Sl,ADP,O,,O
 sl-105,0,3,LOGATCU,Logatec,Logatec,Npmsl,PROPN,B-LOC,GPE-Logatec,B-LOC
-sl-105,1,1,VIDEO,,video,Ncmsn,NOUN,O,,O
+sl-105,1,1,VIDEO,,video,Ncmsn,NOUN,O,,B-LOC
 sl-105,1,2,:,,:,Z,PUNCT,O,,O
 sl-105,1,3,Hude,,hud,Agpfpn,ADJ,O,,O
 sl-105,1,4,obtožbe,,obtožba,Ncfpa,NOUN,O,,O
@@ -145,9 +145,9 @@ sl-105,7,17,",",,",",Z,PUNCT,O,,O
 sl-105,7,18,da,,da,Cs,SCONJ,O,,O
 sl-105,7,19,je,,biti,Va-r3s-n,AUX,O,,O
 sl-105,7,20,bila,,biti,Va-p-sf,AUX,O,,O
-sl-105,7,21,policijska,policijska,policijski,Agpfsn,ADJ,B-ORG,ORG-Policijska-Uprava-Ljubljana,O
-sl-105,7,22,uprava,uprava,uprava,Ncfsn,NOUN,I-ORG,ORG-Policijska-Uprava-Ljubljana,O
-sl-105,7,23,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,I-ORG,ORG-Policijska-Uprava-Ljubljana,B-ORG
+sl-105,7,21,policijska,policijska,policijski,Agpfsn,ADJ,B-ORG,ORG-Policijska-Uprava-Ljubljana,B-ORG
+sl-105,7,22,uprava,uprava,uprava,Ncfsn,NOUN,I-ORG,ORG-Policijska-Uprava-Ljubljana,I-ORG
+sl-105,7,23,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,I-ORG,ORG-Policijska-Uprava-Ljubljana,I-ORG
 sl-105,7,24,v,,v,Sa,ADP,O,,O
 sl-105,7,25,sredo,,sreda,Ncfsa,NOUN,O,,O
 sl-105,7,26,okoli,,okoli,Rgp,ADV,O,,O
@@ -200,7 +200,7 @@ sl-105,9,8,njimi,,on,Pp3mpi,PRON,O,,O
 sl-105,9,9,opravili,,opraviti,Vmep-pm,VERB,O,,O
 sl-105,9,10,postopek,,postopek,Ncmsan,NOUN,O,,O
 sl-105,9,11,.,,.,Z,PUNCT,O,,O
-sl-105,10,1,Policija,,policija,Ncfsn,NOUN,O,,O
+sl-105,10,1,Policija,,policija,Ncfsn,NOUN,O,,B-ORG
 sl-105,10,2,:,,:,Z,PUNCT,O,,O
 sl-105,10,3,Med,,med,Si,ADP,O,,O
 sl-105,10,4,postopkom,,postopek,Ncmsi,NOUN,O,,O
@@ -318,8 +318,8 @@ sl-105,14,30,o,,o,Sl,ADP,O,,O
 sl-105,14,31,zadevi,,zadeva,Ncfsl,NOUN,O,,O
 sl-105,14,32,obvestili,,obvestiti,Vmep-pm,VERB,O,,O
 sl-105,14,33,Specializirano,Specializirano,specializiran,Appnsa,ADJ,B-ORG,ORG-Specializirano-Državno-Tožilstvo-Republike-Slovenije,B-ORG
-sl-105,14,34,državno,državno,državen,Agpnsa,ADJ,I-ORG,ORG-Specializirano-Državno-Tožilstvo-Republike-Slovenije,O
-sl-105,14,35,tožilstvo,tožilstvo,tožilstvo,Ncnsa,NOUN,I-ORG,ORG-Specializirano-Državno-Tožilstvo-Republike-Slovenije,O
+sl-105,14,34,državno,državno,državen,Agpnsa,ADJ,I-ORG,ORG-Specializirano-Državno-Tožilstvo-Republike-Slovenije,I-ORG
+sl-105,14,35,tožilstvo,tožilstvo,tožilstvo,Ncnsa,NOUN,I-ORG,ORG-Specializirano-Državno-Tožilstvo-Republike-Slovenije,I-ORG
 sl-105,14,36,",",,",",Z,PUNCT,O,,O
 sl-105,14,37,prav,,prav,Q,PART,O,,O
 sl-105,14,38,tako,,tako,Rgp,ADV,O,,O

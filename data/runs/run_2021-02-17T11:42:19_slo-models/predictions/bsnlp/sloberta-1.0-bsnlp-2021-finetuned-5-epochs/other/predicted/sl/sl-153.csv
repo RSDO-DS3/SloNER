@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-153,0,1,Obtožena,,obtožen,Appfsn,ADJ,O,,O
 sl-153,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-153,0,3,",",,",",Z,PUNCT,O,,O
@@ -28,21 +28,21 @@ sl-153,1,4,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-153,1,5,priznala,,priznati,Vmep-sf,VERB,O,,O
 sl-153,1,6,",",,",",Z,PUNCT,O,,O
 sl-153,1,7,da,,da,Cs,SCONJ,O,,O
-sl-153,1,8,je,,biti,Va-r3s-n,AUX,O,,B-PER
+sl-153,1,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-153,1,9,namenoma,,namenoma,Rgp,ADV,O,,O
 sl-153,1,10,zabodla,,zabosti,Vmep-sf,VERB,O,,O
 sl-153,1,11,svojega,,svoj,Px-msa,DET,O,,O
 sl-153,1,12,zunajzakonskega,,zunajzakonski,Agpmsa,ADJ,O,,O
 sl-153,1,13,partnerja,,partner,Ncmsay,NOUN,O,,O
 sl-153,1,14,.,,.,Z,PUNCT,O,,O
-sl-153,2,1,Maja,Maja,Maja,Npfsn,PROPN,B-PER,PER-Maja-Zajc,B-PER
+sl-153,2,1,Maja,Maja,Maja,Npfsn,PROPN,B-PER,PER-Maja-Zajc,O
 sl-153,2,2,Zajc,Zajc,Zajc,Npfsn,PROPN,I-PER,PER-Maja-Zajc,I-PER
 sl-153,2,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-153,2,4,obtožena,,obtožen,Appfsn,ADJ,O,,O
 sl-153,2,5,poskusa,,poskus,Ncmsg,NOUN,O,,O
 sl-153,2,6,uboja,,uboj,Ncmsg,NOUN,O,,O
 sl-153,2,7,",",,",",Z,PUNCT,O,,O
-sl-153,2,8,ker,,ker,Cs,SCONJ,O,,B-PER
+sl-153,2,8,ker,,ker,Cs,SCONJ,O,,O
 sl-153,2,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-153,2,10,po,,po,Sl,ADP,O,,O
 sl-153,2,11,mnenju,,mnenje,Ncnsl,NOUN,O,,O
@@ -95,7 +95,7 @@ sl-153,4,19,pred,,pred,Si,ADP,O,,O
 sl-153,4,20,ljubljansko,,ljubljanski,Agpfsi,ADJ,O,,O
 sl-153,4,21,sodnico,,sodnica,Ncfsi,NOUN,O,,O
 sl-153,4,22,Ano,Ana,Ana,Npfsi,PROPN,B-PER,PER-Ana-Testen,B-PER
-sl-153,4,23,Testen,Testen,Testen,Npfsi,PROPN,I-PER,PER-Ana-Testen,B-PER
+sl-153,4,23,Testen,Testen,Testen,Npfsi,PROPN,I-PER,PER-Ana-Testen,I-PER
 sl-153,4,24,povedala,,povedati,Vmep-sf,VERB,O,,O
 sl-153,4,25,44-letna,,4mvleten,Agpfsn,ADJ,O,,O
 sl-153,4,26,obtoženka,,obtoženka,Ncfsn,NOUN,O,,O
@@ -106,7 +106,7 @@ sl-153,4,30,Ljubljane,Ljubljana,Ljubljana,Npfsg,PROPN,B-LOC,GPE-Ljubljana,B-LOC
 sl-153,4,31,.,,.,Z,PUNCT,O,,O
 sl-153,5,1,Tožilec,,tožilec,Ncmsn,NOUN,O,,O
 sl-153,5,2,Matej,Matej,Matej,Npmsn,PROPN,B-PER,PER-Matej-Peterca,B-PER
-sl-153,5,3,Peterca,Peterca,Peterca,Npmsn,PROPN,I-PER,PER-Matej-Peterca,B-PER
+sl-153,5,3,Peterca,Peterca,Peterca,Npmsn,PROPN,I-PER,PER-Matej-Peterca,I-PER
 sl-153,5,4,ji,,on,Pp3fsd--y,PRON,O,,O
 sl-153,5,5,očita,,očitati,Vmpr3s,VERB,O,,O
 sl-153,5,6,poskus,,poskus,Ncmsan,NOUN,O,,O
@@ -174,7 +174,7 @@ sl-153,7,17,krivde,,krivda,Ncfsg,NOUN,O,,O
 sl-153,7,18,",",,",",Z,PUNCT,O,,O
 sl-153,7,19,je,,biti,Va-r3s-n,AUX,O,,O
 sl-153,7,20,tožilec,,tožilec,Ncmsn,NOUN,O,,O
-sl-153,7,21,Peterca,Peterca,Peterca,Npmsn,PROPN,B-PER,PER-Matej-Peterca,O
+sl-153,7,21,Peterca,Peterca,Peterca,Npmsn,PROPN,B-PER,PER-Matej-Peterca,B-PER
 sl-153,7,22,za,,za,Sa,ADP,O,,O
 sl-153,7,23,obtoženko,,obtoženka,Ncfsa,NOUN,O,,O
 sl-153,7,24,predlagal,,predlagati,Vmbp-sm,VERB,O,,O
@@ -189,7 +189,7 @@ sl-153,7,32,krivdo,,krivda,Ncfsa,NOUN,O,,O
 sl-153,7,33,po,,po,Sl,ADP,O,,O
 sl-153,7,34,obtožnici,,obtožnica,Ncfsl,NOUN,O,,O
 sl-153,7,35,.,,.,Z,PUNCT,O,,O
-sl-153,8,1,Zakon,,zakon,Ncmsn,NOUN,O,,O
+sl-153,8,1,Zakon,,zakon,Ncmsn,NOUN,O,,B-LOC
 sl-153,8,2,namreč,,namreč,Cc,CCONJ,O,,O
 sl-153,8,3,za,,za,Sa,ADP,O,,O
 sl-153,8,4,uboj,,uboj,Ncmsan,NOUN,O,,O
@@ -249,7 +249,7 @@ sl-153,10,23,24.,,24.,Mdo,NUM,O,,O
 sl-153,10,24,januarja,,januar,Ncmsg,NOUN,O,,O
 sl-153,10,25,pred,,pred,Si,ADP,O,,O
 sl-153,10,26,sodnico,,sodnica,Ncfsi,NOUN,O,,O
-sl-153,10,27,Testenovo,Testen,Testenov,Aspnsn,ADJ,B-PER,PER-Ana-Testen,O
+sl-153,10,27,Testenovo,Testen,Testenov,Aspnsn,ADJ,B-PER,PER-Ana-Testen,B-PER
 sl-153,10,28,začelo,,začeti,Vmep-sn,VERB,O,,O
 sl-153,10,29,sojenje,,sojenje,Ncnsn,NOUN,O,,O
 sl-153,10,30,.,,.,Z,PUNCT,O,,O
@@ -265,8 +265,8 @@ sl-153,11,9,da,,da,Cs,SCONJ,O,,O
 sl-153,11,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-153,11,11,pozvala,,pozvati,Vmep-sf,VERB,O,,O
 sl-153,11,12,oškodovanca,,oškodovanec,Ncmsay,NOUN,O,,O
-sl-153,11,13,Iztoka,Iztok,Iztok,Npmsay,PROPN,B-PER,PER-Iztok-Štupica,O
-sl-153,11,14,Štupico,Štupica,Štupica,Npmsay,PROPN,I-PER,PER-Iztok-Štupica,O
+sl-153,11,13,Iztoka,Iztok,Iztok,Npmsay,PROPN,B-PER,PER-Iztok-Štupica,B-PER
+sl-153,11,14,Štupico,Štupica,Štupica,Npmsay,PROPN,I-PER,PER-Iztok-Štupica,I-PER
 sl-153,11,15,",",,",",Z,PUNCT,O,,O
 sl-153,11,16,če,,če,Cs,SCONJ,O,,O
 sl-153,11,17,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -281,7 +281,7 @@ sl-153,11,25,v,,v,Sl,ADP,O,,O
 sl-153,11,26,ženskem,ženski,ženski,Agpmsl,ADJ,B-ORG,ORG-Ig-Prison,O
 sl-153,11,27,zaporu,zapor,zapor,Ncmsl,NOUN,I-ORG,ORG-Ig-Prison,O
 sl-153,11,28,na,na,na,Sl,ADP,I-ORG,ORG-Ig-Prison,O
-sl-153,11,29,Igu,Igu,Ig,Npmsl,PROPN,I-ORG,ORG-Ig-Prison,O
+sl-153,11,29,Igu,Igu,Ig,Npmsl,PROPN,I-ORG,ORG-Ig-Prison,B-LOC
 sl-153,11,30,in,,in,Cc,CCONJ,O,,O
 sl-153,11,31,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-153,11,32,jo,,on,Pp3fsa--y,PRON,O,,O
@@ -330,7 +330,7 @@ sl-153,13,8,obtožena,,obtožen,Appmdn,ADJ,O,,O
 sl-153,13,9,in,,in,Cc,CCONJ,O,,O
 sl-153,13,10,njen,,njen,Ps3msnsf,DET,O,,O
 sl-153,13,11,partner,,partner,Ncmsn,NOUN,O,,O
-sl-153,13,12,Štupica,Štupica,Štupica,Npmsn,PROPN,B-PER,PER-Iztok-Štupica,O
+sl-153,13,12,Štupica,Štupica,Štupica,Npmsn,PROPN,B-PER,PER-Iztok-Štupica,B-PER
 sl-153,13,13,",",,",",Z,PUNCT,O,,O
 sl-153,13,14,na,,na,Sl,ADP,O,,O
 sl-153,13,15,naslednji,,naslednji,Agpfsl,ADJ,O,,O
@@ -393,7 +393,7 @@ sl-153,15,14,dejanje,,dejanje,Ncnsa,NOUN,O,,O
 sl-153,15,15,ponovila,,ponoviti,Vmep-sf,VERB,O,,O
 sl-153,15,16,.,,.,Z,PUNCT,O,,O
 sl-153,16,1,Tožilstvo,,tožilstvo,Ncnsn,NOUN,O,,O
-sl-153,16,2,Zajčevi,Zajc,Zajčeva,Npfsd,PROPN,B-PER,PER-Maja-Zajc,O
+sl-153,16,2,Zajčevi,Zajc,Zajčeva,Npfsd,PROPN,B-PER,PER-Maja-Zajc,B-PER
 sl-153,16,3,",",,",",Z,PUNCT,O,,O
 sl-153,16,4,ki,,ki,Cs,SCONJ,O,,O
 sl-153,16,5,do,,do,Sg,ADP,O,,O
@@ -414,7 +414,7 @@ sl-153,16,19,z,,z,Si,ADP,O,,O
 sl-153,16,20,nožem,,nož,Ncmsi,NOUN,O,,O
 sl-153,16,21,z,,z,Si,ADP,O,,O
 sl-153,16,22,dvajset,,dvajset,Mlc-pa,NUM,O,,O
-sl-153,16,23,centimetrov,,centimeter,Ncmpg,NOUN,O,,I-PER
+sl-153,16,23,centimetrov,,centimeter,Ncmpg,NOUN,O,,O
 sl-153,16,24,dolgim,,dolg,Agpnsi,ADJ,O,,O
 sl-153,16,25,rezilom,,rezilo,Ncnsi,NOUN,O,,O
 sl-153,16,26,zabodla,,zabosti,Vmep-sf,VERB,O,,O
@@ -493,7 +493,7 @@ sl-153,19,33,",",,",",Z,PUNCT,O,,O
 sl-153,19,34,še,,še,Q,PART,O,,O
 sl-153,19,35,meni,,meniti,Vmpr3s,VERB,O,,O
 sl-153,19,36,tožilec,,tožilec,Ncmsn,NOUN,O,,O
-sl-153,19,37,Peterca,Peterca,Peterca,Npmsn,PROPN,B-PER,PER-Matej-Peterca,O
+sl-153,19,37,Peterca,Peterca,Peterca,Npmsn,PROPN,B-PER,PER-Matej-Peterca,B-PER
 sl-153,19,38,.,,.,Z,PUNCT,O,,O
 sl-153,20,1,Obtožena,,obtožen,Appfsn,ADJ,O,,O
 sl-153,20,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -650,7 +650,7 @@ sl-153,24,2,zaradi,,zaradi,Sg,ADP,O,,O
 sl-153,24,3,zamude,,zamuda,Ncfsg,NOUN,O,,O
 sl-153,25,1,Oškodovanec,,oškodovanec,Ncmsn,NOUN,O,,O
 sl-153,25,2,Iztok,Iztok,Iztok,Npmsn,PROPN,B-PER,PER-Iztok-Štupica,B-PER
-sl-153,25,3,Štupica,Štupica,Štupica,Npmsn,PROPN,I-PER,PER-Iztok-Štupica,O
+sl-153,25,3,Štupica,Štupica,Štupica,Npmsn,PROPN,I-PER,PER-Iztok-Štupica,I-PER
 sl-153,25,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-153,25,5,v,,v,Sl,ADP,O,,O
 sl-153,25,6,sodni,,soden,Agpfsl,ADJ,O,,O

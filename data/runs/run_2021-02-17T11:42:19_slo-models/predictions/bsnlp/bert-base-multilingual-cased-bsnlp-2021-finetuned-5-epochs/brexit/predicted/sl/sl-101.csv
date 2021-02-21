@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-101,0,1,Izredni,,izreden,Agpmsay,ADJ,O,,O
 sl-101,0,2,vrh,,vrh,Ncmsn,NOUN,O,,O
 sl-101,0,3,:,,:,Z,PUNCT,O,,O
@@ -121,7 +121,7 @@ sl-101,4,38,",",,",",Z,PUNCT,O,,O
 sl-101,4,39,ne,,ne,Q,PART,O,,O
 sl-101,4,40,pa,,pa,Cc,CCONJ,O,,O
 sl-101,4,41,ločitvenega,,ločitven,Agpmsg,ADJ,O,,O
-sl-101,4,42,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
+sl-101,4,42,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-101,4,43,",",,",",Z,PUNCT,O,,O
 sl-101,4,44,lahko,,lahko,Rgp,ADV,O,,O
 sl-101,4,45,pa,,pa,Cc,CCONJ,O,,O
@@ -147,7 +147,7 @@ sl-101,4,64,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-101,4,65,Evropskega,Evropski,evropski,Agpmsg,ADJ,B-ORG,ORG-European-Council,B-ORG
 sl-101,4,66,sveta,svet,svet,Ncmsg,NOUN,I-ORG,ORG-European-Council,I-ORG
 sl-101,4,67,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Tusk,B-PER
-sl-101,4,68,Tusk,Tusk,Tusk,Npmsn,PROPN,I-PER,PER-Donald-Tusk,B-PER
+sl-101,4,68,Tusk,Tusk,Tusk,Npmsn,PROPN,I-PER,PER-Donald-Tusk,I-PER
 sl-101,4,69,.,,.,Z,PUNCT,O,,O
 sl-101,5,1,Dogovorjena,,dogovorjen,Appfsn,ADJ,O,,O
 sl-101,5,2,preložitev,,preložitev,Ncfsn,NOUN,O,,O
@@ -155,7 +155,7 @@ sl-101,5,3,s,,z,Si,ADP,O,,O
 sl-101,5,4,ciljem,,cilj,Ncmsi,NOUN,O,,O
 sl-101,5,5,ratifikacije,,ratifikacija,Ncfsg,NOUN,O,,O
 sl-101,5,6,izstopnega,,izstopen,Agpmsg,ADJ,O,,O
-sl-101,5,7,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
+sl-101,5,7,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-101,5,8,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-101,5,9,trajala,,trajati,Vmpp-sf,VERB,O,,O
 sl-101,5,10,le,,le,Q,PART,O,,O
@@ -247,7 +247,7 @@ sl-101,8,14,če,,če,Cs,SCONJ,O,,O
 sl-101,8,15,ne,,ne,Q,PART,O,,O
 sl-101,8,16,potrdi,,potrditi,Vmer3s,VERB,O,,O
 sl-101,8,17,ločitvenega,,ločitven,Agpmsg,ADJ,O,,O
-sl-101,8,18,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
+sl-101,8,18,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-101,8,19,do,,do,Sg,ADP,O,,O
 sl-101,8,20,22.,,22.,Mdo,NUM,O,,O
 sl-101,8,21,maja,,maj,Ncmsg,NOUN,O,,O
@@ -282,7 +282,7 @@ sl-101,10,11,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-101,10,12,ne,,ne,Q,PART,O,,O
 sl-101,10,13,sme,,smeti,Vmpr3s,VERB,O,,O
 sl-101,10,14,odpirati,,odpirati,Vmpn,VERB,O,,O
-sl-101,10,15,ločitvenega,,ločitven,Agpmsg,ADJ,O,,O
+sl-101,10,15,ločitvenega,,ločitven,Agpmsg,ADJ,O,,B-PRO
 sl-101,10,16,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
 sl-101,10,17,in,,in,Cc,CCONJ,O,,O
 sl-101,10,18,začeti,,začeti,Vmen,VERB,O,,O

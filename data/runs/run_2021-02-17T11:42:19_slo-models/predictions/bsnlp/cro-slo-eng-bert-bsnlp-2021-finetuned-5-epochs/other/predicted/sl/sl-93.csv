@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-93,0,1,Wizzair,Wizz,Wizzair,Npmsn,PROPN,B-ORG,ORG-Wizz-Air,B-ORG
 sl-93,0,2,z,,z,Si,ADP,O,,O
 sl-93,0,3,zimsko,,zimski,Agpfsi,ADJ,O,,O
@@ -15,9 +15,9 @@ sl-93,1,3,med,,med,Si,ADP,O,,O
 sl-93,1,4,ljubljanskim,ljubljansko,ljubljanski,Agpnsi,ADJ,B-LOC,LOC-Ljubljana-Jože-Pučnik-Airport,B-LOC
 sl-93,1,5,letališčem,letališče,letališče,Ncnsi,NOUN,I-LOC,LOC-Ljubljana-Jože-Pučnik-Airport,I-LOC
 sl-93,1,6,in,,in,Cc,CCONJ,O,,O
-sl-93,1,7,belgijskim,belgijsko,belgijski,Agpnsi,ADJ,B-LOC,LOC-Charleroi-Airport-Brussels,O
+sl-93,1,7,belgijskim,belgijsko,belgijski,Agpnsi,ADJ,B-LOC,LOC-Charleroi-Airport-Brussels,B-LOC
 sl-93,1,8,letališčem,letališče,letališče,Ncnsi,NOUN,I-LOC,LOC-Charleroi-Airport-Brussels,I-LOC
-sl-93,1,9,Charleroi,Charleroi,Charleroi,Npmsn,PROPN,I-LOC,LOC-Charleroi-Airport-Brussels,B-LOC
+sl-93,1,9,Charleroi,Charleroi,Charleroi,Npmsn,PROPN,I-LOC,LOC-Charleroi-Airport-Brussels,I-LOC
 sl-93,1,10,",",,",",Z,PUNCT,O,,O
 sl-93,1,11,ki,,ki,Cs,SCONJ,O,,O
 sl-93,1,12,služi,,služiti,Vmpr3s,VERB,O,,O
@@ -30,7 +30,7 @@ sl-93,1,18,Bruselj,Bruselj,Bruselj,Npmsan,PROPN,B-LOC,GPE-Brussles,B-LOC
 sl-93,1,19,",",,",",Z,PUNCT,O,,O
 sl-93,1,20,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-93,1,21,Wizz,Wizz,Wizz,Npmsn,PROPN,B-ORG,ORG-Wizz-Air,B-ORG
-sl-93,1,22,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Wizz-Air,B-ORG
+sl-93,1,22,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Wizz-Air,I-ORG
 sl-93,1,23,v,,v,Sl,ADP,O,,O
 sl-93,1,24,zimski,,zimski,Agpfsl,ADJ,O,,O
 sl-93,1,25,sezoni,,sezona,Ncfsl,NOUN,O,,O
@@ -150,7 +150,7 @@ sl-93,5,7,",",,",",Z,PUNCT,O,,O
 sl-93,5,8,da,,da,Cs,SCONJ,O,,O
 sl-93,5,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-93,5,10,ljubljansko,ljubljansko,ljubljanski,Agpnsn,ADJ,B-LOC,LOC-Ljubljana-Jože-Pučnik-Airport,B-LOC
-sl-93,5,11,letališče,letališče,letališče,Ncnsn,NOUN,I-LOC,LOC-Ljubljana-Jože-Pučnik-Airport,O
+sl-93,5,11,letališče,letališče,letališče,Ncnsn,NOUN,I-LOC,LOC-Ljubljana-Jože-Pučnik-Airport,I-LOC
 sl-93,5,12,julija,,julij,Ncmsg,NOUN,O,,O
 sl-93,5,13,zabeležilo,,zabeležiti,Vmep-sn,VERB,O,,O
 sl-93,5,14,rekordno,,rekorden,Agpnsa,ADJ,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-56,0,1,“,,“,Z,PUNCT,O,,O
 sl-56,0,2,Prodaja,,prodaja,Ncfsn,NOUN,O,,O
 sl-56,0,3,”,,”,Z,PUNCT,O,,O
@@ -6,17 +6,17 @@ sl-56,0,4,dojenčkov,,dojenček,Ncmpg,NOUN,O,,O
 sl-56,0,5,in,,in,Cc,CCONJ,O,,O
 sl-56,0,6,jajčec,,jajčece,Ncnpg,NOUN,O,,O
 sl-56,1,1,Mlade,,mlad,Agpfpn,ADJ,O,,O
-sl-56,1,2,Bolgarke,Bolgarke,Bolgarke,Npfpn,PROPN,B-PER,GPE-Bulgaria,B-LOC
+sl-56,1,2,Bolgarke,Bolgarke,Bolgarke,Npfpn,PROPN,B-PER,GPE-Bulgaria,B-PER
 sl-56,1,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-56,1,4,dojenčke,,dojenček,Ncmpa,NOUN,O,,O
 sl-56,1,5,",",,",",Z,PUNCT,O,,O
 sl-56,1,6,ki,,ki,Cs,SCONJ,O,,O
 sl-56,1,7,so,,biti,Va-r3p-n,AUX,O,,O
 sl-56,1,8,jih,,on,Pp3mpa--y,PRON,O,,O
-sl-56,1,9,grški,,grški,Agpmpn,ADJ,O,,O
+sl-56,1,9,grški,,grški,Agpmpn,ADJ,O,,B-PER
 sl-56,1,10,kriminalci,,kriminalec,Ncmpn,NOUN,O,,O
 sl-56,1,11,prodajali,,prodajati,Vmpp-pm,VERB,O,,O
-sl-56,1,12,naprej,,naprej,Rgp,ADV,O,,B-LOC
+sl-56,1,12,naprej,,naprej,Rgp,ADV,O,,O
 sl-56,1,13,v,,v,Sa,ADP,O,,O
 sl-56,1,14,nezakonite,,nezakonit,Agpfpa,ADJ,O,,O
 sl-56,1,15,posvojitve,,posvojitev,Ncfpa,NOUN,O,,O
@@ -70,7 +70,7 @@ sl-56,4,8,",",,",",Z,PUNCT,O,,O
 sl-56,4,9,odkar,,odkar,Cs,SCONJ,O,,O
 sl-56,4,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-56,4,11,iz,,iz,Sg,ADP,O,,O
-sl-56,4,12,Bolgarije,Bolgarija,Bolgarija,Npfsg,PROPN,B-LOC,GPE-Bulgaria,O
+sl-56,4,12,Bolgarije,Bolgarija,Bolgarija,Npfsg,PROPN,B-LOC,GPE-Bulgaria,B-LOC
 sl-56,4,13,v,,v,Sa,ADP,O,,O
 sl-56,4,14,grški,,grški,Agpmsay,ADJ,O,,O
 sl-56,4,15,Solun,Solun,Solun,Npmsan,PROPN,B-LOC,GPE-Solun,B-LOC
@@ -150,7 +150,7 @@ sl-56,8,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-56,8,3,večinoma,,večinoma,Rgp,ADV,O,,O
 sl-56,8,4,prihajale,,prihajati,Vmpp-pf,VERB,O,,O
 sl-56,8,5,iz,,iz,Sg,ADP,O,,O
-sl-56,8,6,Bolgarije,Bolgarija,Bolgarija,Npfsg,PROPN,B-LOC,GPE-Bulgaria,O
+sl-56,8,6,Bolgarije,Bolgarija,Bolgarija,Npfsg,PROPN,B-LOC,GPE-Bulgaria,B-LOC
 sl-56,8,7,",",,",",Z,PUNCT,O,,O
 sl-56,8,8,Gruzije,Gruzija,Gruzija,Npfsg,PROPN,B-LOC,GPE-Georgia,B-LOC
 sl-56,8,9,in,,in,Cc,CCONJ,O,,O
@@ -160,7 +160,7 @@ sl-56,8,12,prepeljali,,prepeljati,Vmep-pm,VERB,O,,O
 sl-56,8,13,so,,biti,Va-r3p-n,AUX,O,,O
 sl-56,8,14,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-56,8,15,v,,v,Sa,ADP,O,,O
-sl-56,8,16,Solun,Solun,Solun,Npmsan,PROPN,B-LOC,GPE-Solun,O
+sl-56,8,16,Solun,Solun,Solun,Npmsan,PROPN,B-LOC,GPE-Solun,B-LOC
 sl-56,8,17,",",,",",Z,PUNCT,O,,O
 sl-56,8,18,kjer,,kjer,Cs,SCONJ,O,,O
 sl-56,8,19,so,,biti,Va-r3p-n,AUX,O,,O
@@ -175,7 +175,7 @@ sl-56,8,27,število,,število,Ncnsa,NOUN,O,,O
 sl-56,8,28,pridobljenih,,pridobljen,Appnpg,ADJ,O,,O
 sl-56,8,29,jajčec,,jajčece,Ncnpg,NOUN,O,,O
 sl-56,8,30,.,,.,Z,PUNCT,O,,O
-sl-56,9,1,Grška,,grški,Agpfsn,ADJ,O,,O
+sl-56,9,1,Grška,,grški,Agpfsn,ADJ,O,,B-ORG
 sl-56,9,2,policija,,policija,Ncfsn,NOUN,O,,I-ORG
 sl-56,9,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-56,9,4,23.,,23.,Mdo,NUM,O,,O
@@ -278,7 +278,7 @@ sl-56,11,23,institucij,,institucija,Ncfpg,NOUN,O,,O
 sl-56,11,24,",",,",",Z,PUNCT,O,,O
 sl-56,11,25,z,,z,Si,ADP,O,,O
 sl-56,11,26,nakupi,,nakup,Ncmpi,NOUN,O,,O
-sl-56,11,27,luksuznih,,luksuzen,Agpfpg,ADJ,O,,B-LOC
+sl-56,11,27,luksuznih,,luksuzen,Agpfpg,ADJ,O,,O
 sl-56,11,28,dobrin,,dobrina,Ncfpg,NOUN,O,,O
 sl-56,11,29,in,,in,Cc,CCONJ,O,,O
 sl-56,11,30,različnih,,različen,Agpfpg,ADJ,O,,O

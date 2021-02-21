@@ -1,6 +1,6 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-94,0,1,V,,v,Sl,ADP,O,,O
-sl-94,0,2,Bolgariji,Bolgarija,Bolgarija,Npfsl,PROPN,B-LOC,GPE-Bulgaria,B-PER
+sl-94,0,2,Bolgariji,Bolgarija,Bolgarija,Npfsl,PROPN,B-LOC,GPE-Bulgaria,B-LOC
 sl-94,0,3,v,,v,Sl,ADP,O,,O
 sl-94,0,4,hekerskem,,hekerski,Agpmsl,ADJ,O,,O
 sl-94,0,5,napadu,,napad,Ncmsl,NOUN,O,,O
@@ -28,17 +28,17 @@ sl-94,1,16,za,,za,Sa,ADP,O,,O
 sl-94,1,17,televizijo,,televizija,Ncfsa,NOUN,O,,O
 sl-94,1,18,bTV,bTV,bTV,Npmsn,PROPN,B-PRO,PRO-BTV,B-PRO
 sl-94,1,19,potrdil,,potrditi,Vmep-sm,VERB,O,,O
-sl-94,1,20,Marinov,Marinov,Marinov,Npmsn,PROPN,B-PER,PER-Mladen-Marinov,I-PER
+sl-94,1,20,Marinov,Marinov,Marinov,Npmsn,PROPN,B-PER,PER-Mladen-Marinov,B-PER
 sl-94,1,21,.,,.,Z,PUNCT,O,,O
 sl-94,2,1,S,,z,Si,ADP,O,,O
 sl-94,2,2,tem,,ta,Pd-nsi,DET,O,,O
 sl-94,2,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-94,2,4,potrdil,,potrditi,Vmep-sm,VERB,O,,O
-sl-94,2,5,anonimno,,anonimen,Agpnsa,ADJ,O,,I-PER
+sl-94,2,5,anonimno,,anonimen,Agpnsa,ADJ,O,,O
 sl-94,2,6,sporočilo,,sporočilo,Ncnsa,NOUN,O,,O
 sl-94,2,7,hekerjev,,heker,Ncmpg,NOUN,O,,O
 sl-94,2,8,",",,",",Z,PUNCT,O,,O
-sl-94,2,9,ki,,ki,Cs,SCONJ,O,,B-ORG
+sl-94,2,9,ki,,ki,Cs,SCONJ,O,,O
 sl-94,2,10,so,,biti,Va-r3p-n,AUX,O,,O
 sl-94,2,11,ga,,on,Pp3msa--y,PRON,O,,O
 sl-94,2,12,objavili,,objaviti,Vmep-pm,VERB,O,,O
@@ -65,7 +65,7 @@ sl-94,3,17,več,,več,Rgc,DET,O,,O
 sl-94,3,18,kot,,kot,Cs,SCONJ,O,,O
 sl-94,3,19,pet,,pet,Mlc-pa,NUM,O,,O
 sl-94,3,20,milijonov,,milijon,Ncmpg,NOUN,O,,O
-sl-94,3,21,Bolgarov,Bolgari,Bolgar,Npmpg,PROPN,B-PER,GPE-Bulgaria,O
+sl-94,3,21,Bolgarov,Bolgari,Bolgar,Npmpg,PROPN,B-PER,GPE-Bulgaria,B-PER
 sl-94,3,22,",",,",",Z,PUNCT,O,,O
 sl-94,3,23,tujcev,,tujec,Ncmpg,NOUN,O,,O
 sl-94,3,24,in,,in,Cc,CCONJ,O,,O
@@ -91,7 +91,7 @@ sl-94,5,4,so,,biti,Va-r3p-n,AUX,O,,O
 sl-94,5,5,v,,v,Sa,ADP,O,,O
 sl-94,5,6,ponedeljek,,ponedeljek,Ncmsan,NOUN,O,,O
 sl-94,5,7,posredovali,,posredovati,Vmbp-pm,VERB,O,,O
-sl-94,5,8,bolgarskim,,bolgarski,Agpmpd,ADJ,O,,B-LOC
+sl-94,5,8,bolgarskim,,bolgarski,Agpmpd,ADJ,O,,O
 sl-94,5,9,medijem,,medij,Ncmpd,NOUN,O,,O
 sl-94,5,10,preko,,preko,Sg,ADP,O,,O
 sl-94,5,11,ruskih,,ruski,Agpmpg,ADJ,O,,O
@@ -109,7 +109,7 @@ sl-94,6,9,Wikileaksa,Wikileaks,Wikileaks,Npmsg,PROPN,B-PRO,PRO-Wikileaks,B-ORG
 sl-94,6,10,Juliana,Julian,Julian,Npmsg,PROPN,B-PER,PER-Julian-Assange,B-PER
 sl-94,6,11,Assangea,Assange,Assange,Npmsg,PROPN,I-PER,PER-Julian-Assange,I-PER
 sl-94,6,12,.,,.,Z,PUNCT,O,,O
-sl-94,7,1,Marinov,Marinov,Marinov,Npmsn,PROPN,B-PER,PER-Mladen-Marinov,O
+sl-94,7,1,Marinov,Marinov,Marinov,Npmsn,PROPN,B-PER,PER-Mladen-Marinov,B-PER
 sl-94,7,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-94,7,3,danes,,danes,Rgp,ADV,O,,O
 sl-94,7,4,še,,še,Q,PART,O,,O
@@ -124,9 +124,9 @@ sl-94,7,12,napad,,napad,Ncmsan,NOUN,O,,O
 sl-94,7,13,politično,,političen,Agpnsa,ADJ,O,,O
 sl-94,7,14,ozadje,,ozadje,Ncnsa,NOUN,O,,O
 sl-94,7,15,",",,",",Z,PUNCT,O,,O
-sl-94,7,16,saj,,saj,Cc,CCONJ,O,,B-ORG
+sl-94,7,16,saj,,saj,Cc,CCONJ,O,,O
 sl-94,7,17,je,,biti,Va-r3s-n,AUX,O,,O
-sl-94,7,18,bolgarska,,bolgarski,Agpfsn,ADJ,O,,O
+sl-94,7,18,bolgarska,,bolgarski,Agpfsn,ADJ,O,,B-LOC
 sl-94,7,19,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-94,7,20,v,,v,Sa,ADP,O,,O
 sl-94,7,21,ponedeljek,,ponedeljek,Ncmsan,NOUN,O,,O
@@ -135,7 +135,7 @@ sl-94,7,23,nakup,,nakup,Ncmsan,NOUN,O,,O
 sl-94,7,24,osmih,,osem,Mlc-pg,NUM,O,,O
 sl-94,7,25,ameriških,,ameriški,Agpnpg,ADJ,O,,O
 sl-94,7,26,vojaških,,vojaški,Agpnpg,ADJ,O,,O
-sl-94,7,27,letal,,letalo,Ncnpg,NOUN,O,,B-ORG
+sl-94,7,27,letal,,letalo,Ncnpg,NOUN,O,,O
 sl-94,7,28,v,,v,Sl,ADP,O,,O
 sl-94,7,29,višini,,višina,Ncfsl,NOUN,O,,O
 sl-94,7,30,"1,25",,"1,25",Mdc,NUM,O,,O
@@ -146,7 +146,7 @@ sl-94,8,1,Zaradi,,zaradi,Sg,ADP,O,,O
 sl-94,8,2,vdora,,vdor,Ncmsg,NOUN,O,,O
 sl-94,8,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-94,8,4,premier,,premier,Ncmsn,NOUN,O,,O
-sl-94,8,5,Bojko,Bojko,Bojko,Npmsn,PROPN,B-PER,PER-Boyko-Borisov,O
+sl-94,8,5,Bojko,Bojko,Bojko,Npmsn,PROPN,B-PER,PER-Boyko-Borisov,B-PER
 sl-94,8,6,Borisov,Borisov,Borisov,Npmsn,PROPN,I-PER,PER-Boyko-Borisov,I-PER
 sl-94,8,7,sklical,,sklicati,Vmep-sm,VERB,O,,O
 sl-94,8,8,varnostni,,varnosten,Agpmsay,ADJ,O,,O

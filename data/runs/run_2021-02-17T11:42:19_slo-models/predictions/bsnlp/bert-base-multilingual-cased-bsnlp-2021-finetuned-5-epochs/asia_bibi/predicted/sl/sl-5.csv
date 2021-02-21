@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-5,0,1,V,,v,Sl,ADP,O,,O
 sl-5,0,2,Pakistanu,Pakistan,Pakistan,Npmsl,PROPN,B-LOC,GPE-Pakistan,B-LOC
 sl-5,0,3,izpustili,,izpustiti,Vmep-pm,VERB,O,,O
@@ -85,7 +85,7 @@ sl-5,3,23,njihovi,,njihov,Ps3mpnp,DET,O,,O
 sl-5,3,24,podporniki,,podpornik,Ncmpn,NOUN,O,,O
 sl-5,3,25,odpravili,,odpraviti,Vmep-pm,VERB,O,,O
 sl-5,3,26,na,,na,Sa,ADP,O,,O
-sl-5,3,27,ulice,,ulica,Ncfpa,NOUN,O,,B-PER
+sl-5,3,27,ulice,,ulica,Ncfpa,NOUN,O,,O
 sl-5,3,28,in,,in,Cc,CCONJ,O,,O
 sl-5,3,29,zahtevali,,zahtevati,Vmbp-pm,VERB,O,,O
 sl-5,3,30,takojšnjo,,takojšnji,Agpfsa,ADJ,O,,O
@@ -279,8 +279,8 @@ sl-5,11,11,že,,že,Q,PART,O,,O
 sl-5,11,12,ponudilo,,ponuditi,Vmep-sn,VERB,O,,O
 sl-5,11,13,pomoč,,pomoč,Ncfsa,NOUN,O,,O
 sl-5,11,14,.,,.,Z,PUNCT,O,,O
-sl-5,12,1,Mednarodna,Mednarodna,mednaroden,Agpfsn,ADJ,B-ORG,ORG-International-Community,B-ORG
-sl-5,12,2,skupnost,skupnost,skupnost,Ncfsn,NOUN,I-ORG,ORG-International-Community,I-ORG
+sl-5,12,1,Mednarodna,Mednarodna,mednaroden,Agpfsn,ADJ,B-ORG,ORG-International-Community,O
+sl-5,12,2,skupnost,skupnost,skupnost,Ncfsn,NOUN,I-ORG,ORG-International-Community,O
 sl-5,12,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-5,12,4,pozivala,,pozivati,Vmpp-sf,VERB,O,,O
 sl-5,12,5,tudi,,tudi,Q,PART,O,,O

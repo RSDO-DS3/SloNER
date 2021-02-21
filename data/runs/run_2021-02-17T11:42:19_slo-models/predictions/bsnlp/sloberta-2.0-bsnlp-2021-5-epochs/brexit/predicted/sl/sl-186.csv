@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-186,0,1,Burna,,buren,Agpfsn,ADJ,O,,O
 sl-186,0,2,razprava,,razprava,Ncfsn,NOUN,O,,O
 sl-186,0,3,v,,v,Sl,ADP,O,,O
@@ -26,7 +26,7 @@ sl-186,1,16,dokončno,,dokončen,Agpfsa,ADJ,O,,O
 sl-186,1,17,potrditev,,potrditev,Ncfsa,NOUN,O,,O
 sl-186,1,18,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-186,1,19,o,,o,Sl,ADP,O,,O
-sl-186,1,20,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,O
+sl-186,1,20,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-186,1,21,do,,do,Sg,ADP,O,,O
 sl-186,1,22,sprejetja,,sprejetje,Ncnsg,NOUN,O,,O
 sl-186,1,23,potrebne,,potreben,Agpfsg,ADJ,O,,O
@@ -42,7 +42,7 @@ sl-186,2,7,o,,o,Sl,ADP,O,,O
 sl-186,2,8,novem,,nov,Agpmsl,ADJ,O,,O
 sl-186,2,9,dogovoru,,dogovor,Ncmsl,NOUN,O,,O
 sl-186,2,10,o,,o,Sl,ADP,O,,O
-sl-186,2,11,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,O
+sl-186,2,11,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-186,2,12,danes,,danes,Rgp,ADV,O,,O
 sl-186,2,13,ne,,ne,Q,PART,O,,O
 sl-186,2,14,bodo,,biti,Va-f3p-n,AUX,O,,O
@@ -53,14 +53,14 @@ sl-186,2,18,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-186,2,19,moral,,morati,Vmpp-sm,VERB,O,,O
 sl-186,2,20,premier,,premier,Ncmsn,NOUN,O,,O
 sl-186,2,21,Boris,Boris,Boris,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
-sl-186,2,22,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,B-PER
+sl-186,2,22,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,I-PER
 sl-186,2,23,Evropsko,Evropska,evropski,Agpfsa,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-186,2,24,unijo,unija,unija,Ncfsa,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-186,2,25,zaprositi,,zaprositi,Vmen,VERB,O,,O
 sl-186,2,26,za,,za,Sa,ADP,O,,O
 sl-186,2,27,novo,,nov,Agpfsa,ADJ,O,,O
 sl-186,2,28,preložitev,,preložitev,Ncfsa,NOUN,O,,O
-sl-186,2,29,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,O
+sl-186,2,29,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-186,2,30,.,,.,Z,PUNCT,O,,O
 sl-186,3,1,Za,,za,Sa,ADP,O,,O
 sl-186,3,2,dopolnilo,,dopolnilo,Ncnsa,NOUN,O,,O
@@ -100,14 +100,14 @@ sl-186,4,24,potem,,potem,Rgp,ADV,O,,O
 sl-186,4,25,",",,",",Z,PUNCT,O,,O
 sl-186,4,26,ko,,ko,Cs,SCONJ,O,,O
 sl-186,4,27,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-186,4,28,ta,,ta,Pd-msn,DET,O,,B-EVT
+sl-186,4,28,ta,,ta,Pd-msn,DET,O,,O
 sl-186,4,29,opravil,,opraviti,Vmep-sm,VERB,O,,O
 sl-186,4,30,celotno,,celoten,Agpfsa,ADJ,O,,O
 sl-186,4,31,parlamentarno,,parlamentaren,Agpfsa,ADJ,O,,O
 sl-186,4,32,pot,,pot,Ncfsa,NOUN,O,,O
 sl-186,4,33,oziroma,,oziroma,Cc,CCONJ,O,,O
 sl-186,4,34,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-186,4,35,parlament,,parlament,Ncmsn,NOUN,O,,I-ORG
+sl-186,4,35,parlament,,parlament,Ncmsn,NOUN,O,,O
 sl-186,4,36,sprejel,,sprejeti,Vmep-sm,VERB,O,,O
 sl-186,4,37,vso,,ves,Pg-fsa,DET,O,,O
 sl-186,4,38,potrebno,,potreben,Agpfsa,ADJ,O,,O
@@ -120,7 +120,7 @@ sl-186,4,44,unije,,unija,Ncfsg,NOUN,O,,O
 sl-186,4,45,.,,.,Z,PUNCT,O,,O
 sl-186,5,1,S,,z,Si,ADP,O,,O
 sl-186,5,2,tem,,ta,Pd-nsi,DET,O,,O
-sl-186,5,3,naj,,naj,Q,PART,O,,I-PER
+sl-186,5,3,naj,,naj,Q,PART,O,,O
 sl-186,5,4,bi,,biti,Va-c,AUX,O,,O
 sl-186,5,5,preprečili,,preprečiti,Vmep-pm,VERB,O,,O
 sl-186,5,6,izstop,,izstop,Ncmsan,NOUN,O,,O
@@ -129,7 +129,7 @@ sl-186,5,8,EU,EU,EU,Npfsg,PROPN,B-ORG,,B-ORG
 sl-186,5,9,brez,,brez,Sg,ADP,O,,O
 sl-186,5,10,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-186,5,11,.,,.,Z,PUNCT,O,,O
-sl-186,6,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
+sl-186,6,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,O
 sl-186,6,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-186,6,3,sicer,,sicer,Q,PART,O,,O
 sl-186,6,4,takoj,,takoj,Rgp,ADV,O,,O
@@ -152,7 +152,7 @@ sl-186,6,20,zaprosil,,zaprositi,Vmep-sm,VERB,O,,O
 sl-186,6,21,za,,za,Sa,ADP,O,,O
 sl-186,6,22,novo,,nov,Agpfsa,ADJ,O,,O
 sl-186,6,23,preložitev,,preložitev,Ncfsa,NOUN,O,,O
-sl-186,6,24,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,O
+sl-186,6,24,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-186,6,25,",",,",",Z,PUNCT,O,,O
 sl-186,6,26,ampak,,ampak,Cc,CCONJ,O,,O
 sl-186,6,27,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -161,7 +161,7 @@ sl-186,6,29,vse,,ves,Pg-nsa,DET,O,,O
 sl-186,6,30,",",,",",Z,PUNCT,O,,O
 sl-186,6,31,da,,da,Cs,SCONJ,O,,O
 sl-186,6,32,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-186,6,33,Združeno,Združeno,združen,Appnsn,ADJ,B-LOC,GPE-Great-Britain,O
+sl-186,6,33,Združeno,Združeno,združen,Appnsn,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-186,6,34,kraljestvo,kraljestvo,kraljestvo,Ncnsn,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-186,6,35,iz,,iz,Sg,ADP,O,,O
 sl-186,6,36,unije,,unija,Ncfsg,NOUN,O,,O
@@ -174,7 +174,7 @@ sl-186,7,2,naj,,naj,Q,PART,O,,O
 sl-186,7,3,bi,,biti,Va-c,AUX,O,,O
 sl-186,7,4,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-186,7,5,v,,v,Sa,ADP,O,,O
-sl-186,7,6,parlament,,parlament,Ncmsan,NOUN,O,,I-ORG
+sl-186,7,6,parlament,,parlament,Ncmsan,NOUN,O,,O
 sl-186,7,7,takoj,,takoj,Rgp,ADV,O,,O
 sl-186,7,8,naslednji,,naslednji,Agpmsay,ADJ,O,,O
 sl-186,7,9,teden,,teden,Ncmsan,NOUN,O,,O
@@ -210,7 +210,7 @@ sl-186,9,7,pogajal,,pogajati,Vmpp-sm,VERB,O,,O
 sl-186,9,8,o,,o,Sl,ADP,O,,O
 sl-186,9,9,preložitvi,,preložitev,Ncfsl,NOUN,O,,O
 sl-186,9,10,",",,",",Z,PUNCT,O,,O
-sl-186,9,11,tudi,,tudi,Q,PART,O,,B-EVT
+sl-186,9,11,tudi,,tudi,Q,PART,O,,O
 sl-186,9,12,zakon,,zakon,Ncmsn,NOUN,O,,O
 sl-186,9,13,me,,jaz,Pp1-sa--y,PRON,O,,O
 sl-186,9,14,k,,k,Sd,ADP,O,,O
@@ -237,7 +237,7 @@ sl-186,10,11,določa,,določati,Vmpr3s,VERB,O,,O
 sl-186,10,12,",",,",",Z,PUNCT,O,,O
 sl-186,10,13,da,,da,Cs,SCONJ,O,,O
 sl-186,10,14,če,,če,Cs,SCONJ,O,,O
-sl-186,10,15,poslanci,,poslanec,Ncmpn,NOUN,O,,I-PER
+sl-186,10,15,poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-186,10,16,do,,do,Sg,ADP,O,,O
 sl-186,10,17,19.,,19.,Mdo,NUM,O,,O
 sl-186,10,18,oktobra,,oktober,Ncmsg,NOUN,O,,O
@@ -246,7 +246,7 @@ sl-186,10,20,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-186,10,21,sprejeli,,sprejeti,Vmep-pm,VERB,O,,O
 sl-186,10,22,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-186,10,23,o,,o,Sl,ADP,O,,O
-sl-186,10,24,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,O
+sl-186,10,24,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-186,10,25,",",,",",Z,PUNCT,O,,O
 sl-186,10,26,mora,,morati,Vmpr3s,VERB,O,,O
 sl-186,10,27,premier,,premier,Ncmsn,NOUN,O,,O
@@ -254,7 +254,7 @@ sl-186,10,28,prositi,,prositi,Vmpn,VERB,O,,O
 sl-186,10,29,Bruselj,Bruselj,Bruselj,Npmsan,PROPN,B-LOC,GPE-Brussels,B-LOC
 sl-186,10,30,za,,za,Sa,ADP,O,,O
 sl-186,10,31,preložitev,,preložitev,Ncfsa,NOUN,O,,O
-sl-186,10,32,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,O
+sl-186,10,32,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-186,10,33,za,,za,Sa,ADP,O,,O
 sl-186,10,34,tri,,trije,Mlcmpa,NUM,O,,O
 sl-186,10,35,mesece,,mesec,Ncmpa,NOUN,O,,O
@@ -279,7 +279,7 @@ sl-186,12,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-186,12,4,po,,po,Sl,ADP,O,,O
 sl-186,12,5,današnji,,današnji,Agpfsl,ADJ,O,,O
 sl-186,12,6,odločitvi,,odločitev,Ncfsl,NOUN,O,,O
-sl-186,12,7,britanskih,,britanski,Agpmpg,ADJ,O,,B-ORG
+sl-186,12,7,britanskih,,britanski,Agpmpg,ADJ,O,,O
 sl-186,12,8,poslancev,,poslanec,Ncmpg,NOUN,O,,O
 sl-186,12,9,pozvala,,pozvati,Vmep-sf,VERB,O,,O
 sl-186,12,10,London,London,London,Npmsan,PROPN,B-LOC,GPE-London,B-LOC
@@ -290,15 +290,15 @@ sl-186,12,14,svoje,,svoj,Px-mpa,DET,O,,O
 sl-186,12,15,naslednje,,naslednji,Agpmpa,ADJ,O,,O
 sl-186,12,16,korake,,korak,Ncmpa,NOUN,O,,O
 sl-186,12,17,.,,.,Z,PUNCT,O,,O
-sl-186,13,1,Nadaljnja,,nadaljnji,Agpfsn,ADJ,O,,B-LOC
+sl-186,13,1,Nadaljnja,,nadaljnji,Agpfsn,ADJ,O,,O
 sl-186,13,2,preložitev,,preložitev,Ncfsn,NOUN,O,,O
-sl-186,13,3,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,O
+sl-186,13,3,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-186,13,4,bi,,biti,Va-c,AUX,O,,O
 sl-186,13,5,bila,,biti,Va-p-sf,AUX,O,,O
 sl-186,13,6,slaba,,slab,Agpfsn,ADJ,O,,O
 sl-186,13,7,tako,,tako,Rgp,ADV,O,,O
 sl-186,13,8,za,,za,Sa,ADP,O,,O
-sl-186,13,9,Združeno,Združeno,združen,Appnsa,ADJ,B-LOC,GPE-Great-Britain,O
+sl-186,13,9,Združeno,Združeno,združen,Appnsa,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-186,13,10,kraljestvo,kraljestvo,kraljestvo,Ncnsa,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-186,13,11,kot,,kot,Cs,SCONJ,O,,O
 sl-186,13,12,za,,za,Sa,ADP,O,,O
@@ -347,7 +347,7 @@ sl-186,15,5,",",,",",Z,PUNCT,O,,O
 sl-186,15,6,da,,da,Cs,SCONJ,O,,O
 sl-186,15,7,vnovična,,vnovičen,Agpfsn,ADJ,O,,O
 sl-186,15,8,preložitev,,preložitev,Ncfsn,NOUN,O,,O
-sl-186,15,9,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,O
+sl-186,15,9,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-186,15,10,"""",,"""",Z,PUNCT,O,,O
 sl-186,15,11,ni,,biti,Va-r3s-y,VERB,O,,O
 sl-186,15,12,nikomur,,nihče,Pz-msd,PRON,O,,O
@@ -363,8 +363,8 @@ sl-186,16,5,izpogajan,,izpogajan,Appmsnn,ADJ,O,,O
 sl-186,16,6,.,,.,Z,PUNCT,O,,O
 sl-186,17,1,Zdaj,,zdaj,Rgp,ADV,O,,O
 sl-186,17,2,je,,biti,Va-r3s-n,VERB,O,,O
-sl-186,17,3,na,,na,Sl,ADP,O,,I-PER
-sl-186,17,4,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,O
+sl-186,17,3,na,,na,Sl,ADP,O,,O
+sl-186,17,4,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,B-ORG
 sl-186,17,5,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-186,17,6,",",,",",Z,PUNCT,O,,O
 sl-186,17,7,da,,da,Cs,SCONJ,O,,O
@@ -382,7 +382,7 @@ sl-186,17,18,po,,po,Sl,ADP,O,,O
 sl-186,17,19,današnjem,,današnji,Agpmsl,ADJ,O,,O
 sl-186,17,20,razpletu,,razplet,Ncmsl,NOUN,O,,O
 sl-186,17,21,v,,v,Sl,ADP,O,,O
-sl-186,17,22,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,O
+sl-186,17,22,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,B-ORG
 sl-186,17,23,parlamentu,parlament,parlament,Ncmsl,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-186,17,24,sporočili,,sporočiti,Vmep-pm,VERB,O,,O
 sl-186,17,25,iz,,iz,Sg,ADP,O,,O

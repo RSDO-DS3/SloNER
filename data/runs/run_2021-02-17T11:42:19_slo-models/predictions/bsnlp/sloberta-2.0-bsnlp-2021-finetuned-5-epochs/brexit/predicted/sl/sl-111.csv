@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-111,0,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-111,0,2,napovedala,,napovedati,Vmep-sf,VERB,O,,O
 sl-111,0,3,vložitev,,vložitev,Ncfsa,NOUN,O,,O
@@ -8,7 +8,7 @@ sl-111,0,6,za,,za,Sa,ADP,O,,O
 sl-111,0,7,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-111,1,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-111,1,2,je,,biti,Va-r3s-n,AUX,O,,O
-sl-111,1,3,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,O
+sl-111,1,3,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-111,1,4,še,,še,Q,PART,O,,O
 sl-111,1,5,zapisala,,zapisati,Vmep-sf,VERB,O,,O
 sl-111,1,6,v,,v,Sl,ADP,O,,O
@@ -25,7 +25,7 @@ sl-111,1,16,da,,da,Cs,SCONJ,O,,O
 sl-111,1,17,lahko,,lahko,Rgp,ADV,O,,O
 sl-111,1,18,večina,,večina,Ncfsn,NOUN,O,,O
 sl-111,1,19,v,,v,Sl,ADP,O,,O
-sl-111,1,20,parlamentu,,parlament,Ncmsl,NOUN,O,,I-ORG
+sl-111,1,20,parlamentu,,parlament,Ncmsl,NOUN,O,,O
 sl-111,1,21,potrdi,,potrditi,Vmer3s,VERB,O,,O
 sl-111,1,22,ločitveni,,ločitven,Agpmsay,ADJ,O,,O
 sl-111,1,23,sporazum,,sporazum,Ncmsan,NOUN,O,,O
@@ -34,7 +34,7 @@ sl-111,2,1,Dodala,,dodati,Vmep-sf,VERB,O,,O
 sl-111,2,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-111,2,3,",",,",",Z,PUNCT,O,,O
 sl-111,2,4,da,,da,Cs,SCONJ,O,,O
-sl-111,2,5,poslancev,,poslanec,Ncmpg,NOUN,O,,B-PER
+sl-111,2,5,poslancev,,poslanec,Ncmpg,NOUN,O,,O
 sl-111,2,6,ne,,ne,Q,PART,O,,O
 sl-111,2,7,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-111,2,8,prosila,,prositi,Vmpp-sf,VERB,O,,O
@@ -66,7 +66,7 @@ sl-111,2,33,tiskovna,,tiskoven,Agpfsn,ADJ,O,,O
 sl-111,2,34,agencija,,agencija,Ncfsn,NOUN,O,,O
 sl-111,2,35,AFP,AFP,AFP,Npmsn,PROPN,B-ORG,ORG-AFP-Agence-France-Press,B-ORG
 sl-111,2,36,.,,.,Z,PUNCT,O,,O
-sl-111,3,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,O
+sl-111,3,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-111,3,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-111,3,3,po,,po,Sl,ADP,O,,O
 sl-111,3,4,glasovanju,,glasovanje,Ncnsl,NOUN,O,,O
@@ -75,7 +75,7 @@ sl-111,3,6,parlamentu,,parlament,Ncmsl,NOUN,O,,O
 sl-111,3,7,pred,,pred,Si,ADP,O,,O
 sl-111,3,8,dnevi,,dan,Ncmpi,NOUN,O,,O
 sl-111,3,9,napovedala,,napovedati,Vmep-sf,VERB,O,,O
-sl-111,3,10,tudi,,tudi,Q,PART,O,,B-EVT
+sl-111,3,10,tudi,,tudi,Q,PART,O,,O
 sl-111,3,11,določitev,,določitev,Ncfsa,NOUN,O,,O
 sl-111,3,12,datuma,,datum,Ncmsg,NOUN,O,,O
 sl-111,3,13,svojega,,svoj,Px-msg,DET,O,,O
@@ -118,7 +118,7 @@ sl-111,5,15,predstavila,,predstaviti,Vmep-sf,VERB,O,,O
 sl-111,5,16,osnutek,,osnutek,Ncmsan,NOUN,O,,O
 sl-111,5,17,zakona,,zakon,Ncmsg,NOUN,O,,O
 sl-111,5,18,o,,o,Sl,ADP,O,,O
-sl-111,5,19,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,O
+sl-111,5,19,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-111,5,20,.,,.,Z,PUNCT,O,,O
 sl-111,6,1,Upa,,upati,Vmpr3s,VERB,O,,O
 sl-111,6,2,",",,",",Z,PUNCT,O,,O
@@ -132,7 +132,7 @@ sl-111,6,9,temu,,ta,Pd-nsd,DET,O,,O
 sl-111,6,10,",",,",",Z,PUNCT,O,,O
 sl-111,6,11,da,,da,Cs,SCONJ,O,,O
 sl-111,6,12,bi,,biti,Va-c,AUX,O,,O
-sl-111,6,13,britanski,,britanski,Agpmpn,ADJ,O,,B-ORG
+sl-111,6,13,britanski,,britanski,Agpmpn,ADJ,O,,B-PER
 sl-111,6,14,evroposlanci,evroposlanci,evroposlanec,Ncmpn,NOUN,B-PER,ORG-European-Parliament,I-PER
 sl-111,6,15,",",,",",Z,PUNCT,O,,O
 sl-111,6,16,ki,,ki,Cs,SCONJ,O,,O
@@ -167,7 +167,7 @@ sl-111,7,10,.,,.,Z,PUNCT,O,,O
 sl-111,8,1,A,,a,Cc,CCONJ,O,,O
 sl-111,8,2,to,,ta,Pd-nsn,DET,O,,O
 sl-111,8,3,lahko,,lahko,Rgp,ADV,O,,O
-sl-111,8,4,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,O
+sl-111,8,4,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-111,8,5,doseže,,doseči,Vmer3s,VERB,O,,O
 sl-111,8,6,le,,le,Q,PART,O,,O
 sl-111,8,7,",",,",",Z,PUNCT,O,,O
@@ -203,11 +203,11 @@ sl-111,9,9,dogovor,,dogovor,Ncmsan,NOUN,O,,O
 sl-111,9,10,z,,z,Si,ADP,O,,O
 sl-111,9,11,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-111,9,12,",",,",",Z,PUNCT,O,,O
-sl-111,9,13,tako,,tako,Cc,CCONJ,O,,B-EVT
+sl-111,9,13,tako,,tako,Cc,CCONJ,O,,O
 sl-111,9,14,da,,da,Cs,SCONJ,O,,O
 sl-111,9,15,so,,biti,Va-r3p-n,AUX,O,,O
 sl-111,9,16,morali,,morati,Vmpp-pm,VERB,O,,O
-sl-111,9,17,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,O
+sl-111,9,17,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-111,9,18,",",,",",Z,PUNCT,O,,O
 sl-111,9,19,ki,,ki,Cs,SCONJ,O,,O
 sl-111,9,20,je,,biti,Va-r3s-n,AUX,O,,O
@@ -227,7 +227,7 @@ sl-111,10,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-111,10,3,se,,se,Px------y,PRON,O,,O
 sl-111,10,4,sredi,,sredi,Sg,ADP,O,,O
 sl-111,10,5,aprila,,april,Ncmsg,NOUN,O,,O
-sl-111,10,6,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,O
+sl-111,10,6,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-111,10,7,in,,in,Cc,CCONJ,O,,O
 sl-111,10,8,voditelji,,voditelj,Ncmpn,NOUN,O,,O
 sl-111,10,9,27,,27,Mdc,NUM,O,,O
@@ -237,12 +237,12 @@ sl-111,10,12,dogovorili,,dogovoriti,Vmep-pm,VERB,O,,O
 sl-111,10,13,o,,o,Sl,ADP,O,,O
 sl-111,10,14,prožni,,prožen,Agpfsl,ADJ,O,,O
 sl-111,10,15,preložitvi,,preložitev,Ncfsl,NOUN,O,,O
-sl-111,10,16,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,O
+sl-111,10,16,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-111,10,17,do,,do,Sg,ADP,O,,O
 sl-111,10,18,31.,,31.,Mdo,NUM,O,,O
 sl-111,10,19,oktobra,,oktober,Ncmsg,NOUN,O,,O
 sl-111,10,20,.,,.,Z,PUNCT,O,,O
-sl-111,11,1,Združeno,Združeno,združen,Appnsn,ADJ,B-LOC,GPE-Great-Britain,B-LOC
+sl-111,11,1,Združeno,Združeno,združen,Appnsn,ADJ,B-LOC,GPE-Great-Britain,O
 sl-111,11,2,kraljestvo,kraljestvo,kraljestvo,Ncnsn,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-111,11,3,lahko,,lahko,Rgp,ADV,O,,O
 sl-111,11,4,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-58,0,1,Perry,Perry,Perry,Npmsn,PROPN,B-PER,PER-Rick-Perry,B-PER
 sl-58,0,2,za,,za,Sa,ADP,O,,O
 sl-58,0,3,razpršitev,,razpršitev,Ncfsa,NOUN,O,,O
@@ -21,13 +21,13 @@ sl-58,1,9,pomen,,pomen,Ncmsan,NOUN,O,,O
 sl-58,1,10,varne,,varen,Agpfsg,ADJ,O,,O
 sl-58,1,11,in,,in,Cc,CCONJ,O,,O
 sl-58,1,12,suverene,,suveren,Agpfsg,ADJ,O,,O
-sl-58,1,13,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-58,1,13,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-58,1,14,za,,za,Sa,ADP,O,,O
 sl-58,1,15,ZDA,ZDA,ZDA,Npfpa,PROPN,B-LOC,GPE-USA,B-LOC
 sl-58,1,16,.,,.,Z,PUNCT,O,,O
 sl-58,2,1,Želi,,želeti,Vmpr3s,VERB,O,,O
 sl-58,2,2,si,,se,Px---d--y,PRON,O,,O
-sl-58,2,3,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-58,2,3,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-58,2,4,brez,,brez,Sg,ADP,O,,O
 sl-58,2,5,gospodarskih,,gospodarski,Agpmpg,ADJ,O,,O
 sl-58,2,6,",",,",",Z,PUNCT,O,,O
@@ -64,8 +64,8 @@ sl-58,3,2,zato,,zato,Cc,CCONJ,O,,O
 sl-58,3,3,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-58,3,4,podpirajo,,podpirati,Vmpr3p,VERB,O,,O
 sl-58,3,5,pobudo,pobuda,pobuda,Ncfsa,NOUN,B-PRO,PRO-Three-Seas-Initiative,B-PRO
-sl-58,3,6,Tri,Tri,trije,Mlcnpa,NUM,I-PRO,PRO-Three-Seas-Initiative,I-EVT
-sl-58,3,7,morja,morja,morje,Ncnpa,NOUN,I-PRO,PRO-Three-Seas-Initiative,I-EVT
+sl-58,3,6,Tri,Tri,trije,Mlcnpa,NUM,I-PRO,PRO-Three-Seas-Initiative,I-PRO
+sl-58,3,7,morja,morja,morje,Ncnpa,NOUN,I-PRO,PRO-Three-Seas-Initiative,I-PRO
 sl-58,3,8,in,,in,Cc,CCONJ,O,,O
 sl-58,3,9,oblikovanje,,oblikovanje,Ncnsa,NOUN,O,,O
 sl-58,3,10,energetske,energetska,energetski,Agpfsg,ADJ,B-ORG,ORG-Energy-union,B-ORG

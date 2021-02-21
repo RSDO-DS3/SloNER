@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-4,0,1,V,,v,Sl,ADP,O,,O
 sl-4,0,2,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
 sl-4,0,3,bodo,,biti,Va-f3p-n,AUX,O,,O
@@ -83,7 +83,7 @@ sl-4,4,20,mučnih,,mučen,Agpfpg,ADJ,O,,O
 sl-4,4,21,dolgotrajnih,,dolgotrajen,Agpfpg,ADJ,O,,O
 sl-4,4,22,usmrtitev,,usmrtitev,Ncfpg,NOUN,O,,O
 sl-4,4,23,.,,.,Z,PUNCT,O,,O
-sl-4,5,1,Obama,Obama,Obama,Npmsn,PROPN,B-PER,PER-Barack-Obama,B-PER
+sl-4,5,1,Obama,Obama,Obama,Npmsn,PROPN,B-PER,PER-Barack-Obama,O
 sl-4,5,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,5,3,takrat,,takrat,Rgp,ADV,O,,O
 sl-4,5,4,posredoval,,posredovati,Vmbp-sm,VERB,O,,O
@@ -110,8 +110,8 @@ sl-4,6,16,kazni,,kazen,Ncfpn,NOUN,O,,O
 sl-4,6,17,spet,,spet,Rgp,ADV,O,,O
 sl-4,6,18,izvršujejo,,izvrševati,Vmpr3p,VERB,O,,O
 sl-4,6,19,.,,.,Z,PUNCT,O,,O
-sl-4,7,1,"""",,"""",Z,PUNCT,O,,O
-sl-4,7,2,Kongres,Kongres,kongres,Ncmsn,NOUN,B-ORG,ORG-United-States-Congress,B-ORG
+sl-4,7,1,"""",,"""",Z,PUNCT,O,,B-ORG
+sl-4,7,2,Kongres,Kongres,kongres,Ncmsn,NOUN,B-ORG,ORG-United-States-Congress,I-ORG
 sl-4,7,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,7,4,izrecno,,izrecno,Rgp,ADV,O,,O
 sl-4,7,5,dovolil,,dovoliti,Vmep-sm,VERB,O,,O

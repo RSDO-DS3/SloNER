@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-2,0,1,Kowarsch,Kowarsch,Kowarsch,Npmsn,PROPN,B-PER,PER-Holger-Kowarsch,B-PER
 sl-2,0,2,:,,:,Z,PUNCT,O,,O
 sl-2,0,3,Poslovanje,,poslovanje,Ncnsn,NOUN,O,,O
@@ -105,7 +105,7 @@ sl-2,4,17,nemškega,,nemški,Agpmsg,ADJ,O,,O
 sl-2,4,18,finančnega,,finančen,Agpmsg,ADJ,O,,O
 sl-2,4,19,sklada,,sklad,Ncmsg,NOUN,O,,O
 sl-2,4,20,4,4,4,Mdc,NUM,B-ORG,ORG-4K-Invest,B-ORG
-sl-2,4,21,K,K,k,Sd,ADP,I-ORG,ORG-4K-Invest,B-ORG
+sl-2,4,21,K,K,k,Sd,ADP,I-ORG,ORG-4K-Invest,I-ORG
 sl-2,4,22,Invest,Invest,Invest,Npmsn,PROPN,I-ORG,ORG-4K-Invest,I-ORG
 sl-2,4,23,",",,",",Z,PUNCT,O,,O
 sl-2,4,24,zaradi,,zaradi,Sg,ADP,O,,O
@@ -121,7 +121,7 @@ sl-2,4,33,za,,za,Sa,ADP,O,,O
 sl-2,4,34,civilno,,civilen,Agpnsa,ADJ,O,,O
 sl-2,4,35,letalstvo,,letalstvo,Ncnsa,NOUN,O,,O
 sl-2,4,36,.,,.,Z,PUNCT,O,,O
-sl-2,5,1,Agencija,,agencija,Ncfsn,NOUN,O,,O
+sl-2,5,1,Agencija,,agencija,Ncfsn,NOUN,O,,B-ORG
 sl-2,5,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-2,5,3,po,,po,Sl,ADP,O,,O
 sl-2,5,4,informacijah,,informacija,Ncfpl,NOUN,O,,O

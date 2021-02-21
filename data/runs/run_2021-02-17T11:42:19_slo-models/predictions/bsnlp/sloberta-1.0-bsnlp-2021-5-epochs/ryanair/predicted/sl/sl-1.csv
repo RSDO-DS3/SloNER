@@ -1,10 +1,10 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-1,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
-sl-1,0,2,se,,se,Px------y,PRON,O,,B-PER
+sl-1,0,2,se,,se,Px------y,PRON,O,,O
 sl-1,0,3,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-1,0,4,opravičil,,opravičiti,Vmep-sm,VERB,O,,O
 sl-1,0,5,",",,",",Z,PUNCT,O,,O
-sl-1,0,6,policija,,policija,Ncfsn,NOUN,O,,O
+sl-1,0,6,policija,,policija,Ncfsn,NOUN,O,,B-ORG
 sl-1,0,7,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-1,0,8,izvedla,,izvesti,Vmep-sf,VERB,O,,O
 sl-1,0,9,temeljito,,temeljit,Agpfsa,ADJ,O,,O
@@ -24,9 +24,9 @@ sl-1,1,12,napadel,,napasti,Vmep-sm,VERB,O,,O
 sl-1,1,13,potnico,,potnica,Ncfsa,NOUN,O,,O
 sl-1,1,14,na,,na,Sl,ADP,O,,O
 sl-1,1,15,letalu,,letalo,Ncnsl,NOUN,O,,O
-sl-1,1,16,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-1,1,16,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-1,1,17,.,,.,Z,PUNCT,O,,O
-sl-1,2,1,Španske,,španski,Agpfpn,ADJ,O,,B-LOC
+sl-1,2,1,Španske,,španski,Agpfpn,ADJ,O,,O
 sl-1,2,2,oblasti,,oblast,Ncfpn,NOUN,O,,O
 sl-1,2,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-1,2,4,napovedale,,napovedati,Vmep-pf,VERB,O,,O
@@ -36,7 +36,7 @@ sl-1,2,7,dogodka,,dogodek,Ncmsg,NOUN,O,,O
 sl-1,2,8,",",,",",Z,PUNCT,O,,O
 sl-1,2,9,žrtvi,,žrtev,Ncfsd,NOUN,O,,O
 sl-1,2,10,pa,,pa,Cc,CCONJ,O,,O
-sl-1,2,11,se,,se,Px------y,PRON,O,,B-PER
+sl-1,2,11,se,,se,Px------y,PRON,O,,O
 sl-1,2,12,letalska,,letalski,Agpfsn,ADJ,O,,O
 sl-1,2,13,družba,,družba,Ncfsn,NOUN,O,,O
 sl-1,2,14,kljub,,kljub,Sd,ADP,O,,O
@@ -45,7 +45,7 @@ sl-1,2,16,kritik,,kritika,Ncfpg,NOUN,O,,O
 sl-1,2,17,na,,na,Sa,ADP,O,,O
 sl-1,2,18,račun,,račun,Ncmsan,NOUN,O,,O
 sl-1,2,19,njihove,,njihov,Ps3fsgp,DET,O,,O
-sl-1,2,20,reakcije,,reakcija,Ncfsg,NOUN,O,,B-PER
+sl-1,2,20,reakcije,,reakcija,Ncfsg,NOUN,O,,O
 sl-1,2,21,na,,na,Sa,ADP,O,,O
 sl-1,2,22,dogodek,,dogodek,Ncmsan,NOUN,O,,O
 sl-1,2,23,še,,še,Q,PART,O,,O
@@ -63,11 +63,11 @@ sl-1,3,8,rasistični,,rasističen,Agpmsay,ADJ,O,,O
 sl-1,3,9,incident,,incident,Ncmsan,NOUN,O,,O
 sl-1,3,10,",",,",",Z,PUNCT,O,,O
 sl-1,3,11,ki,,ki,Cs,SCONJ,O,,O
-sl-1,3,12,se,,se,Px------y,PRON,O,,B-PER
+sl-1,3,12,se,,se,Px------y,PRON,O,,O
 sl-1,3,13,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,3,14,zgodil,,zgoditi,Vmep-sm,VERB,O,,O
 sl-1,3,15,na,,na,Sl,ADP,O,,O
-sl-1,3,16,Ryanairovem,Ryanair,Ryanairov,Aspnsl,ADJ,B-ORG,ORG-Ryanair,O
+sl-1,3,16,Ryanairovem,Ryanair,Ryanairov,Aspnsl,ADJ,B-ORG,ORG-Ryanair,B-ORG
 sl-1,3,17,letu,,leto,Ncnsl,NOUN,O,,O
 sl-1,3,18,iz,,iz,Sg,ADP,O,,O
 sl-1,3,19,Barcelone,Barcelona,Barcelona,Npfsg,PROPN,B-LOC,GPE-Barcelona,B-LOC
@@ -76,13 +76,13 @@ sl-1,3,21,London,London,London,Npmsan,PROPN,B-LOC,GPE-London,B-LOC
 sl-1,3,22,.,,.,Z,PUNCT,O,,O
 sl-1,4,1,',,',Z,PUNCT,O,,O
 sl-1,4,2,Umakni,,umakniti,Vmem2s,VERB,O,,O
-sl-1,4,3,se,,se,Px------y,PRON,O,,B-PER
+sl-1,4,3,se,,se,Px------y,PRON,O,,O
 sl-1,4,4,s,,z,Sg,ADP,O,,O
 sl-1,4,5,poti,,pot,Ncfsg,NOUN,O,,O
 sl-1,4,6,.,,.,Z,PUNCT,O,,O
 sl-1,4,7,',,',Z,PUNCT,O,,O
 sl-1,4,8,',,',Z,PUNCT,O,,O
-sl-1,4,9,Ne,,ne,Q,PART,O,,B-PRO
+sl-1,4,9,Ne,,ne,Q,PART,O,,O
 sl-1,4,10,bi,,biti,Va-c,AUX,O,,O
 sl-1,4,11,smela,,smeti,Vmpp-sf,VERB,O,,O
 sl-1,4,12,sedeti,,sedeti,Vmpn,VERB,O,,O
@@ -114,7 +114,7 @@ sl-1,4,37,napadel,,napasti,Vmep-sm,VERB,O,,O
 sl-1,4,38,77-letno,,7vrleten,Agpfsa,ADJ,O,,O
 sl-1,4,39,Delsie,Delsie,Delsie,Npfsa,PROPN,B-PER,PER-Delsie-Eunice-Gayle,B-PER
 sl-1,4,40,Eunice,Eunice,Eunice,Npfsa,PROPN,I-PER,PER-Delsie-Eunice-Gayle,I-PER
-sl-1,4,41,Gayle,Gayle,Gayle,Npfsa,PROPN,I-PER,PER-Delsie-Eunice-Gayle,B-PER
+sl-1,4,41,Gayle,Gayle,Gayle,Npfsa,PROPN,I-PER,PER-Delsie-Eunice-Gayle,I-PER
 sl-1,4,42,in,,in,Cc,CCONJ,O,,O
 sl-1,4,43,ji,,on,Pp3fsd--y,PRON,O,,O
 sl-1,4,44,grozil,,groziti,Vmpp-sm,VERB,O,,O
@@ -128,7 +128,7 @@ sl-1,4,51,sedeža,,sedež,Ncmsg,NOUN,O,,O
 sl-1,4,52,.,,.,Z,PUNCT,O,,O
 sl-1,5,1,V,,v,Sa,ADP,O,,O
 sl-1,5,2,preiskavo,,preiskava,Ncfsa,NOUN,O,,O
-sl-1,5,3,se,,se,Px------y,PRON,O,,B-PER
+sl-1,5,3,se,,se,Px------y,PRON,O,,O
 sl-1,5,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,5,5,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-1,5,6,vključila,,vključiti,Vmep-sf,VERB,O,,O
@@ -155,7 +155,7 @@ sl-1,5,26,predala,,predati,Vmep-sf,VERB,O,,O
 sl-1,5,27,španskim,,španski,Agpfpd,ADJ,O,,O
 sl-1,5,28,oblastem,,oblast,Ncfpd,NOUN,O,,O
 sl-1,5,29,.,,.,Z,PUNCT,O,,O
-sl-1,6,1,Mirror,Mirror,Mirror,Npmsn,PROPN,B-PRO,PRO-Daily-Mirror,I-PRO
+sl-1,6,1,Mirror,Mirror,Mirror,Npmsn,PROPN,B-PRO,PRO-Daily-Mirror,B-PRO
 sl-1,6,2,poroča,,poročati,Vmpr3s,VERB,O,,O
 sl-1,6,3,",",,",",Z,PUNCT,O,,O
 sl-1,6,4,da,,da,Cs,SCONJ,O,,O
@@ -186,7 +186,7 @@ sl-1,6,28,verbalni,,verbalen,Agpmsny,ADJ,O,,O
 sl-1,6,29,napad,,napad,Ncmsn,NOUN,O,,O
 sl-1,6,30,.,,.,Z,PUNCT,O,,O
 sl-1,7,1,Žrtvi,,žrtev,Ncfdn,NOUN,O,,O
-sl-1,7,2,se,,se,Px------y,PRON,O,,B-PER
+sl-1,7,2,se,,se,Px------y,PRON,O,,O
 sl-1,7,3,letalska,,letalski,Agpfsn,ADJ,O,,O
 sl-1,7,4,družba,,družba,Ncfsn,NOUN,O,,O
 sl-1,7,5,",",,",",Z,PUNCT,O,,O
@@ -226,7 +226,7 @@ sl-1,9,3,natančno,,natančno,Rgp,ADV,O,,O
 sl-1,9,4,pojasniti,,pojasniti,Vmen,VERB,O,,O
 sl-1,9,5,",",,",",Z,PUNCT,O,,O
 sl-1,9,6,kaj,,kaj,Pq-nsn,PRON,O,,O
-sl-1,9,7,se,,se,Px------y,PRON,O,,B-PER
+sl-1,9,7,se,,se,Px------y,PRON,O,,O
 sl-1,9,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,9,9,zgodilo,,zgoditi,Vmep-sn,VERB,O,,O
 sl-1,9,10,",",,",",Z,PUNCT,O,,O
@@ -266,7 +266,7 @@ sl-1,10,16,moškega,,moški,Ncmsg,NOUN,O,,O
 sl-1,10,17,kot,,kot,Cs,SCONJ,O,,O
 sl-1,10,18,tudi,,tudi,Q,PART,O,,O
 sl-1,10,19,odziv,,odziv,Ncmsn,NOUN,O,,O
-sl-1,10,20,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,O
+sl-1,10,20,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-1,10,21,nesprejemljiva,,nesprejemljiv,Agpmdn,ADJ,O,,O
 sl-1,10,22,.,,.,Z,PUNCT,O,,O
 sl-1,11,1,Pred,,pred,Si,ADP,O,,O
@@ -294,7 +294,7 @@ sl-1,13,2,kritik,,kritika,Ncfpg,NOUN,O,,O
 sl-1,14,1,Nizkocenovni,,nizkocenoven,Agpmsny,ADJ,O,,O
 sl-1,14,2,letalski,,letalski,Agpmsny,ADJ,O,,O
 sl-1,14,3,prevoznik,,prevoznik,Ncmsn,NOUN,O,,O
-sl-1,14,4,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-1,14,4,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-1,14,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,14,6,bil,,biti,Va-p-sm,AUX,O,,O
 sl-1,14,7,namreč,,namreč,Cc,CCONJ,O,,O
@@ -302,7 +302,7 @@ sl-1,14,8,tarča,,tarča,Ncfsn,NOUN,O,,O
 sl-1,14,9,kritik,,kritika,Ncfpg,NOUN,O,,O
 sl-1,14,10,",",,",",Z,PUNCT,O,,O
 sl-1,14,11,ker,,ker,Cs,SCONJ,O,,O
-sl-1,14,12,se,,se,Px------y,PRON,O,,B-PER
+sl-1,14,12,se,,se,Px------y,PRON,O,,O
 sl-1,14,13,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,14,14,morala,,morati,Vmpp-sf,VERB,O,,O
 sl-1,14,15,žrtev,,žrtev,Ncfsn,NOUN,O,,O
@@ -319,7 +319,7 @@ sl-1,14,25,na,,na,Sl,ADP,O,,O
 sl-1,14,26,svojem,,svoj,Px-msl,DET,O,,O
 sl-1,14,27,sedežu,,sedež,Ncmsl,NOUN,O,,O
 sl-1,14,28,.,,.,Z,PUNCT,O,,O
-sl-1,15,1,Gaylova,Gayle,Gaylov,Aspfsn,ADJ,B-PER,PER-Delsie-Eunice-Gayle,O
+sl-1,15,1,Gaylova,Gayle,Gaylov,Aspfsn,ADJ,B-PER,PER-Delsie-Eunice-Gayle,B-PER
 sl-1,15,2,in,,in,Cc,CCONJ,O,,O
 sl-1,15,3,njena,,njen,Ps3fsnsf,DET,O,,O
 sl-1,15,4,hči,,hči,Ncfsn,NOUN,O,,O
@@ -334,7 +334,7 @@ sl-1,15,12,",",,",",Z,PUNCT,O,,O
 sl-1,15,13,od,,od,Sg,ADP,O,,O
 sl-1,15,14,letalske,,letalski,Agpfsg,ADJ,O,,O
 sl-1,15,15,družbe,,družba,Ncfsg,NOUN,O,,O
-sl-1,15,16,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-1,15,16,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-1,15,17,še,,še,Q,PART,O,,O
 sl-1,15,18,nista,,biti,Va-r3d-y,AUX,O,,O
 sl-1,15,19,prejeli,,prejeti,Vmep-df,VERB,O,,O
@@ -349,7 +349,7 @@ sl-1,15,27,.,,.,Z,PUNCT,O,,O
 sl-1,16,1,Ob,,ob,Sl,ADP,O,,O
 sl-1,16,2,tem,,ta,Pd-nsl,DET,O,,O
 sl-1,16,3,je,,biti,Va-r3s-n,AUX,O,,O
-sl-1,16,4,Gaylova,Gayle,Gaylov,Aspfsn,ADJ,B-PER,PER-Delsie-Eunice-Gayle,O
+sl-1,16,4,Gaylova,Gayle,Gaylov,Aspfsn,ADJ,B-PER,PER-Delsie-Eunice-Gayle,B-PER
 sl-1,16,5,dejala,,dejati,Vmep-sf,VERB,O,,O
 sl-1,16,6,",",,",",Z,PUNCT,O,,O
 sl-1,16,7,da,,da,Cs,SCONJ,O,,O
@@ -381,7 +381,7 @@ sl-1,16,32,bi,,biti,Va-c,AUX,O,,O
 sl-1,16,33,",",,",",Z,PUNCT,O,,O
 sl-1,16,34,če,,če,Cs,SCONJ,O,,O
 sl-1,16,35,bi,,biti,Va-c,AUX,O,,O
-sl-1,16,36,se,,se,Px------y,PRON,O,,B-PER
+sl-1,16,36,se,,se,Px------y,PRON,O,,O
 sl-1,16,37,jaz,,jaz,Pp1-sn,PRON,O,,O
 sl-1,16,38,tako,,tako,Rgp,ADV,O,,O
 sl-1,16,39,vedla,,vesti,Vmpp-sf,VERB,O,,O
@@ -405,7 +405,7 @@ sl-1,16,56,"""",,"""",Z,PUNCT,O,,O
 sl-1,17,1,Letalska,,letalski,Agpfsn,ADJ,O,,O
 sl-1,17,2,družba,,družba,Ncfsn,NOUN,O,,O
 sl-1,17,3,je,,biti,Va-r3s-n,AUX,O,,O
-sl-1,17,4,sicer,,sicer,Q,PART,O,,B-PER
+sl-1,17,4,sicer,,sicer,Q,PART,O,,O
 sl-1,17,5,po,,po,Sl,ADP,O,,O
 sl-1,17,6,dogodku,,dogodek,Ncmsl,NOUN,O,,O
 sl-1,17,7,dejala,,dejati,Vmep-sf,VERB,O,,O
@@ -425,7 +425,7 @@ sl-1,17,20,.,,.,Z,PUNCT,O,,O
 sl-1,17,21,«,,«,Z,PUNCT,O,,O
 sl-1,18,1,Na,,na,Sa,ADP,O,,O
 sl-1,18,2,dogajanje,,dogajanje,Ncnsa,NOUN,O,,O
-sl-1,18,3,se,,se,Px------y,PRON,O,,B-PER
+sl-1,18,3,se,,se,Px------y,PRON,O,,O
 sl-1,18,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,18,5,odzval,,odzvati,Vmep-sm,VERB,O,,O
 sl-1,18,6,tudi,,tudi,Q,PART,O,,O
@@ -478,7 +478,7 @@ sl-1,20,1,Na,,na,Sl,ADP,O,,O
 sl-1,20,2,družbenem,,družben,Agpnsl,ADJ,O,,O
 sl-1,20,3,omrežju,,omrežje,Ncnsl,NOUN,O,,O
 sl-1,20,4,Twitter,Twitter,Twitter,Npmsn,PROPN,B-PRO,PRO-Twitter,B-PRO
-sl-1,20,5,se,,se,Px------y,PRON,O,,B-PER
+sl-1,20,5,se,,se,Px------y,PRON,O,,O
 sl-1,20,6,širijo,,širiti,Vmpr3p,VERB,O,,O
 sl-1,20,7,pozivi,,poziv,Ncmpn,NOUN,O,,O
 sl-1,20,8,k,,k,Sd,ADP,O,,O

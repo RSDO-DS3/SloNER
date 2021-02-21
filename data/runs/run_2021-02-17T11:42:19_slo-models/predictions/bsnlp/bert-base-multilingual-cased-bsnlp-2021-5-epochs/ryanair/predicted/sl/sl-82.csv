@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-82,0,1,(,,(,Z,PUNCT,O,,O
 sl-82,0,2,VIDEO,,video,Ncmsn,NOUN,O,,O
 sl-82,0,3,),,),Z,PUNCT,O,,O
@@ -125,7 +125,7 @@ sl-82,5,24,grda,,grd,Agpfsn,ADJ,O,,O
 sl-82,5,25,krava,,krava,Ncfsn,NOUN,O,,O
 sl-82,5,26,!,,!,Z,PUNCT,O,,O
 sl-82,5,27,"""",,"""",Z,PUNCT,O,,O
-sl-82,6,1,Nato,,nato,Rgp,ADV,O,,B-ORG
+sl-82,6,1,Nato,,nato,Rgp,ADV,O,,O
 sl-82,6,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-82,6,3,posredovala,,posredovati,Vmbp-sf,VERB,O,,O
 sl-82,6,4,stevardesa,,stevardesa,Ncfsn,NOUN,O,,O
@@ -291,7 +291,7 @@ sl-82,12,18,sedeti,,sedeti,Vmpn,VERB,O,,O
 sl-82,12,19,tam,,tam,Rgp,ADV,O,,O
 sl-82,12,20,.,,.,Z,PUNCT,O,,O
 sl-82,12,21,"""",,"""",Z,PUNCT,O,,O
-sl-82,12,22,Nato,,nato,Rgp,ADV,O,,B-ORG
+sl-82,12,22,Nato,,nato,Rgp,ADV,O,,O
 sl-82,12,23,naj,,naj,Q,PART,O,,O
 sl-82,12,24,bi,,biti,Va-c,AUX,O,,O
 sl-82,12,25,se,,se,Px------y,PRON,O,,O
@@ -465,7 +465,7 @@ sl-82,21,7,vsem,,ves,Pg-nsl,DET,O,,O
 sl-82,21,8,skupaj,,skupaj,Rgp,ADV,O,,O
 sl-82,21,9,obvestili,,obvestiti,Vmep-pm,VERB,O,,O
 sl-82,21,10,tudi,,tudi,Q,PART,O,,O
-sl-82,21,11,špansko,,španski,Agpfsa,ADJ,O,,O
+sl-82,21,11,špansko,,španski,Agpfsa,ADJ,O,,B-LOC
 sl-82,21,12,policijo,,policija,Ncfsa,NOUN,O,,O
 sl-82,21,13,in,,in,Cc,CCONJ,O,,O
 sl-82,21,14,oblasti,,oblast,Ncfpa,NOUN,O,,O

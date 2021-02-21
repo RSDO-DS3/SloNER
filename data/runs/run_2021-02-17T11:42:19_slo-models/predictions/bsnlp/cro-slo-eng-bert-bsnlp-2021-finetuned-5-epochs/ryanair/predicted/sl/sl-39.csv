@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-39,0,1,Prvi,,prvi,Mlomsn,ADJ,O,,O
 sl-39,0,2,mož,,mož,Ncmsn,NOUN,O,,O
 sl-39,0,3,Lufthanse,Lufthansa,Lufthansa,Npfsg,PROPN,B-ORG,ORG-Lufthansa,B-ORG

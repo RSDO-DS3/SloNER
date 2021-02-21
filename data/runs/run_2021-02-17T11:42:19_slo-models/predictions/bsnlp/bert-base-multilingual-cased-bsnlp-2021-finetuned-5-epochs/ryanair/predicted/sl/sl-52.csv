@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-52,0,1,Nemčija,Nemčija,Nemčija,Npfsn,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-52,0,2,razpravlja,,razpravljati,Vmpr3s,VERB,O,,O
 sl-52,0,3,:,,:,Z,PUNCT,O,,O
@@ -19,7 +19,7 @@ sl-52,1,9,10,,10,Mdc,NUM,O,,O
 sl-52,1,10,najhujših,,hud,Agsmpg,ADJ,O,,O
 sl-52,1,11,onesnaževalcev,,onesnaževalec,Ncmpg,NOUN,O,,O
 sl-52,1,12,.,,.,Z,PUNCT,O,,O
-sl-52,2,1,REUTERS,REUTERS,Reuters,Npmsn,PROPN,B-ORG,ORG-Reuters,B-LOC
+sl-52,2,1,REUTERS,REUTERS,Reuters,Npmsn,PROPN,B-ORG,ORG-Reuters,B-ORG
 sl-52,3,1,V,,v,Sl,ADP,O,,O
 sl-52,3,2,Nemčiji,Nemčija,Nemčija,Npfsl,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-52,3,3,potekajo,,potekati,Vmpr3p,VERB,O,,O
@@ -186,8 +186,8 @@ sl-52,9,21,na,,na,Sa,ADP,O,,O
 sl-52,9,22,50,,50,Mdc,NUM,O,,O
 sl-52,9,23,evrov,,evro,Ncmpg,NOUN,O,,O
 sl-52,9,24,.,,.,Z,PUNCT,O,,O
-sl-52,10,1,ALI,,ali,Rgp,ADV,O,,B-LOC
-sl-52,10,2,VESTE,,vedeti,Vmpr2p,VERB,O,,B-LOC
+sl-52,10,1,ALI,,ali,Rgp,ADV,O,,O
+sl-52,10,2,VESTE,,vedeti,Vmpr2p,VERB,O,,O
 sl-52,10,3,:,,:,Z,PUNCT,O,,O
 sl-52,10,4,Vam,,ti,Pp2-pd,PRON,O,,O
 sl-52,10,5,lahko,,lahko,Rgp,ADV,O,,O
@@ -321,8 +321,8 @@ sl-52,16,16,",",,",",Z,PUNCT,O,,O
 sl-52,16,17,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-52,16,18,opravičljivo,,opravičljiv,Agpnsn,ADJ,O,,O
 sl-52,16,19,.,,.,Z,PUNCT,O,,O
-sl-52,17,1,REUTERS,REUTERS,Reuters,Npmsn,PROPN,B-ORG,ORG-Reuters,B-LOC
-sl-52,18,1,Srčica,,srčica,Ncfsn,NOUN,O,,B-PER
+sl-52,17,1,REUTERS,REUTERS,Reuters,Npmsn,PROPN,B-ORG,ORG-Reuters,B-ORG
+sl-52,18,1,Srčica,,srčica,Ncfsn,NOUN,O,,O
 sl-52,18,2,skrbi,,skrbeti,Vmpr3s,VERB,O,,O
 sl-52,18,3,predlagateljev,,predlagatelj,Ncmpg,NOUN,O,,O
 sl-52,18,4,je,,biti,Va-r3s-n,AUX,O,,O

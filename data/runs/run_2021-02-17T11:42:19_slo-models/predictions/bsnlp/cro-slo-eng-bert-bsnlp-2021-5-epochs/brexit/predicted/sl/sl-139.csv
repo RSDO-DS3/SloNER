@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-139,0,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-139,0,2,sredi,,sredi,Sg,ADP,O,,O
 sl-139,0,3,počitnic,,počitnice,Ncfpg,NOUN,O,,O
@@ -49,7 +49,7 @@ sl-139,3,2,britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-139,3,3,zunanji,,zunanji,Agpmsny,ADJ,O,,O
 sl-139,3,4,minister,,minister,Ncmsn,NOUN,O,,O
 sl-139,3,5,Jeremy,Jeremy,Jeremy,Npmsn,PROPN,B-PER,PER-Jeremy-Hunt,B-PER
-sl-139,3,6,Hunt,Hunt,Hunt,Npmsn,PROPN,I-PER,PER-Jeremy-Hunt,B-PER
+sl-139,3,6,Hunt,Hunt,Hunt,Npmsn,PROPN,I-PER,PER-Jeremy-Hunt,I-PER
 sl-139,3,7,",",,",",Z,PUNCT,O,,O
 sl-139,3,8,ki,,ki,Cs,SCONJ,O,,O
 sl-139,3,9,je,,biti,Va-r3s-n,AUX,O,,O
@@ -59,7 +59,7 @@ sl-139,3,12,referendumom,,referendum,Ncmsi,NOUN,O,,O
 sl-139,3,13,nasprotnik,,nasprotnik,Ncmsn,NOUN,O,,O
 sl-139,3,14,odhoda,,odhod,Ncmsg,NOUN,O,,O
 sl-139,3,15,Velike,Velika,velik,Agpfsg,ADJ,B-LOC,GPE-Great-Britain,B-LOC
-sl-139,3,16,Britanije,Britanija,Britanija,Npfsg,PROPN,I-LOC,GPE-Great-Britain,B-LOC
+sl-139,3,16,Britanije,Britanija,Britanija,Npfsg,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-139,3,17,iz,,iz,Sg,ADP,O,,O
 sl-139,3,18,Evropske,Evropska,evropski,Agpfsg,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-139,3,19,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-European-Union,I-ORG
@@ -187,11 +187,11 @@ sl-139,7,1,Dodatna,,dodaten,Agpnpn,ADJ,O,,O
 sl-139,7,2,britanska,,britanski,Agpnpn,ADJ,O,,O
 sl-139,7,3,popuščanja,,popuščanje,Ncnpn,NOUN,O,,O
 sl-139,8,1,Državni,Državni,državen,Agpmsny,ADJ,B-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,B-ORG
-sl-139,8,2,inštitut,inštitut,inštitut,Ncmsn,NOUN,I-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,O
-sl-139,8,3,za,za,za,Sa,ADP,I-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,O
+sl-139,8,2,inštitut,inštitut,inštitut,Ncmsn,NOUN,I-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,I-ORG
+sl-139,8,3,za,za,za,Sa,ADP,I-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,I-ORG
 sl-139,8,4,ekonomske,ekonomske,ekonomski,Agpfpa,ADJ,I-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,I-ORG
-sl-139,8,5,in,in,in,Cc,CCONJ,I-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,O
-sl-139,8,6,družbene,družbene,družben,Agpfpa,ADJ,I-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,O
+sl-139,8,5,in,in,in,Cc,CCONJ,I-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,I-ORG
+sl-139,8,6,družbene,družbene,družben,Agpfpa,ADJ,I-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,I-ORG
 sl-139,8,7,raziskave,raziskave,raziskava,Ncfpa,NOUN,I-ORG,ORG-National-Institute-for-Economic-and-Social-Research-UK,I-ORG
 sl-139,8,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-139,8,9,ocenil,,oceniti,Vmep-sm,VERB,O,,O
@@ -270,11 +270,11 @@ sl-139,10,7,(,,(,Z,PUNCT,O,,O
 sl-139,10,8,kanadski,,kanadski,Agpmsny,ADJ,O,,O
 sl-139,10,9,),,),Z,PUNCT,O,,O
 sl-139,10,10,guverner,,guverner,Ncmsn,NOUN,O,,O
-sl-139,10,11,angleške,angleška,angleški,Agpfsg,ADJ,B-ORG,ORG-Bank-of-England,O
-sl-139,10,12,centralne,centralna,centralen,Agpfsg,ADJ,I-ORG,ORG-Bank-of-England,O
+sl-139,10,11,angleške,angleška,angleški,Agpfsg,ADJ,B-ORG,ORG-Bank-of-England,B-ORG
+sl-139,10,12,centralne,centralna,centralen,Agpfsg,ADJ,I-ORG,ORG-Bank-of-England,I-ORG
 sl-139,10,13,banke,banka,banka,Ncfsg,NOUN,I-ORG,ORG-Bank-of-England,I-ORG
 sl-139,10,14,Mark,Mark,Mark,Npmsn,PROPN,B-PER,PER-Mark-Carney,B-PER
-sl-139,10,15,Carney,Carney,Carney,Npmsn,PROPN,I-PER,PER-Mark-Carney,B-PER
+sl-139,10,15,Carney,Carney,Carney,Npmsn,PROPN,I-PER,PER-Mark-Carney,I-PER
 sl-139,10,16,.,,.,Z,PUNCT,O,,O
 sl-139,11,1,Dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-139,11,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -307,7 +307,7 @@ sl-139,12,8,obtožili,,obtožiti,Vmep-pm,VERB,O,,O
 sl-139,12,9,",",,",",Z,PUNCT,O,,O
 sl-139,12,10,da,,da,Cs,SCONJ,O,,O
 sl-139,12,11,je,,biti,Va-r3s-n,AUX,O,,O
-sl-139,12,12,del,,del,Ncmsn,NOUN,O,,B-LOC
+sl-139,12,12,del,,del,Ncmsn,NOUN,O,,O
 sl-139,12,13,»,,»,Z,PUNCT,O,,O
 sl-139,12,14,zastraševalnega,,zastraševalen,Agpmsg,ADJ,O,,O
 sl-139,12,15,projekta,,projekt,Ncmsg,NOUN,O,,O
@@ -356,7 +356,7 @@ sl-139,15,24,s,,z,Si,ADP,O,,O
 sl-139,15,25,francoskim,,francoski,Agpmsi,ADJ,O,,O
 sl-139,15,26,predsednikom,,predsednik,Ncmsi,NOUN,O,,O
 sl-139,15,27,Emmanuelom,Emmanuel,Emmanuel,Npmsi,PROPN,B-PER,PER-Emmanuel-Macron,B-PER
-sl-139,15,28,Macronom,Macron,Macron,Npmsi,PROPN,I-PER,PER-Emmanuel-Macron,B-PER
+sl-139,15,28,Macronom,Macron,Macron,Npmsi,PROPN,I-PER,PER-Emmanuel-Macron,I-PER
 sl-139,15,29,v,,v,Sl,ADP,O,,O
 sl-139,15,30,poletni,,poleten,Agpfsl,ADJ,O,,O
 sl-139,15,31,rezidenci,,rezidenca,Ncfsl,NOUN,O,,O
@@ -365,7 +365,7 @@ sl-139,15,33,predsednikov,,predsednik,Ncmpg,NOUN,O,,O
 sl-139,15,34,v,,v,Sl,ADP,O,,O
 sl-139,15,35,gradu,,grad,Ncmsl,NOUN,O,,O
 sl-139,15,36,Fort,Fort,Fort,Npmsn,PROPN,B-LOC,LOC-Fort-de-Brégançon,B-LOC
-sl-139,15,37,de,de,de,Xf,X,I-LOC,LOC-Fort-de-Brégançon,B-LOC
+sl-139,15,37,de,de,de,Xf,X,I-LOC,LOC-Fort-de-Brégançon,I-LOC
 sl-139,15,38,Brégançon,Brégançon,Brégançon,Npmsn,PROPN,I-LOC,LOC-Fort-de-Brégançon,I-LOC
 sl-139,15,39,na,,na,Sl,ADP,O,,O
 sl-139,15,40,zasebnem,,zaseben,Agpmsl,ADJ,O,,O
@@ -472,7 +472,7 @@ sl-139,19,7,predčasne,,predčasen,Agpfpa,ADJ,O,,O
 sl-139,19,8,volitve,,volitev,Ncfpa,NOUN,O,,O
 sl-139,19,9,in,,in,Cc,CCONJ,O,,O
 sl-139,19,10,zmago,,zmaga,Ncfsa,NOUN,O,,O
-sl-139,19,11,laburistov,laburist,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-PER
+sl-139,19,11,laburistov,laburist,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-ORG
 sl-139,19,12,pod,,pod,Si,ADP,O,,O
 sl-139,19,13,vodstvom,,vodstvo,Ncnsi,NOUN,O,,O
 sl-139,19,14,levičarja,,levičar,Ncmsg,NOUN,O,,O

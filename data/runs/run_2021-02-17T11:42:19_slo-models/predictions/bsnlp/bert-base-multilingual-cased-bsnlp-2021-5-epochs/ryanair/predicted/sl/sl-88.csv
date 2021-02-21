@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-88,0,1,Ali,,ali,Rgp,ADV,O,,O
 sl-88,0,2,veste,,vedeti,Vmpr2p,VERB,O,,O
 sl-88,0,3,",",,",",Z,PUNCT,O,,O

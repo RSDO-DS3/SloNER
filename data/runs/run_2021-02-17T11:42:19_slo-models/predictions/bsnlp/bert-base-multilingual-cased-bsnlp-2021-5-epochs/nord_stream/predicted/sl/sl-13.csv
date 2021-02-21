@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-13,0,1,Dolgočasen,,dolgočasen,Agpmsnn,ADJ,O,,O
 sl-13,0,2,borzni,,borzen,Agpmsny,ADJ,O,,O
 sl-13,0,3,teden,,teden,Ncmsn,NOUN,O,,O
@@ -40,7 +40,7 @@ sl-13,2,11,priti,,priti,Vmen,VERB,O,,O
 sl-13,2,12,na,,na,Sa,ADP,O,,O
 sl-13,2,13,srečanje,,srečanje,Ncnsa,NOUN,O,,O
 sl-13,2,14,skupine,,skupina,Ncfsg,NOUN,O,,O
-sl-13,2,15,G20,G20,G20,Npmsn,PROPN,B-ORG,ORG-G20,B-ORG
+sl-13,2,15,G20,G20,G20,Npmsn,PROPN,B-ORG,ORG-G20,I-EVT
 sl-13,2,16,v,,v,Sl,ADP,O,,O
 sl-13,2,17,Osaki,Osaka,Osak,Npmsl,PROPN,B-LOC,GPE-Osaka,B-LOC
 sl-13,2,18,konec,,konec,Sg,ADP,O,,O
@@ -95,7 +95,7 @@ sl-13,4,12,deluje,,delovati,Vmpr3s,VERB,O,,O
 sl-13,4,13,naravnost,,naravnost,Rgp,ADV,O,,O
 sl-13,4,14,otročje,,otročje,Ncnsn,NOUN,O,,O
 sl-13,4,15,.,,.,Z,PUNCT,O,,O
-sl-13,5,1,Ker,,ker,Cs,SCONJ,O,,O
+sl-13,5,1,Ker,,ker,Cs,SCONJ,O,,B-PER
 sl-13,5,2,Trumpu,Trump,Trump,Npmsd,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-13,5,3,konflikti,,konflikt,Ncmpn,NOUN,O,,O
 sl-13,5,4,s,,z,Si,ADP,O,,O
@@ -122,9 +122,9 @@ sl-13,5,24,Merkel,Merkel,Merkel,Npfsg,PROPN,I-PER,PER-Angela-Merkel,I-PER
 sl-13,5,25,ruskemu,,ruski,Agpmsd,ADJ,O,,O
 sl-13,5,26,projektu,,projekt,Ncmsd,NOUN,O,,O
 sl-13,5,27,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
-sl-13,5,28,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
+sl-13,5,28,Severni,,severen,Agpmsny,ADJ,O,,O
 sl-13,5,29,tok,,tok,Ncmsn,NOUN,O,,I-PRO
-sl-13,5,30,2.,,2.,Mdo,NUM,O,,I-PRO
+sl-13,5,30,2.,,2.,Mdo,NUM,O,,O
 sl-13,5,31,Očitki,,očitek,Ncmpn,NOUN,O,,O
 sl-13,5,32,so,,biti,Va-r3p-n,AUX,O,,O
 sl-13,5,33,leteli,,leteti,Vmpp-pm,VERB,O,,O
@@ -141,7 +141,7 @@ sl-13,5,43,obrambo,,obramba,Ncfsa,NOUN,O,,O
 sl-13,5,44,.,,.,Z,PUNCT,O,,O
 sl-13,6,1,Na,,na,Sl,ADP,O,,O
 sl-13,6,2,Bližnjem,Bližnji,bližnji,Agpmsl,ADJ,B-LOC,LOC-Middle-East,B-LOC
-sl-13,6,3,vzhodu,vzhod,vzhod,Ncmsl,NOUN,I-LOC,LOC-Middle-East,I-LOC
+sl-13,6,3,vzhodu,vzhod,vzhod,Ncmsl,NOUN,I-LOC,LOC-Middle-East,O
 sl-13,6,4,pa,,pa,Cc,CCONJ,O,,O
 sl-13,6,5,se,,se,Px------y,PRON,O,,O
 sl-13,6,6,je,,biti,Va-r3s-n,AUX,O,,O
@@ -325,7 +325,7 @@ sl-13,13,12,dodatnih,,dodaten,Agpmpl,ADJ,O,,O
 sl-13,13,13,stimulativnih,,stimulativen,Agpmpl,ADJ,O,,O
 sl-13,13,14,ukrepih,,ukrep,Ncmpl,NOUN,O,,O
 sl-13,13,15,centralnih,,centralen,Agpfpg,ADJ,O,,O
-sl-13,13,16,bank,,banka,Ncfpg,NOUN,O,,O
+sl-13,13,16,bank,,banka,Ncfpg,NOUN,O,,I-ORG
 sl-13,13,17,",",,",",Z,PUNCT,O,,O
 sl-13,13,18,tudi,,tudi,Q,PART,O,,O
 sl-13,13,19,znižanju,,znižanje,Ncnsl,NOUN,O,,O

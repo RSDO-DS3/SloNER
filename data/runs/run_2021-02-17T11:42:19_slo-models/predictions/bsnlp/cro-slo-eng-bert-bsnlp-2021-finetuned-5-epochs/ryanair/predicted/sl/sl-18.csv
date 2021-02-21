@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-18,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-18,0,2,v,,v,Sl,ADP,O,,O
 sl-18,0,3,škripcih,,škripec,Ncmpl,NOUN,O,,O
@@ -139,7 +139,7 @@ sl-18,5,16,delajo,,delati,Vmpr3p,VERB,O,,O
 sl-18,5,17,",",,",",Z,PUNCT,O,,O
 sl-18,5,18,in,,in,Cc,CCONJ,O,,O
 sl-18,5,19,ne,,ne,Q,PART,O,,O
-sl-18,5,20,irsko,,irski,Agpfsa,ADJ,O,,O
+sl-18,5,20,irsko,,irski,Agpfsa,ADJ,O,,B-LOC
 sl-18,5,21,zakonodajo,,zakonodaja,Ncfsa,NOUN,O,,O
 sl-18,5,22,.,,.,Z,PUNCT,O,,O
 sl-18,6,1,Prav,,prav,Q,PART,O,,O
@@ -163,7 +163,7 @@ sl-18,7,7,za,,za,Sa,ADP,O,,O
 sl-18,7,8,sindikate,,sindikat,Ncmpa,NOUN,O,,O
 sl-18,7,9,v,,v,Sl,ADP,O,,O
 sl-18,7,10,Veliki,Velika,velik,Agpfsl,ADJ,B-LOC,GPE-Great-Britain,B-LOC
-sl-18,7,11,Britaniji,Britanija,Britanija,Npfsl,PROPN,I-LOC,GPE-Great-Britain,B-LOC
+sl-18,7,11,Britaniji,Britanija,Britanija,Npfsl,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-18,7,12,in,,in,Cc,CCONJ,O,,O
 sl-18,7,13,Italiji,Italija,Italija,Npfsl,PROPN,B-LOC,GPE-Italy,B-LOC
 sl-18,7,14,.,,.,Z,PUNCT,O,,O
@@ -322,7 +322,7 @@ sl-18,13,5,razmere,,razmera,Ncfpa,NOUN,O,,O
 sl-18,13,6,pri,,pri,Sl,ADP,O,,O
 sl-18,13,7,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-18,13,8,na,,na,Sl,ADP,O,,O
-sl-18,13,9,twitterju,Twitter,twitter,Ncmsl,NOUN,B-PRO,PRO-Twitter,B-PRO
+sl-18,13,9,twitterju,Twitter,twitter,Ncmsl,NOUN,B-PRO,PRO-Twitter,O
 sl-18,13,10,komentirala,,komentirati,Vmbp-sf,VERB,O,,O
 sl-18,13,11,Onika,Onika,Onika,Npfsn,PROPN,B-PER,PER-Onika-Staas,B-PER
 sl-18,13,12,Staas,Staas,Staas,Npfsn,PROPN,I-PER,PER-Onika-Staas,I-PER

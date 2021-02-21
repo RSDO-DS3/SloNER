@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-136,0,1,Vsi,,ves,Pg-mpn,DET,O,,O
 sl-136,0,2,bi,,biti,Va-c,AUX,O,,O
 sl-136,0,3,krepili,,krepiti,Vmpp-pm,VERB,O,,O
@@ -26,7 +26,7 @@ sl-136,1,10,da,,da,Cs,SCONJ,O,,O
 sl-136,1,11,so,,biti,Va-r3p-n,AUX,O,,O
 sl-136,1,12,bile,,biti,Va-p-pf,AUX,O,,O
 sl-136,1,13,spremembe,,sprememba,Ncfpn,NOUN,O,,O
-sl-136,1,14,prostorskega,,prostorski,Agpmsg,ADJ,O,,O
+sl-136,1,14,prostorskega,,prostorski,Agpmsg,ADJ,O,,B-PRO
 sl-136,1,15,načrta,,načrt,Ncmsg,NOUN,O,,I-PRO
 sl-136,1,16,(,,(,Z,PUNCT,O,,O
 sl-136,1,17,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
@@ -193,7 +193,7 @@ sl-136,6,6,da,,da,Cs,SCONJ,O,,O
 sl-136,6,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-136,6,8,bila,,biti,Va-p-sf,AUX,O,,O
 sl-136,6,9,sprememba,,sprememba,Ncfsn,NOUN,O,,O
-sl-136,6,10,OPN,OPN,OPN,Npmsg,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,6,10,OPN,OPN,OPN,Npmsg,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-ORG
 sl-136,6,11,maja,,maj,Ncmsg,NOUN,O,,O
 sl-136,6,12,2018,,2018,Mdc,NUM,O,,O
 sl-136,6,13,sprejeta,,sprejet,Appfsn,ADJ,O,,O
@@ -210,13 +210,13 @@ sl-136,7,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-136,7,4,bil,,biti,Va-p-sm,AUX,O,,O
 sl-136,7,5,sprejet,,sprejet,Appmsnn,ADJ,O,,O
 sl-136,7,6,nov,,nov,Agpmsnn,ADJ,O,,O
-sl-136,7,7,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,7,7,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,O
 sl-136,7,8,za,,za,Sa,ADP,O,,O
 sl-136,7,9,Rožno,Rožna,rožen,Agpfsa,ADJ,B-LOC,LOC-Rožna-dolina,B-LOC
 sl-136,7,10,dolino,dolina,dolina,Ncfsa,NOUN,I-LOC,LOC-Rožna-dolina,I-LOC
 sl-136,7,11,.,,.,Z,PUNCT,O,,O
 sl-136,8,1,Novi,,nov,Agpmsny,ADJ,O,,O
-sl-136,8,2,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,8,2,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-ORG
 sl-136,8,3,predvideva,,predvidevati,Vmpr3s,VERB,O,,O
 sl-136,8,4,omejitev,,omejitev,Ncfsa,NOUN,O,,O
 sl-136,8,5,višine,,višina,Ncfsg,NOUN,O,,O
@@ -249,7 +249,7 @@ sl-136,8,31,dopušča,,dopuščati,Vmpr3s,VERB,O,,O
 sl-136,8,32,gradnjo,,gradnja,Ncfsa,NOUN,O,,O
 sl-136,8,33,po,,po,Sl,ADP,O,,O
 sl-136,8,34,starem,,star,Agpmsl,ADJ,O,,O
-sl-136,8,35,OPN,OPN,OPN,Npmsl,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,8,35,OPN,OPN,OPN,Npmsl,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-ORG
 sl-136,8,36,.,,.,Z,PUNCT,O,,O
 sl-136,9,1,Na,,na,Sl,ADP,O,,O
 sl-136,9,2,teh,,ta,Pd-fpl,DET,O,,O
@@ -362,7 +362,7 @@ sl-136,12,11,že,,že,Q,PART,O,,O
 sl-136,12,12,zgodilo,,zgoditi,Vmep-sn,VERB,O,,O
 sl-136,12,13,.,,.,Z,PUNCT,O,,O
 sl-136,13,1,Novi,,nov,Agpmsny,ADJ,O,,O
-sl-136,13,2,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,13,2,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-ORG
 sl-136,13,3,zgoraj,,zgoraj,Rgp,ADV,O,,O
 sl-136,13,4,navedenih,,naveden,Appnpg,ADJ,O,,O
 sl-136,13,5,spoznanj,,spoznanje,Ncnpg,NOUN,O,,O
@@ -423,7 +423,7 @@ sl-136,15,6,da,,da,Cs,SCONJ,O,,O
 sl-136,15,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-136,15,8,bila,,biti,Va-p-sf,AUX,O,,O
 sl-136,15,9,sprememba,,sprememba,Ncfsn,NOUN,O,,O
-sl-136,15,10,OPN,OPN,OPN,Npmsg,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,15,10,OPN,OPN,OPN,Npmsg,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-ORG
 sl-136,15,11,maja,,maj,Ncmsg,NOUN,O,,O
 sl-136,15,12,2018,,2018,Mdc,NUM,O,,O
 sl-136,15,13,sprejeta,,sprejet,Appfsn,ADJ,O,,O
@@ -436,7 +436,7 @@ sl-136,15,19,povsem,,povsem,Rgp,ADV,O,,O
 sl-136,15,20,neresnična,,neresničen,Agpfsn,ADJ,O,,O
 sl-136,15,21,?,,?,Z,PUNCT,O,,O
 sl-136,16,1,Sprejetje,,sprejetje,Ncnsn,NOUN,O,,O
-sl-136,16,2,OPN,OPN,OPN,Npmsg,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,16,2,OPN,OPN,OPN,Npmsg,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-ORG
 sl-136,16,3,leta,,leto,Ncnsg,NOUN,O,,O
 sl-136,16,4,2010,,2010,Mdc,NUM,O,,O
 sl-136,16,5,je,,biti,Va-r3s-n,AUX,O,,O
@@ -459,10 +459,10 @@ sl-136,16,21,odpor,,odpor,Ncmsan,NOUN,O,,O
 sl-136,16,22,.,,.,Z,PUNCT,O,,O
 sl-136,17,1,Nastala,,nastati,Vmep-sf,VERB,O,,O
 sl-136,17,2,je,,biti,Va-r3s-n,AUX,O,,O
-sl-136,17,3,Civilna,Civilna,civilen,Agpfsn,ADJ,B-ORG,ORG-Civilna-iniciativa-Rožna-dolina,O
-sl-136,17,4,iniciativa,iniciativa,iniciativa,Ncfsn,NOUN,I-ORG,ORG-Civilna-iniciativa-Rožna-dolina,O
+sl-136,17,3,Civilna,Civilna,civilen,Agpfsn,ADJ,B-ORG,ORG-Civilna-iniciativa-Rožna-dolina,B-ORG
+sl-136,17,4,iniciativa,iniciativa,iniciativa,Ncfsn,NOUN,I-ORG,ORG-Civilna-iniciativa-Rožna-dolina,I-ORG
 sl-136,17,5,Rožna,Rožna,rožen,Agpfsn,ADJ,I-ORG,ORG-Civilna-iniciativa-Rožna-dolina,B-PRO
-sl-136,17,6,dolina,dolina,dolina,Ncfsn,NOUN,I-ORG,ORG-Civilna-iniciativa-Rožna-dolina,I-PRO
+sl-136,17,6,dolina,dolina,dolina,Ncfsn,NOUN,I-ORG,ORG-Civilna-iniciativa-Rožna-dolina,I-ORG
 sl-136,17,7,",",,",",Z,PUNCT,O,,O
 sl-136,17,8,ki,,ki,Cs,SCONJ,O,,O
 sl-136,17,9,je,,biti,Va-r3s-n,AUX,O,,O
@@ -488,7 +488,7 @@ sl-136,17,28,prebivalcev,,prebivalec,Ncmpg,NOUN,O,,O
 sl-136,17,29,),,),Z,PUNCT,O,,O
 sl-136,17,30,proti,,proti,Sd,ADP,O,,O
 sl-136,17,31,temu,,ta,Pd-nsd,DET,O,,O
-sl-136,17,32,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,17,32,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-ORG
 sl-136,17,33,.,,.,Z,PUNCT,O,,O
 sl-136,18,1,Na,,na,Sl,ADP,O,,O
 sl-136,18,2,osnovi,,osnova,Ncfsl,NOUN,O,,O
@@ -573,7 +573,7 @@ sl-136,20,31,tudi,,tudi,Q,PART,O,,O
 sl-136,20,32,na,,na,Sl,ADP,O,,O
 sl-136,20,33,javni,,javen,Agpfsl,ADJ,O,,O
 sl-136,20,34,razgrnitvi,,razgrnitev,Ncfsl,NOUN,O,,O
-sl-136,20,35,OPN,OPN,OPN,Npmsg,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,20,35,OPN,OPN,OPN,Npmsg,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-ORG
 sl-136,20,36,novembra,,november,Ncmsg,NOUN,O,,O
 sl-136,20,37,2017.,,2017.,Mdo,NUM,O,,O
 sl-136,21,1,Zahtevamo,,zahtevati,Vmbr1p,VERB,O,,O
@@ -590,7 +590,7 @@ sl-136,21,11,2010.,,2010.,Mdo,NUM,O,,O
 sl-136,22,1,Če,,če,Cs,SCONJ,O,,O
 sl-136,22,2,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-136,22,3,sedanji,,sedanji,Agpmsny,ADJ,O,,O
-sl-136,22,4,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,22,4,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-ORG
 sl-136,22,5,za,,za,Sa,ADP,O,,O
 sl-136,22,6,Rožno,Rožna,rožen,Agpfsa,ADJ,B-LOC,LOC-Rožna-dolina,B-LOC
 sl-136,22,7,dolino,dolina,dolina,Ncfsa,NOUN,I-LOC,LOC-Rožna-dolina,I-LOC

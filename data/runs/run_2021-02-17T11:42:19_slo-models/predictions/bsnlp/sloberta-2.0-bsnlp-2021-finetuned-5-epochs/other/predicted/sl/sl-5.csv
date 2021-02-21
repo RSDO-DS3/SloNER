@@ -1,8 +1,8 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-5,0,1,Med,,med,Si,ADP,O,,O
 sl-5,0,2,prtljago,,prtljaga,Ncfsi,NOUN,O,,O
 sl-5,0,3,na,,na,Sl,ADP,O,,O
-sl-5,0,4,letališču,,letališče,Ncnsl,NOUN,O,,I-LOC
+sl-5,0,4,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-5,0,5,tudi,,tudi,Q,PART,O,,O
 sl-5,0,6,krokodili,,krokodil,Ncmpn,NOUN,O,,O
 sl-5,0,7,",",,",",Z,PUNCT,O,,O
@@ -61,7 +61,7 @@ sl-5,3,15,živali,,žival,Ncfdn,NOUN,O,,O
 sl-5,3,16,prišli,,priti,Vmep-df,VERB,O,,O
 sl-5,3,17,in,,in,Cc,CCONJ,O,,O
 sl-5,3,18,kam,,kam,Rgp,ADV,O,,O
-sl-5,3,19,ju,,on,Pp3mda--y,PRON,O,,I-LOC
+sl-5,3,19,ju,,on,Pp3mda--y,PRON,O,,O
 sl-5,3,20,je,,biti,Va-r3s-n,AUX,O,,O
 sl-5,3,21,nekdo,,nekdo,Pi-msn,PRON,O,,O
 sl-5,3,22,želel,,želeti,Vmpp-sm,VERB,O,,O
@@ -106,7 +106,7 @@ sl-5,6,3,je,,biti,Va-r3s-n,VERB,O,,O
 sl-5,6,4,varovati,,varovati,Vmpn,VERB,O,,O
 sl-5,6,5,življenje,,življenje,Ncnsa,NOUN,O,,O
 sl-5,6,6,–,,–,Z,PUNCT,O,,O
-sl-5,6,7,v,,v,Sl,ADP,O,,I-LOC
+sl-5,6,7,v,,v,Sl,ADP,O,,O
 sl-5,6,8,katerikoli,,katerikoli,Pr-fsl,DET,O,,O
 sl-5,6,9,obliki,,oblika,Ncfsl,NOUN,O,,O
 sl-5,6,10,",",,",",Z,PUNCT,O,,O
@@ -134,7 +134,7 @@ sl-5,7,11,nenavadnim,,nenavaden,Agpmsi,ADJ,O,,O
 sl-5,7,12,živalskim,,živalski,Agpmsi,ADJ,O,,O
 sl-5,7,13,tovorom,,tovor,Ncmsi,NOUN,O,,O
 sl-5,7,14,na,,na,Sl,ADP,O,,O
-sl-5,7,15,letališču,,letališče,Ncnsl,NOUN,O,,I-LOC
+sl-5,7,15,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-5,7,16,.,,.,Z,PUNCT,O,,O
 sl-5,8,1,Februarja,,februar,Ncmsg,NOUN,O,,O
 sl-5,8,2,so,,biti,Va-r3p-n,AUX,O,,O
@@ -143,7 +143,7 @@ sl-5,8,4,policisti,,policist,Ncmpn,NOUN,O,,O
 sl-5,8,5,zasegla,,zaseči,Vmep-pn,VERB,O,,O
 sl-5,8,6,paket,,paket,Ncmsan,NOUN,O,,O
 sl-5,8,7,",",,",",Z,PUNCT,O,,O
-sl-5,8,8,v,,v,Sl,ADP,O,,I-LOC
+sl-5,8,8,v,,v,Sl,ADP,O,,O
 sl-5,8,9,katerem,,kateri,Pq-msl,DET,O,,O
 sl-5,8,10,so,,biti,Va-r3p-n,AUX,O,,O
 sl-5,8,11,našli,,najti,Vmep-pm,VERB,O,,O
@@ -154,7 +154,7 @@ sl-5,9,1,Po,,po,Sl,ADP,O,,O
 sl-5,9,2,pisanju,,pisanje,Ncnsl,NOUN,O,,O
 sl-5,9,3,portala,,portalo,Ncnsg,NOUN,O,,O
 sl-5,9,4,The,The,the,Xf,X,B-PRO,PRO-The-Dodo,B-PRO
-sl-5,9,5,Dodo,Dodo,Dodo,Npmsn,PROPN,I-PRO,PRO-The-Dodo,O
+sl-5,9,5,Dodo,Dodo,Dodo,Npmsn,PROPN,I-PRO,PRO-The-Dodo,I-PRO
 sl-5,9,6,so,,biti,Va-r3p-n,AUX,O,,O
 sl-5,9,7,bili,,biti,Va-p-pm,AUX,O,,O
 sl-5,9,8,vsi,,ves,Pg-mpn,DET,O,,O
@@ -187,7 +187,7 @@ sl-5,10,7,za,,za,Sa,ADP,O,,O
 sl-5,10,8,nekatere,,nekateri,Pi-fpa,DET,O,,O
 sl-5,10,9,mehiške,,mehiški,Agpfpa,ADJ,O,,O
 sl-5,10,10,počitniške,,počitniški,Agpfpa,ADJ,O,,O
-sl-5,10,11,resorte,,resorta,Ncfpa,NOUN,O,,B-LOC
+sl-5,10,11,resorte,,resorta,Ncfpa,NOUN,O,,O
 sl-5,10,12,",",,",",Z,PUNCT,O,,O
 sl-5,10,13,ki,,ki,Cs,SCONJ,O,,O
 sl-5,10,14,svojim,,svoj,Px-mpd,DET,O,,O
@@ -204,8 +204,8 @@ sl-5,10,24,),,),Z,PUNCT,O,,O
 sl-5,10,25,divjimi,,divji,Agpfpi,ADJ,O,,O
 sl-5,10,26,živalmi,,žival,Ncfpi,NOUN,O,,O
 sl-5,10,27,.,,.,Z,PUNCT,O,,O
-sl-5,11,1,Na,,na,Sl,ADP,O,,O
-sl-5,11,2,Heathrowu,Heathrow,Heathrow,Npmsl,PROPN,B-LOC,LOC-Heathrow-Airport,I-LOC
+sl-5,11,1,Na,,na,Sl,ADP,O,,B-LOC
+sl-5,11,2,Heathrowu,Heathrow,Heathrow,Npmsl,PROPN,B-LOC,LOC-Heathrow-Airport,B-LOC
 sl-5,11,3,našli,,najti,Vmep-pm,VERB,O,,O
 sl-5,11,4,50,,50,Mdc,NUM,O,,O
 sl-5,11,5,majhnih,,majhen,Agpmpg,ADJ,O,,O
@@ -218,7 +218,7 @@ sl-5,12,5,poročajo,,poročati,Vmpr3p,VERB,O,,O
 sl-5,12,6,tudi,,tudi,Q,PART,O,,O
 sl-5,12,7,z,,z,Sg,ADP,O,,O
 sl-5,12,8,letališča,letališče,letališče,Ncnsg,NOUN,B-ORG,GPE-Heathrow-Airport,B-LOC
-sl-5,12,9,Heathrow,Heathrow,Heathrow,Npmsn,PROPN,I-ORG,GPE-Heathrow-Airport,O
+sl-5,12,9,Heathrow,Heathrow,Heathrow,Npmsn,PROPN,I-ORG,GPE-Heathrow-Airport,I-LOC
 sl-5,12,10,",",,",",Z,PUNCT,O,,O
 sl-5,12,11,kjer,,kjer,Cs,SCONJ,O,,O
 sl-5,12,12,so,,biti,Va-r3p-n,AUX,O,,O
@@ -236,7 +236,7 @@ sl-5,13,3,dni,,dan,Ncmpg,NOUN,O,,O
 sl-5,13,4,starih,,star,Agpmpg,ADJ,O,,O
 sl-5,13,5,krokodilov,,krokodil,Ncmpg,NOUN,O,,O
 sl-5,13,6,je,,biti,Va-r3s-n,AUX,O,,O
-sl-5,13,7,v,,v,Sa,ADP,O,,I-LOC
+sl-5,13,7,v,,v,Sa,ADP,O,,O
 sl-5,13,8,Veliko,Velika,velik,Agpfsa,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-5,13,9,Britanijo,Britanija,Britanija,Npfsa,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-5,13,10,priletelo,,prileteti,Vmep-sn,VERB,O,,O
@@ -271,8 +271,8 @@ sl-5,14,25,.,,.,Z,PUNCT,O,,O
 sl-5,15,1,Krokodili,,krokodil,Ncmpn,NOUN,O,,O
 sl-5,15,2,",",,",",Z,PUNCT,O,,O
 sl-5,15,3,ki,,ki,Cs,SCONJ,O,,O
-sl-5,15,4,v,,v,Sa,ADP,O,,I-LOC
-sl-5,15,5,dolžino,,dolžina,Ncfsa,NOUN,O,,I-PRO
+sl-5,15,4,v,,v,Sa,ADP,O,,O
+sl-5,15,5,dolžino,,dolžina,Ncfsa,NOUN,O,,O
 sl-5,15,6,merijo,,meriti,Vmpr3p,VERB,O,,O
 sl-5,15,7,približno,,približno,Rgp,ADV,O,,O
 sl-5,15,8,30,,30,Mdc,NUM,O,,O
@@ -295,7 +295,7 @@ sl-5,16,3,bili,,biti,Va-p-pm,AUX,O,,O
 sl-5,16,4,namenjeni,,namenjen,Appmpn,ADJ,O,,O
 sl-5,16,5,na,,na,Sa,ADP,O,,O
 sl-5,16,6,farmo,,farma,Ncfsa,NOUN,O,,O
-sl-5,16,7,v,,v,Sa,ADP,O,,I-LOC
+sl-5,16,7,v,,v,Sa,ADP,O,,O
 sl-5,16,8,Cambridgeshire,Cambridgeshire,Cambridgeshire,Npmsan,PROPN,B-LOC,GPE-Cambridgeshire,B-LOC
 sl-5,16,9,",",,",",Z,PUNCT,O,,O
 sl-5,16,10,kjer,,kjer,Cs,SCONJ,O,,O

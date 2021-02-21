@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-185,0,1,Morales,Morales,Morales,Npmsn,PROPN,B-PER,PER-Evo-Morales,B-PER
 sl-185,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-185,0,3,",",,",",Z,PUNCT,O,,O
@@ -14,7 +14,7 @@ sl-185,0,12,udar,,udar,Ncmsn,NOUN,O,,O
 sl-185,1,1,Bolivijski,Bolivija,bolivijski,Agpmsny,ADJ,B-LOC,GPE-Bolivia,B-LOC
 sl-185,1,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-185,1,3,Evo,Evo,Evo,Npmsn,PROPN,B-PER,PER-Evo-Morales,B-PER
-sl-185,1,4,Morales,Morales,Morales,Npmsn,PROPN,I-PER,PER-Evo-Morales,B-PER
+sl-185,1,4,Morales,Morales,Morales,Npmsn,PROPN,I-PER,PER-Evo-Morales,I-PER
 sl-185,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-185,1,6,po,,po,Sl,ADP,O,,O
 sl-185,1,7,odstopu,,odstop,Ncmsl,NOUN,O,,O
@@ -141,7 +141,7 @@ sl-185,7,2,konservativni,,konservativen,Agpmsny,ADJ,O,,O
 sl-185,7,3,opozicijski,,opozicijski,Agpmsny,ADJ,O,,O
 sl-185,7,4,voditelj,,voditelj,Ncmsn,NOUN,O,,O
 sl-185,7,5,Luis,Luis,Luis,Npmsn,PROPN,B-PER,PER-Luis-Fernando-Camacho,B-PER
-sl-185,7,6,Fernando,Fernando,Fernando,Npmsn,PROPN,I-PER,PER-Luis-Fernando-Camacho,B-PER
+sl-185,7,6,Fernando,Fernando,Fernando,Npmsn,PROPN,I-PER,PER-Luis-Fernando-Camacho,I-PER
 sl-185,7,7,Camacho,Camacho,Camacho,Npmsn,PROPN,I-PER,PER-Luis-Fernando-Camacho,I-PER
 sl-185,7,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-185,7,9,dejal,,dejati,Vmep-sm,VERB,O,,O
@@ -327,7 +327,7 @@ sl-185,17,15,10,,10,Mdc,NUM,O,,O
 sl-185,17,16,odstotnih,,odstoten,Agpfpg,ADJ,O,,O
 sl-185,17,17,točk,,točka,Ncfpg,NOUN,O,,O
 sl-185,17,18,.,,.,Z,PUNCT,O,,O
-sl-185,18,1,Tako,,tako,Rgp,ADV,O,,O
+sl-185,18,1,Tako,,tako,Rgp,ADV,O,,B-PER
 sl-185,18,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-185,18,3,za,,za,Sa,ADP,O,,O
 sl-185,18,4,las,,las,Ncmsan,NOUN,O,,O
@@ -390,11 +390,11 @@ sl-185,21,4,nedeljo,,nedelja,Ncfsa,NOUN,O,,O
 sl-185,21,5,napadli,,napasti,Vmep-pm,VERB,O,,O
 sl-185,21,6,in,,in,Cc,CCONJ,O,,O
 sl-185,21,7,zasedli,,zasesti,Vmep-pm,VERB,O,,O
-sl-185,21,8,venezuelsko,venezuelsko,venezuelski,Agpnsa,ADJ,B-ORG,ORG-Embassy-of-Venezuela-in-Bolivia,B-LOC
-sl-185,21,9,veleposlaništvo,veleposlaništvo,veleposlaništvo,Ncnsa,NOUN,I-ORG,ORG-Embassy-of-Venezuela-in-Bolivia,O
-sl-185,21,10,v,v,v,Sl,ADP,I-ORG,ORG-Embassy-of-Venezuela-in-Bolivia,O
-sl-185,21,11,La,La,la,Xf,X,I-ORG,ORG-Embassy-of-Venezuela-in-Bolivia,B-LOC
-sl-185,21,12,Pazu,Pazu,Paz,Npmsl,PROPN,I-ORG,ORG-Embassy-of-Venezuela-in-Bolivia,B-LOC
+sl-185,21,8,venezuelsko,venezuelsko,venezuelski,Agpnsa,ADJ,B-ORG,ORG-Embassy-of-Venezuela-in-Bolivia,B-ORG
+sl-185,21,9,veleposlaništvo,veleposlaništvo,veleposlaništvo,Ncnsa,NOUN,I-ORG,ORG-Embassy-of-Venezuela-in-Bolivia,I-ORG
+sl-185,21,10,v,v,v,Sl,ADP,I-ORG,ORG-Embassy-of-Venezuela-in-Bolivia,I-ORG
+sl-185,21,11,La,La,la,Xf,X,I-ORG,ORG-Embassy-of-Venezuela-in-Bolivia,I-LOC
+sl-185,21,12,Pazu,Pazu,Paz,Npmsl,PROPN,I-ORG,ORG-Embassy-of-Venezuela-in-Bolivia,I-LOC
 sl-185,21,13,",",,",",Z,PUNCT,O,,O
 sl-185,21,14,potem,,potem,Rgp,ADV,O,,O
 sl-185,21,15,ko,,ko,Cs,SCONJ,O,,O

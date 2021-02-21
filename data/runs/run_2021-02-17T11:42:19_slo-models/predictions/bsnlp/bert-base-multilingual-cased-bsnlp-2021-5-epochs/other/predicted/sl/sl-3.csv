@@ -1,7 +1,7 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-3,0,1,Pakistan,Pakistan,Pakistan,Npmsn,PROPN,B-LOC,GPE-Pakistan,B-LOC
 sl-3,0,2,:,,:,Z,PUNCT,O,,O
-sl-3,0,3,Vojska,,vojska,Ncfsn,NOUN,O,,B-LOC
+sl-3,0,3,Vojska,,vojska,Ncfsn,NOUN,O,,O
 sl-3,0,4,ovira,,ovirati,Vmpr3s,VERB,O,,O
 sl-3,0,5,za,,za,Sa,ADP,O,,O
 sl-3,0,6,dobro,,dober,Agpnsa,ADJ,O,,O
@@ -208,9 +208,9 @@ sl-3,12,19,in,,in,Cc,CCONJ,O,,O
 sl-3,12,20,nekdanjega,,nekdanji,Agpmsg,ADJ,O,,O
 sl-3,12,21,plejboja,,plejboj,Ncmsg,NOUN,O,,O
 sl-3,12,22,Imrana,Imran,Imran,Npmsg,PROPN,B-PER,PER-Imran-Khan,B-PER
-sl-3,12,23,Kana,Kan,Kan,Npmsg,PROPN,I-PER,PER-Imran-Khan,B-LOC
+sl-3,12,23,Kana,Kan,Kan,Npmsg,PROPN,I-PER,PER-Imran-Khan,I-PER
 sl-3,12,24,.,,.,Z,PUNCT,O,,O
-sl-3,13,1,Ta,,ta,Pd-fsn,DET,O,,O
+sl-3,13,1,Ta,,ta,Pd-fsn,DET,O,,B-LOC
 sl-3,13,2,zdaj,ZDA,zdaj,Rgp,ADV,B-LOC,GPE-USA,B-LOC
 sl-3,13,3,",",,",",Z,PUNCT,O,,O
 sl-3,13,4,ko,,ko,Cs,SCONJ,O,,O
@@ -439,7 +439,7 @@ sl-3,23,31,in,,in,Cc,CCONJ,O,,O
 sl-3,23,32,Bangladešu,Bangladeš,Bangladeš,Npmsl,PROPN,B-LOC,GPE-Bangladesh,B-LOC
 sl-3,23,33,.,,.,Z,PUNCT,O,,O
 sl-3,24,1,Na,,na,Sl,ADP,O,,O
-sl-3,24,2,pakistanskem,,pakistanski,Agpmsl,ADJ,O,,B-LOC
+sl-3,24,2,pakistanskem,,pakistanski,Agpmsl,ADJ,O,,O
 sl-3,24,3,trgu,,trg,Ncmsl,NOUN,O,,O
 sl-3,24,4,pa,,pa,Cc,CCONJ,O,,O
 sl-3,24,5,je,,biti,Va-r3s-n,AUX,O,,O
@@ -488,7 +488,7 @@ sl-3,26,17,za,,za,Sa,ADP,O,,O
 sl-3,26,18,dober,,dober,Agpmsan,ADJ,O,,O
 sl-3,26,19,zaslužek,,zaslužek,Ncmsan,NOUN,O,,O
 sl-3,26,20,prevzemala,,prevzemati,Vmpp-pn,VERB,O,,O
-sl-3,26,21,kitajska,Kitajska,kitajski,Agpnpa,ADJ,B-LOC,GPE-China,B-LOC
+sl-3,26,21,kitajska,Kitajska,kitajski,Agpnpa,ADJ,B-LOC,GPE-China,O
 sl-3,26,22,podjetja,,podjetje,Ncnpa,NOUN,O,,O
 sl-3,26,23,",",,",",Z,PUNCT,O,,O
 sl-3,26,24,so,,biti,Va-r3p-n,AUX,O,,O
@@ -500,7 +500,7 @@ sl-3,26,29,.,,.,Z,PUNCT,O,,O
 sl-3,27,1,In,,in,Cc,CCONJ,O,,O
 sl-3,27,2,ko,,ko,Cs,SCONJ,O,,O
 sl-3,27,3,je,,biti,Va-r3s-n,AUX,O,,O
-sl-3,27,4,Kan,Kan,Kan,Npmsn,PROPN,B-PER,PER-Imran-Khan,B-LOC
+sl-3,27,4,Kan,Kan,Kan,Npmsn,PROPN,B-PER,PER-Imran-Khan,B-PER
 sl-3,27,5,ob,,ob,Sl,ADP,O,,O
 sl-3,27,6,velikih,,velik,Agpfpl,ADJ,O,,O
 sl-3,27,7,proračunskih,,proračunski,Agpfpl,ADJ,O,,O
@@ -540,7 +540,7 @@ sl-3,28,21,odnose,,odnos,Ncmpa,NOUN,O,,O
 sl-3,28,22,z,,z,Si,ADP,O,,O
 sl-3,28,23,ZDA,ZDA,ZDA,Npfpi,PROPN,B-LOC,GPE-USA,B-LOC
 sl-3,28,24,.,,.,Z,PUNCT,O,,O
-sl-3,29,1,Kan,Kan,Kan,Npmsn,PROPN,B-PER,PER-Imran-Khan,B-LOC
+sl-3,29,1,Kan,Kan,Kan,Npmsn,PROPN,B-PER,PER-Imran-Khan,O
 sl-3,29,2,predvsem,,predvsem,Q,PART,O,,O
 sl-3,29,3,upa,,upati,Vmpr3s,VERB,O,,O
 sl-3,29,4,",",,",",Z,PUNCT,O,,O

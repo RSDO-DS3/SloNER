@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-28,0,1,Zgodovinski,,zgodovinski,Agpmsny,ADJ,O,,O
 sl-28,0,2,polet,,polet,Ncmsn,NOUN,O,,O
 sl-28,0,3,:,,:,Z,PUNCT,O,,O
@@ -59,7 +59,7 @@ sl-28,3,18,iz,,iz,Sg,ADP,O,,O
 sl-28,3,19,Avstralije,Avstralija,Avstralija,Npfsg,PROPN,B-LOC,GPE-Australia,B-LOC
 sl-28,3,20,v,,v,Sa,ADP,O,,O
 sl-28,3,21,Veliko,Velika,velik,Agpfsa,ADJ,B-LOC,GPE-Great-Britain,B-LOC
-sl-28,3,22,Britanijo,Britanija,Britanija,Npfsa,PROPN,I-LOC,GPE-Great-Britain,B-LOC
+sl-28,3,22,Britanijo,Britanija,Britanija,Npfsa,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-28,3,23,",",,",",Z,PUNCT,O,,O
 sl-28,3,24,ki,,ki,Cs,SCONJ,O,,O
 sl-28,3,25,so,,biti,Va-r3p-n,AUX,O,,O
@@ -321,7 +321,7 @@ sl-28,15,23,kilometra,,kilometer,Ncmsg,NOUN,O,,O
 sl-28,15,24,na,,na,Sa,ADP,O,,O
 sl-28,15,25,uro,,ura,Ncfsa,NOUN,O,,O
 sl-28,15,26,.,,.,Z,PUNCT,O,,O
-sl-28,16,1,Brata,,Brata,Npfsn,PROPN,O,,O
+sl-28,16,1,Brata,,Brata,Npfsn,PROPN,O,,B-PER
 sl-28,16,2,Smith,Smith,Smith,Npfsn,PROPN,B-PER,PER-Owen-Smith,B-PER
 sl-28,16,3,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-28,16,4,dobila,,dobiti,Vmep-dm,VERB,O,,O
@@ -525,7 +525,7 @@ sl-28,26,25,potnikov,,potnik,Ncmpg,NOUN,O,,O
 sl-28,26,26,",",,",",Z,PUNCT,O,,O
 sl-28,26,27,do,,do,Sg,ADP,O,,O
 sl-28,26,28,555.,,555.,Mdo,NUM,O,,O
-sl-28,27,1,Boeing,,Boeing,Npmsn,PROPN,O,,B-ORG
+sl-28,27,1,Boeing,,Boeing,Npmsn,PROPN,O,,B-LOC
 sl-28,27,2,lahko,,lahko,Rgp,ADV,O,,O
 sl-28,27,3,z,,z,Si,ADP,O,,O
 sl-28,27,4,enim,,en,Mlpnsi,NUM,O,,O
@@ -546,7 +546,7 @@ sl-28,27,18,potnikov,,potnik,Ncmpg,NOUN,O,,O
 sl-28,27,19,in,,in,Cc,CCONJ,O,,O
 sl-28,27,20,prtljage,,prtljaga,Ncfsg,NOUN,O,,O
 sl-28,27,21,",",,",",Z,PUNCT,O,,O
-sl-28,27,22,airbus,,airbus,Ncmsn,NOUN,O,,B-PRO
+sl-28,27,22,airbus,,airbus,Ncmsn,NOUN,O,,O
 sl-28,27,23,največ,,največ,Rgs,DET,O,,O
 sl-28,27,24,14.816.,,14.816.,Mdc,NUM,O,,O
 sl-28,28,1,Vse,,ves,Pg-nsn,DET,O,,O
@@ -554,9 +554,9 @@ sl-28,28,2,za,,za,Sa,ADP,O,,O
 sl-28,28,3,udobno,,udoben,Agpnsa,ADJ,O,,O
 sl-28,28,4,dolgo,,dolg,Agpnsa,ADJ,O,,O
 sl-28,28,5,potovanje,,potovanje,Ncnsa,NOUN,O,,O
-sl-28,29,1,Quantasov,Quantasov,Quantasov,Aspmsnn,ADJ,B-ORG,ORG-Quantas,B-ORG
+sl-28,29,1,Quantasov,Quantasov,Quantasov,Aspmsnn,ADJ,B-ORG,ORG-Quantas,B-PER
 sl-28,29,2,polet,,polet,Ncmsn,NOUN,O,,O
-sl-28,29,3,QF9,,QF9,Npmsn,PROPN,O,,B-PRO
+sl-28,29,3,QF9,,QF9,Npmsn,PROPN,O,,O
 sl-28,29,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-28,29,5,bil,,biti,Va-p-sm,AUX,O,,O
 sl-28,29,6,tretji,,tretji,Mlomsn,ADJ,O,,O
@@ -673,7 +673,7 @@ sl-28,34,21,litrov,,liter,Ncmpg,NOUN,O,,O
 sl-28,34,22,goriva,,gorivo,Ncnsg,NOUN,O,,O
 sl-28,34,23,.,,.,Z,PUNCT,O,,O
 sl-28,35,1,Quantasov,Quantasov,Quantasov,Aspmsnn,ADJ,B-ORG,ORG-Quantas,B-ORG
-sl-28,35,2,boeing,boeing,boeing,Ncmsn,NOUN,B-PRO,PRO-Boeing-787-9-Dreamliner,B-PRO
+sl-28,35,2,boeing,boeing,boeing,Ncmsn,NOUN,B-PRO,PRO-Boeing-787-9-Dreamliner,I-PRO
 sl-28,35,3,787,787,787,Mdc,NUM,I-PRO,PRO-Boeing-787-9-Dreamliner,I-PRO
 sl-28,35,4,-,-,-,Z,PUNCT,I-PRO,PRO-Boeing-787-9-Dreamliner,I-PRO
 sl-28,35,5,9,9,9,Mdc,NUM,I-PRO,PRO-Boeing-787-9-Dreamliner,I-PRO

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-152,0,1,Peking,Peking,Peking,Npmsn,PROPN,B-LOC,GPE-Beijing,B-LOC
 sl-152,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-152,0,3,",",,",",Z,PUNCT,O,,O
@@ -9,7 +9,7 @@ sl-152,0,7,Xinjiangu,Xinjiang,Xinjiang,Npmsl,PROPN,B-LOC,GPE-Xinjiang-Uygur-Auto
 sl-152,0,8,aretiral,,aretirati,Vmbp-sm,VERB,O,,O
 sl-152,0,9,13.000,,13.000,Mdc,NUM,O,,O
 sl-152,0,10,teroristov,,terorist,Ncmpg,NOUN,O,,O
-sl-152,1,1,Peking,Peking,Peking,Npmsn,PROPN,B-LOC,GPE-Beijing,B-LOC
+sl-152,1,1,Peking,Peking,Peking,Npmsn,PROPN,B-LOC,GPE-Beijing,B-PER
 sl-152,1,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-152,1,3,danes,,danes,Rgp,ADV,O,,O
 sl-152,1,4,v,,v,Sa,ADP,O,,O
@@ -18,7 +18,7 @@ sl-152,1,6,ostri,,oster,Agpfsd,ADJ,O,,O
 sl-152,1,7,varnostni,,varnosten,Agpfsd,ADJ,O,,O
 sl-152,1,8,politiki,,politika,Ncfsd,NOUN,O,,O
 sl-152,1,9,v,,v,Sl,ADP,O,,O
-sl-152,1,10,pokrajini,,pokrajina,Ncfsl,NOUN,O,,B-LOC
+sl-152,1,10,pokrajini,,pokrajina,Ncfsl,NOUN,O,,O
 sl-152,1,11,Xinjiang,Xinjiang,Xinjiang,Npmsn,PROPN,B-LOC,GPE-Xinjiang-Uygur-Autonomous-Region-XUAR,B-LOC
 sl-152,1,12,poudaril,,poudariti,Vmep-sm,VERB,O,,O
 sl-152,1,13,",",,",",Z,PUNCT,O,,O
@@ -45,7 +45,7 @@ sl-152,2,9,v,,v,Sl,ADP,O,,O
 sl-152,2,10,zaprtih,,zaprt,Appnpl,ADJ,O,,O
 sl-152,2,11,taboriščih,,taborišče,Ncnpl,NOUN,O,,O
 sl-152,2,12,v,,v,Sl,ADP,O,,O
-sl-152,2,13,pokrajini,,pokrajina,Ncfsl,NOUN,O,,B-LOC
+sl-152,2,13,pokrajini,,pokrajina,Ncfsl,NOUN,O,,O
 sl-152,2,14,na,,na,Sl,ADP,O,,O
 sl-152,2,15,skrajnem,,skrajen,Agpmsl,ADJ,O,,O
 sl-152,2,16,zahodu,,zahod,Ncmsl,NOUN,O,,O
@@ -55,7 +55,7 @@ sl-152,2,19,do,,do,Sg,ADP,O,,O
 sl-152,2,20,milijon,,milijon,Ncmsn,NOUN,O,,O
 sl-152,2,21,ljudi,,človek,Ncmpg,NOUN,O,,O
 sl-152,2,22,.,,.,Z,PUNCT,O,,O
-sl-152,3,1,Kitajska,Kitajska,kitajski,Agpfsn,ADJ,B-LOC,GPE-China,B-LOC
+sl-152,3,1,Kitajska,Kitajska,kitajski,Agpfsn,ADJ,B-LOC,GPE-China,O
 sl-152,3,2,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-152,3,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-152,3,4,danes,,danes,Rgp,ADV,O,,O
@@ -246,7 +246,7 @@ sl-152,10,26,odzivu,,odziv,Ncmsl,NOUN,O,,O
 sl-152,10,27,navedel,,navesti,Vmep-sm,VERB,O,,O
 sl-152,10,28,predstavnik,,predstavnik,Ncmsn,NOUN,O,,O
 sl-152,10,29,Svetovnega,Svetovni,svetoven,Agpmsg,ADJ,B-ORG,ORG-World-Uyghur-Congress,B-ORG
-sl-152,10,30,ujgurskega,ujgurski,ujgurski,Agpmsg,ADJ,I-ORG,ORG-World-Uyghur-Congress,B-PER
+sl-152,10,30,ujgurskega,ujgurski,ujgurski,Agpmsg,ADJ,I-ORG,ORG-World-Uyghur-Congress,I-ORG
 sl-152,10,31,kongresa,kongres,kongres,Ncmsg,NOUN,I-ORG,ORG-World-Uyghur-Congress,I-ORG
 sl-152,10,32,",",,",",Z,PUNCT,O,,O
 sl-152,10,33,ki,,ki,Cs,SCONJ,O,,O
@@ -305,7 +305,7 @@ sl-152,12,7,obstoj,,obstoj,Ncmsan,NOUN,O,,O
 sl-152,12,8,internacijskih,,internacijski,Agpnpg,ADJ,O,,O
 sl-152,12,9,taborišč,,taborišče,Ncnpg,NOUN,O,,O
 sl-152,12,10,v,,v,Sl,ADP,O,,O
-sl-152,12,11,pokrajini,,pokrajina,Ncfsl,NOUN,O,,B-LOC
+sl-152,12,11,pokrajini,,pokrajina,Ncfsl,NOUN,O,,O
 sl-152,12,12,",",,",",Z,PUNCT,O,,O
 sl-152,12,13,v,,v,Sl,ADP,O,,O
 sl-152,12,14,zadnjih,,zadnji,Agpmpl,ADJ,O,,O
@@ -377,9 +377,9 @@ sl-152,14,1,V,,v,Sl,ADP,O,,O
 sl-152,14,2,Pekingu,Peking,Peking,Npmsl,PROPN,B-LOC,GPE-Beijing,B-LOC
 sl-152,14,3,se,,se,Px------y,PRON,O,,O
 sl-152,14,4,začenja,,začenjati,Vmpr3s,VERB,O,,O
-sl-152,14,5,zasedanje,zasedanje,zasedanje,Ncnsn,NOUN,B-EVT,EVT-National-People's-Congress-of-the-People's-Republic-of-China,O
-sl-152,14,6,ljudskega,ljudskega,ljudski,Agpmsg,ADJ,I-EVT,EVT-National-People's-Congress-of-the-People's-Republic-of-China,B-ORG
-sl-152,14,7,kongresa,kongresa,kongres,Ncmsg,NOUN,I-EVT,EVT-National-People's-Congress-of-the-People's-Republic-of-China,I-ORG
+sl-152,14,5,zasedanje,zasedanje,zasedanje,Ncnsn,NOUN,B-EVT,EVT-National-People's-Congress-of-the-People's-Republic-of-China,B-EVT
+sl-152,14,6,ljudskega,ljudskega,ljudski,Agpmsg,ADJ,I-EVT,EVT-National-People's-Congress-of-the-People's-Republic-of-China,I-EVT
+sl-152,14,7,kongresa,kongresa,kongres,Ncmsg,NOUN,I-EVT,EVT-National-People's-Congress-of-the-People's-Republic-of-China,I-EVT
 sl-152,14,8,.,,.,Z,PUNCT,O,,O
 sl-152,15,1,Glavne,,glaven,Agpfpn,ADJ,O,,O
 sl-152,15,2,teme,,tema,Ncfpn,NOUN,O,,O
@@ -389,8 +389,8 @@ sl-152,15,5,",",,",",Z,PUNCT,O,,O
 sl-152,15,6,med,,med,Si,ADP,O,,O
 sl-152,15,7,njimi,,on,Pp3mpi,PRON,O,,O
 sl-152,15,8,tudi,,tudi,Q,PART,O,,O
-sl-152,15,9,trgovinska,trgovinska,trgovinski,Agpfsn,ADJ,B-EVT,EVT-The-China–United-States-trade-war,O
-sl-152,15,10,vojna,vojna,vojna,Ncfsn,NOUN,I-EVT,EVT-The-China–United-States-trade-war,O
-sl-152,15,11,z,z,z,Si,ADP,I-EVT,EVT-The-China–United-States-trade-war,O
-sl-152,15,12,ZDA,ZDA,ZDA,Npfpi,PROPN,I-EVT,EVT-The-China–United-States-trade-war,B-LOC
+sl-152,15,9,trgovinska,trgovinska,trgovinski,Agpfsn,ADJ,B-EVT,EVT-The-China–United-States-trade-war,B-EVT
+sl-152,15,10,vojna,vojna,vojna,Ncfsn,NOUN,I-EVT,EVT-The-China–United-States-trade-war,I-EVT
+sl-152,15,11,z,z,z,Si,ADP,I-EVT,EVT-The-China–United-States-trade-war,I-EVT
+sl-152,15,12,ZDA,ZDA,ZDA,Npfpi,PROPN,I-EVT,EVT-The-China–United-States-trade-war,I-EVT
 sl-152,15,13,.,,.,Z,PUNCT,O,,O

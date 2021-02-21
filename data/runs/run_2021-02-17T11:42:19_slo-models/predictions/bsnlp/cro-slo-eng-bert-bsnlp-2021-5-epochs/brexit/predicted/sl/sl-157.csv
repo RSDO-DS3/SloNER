@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-157,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-157,0,2,:,,:,Z,PUNCT,O,,O
 sl-157,0,3,trgovinske,,trgovinski,Agpfpn,ADJ,O,,O
@@ -13,13 +13,13 @@ sl-157,1,3,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-157,1,4,o,,o,Sl,ADP,O,,O
 sl-157,1,5,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-157,1,6,Michel,Michel,Michel,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
-sl-157,1,7,Barnier,Barnier,Barnier,Npmsn,PROPN,I-PER,PER-Michel-Barnier,B-PER
+sl-157,1,7,Barnier,Barnier,Barnier,Npmsn,PROPN,I-PER,PER-Michel-Barnier,I-PER
 sl-157,1,8,in,,in,Cc,CCONJ,O,,O
 sl-157,1,9,vodja,,vodja,Ncmsn,NOUN,O,,O
 sl-157,1,10,britanskih,,britanski,Agpmpg,ADJ,O,,O
 sl-157,1,11,pogajalcev,,pogajalec,Ncmpg,NOUN,O,,O
 sl-157,1,12,David,David,David,Npmsn,PROPN,B-PER,PER-David-Davis,B-PER
-sl-157,1,13,Davis,Davis,Davis,Npmsn,PROPN,I-PER,PER-David-Davis,B-PER
+sl-157,1,13,Davis,Davis,Davis,Npmsn,PROPN,I-PER,PER-David-Davis,I-PER
 sl-157,1,14,med,,med,Si,ADP,O,,O
 sl-157,1,15,današnjimi,,današnji,Agpmpi,ADJ,O,,O
 sl-157,1,16,pogovori,,pogovor,Ncmpi,NOUN,O,,O
@@ -146,7 +146,7 @@ sl-157,7,9,obdobju,,obdobje,Ncnsl,NOUN,O,,O
 sl-157,7,10,do,,do,Sg,ADP,O,,O
 sl-157,7,11,marca,,marec,Ncmsg,NOUN,O,,O
 sl-157,7,12,.,,.,Z,PUNCT,O,,O
-sl-157,8,1,Kot,,kot,Cs,SCONJ,O,,O
+sl-157,8,1,Kot,,kot,Cs,SCONJ,O,,B-PER
 sl-157,8,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-157,8,3,danes,,danes,Rgp,ADV,O,,O
 sl-157,8,4,dejal,,dejati,Vmep-sm,VERB,O,,O
@@ -189,7 +189,7 @@ sl-157,9,25,možnost,,možnost,Ncfsa,NOUN,O,,O
 sl-157,9,26,sodelovanja,,sodelovanje,Ncnsg,NOUN,O,,O
 sl-157,9,27,države,,država,Ncfsg,NOUN,O,,O
 sl-157,9,28,v,,v,Sl,ADP,O,,O
-sl-157,9,29,carinski,,carinski,Agpfsl,ADJ,O,,B-ORG
+sl-157,9,29,carinski,,carinski,Agpfsl,ADJ,O,,O
 sl-157,9,30,uniji,,unija,Ncfsl,NOUN,O,,O
 sl-157,9,31,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-157,9,32,.,,.,Z,PUNCT,O,,O

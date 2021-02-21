@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-156,0,1,Migranti,,migrant,Ncmpn,NOUN,O,,O
 sl-156,0,2,v,,v,Sl,ADP,O,,O
 sl-156,0,3,Beli,Bela,bel,Agpfsl,ADJ,B-LOC,LOC-White-Carniola,B-LOC
@@ -152,7 +152,7 @@ sl-156,8,24,obiskovalec,,obiskovalec,Ncmsn,NOUN,O,,O
 sl-156,8,25,preplaval,,preplavati,Vmep-sm,VERB,O,,O
 sl-156,8,26,Kolpo,Kolpa,Kolpa,Npfsa,PROPN,B-LOC,LOC-River-Kupa,B-LOC
 sl-156,8,27,.,,.,Z,PUNCT,O,,O
-sl-156,9,1,Nato,,nato,Rgp,ADV,O,,B-ORG
+sl-156,9,1,Nato,,nato,Rgp,ADV,O,,O
 sl-156,9,2,mu,,on,Pp3msd--y,PRON,O,,O
 sl-156,9,3,dajo,,dati,Vmer3p,VERB,O,,O
 sl-156,9,4,suha,,suh,Agpnpa,ADJ,O,,O
@@ -362,7 +362,7 @@ sl-156,18,17,in,,in,Cc,CCONJ,O,,O
 sl-156,18,18,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-156,18,19,odpeljejo,,odpeljati,Vmer3p,VERB,O,,O
 sl-156,18,20,na,,na,Sa,ADP,O,,O
-sl-156,18,21,policijsko,,policijski,Agpfsa,ADJ,O,,I-ORG
+sl-156,18,21,policijsko,,policijski,Agpfsa,ADJ,O,,O
 sl-156,18,22,postajo,,postaja,Ncfsa,NOUN,O,,O
 sl-156,18,23,",",,",",Z,PUNCT,O,,O
 sl-156,18,24,"""",,"""",Z,PUNCT,O,,O

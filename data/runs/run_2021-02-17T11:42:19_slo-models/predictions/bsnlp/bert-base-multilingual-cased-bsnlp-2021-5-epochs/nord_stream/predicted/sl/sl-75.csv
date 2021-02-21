@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-75,0,1,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-75,0,2,ne,,ne,Q,PART,O,,O
 sl-75,0,3,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -11,7 +11,7 @@ sl-75,1,1,Iz,,iz,Sg,ADP,O,,O
 sl-75,1,2,družbe,,družba,Ncfsg,NOUN,O,,O
 sl-75,1,3,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-75,1,4,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-75,1,5,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-75,1,5,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-75,1,6,",",,",",Z,PUNCT,O,,O
 sl-75,1,7,prek,,prek,Sg,ADP,O,,O
 sl-75,1,8,katere,,kateri,Pq-fsg,DET,O,,O
@@ -41,7 +41,7 @@ sl-75,1,31,za,,za,Sa,ADP,O,,O
 sl-75,1,32,plinovod,,plinovod,Ncmsan,NOUN,O,,O
 sl-75,1,33,pod,,pod,Si,ADP,O,,O
 sl-75,1,34,danskim,Danska,danski,Agpnsi,ADJ,B-LOC,GPE-Denmark,B-LOC
-sl-75,1,35,morjem,,morje,Ncnsi,NOUN,O,,I-LOC
+sl-75,1,35,morjem,,morje,Ncnsi,NOUN,O,,O
 sl-75,1,36,preložila,,preložiti,Vmep-sf,VERB,O,,O
 sl-75,1,37,njegovo,,njegov,Ps3nsasm,DET,O,,O
 sl-75,1,38,odprtje,,odprtje,Ncnsa,NOUN,O,,O
@@ -61,7 +61,7 @@ sl-75,2,10,po,,po,Sl,ADP,O,,O
 sl-75,2,11,Severnem,Severni,severen,Agpmsl,ADJ,B-PRO,PRO-Nord-Stream-2,B-PRO
 sl-75,2,12,toku,tok,tok,Ncmsl,NOUN,I-PRO,PRO-Nord-Stream-2,I-PRO
 sl-75,2,13,2,2,2,Mdc,NUM,I-PRO,PRO-Nord-Stream-2,I-PRO
-sl-75,2,14,vendarle,,vendarle,Cc,CCONJ,O,,I-EVT
+sl-75,2,14,vendarle,,vendarle,Cc,CCONJ,O,,O
 sl-75,2,15,lahko,,lahko,Rgp,ADV,O,,O
 sl-75,2,16,stekel,,steči,Vmep-sm,VERB,O,,O
 sl-75,2,17,do,,do,Sg,ADP,O,,O
@@ -79,7 +79,7 @@ sl-75,2,28,.,,.,Z,PUNCT,O,,O
 sl-75,3,1,Čižov,Čižov,Čižov,Npmsn,PROPN,B-PER,PER-Vladimir-Chizhov,B-PER
 sl-75,3,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-75,3,3,medtem,,medtem,Rgp,ADV,O,,O
-sl-75,3,4,v,,v,Sl,ADP,O,,I-EVT
+sl-75,3,4,v,,v,Sl,ADP,O,,O
 sl-75,3,5,intervjuju,,intervju,Ncmsl,NOUN,O,,O
 sl-75,3,6,za,,za,Sa,ADP,O,,O
 sl-75,3,7,rusko,,ruski,Agpfsa,ADJ,O,,O
@@ -115,7 +115,7 @@ sl-75,4,2,Danskem,Danska,Dansko,Npnsl,PROPN,B-LOC,GPE-Denmark,B-LOC
 sl-75,4,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-75,4,4,imeli,,imeti,Vmpp-pm,VERB,O,,O
 sl-75,4,5,namreč,,namreč,Cc,CCONJ,O,,O
-sl-75,4,6,v,,v,Sa,ADP,O,,I-EVT
+sl-75,4,6,v,,v,Sa,ADP,O,,O
 sl-75,4,7,sredo,,sreda,Ncfsa,NOUN,O,,O
 sl-75,4,8,volitve,,volitev,Ncfsg,NOUN,O,,O
 sl-75,4,9,",",,",",Z,PUNCT,O,,O
@@ -181,7 +181,7 @@ sl-75,7,26,zaveznicam,,zaveznica,Ncfpd,NOUN,O,,O
 sl-75,7,27,.,,.,Z,PUNCT,O,,O
 sl-75,8,1,»,,»,Z,PUNCT,O,,O
 sl-75,8,2,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-75,8,3,v,,v,Sl,ADP,O,,I-EVT
+sl-75,8,3,v,,v,Sl,ADP,O,,O
 sl-75,8,4,tem,,ta,Pd-nsl,DET,O,,O
 sl-75,8,5,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-75,8,6,sama,,sam,Agpfsn,ADJ,O,,O
@@ -217,7 +217,7 @@ sl-75,11,1,Predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-75,11,2,uprave,,uprava,Ncfsg,NOUN,O,,O
 sl-75,11,3,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-75,11,4,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-75,11,5,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-75,11,5,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-75,11,6,in,,in,Cc,CCONJ,O,,O
 sl-75,11,7,nekdanji,,nekdanji,Agpmsny,ADJ,O,,O
 sl-75,11,8,nemški,,nemški,Agpmsny,ADJ,O,,O
@@ -232,8 +232,8 @@ sl-75,11,16,mednarodnega,mednarodni,mednaroden,Agpmsg,ADJ,B-EVT,EVT-St.-Petersbu
 sl-75,11,17,gospodarskega,gospodarski,gospodarski,Agpmsg,ADJ,I-EVT,EVT-St.-Petersburg-International-Economic-Forum,I-EVT
 sl-75,11,18,foruma,forum,forum,Ncmsg,NOUN,I-EVT,EVT-St.-Petersburg-International-Economic-Forum,I-EVT
 sl-75,11,19,v,v,v,Sl,ADP,I-EVT,EVT-St.-Petersburg-International-Economic-Forum,I-EVT
-sl-75,11,20,Sankt,Sankt,Sankt,Npmsl,PROPN,I-EVT,EVT-St.-Petersburg-International-Economic-Forum,B-LOC
-sl-75,11,21,Peterburgu,Peterburgu,Peterburg,Npmsl,PROPN,I-EVT,EVT-St.-Petersburg-International-Economic-Forum,I-LOC
+sl-75,11,20,Sankt,Sankt,Sankt,Npmsl,PROPN,I-EVT,EVT-St.-Petersburg-International-Economic-Forum,I-EVT
+sl-75,11,21,Peterburgu,Peterburgu,Peterburg,Npmsl,PROPN,I-EVT,EVT-St.-Petersburg-International-Economic-Forum,I-EVT
 sl-75,11,22,danes,,danes,Rgp,ADV,O,,O
 sl-75,11,23,poudaril,,poudariti,Vmep-sm,VERB,O,,O
 sl-75,11,24,",",,",",Z,PUNCT,O,,O
@@ -298,14 +298,14 @@ sl-75,14,14,utekočinjeni,,utekočinjen,Appmsay,ADJ,O,,O
 sl-75,14,15,zemeljski,,zemeljski,Agpmsay,ADJ,O,,O
 sl-75,14,16,plin,,plin,Ncmsan,NOUN,O,,O
 sl-75,14,17,na,,na,Sa,ADP,O,,O
-sl-75,14,18,evropsko,,evropski,Agpnsa,ADJ,O,,O
+sl-75,14,18,evropsko,,evropski,Agpnsa,ADJ,O,,B-LOC
 sl-75,14,19,tržišče,,tržišče,Ncnsa,NOUN,O,,O
 sl-75,14,20,",",,",",Z,PUNCT,O,,O
 sl-75,14,21,«,,«,Z,PUNCT,O,,O
 sl-75,14,22,je,,biti,Va-r3s-n,AUX,O,,O
 sl-75,14,23,opozoril,,opozoriti,Vmep-sm,VERB,O,,O
 sl-75,14,24,.,,.,Z,PUNCT,O,,O
-sl-75,15,1,Danska,Danska,danski,Agpfsn,ADJ,B-LOC,GPE-Denmark,B-LOC
+sl-75,15,1,Danska,Danska,danski,Agpfsn,ADJ,B-LOC,GPE-Denmark,O
 sl-75,15,2,politika,,politika,Ncfsn,NOUN,O,,O
 sl-75,15,3,",",,",",Z,PUNCT,O,,O
 sl-75,15,4,ki,,ki,Cs,SCONJ,O,,O
@@ -323,7 +323,7 @@ sl-75,15,15,je,,biti,Va-r3s-n,VERB,O,,O
 sl-75,15,16,po,,po,Sl,ADP,O,,O
 sl-75,15,17,njegovih,,njegov,Ps3fplsm,DET,O,,O
 sl-75,15,18,besedah,,beseda,Ncfpl,NOUN,O,,O
-sl-75,15,19,v,,v,Sl,ADP,O,,I-EVT
+sl-75,15,19,v,,v,Sl,ADP,O,,O
 sl-75,15,20,nasprotju,,nasprotje,Ncnsl,NOUN,O,,O
 sl-75,15,21,z,,z,Si,ADP,O,,O
 sl-75,15,22,evropsko,,evropski,Agpfsi,ADJ,O,,O
@@ -344,9 +344,9 @@ sl-75,16,12,.,,.,Z,PUNCT,O,,O
 sl-75,17,1,Družba,,družba,Ncfsn,NOUN,O,,O
 sl-75,17,2,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-75,17,3,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-75,17,4,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-75,17,4,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-75,17,5,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-75,17,6,v,,v,Sl,ADP,O,,I-EVT
+sl-75,17,6,v,,v,Sl,ADP,O,,O
 sl-75,17,7,spopadu,,spopad,Ncmsl,NOUN,O,,O
 sl-75,17,8,z,,z,Si,ADP,O,,O
 sl-75,17,9,diskriminacijo,,diskriminacija,Ncfsi,NOUN,O,,O
@@ -358,7 +358,7 @@ sl-75,17,14,sredstva,,sredstvo,Ncnpa,NOUN,O,,O
 sl-75,17,15,",",,",",Z,PUNCT,O,,O
 sl-75,17,16,je,,biti,Va-r3s-n,AUX,O,,O
 sl-75,17,17,medtem,,medtem,Rgp,ADV,O,,O
-sl-75,17,18,v,,v,Sl,ADP,O,,I-EVT
+sl-75,17,18,v,,v,Sl,ADP,O,,O
 sl-75,17,19,Sankt,Sankt,Sankt,Npmsl,PROPN,B-LOC,GPE-Saint-Petersburg,B-LOC
 sl-75,17,20,Peterburgu,Peterburg,Peterburg,Npmsl,PROPN,I-LOC,GPE-Saint-Petersburg,I-LOC
 sl-75,17,21,danes,,danes,Rgp,ADV,O,,O
@@ -372,7 +372,7 @@ sl-75,17,28,.,,.,Z,PUNCT,O,,O
 sl-75,18,1,»,,»,Z,PUNCT,O,,O
 sl-75,18,2,Spoštovali,,spoštovati,Vmpp-pm,VERB,O,,O
 sl-75,18,3,bomo,,biti,Va-f1p-n,AUX,O,,O
-sl-75,18,4,evropsko,,evropski,Agpfsa,ADJ,O,,O
+sl-75,18,4,evropsko,,evropski,Agpfsa,ADJ,O,,B-LOC
 sl-75,18,5,zakonodajo,,zakonodaja,Ncfsa,NOUN,O,,O
 sl-75,18,6,",",,",",Z,PUNCT,O,,O
 sl-75,18,7,imamo,,imeti,Vmpr1p-n,VERB,O,,O
@@ -432,7 +432,7 @@ sl-75,21,4,naj,,naj,Q,PART,O,,O
 sl-75,21,5,bi,,biti,Va-c,AUX,O,,O
 sl-75,21,6,se,,se,Px------y,PRON,O,,O
 sl-75,21,7,ga,,on,Pp3msa--y,PRON,O,,O
-sl-75,21,8,v,,v,Sa,ADP,O,,I-EVT
+sl-75,21,8,v,,v,Sa,ADP,O,,O
 sl-75,21,9,Nemčijo,Nemčija,Nemčija,Npfsa,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-75,21,10,iz,,iz,Sg,ADP,O,,O
 sl-75,21,11,Rusije,Rusija,Rusija,Npfsg,PROPN,B-LOC,GPE-Russia,B-LOC

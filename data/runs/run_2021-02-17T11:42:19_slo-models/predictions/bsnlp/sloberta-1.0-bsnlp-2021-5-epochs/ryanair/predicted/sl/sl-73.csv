@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-73,0,1,Potniki,,potnik,Ncmpn,NOUN,O,,B-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-73,0,1,Potniki,,potnik,Ncmpn,NOUN,O,,O
 sl-73,0,2,zaradi,,zaradi,Sg,ADP,O,,O
 sl-73,0,3,pijanega,,pijan,Agpmsg,ADJ,O,,O
 sl-73,0,4,kopilota,,kopilot,Ncmsg,NOUN,O,,O
@@ -100,7 +100,7 @@ sl-73,5,19,tiskovna,,tiskoven,Agpfsn,ADJ,O,,O
 sl-73,5,20,agencija,,agencija,Ncfsn,NOUN,O,,O
 sl-73,5,21,dpa,dpa,DPA,Npfsn,PROPN,B-ORG,ORG-DPA,B-ORG
 sl-73,5,22,.,,.,Z,PUNCT,O,,O
-sl-73,6,1,Policija,,policija,Ncfsn,NOUN,O,,B-ORG
+sl-73,6,1,Policija,,policija,Ncfsn,NOUN,O,,B-LOC
 sl-73,6,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-73,6,3,pijanega,,pijan,Agpmsa,ADJ,O,,O
 sl-73,6,4,kopilota,,kopilot,Ncmsay,NOUN,O,,O
@@ -118,7 +118,7 @@ sl-73,6,15,",",,",",Z,PUNCT,O,,O
 sl-73,6,16,ostal,,ostati,Vmep-sm,VERB,O,,O
 sl-73,6,17,pa,,pa,Cc,CCONJ,O,,O
 sl-73,6,18,je,,biti,Va-r3s-n,AUX,O,,O
-sl-73,6,19,tudi,,tudi,Q,PART,O,,B-LOC
+sl-73,6,19,tudi,,tudi,Q,PART,O,,O
 sl-73,6,20,brez,,brez,Sg,ADP,O,,O
 sl-73,6,21,licence,,licenca,Ncfsg,NOUN,O,,O
 sl-73,6,22,za,,za,Sa,ADP,O,,O
@@ -181,7 +181,7 @@ sl-73,9,14,",",,",",Z,PUNCT,O,,O
 sl-73,9,15,je,,biti,Va-r3s-n,AUX,O,,O
 sl-73,9,16,letalska,,letalski,Agpfsn,ADJ,O,,O
 sl-73,9,17,družba,,družba,Ncfsn,NOUN,O,,O
-sl-73,9,18,TAP,TAP,TAP,Npmsn,PROPN,B-ORG,ORG-TAP-Air-Portugal,O
+sl-73,9,18,TAP,TAP,TAP,Npmsn,PROPN,B-ORG,ORG-TAP-Air-Portugal,B-ORG
 sl-73,9,19,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-TAP-Air-Portugal,I-ORG
 sl-73,9,20,Portugal,Portugal,Portugal,Npmsn,PROPN,I-ORG,ORG-TAP-Air-Portugal,I-ORG
 sl-73,9,21,na,,na,Sl,ADP,O,,O

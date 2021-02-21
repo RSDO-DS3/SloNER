@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-63,0,1,Namesto,,namesto,Sg,ADP,O,,O
 sl-63,0,2,v,,v,Sa,ADP,O,,O
 sl-63,0,3,Grčijo,Grčija,Grčija,Npfsa,PROPN,B-LOC,GPE-Greece,B-LOC
@@ -36,8 +36,8 @@ sl-63,1,17,zaradi,,zaradi,Sg,ADP,O,,O
 sl-63,1,18,megle,,megla,Ncfsg,NOUN,O,,O
 sl-63,1,19,preusmerjeno,,preusmerjen,Appnsn,ADJ,O,,O
 sl-63,1,20,na,,na,Sa,ADP,O,,O
-sl-63,1,21,letališče,,letališče,Ncnsa,NOUN,O,,O
-sl-63,1,22,v,,v,Sl,ADP,O,,O
+sl-63,1,21,letališče,,letališče,Ncnsa,NOUN,O,,B-LOC
+sl-63,1,22,v,,v,Sl,ADP,O,,I-LOC
 sl-63,1,23,Temišvaru,Temišvar,Temišvar,Npmsl,PROPN,B-LOC,GPE-Timisoara,B-LOC
 sl-63,1,24,na,,na,Sl,ADP,O,,O
 sl-63,1,25,zahodu,,zahod,Ncmsl,NOUN,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-65,0,1,Švedska,Švedska,Švedska,Npfsn,PROPN,B-LOC,GPE-Sweden,B-LOC
 sl-65,0,2,izdala,,izdati,Vmep-sf,VERB,O,,O
 sl-65,0,3,priročnik,,priročnik,Ncmsan,NOUN,O,,O
@@ -49,7 +49,7 @@ sl-65,1,42,angleški,,angleški,Agpfsl,ADJ,O,,O
 sl-65,1,43,različici,,različica,Ncfsl,NOUN,O,,O
 sl-65,1,44,spletne,,spleten,Agpfsg,ADJ,O,,O
 sl-65,1,45,strani,,stran,Ncfsg,NOUN,O,,O
-sl-65,1,46,švedske,Švedska,švedski,Agpfsg,ADJ,B-LOC,GPE-Sweden,B-LOC
+sl-65,1,46,švedske,Švedska,švedski,Agpfsg,ADJ,B-LOC,GPE-Sweden,O
 sl-65,1,47,vlade,,vlada,Ncfsg,NOUN,O,,O
 sl-65,1,48,.,,.,Z,PUNCT,O,,O
 sl-65,2,1,»,,»,Z,PUNCT,O,,O
@@ -276,7 +276,7 @@ sl-65,10,39,«,,«,Z,PUNCT,O,,O
 sl-65,10,40,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,10,41,povedala,,povedati,Vmep-sf,VERB,O,,O
 sl-65,10,42,.,,.,Z,PUNCT,O,,O
-sl-65,11,1,Ženske,,ženska,Ncfpn,NOUN,O,,O
+sl-65,11,1,Ženske,,ženska,Ncfpn,NOUN,O,,B-PER
 sl-65,11,2,imajo,,imeti,Vmpr3p-n,VERB,O,,O
 sl-65,11,3,sicer,,sicer,Q,PART,O,,O
 sl-65,11,4,vse,,vse,Rgp,ADV,O,,O

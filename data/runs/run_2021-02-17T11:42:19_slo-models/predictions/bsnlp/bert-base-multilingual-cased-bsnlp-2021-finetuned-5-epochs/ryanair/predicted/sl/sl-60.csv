@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-60,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-60,0,2,odpustil,,odpustiti,Vmep-sm,VERB,O,,O
 sl-60,0,3,kabinsko,,kabinski,Agpnsa,ADJ,O,,O
@@ -155,7 +155,7 @@ sl-60,6,26,zaradi,,zaradi,Sg,ADP,O,,O
 sl-60,6,27,slabega,,slab,Agpnsg,ADJ,O,,O
 sl-60,6,28,vremena,,vreme,Ncnsg,NOUN,O,,O
 sl-60,6,29,.,,.,Z,PUNCT,O,,O
-sl-60,7,1,Let,,leto,Ncnpg,NOUN,O,,O
+sl-60,7,1,Let,,leto,Ncnpg,NOUN,O,,B-LOC
 sl-60,7,2,",",,",",Z,PUNCT,O,,O
 sl-60,7,3,na,,na,Sl,ADP,O,,O
 sl-60,7,4,katerem,,kateri,Pq-msl,DET,O,,O
@@ -247,7 +247,7 @@ sl-60,10,23,posneli,,posneti,Vmep-pm,VERB,O,,O
 sl-60,10,24,viralno,,viralen,Agpfsa,ADJ,O,,O
 sl-60,10,25,fotografijo,,fotografija,Ncfsa,NOUN,O,,O
 sl-60,10,26,.,,.,Z,PUNCT,O,,O
-sl-60,11,1,Portugalski,,portugalski,Agpmsny,ADJ,O,,B-LOC
+sl-60,11,1,Portugalski,,portugalski,Agpmsny,ADJ,O,,O
 sl-60,11,2,sindikat,,sindikat,Ncmsn,NOUN,O,,O
 sl-60,11,3,SNPVAC,SNPVAC,SNPVAC,Npmsn,PROPN,B-ORG,ORG-National-Flight-Personnel-Civil-Aviation-Union,B-ORG
 sl-60,11,4,",",,",",Z,PUNCT,O,,O

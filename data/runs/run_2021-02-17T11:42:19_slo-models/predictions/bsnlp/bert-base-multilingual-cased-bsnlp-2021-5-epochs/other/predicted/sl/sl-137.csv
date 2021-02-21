@@ -1,6 +1,6 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-137,0,1,Uroš,Uroš,Uroš,Npmsn,PROPN,B-PER,PER-Uroš-Rotnik,B-PER
-sl-137,0,2,Rotnik,Rotnik,Rotnik,Npmsn,PROPN,I-PER,PER-Uroš-Rotnik,B-PER
+sl-137,0,2,Rotnik,Rotnik,Rotnik,Npmsn,PROPN,I-PER,PER-Uroš-Rotnik,I-PER
 sl-137,0,3,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-137,0,4,",",,",",Z,PUNCT,O,,O
 sl-137,0,5,da,,da,Cs,SCONJ,O,,O
@@ -12,7 +12,7 @@ sl-137,1,1,Nekdanji,,nekdanji,Agpmsny,ADJ,O,,O
 sl-137,1,2,direktor,,direktor,Ncmsn,NOUN,O,,O
 sl-137,1,3,TEŠ,TEŠ,Teš,Npmsn,PROPN,B-ORG,ORG-TEŠ-Termoelektrarna-Šoštanj,B-ORG
 sl-137,1,4,Uroš,Uroš,Uroš,Npmsn,PROPN,B-PER,PER-Uroš-Rotnik,B-PER
-sl-137,1,5,Rotnik,Rotnik,Rotnik,Npmsn,PROPN,I-PER,PER-Uroš-Rotnik,B-PER
+sl-137,1,5,Rotnik,Rotnik,Rotnik,Npmsn,PROPN,I-PER,PER-Uroš-Rotnik,I-PER
 sl-137,1,6,(,,(,Z,PUNCT,O,,O
 sl-137,1,7,levo,,levo,Rgp,ADV,O,,O
 sl-137,1,8,),,),Z,PUNCT,O,,O
@@ -33,9 +33,9 @@ sl-137,2,8,narok,,narok,Ncmsn,NOUN,O,,O
 sl-137,2,9,zoper,,zoper,Sa,ADP,O,,O
 sl-137,2,10,nekdanjega,,nekdanji,Agpmsa,ADJ,O,,O
 sl-137,2,11,direktorja,,direktor,Ncmsay,NOUN,O,,O
-sl-137,2,12,TEŠ-a,TEŠ,tešen,Npmsg,PROPN,B-ORG,ORG-TEŠ-Termoelektrarna-Šoštanj,O
+sl-137,2,12,TEŠ-a,TEŠ,tešen,Npmsg,PROPN,B-ORG,ORG-TEŠ-Termoelektrarna-Šoštanj,B-ORG
 sl-137,2,13,Uroša,Uroš,Uroš,Npmsay,PROPN,B-PER,PER-Uroš-Rotnik,B-PER
-sl-137,2,14,Rotnika,Rotnik,Rotnik,Npmsay,PROPN,I-PER,PER-Uroš-Rotnik,B-PER
+sl-137,2,14,Rotnika,Rotnik,Rotnik,Npmsay,PROPN,I-PER,PER-Uroš-Rotnik,I-PER
 sl-137,2,15,",",,",",Z,PUNCT,O,,O
 sl-137,2,16,ki,,ki,Cs,SCONJ,O,,O
 sl-137,2,17,mu,,on,Pp3msd--y,PRON,O,,O
@@ -62,7 +62,7 @@ sl-137,3,2,direktor,,direktor,Ncmsn,NOUN,O,,O
 sl-137,3,3,Termoelektrarne,Termoelektrarna,termoelektrarna,Ncfsg,NOUN,B-ORG,ORG-TEŠ-Termoelektrarna-Šoštanj,B-ORG
 sl-137,3,4,Šoštanj,Šoštanj,Šoštanj,Npmsn,PROPN,I-ORG,ORG-TEŠ-Termoelektrarna-Šoštanj,I-ORG
 sl-137,3,5,Uroš,Uroš,Uroš,Npmsn,PROPN,B-PER,PER-Uroš-Rotnik,B-PER
-sl-137,3,6,Rotnik,Rotnik,Rotnik,Npmsn,PROPN,I-PER,PER-Uroš-Rotnik,B-PER
+sl-137,3,6,Rotnik,Rotnik,Rotnik,Npmsn,PROPN,I-PER,PER-Uroš-Rotnik,I-PER
 sl-137,3,7,",",,",",Z,PUNCT,O,,O
 sl-137,3,8,ki,,ki,Cs,SCONJ,O,,O
 sl-137,3,9,je,,biti,Va-r3s-n,AUX,O,,O
@@ -84,7 +84,7 @@ sl-137,3,24,vrednega,,vreden,Agpmsg,ADJ,O,,O
 sl-137,3,25,projekte,,projekt,Ncmpa,NOUN,O,,O
 sl-137,3,26,šestega,šesti,šesti,Mlomsg,ADJ,B-PRO,ORG-TEŠ-Termoelektrarna-Šoštanj,B-PRO
 sl-137,3,27,bloka,blok,blok,Ncmsg,NOUN,I-PRO,ORG-TEŠ-Termoelektrarna-Šoštanj,I-PRO
-sl-137,3,28,TEŠ,TEŠ,Teš,Npmsn,PROPN,I-PRO,ORG-TEŠ-Termoelektrarna-Šoštanj,B-ORG
+sl-137,3,28,TEŠ,TEŠ,Teš,Npmsn,PROPN,I-PRO,ORG-TEŠ-Termoelektrarna-Šoštanj,I-PRO
 sl-137,3,29,",",,",",Z,PUNCT,O,,O
 sl-137,3,30,se,,se,Px------y,PRON,O,,O
 sl-137,3,31,je,,biti,Va-r3s-n,AUX,O,,O
@@ -122,11 +122,11 @@ sl-137,3,62,katerim,,kateri,Pq-msi,DET,O,,O
 sl-137,3,63,je,,biti,Va-r3s-n,AUX,O,,O
 sl-137,3,64,preprečil,,preprečiti,Vmep-sm,VERB,O,,O
 sl-137,3,65,dokazovanja,,dokazovanje,Ncnpa,NOUN,O,,O
-sl-137,3,66,svojega,,svoj,Px-nsg,DET,O,,O
-sl-137,3,67,domnevno,,domnevno,Rgp,ADV,O,,O
-sl-137,3,68,večmiljonskega,,večmiljonski,Agpnsg,ADJ,O,,O
-sl-137,3,69,premoženja,,premoženje,Ncnsg,NOUN,O,,O
-sl-137,3,70,.,,.,Z,PUNCT,O,,O
+sl-137,3,66,svojega,,svoj,Px-nsg,DET,O,,
+sl-137,3,67,domnevno,,domnevno,Rgp,ADV,O,,
+sl-137,3,68,večmiljonskega,,večmiljonski,Agpnsg,ADJ,O,,
+sl-137,3,69,premoženja,,premoženje,Ncnsg,NOUN,O,,
+sl-137,3,70,.,,.,Z,PUNCT,O,,
 sl-137,4,1,Tako,,tako,Rgp,ADV,O,,O
 sl-137,4,2,pred,,pred,Si,ADP,O,,O
 sl-137,4,3,prihodom,,prihod,Ncmsi,NOUN,O,,O
@@ -473,7 +473,7 @@ sl-137,18,8,prepričana,,prepričan,Appfsn,ADJ,O,,O
 sl-137,18,9,",",,",",Z,PUNCT,O,,O
 sl-137,18,10,da,,da,Cs,SCONJ,O,,O
 sl-137,18,11,ima,,imeti,Vmpr3s-n,VERB,O,,O
-sl-137,18,12,tožilstvo,,tožilstvo,Ncnsn,NOUN,O,,I-ORG
+sl-137,18,12,tožilstvo,,tožilstvo,Ncnsn,NOUN,O,,O
 sl-137,18,13,dovolj,,dovolj,Rgp,DET,O,,O
 sl-137,18,14,dokazov,,dokaz,Ncmpg,NOUN,O,,O
 sl-137,18,15,",",,",",Z,PUNCT,O,,O
@@ -483,7 +483,7 @@ sl-137,18,18,ne,,ne,Q,PART,O,,O
 sl-137,18,19,le,,le,Q,PART,O,,O
 sl-137,18,20,obtoži,,obtožiti,Vmer3s,VERB,O,,O
 sl-137,18,21,",",,",",Z,PUNCT,O,,O
-sl-137,18,22,ampak,,ampak,Cc,CCONJ,O,,B-ORG
+sl-137,18,22,ampak,,ampak,Cc,CCONJ,O,,O
 sl-137,18,23,tudi,,tudi,Q,PART,O,,O
 sl-137,18,24,obsodi,,obsoditi,Vmer3s,VERB,O,,O
 sl-137,18,25,.,,.,Z,PUNCT,O,,O
@@ -624,7 +624,7 @@ sl-137,26,5,proti,,proti,Sd,ADP,O,,O
 sl-137,26,6,nekdanjemu,,nekdanji,Agpmsd,ADJ,O,,O
 sl-137,26,7,prvemu,,prvi,Mlomsd,ADJ,O,,O
 sl-137,26,8,možu,,mož,Ncmsd,NOUN,O,,O
-sl-137,26,9,TEŠ-a,TEŠ,tešen,Npmsg,PROPN,B-ORG,ORG-TEŠ-Termoelektrarna-Šoštanj,O
+sl-137,26,9,TEŠ-a,TEŠ,tešen,Npmsg,PROPN,B-ORG,ORG-TEŠ-Termoelektrarna-Šoštanj,B-ORG
 sl-137,26,10,začelo,,začeti,Vmep-sn,VERB,O,,O
 sl-137,26,11,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-137,26,12,znano,,znan,Appnsn,ADJ,O,,O

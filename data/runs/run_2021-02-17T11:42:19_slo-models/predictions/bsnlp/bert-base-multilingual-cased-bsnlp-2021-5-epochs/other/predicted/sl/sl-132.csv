@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-132,0,1,Seehofer,Seehofer,Seehofer,Npmsn,PROPN,B-PER,PER-Horst-Seehofer,B-PER
 sl-132,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-132,0,3,",",,",",Z,PUNCT,O,,O
@@ -16,7 +16,7 @@ sl-132,1,1,Nemški,,nemški,Agpmsny,ADJ,O,,O
 sl-132,1,2,notranji,,notranji,Agpmsny,ADJ,O,,O
 sl-132,1,3,minister,,minister,Ncmsn,NOUN,O,,O
 sl-132,1,4,Horst,Horst,Horst,Npmsn,PROPN,B-PER,PER-Horst-Seehofer,B-PER
-sl-132,1,5,Seehofer,Seehofer,Seehofer,Npmsn,PROPN,I-PER,PER-Horst-Seehofer,B-PER
+sl-132,1,5,Seehofer,Seehofer,Seehofer,Npmsn,PROPN,I-PER,PER-Horst-Seehofer,I-PER
 sl-132,1,6,se,,se,Px------y,PRON,O,,O
 sl-132,1,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-132,1,8,ostro,,ostro,Rgp,ADV,O,,O
@@ -73,11 +73,11 @@ sl-132,2,4,nasprotnik,,nasprotnik,Ncmsn,NOUN,O,,O
 sl-132,2,5,politike,,politika,Ncfsg,NOUN,O,,O
 sl-132,2,6,kanclerke,,kanclerka,Ncfsg,NOUN,O,,O
 sl-132,2,7,Angele,Angela,Angela,Npfsg,PROPN,B-PER,PER-Angela-Merkel,B-PER
-sl-132,2,8,Merkel,Merkel,Merkel,Npfsg,PROPN,I-PER,PER-Angela-Merkel,B-PER
+sl-132,2,8,Merkel,Merkel,Merkel,Npfsg,PROPN,I-PER,PER-Angela-Merkel,I-PER
 sl-132,2,9,",",,",",Z,PUNCT,O,,O
 sl-132,2,10,ko,,ko,Cs,SCONJ,O,,O
 sl-132,2,11,gre,,iti,Vmbr3s,VERB,O,,O
-sl-132,2,12,za,,za,Sa,ADP,O,,I-ORG
+sl-132,2,12,za,,za,Sa,ADP,O,,O
 sl-132,2,13,migracije,,migracija,Ncfpa,NOUN,O,,O
 sl-132,2,14,",",,",",Z,PUNCT,O,,O
 sl-132,2,15,je,,biti,Va-r3s-n,AUX,O,,O
@@ -86,7 +86,7 @@ sl-132,2,17,robu,,rob,Ncmsl,NOUN,O,,O
 sl-132,2,18,srečanja,,srečanje,Ncnsg,NOUN,O,,O
 sl-132,2,19,svoje,,svoj,Px-fsg,DET,O,,O
 sl-132,2,20,bavarske,bavarska,bavarski,Agpfsg,ADJ,B-ORG,ORG-CSU-Christian-Social-Union-in-Bavaria,B-ORG
-sl-132,2,21,Krščansko-socialne,Krščansko-socialna,krščanskoniacialen,Agpfsg,ADJ,I-ORG,ORG-CSU-Christian-Social-Union-in-Bavaria,B-ORG
+sl-132,2,21,Krščansko-socialne,Krščansko-socialna,krščanskoniacialen,Agpfsg,ADJ,I-ORG,ORG-CSU-Christian-Social-Union-in-Bavaria,I-ORG
 sl-132,2,22,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-CSU-Christian-Social-Union-in-Bavaria,I-ORG
 sl-132,2,23,v,,v,Sa,ADP,O,,O
 sl-132,2,24,sredo,,sreda,Ncfsa,NOUN,O,,O
@@ -121,7 +121,7 @@ sl-132,3,1,Predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-132,3,2,CSU,CSU,CSU,Npfsg,PROPN,B-ORG,ORG-CSU-Christian-Social-Union-in-Bavaria,B-ORG
 sl-132,3,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-132,3,4,tudi,,tudi,Q,PART,O,,O
-sl-132,3,5,za,,za,Sa,ADP,O,,I-ORG
+sl-132,3,5,za,,za,Sa,ADP,O,,O
 sl-132,3,6,današnjo,,današnji,Agpfsa,ADJ,O,,O
 sl-132,3,7,izdajo,,izdaja,Ncfsa,NOUN,O,,O
 sl-132,3,8,časnik,,časnik,Ncmsn,NOUN,O,,O
@@ -153,7 +153,7 @@ sl-132,4,3,imamo,,imeti,Vmpr1p-n,VERB,O,,O
 sl-132,4,4,stranko,,stranka,Ncfsa,NOUN,O,,O
 sl-132,4,5,desno,,desno,Rgp,ADV,O,,O
 sl-132,4,6,od,,od,Sg,ADP,O,,O
-sl-132,4,7,unije,,unija,Ncfsg,NOUN,O,,I-ORG
+sl-132,4,7,unije,,unija,Ncfsg,NOUN,O,,O
 sl-132,4,8,",",,",",Z,PUNCT,O,,O
 sl-132,4,9,ki,,ki,Cs,SCONJ,O,,O
 sl-132,4,10,se,,se,Px------y,PRON,O,,O
@@ -193,7 +193,7 @@ sl-132,5,12,ki,,ki,Cs,SCONJ,O,,O
 sl-132,5,13,je,,biti,Va-r3s-n,AUX,O,,O
 sl-132,5,14,načeloma,,načeloma,Rgp,ADV,O,,O
 sl-132,5,15,odprta,,odprt,Appfsn,ADJ,O,,O
-sl-132,5,16,za,,za,Sa,ADP,O,,I-ORG
+sl-132,5,16,za,,za,Sa,ADP,O,,O
 sl-132,5,17,volivce,,volivec,Ncmpa,NOUN,O,,O
 sl-132,5,18,iz,,iz,Sg,ADP,O,,O
 sl-132,5,19,vseh,,ves,Pg-mpg,DET,O,,O
@@ -267,7 +267,7 @@ sl-132,9,7,danes,,danes,Rgp,ADV,O,,O
 sl-132,9,8,skrbi,,skrbeti,Vmpr3s,VERB,O,,O
 sl-132,9,9,glede,,glede,Sg,ADP,O,,O
 sl-132,9,10,svojega,,svoj,Px-msg,DET,O,,O
-sl-132,9,11,socialnega,,socialen,Agpmsg,ADJ,O,,I-ORG
+sl-132,9,11,socialnega,,socialen,Agpmsg,ADJ,O,,O
 sl-132,9,12,položaja,,položaj,Ncmsg,NOUN,O,,O
 sl-132,9,13,povezujejo,,povezovati,Vmpr3p,VERB,O,,O
 sl-132,9,14,z,,z,Si,ADP,O,,O
@@ -286,7 +286,7 @@ sl-132,10,9,pri,,pri,Sl,ADP,O,,O
 sl-132,10,10,iskanju,,iskanje,Ncnsl,NOUN,O,,O
 sl-132,10,11,evropske,evropski,evropski,Agpfsg,ADJ,B-LOC,LOC-Europe,B-LOC
 sl-132,10,12,rešitve,,rešitev,Ncfsg,NOUN,O,,O
-sl-132,10,13,za,,za,Sa,ADP,O,,I-ORG
+sl-132,10,13,za,,za,Sa,ADP,O,,O
 sl-132,10,14,uravnoteženo,,uravnotežen,Appfsa,ADJ,O,,O
 sl-132,10,15,razporeditev,,razporeditev,Ncfsa,NOUN,O,,O
 sl-132,10,16,migrantov,,migrant,Ncmpg,NOUN,O,,O
@@ -322,7 +322,7 @@ sl-132,11,20,",",,",",Z,PUNCT,O,,O
 sl-132,11,21,tudi,,tudi,Q,PART,O,,O
 sl-132,11,22,izrazil,,izraziti,Vmep-sm,VERB,O,,O
 sl-132,11,23,razumevanje,,razumevanje,Ncnsa,NOUN,O,,O
-sl-132,11,24,za,,za,Sa,ADP,O,,I-ORG
+sl-132,11,24,za,,za,Sa,ADP,O,,O
 sl-132,11,25,ljudi,,človek,Ncmpa,NOUN,O,,O
 sl-132,11,26,",",,",",Z,PUNCT,O,,O
 sl-132,11,27,ki,,ki,Cs,SCONJ,O,,O
@@ -561,7 +561,7 @@ sl-132,19,6,saški,,saški,Agpmsny,ADJ,O,,O
 sl-132,19,7,ministrski,,ministrski,Agpmsny,ADJ,O,,O
 sl-132,19,8,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-132,19,9,Michael,Michael,Michael,Npmsn,PROPN,B-PER,PER-Michael-Kretschmer,B-PER
-sl-132,19,10,Kretschmer,Kretschmer,Kretschmer,Npmsn,PROPN,I-PER,PER-Michael-Kretschmer,B-PER
+sl-132,19,10,Kretschmer,Kretschmer,Kretschmer,Npmsn,PROPN,I-PER,PER-Michael-Kretschmer,I-PER
 sl-132,19,11,",",,",",Z,PUNCT,O,,O
 sl-132,19,12,ki,,ki,Cs,SCONJ,O,,O
 sl-132,19,13,je,,biti,Va-r3s-n,AUX,O,,O

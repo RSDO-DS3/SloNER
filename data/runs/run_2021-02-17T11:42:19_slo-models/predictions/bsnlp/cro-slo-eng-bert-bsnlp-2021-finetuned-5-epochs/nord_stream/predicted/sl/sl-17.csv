@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-17,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-17,0,2,na,,na,Sl,ADP,O,,O
 sl-17,0,3,vrhu,,vrh,Ncmsl,NOUN,O,,O
@@ -23,12 +23,12 @@ sl-17,0,21,BDP,,BDP,Ncmsg,NOUN,O,,O
 sl-17,1,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-17,1,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-17,1,3,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-17,1,4,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-17,1,4,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-17,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-17,1,6,danes,,danes,Rgp,ADV,O,,O
 sl-17,1,7,na,,na,Sl,ADP,O,,O
 sl-17,1,8,vrhu,,vrh,Ncmsl,NOUN,O,,O
-sl-17,1,9,zveze,,zveza,Ncfsg,NOUN,O,,B-ORG
+sl-17,1,9,zveze,,zveza,Ncfsg,NOUN,O,,O
 sl-17,1,10,Nato,Nato,Nato,Npmsn,PROPN,B-ORG,ORG-NATO,B-ORG
 sl-17,1,11,v,,v,Sl,ADP,O,,O
 sl-17,1,12,Bruslju,Bruselj,Bruselj,Npmsl,PROPN,B-LOC,GPE-Brussles,B-LOC
@@ -80,9 +80,9 @@ sl-17,2,31,kritičnim,,kritičen,Agpmsi,ADJ,O,,O
 sl-17,2,32,tvitom,,tvit,Ncmsi,NOUN,O,,O
 sl-17,2,33,.,,.,Z,PUNCT,O,,O
 sl-17,3,1,Voditelji,,voditelj,Ncmpn,NOUN,O,,O
-sl-17,3,2,29,,29,Mdc,NUM,O,,I-PRO
+sl-17,3,2,29,,29,Mdc,NUM,O,,O
 sl-17,3,3,članic,,članica,Ncfpg,NOUN,O,,O
-sl-17,3,4,zveze,,zveza,Ncfsg,NOUN,O,,B-ORG
+sl-17,3,4,zveze,,zveza,Ncfsg,NOUN,O,,O
 sl-17,3,5,Nato,Nato,Nato,Npmsn,PROPN,B-ORG,ORG-NATO,B-ORG
 sl-17,3,6,so,,biti,Va-r3p-n,AUX,O,,O
 sl-17,3,7,se,,se,Px------y,PRON,O,,O
@@ -220,8 +220,8 @@ sl-17,6,15,Nemčijo,Nemčija,Nemčija,Npfsa,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-17,6,16,zaradi,,zaradi,Sg,ADP,O,,O
 sl-17,6,17,načrtovanega,,načrtovan,Appmsg,ADJ,O,,O
 sl-17,6,18,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
-sl-17,6,19,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-17,6,20,tok,,tok,Ncmsn,NOUN,O,,I-PRO
+sl-17,6,19,Severni,,severen,Agpmsny,ADJ,O,,O
+sl-17,6,20,tok,,tok,Ncmsn,NOUN,O,,O
 sl-17,6,21,2.,,2.,Mdo,NUM,O,,O
 sl-17,6,22,Očital,,očitati,Vmpp-sm,VERB,O,,O
 sl-17,6,23,ji,,on,Pp3fsd--y,PRON,O,,O
@@ -295,7 +295,7 @@ sl-17,9,14,in,,in,Cc,CCONJ,O,,O
 sl-17,9,15,izkušnjo,,izkušnja,Ncfsa,NOUN,O,,O
 sl-17,9,16,s,,z,Si,ADP,O,,O
 sl-17,9,17,Sovjetsko,Sovjetska,sovjetski,Agpfsi,ADJ,B-LOC,GPE-Soviet-Union-USSR,B-LOC
-sl-17,9,18,zvezo,zveza,zveza,Ncfsi,NOUN,I-LOC,GPE-Soviet-Union-USSR,B-LOC
+sl-17,9,18,zvezo,zveza,zveza,Ncfsi,NOUN,I-LOC,GPE-Soviet-Union-USSR,I-LOC
 sl-17,9,19,ter,,ter,Cc,CCONJ,O,,O
 sl-17,9,20,vztrajala,,vztrajati,Vmpp-sf,VERB,O,,O
 sl-17,9,21,",",,",",Z,PUNCT,O,,O
@@ -496,7 +496,7 @@ sl-17,20,10,poleg,,poleg,Sg,ADP,O,,O
 sl-17,20,11,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
 sl-17,20,12,še,,še,Q,PART,O,,O
 sl-17,20,13,Velika,Velika,velik,Agpfsn,ADJ,B-LOC,GPE-Great-Britain,B-LOC
-sl-17,20,14,Britanija,Britanija,Britanija,Npfsn,PROPN,I-LOC,GPE-Great-Britain,B-LOC
+sl-17,20,14,Britanija,Britanija,Britanija,Npfsn,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-17,20,15,",",,",",Z,PUNCT,O,,O
 sl-17,20,16,Grčija,Grčija,Grčija,Npfsn,PROPN,B-LOC,GPE-Greece,B-LOC
 sl-17,20,17,",",,",",Z,PUNCT,O,,O
@@ -730,7 +730,7 @@ sl-17,31,30,s,,z,Si,ADP,O,,O
 sl-17,31,31,trinajstimi,,trinajst,Mlc-pi,NUM,O,,O
 sl-17,31,32,točkami,,točka,Ncfpi,NOUN,O,,O
 sl-17,31,33,.,,.,Z,PUNCT,O,,O
-sl-17,32,1,Vrh,,vrh,Ncmsn,NOUN,O,,O
+sl-17,32,1,Vrh,,vrh,Ncmsn,NOUN,O,,B-PER
 sl-17,32,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-17,32,3,sicer,,sicer,Q,PART,O,,O
 sl-17,32,4,tudi,,tudi,Q,PART,O,,O

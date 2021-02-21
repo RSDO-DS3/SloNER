@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-19,0,1,Bank,Bank,bank,Xf,X,B-ORG,ORG-Bank-of-England,B-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-19,0,1,Bank,Bank,bank,Xf,X,B-ORG,ORG-Bank-of-England,I-ORG
 sl-19,0,2,of,of,of,Xf,X,I-ORG,ORG-Bank-of-England,I-ORG
 sl-19,0,3,England,England,England,Npmsn,PROPN,I-ORG,ORG-Bank-of-England,I-ORG
 sl-19,0,4,:,,:,Z,PUNCT,O,,O
@@ -31,8 +31,8 @@ sl-19,1,14,ključnih,,ključen,Agpfpg,ADJ,O,,O
 sl-19,1,15,transakcij,,transakcija,Ncfpg,NOUN,O,,O
 sl-19,1,16,",",,",",Z,PUNCT,O,,O
 sl-19,1,17,in,,in,Cc,CCONJ,O,,O
-sl-19,1,18,centralna,,centralen,Agpfsn,ADJ,O,,O
-sl-19,1,19,banka,,banka,Ncfsn,NOUN,O,,O
+sl-19,1,18,centralna,,centralen,Agpfsn,ADJ,O,,B-ORG
+sl-19,1,19,banka,,banka,Ncfsn,NOUN,O,,I-ORG
 sl-19,1,20,je,,biti,Va-r3s-n,AUX,O,,O
 sl-19,1,21,v,,v,Sl,ADP,O,,O
 sl-19,1,22,povzetku,,povzetek,Ncmsl,NOUN,O,,O
@@ -40,8 +40,8 @@ sl-19,1,23,zadnjega,,zadnji,Agpnsg,ADJ,O,,O
 sl-19,1,24,zasedanja,,zasedanje,Ncnsg,NOUN,O,,O
 sl-19,1,25,osrednjega,,osrednji,Agpmsg,ADJ,O,,O
 sl-19,1,26,organa,,organ,Ncmsg,NOUN,O,,O
-sl-19,1,27,denarne,,denaren,Agpfsg,ADJ,O,,O
-sl-19,1,28,politike,,politika,Ncfsg,NOUN,O,,O
+sl-19,1,27,denarne,,denaren,Agpfsg,ADJ,O,,I-ORG
+sl-19,1,28,politike,,politika,Ncfsg,NOUN,O,,I-ORG
 sl-19,1,29,24,,24,Mdc,NUM,O,,O
 sl-19,1,30,dni,,dan,Ncmpg,NOUN,O,,O
 sl-19,1,31,pred,,pred,Si,ADP,O,,O
@@ -79,7 +79,7 @@ sl-19,2,9,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-19,2,10,po,,po,Sl,ADP,O,,O
 sl-19,2,11,opozorilih,,opozorilo,Ncnpl,NOUN,O,,O
 sl-19,2,12,centralne,,centralen,Agpfsg,ADJ,O,,O
-sl-19,2,13,banke,,banka,Ncfsg,NOUN,O,,O
+sl-19,2,13,banke,,banka,Ncfsg,NOUN,O,,I-ORG
 sl-19,2,14,ne,,ne,Q,PART,O,,O
 sl-19,2,15,bi,,biti,Va-c,AUX,O,,O
 sl-19,2,16,mogle,,moči,Vmpp-pf,VERB,O,,O
@@ -123,9 +123,9 @@ sl-19,3,22,",",,",",Z,PUNCT,O,,O
 sl-19,3,23,«,,«,Z,PUNCT,O,,O
 sl-19,3,24,je,,biti,Va-r3s-n,AUX,O,,O
 sl-19,3,25,ocenila,,oceniti,Vmep-sf,VERB,O,,O
-sl-19,3,26,britanska,britanska,britanski,Agpfsn,ADJ,B-ORG,ORG-Bank-of-England,O
-sl-19,3,27,centralna,centralna,centralen,Agpfsn,ADJ,I-ORG,ORG-Bank-of-England,O
-sl-19,3,28,banka,banka,banka,Ncfsn,NOUN,I-ORG,ORG-Bank-of-England,O
+sl-19,3,26,britanska,britanska,britanski,Agpfsn,ADJ,B-ORG,ORG-Bank-of-England,B-ORG
+sl-19,3,27,centralna,centralna,centralen,Agpfsn,ADJ,I-ORG,ORG-Bank-of-England,I-ORG
+sl-19,3,28,banka,banka,banka,Ncfsn,NOUN,I-ORG,ORG-Bank-of-England,I-ORG
 sl-19,3,29,in,,in,Cc,CCONJ,O,,O
 sl-19,3,30,dodala,,dodati,Vmep-sf,VERB,O,,O
 sl-19,3,31,",",,",",Z,PUNCT,O,,O
@@ -136,9 +136,9 @@ sl-19,3,35,možno,,možen,Agpnsn,ADJ,O,,O
 sl-19,3,36,natančno,,natančno,Rgp,ADV,O,,O
 sl-19,3,37,predvideti,,predvideti,Vmen,VERB,O,,O
 sl-19,3,38,.,,.,Z,PUNCT,O,,O
-sl-19,4,1,V,,v,Sl,ADP,O,,O
-sl-19,4,2,centralni,,centralen,Agpfsl,ADJ,O,,B-ORG
-sl-19,4,3,banki,,banka,Ncfsl,NOUN,O,,O
+sl-19,4,1,V,,v,Sl,ADP,O,,B-ORG
+sl-19,4,2,centralni,,centralen,Agpfsl,ADJ,O,,I-ORG
+sl-19,4,3,banki,,banka,Ncfsl,NOUN,O,,I-ORG
 sl-19,4,4,so,,biti,Va-r3p-n,AUX,O,,O
 sl-19,4,5,sicer,,sicer,Q,PART,O,,O
 sl-19,4,6,priznali,,priznati,Vmep-pm,VERB,O,,O
@@ -171,7 +171,7 @@ sl-19,5,15,nadaljevanje,,nadaljevanje,Ncnsa,NOUN,O,,O
 sl-19,5,16,svojih,,svoj,Px-fpg,DET,O,,O
 sl-19,5,17,storitev,,storitev,Ncfpg,NOUN,O,,O
 sl-19,5,18,v,,v,Sl,ADP,O,,O
-sl-19,5,19,uniji,,unija,Ncfsl,NOUN,O,,B-ORG
+sl-19,5,19,uniji,,unija,Ncfsl,NOUN,O,,O
 sl-19,5,20,tudi,,tudi,Q,PART,O,,O
 sl-19,5,21,v,,v,Sl,ADP,O,,O
 sl-19,5,22,primeru,,primer,Ncmsl,NOUN,O,,O
@@ -295,8 +295,8 @@ sl-19,12,3,se,,se,Px------y,PRON,O,,O
 sl-19,12,4,mora,,morati,Vmpr3s,VERB,O,,O
 sl-19,12,5,po,,po,Sl,ADP,O,,O
 sl-19,12,6,navedbah,,navedba,Ncfpl,NOUN,O,,O
-sl-19,12,7,centralne,,centralen,Agpfsg,ADJ,O,,O
-sl-19,12,8,banke,,banka,Ncfsg,NOUN,O,,O
+sl-19,12,7,centralne,,centralen,Agpfsg,ADJ,O,,B-ORG
+sl-19,12,8,banke,,banka,Ncfsg,NOUN,O,,I-ORG
 sl-19,12,9,pripraviti,,pripraviti,Vmen,VERB,O,,O
 sl-19,12,10,tudi,,tudi,Q,PART,O,,O
 sl-19,12,11,na,,na,Sa,ADP,O,,O

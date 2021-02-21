@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-52,0,1,Nemčija,Nemčija,Nemčija,Npfsn,PROPN,B-LOC,GPE-Germany,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-52,0,1,Nemčija,Nemčija,Nemčija,Npfsn,PROPN,B-LOC,GPE-Germany,B-PER
 sl-52,0,2,razpravlja,,razpravljati,Vmpr3s,VERB,O,,O
 sl-52,0,3,:,,:,Z,PUNCT,O,,O
 sl-52,0,4,Adijo,,adijo,I,INTJ,O,,O
@@ -19,7 +19,7 @@ sl-52,1,9,10,,10,Mdc,NUM,O,,O
 sl-52,1,10,najhujših,,hud,Agsmpg,ADJ,O,,O
 sl-52,1,11,onesnaževalcev,,onesnaževalec,Ncmpg,NOUN,O,,O
 sl-52,1,12,.,,.,Z,PUNCT,O,,O
-sl-52,2,1,REUTERS,REUTERS,Reuters,Npmsn,PROPN,B-ORG,ORG-Reuters,B-ORG
+sl-52,2,1,REUTERS,REUTERS,Reuters,Npmsn,PROPN,B-ORG,ORG-Reuters,O
 sl-52,3,1,V,,v,Sl,ADP,O,,O
 sl-52,3,2,Nemčiji,Nemčija,Nemčija,Npfsl,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-52,3,3,potekajo,,potekati,Vmpr3p,VERB,O,,O
@@ -69,8 +69,8 @@ sl-52,4,24,na,,na,Sa,ADP,O,,O
 sl-52,4,25,kratke,,kratek,Agpfpa,ADJ,O,,O
 sl-52,4,26,razdalije,,razdalija,Ncfpa,NOUN,O,,O
 sl-52,4,27,.,,.,Z,PUNCT,O,,O
-sl-52,5,1,Alexander,Alexander,Alexander,Npmsn,PROPN,B-PER,PER-Alexander-Dobrindt,B-PER
-sl-52,5,2,Dobrindt,Dobrindt,Dobrindt,Npmsn,PROPN,I-PER,PER-Alexander-Dobrindt,I-PER
+sl-52,5,1,Alexander,Alexander,Alexander,Npmsn,PROPN,B-PER,PER-Alexander-Dobrindt,O
+sl-52,5,2,Dobrindt,Dobrindt,Dobrindt,Npmsn,PROPN,I-PER,PER-Alexander-Dobrindt,B-PER
 sl-52,5,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-52,5,4,kot,,kot,Cs,SCONJ,O,,O
 sl-52,5,5,predsednik,,predsednik,Ncmsn,NOUN,O,,O
@@ -397,12 +397,12 @@ sl-52,20,27,nastali,,nastal,Appfsd,ADJ,O,,O
 sl-52,20,28,situaciji,,situacija,Ncfsd,NOUN,O,,O
 sl-52,20,29,.,,.,Z,PUNCT,O,,O
 sl-52,21,1,Z,,z,Sg,ADP,O,,O
-sl-52,21,2,nemškega,nemško,nemški,Agpnsg,ADJ,B-ORG,ORG-BDL-German-Aviation-Association,O
-sl-52,21,3,letalskega,letalsko,letalski,Agpnsg,ADJ,I-ORG,ORG-BDL-German-Aviation-Association,O
-sl-52,21,4,združenja,združenje,združenje,Ncnsg,NOUN,I-ORG,ORG-BDL-German-Aviation-Association,O
+sl-52,21,2,nemškega,nemško,nemški,Agpnsg,ADJ,B-ORG,ORG-BDL-German-Aviation-Association,B-ORG
+sl-52,21,3,letalskega,letalsko,letalski,Agpnsg,ADJ,I-ORG,ORG-BDL-German-Aviation-Association,I-ORG
+sl-52,21,4,združenja,združenje,združenje,Ncnsg,NOUN,I-ORG,ORG-BDL-German-Aviation-Association,I-ORG
 sl-52,21,5,(,,(,Z,PUNCT,O,,O
 sl-52,21,6,German,German,German,Npmsn,PROPN,B-ORG,ORG-BDL-German-Aviation-Association,B-ORG
-sl-52,21,7,Aviation,Aviation,Aviation,Npmsn,PROPN,I-ORG,ORG-BDL-German-Aviation-Association,B-ORG
+sl-52,21,7,Aviation,Aviation,Aviation,Npmsn,PROPN,I-ORG,ORG-BDL-German-Aviation-Association,I-ORG
 sl-52,21,8,Association,Association,Association,Npmsn,PROPN,I-ORG,ORG-BDL-German-Aviation-Association,I-ORG
 sl-52,21,9,),,),Z,PUNCT,O,,O
 sl-52,21,10,so,,biti,Va-r3p-n,AUX,O,,O

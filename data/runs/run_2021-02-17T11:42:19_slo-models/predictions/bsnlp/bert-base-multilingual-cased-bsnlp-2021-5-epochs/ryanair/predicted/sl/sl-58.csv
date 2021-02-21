@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-58,0,1,Letališče,letališče,letališče,Ncnsn,NOUN,B-LOC,LOC-Gatwick-Airport,B-LOC
 sl-58,0,2,Gatwick,Gatwick,Gatwick,Npmsn,PROPN,I-LOC,LOC-Gatwick-Airport,I-LOC
 sl-58,0,3,po,,po,Sl,ADP,O,,O
@@ -46,7 +46,7 @@ sl-58,2,16,ostaja,,ostajati,Vmpr3s,VERB,O,,O
 sl-58,2,17,ujetih,,ujet,Appmpg,ADJ,O,,O
 sl-58,2,18,na,,na,Sl,ADP,O,,O
 sl-58,2,19,britanskem,,britanski,Agpnsl,ADJ,O,,O
-sl-58,2,20,letališču,,letališče,Ncnsl,NOUN,O,,B-LOC
+sl-58,2,20,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-58,2,21,.,,.,Z,PUNCT,O,,O
 sl-58,3,1,Policija,,policija,Ncfsn,NOUN,O,,O
 sl-58,3,2,medtem,,medtem,Rgp,ADV,O,,O
@@ -63,7 +63,7 @@ sl-58,3,12,že,,že,Q,PART,O,,O
 sl-58,3,13,od,,od,Sg,ADP,O,,O
 sl-58,3,14,srede,,sreda,Ncfsg,NOUN,O,,O
 sl-58,3,15,preletavata,,preletavati,Vmpr3d,VERB,O,,O
-sl-58,3,16,Gatwick,Gatwick,Gatwick,Npmsan,PROPN,B-LOC,LOC-Gatwick-Airport,I-LOC
+sl-58,3,16,Gatwick,Gatwick,Gatwick,Npmsan,PROPN,B-LOC,LOC-Gatwick-Airport,B-LOC
 sl-58,3,17,.,,.,Z,PUNCT,O,,O
 sl-58,4,1,Droni,,dron,Ncmpn,NOUN,O,,O
 sl-58,4,2,na,,na,Sl,ADP,O,,O
@@ -94,7 +94,7 @@ sl-58,5,22,vedno,,vedno,Rgp,ADV,O,,O
 sl-58,5,23,ostaja,,ostajati,Vmpr3s,VERB,O,,O
 sl-58,5,24,ujetih,,ujet,Appmpg,ADJ,O,,O
 sl-58,5,25,na,,na,Sl,ADP,O,,O
-sl-58,5,26,letališču,,letališče,Ncnsl,NOUN,O,,B-LOC
+sl-58,5,26,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-58,5,27,",",,",",Z,PUNCT,O,,O
 sl-58,5,28,medtem,,medtem,Rgp,ADV,O,,O
 sl-58,5,29,ko,,ko,Cs,SCONJ,O,,O
@@ -138,7 +138,7 @@ sl-58,7,11,",",,",",Z,PUNCT,O,,O
 sl-58,7,12,zato,,zato,Cc,CCONJ,O,,O
 sl-58,7,13,osebje,,osebje,Ncnsn,NOUN,O,,O
 sl-58,7,14,na,,na,Sl,ADP,O,,O
-sl-58,7,15,letališču,,letališče,Ncnsl,NOUN,O,,B-LOC
+sl-58,7,15,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-58,7,16,priporoča,,priporočati,Vmpr3s,VERB,O,,O
 sl-58,7,17,",",,",",Z,PUNCT,O,,O
 sl-58,7,18,da,,da,Cs,SCONJ,O,,O
@@ -151,7 +151,7 @@ sl-58,7,24,preden,,preden,Cs,SCONJ,O,,O
 sl-58,7,25,se,,se,Px------y,PRON,O,,O
 sl-58,7,26,zglasijo,,zglasiti,Vmer3p,VERB,O,,O
 sl-58,7,27,na,,na,Sl,ADP,O,,O
-sl-58,7,28,letališču,,letališče,Ncnsl,NOUN,O,,B-LOC
+sl-58,7,28,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-58,7,29,.,,.,Z,PUNCT,O,,O
 sl-58,8,1,120.000,,120.000,Mdc,NUM,O,,O
 sl-58,8,2,ljudi,,človek,Ncmpg,NOUN,O,,O
@@ -162,7 +162,7 @@ sl-58,8,6,čez,,čez,Sa,ADP,O,,O
 sl-58,8,7,noč,,noč,Ncfsa,NOUN,O,,O
 sl-58,8,8,ostali,,ostati,Vmep-pm,VERB,O,,O
 sl-58,8,9,na,,na,Sl,ADP,O,,O
-sl-58,8,10,letališču,,letališče,Ncnsl,NOUN,O,,B-LOC
+sl-58,8,10,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-58,8,11,",",,",",Z,PUNCT,O,,O
 sl-58,8,12,se,,se,Px------y,PRON,O,,O
 sl-58,8,13,medtem,,medtem,Rgp,ADV,O,,O
@@ -194,7 +194,7 @@ sl-58,9,2,četrtek,,četrtek,Ncmsan,NOUN,O,,O
 sl-58,9,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-58,9,4,policija,,policija,Ncfsn,NOUN,O,,O
 sl-58,9,5,na,,na,Sa,ADP,O,,O
-sl-58,9,6,Gatwick,Gatwick,Gatwick,Npmsan,PROPN,B-LOC,LOC-Gatwick-Airport,I-LOC
+sl-58,9,6,Gatwick,Gatwick,Gatwick,Npmsan,PROPN,B-LOC,LOC-Gatwick-Airport,B-LOC
 sl-58,9,7,napotila,,napotiti,Vmep-sf,VERB,O,,O
 sl-58,9,8,helikopter,,helikopter,Ncmsan,NOUN,O,,O
 sl-58,9,9,in,,in,Cc,CCONJ,O,,O
@@ -320,7 +320,7 @@ sl-58,15,21,so,,biti,Va-r3p-n,AUX,O,,O
 sl-58,15,22,ostali,,ostati,Vmep-pm,VERB,O,,O
 sl-58,15,23,ujeti,,ujet,Appmpn,ADJ,O,,O
 sl-58,15,24,na,,na,Sl,ADP,O,,O
-sl-58,15,25,letališču,,letališče,Ncnsl,NOUN,O,,B-LOC
+sl-58,15,25,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-58,15,26,.,,.,Z,PUNCT,O,,O
 sl-58,16,1,Po,,po,Sl,ADP,O,,O
 sl-58,16,2,njenih,,njen,Ps3fplsf,DET,O,,O
@@ -531,12 +531,12 @@ sl-58,26,6,da,,da,Cs,SCONJ,O,,O
 sl-58,26,7,letijo,,leteti,Vmpr3p,VERB,O,,O
 sl-58,26,8,na,,na,Sl,ADP,O,,O
 sl-58,26,9,območju,,območje,Ncnsl,NOUN,O,,O
-sl-58,26,10,letališča,,letališče,Ncnsg,NOUN,O,,B-LOC
+sl-58,26,10,letališča,,letališče,Ncnsg,NOUN,O,,O
 sl-58,26,11,oziroma,,oziroma,Cc,CCONJ,O,,O
 sl-58,26,12,morajo,,morati,Vmpr3p,VERB,O,,O
 sl-58,26,13,biti,,biti,Va-n,AUX,O,,O
 sl-58,26,14,od,,od,Sg,ADP,O,,O
-sl-58,26,15,letališča,,letališče,Ncnsg,NOUN,O,,B-LOC
+sl-58,26,15,letališča,,letališče,Ncnsg,NOUN,O,,O
 sl-58,26,16,oddaljeni,,oddaljen,Agpmpn,ADJ,O,,O
 sl-58,26,17,vsaj,,vsaj,Q,PART,O,,O
 sl-58,26,18,en,,en,Mlpmsn,NUM,O,,O

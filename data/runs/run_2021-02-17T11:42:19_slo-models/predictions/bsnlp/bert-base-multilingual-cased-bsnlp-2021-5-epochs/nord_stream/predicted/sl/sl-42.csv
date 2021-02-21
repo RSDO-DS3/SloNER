@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-42,0,1,»,,»,Z,PUNCT,O,,O
 sl-42,0,2,Ameriška,,ameriški,Agpfsn,ADJ,O,,O
 sl-42,0,3,tehnologija,,tehnologija,Ncfsn,NOUN,O,,O
@@ -8,8 +8,8 @@ sl-42,0,6,tehnologija,,tehnologija,Ncfsn,NOUN,O,,O
 sl-42,0,7,«,,«,Z,PUNCT,O,,O
 sl-42,1,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-42,1,2,minister,,minister,Ncmsn,NOUN,O,,O
-sl-42,1,3,za,,za,Sa,ADP,O,,I-ORG
-sl-42,1,4,energetiko,,energetika,Ncfsa,NOUN,O,,I-ORG
+sl-42,1,3,za,,za,Sa,ADP,O,,O
+sl-42,1,4,energetiko,,energetika,Ncfsa,NOUN,O,,O
 sl-42,1,5,si,,se,Px---d--y,PRON,O,,O
 sl-42,1,6,želi,,želeti,Vmpr3s,VERB,O,,O
 sl-42,1,7,",",,",",Z,PUNCT,O,,O
@@ -75,10 +75,10 @@ sl-42,2,44,novinarjev,,novinar,Ncmpg,NOUN,O,,O
 sl-42,2,45,poudaril,,poudariti,Vmep-sm,VERB,O,,O
 sl-42,2,46,ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-42,2,47,minister,,minister,Ncmsn,NOUN,O,,O
-sl-42,2,48,za,,za,Sa,ADP,O,,I-ORG
-sl-42,2,49,energetiko,,energetika,Ncfsa,NOUN,O,,I-ORG
+sl-42,2,48,za,,za,Sa,ADP,O,,O
+sl-42,2,49,energetiko,,energetika,Ncfsa,NOUN,O,,O
 sl-42,2,50,Rick,Rick,Rick,Npmsn,PROPN,B-PER,PER-Rick-Perry,B-PER
-sl-42,2,51,Perry,Perry,Perry,Npmsn,PROPN,I-PER,PER-Rick-Perry,B-PER
+sl-42,2,51,Perry,Perry,Perry,Npmsn,PROPN,I-PER,PER-Rick-Perry,I-PER
 sl-42,2,52,",",,",",Z,PUNCT,O,,O
 sl-42,2,53,ki,,ki,Cs,SCONJ,O,,O
 sl-42,2,54,se,,se,Px------y,PRON,O,,O
@@ -102,7 +102,7 @@ sl-42,3,9,biti,,biti,Va-n,AUX,O,,O
 sl-42,3,10,vaš,,vaš,Ps2msnp,DET,O,,O
 sl-42,3,11,partner,,partner,Ncmsn,NOUN,O,,O
 sl-42,3,12,.,,.,Z,PUNCT,O,,O
-sl-42,4,1,Slovenija,Slovenija,Slovenija,Npfsn,PROPN,B-LOC,GPE-Slovenia,B-LOC
+sl-42,4,1,Slovenija,Slovenija,Slovenija,Npfsn,PROPN,B-LOC,GPE-Slovenia,O
 sl-42,4,2,morda,,morda,Q,PART,O,,O
 sl-42,4,3,ni,,biti,Va-r3s-y,VERB,O,,O
 sl-42,4,4,na,,na,Sl,ADP,O,,O
@@ -115,7 +115,7 @@ sl-42,4,10,poslovne,,posloven,Agpfpa,ADJ,O,,O
 sl-42,4,11,priložnosti,,priložnost,Ncfpa,NOUN,O,,O
 sl-42,4,12,",",,",",Z,PUNCT,O,,O
 sl-42,4,13,a,,a,Cc,CCONJ,O,,O
-sl-42,4,14,za,,za,Sa,ADP,O,,I-ORG
+sl-42,4,14,za,,za,Sa,ADP,O,,O
 sl-42,4,15,ZDA,ZDA,ZDA,Npfpa,PROPN,B-LOC,GPE-USA,B-LOC
 sl-42,4,16,ste,,biti,Va-r2p-n,AUX,O,,O
 sl-42,4,17,pomembna,,pomemben,Agpfsn,ADJ,O,,O
@@ -138,7 +138,7 @@ sl-42,4,33,Ljubljani,Ljubljana,Ljubljana,Npfsl,PROPN,B-LOC,GPE-Ljubljana,B-LOC
 sl-42,4,34,poskušal,,poskušati,Vmpp-sm,VERB,O,,O
 sl-42,4,35,izkoristiti,,izkoristiti,Vmen,VERB,O,,O
 sl-42,4,36,tudi,,tudi,Q,PART,O,,O
-sl-42,4,37,za,,za,Sa,ADP,O,,I-ORG
+sl-42,4,37,za,,za,Sa,ADP,O,,O
 sl-42,4,38,spodbujanje,,spodbujanje,Ncnsa,NOUN,O,,O
 sl-42,4,39,sodelovanja,,sodelovanje,Ncnsg,NOUN,O,,O
 sl-42,4,40,med,,med,Si,ADP,O,,O
@@ -228,7 +228,7 @@ sl-42,8,8,»,,»,Z,PUNCT,O,,O
 sl-42,8,9,izjemen,,izjemen,Agpmsnn,ADJ,O,,O
 sl-42,8,10,«,,«,Z,PUNCT,O,,O
 sl-42,8,11,trg,,trg,Ncmsn,NOUN,O,,O
-sl-42,8,12,za,,za,Sa,ADP,O,,I-ORG
+sl-42,8,12,za,,za,Sa,ADP,O,,O
 sl-42,8,13,tehnologijo,,tehnologija,Ncfsa,NOUN,O,,O
 sl-42,8,14,malih,,mali,Agpmpg,ADJ,O,,O
 sl-42,8,15,modularnih,,modularen,Agpmpg,ADJ,O,,O
@@ -242,7 +242,7 @@ sl-42,8,22,mnenju,,mnenje,Ncnsl,NOUN,O,,O
 sl-42,8,23,predstavljajo,,predstavljati,Vmpr3p,VERB,O,,O
 sl-42,8,24,prihodnost,,prihodnost,Ncfsa,NOUN,O,,O
 sl-42,8,25,razvoja,,razvoj,Ncmsg,NOUN,O,,O
-sl-42,8,26,jedrske,,jedrski,Agpfsg,ADJ,O,,B-ORG
+sl-42,8,26,jedrske,,jedrski,Agpfsg,ADJ,O,,O
 sl-42,8,27,energije,,energija,Ncfsg,NOUN,O,,O
 sl-42,8,28,.,,.,Z,PUNCT,O,,O
 sl-42,9,1,Kot,,kot,Cs,SCONJ,O,,O
@@ -309,8 +309,8 @@ sl-42,11,4,na,,na,Sl,ADP,O,,O
 sl-42,11,5,Svetovnem,Svetovni,svetoven,Agpmsl,ADJ,B-EVT,EVT-World-Nuclear-Exhibition-2014,B-EVT
 sl-42,11,6,jedrskem,jedrski,jedrski,Agpmsl,ADJ,I-EVT,EVT-World-Nuclear-Exhibition-2014,I-EVT
 sl-42,11,7,sejmu,sejem,sejem,Ncmsl,NOUN,I-EVT,EVT-World-Nuclear-Exhibition-2014,I-EVT
-sl-42,11,8,leta,leta,leto,Ncnsg,NOUN,I-EVT,EVT-World-Nuclear-Exhibition-2014,O
-sl-42,11,9,2014.,2014,2014.,Mdo,NUM,I-EVT,EVT-World-Nuclear-Exhibition-2014,I-PRO
+sl-42,11,8,leta,leta,leto,Ncnsg,NOUN,I-EVT,EVT-World-Nuclear-Exhibition-2014,I-EVT
+sl-42,11,9,2014.,2014,2014.,Mdo,NUM,I-EVT,EVT-World-Nuclear-Exhibition-2014,O
 sl-42,12,1,FOTO,,foto,Ncmsn,NOUN,O,,O
 sl-42,12,2,:,,:,Z,PUNCT,O,,O
 sl-42,12,3,REUTERS,,Reuters,Npmsn,PROPN,O,,O
@@ -321,13 +321,13 @@ sl-42,13,1,Perry,Perry,Perry,Npmsn,PROPN,B-PER,PER-Rick-Perry,B-PER
 sl-42,13,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-42,13,3,širjenje,,širjenje,Ncnsa,NOUN,O,,O
 sl-42,13,4,uporabe,,uporaba,Ncfsg,NOUN,O,,O
-sl-42,13,5,jedrske,,jedrski,Agpfsg,ADJ,O,,B-ORG
+sl-42,13,5,jedrske,,jedrski,Agpfsg,ADJ,O,,O
 sl-42,13,6,energije,,energija,Ncfsg,NOUN,O,,O
 sl-42,13,7,opisal,,opisati,Vmep-sm,VERB,O,,O
 sl-42,13,8,kot,,kot,Cs,SCONJ,O,,O
 sl-42,13,9,edini,,edin,Agpmsay,ADJ,O,,O
 sl-42,13,10,način,,način,Ncmsan,NOUN,O,,O
-sl-42,13,11,za,,za,Sa,ADP,O,,I-ORG
+sl-42,13,11,za,,za,Sa,ADP,O,,O
 sl-42,13,12,trajno,,trajen,Agpnsa,ADJ,O,,O
 sl-42,13,13,zmanjšanje,,zmanjšanje,Ncnsa,NOUN,O,,O
 sl-42,13,14,izpustov,,izpust,Ncmpg,NOUN,O,,O
@@ -359,7 +359,7 @@ sl-42,15,5,koli,,koli,Q,PART,O,,O
 sl-42,15,6,emisij,,emisija,Ncfpg,NOUN,O,,O
 sl-42,15,7,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-42,15,8,ključna,,ključen,Agpfsn,ADJ,O,,O
-sl-42,15,9,za,,za,Sa,ADP,O,,I-ORG
+sl-42,15,9,za,,za,Sa,ADP,O,,O
 sl-42,15,10,uresničevanje,,uresničevanje,Ncnsa,NOUN,O,,O
 sl-42,15,11,tega,,ta,Pd-msg,DET,O,,O
 sl-42,15,12,cilja,,cilj,Ncmsg,NOUN,O,,O
@@ -391,8 +391,8 @@ sl-42,16,4,ameriškega,,ameriški,Agpmsg,ADJ,O,,O
 sl-42,16,5,plina,,plin,Ncmsg,NOUN,O,,O
 sl-42,17,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-42,17,2,minister,,minister,Ncmsn,NOUN,O,,O
-sl-42,17,3,za,,za,Sa,ADP,O,,I-ORG
-sl-42,17,4,energetiko,,energetika,Ncfsa,NOUN,O,,I-ORG
+sl-42,17,3,za,,za,Sa,ADP,O,,O
+sl-42,17,4,energetiko,,energetika,Ncfsa,NOUN,O,,O
 sl-42,17,5,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-42,17,6,večino,,večina,Ncfsa,NOUN,O,,O
 sl-42,17,7,časa,,čas,Ncmsg,NOUN,O,,O
@@ -413,7 +413,7 @@ sl-42,17,21,v,,v,Sl,ADP,O,,O
 sl-42,17,22,Srednji,Srednja,srednji,Agpfsl,ADJ,B-LOC,LOC-Central-Europe,B-LOC
 sl-42,17,23,in,,in,Cc,CCONJ,O,,O
 sl-42,17,24,Vzhodni,Vzhodna,vzhoden,Agpfsl,ADJ,B-LOC,LOC-Eastern-Europe,B-LOC
-sl-42,17,25,Evropi,Evropa,Evropa,Npfsl,PROPN,I-LOC,LOC-Eastern-Europe,B-LOC
+sl-42,17,25,Evropi,Evropa,Evropa,Npfsl,PROPN,I-LOC,LOC-Eastern-Europe,I-LOC
 sl-42,17,26,",",,",",Z,PUNCT,O,,O
 sl-42,17,27,kar,,kar,Pr-nsn,PRON,O,,O
 sl-42,17,28,je,,biti,Va-r3s-n,AUX,O,,O
@@ -544,7 +544,7 @@ sl-42,23,9,proizvodnjo,,proizvodnja,Ncfsa,NOUN,O,,O
 sl-42,23,10,",",,",",Z,PUNCT,O,,O
 sl-42,23,11,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-42,23,12,to,,ta,Pd-fsa,DET,O,,O
-sl-42,23,13,energijo,,energija,Ncfsa,NOUN,O,,I-ORG
+sl-42,23,13,energijo,,energija,Ncfsa,NOUN,O,,O
 sl-42,23,14,potrebovala,,potrebovati,Vmpp-sf,VERB,O,,O
 sl-42,23,15,.,,.,Z,PUNCT,O,,O
 sl-42,24,1,Če,,če,Cs,SCONJ,O,,O
@@ -560,7 +560,7 @@ sl-42,24,10,odpovedali,,odpovedati,Vmep-pm,VERB,O,,O
 sl-42,24,11,kakršni,,kakršen,Pr-msd,DET,O,,O
 sl-42,24,12,koli,,koli,Q,PART,O,,O
 sl-42,24,13,obliki,,oblika,Ncfsd,NOUN,O,,O
-sl-42,24,14,jedrske,,jedrski,Agpfsg,ADJ,O,,B-ORG
+sl-42,24,14,jedrske,,jedrski,Agpfsg,ADJ,O,,O
 sl-42,24,15,energije,,energija,Ncfsg,NOUN,O,,O
 sl-42,24,16,",",,",",Z,PUNCT,O,,O
 sl-42,24,17,se,,se,Px------y,PRON,O,,O
@@ -613,8 +613,8 @@ sl-42,27,14,sankcije,,sankcija,Ncfpn,NOUN,O,,O
 sl-42,27,15,glede,,glede,Sg,ADP,O,,O
 sl-42,27,16,gradnje,,gradnja,Ncfsg,NOUN,O,,O
 sl-42,27,17,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
-sl-42,27,18,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-42,27,19,tok,,tok,Ncmsn,NOUN,O,,I-PRO
+sl-42,27,18,Severni,,severen,Agpmsny,ADJ,O,,O
+sl-42,27,19,tok,,tok,Ncmsn,NOUN,O,,O
 sl-42,27,20,2.,,2.,Mdo,NUM,O,,O
 sl-42,27,21,Pogajanja,,pogajanje,Ncnsg,NOUN,O,,O
 sl-42,27,22,o,,o,Sl,ADP,O,,O

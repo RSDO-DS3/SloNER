@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-28,0,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-28,0,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-LOC
 sl-28,0,2,močno,,močno,Rgp,ADV,O,,O
 sl-28,0,3,povečala,,povečati,Vmep-sf,VERB,O,,O
 sl-28,0,4,uvoz,,uvoz,Ncmsan,NOUN,O,,O
@@ -36,7 +36,7 @@ sl-28,1,24,plina,,plin,Ncmsg,NOUN,O,,O
 sl-28,1,25,iz,,iz,Sg,ADP,O,,O
 sl-28,1,26,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
 sl-28,1,27,za,,za,Sa,ADP,O,,O
-sl-28,1,28,272,,272,Mdc,NUM,O,,I-PRO
+sl-28,1,28,272,,272,Mdc,NUM,O,,O
 sl-28,1,29,odstotkov,,odstotek,Ncmpg,NOUN,O,,O
 sl-28,1,30,.,,.,Z,PUNCT,O,,O
 sl-28,2,1,Evropska,Evropska,evropski,Agpfsn,ADJ,B-ORG,ORG-European-Commission,B-ORG
@@ -165,7 +165,7 @@ sl-28,7,11,minister,,minister,Ncmsn,NOUN,O,,O
 sl-28,7,12,za,,za,Sa,ADP,O,,O
 sl-28,7,13,energetiko,,energetika,Ncfsa,NOUN,O,,O
 sl-28,7,14,Rick,Rick,Rick,Npmsn,PROPN,B-PER,PER-Rick-Perry,B-PER
-sl-28,7,15,Perry,Perry,Perry,Npmsn,PROPN,I-PER,PER-Rick-Perry,B-PER
+sl-28,7,15,Perry,Perry,Perry,Npmsn,PROPN,I-PER,PER-Rick-Perry,I-PER
 sl-28,7,16,.,,.,Z,PUNCT,O,,O
 sl-28,8,1,Zaradi,,zaradi,Sg,ADP,O,,O
 sl-28,8,2,Severnega,Severni,severen,Agpmsg,ADJ,B-PRO,PRO-Nord-Stream-2,B-PRO
@@ -464,8 +464,8 @@ sl-28,22,9,Kemfert,Kemfert,Kemfert,Npfsn,PROPN,I-PER,PER-Claudia-Kemfert,I-PER
 sl-28,22,10,z,,z,Sg,ADP,O,,O
 sl-28,22,11,nemškega,,nemški,Agpmsg,ADJ,O,,O
 sl-28,22,12,Inštituta,,inštitut,Ncmsg,NOUN,O,,B-ORG
-sl-28,22,13,za,,za,Sa,ADP,O,,O
-sl-28,22,14,gospodarske,,gospodarski,Agpfpa,ADJ,O,,O
+sl-28,22,13,za,,za,Sa,ADP,O,,I-ORG
+sl-28,22,14,gospodarske,,gospodarski,Agpfpa,ADJ,O,,I-ORG
 sl-28,22,15,raziskave,,raziskava,Ncfpa,NOUN,O,,I-ORG
 sl-28,22,16,.,,.,Z,PUNCT,O,,O
 sl-28,23,1,"""",,"""",Z,PUNCT,O,,O

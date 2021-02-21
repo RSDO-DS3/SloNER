@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-28,0,1,Zgodovinski,,zgodovinski,Agpmsny,ADJ,O,,O
 sl-28,0,2,polet,,polet,Ncmsn,NOUN,O,,O
 sl-28,0,3,:,,:,Z,PUNCT,O,,O
@@ -12,7 +12,7 @@ sl-28,0,10,Britanijo,Britanija,Britanija,Npfsa,PROPN,B-LOC,GPE-Great-Britain,B-L
 sl-28,1,1,Terminal,,terminal,Ncmsn,NOUN,O,,O
 sl-28,1,2,3,,3,Mdc,NUM,O,,O
 sl-28,1,3,letališča,,letališče,Ncnsg,NOUN,O,,O
-sl-28,1,4,Heathrow,Heathrow,Heathrow,Npmsn,PROPN,B-LOC,LOC-Heathrow-Airport,B-LOC
+sl-28,1,4,Heathrow,Heathrow,Heathrow,Npmsn,PROPN,B-LOC,LOC-Heathrow-Airport,I-LOC
 sl-28,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-28,1,6,ponujal,,ponujati,Vmpp-sm,VERB,O,,O
 sl-28,1,7,nenavaden,,nenavaden,Agpmsan,ADJ,O,,O
@@ -59,7 +59,7 @@ sl-28,3,18,iz,,iz,Sg,ADP,O,,O
 sl-28,3,19,Avstralije,Avstralija,Avstralija,Npfsg,PROPN,B-LOC,GPE-Australia,B-LOC
 sl-28,3,20,v,,v,Sa,ADP,O,,O
 sl-28,3,21,Veliko,Velika,velik,Agpfsa,ADJ,B-LOC,GPE-Great-Britain,B-LOC
-sl-28,3,22,Britanijo,Britanija,Britanija,Npfsa,PROPN,I-LOC,GPE-Great-Britain,B-LOC
+sl-28,3,22,Britanijo,Britanija,Britanija,Npfsa,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-28,3,23,",",,",",Z,PUNCT,O,,O
 sl-28,3,24,ki,,ki,Cs,SCONJ,O,,O
 sl-28,3,25,so,,biti,Va-r3p-n,AUX,O,,O
@@ -74,8 +74,8 @@ sl-28,4,1,Polet,,polet,Ncmsn,NOUN,O,,O
 sl-28,4,2,iz,,iz,Sg,ADP,O,,O
 sl-28,4,3,Pertha,Perth,Perth,Npmsg,PROPN,B-LOC,GPE-Perth,B-LOC
 sl-28,4,4,v,,v,Sl,ADP,O,,O
-sl-28,4,5,zahodni,,zahoden,Agpfsl,ADJ,O,,B-LOC
-sl-28,4,6,Avstraliji,Avstralija,Avstralija,Npfsl,PROPN,B-LOC,GPE-Australia,B-LOC
+sl-28,4,5,zahodni,,zahoden,Agpfsl,ADJ,O,,O
+sl-28,4,6,Avstraliji,Avstralija,Avstralija,Npfsl,PROPN,B-LOC,GPE-Australia,I-LOC
 sl-28,4,7,v,,v,Sa,ADP,O,,O
 sl-28,4,8,London,London,London,Npmsan,PROPN,B-LOC,GPE-London,B-LOC
 sl-28,4,9,",",,",",Z,PUNCT,O,,O
@@ -140,7 +140,7 @@ sl-28,8,1,Zanj,,zame,Pp3msa--b,PRON,O,,O
 sl-28,8,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-28,8,3,bila,,biti,Va-p-sf,AUX,O,,O
 sl-28,8,4,zaslužna,,zaslužen,Agpfsn,ADJ,O,,O
-sl-28,8,5,avstralska,,avstralski,Agpfsn,ADJ,O,,B-LOC
+sl-28,8,5,avstralska,,avstralski,Agpfsn,ADJ,O,,O
 sl-28,8,6,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-28,8,7,",",,",",Z,PUNCT,O,,O
 sl-28,8,8,ki,,ki,Cs,SCONJ,O,,O
@@ -321,8 +321,8 @@ sl-28,15,23,kilometra,,kilometer,Ncmsg,NOUN,O,,O
 sl-28,15,24,na,,na,Sa,ADP,O,,O
 sl-28,15,25,uro,,ura,Ncfsa,NOUN,O,,O
 sl-28,15,26,.,,.,Z,PUNCT,O,,O
-sl-28,16,1,Brata,,Brata,Npfsn,PROPN,O,,O
-sl-28,16,2,Smith,Smith,Smith,Npfsn,PROPN,B-PER,PER-Owen-Smith,B-PER
+sl-28,16,1,Brata,,Brata,Npfsn,PROPN,O,,B-PER
+sl-28,16,2,Smith,Smith,Smith,Npfsn,PROPN,B-PER,PER-Owen-Smith,I-PER
 sl-28,16,3,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-28,16,4,dobila,,dobiti,Vmep-dm,VERB,O,,O
 sl-28,16,5,viteški,,viteški,Agpmsay,ADJ,O,,O
@@ -546,7 +546,7 @@ sl-28,27,18,potnikov,,potnik,Ncmpg,NOUN,O,,O
 sl-28,27,19,in,,in,Cc,CCONJ,O,,O
 sl-28,27,20,prtljage,,prtljaga,Ncfsg,NOUN,O,,O
 sl-28,27,21,",",,",",Z,PUNCT,O,,O
-sl-28,27,22,airbus,,airbus,Ncmsn,NOUN,O,,B-PRO
+sl-28,27,22,airbus,,airbus,Ncmsn,NOUN,O,,O
 sl-28,27,23,največ,,največ,Rgs,DET,O,,O
 sl-28,27,24,14.816.,,14.816.,Mdc,NUM,O,,O
 sl-28,28,1,Vse,,ves,Pg-nsn,DET,O,,O
@@ -556,7 +556,7 @@ sl-28,28,4,dolgo,,dolg,Agpnsa,ADJ,O,,O
 sl-28,28,5,potovanje,,potovanje,Ncnsa,NOUN,O,,O
 sl-28,29,1,Quantasov,Quantasov,Quantasov,Aspmsnn,ADJ,B-ORG,ORG-Quantas,B-ORG
 sl-28,29,2,polet,,polet,Ncmsn,NOUN,O,,O
-sl-28,29,3,QF9,,QF9,Npmsn,PROPN,O,,B-PRO
+sl-28,29,3,QF9,,QF9,Npmsn,PROPN,O,,O
 sl-28,29,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-28,29,5,bil,,biti,Va-p-sm,AUX,O,,O
 sl-28,29,6,tretji,,tretji,Mlomsn,ADJ,O,,O

@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-168,0,1,Gove,Gove,Gove,Npfpn,PROPN,B-PER,PER-Michael-Gove,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-168,0,1,Gove,Gove,Gove,Npfpn,PROPN,B-PER,PER-Michael-Gove,B-LOC
 sl-168,0,2,:,,:,Z,PUNCT,O,,O
 sl-168,0,3,London,London,London,Npmsn,PROPN,B-LOC,GPE-London,B-LOC
 sl-168,0,4,se,,se,Px------y,PRON,O,,O
@@ -10,9 +10,9 @@ sl-168,0,8,pripravlja,,pripravljati,Vmpr3s,VERB,O,,O
 sl-168,0,9,na,,na,Sa,ADP,O,,O
 sl-168,0,10,brexit,Brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-168,0,11,brez,,brez,Sg,ADP,O,,O
-sl-168,0,12,dogovora,,dogovor,Ncmsg,NOUN,O,,B-PER
+sl-168,0,12,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-168,1,1,Nova,,nov,Agpfsn,ADJ,O,,O
-sl-168,1,2,britanska,,britanski,Agpfsn,ADJ,O,,B-ORG
+sl-168,1,2,britanska,,britanski,Agpfsn,ADJ,O,,O
 sl-168,1,3,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-168,1,4,se,,se,Px------y,PRON,O,,O
 sl-168,1,5,pripravlja,,pripravljati,Vmpr3s,VERB,O,,O
@@ -48,7 +48,7 @@ sl-168,2,18,",",,",",Z,PUNCT,O,,O
 sl-168,2,19,«,,«,Z,PUNCT,O,,O
 sl-168,2,20,je,,biti,Va-r3s-n,AUX,O,,O
 sl-168,2,21,zapisal,,zapisati,Vmep-sm,VERB,O,,O
-sl-168,2,22,Gove,Gove,Gove,Npmsn,PROPN,B-PER,PER-Michael-Gove,O
+sl-168,2,22,Gove,Gove,Gove,Npmsn,PROPN,B-PER,PER-Michael-Gove,B-PER
 sl-168,2,23,",",,",",Z,PUNCT,O,,O
 sl-168,2,24,ki,,ki,Cs,SCONJ,O,,O
 sl-168,2,25,mu,,on,Pp3msd--y,PRON,O,,O
@@ -57,7 +57,7 @@ sl-168,2,27,premier,,premier,Ncmsn,NOUN,O,,O
 sl-168,2,28,zaupal,,zaupati,Vmbp-sm,VERB,O,,O
 sl-168,2,29,priprave,,priprava,Ncfpa,NOUN,O,,O
 sl-168,2,30,na,,na,Sa,ADP,O,,O
-sl-168,2,31,brexit,Brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,O
+sl-168,2,31,brexit,Brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-168,2,32,brez,,brez,Sg,ADP,O,,O
 sl-168,2,33,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-168,2,34,.,,.,Z,PUNCT,O,,O
@@ -78,7 +78,7 @@ sl-168,3,14,oktobra,,oktober,Ncmsg,NOUN,O,,O
 sl-168,3,15,zapustili,,zapustiti,Vmep-pm,VERB,O,,O
 sl-168,3,16,EU,EU,EU,Npfsa,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-168,3,17,.,,.,Z,PUNCT,O,,O
-sl-168,4,1,Brez,,brez,Sg,ADP,O,,B-EVT
+sl-168,4,1,Brez,,brez,Sg,ADP,O,,O
 sl-168,4,2,če,,če,Cs,SCONJ,O,,O
 sl-168,4,3,.,,.,Z,PUNCT,O,,O
 sl-168,5,1,Brez,,brez,Sg,ADP,O,,O
@@ -87,7 +87,7 @@ sl-168,5,3,.,,.,Z,PUNCT,O,,O
 sl-168,6,1,Brez,,brez,Sg,ADP,O,,O
 sl-168,6,2,zavlačevanj,,zavlačevanje,Ncnpg,NOUN,O,,O
 sl-168,6,3,.,,.,Z,PUNCT,O,,O
-sl-168,7,1,Brexit,Brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,O
+sl-168,7,1,Brexit,Brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-168,7,2,se,,se,Px------y,PRON,O,,O
 sl-168,7,3,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-168,7,4,zgodil,,zgoditi,Vmep-sm,VERB,O,,O
@@ -96,9 +96,9 @@ sl-168,7,6,«,,«,Z,PUNCT,O,,O
 sl-168,7,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-168,7,8,še,,še,Q,PART,O,,O
 sl-168,7,9,zapisal,,zapisati,Vmep-sm,VERB,O,,O
-sl-168,7,10,Gove,Gove,Gove,Npmsn,PROPN,B-PER,PER-Michael-Gove,O
+sl-168,7,10,Gove,Gove,Gove,Npmsn,PROPN,B-PER,PER-Michael-Gove,B-PER
 sl-168,7,11,.,,.,Z,PUNCT,O,,O
-sl-168,8,1,Ob,,ob,Sl,ADP,O,,B-LOC
+sl-168,8,1,Ob,,ob,Sl,ADP,O,,O
 sl-168,8,2,tem,,ta,Pd-nsl,DET,O,,O
 sl-168,8,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-168,8,4,izrazil,,izraziti,Vmep-sm,VERB,O,,O
@@ -139,7 +139,7 @@ sl-168,9,7,",",,",",Z,PUNCT,O,,O
 sl-168,9,8,da,,da,Cs,SCONJ,O,,O
 sl-168,9,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-168,9,10,premier,,premier,Ncmsn,NOUN,O,,O
-sl-168,9,11,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-168,9,11,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-168,9,12,vzpostavil,,vzpostaviti,Vmep-sm,VERB,O,,O
 sl-168,9,13,»,,»,Z,PUNCT,O,,O
 sl-168,9,14,vojno,,vojna,Ncfsa,NOUN,O,,O
@@ -169,7 +169,7 @@ sl-168,10,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-168,10,7,ob,,ob,Sl,ADP,O,,O
 sl-168,10,8,tem,,ta,Pd-nsl,DET,O,,O
 sl-168,10,9,za,,za,Sa,ADP,O,,O
-sl-168,10,10,Sunday,Sunday,Sunday,Npmsn,PROPN,B-PRO,PRO-The-Sunday-Telegraph,O
+sl-168,10,10,Sunday,Sunday,Sunday,Npmsn,PROPN,B-PRO,PRO-The-Sunday-Telegraph,B-PRO
 sl-168,10,11,Telegraph,Telegraph,Telegraph,Npmsan,PROPN,I-PRO,PRO-The-Sunday-Telegraph,I-PRO
 sl-168,10,12,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-168,10,13,",",,",",Z,PUNCT,O,,O
@@ -223,14 +223,14 @@ sl-168,11,15,infrastrukture,,infrastruktura,Ncfsg,NOUN,O,,O
 sl-168,11,16,v,,v,Sl,ADP,O,,O
 sl-168,11,17,pristaniščih,,pristanišče,Ncnpl,NOUN,O,,O
 sl-168,11,18,.,,.,Z,PUNCT,O,,O
-sl-168,12,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-168,12,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-168,12,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-168,12,3,v,,v,Sl,ADP,O,,O
 sl-168,12,4,svojem,,svoj,Px-msl,DET,O,,O
 sl-168,12,5,nastopnem,,nastopen,Agpmsl,ADJ,O,,O
 sl-168,12,6,govoru,,govor,Ncmsl,NOUN,O,,O
 sl-168,12,7,v,,v,Sl,ADP,O,,O
-sl-168,12,8,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,O
+sl-168,12,8,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,B-ORG
 sl-168,12,9,parlamentu,parlament,parlament,Ncmsl,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-168,12,10,v,,v,Sa,ADP,O,,O
 sl-168,12,11,četrtek,,četrtek,Ncmsan,NOUN,O,,O
@@ -261,7 +261,7 @@ sl-168,13,1,V,,v,Sl,ADP,O,,O
 sl-168,13,2,nasprotnem,,nasproten,Agpmsl,ADJ,O,,O
 sl-168,13,3,primeru,,primer,Ncmsl,NOUN,O,,O
 sl-168,13,4,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-168,13,5,Otok,Otok,otok,Ncmsn,NOUN,B-LOC,GPE-Great-Britain,O
+sl-168,13,5,Otok,Otok,otok,Ncmsn,NOUN,B-LOC,GPE-Great-Britain,B-LOC
 sl-168,13,6,zapustil,,zapustiti,Vmep-sm,VERB,O,,O
 sl-168,13,7,EU,EU,EU,Npfsa,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-168,13,8,31.,,31.,Mdo,NUM,O,,O
@@ -294,7 +294,7 @@ sl-168,14,21,ostala,,ostati,Vmep-sf,VERB,O,,O
 sl-168,14,22,del,,del,Ncmsan,NOUN,O,,O
 sl-168,14,23,evropske,,evropski,Agpfsg,ADJ,O,,O
 sl-168,14,24,carinske,,carinski,Agpfsg,ADJ,O,,O
-sl-168,14,25,unije,,unija,Ncfsg,NOUN,O,,I-ORG
+sl-168,14,25,unije,,unija,Ncfsg,NOUN,O,,O
 sl-168,14,26,",",,",",Z,PUNCT,O,,O
 sl-168,14,27,dokler,,dokler,Cs,SCONJ,O,,O
 sl-168,14,28,ne,,ne,Q,PART,O,,O
@@ -303,7 +303,7 @@ sl-168,14,30,dosegli,,doseči,Vmep-pm,VERB,O,,O
 sl-168,14,31,trgovinskega,,trgovinski,Agpmsg,ADJ,O,,O
 sl-168,14,32,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-168,14,33,.,,.,Z,PUNCT,O,,O
-sl-168,15,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+sl-168,15,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,O
 sl-168,15,2,vztraja,,vztrajati,Vmpr3s,VERB,O,,O
 sl-168,15,3,",",,",",Z,PUNCT,O,,O
 sl-168,15,4,da,,da,Cs,SCONJ,O,,O

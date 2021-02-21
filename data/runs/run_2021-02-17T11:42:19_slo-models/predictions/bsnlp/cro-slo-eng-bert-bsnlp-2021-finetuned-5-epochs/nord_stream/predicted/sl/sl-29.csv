@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-29,0,1,Energetika,,energetika,Ncfsn,NOUN,O,,O
 sl-29,0,2,:,,:,Z,PUNCT,O,,O
 sl-29,0,3,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
@@ -54,7 +54,7 @@ sl-29,2,13,tem,,ta,Pd-msl,DET,O,,O
 sl-29,2,14,energentu,,energent,Ncmsl,NOUN,O,,O
 sl-29,2,15,od,,od,Sg,ADP,O,,O
 sl-29,2,16,leta,,leto,Ncnsg,NOUN,O,,O
-sl-29,2,17,2014,,2014,Mdc,NUM,O,,I-PRO
+sl-29,2,17,2014,,2014,Mdc,NUM,O,,O
 sl-29,2,18,raste,,rasti,Vmpr3s,VERB,O,,O
 sl-29,2,19,.,,.,Z,PUNCT,O,,O
 sl-29,3,1,Glavna,,glaven,Agpfsn,ADJ,O,,O
@@ -75,7 +75,7 @@ sl-29,3,15,strategijo,,strategija,Ncfsa,NOUN,O,,O
 sl-29,3,16,in,,in,Cc,CCONJ,O,,O
 sl-29,3,17,druge,,drug,Mlpmpa,ADJ,O,,O
 sl-29,3,18,ukrepe,,ukrep,Ncmpa,NOUN,O,,O
-sl-29,3,19,za,,za,Sa,ADP,O,,I-ORG
+sl-29,3,19,za,,za,Sa,ADP,O,,O
 sl-29,3,20,zmanjšanje,,zmanjšanje,Ncnsa,NOUN,O,,O
 sl-29,3,21,energetske,,energetski,Agpfsg,ADJ,O,,O
 sl-29,3,22,odvisnosti,,odvisnost,Ncfsg,NOUN,O,,O
@@ -100,7 +100,7 @@ sl-29,5,5,Šefčovič,Šefčovič,Šefčovič,Npmsn,PROPN,I-PER,PER-Maros-Sefcov
 sl-29,5,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-29,5,7,pred,,pred,Si,ADP,O,,O
 sl-29,5,8,dnevi,,dan,Ncmpi,NOUN,O,,O
-sl-29,5,9,za,,za,Sa,ADP,O,,I-ORG
+sl-29,5,9,za,,za,Sa,ADP,O,,O
 sl-29,5,10,prihodnji,,prihodnji,Agpmsay,ADJ,O,,O
 sl-29,5,11,teden,,teden,Ncmsan,NOUN,O,,O
 sl-29,5,12,napovedal,,napovedati,Vmep-sm,VERB,O,,O
@@ -113,7 +113,7 @@ sl-29,5,18,",",,",",Z,PUNCT,O,,O
 sl-29,5,19,Rusijo,Rusija,Rusija,Npfsi,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-29,5,20,in,,in,Cc,CCONJ,O,,O
 sl-29,5,21,Ukrajino,Ukrajina,Ukrajina,Npfsi,PROPN,B-LOC,GPE-Ukraine,B-LOC
-sl-29,5,22,za,,za,Sa,ADP,O,,I-ORG
+sl-29,5,22,za,,za,Sa,ADP,O,,O
 sl-29,5,23,sklenitev,,sklenitev,Ncfsa,NOUN,O,,O
 sl-29,5,24,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-29,5,25,o,,o,Sl,ADP,O,,O
@@ -146,7 +146,7 @@ sl-29,7,8,"""",,"""",Z,PUNCT,O,,O
 sl-29,7,9,močan,,močen,Agpmsnn,ADJ,O,,O
 sl-29,7,10,pozitiven,,pozitiven,Agpmsnn,ADJ,O,,O
 sl-29,7,11,signal,,signal,Ncmsn,NOUN,O,,O
-sl-29,7,12,za,,za,Sa,ADP,O,,I-ORG
+sl-29,7,12,za,,za,Sa,ADP,O,,O
 sl-29,7,13,trg,,trg,Ncmsan,NOUN,O,,O
 sl-29,7,14,in,,in,Cc,CCONJ,O,,O
 sl-29,7,15,porabnike,,porabnik,Ncmpa,NOUN,O,,O
@@ -173,7 +173,7 @@ sl-29,9,1,Tranzit,,tranzit,Ncmsn,NOUN,O,,O
 sl-29,9,2,prek,,prek,Sg,ADP,O,,O
 sl-29,9,3,Ukrajine,Ukrajina,Ukrajina,Npfsg,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-29,9,4,je,,biti,Va-r3s-n,AUX,O,,O
-sl-29,9,5,za,,za,Sa,ADP,O,,I-ORG
+sl-29,9,5,za,,za,Sa,ADP,O,,O
 sl-29,9,6,EU,EU,EU,Npfsa,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-29,9,7,še,,še,Q,PART,O,,O
 sl-29,9,8,vedno,,vedno,Rgp,ADV,O,,O
@@ -222,8 +222,8 @@ sl-29,10,13,Baltskim,Baltsko,baltski,Agpnsi,ADJ,B-LOC,LOC-Baltic-Sea,B-LOC
 sl-29,10,14,morjem,morje,morje,Ncnsi,NOUN,I-LOC,LOC-Baltic-Sea,I-LOC
 sl-29,10,15,prek,,prek,Sg,ADP,O,,O
 sl-29,10,16,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
-sl-29,10,17,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-29,10,18,tok,,tok,Ncmsn,NOUN,O,,I-PRO
+sl-29,10,17,Severni,,severen,Agpmsny,ADJ,O,,O
+sl-29,10,18,tok,,tok,Ncmsn,NOUN,O,,O
 sl-29,10,19,1.,,1.,Mdo,NUM,O,,O
 sl-29,10,20,Zdaj,ZDA,zdaj,Rgp,ADV,B-LOC,GPE-USA,O
 sl-29,10,21,je,,biti,Va-r3s-n,VERB,O,,O
@@ -235,7 +235,7 @@ sl-29,10,26,Severni,Severni,severen,Agpmsny,ADJ,B-PRO,PRO-Nord-Stream-2,B-PRO
 sl-29,10,27,tok,tok,tok,Ncmsn,NOUN,I-PRO,PRO-Nord-Stream-2,I-PRO
 sl-29,10,28,2,2,2,Mdc,NUM,I-PRO,PRO-Nord-Stream-2,I-PRO
 sl-29,10,29,",",,",",Z,PUNCT,O,,O
-sl-29,10,30,za,,za,Sa,ADP,O,,I-ORG
+sl-29,10,30,za,,za,Sa,ADP,O,,O
 sl-29,10,31,katerega,,kateri,Pq-msa,DET,O,,O
 sl-29,10,32,nemška,,nemški,Agpfsn,ADJ,O,,O
 sl-29,10,33,vlada,,vlada,Ncfsn,NOUN,O,,O
@@ -355,7 +355,7 @@ sl-29,16,24,in,,in,Cc,CCONJ,O,,O
 sl-29,16,25,ZDA,ZDA,ZDA,Npfpi,PROPN,B-LOC,GPE-USA,B-LOC
 sl-29,16,26,",",,",",Z,PUNCT,O,,O
 sl-29,16,27,povečala,,povečati,Vmep-sf,VERB,O,,O
-sl-29,16,28,za,,za,Sa,ADP,O,,I-ORG
+sl-29,16,28,za,,za,Sa,ADP,O,,O
 sl-29,16,29,272,,272,Mdc,NUM,O,,O
 sl-29,16,30,odstotkov,,odstotek,Ncmpg,NOUN,O,,O
 sl-29,16,31,.,,.,Z,PUNCT,O,,O
@@ -405,7 +405,7 @@ sl-29,19,24,.,,.,Z,PUNCT,O,,O
 sl-29,20,1,Eden,,eden,Mlpmsn,NUM,O,,O
 sl-29,20,2,od,,od,Sg,ADP,O,,O
 sl-29,20,3,razlogov,,razlog,Ncmpg,NOUN,O,,O
-sl-29,20,4,za,,za,Sa,ADP,O,,I-ORG
+sl-29,20,4,za,,za,Sa,ADP,O,,O
 sl-29,20,5,to,,ta,Pd-nsa,DET,O,,O
 sl-29,20,6,so,,biti,Va-r3p-n,AUX,O,,O
 sl-29,20,7,najnižje,,nizek,Agsfpn,ADJ,O,,O
@@ -426,7 +426,7 @@ sl-29,21,6,med,,med,Si,ADP,O,,O
 sl-29,21,7,ZDA,ZDA,ZDA,Npfpi,PROPN,B-LOC,GPE-USA,B-LOC
 sl-29,21,8,in,,in,Cc,CCONJ,O,,O
 sl-29,21,9,Rusijo,Rusija,Rusija,Npfsi,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-29,21,10,za,,za,Sa,ADP,O,,I-ORG
+sl-29,21,10,za,,za,Sa,ADP,O,,O
 sl-29,21,11,tržne,,tržen,Agpmpa,ADJ,O,,O
 sl-29,21,12,deleže,,delež,Ncmpa,NOUN,O,,O
 sl-29,21,13,pri,,pri,Sl,ADP,O,,O
@@ -493,7 +493,7 @@ sl-29,25,10,o,,o,Sl,ADP,O,,O
 sl-29,25,11,dobavi,,dobava,Ncfsl,NOUN,O,,O
 sl-29,25,12,zemeljskega,,zemeljski,Agpmsg,ADJ,O,,O
 sl-29,25,13,plina,,plin,Ncmsg,NOUN,O,,O
-sl-29,25,14,za,,za,Sa,ADP,O,,I-ORG
+sl-29,25,14,za,,za,Sa,ADP,O,,O
 sl-29,25,15,obdobje,,obdobje,Ncnsa,NOUN,O,,O
 sl-29,25,16,2018,,2018,Mdc,NUM,O,,O
 sl-29,25,17,–,,–,Z,PUNCT,O,,O
@@ -526,9 +526,9 @@ sl-29,26,25,.,,.,Z,PUNCT,O,,O
 sl-29,27,1,Leta,,leto,Ncnsg,NOUN,O,,O
 sl-29,27,2,2014,,2014,Mdc,NUM,O,,O
 sl-29,27,3,so,,biti,Va-r3p-n,AUX,O,,O
-sl-29,27,4,Rusi,Rusi,Rus,Npmpn,PROPN,B-PER,GPE-Russia,O
+sl-29,27,4,Rusi,Rusi,Rus,Npmpn,PROPN,B-PER,GPE-Russia,B-PER
 sl-29,27,5,načrte,,načrt,Ncmpa,NOUN,O,,O
-sl-29,27,6,za,,za,Sa,ADP,O,,I-ORG
+sl-29,27,6,za,,za,Sa,ADP,O,,O
 sl-29,27,7,gradnjo,,gradnja,Ncfsa,NOUN,O,,O
 sl-29,27,8,tega,,ta,Pd-msg,DET,O,,O
 sl-29,27,9,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
@@ -586,7 +586,7 @@ sl-29,31,11,zaradi,,zaradi,Sg,ADP,O,,O
 sl-29,31,12,ukinjanja,,ukinjanje,Ncnsg,NOUN,O,,O
 sl-29,31,13,rabe,,raba,Ncfsg,NOUN,O,,O
 sl-29,31,14,premoga,,premog,Ncmsg,NOUN,O,,O
-sl-29,31,15,za,,za,Sa,ADP,O,,I-ORG
+sl-29,31,15,za,,za,Sa,ADP,O,,O
 sl-29,31,16,pridobivanje,,pridobivanje,Ncnsa,NOUN,O,,O
 sl-29,31,17,električne,,električen,Agpfsg,ADJ,O,,O
 sl-29,31,18,energije,,energija,Ncfsg,NOUN,O,,O
@@ -646,7 +646,7 @@ sl-29,33,7,tudi,,tudi,Q,PART,O,,O
 sl-29,33,8,Mednarodna,Mednarodna,mednaroden,Agpfsn,ADJ,B-ORG,ORG-International-Energy-Agency,B-ORG
 sl-29,33,9,agencija,agencija,agencija,Ncfsn,NOUN,I-ORG,ORG-International-Energy-Agency,I-ORG
 sl-29,33,10,za,za,za,Sa,ADP,I-ORG,ORG-International-Energy-Agency,I-ORG
-sl-29,33,11,energijo,energijo,energija,Ncfsa,NOUN,I-ORG,ORG-International-Energy-Agency,O
+sl-29,33,11,energijo,energijo,energija,Ncfsa,NOUN,I-ORG,ORG-International-Energy-Agency,I-ORG
 sl-29,33,12,(,,(,Z,PUNCT,O,,O
 sl-29,33,13,IEA,IEA,IEA,Npfsn,PROPN,B-ORG,ORG-International-Energy-Agency,B-ORG
 sl-29,33,14,),,),Z,PUNCT,O,,O
@@ -705,7 +705,7 @@ sl-29,36,7,med,,med,Si,ADP,O,,O
 sl-29,36,8,ZDA,ZDA,ZDA,Npfpi,PROPN,B-LOC,GPE-USA,B-LOC
 sl-29,36,9,in,,in,Cc,CCONJ,O,,O
 sl-29,36,10,Rusijo,Rusija,Rusija,Npfsi,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-29,36,11,za,,za,Sa,ADP,O,,I-ORG
+sl-29,36,11,za,,za,Sa,ADP,O,,O
 sl-29,36,12,tržne,,tržen,Agpmpa,ADJ,O,,O
 sl-29,36,13,deleže,,delež,Ncmpa,NOUN,O,,O
 sl-29,36,14,.,,.,Z,PUNCT,O,,O
@@ -719,7 +719,7 @@ sl-29,37,7,in,,in,Cc,CCONJ,O,,O
 sl-29,37,8,Alžirije,Alžirija,Alžirija,Npfsg,PROPN,B-LOC,GPE-Algeria,B-LOC
 sl-29,37,9,.,,.,Z,PUNCT,O,,O
 sl-29,38,1,Cena,,cena,Ncfsn,NOUN,O,,O
-sl-29,38,2,za,,za,Sa,ADP,O,,I-ORG
+sl-29,38,2,za,,za,Sa,ADP,O,,O
 sl-29,38,3,sodček,,sodček,Ncmsan,NOUN,O,,O
 sl-29,38,4,nafte,,nafta,Ncfsg,NOUN,O,,O
 sl-29,38,5,se,,se,Px------y,PRON,O,,O
@@ -793,7 +793,7 @@ sl-29,42,20,skoke,,skok,Ncmpa,NOUN,O,,O
 sl-29,42,21,cen,,cena,Ncfpg,NOUN,O,,O
 sl-29,42,22,.,,.,Z,PUNCT,O,,O
 sl-29,43,1,Cena,,cena,Ncfsn,NOUN,O,,O
-sl-29,43,2,za,,za,Sa,ADP,O,,I-ORG
+sl-29,43,2,za,,za,Sa,ADP,O,,O
 sl-29,43,3,sodček,,sodček,Ncmsan,NOUN,O,,O
 sl-29,43,4,nafte,,nafta,Ncfsg,NOUN,O,,O
 sl-29,43,5,se,,se,Px------y,PRON,O,,O

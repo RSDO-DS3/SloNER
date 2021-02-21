@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-50,0,1,Dubrovniški,Dubrovnik,dubrovniški,Agpmsny,ADJ,B-LOC,GPE-Dubrovnik,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-50,0,1,Dubrovniški,Dubrovnik,dubrovniški,Agpmsny,ADJ,B-LOC,GPE-Dubrovnik,O
 sl-50,0,2,taksist,,taksist,Ncmsn,NOUN,O,,O
 sl-50,0,3,turistom,,turist,Ncmpd,NOUN,O,,O
 sl-50,0,4,ostanek,,ostanek,Ncmsn,NOUN,O,,O
@@ -19,7 +19,7 @@ sl-50,1,9,vedeli,,vedeti,Vmpp-pm,VERB,O,,O
 sl-50,1,10,",",,",",Z,PUNCT,O,,O
 sl-50,1,11,kako,,kako,Rgp,ADV,O,,O
 sl-50,1,12,izgleda,,izgledati,Vmpr3s,VERB,O,,O
-sl-50,1,13,hrvaški,,hrvaški,Agpmsny,ADJ,O,,O
+sl-50,1,13,hrvaški,,hrvaški,Agpmsny,ADJ,O,,B-LOC
 sl-50,1,14,denar,,denar,Ncmsn,NOUN,O,,O
 sl-50,1,15,",",,",",Z,PUNCT,O,,O
 sl-50,1,16,na,,na,Sl,ADP,O,,O
@@ -122,7 +122,7 @@ sl-50,5,8,računa,,račun,Ncmsg,NOUN,O,,O
 sl-50,5,9,za,,za,Sa,ADP,O,,O
 sl-50,5,10,vožnjo,,vožnja,Ncfsa,NOUN,O,,O
 sl-50,5,11,.,,.,Z,PUNCT,O,,O
-sl-50,6,1,Portal,,portal,Ncmsn,NOUN,O,,O
+sl-50,6,1,Portal,,portal,Ncmsn,NOUN,O,,B-PER
 sl-50,6,2,izpostavlja,,izpostavljati,Vmpr3s,VERB,O,,O
 sl-50,6,3,",",,",",Z,PUNCT,O,,O
 sl-50,6,4,da,,da,Cs,SCONJ,O,,O

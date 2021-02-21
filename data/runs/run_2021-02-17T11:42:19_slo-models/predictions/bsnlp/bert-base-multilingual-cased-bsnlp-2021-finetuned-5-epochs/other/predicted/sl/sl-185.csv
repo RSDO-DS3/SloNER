@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-185,0,1,Morales,Morales,Morales,Npmsn,PROPN,B-PER,PER-Evo-Morales,B-PER
 sl-185,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-185,0,3,",",,",",Z,PUNCT,O,,O
@@ -14,7 +14,7 @@ sl-185,0,12,udar,,udar,Ncmsn,NOUN,O,,O
 sl-185,1,1,Bolivijski,Bolivija,bolivijski,Agpmsny,ADJ,B-LOC,GPE-Bolivia,B-LOC
 sl-185,1,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-185,1,3,Evo,Evo,Evo,Npmsn,PROPN,B-PER,PER-Evo-Morales,B-PER
-sl-185,1,4,Morales,Morales,Morales,Npmsn,PROPN,I-PER,PER-Evo-Morales,B-PER
+sl-185,1,4,Morales,Morales,Morales,Npmsn,PROPN,I-PER,PER-Evo-Morales,I-PER
 sl-185,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-185,1,6,po,,po,Sl,ADP,O,,O
 sl-185,1,7,odstopu,,odstop,Ncmsl,NOUN,O,,O
@@ -22,7 +22,7 @@ sl-185,1,8,opozoril,,opozoriti,Vmep-sm,VERB,O,,O
 sl-185,1,9,",",,",",Z,PUNCT,O,,O
 sl-185,1,10,da,,da,Cs,SCONJ,O,,O
 sl-185,1,11,je,,biti,Va-r3s-n,AUX,O,,O
-sl-185,1,12,v,,v,Sl,ADP,O,,I-ORG
+sl-185,1,12,v,,v,Sl,ADP,O,,O
 sl-185,1,13,državi,,država,Ncfsl,NOUN,O,,O
 sl-185,1,14,prišlo,,priti,Vmep-sn,VERB,O,,O
 sl-185,1,15,do,,do,Sg,ADP,O,,O
@@ -64,7 +64,7 @@ sl-185,3,12,",",,",",Z,PUNCT,O,,O
 sl-185,3,13,a,,a,Cc,CCONJ,O,,O
 sl-185,3,14,so,,biti,Va-r3p-n,AUX,O,,O
 sl-185,3,15,to,,ta,Pd-nsa,DET,O,,O
-sl-185,3,16,v,,v,Sl,ADP,O,,I-ORG
+sl-185,3,16,v,,v,Sl,ADP,O,,O
 sl-185,3,17,policiji,,policija,Ncfsl,NOUN,O,,O
 sl-185,3,18,že,,že,Q,PART,O,,O
 sl-185,3,19,zanikali,,zanikati,Vmep-pm,VERB,O,,O
@@ -73,7 +73,7 @@ sl-185,4,1,Morales,Morales,Morales,Npmsn,PROPN,B-PER,PER-Evo-Morales,B-PER
 sl-185,4,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-185,4,3,odstop,,odstop,Ncmsan,NOUN,O,,O
 sl-185,4,4,sporočil,,sporočilo,Ncnpg,NOUN,O,,O
-sl-185,4,5,v,,v,Sl,ADP,O,,I-ORG
+sl-185,4,5,v,,v,Sl,ADP,O,,O
 sl-185,4,6,nedeljskem,,nedeljski,Agpmsl,ADJ,O,,O
 sl-185,4,7,televizijskem,,televizijski,Agpmsl,ADJ,O,,O
 sl-185,4,8,nagovoru,,nagovor,Ncmsl,NOUN,O,,O
@@ -166,7 +166,7 @@ sl-185,8,9,on,,on,Pp3msn,PRON,O,,O
 sl-185,8,10,pa,,pa,Cc,CCONJ,O,,O
 sl-185,8,11,se,,se,Px------y,PRON,O,,O
 sl-185,8,12,skriva,,skrivati,Vmpr3s,VERB,O,,O
-sl-185,8,13,v,,v,Sl,ADP,O,,I-ORG
+sl-185,8,13,v,,v,Sl,ADP,O,,O
 sl-185,8,14,Chapareju,Chapare,Chapare,Npmsl,PROPN,B-LOC,LOC-Chapare-Province-Bolivia,B-LOC
 sl-185,8,15,.,,.,Z,PUNCT,O,,O
 sl-185,9,1,Prihajajo,,prihajati,Vmpr3p,VERB,O,,O
@@ -245,13 +245,13 @@ sl-185,13,13,ki,,ki,Cs,SCONJ,O,,O
 sl-185,13,14,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-185,13,15,očitajo,,očitati,Vmpr3p,VERB,O,,O
 sl-185,13,16,vpletenost,,vpletenost,Ncfsa,NOUN,O,,O
-sl-185,13,17,v,,v,Sa,ADP,O,,I-ORG
+sl-185,13,17,v,,v,Sa,ADP,O,,O
 sl-185,13,18,volilne,,volilen,Agpfpa,ADJ,O,,O
 sl-185,13,19,nepravilnosti,,nepravilnost,Ncfpa,NOUN,O,,O
 sl-185,13,20,.,,.,Z,PUNCT,O,,O
 sl-185,14,1,Morales,Morales,Morales,Npmsn,PROPN,B-PER,PER-Evo-Morales,B-PER
 sl-185,14,2,je,,biti,Va-r3s-n,AUX,O,,O
-sl-185,14,3,v,,v,Sl,ADP,O,,I-ORG
+sl-185,14,3,v,,v,Sl,ADP,O,,O
 sl-185,14,4,svojem,,svoj,Px-msl,DET,O,,O
 sl-185,14,5,odstopnem,,odstopen,Agpmsl,ADJ,O,,O
 sl-185,14,6,nagovoru,,nagovor,Ncmsl,NOUN,O,,O
@@ -282,7 +282,7 @@ sl-185,15,14,Morales,Morales,Morales,Npmsn,PROPN,B-PER,PER-Evo-Morales,B-PER
 sl-185,15,15,sumljivo,,sumljivo,Rgp,ADV,O,,O
 sl-185,15,16,zmagal,,zmagati,Vmep-sm,VERB,O,,O
 sl-185,15,17,že,,že,Q,PART,O,,O
-sl-185,15,18,v,,v,Sl,ADP,O,,I-ORG
+sl-185,15,18,v,,v,Sl,ADP,O,,O
 sl-185,15,19,prvem,,prvi,Mlomsl,ADJ,O,,O
 sl-185,15,20,krogu,,krog,Ncmsl,NOUN,O,,O
 sl-185,15,21,.,,.,Z,PUNCT,O,,O
@@ -327,13 +327,13 @@ sl-185,17,15,10,,10,Mdc,NUM,O,,O
 sl-185,17,16,odstotnih,,odstoten,Agpfpg,ADJ,O,,O
 sl-185,17,17,točk,,točka,Ncfpg,NOUN,O,,O
 sl-185,17,18,.,,.,Z,PUNCT,O,,O
-sl-185,18,1,Tako,,tako,Rgp,ADV,O,,O
+sl-185,18,1,Tako,,tako,Rgp,ADV,O,,B-ORG
 sl-185,18,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-185,18,3,za,,za,Sa,ADP,O,,O
 sl-185,18,4,las,,las,Ncmsan,NOUN,O,,O
 sl-185,18,5,zmagal,,zmagati,Vmep-sm,VERB,O,,O
 sl-185,18,6,že,,že,Q,PART,O,,O
-sl-185,18,7,v,,v,Sl,ADP,O,,I-ORG
+sl-185,18,7,v,,v,Sl,ADP,O,,O
 sl-185,18,8,prvem,,prvi,Mlomsl,ADJ,O,,O
 sl-185,18,9,krogu,,krog,Ncmsl,NOUN,O,,O
 sl-185,18,10,ter,,ter,Cc,CCONJ,O,,O
@@ -385,7 +385,7 @@ sl-185,20,11,umirjali,,umirjati,Vmpp-pm,VERB,O,,O
 sl-185,20,12,.,,.,Z,PUNCT,O,,O
 sl-185,21,1,Protestniki,,protestnik,Ncmpn,NOUN,O,,O
 sl-185,21,2,so,,biti,Va-r3p-n,AUX,O,,O
-sl-185,21,3,v,,v,Sa,ADP,O,,I-ORG
+sl-185,21,3,v,,v,Sa,ADP,O,,O
 sl-185,21,4,nedeljo,,nedelja,Ncfsa,NOUN,O,,O
 sl-185,21,5,napadli,,napasti,Vmep-pm,VERB,O,,O
 sl-185,21,6,in,,in,Cc,CCONJ,O,,O
@@ -410,7 +410,7 @@ sl-185,21,24,Moralesa,Morales,Morales,Npmsg,PROPN,B-PER,PER-Evo-Morales,B-PER
 sl-185,21,25,-,,-,Z,PUNCT,O,,O
 sl-185,21,26,nedeljske,,nedeljski,Agpmpa,ADJ,O,,O
 sl-185,21,27,dogodke,,dogodek,Ncmpa,NOUN,O,,O
-sl-185,21,28,v,,v,Sl,ADP,O,,I-ORG
+sl-185,21,28,v,,v,Sl,ADP,O,,O
 sl-185,21,29,Boliviji,Bolivija,Bolivija,Npfsl,PROPN,B-LOC,GPE-Bolivia,B-LOC
 sl-185,21,30,označil,,označiti,Vmep-sm,VERB,O,,O
 sl-185,21,31,za,,za,Sa,ADP,O,,O
@@ -422,7 +422,7 @@ sl-185,22,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-185,22,3,sicer,,sicer,Q,PART,O,,O
 sl-185,22,4,podprli,,podpreti,Vmep-pm,VERB,O,,O
 sl-185,22,5,tudi,,tudi,Q,PART,O,,O
-sl-185,22,6,v,,v,Sl,ADP,O,,I-ORG
+sl-185,22,6,v,,v,Sl,ADP,O,,O
 sl-185,22,7,Kubi,Kuba,Kuba,Npfsl,PROPN,B-LOC,GPE-Cuba,B-LOC
 sl-185,22,8,in,,in,Cc,CCONJ,O,,O
 sl-185,22,9,Argentini,Argentina,Argentina,Npfsl,PROPN,B-LOC,GPE-Argentina,B-LOC

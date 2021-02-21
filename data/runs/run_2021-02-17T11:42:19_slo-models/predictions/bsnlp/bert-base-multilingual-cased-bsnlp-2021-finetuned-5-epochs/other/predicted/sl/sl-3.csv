@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-3,0,1,Pakistan,Pakistan,Pakistan,Npmsn,PROPN,B-LOC,GPE-Pakistan,B-LOC
 sl-3,0,2,:,,:,Z,PUNCT,O,,O
 sl-3,0,3,Vojska,,vojska,Ncfsn,NOUN,O,,O
@@ -78,7 +78,7 @@ sl-3,5,6,najrevnejših,,reven,Agsfpg,ADJ,O,,O
 sl-3,5,7,azijskih,,azijski,Agpfpg,ADJ,O,,O
 sl-3,5,8,držav,,država,Ncfpg,NOUN,O,,O
 sl-3,5,9,.,,.,Z,PUNCT,O,,O
-sl-3,6,1,Vojska,,vojska,Ncfsn,NOUN,O,,O
+sl-3,6,1,Vojska,,vojska,Ncfsn,NOUN,O,,B-LOC
 sl-3,6,2,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-3,6,3,iz,,iz,Sg,ADP,O,,O
 sl-3,6,4,ozadja,,ozadje,Ncnsg,NOUN,O,,O
@@ -157,15 +157,15 @@ sl-3,9,35,državi,,država,Ncfsl,NOUN,O,,O
 sl-3,9,36,.,,.,Z,PUNCT,O,,O
 sl-3,10,1,A,,a,Cc,CCONJ,O,,O
 sl-3,10,2,na,,na,Sl,ADP,O,,O
-sl-3,10,3,severozahodu,,severozahod,Ncmsl,NOUN,O,,B-LOC
+sl-3,10,3,severozahodu,,severozahod,Ncmsl,NOUN,O,,O
 sl-3,10,4,Pakistana,Pakistan,Pakistan,Npmsg,PROPN,B-LOC,GPE-Pakistan,B-LOC
 sl-3,10,5,je,,biti,Va-r3s-n,VERB,O,,O
 sl-3,10,6,s,,z,Si,ADP,O,,O
-sl-3,10,7,talibani,,taliban,Ncmpi,NOUN,O,,B-PER
+sl-3,10,7,talibani,,taliban,Ncmpi,NOUN,O,,O
 sl-3,10,8,v,,v,Sl,ADP,O,,O
 sl-3,10,9,vojni,,vojna,Ncfsl,NOUN,O,,O
 sl-3,10,10,.,,.,Z,PUNCT,O,,O
-sl-3,11,1,Vojska,,vojska,Ncfsn,NOUN,O,,O
+sl-3,11,1,Vojska,,vojska,Ncfsn,NOUN,O,,B-LOC
 sl-3,11,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-3,11,3,najbrž,,najbrž,Q,PART,O,,O
 sl-3,11,4,glavni,,glaven,Agpmsny,ADJ,O,,O
@@ -208,9 +208,9 @@ sl-3,12,19,in,,in,Cc,CCONJ,O,,O
 sl-3,12,20,nekdanjega,,nekdanji,Agpmsg,ADJ,O,,O
 sl-3,12,21,plejboja,,plejboj,Ncmsg,NOUN,O,,O
 sl-3,12,22,Imrana,Imran,Imran,Npmsg,PROPN,B-PER,PER-Imran-Khan,B-PER
-sl-3,12,23,Kana,Kan,Kan,Npmsg,PROPN,I-PER,PER-Imran-Khan,B-LOC
+sl-3,12,23,Kana,Kan,Kan,Npmsg,PROPN,I-PER,PER-Imran-Khan,I-PER
 sl-3,12,24,.,,.,Z,PUNCT,O,,O
-sl-3,13,1,Ta,,ta,Pd-fsn,DET,O,,O
+sl-3,13,1,Ta,,ta,Pd-fsn,DET,O,,B-LOC
 sl-3,13,2,zdaj,ZDA,zdaj,Rgp,ADV,B-LOC,GPE-USA,B-LOC
 sl-3,13,3,",",,",",Z,PUNCT,O,,O
 sl-3,13,4,ko,,ko,Cs,SCONJ,O,,O
@@ -350,7 +350,7 @@ sl-3,19,23,oceanom,ocean,ocean,Ncmsi,NOUN,I-LOC,LOC-Indian-Ocean,I-LOC
 sl-3,19,24,.,,.,Z,PUNCT,O,,O
 sl-3,20,1,A,,a,Cc,CCONJ,O,,O
 sl-3,20,2,predpostavka,,predpostavka,Ncfsn,NOUN,O,,O
-sl-3,20,3,pakistanske,,pakistanski,Agpfsg,ADJ,O,,O
+sl-3,20,3,pakistanske,,pakistanski,Agpfsg,ADJ,O,,B-PER
 sl-3,20,4,vlade,,vlada,Ncfsg,NOUN,O,,O
 sl-3,20,5,",",,",",Z,PUNCT,O,,O
 sl-3,20,6,da,,da,Cs,SCONJ,O,,O
@@ -488,7 +488,7 @@ sl-3,26,17,za,,za,Sa,ADP,O,,O
 sl-3,26,18,dober,,dober,Agpmsan,ADJ,O,,O
 sl-3,26,19,zaslužek,,zaslužek,Ncmsan,NOUN,O,,O
 sl-3,26,20,prevzemala,,prevzemati,Vmpp-pn,VERB,O,,O
-sl-3,26,21,kitajska,Kitajska,kitajski,Agpnpa,ADJ,B-LOC,GPE-China,B-LOC
+sl-3,26,21,kitajska,Kitajska,kitajski,Agpnpa,ADJ,B-LOC,GPE-China,O
 sl-3,26,22,podjetja,,podjetje,Ncnpa,NOUN,O,,O
 sl-3,26,23,",",,",",Z,PUNCT,O,,O
 sl-3,26,24,so,,biti,Va-r3p-n,AUX,O,,O
@@ -500,7 +500,7 @@ sl-3,26,29,.,,.,Z,PUNCT,O,,O
 sl-3,27,1,In,,in,Cc,CCONJ,O,,O
 sl-3,27,2,ko,,ko,Cs,SCONJ,O,,O
 sl-3,27,3,je,,biti,Va-r3s-n,AUX,O,,O
-sl-3,27,4,Kan,Kan,Kan,Npmsn,PROPN,B-PER,PER-Imran-Khan,I-PER
+sl-3,27,4,Kan,Kan,Kan,Npmsn,PROPN,B-PER,PER-Imran-Khan,B-PER
 sl-3,27,5,ob,,ob,Sl,ADP,O,,O
 sl-3,27,6,velikih,,velik,Agpfpl,ADJ,O,,O
 sl-3,27,7,proračunskih,,proračunski,Agpfpl,ADJ,O,,O
@@ -516,7 +516,7 @@ sl-3,27,16,o,,o,Sl,ADP,O,,O
 sl-3,27,17,finančni,,finančen,Agpfsl,ADJ,O,,O
 sl-3,27,18,pomoči,,pomoč,Ncfsl,NOUN,O,,O
 sl-3,27,19,.,,.,Z,PUNCT,O,,O
-sl-3,28,1,Vojska,,vojska,Ncfsn,NOUN,O,,O
+sl-3,28,1,Vojska,,vojska,Ncfsn,NOUN,O,,B-LOC
 sl-3,28,2,zdaj,ZDA,zdaj,Rgp,ADV,B-LOC,GPE-USA,B-LOC
 sl-3,28,3,na,,na,Sa,ADP,O,,O
 sl-3,28,4,skrivaj,,skrivaj,Rgp,ADV,O,,O
@@ -540,7 +540,7 @@ sl-3,28,21,odnose,,odnos,Ncmpa,NOUN,O,,O
 sl-3,28,22,z,,z,Si,ADP,O,,O
 sl-3,28,23,ZDA,ZDA,ZDA,Npfpi,PROPN,B-LOC,GPE-USA,B-LOC
 sl-3,28,24,.,,.,Z,PUNCT,O,,O
-sl-3,29,1,Kan,Kan,Kan,Npmsn,PROPN,B-PER,PER-Imran-Khan,I-PER
+sl-3,29,1,Kan,Kan,Kan,Npmsn,PROPN,B-PER,PER-Imran-Khan,O
 sl-3,29,2,predvsem,,predvsem,Q,PART,O,,O
 sl-3,29,3,upa,,upati,Vmpr3s,VERB,O,,O
 sl-3,29,4,",",,",",Z,PUNCT,O,,O
@@ -578,6 +578,6 @@ sl-3,30,6,izbruhu,,izbruh,Ncmsl,NOUN,O,,O
 sl-3,30,7,afere,afera,afera,Ncfsg,NOUN,B-EVT,EVT-Khashoggi-affair,O
 sl-3,30,8,Hašokdži,Hašokdži,Hašokdži,Npmsn,PROPN,I-EVT,EVT-Khashoggi-affair,B-PER
 sl-3,30,9,obljubila,,obljubiti,Vmep-sf,VERB,O,,O
-sl-3,30,10,Savdska,Savdska,savdski,Agpfsn,ADJ,B-LOC,GPE-Saudi-Arabia,B-LOC
-sl-3,30,11,Arabija,Arabija,Arabija,Npfsn,PROPN,I-LOC,GPE-Saudi-Arabia,I-LOC
+sl-3,30,10,Savdska,Savdska,savdski,Agpfsn,ADJ,B-LOC,GPE-Saudi-Arabia,B-ORG
+sl-3,30,11,Arabija,Arabija,Arabija,Npfsn,PROPN,I-LOC,GPE-Saudi-Arabia,I-ORG
 sl-3,30,12,.,,.,Z,PUNCT,O,,O

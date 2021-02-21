@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-18,0,1,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-18,0,2,in,,in,Cc,CCONJ,O,,O
 sl-18,0,3,Ukrajina,Ukrajina,Ukrajina,Npfsn,PROPN,B-LOC,GPE-Ukraine,B-LOC
@@ -27,7 +27,7 @@ sl-18,1,14,mirovni,,miroven,Agpmsay,ADJ,O,,O
 sl-18,1,15,proces,,proces,Ncmsan,NOUN,O,,O
 sl-18,1,16,na,,na,Sl,ADP,O,,O
 sl-18,1,17,vzhodu,vzhod,vzhod,Ncmsl,NOUN,B-LOC,LOC-East-Ukraine,B-LOC
-sl-18,1,18,Ukrajine,Ukrajine,Ukrajina,Npfsg,PROPN,I-LOC,LOC-East-Ukraine,B-LOC
+sl-18,1,18,Ukrajine,Ukrajine,Ukrajina,Npfsg,PROPN,I-LOC,LOC-East-Ukraine,I-LOC
 sl-18,1,19,",",,",",Z,PUNCT,O,,O
 sl-18,1,20,kjer,,kjer,Cs,SCONJ,O,,O
 sl-18,1,21,se,,se,Px------y,PRON,O,,O
@@ -53,7 +53,7 @@ sl-18,2,1,Prvi,,prvi,Mlompn,ADJ,O,,O
 sl-18,2,2,tristranski,,tristranski,Agpmpn,ADJ,O,,O
 sl-18,2,3,pogovori,,pogovor,Ncmpn,NOUN,O,,O
 sl-18,2,4,med,,med,Si,ADP,O,,O
-sl-18,2,5,ukrajinskim,,ukrajinski,Agpmsi,ADJ,O,,B-LOC
+sl-18,2,5,ukrajinskim,,ukrajinski,Agpmsi,ADJ,O,,O
 sl-18,2,6,zunanjim,,zunanji,Agpmsi,ADJ,O,,O
 sl-18,2,7,ministrom,,minister,Ncmsi,NOUN,O,,O
 sl-18,2,8,Pavlom,Pavlo,Pavel,Npmsi,PROPN,B-PER,PER-Pavlo-Klimkin,B-PER
@@ -72,7 +72,7 @@ sl-18,2,20,komisije,komisija,komisija,Ncfsg,NOUN,I-ORG,ORG-European-Commission,I
 sl-18,2,21,",",,",",Z,PUNCT,O,,O
 sl-18,2,22,pristojnim,,pristojen,Agpmsi,ADJ,O,,O
 sl-18,2,23,za,,za,Sa,ADP,O,,O
-sl-18,2,24,energetsko,,energetski,Agpfsa,ADJ,O,,B-ORG
+sl-18,2,24,energetsko,,energetski,Agpfsa,ADJ,O,,O
 sl-18,2,25,unijo,,unija,Ncfsa,NOUN,O,,O
 sl-18,2,26,",",,",",Z,PUNCT,O,,O
 sl-18,2,27,Marošom,Maroš,Maroš,Npmsi,PROPN,B-PER,PER-Maros-Sefcovic,B-PER
@@ -98,7 +98,7 @@ sl-18,3,4,skleniti,,skleniti,Vmen,VERB,O,,O
 sl-18,3,5,do,,do,Sg,ADP,O,,O
 sl-18,3,6,začetka,,začetek,Ncmsg,NOUN,O,,O
 sl-18,3,7,leta,,leto,Ncnsg,NOUN,O,,O
-sl-18,3,8,2020,,2020,Mdc,NUM,O,,I-PRO
+sl-18,3,8,2020,,2020,Mdc,NUM,O,,O
 sl-18,4,1,Šefčovič,Šefčovič,Šefčovič,Npmsn,PROPN,B-PER,PER-Maros-Sefcovic,B-PER
 sl-18,4,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-18,4,3,po,,po,Sl,ADP,O,,O
@@ -193,7 +193,7 @@ sl-18,6,19,tiskovna,,tiskoven,Agpfsn,ADJ,O,,O
 sl-18,6,20,agencija,,agencija,Ncfsn,NOUN,O,,O
 sl-18,6,21,Tass,Tass,Tass,Npmsn,PROPN,B-ORG,ORG-TASS-Agency,B-ORG
 sl-18,6,22,.,,.,Z,PUNCT,O,,O
-sl-18,7,1,Novak,,Novak,Npmsn,PROPN,O,,B-PER
+sl-18,7,1,Novak,,Novak,Npmsn,PROPN,O,,O
 sl-18,7,2,po,,po,Sl,ADP,O,,O
 sl-18,7,3,koncu,,konec,Ncmsl,NOUN,O,,O
 sl-18,7,4,srečanja,,srečanje,Ncnsg,NOUN,O,,O
@@ -244,7 +244,7 @@ sl-18,8,20,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
 sl-18,8,21,v,,v,Sl,ADP,O,,O
 sl-18,8,22,Ukrajini,Ukrajina,Ukrajina,Npfsl,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-18,8,23,.,,.,Z,PUNCT,O,,O
-sl-18,9,1,Kijev,Kijev,Kijev,Npmsn,PROPN,B-LOC,GPE-Kiev,B-LOC
+sl-18,9,1,Kijev,Kijev,Kijev,Npmsn,PROPN,B-LOC,GPE-Kiev,B-PER
 sl-18,9,2,se,,se,Px------y,PRON,O,,O
 sl-18,9,3,boji,,bati,Vmpr3s,VERB,O,,O
 sl-18,9,4,",",,",",Z,PUNCT,O,,O
@@ -280,7 +280,7 @@ sl-18,10,21,pomisleke,,pomislek,Ncmpa,NOUN,O,,O
 sl-18,10,22,v,,v,Sl,ADP,O,,O
 sl-18,10,23,zvezi,,zveza,Ncfsl,NOUN,O,,O
 sl-18,10,24,z,,z,Si,ADP,O,,O
-sl-18,10,25,energetsko,,energetski,Agpfsi,ADJ,O,,B-ORG
+sl-18,10,25,energetsko,,energetski,Agpfsi,ADJ,O,,O
 sl-18,10,26,odvisnostjo,,odvisnost,Ncfsi,NOUN,O,,O
 sl-18,10,27,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-18,10,28,od,,od,Sg,ADP,O,,O

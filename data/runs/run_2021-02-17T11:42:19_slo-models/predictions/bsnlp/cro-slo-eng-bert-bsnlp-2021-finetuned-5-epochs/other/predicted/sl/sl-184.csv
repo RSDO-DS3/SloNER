@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-184,0,1,Bertoncelj,Bertoncelj,Bertoncelj,Npmsn,PROPN,B-PER,PER-Andrej-Bertoncelj,B-PER
 sl-184,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-184,0,3,",",,",",Z,PUNCT,O,,O
@@ -29,11 +29,11 @@ sl-184,2,3,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-184,2,4,pred,,pred,Si,ADP,O,,O
 sl-184,2,5,poslanci,,poslanec,Ncmpi,NOUN,O,,O
 sl-184,2,6,ob,,ob,Sl,ADP,O,,O
-sl-184,2,7,začetku,,začetek,Ncmsl,NOUN,O,,I-ORG
+sl-184,2,7,začetku,,začetek,Ncmsl,NOUN,O,,O
 sl-184,2,8,obravnave,,obravnava,Ncfsg,NOUN,O,,O
 sl-184,2,9,predlogov,,predlog,Ncmpg,NOUN,O,,O
 sl-184,2,10,proračunov,,proračun,Ncmpg,NOUN,O,,O
-sl-184,2,11,za,,za,Sa,ADP,O,,I-ORG
+sl-184,2,11,za,,za,Sa,ADP,O,,O
 sl-184,2,12,prihodnji,,prihodnji,Agpnda,ADJ,O,,O
 sl-184,2,13,dve,,dva,Mlcnda,NUM,O,,O
 sl-184,2,14,leti,,leto,Ncnda,NOUN,O,,O
@@ -91,7 +91,7 @@ sl-184,5,9,"10,358",,"10,358",Mdc,NUM,O,,O
 sl-184,5,10,milijarde,,milijarda,Ncfsg,NOUN,O,,O
 sl-184,5,11,evrov,,evro,Ncmpg,NOUN,O,,O
 sl-184,5,12,",",,",",Z,PUNCT,O,,O
-sl-184,5,13,za,,za,Sa,ADP,O,,I-ORG
+sl-184,5,13,za,,za,Sa,ADP,O,,O
 sl-184,5,14,leto,,leto,Ncnsa,NOUN,O,,O
 sl-184,5,15,2021,,2021,Mdc,NUM,O,,O
 sl-184,5,16,pa,,pa,Cc,CCONJ,O,,O
@@ -166,11 +166,11 @@ sl-184,9,17,"656,6",,"656,6",Mdc,NUM,O,,O
 sl-184,9,18,milijona,,milijon,Ncmsg,NOUN,O,,O
 sl-184,9,19,evrov,,evro,Ncmpg,NOUN,O,,O
 sl-184,9,20,.,,.,Z,PUNCT,O,,O
-sl-184,10,1,Vlada,,vlada,Ncfsn,NOUN,O,,O
+sl-184,10,1,Vlada,,vlada,Ncfsn,NOUN,O,,B-LOC
 sl-184,10,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-184,10,3,predlog,,predlog,Ncmsan,NOUN,O,,O
 sl-184,10,4,proračunov,,proračun,Ncmpg,NOUN,O,,O
-sl-184,10,5,za,,za,Sa,ADP,O,,I-ORG
+sl-184,10,5,za,,za,Sa,ADP,O,,O
 sl-184,10,6,prihodnji,,prihodnji,Agpnda,ADJ,O,,O
 sl-184,10,7,dve,,dva,Mlcnda,NUM,O,,O
 sl-184,10,8,leti,,leto,Ncnda,NOUN,O,,O
@@ -299,7 +299,7 @@ sl-184,14,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-184,14,5,prav,,prav,Q,PART,O,,O
 sl-184,14,6,tako,,tako,Rgp,ADV,O,,O
 sl-184,14,7,razvidna,,razviden,Agpfsn,ADJ,O,,O
-sl-184,14,8,razvojna,,razvojen,Agpfsn,ADJ,O,,I-ORG
+sl-184,14,8,razvojna,,razvojen,Agpfsn,ADJ,O,,O
 sl-184,14,9,komponenta,,komponenta,Ncfsn,NOUN,O,,O
 sl-184,14,10,.,,.,Z,PUNCT,O,,O
 sl-184,15,1,Zvišujejo,,zviševati,Vmpr3p,VERB,O,,O
@@ -348,7 +348,7 @@ sl-184,16,4,petkovo,,petkov,Aspnsa,ADJ,O,,O
 sl-184,16,5,dogajanje,,dogajanje,Ncnsa,NOUN,O,,O
 sl-184,16,6,na,,na,Sl,ADP,O,,O
 sl-184,16,7,odboru,odbor,odbor,Ncmsl,NOUN,B-ORG,ORG-Committee-on-Finance-National-Assembly-Slovenia,B-ORG
-sl-184,16,8,DZ,DZ,DZ,Npmsg,PROPN,I-ORG,ORG-Committee-on-Finance-National-Assembly-Slovenia,B-ORG
+sl-184,16,8,DZ,DZ,DZ,Npmsg,PROPN,I-ORG,ORG-Committee-on-Finance-National-Assembly-Slovenia,I-ORG
 sl-184,16,9,za,za,za,Sa,ADP,I-ORG,ORG-Committee-on-Finance-National-Assembly-Slovenia,I-ORG
 sl-184,16,10,finance,finance,finance,Ncfpa,NOUN,I-ORG,ORG-Committee-on-Finance-National-Assembly-Slovenia,I-ORG
 sl-184,16,11,",",,",",Z,PUNCT,O,,O
@@ -362,7 +362,7 @@ sl-184,16,18,NSi,NSi,NSi,Npfsg,PROPN,B-ORG,ORG-New-Slovenia-party,B-ORG
 sl-184,16,19,občutno,,občutno,Rgp,ADV,O,,O
 sl-184,16,20,zvišal,,zvišati,Vmep-sm,VERB,O,,O
 sl-184,16,21,povprečnino,,povprečnina,Ncfsa,NOUN,O,,O
-sl-184,16,22,za,,za,Sa,ADP,O,,I-ORG
+sl-184,16,22,za,,za,Sa,ADP,O,,O
 sl-184,16,23,občine,,občina,Ncfpa,NOUN,O,,O
 sl-184,16,24,.,,.,Z,PUNCT,O,,O
 sl-184,16,25,“,,“,Z,PUNCT,O,,O
@@ -438,9 +438,9 @@ sl-184,17,19,je,,biti,Va-r3s-n,AUX,O,,O
 sl-184,17,20,Urad,Urad,urad,Ncmsn,NOUN,B-ORG,ORG-UMAR-Urad-Vlade-Republike-Slovenije-za-makroekonomske-analize-in-razvoj,B-ORG
 sl-184,17,21,RS,RS,RS,Npfsg,PROPN,I-ORG,ORG-UMAR-Urad-Vlade-Republike-Slovenije-za-makroekonomske-analize-in-razvoj,I-ORG
 sl-184,17,22,za,za,za,Sa,ADP,I-ORG,ORG-UMAR-Urad-Vlade-Republike-Slovenije-za-makroekonomske-analize-in-razvoj,I-ORG
-sl-184,17,23,makroekonomske,makroekonomske,makroekonomski,Agpfpa,ADJ,I-ORG,ORG-UMAR-Urad-Vlade-Republike-Slovenije-za-makroekonomske-analize-in-razvoj,O
+sl-184,17,23,makroekonomske,makroekonomske,makroekonomski,Agpfpa,ADJ,I-ORG,ORG-UMAR-Urad-Vlade-Republike-Slovenije-za-makroekonomske-analize-in-razvoj,I-ORG
 sl-184,17,24,analize,analize,analiza,Ncfpa,NOUN,I-ORG,ORG-UMAR-Urad-Vlade-Republike-Slovenije-za-makroekonomske-analize-in-razvoj,I-ORG
-sl-184,17,25,in,in,in,Cc,CCONJ,I-ORG,ORG-UMAR-Urad-Vlade-Republike-Slovenije-za-makroekonomske-analize-in-razvoj,O
+sl-184,17,25,in,in,in,Cc,CCONJ,I-ORG,ORG-UMAR-Urad-Vlade-Republike-Slovenije-za-makroekonomske-analize-in-razvoj,I-ORG
 sl-184,17,26,razvoj,razvoj,razvoj,Ncmsan,NOUN,I-ORG,ORG-UMAR-Urad-Vlade-Republike-Slovenije-za-makroekonomske-analize-in-razvoj,I-ORG
 sl-184,17,27,septembra,,september,Ncmsg,NOUN,O,,O
 sl-184,17,28,znižal,,znižati,Vmep-sm,VERB,O,,O

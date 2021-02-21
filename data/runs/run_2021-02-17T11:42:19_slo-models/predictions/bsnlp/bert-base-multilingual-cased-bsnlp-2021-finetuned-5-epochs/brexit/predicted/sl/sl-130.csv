@@ -1,12 +1,12 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-130,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-130,0,2,:,,:,Z,PUNCT,O,,O
 sl-130,0,3,pred,,pred,Sa,ADP,O,,O
 sl-130,0,4,Mayevo,May,Mayev,Aspfsa,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-130,0,5,teden,,teden,Ncmsan,NOUN,O,,O
 sl-130,0,6,preizkusov,,preizkus,Ncmpg,NOUN,O,,O
-sl-130,1,1,Theresa,Theresa,Theresa,Npfsn,PROPN,B-PER,PER-Theresa-May,B-PER
-sl-130,1,2,May,May,May,Npfsn,PROPN,I-PER,PER-Theresa-May,I-PER
+sl-130,1,1,Theresa,Theresa,Theresa,Npfsn,PROPN,B-PER,PER-Theresa-May,O
+sl-130,1,2,May,May,May,Npfsn,PROPN,I-PER,PER-Theresa-May,O
 sl-130,2,1,Ob,,ob,Sl,ADP,O,,O
 sl-130,2,2,več,,več,Rgc,DET,O,,O
 sl-130,2,3,glasovanjih,,glasovanje,Ncnpl,NOUN,O,,O
@@ -186,7 +186,7 @@ sl-130,6,21,s,,z,Si,ADP,O,,O
 sl-130,6,22,tesno,,tesen,Agpfsi,ADJ,O,,O
 sl-130,6,23,večino,,večina,Ncfsi,NOUN,O,,O
 sl-130,6,24,.,,.,Z,PUNCT,O,,O
-sl-130,7,1,Jutri,,jutri,Rgp,ADV,O,,B-PER
+sl-130,7,1,Jutri,,jutri,Rgp,ADV,O,,O
 sl-130,7,2,odločanje,,odločanje,Ncnsn,NOUN,O,,O
 sl-130,7,3,o,,o,Sl,ADP,O,,O
 sl-130,7,4,zakonu,,zakon,Ncmsl,NOUN,O,,O
@@ -459,7 +459,7 @@ sl-130,20,3,Tony,Tony,Tony,Npmsn,PROPN,B-PER,PER-Tony-Blair,B-PER
 sl-130,20,4,Blair,Blair,Blair,Npmsn,PROPN,I-PER,PER-Tony-Blair,I-PER
 sl-130,20,5,iz,,iz,Sg,ADP,O,,O
 sl-130,20,6,vrst,,vrsta,Ncfpg,NOUN,O,,O
-sl-130,20,7,laburistov,laburist,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-ORG
+sl-130,20,7,laburistov,laburist,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-PER
 sl-130,20,8,",",,",",Z,PUNCT,O,,O
 sl-130,20,9,ki,,ki,Cs,SCONJ,O,,O
 sl-130,20,10,velja,,veljati,Vmpr3s,VERB,O,,O

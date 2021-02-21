@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-159,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-159,0,2,bi,,biti,Va-c,AUX,O,,O
 sl-159,0,3,Britance,Britanci,Britanec,Npmpa,PROPN,B-PER,GPE-Great-Britain,B-PER

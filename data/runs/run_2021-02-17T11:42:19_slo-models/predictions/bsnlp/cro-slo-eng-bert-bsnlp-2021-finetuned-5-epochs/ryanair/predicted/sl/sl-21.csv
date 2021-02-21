@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-21,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-21,0,2,pred,,pred,Si,ADP,O,,O
 sl-21,0,3,novim,,nov,Agpmsi,ADJ,O,,O
@@ -58,7 +58,7 @@ sl-21,2,21,naslednji,,naslednji,Agpmsay,ADJ,O,,O
 sl-21,2,22,teden,,teden,Ncmsan,NOUN,O,,O
 sl-21,2,23,.,,.,Z,PUNCT,O,,O
 sl-21,3,1,Švedski,Švedski,švedski,Agpmsny,ADJ,B-ORG,ORG-SPF-Svensk-Pilotförening,B-ORG
-sl-21,3,2,sindikat,sindikat,sindikat,Ncmsn,NOUN,I-ORG,ORG-SPF-Svensk-Pilotförening,O
+sl-21,3,2,sindikat,sindikat,sindikat,Ncmsn,NOUN,I-ORG,ORG-SPF-Svensk-Pilotförening,I-ORG
 sl-21,3,3,pilotov,pilotov,pilot,Ncmpg,NOUN,I-ORG,ORG-SPF-Svensk-Pilotförening,I-ORG
 sl-21,3,4,(,,(,Z,PUNCT,O,,O
 sl-21,3,5,SPF,SPF,SPF,Npmsn,PROPN,B-ORG,ORG-SPF-Svensk-Pilotförening,B-ORG
@@ -199,9 +199,9 @@ sl-21,10,14,",",,",",Z,PUNCT,O,,O
 sl-21,10,15,«,,«,Z,PUNCT,O,,O
 sl-21,10,16,menijo,,meniti,Vmpr3p,VERB,O,,O
 sl-21,10,17,v,,v,Sl,ADP,O,,O
-sl-21,10,18,nizozemskem,Nizozemska,nizozemski,Agpnsl,ADJ,B-LOC,GPE-Holland,B-ORG
+sl-21,10,18,nizozemskem,Nizozemska,nizozemski,Agpnsl,ADJ,B-LOC,GPE-Holland,B-LOC
 sl-21,10,19,združenju,,združenje,Ncnsl,NOUN,O,,O
-sl-21,10,20,pilotov,,pilot,Ncmpg,NOUN,O,,I-ORG
+sl-21,10,20,pilotov,,pilot,Ncmpg,NOUN,O,,O
 sl-21,10,21,.,,.,Z,PUNCT,O,,O
 sl-21,11,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-21,11,2,so,,biti,Va-r3p-n,AUX,O,,O
@@ -227,7 +227,7 @@ sl-21,11,21,.,,.,Z,PUNCT,O,,O
 sl-21,12,1,V,,v,Sl,ADP,O,,O
 sl-21,12,2,nemškem,,nemški,Agpmsl,ADJ,O,,O
 sl-21,12,3,sindikatu,,sindikat,Ncmsl,NOUN,O,,O
-sl-21,12,4,pilotov,,pilot,Ncmpg,NOUN,O,,I-ORG
+sl-21,12,4,pilotov,,pilot,Ncmpg,NOUN,O,,O
 sl-21,12,5,Vereinigung,Vereinigung,Vereinigung,Npmsn,PROPN,B-ORG,ORG-Vereinigung-Cockpit,B-ORG
 sl-21,12,6,Cockpit,Cockpit,Cockpit,Npmsn,PROPN,I-ORG,ORG-Vereinigung-Cockpit,I-ORG
 sl-21,12,7,so,,biti,Va-r3p-n,AUX,O,,O
@@ -294,7 +294,7 @@ sl-21,14,17,je,,biti,Va-r3s-n,AUX,O,,O
 sl-21,14,18,tik,,tik,Rgp,ADV,O,,O
 sl-21,14,19,pred,,pred,Si,ADP,O,,O
 sl-21,14,20,lanskim,,lanski,Agpmsi,ADJ,O,,O
-sl-21,14,21,božičem,,božič,Ncmsi,NOUN,O,,B-EVT
+sl-21,14,21,božičem,,božič,Ncmsi,NOUN,O,,O
 sl-21,14,22,izognil,,izogniti,Vmep-sm,VERB,O,,O
 sl-21,14,23,seriji,,serija,Ncfsd,NOUN,O,,O
 sl-21,14,24,stavk,,stavka,Ncfpg,NOUN,O,,O
@@ -337,7 +337,7 @@ sl-21,16,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-21,16,4,zaradi,,zaradi,Sg,ADP,O,,O
 sl-21,16,5,stavk,,stavka,Ncfpg,NOUN,O,,O
 sl-21,16,6,Ryanairovih,Ryanairovi,Ryanairov,Aspmpg,ADJ,B-ORG,ORG-Ryanair,B-ORG
-sl-21,16,7,pilotov,,pilot,Ncmpg,NOUN,O,,I-ORG
+sl-21,16,7,pilotov,,pilot,Ncmpg,NOUN,O,,O
 sl-21,16,8,v,,v,Sl,ADP,O,,O
 sl-21,16,9,Belgiji,Belgija,Belgija,Npfsl,PROPN,B-LOC,GPE-Belgium,B-LOC
 sl-21,16,10,",",,",",Z,PUNCT,O,,O

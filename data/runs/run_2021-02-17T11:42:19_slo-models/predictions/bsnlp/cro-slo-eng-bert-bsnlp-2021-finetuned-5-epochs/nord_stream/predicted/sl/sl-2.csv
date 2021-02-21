@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-2,0,1,Porošenko,Porošenko,Porošenko,Npmsn,PROPN,B-PER,PER-Petro-Poroshenko,B-PER
 sl-2,0,2,pozval,,pozvati,Vmep-sm,VERB,O,,O
 sl-2,0,3,Nato,Nato,Nato,Npmsan,PROPN,B-ORG,ORG-NATO,B-ORG
@@ -75,7 +75,7 @@ sl-2,2,24,incidentu,,incident,Ncmsl,NOUN,O,,O
 sl-2,2,25,",",,",",Z,PUNCT,O,,O
 sl-2,2,26,ko,,ko,Cs,SCONJ,O,,O
 sl-2,2,27,je,,biti,Va-r3s-n,AUX,O,,O
-sl-2,2,28,ruska,,ruski,Agpfsn,ADJ,O,,B-LOC
+sl-2,2,28,ruska,,ruski,Agpfsn,ADJ,O,,O
 sl-2,2,29,obalna,,obalen,Agpfsn,ADJ,O,,O
 sl-2,2,30,straža,,straža,Ncfsn,NOUN,O,,O
 sl-2,2,31,v,,v,Sl,ADP,O,,O
@@ -111,7 +111,7 @@ sl-2,4,2,tem,,ta,Pd-nsl,DET,O,,O
 sl-2,4,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-2,4,4,bilo,,biti,Va-p-sn,AUX,O,,O
 sl-2,4,5,zajetih,,zajet,Appmpg,ADJ,O,,O
-sl-2,4,6,24,,24,Mdc,NUM,O,,I-PRO
+sl-2,4,6,24,,24,Mdc,NUM,O,,O
 sl-2,4,7,ukrajinskih,,ukrajinski,Agpmpg,ADJ,O,,O
 sl-2,4,8,mornarjev,,mornar,Ncmpg,NOUN,O,,O
 sl-2,4,9,",",,",",Z,PUNCT,O,,O
@@ -124,8 +124,8 @@ sl-2,4,15,najmanj,,najmanj,Rgs,ADV,O,,O
 sl-2,4,16,trije,,trije,Mlcmpn,NUM,O,,O
 sl-2,4,17,ranjeni,,ranjen,Appmpn,ADJ,O,,O
 sl-2,4,18,.,,.,Z,PUNCT,O,,O
-sl-2,5,1,»,,»,Z,PUNCT,O,,O
-sl-2,5,2,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
+sl-2,5,1,»,,»,Z,PUNCT,O,,B-PER
+sl-2,5,2,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,I-PER
 sl-2,5,3,sebe,,se,Px---a,PRON,O,,O
 sl-2,5,4,vidi,,videti,Vmbr3s,VERB,O,,O
 sl-2,5,5,kot,,kot,Cs,SCONJ,O,,O
@@ -192,10 +192,10 @@ sl-2,8,7,«,,«,Z,PUNCT,O,,O
 sl-2,8,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-2,8,9,izjavil,,izjaviti,Vmep-sm,VERB,O,,O
 sl-2,8,10,za,,za,Sa,ADP,O,,O
-sl-2,8,11,Bild,Bild,Bild,Npmsan,PROPN,B-PRO,PRO-Bild,B-ORG
+sl-2,8,11,Bild,Bild,Bild,Npmsan,PROPN,B-PRO,PRO-Bild,B-PRO
 sl-2,8,12,.,,.,Z,PUNCT,O,,O
-sl-2,9,1,»,,»,Z,PUNCT,O,,O
-sl-2,9,2,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
+sl-2,9,1,»,,»,Z,PUNCT,O,,B-PER
+sl-2,9,2,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,I-PER
 sl-2,9,3,želi,,želeti,Vmpr3s,VERB,O,,O
 sl-2,9,4,nazaj,,nazaj,Rgp,ADV,O,,O
 sl-2,9,5,stari,,star,Agpmsay,ADJ,O,,O
@@ -287,5 +287,5 @@ sl-2,14,7,zaustavitev,,zaustavitev,Ncfsn,NOUN,O,,O
 sl-2,14,8,projekta,,projekt,Ncmsg,NOUN,O,,O
 sl-2,14,9,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
 sl-2,14,10,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-2,14,11,tok,,tok,Ncmsn,NOUN,O,,I-PRO
+sl-2,14,11,tok,,tok,Ncmsn,NOUN,O,,O
 sl-2,14,12,2.,,2.,Mdo,NUM,O,,O

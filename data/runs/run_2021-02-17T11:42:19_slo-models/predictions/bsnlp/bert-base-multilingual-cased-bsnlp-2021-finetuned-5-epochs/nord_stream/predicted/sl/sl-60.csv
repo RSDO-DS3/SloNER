@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-60,0,1,Severni,Severni,severen,Agpmsny,ADJ,B-PRO,PRO-Nord-Stream-2,B-PRO
 sl-60,0,2,tok,tok,tok,Ncmsn,NOUN,I-PRO,PRO-Nord-Stream-2,I-PRO
 sl-60,0,3,2,2,2,Mdc,NUM,I-PRO,PRO-Nord-Stream-2,I-PRO
@@ -6,10 +6,10 @@ sl-60,0,4,želi,,želeti,Vmpr3s,VERB,O,,O
 sl-60,0,5,izjemo,,izjema,Ncfsa,NOUN,O,,O
 sl-60,0,6,od,,od,Sg,ADP,O,,O
 sl-60,0,7,novih,,nov,Agpnpg,ADJ,O,,O
-sl-60,0,8,evropskih,evropska,evropski,Agpnpg,ADJ,B-PRO,PRO-Gas-Directive-EU,O
-sl-60,0,9,pravil,pravila,pravilo,Ncnpg,NOUN,I-PRO,PRO-Gas-Directive-EU,O
-sl-60,0,10,za,za,za,Sa,ADP,I-PRO,PRO-Gas-Directive-EU,O
-sl-60,0,11,plinovode,plinovode,plinovod,Ncmpa,NOUN,I-PRO,PRO-Gas-Directive-EU,O
+sl-60,0,8,evropskih,evropska,evropski,Agpnpg,ADJ,B-PRO,PRO-Gas-Directive-EU,B-PRO
+sl-60,0,9,pravil,pravila,pravilo,Ncnpg,NOUN,I-PRO,PRO-Gas-Directive-EU,I-PRO
+sl-60,0,10,za,za,za,Sa,ADP,I-PRO,PRO-Gas-Directive-EU,I-PRO
+sl-60,0,11,plinovode,plinovode,plinovod,Ncmpa,NOUN,I-PRO,PRO-Gas-Directive-EU,I-PRO
 sl-60,1,1,Februarja,,februar,Ncmsg,NOUN,O,,O
 sl-60,1,2,letos,,letos,Rgp,ADV,O,,O
 sl-60,1,3,so,,biti,Va-r3p-n,AUX,O,,O
@@ -44,7 +44,7 @@ sl-60,1,31,energetskega,,energetski,Agpmsg,ADJ,O,,O
 sl-60,1,32,velikana,,velikan,Ncmsg,NOUN,O,,O
 sl-60,1,33,Gazprom,Gazprom,Gazprom,Npmsn,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-60,1,34,.,,.,Z,PUNCT,O,,O
-sl-60,2,1,Ta,,ta,Pd-msn,DET,O,,O
+sl-60,2,1,Ta,,ta,Pd-msn,DET,O,,B-LOC
 sl-60,2,2,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-60,2,3,po,,po,Sl,ADP,O,,O
 sl-60,2,4,dnu,,dno,Ncnsl,NOUN,O,,O
@@ -61,7 +61,7 @@ sl-60,2,14,plinovod,,plinovod,Ncmsan,NOUN,O,,O
 sl-60,2,15,Severni,Severni,severen,Agpmsny,ADJ,B-PRO,PRO-Nord-Stream-1,B-PRO
 sl-60,2,16,tok,tok,tok,Ncmsan,NOUN,I-PRO,PRO-Nord-Stream-1,I-PRO
 sl-60,2,17,.,,.,Z,PUNCT,O,,O
-sl-60,3,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+sl-60,3,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-PER
 sl-60,3,2,mu,,on,Pp3msd--y,PRON,O,,O
 sl-60,3,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-60,3,4,",",,",",Z,PUNCT,O,,O
@@ -84,7 +84,7 @@ sl-60,4,2,jezik,,jezik,Ncmsan,NOUN,O,,O
 sl-60,4,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-60,4,4,nato,,nato,Rgp,ADV,O,,O
 sl-60,4,5,Svet,Svet,svet,Ncmsn,NOUN,B-ORG,ORG-EU-Council,B-ORG
-sl-60,4,6,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-EU-Council,B-ORG
+sl-60,4,6,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-EU-Council,I-ORG
 sl-60,4,7,našel,,najti,Vmep-sm,VERB,O,,O
 sl-60,4,8,še,,še,Q,PART,O,,O
 sl-60,4,9,z,,z,Si,ADP,O,,O
@@ -164,7 +164,7 @@ sl-60,6,34,.,,.,Z,PUNCT,O,,O
 sl-60,7,1,Družba,,družba,Ncfsn,NOUN,O,,O
 sl-60,7,2,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-60,7,3,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-60,7,4,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-60,7,4,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-60,7,5,",",,",",Z,PUNCT,O,,O
 sl-60,7,6,v,,v,Sl,ADP,O,,O
 sl-60,7,7,kateri,,kateri,Pq-fsl,DET,O,,O
@@ -300,9 +300,9 @@ sl-60,10,34,zapisal,,zapisati,Vmep-sm,VERB,O,,O
 sl-60,10,35,direktor,,direktor,Ncmsn,NOUN,O,,O
 sl-60,10,36,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-60,10,37,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-60,10,38,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-60,10,38,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-60,10,39,Matthias,Matthias,Matthias,Npmsn,PROPN,B-PER,PER-Matthias-Warnig,B-PER
-sl-60,10,40,Warnig,Warnig,Warnig,Npmsn,PROPN,I-PER,PER-Matthias-Warnig,B-PER
+sl-60,10,40,Warnig,Warnig,Warnig,Npmsn,PROPN,I-PER,PER-Matthias-Warnig,I-PER
 sl-60,10,41,.,,.,Z,PUNCT,O,,O
 sl-60,11,1,»,,»,Z,PUNCT,O,,O
 sl-60,11,2,Težava,,težava,Ncfsn,NOUN,O,,O
@@ -328,7 +328,7 @@ sl-60,11,21,povezana,,povezan,Appnpn,ADJ,O,,O
 sl-60,11,22,s,,z,Si,ADP,O,,O
 sl-60,11,23,projektom,,projekt,Ncmsi,NOUN,O,,O
 sl-60,11,24,",",,",",Z,PUNCT,O,,O
-sl-60,11,25,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-60,11,25,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-60,11,26,pa,,pa,Cc,CCONJ,O,,O
 sl-60,11,27,se,,se,Px------y,PRON,O,,O
 sl-60,11,28,bodo,,biti,Va-f3p-n,AUX,O,,O
@@ -351,7 +351,7 @@ sl-60,12,3,opcij,,opcija,Ncfpg,NOUN,O,,O
 sl-60,12,4,za,,za,Sa,ADP,O,,O
 sl-60,12,5,Nord,Nord,Nord,Npmsan,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-60,12,6,Stream,Stream,Stream,Npmsan,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-60,12,7,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-60,12,7,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-60,12,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-60,12,9,tolmačenje,,tolmačenje,Ncnsn,NOUN,O,,O
 sl-60,12,10,",",,",",Z,PUNCT,O,,O
@@ -387,7 +387,7 @@ sl-60,13,1,Gazprom,Gazprom,Gazprom,Npmsn,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-60,13,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-60,13,3,sicer,,sicer,Q,PART,O,,O
 sl-60,13,4,do,,do,Sg,ADP,O,,O
-sl-60,13,5,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-60,13,5,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-60,13,6,skupno,,skupno,Rgp,ADV,O,,O
 sl-60,13,7,položil,,položiti,Vmep-sm,VERB,O,,O
 sl-60,13,8,1080,,1080,Mdc,NUM,O,,O

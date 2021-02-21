@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-87,0,1,Prtljaga,,prtljaga,Ncfsn,NOUN,O,,O
 sl-87,0,2,",",,",",Z,PUNCT,O,,O
 sl-87,0,3,ki,,ki,Cs,SCONJ,O,,O
@@ -244,7 +244,7 @@ sl-87,11,3,teh,,ta,Pd-mpg,DET,O,,O
 sl-87,11,4,razvija,,razvijati,Vmpr3s,VERB,O,,O
 sl-87,11,5,podjetje,,podjetje,Ncnsn,NOUN,O,,O
 sl-87,11,6,90,90,90,Mdc,NUM,B-ORG,ORG-90FUN,B-ORG
-sl-87,11,7,Fun,Fun,Fun,Npmsn,PROPN,I-ORG,ORG-90FUN,B-PRO
+sl-87,11,7,Fun,Fun,Fun,Npmsn,PROPN,I-ORG,ORG-90FUN,I-ORG
 sl-87,11,8,",",,",",Z,PUNCT,O,,O
 sl-87,11,9,hčerinsko,,hčerinski,Agpnsn,ADJ,O,,O
 sl-87,11,10,podjetje,,podjetje,Ncnsn,NOUN,O,,O
@@ -453,7 +453,7 @@ sl-87,20,11,sejmu,,sejem,Ncmsl,NOUN,O,,O
 sl-87,20,12,CES,CES,CES,Npmsn,PROPN,B-EVT,EVT-CES-Consumer-Electronic-Show,B-EVT
 sl-87,20,13,v,,v,Sl,ADP,O,,O
 sl-87,20,14,Las,Las,Las,Npmsn,PROPN,B-LOC,GPE-Las-Vegas,B-LOC
-sl-87,20,15,Vegasu,Vegas,Vegas,Npmsl,PROPN,I-LOC,GPE-Las-Vegas,B-LOC
+sl-87,20,15,Vegasu,Vegas,Vegas,Npmsl,PROPN,I-LOC,GPE-Las-Vegas,I-LOC
 sl-87,20,16,",",,",",Z,PUNCT,O,,O
 sl-87,20,17,tega,,ta,Pd-msg,DET,O,,O
 sl-87,20,18,sistema,,sistem,Ncmsg,NOUN,O,,O

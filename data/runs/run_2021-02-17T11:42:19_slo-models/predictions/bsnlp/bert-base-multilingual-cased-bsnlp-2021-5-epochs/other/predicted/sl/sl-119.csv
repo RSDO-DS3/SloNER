@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-119,0,1,Turčija,Turčija,Turčija,Npfsn,PROPN,B-LOC,GPE-Turkey,B-LOC
 sl-119,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-119,0,3,",",,",",Z,PUNCT,O,,O
@@ -214,7 +214,7 @@ sl-119,10,20,",",,",",Z,PUNCT,O,,O
 sl-119,10,21,ki,,ki,Cs,SCONJ,O,,O
 sl-119,10,22,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-119,10,23,je,,biti,Va-r3s-n,AUX,O,,O
-sl-119,10,24,Bagdadi,Bagdadi,Bagdadi,Npmsn,PROPN,B-PER,PER-Abu-Bakr-al-Baghdadi,I-PER
+sl-119,10,24,Bagdadi,Bagdadi,Bagdadi,Npmsn,PROPN,B-PER,PER-Abu-Bakr-al-Baghdadi,B-PER
 sl-119,10,25,zaupal,,zaupati,Vmbp-sm,VERB,O,,O
 sl-119,10,26,in,,in,Cc,CCONJ,O,,O
 sl-119,10,27,mreže,,mreža,Ncfsg,NOUN,O,,O
@@ -262,7 +262,7 @@ sl-119,11,15,v,,v,Sa,ADP,O,,O
 sl-119,11,16,mreže,,mreža,Ncfpa,NOUN,O,,O
 sl-119,11,17,IS,IS,IS,Npmsn,PROPN,B-ORG,ORG-ISIS-Islamic-State-of-Iraq-and-the-Levant,B-ORG
 sl-119,11,18,.,,.,Z,PUNCT,O,,O
-sl-119,12,1,Bagdadi,Bagdadi,Bagdadi,Npmsn,PROPN,B-PER,PER-Abu-Bakr-al-Baghdadi,I-PER
+sl-119,12,1,Bagdadi,Bagdadi,Bagdadi,Npmsn,PROPN,B-PER,PER-Abu-Bakr-al-Baghdadi,B-PER
 sl-119,12,2,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-119,12,3,sicer,,sicer,Q,PART,O,,O
 sl-119,12,4,več,,več,Rgc,DET,O,,O

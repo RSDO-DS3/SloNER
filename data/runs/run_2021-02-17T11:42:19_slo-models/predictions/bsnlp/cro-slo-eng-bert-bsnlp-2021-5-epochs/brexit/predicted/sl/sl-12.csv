@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-12,0,1,Bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-12,0,2,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-12,0,3,preložili,,preložiti,Vmep-pm,VERB,O,,O
@@ -52,7 +52,7 @@ sl-12,2,32,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-12,2,33,predlagala,,predlagati,Vmbp-sf,VERB,O,,O
 sl-12,2,34,odprave,,odprava,Ncfsg,NOUN,O,,O
 sl-12,2,35,spornega,,sporen,Agpnsg,ADJ,O,,O
-sl-12,2,36,irskega,,irski,Agpnsg,ADJ,O,,B-LOC
+sl-12,2,36,irskega,,irski,Agpnsg,ADJ,O,,O
 sl-12,2,37,varovala,,varovalo,Ncnsg,NOUN,O,,O
 sl-12,2,38,.,,.,Z,PUNCT,O,,O
 sl-12,3,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
@@ -79,7 +79,7 @@ sl-12,4,10,med,,med,Si,ADP,O,,O
 sl-12,4,11,obiskom,,obisk,Ncmsi,NOUN,O,,O
 sl-12,4,12,na,,na,Sl,ADP,O,,O
 sl-12,4,13,Severnem,Severna,severen,Agpnsl,ADJ,B-LOC,GPE-Northern-Ireland,B-LOC
-sl-12,4,14,Irskem,Irska,Irsko,Npnsl,PROPN,I-LOC,GPE-Northern-Ireland,B-LOC
+sl-12,4,14,Irskem,Irska,Irsko,Npnsl,PROPN,I-LOC,GPE-Northern-Ireland,I-LOC
 sl-12,4,15,namignila,,namigniti,Vmep-sf,VERB,O,,O
 sl-12,4,16,",",,",",Z,PUNCT,O,,O
 sl-12,4,17,da,,da,Cs,SCONJ,O,,O
@@ -102,7 +102,7 @@ sl-12,4,33,poslancev,,poslanec,Ncmpg,NOUN,O,,O
 sl-12,4,34,znotraj,,znotraj,Sg,ADP,O,,O
 sl-12,4,35,svoje,,svoj,Px-fsg,DET,O,,O
 sl-12,4,36,konservativne,konservativna,konservativen,Agpfsg,ADJ,B-ORG,ORG-Conservative-and-Unionist-Party-UK,B-ORG
-sl-12,4,37,stranke,stranka,stranka,Ncfsg,NOUN,I-ORG,ORG-Conservative-and-Unionist-Party-UK,O
+sl-12,4,37,stranke,stranka,stranka,Ncfsg,NOUN,I-ORG,ORG-Conservative-and-Unionist-Party-UK,I-ORG
 sl-12,4,38,.,,.,Z,PUNCT,O,,O
 sl-12,5,1,V,,v,Sl,ADP,O,,O
 sl-12,5,2,govoru,,govor,Ncmsl,NOUN,O,,O
@@ -203,7 +203,7 @@ sl-12,8,18,ki,,ki,Cs,SCONJ,O,,O
 sl-12,8,19,ga,,on,Pp3msa--y,PRON,O,,O
 sl-12,8,20,citira,,citirati,Vmbr3s,VERB,O,,O
 sl-12,8,21,britanski,,britanski,Agpmsny,ADJ,O,,O
-sl-12,8,22,The,The,the,Xf,X,B-ORG,ORG-The-Guardian,O
+sl-12,8,22,The,The,the,Xf,X,B-ORG,ORG-The-Guardian,B-PRO
 sl-12,8,23,Guardian,Guardian,Guardian,Npmsn,PROPN,I-ORG,ORG-The-Guardian,I-PRO
 sl-12,8,24,.,,.,Z,PUNCT,O,,O
 sl-12,9,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
@@ -423,20 +423,20 @@ sl-12,20,5,Londonu,London,London,Npmsl,PROPN,B-LOC,GPE-London,B-LOC
 sl-12,20,6,obeležili,,obeležiti,Vmep-pm,VERB,O,,O
 sl-12,20,7,70.,,70.,Mdo,NUM,O,,O
 sl-12,20,8,obletnico,,obletnica,Ncfsa,NOUN,O,,O
-sl-12,20,9,zveze,zveza,zveza,Ncfsg,NOUN,B-ORG,ORG-NATO,B-ORG
+sl-12,20,9,zveze,zveza,zveza,Ncfsg,NOUN,B-ORG,ORG-NATO,O
 sl-12,20,10,Nato,Nato,Nato,Npmsn,PROPN,I-ORG,ORG-NATO,B-ORG
 sl-12,20,11,.,,.,Z,PUNCT,O,,O
 sl-12,21,1,Britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-12,21,2,finančni,,finančen,Agpmsny,ADJ,O,,O
 sl-12,21,3,minister,,minister,Ncmsn,NOUN,O,,O
 sl-12,21,4,Philip,Philip,Philip,Npmsn,PROPN,B-PER,PER-Philip-Hammond,B-PER
-sl-12,21,5,Hammond,Hammond,Hammond,Npmsn,PROPN,I-PER,PER-Philip-Hammond,B-PER
+sl-12,21,5,Hammond,Hammond,Hammond,Npmsn,PROPN,I-PER,PER-Philip-Hammond,I-PER
 sl-12,21,6,in,,in,Cc,CCONJ,O,,O
 sl-12,21,7,minister,,minister,Ncmsn,NOUN,O,,O
 sl-12,21,8,za,,za,Sa,ADP,O,,O
 sl-12,21,9,trgovino,,trgovina,Ncfsa,NOUN,O,,O
 sl-12,21,10,Liam,Liam,Liam,Npmsn,PROPN,B-PER,PER-Liam-Fox,B-PER
-sl-12,21,11,Fox,Fox,Fox,Npmsn,PROPN,I-PER,PER-Liam-Fox,B-PER
+sl-12,21,11,Fox,Fox,Fox,Npmsn,PROPN,I-PER,PER-Liam-Fox,I-PER
 sl-12,21,12,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-12,21,13,že,,že,Q,PART,O,,O
 sl-12,21,14,minuli,,minul,Appmsay,ADJ,O,,O
@@ -465,8 +465,8 @@ sl-12,22,12,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-12,22,13,o,,o,Sl,ADP,O,,O
 sl-12,22,14,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-12,22,15,v,,v,Sl,ADP,O,,O
-sl-12,22,16,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,O
-sl-12,22,17,parlamentu,parlament,parlament,Ncmsl,NOUN,I-ORG,ORG-British-Parlament,O
+sl-12,22,16,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,B-ORG
+sl-12,22,17,parlamentu,parlament,parlament,Ncmsl,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-12,22,18,in,,in,Cc,CCONJ,O,,O
 sl-12,22,19,če,,če,Cs,SCONJ,O,,O
 sl-12,22,20,bi,,biti,Va-c,AUX,O,,O

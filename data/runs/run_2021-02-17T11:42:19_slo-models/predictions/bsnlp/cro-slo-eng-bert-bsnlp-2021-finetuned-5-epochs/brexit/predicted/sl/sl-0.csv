@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-0,0,1,Papagajski,,papagajski,Agpmsny,ADJ,O,,O
 sl-0,0,2,brexit,brexit,brexit,Ncmsn,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-0,0,3,in,,in,Cc,CCONJ,O,,O
@@ -140,7 +140,7 @@ sl-0,7,8,brexitski,,brexitski,Agpfsd,ADJ,O,,O
 sl-0,7,9,volji,,volja,Ncfsd,NOUN,O,,O
 sl-0,7,10,ljudstva,,ljudstvo,Ncnsg,NOUN,O,,O
 sl-0,7,11,«,,«,Z,PUNCT,O,,O
-sl-0,7,12,lordi,,lord,Ncmpn,NOUN,O,,B-PER
+sl-0,7,12,lordi,,lord,Ncmpn,NOUN,O,,O
 sl-0,7,13,sami,,sam,Agpmpn,ADJ,O,,O
 sl-0,7,14,sebi,,se,Px---d,PRON,O,,O
 sl-0,7,15,kopljejo,,kopati,Vmpr3p,VERB,O,,O
@@ -169,7 +169,7 @@ sl-0,7,37,",",,",",Z,PUNCT,O,,O
 sl-0,7,38,ki,,ki,Cs,SCONJ,O,,O
 sl-0,7,39,so,,biti,Va-r3p-n,AUX,O,,O
 sl-0,7,40,jih,,on,Pp3mpa--y,PRON,O,,O
-sl-0,7,41,lordi,,lord,Ncmpn,NOUN,O,,B-PER
+sl-0,7,41,lordi,,lord,Ncmpn,NOUN,O,,O
 sl-0,7,42,zahtevali,,zahtevati,Vmbp-pm,VERB,O,,O
 sl-0,7,43,s,,z,Si,ADP,O,,O
 sl-0,7,44,štirinajstimi,,štirinajst,Mlc-pi,NUM,O,,O
@@ -204,7 +204,7 @@ sl-0,9,4,tiče,,tikati,Vmpr3s,VERB,O,,O
 sl-0,9,5,izrekanja,,izrekanje,Ncnsg,NOUN,O,,O
 sl-0,9,6,poslancev,,poslanec,Ncmpg,NOUN,O,,O
 sl-0,9,7,o,,o,Sl,ADP,O,,O
-sl-0,9,8,brexitskem,,brexitski,Agpmsl,ADJ,O,,B-EVT
+sl-0,9,8,brexitskem,,brexitski,Agpmsl,ADJ,O,,O
 sl-0,9,9,sporazumu,,sporazum,Ncmsl,NOUN,O,,O
 sl-0,9,10,",",,",",Z,PUNCT,O,,O
 sl-0,9,11,seveda,,seveda,Q,PART,O,,O
@@ -262,16 +262,16 @@ sl-0,11,14,vroče,,vroč,Agpnsn,ADJ,O,,O
 sl-0,11,15,brexitsko,,brexitski,Agpnsn,ADJ,O,,O
 sl-0,11,16,vprašanje,,vprašanje,Ncnsn,NOUN,O,,O
 sl-0,11,17,.,,.,Z,PUNCT,O,,O
-sl-0,12,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
+sl-0,12,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,O
 sl-0,12,2,o,,o,Sl,ADP,O,,O
 sl-0,12,3,nori,,nor,Agpfsl,ADJ,O,,O
 sl-0,12,4,premierkini,,premierkin,Aspfsl,ADJ,O,,O
 sl-0,12,5,ideji,,ideja,Ncfsl,NOUN,O,,O
 sl-0,13,1,Vodja,,vodja,Ncmsn,NOUN,O,,O
 sl-0,13,2,opozicijskih,,opozicijski,Agpmpg,ADJ,O,,O
-sl-0,13,3,laburistov,laburisti,laburist,Ncmpg,NOUN,B-PER,ORG-Labour-Party-UK,B-PER
+sl-0,13,3,laburistov,laburisti,laburist,Ncmpg,NOUN,B-PER,ORG-Labour-Party-UK,B-ORG
 sl-0,13,4,Jeremy,Jeremy,Jeremy,Npmsn,PROPN,B-PER,PER-Jeremy-Corbyn,B-PER
-sl-0,13,5,Corbyn,Corbyn,Corbyn,Npmsn,PROPN,I-PER,PER-Jeremy-Corbyn,B-PER
+sl-0,13,5,Corbyn,Corbyn,Corbyn,Npmsn,PROPN,I-PER,PER-Jeremy-Corbyn,I-PER
 sl-0,13,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-0,13,7,vseh,,ves,Pg-mpg,DET,O,,O
 sl-0,13,8,svojih,,svoj,Px-mpg,DET,O,,O
@@ -324,7 +324,7 @@ sl-0,14,10,navdihnil,,navdihniti,Vmep-sm,VERB,O,,O
 sl-0,14,11,zunanji,,zunanji,Agpmsny,ADJ,O,,O
 sl-0,14,12,minister,,minister,Ncmsn,NOUN,O,,O
 sl-0,14,13,Boris,Boris,Boris,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
-sl-0,14,14,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,B-PER
+sl-0,14,14,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,I-PER
 sl-0,14,15,",",,",",Z,PUNCT,O,,O
 sl-0,14,16,ki,,ki,Cs,SCONJ,O,,O
 sl-0,14,17,je,,biti,Va-r3s-n,AUX,O,,O
@@ -422,7 +422,7 @@ sl-0,17,3,bomo,,biti,Va-f1p-n,AUX,O,,O
 sl-0,17,4,EU,EU,EU,Npfsa,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-0,17,5,in,,in,Cc,CCONJ,O,,O
 sl-0,17,6,carinsko,,carinski,Agpfsa,ADJ,O,,O
-sl-0,17,7,unijo,,unija,Ncfsa,NOUN,O,,I-ORG
+sl-0,17,7,unijo,,unija,Ncfsa,NOUN,O,,O
 sl-0,17,8,in,,in,Cc,CCONJ,O,,O
 sl-0,17,9,potrebovali,,potrebovati,Vmpp-pm,VERB,O,,O
 sl-0,17,10,bomo,,biti,Va-f1p-n,AUX,O,,O
@@ -452,7 +452,7 @@ sl-0,18,6,",",,",",Z,PUNCT,O,,O
 sl-0,18,7,povezanih,,povezan,Appmpg,ADJ,O,,O
 sl-0,18,8,s,,z,Si,ADP,O,,O
 sl-0,18,9,carinsko,,carinski,Agpfsi,ADJ,O,,O
-sl-0,18,10,unijo,,unija,Ncfsi,NOUN,O,,I-ORG
+sl-0,18,10,unijo,,unija,Ncfsi,NOUN,O,,O
 sl-0,18,11,",",,",",Z,PUNCT,O,,O
 sl-0,18,12,je,,biti,Va-r3s-n,AUX,O,,O
 sl-0,18,13,odgovor,,odgovor,Ncmsn,NOUN,O,,O
@@ -485,7 +485,7 @@ sl-0,20,12,",",,",",Z,PUNCT,O,,O
 sl-0,20,13,zagovarja,,zagovarjati,Vmpr3s,VERB,O,,O
 sl-0,20,14,desno,,desen,Agpnsa,ADJ,O,,O
 sl-0,20,15,krilo,,krilo,Ncnsa,NOUN,O,,O
-sl-0,20,16,konservativcev,konservativci,konservativec,Ncmpg,NOUN,B-PER,ORG-Conservative-and-Unionist-Party-UK,B-ORG
+sl-0,20,16,konservativcev,konservativci,konservativec,Ncmpg,NOUN,B-PER,ORG-Conservative-and-Unionist-Party-UK,B-PER
 sl-0,20,17,",",,",",Z,PUNCT,O,,O
 sl-0,20,18,je,,biti,Va-r3s-n,AUX,O,,O
 sl-0,20,19,nepozabno,,nepozaben,Agpnsn,ADJ,O,,O
@@ -509,7 +509,7 @@ sl-0,20,36,",",,",",Z,PUNCT,O,,O
 sl-0,20,37,ki,,ki,Cs,SCONJ,O,,O
 sl-0,20,38,podpirajo,,podpirati,Vmpr3p,VERB,O,,O
 sl-0,20,39,carinsko,,carinski,Agpfsa,ADJ,O,,O
-sl-0,20,40,unijo,,unija,Ncfsa,NOUN,O,,I-ORG
+sl-0,20,40,unijo,,unija,Ncfsa,NOUN,O,,O
 sl-0,20,41,?,,?,Z,PUNCT,O,,O
 sl-0,21,1,Mar,,mar,Rgp,ADV,O,,O
 sl-0,21,2,ni,,biti,Va-r3s-y,AUX,O,,O
@@ -528,7 +528,7 @@ sl-0,21,14,sinoči,,sinoči,Rgp,ADV,O,,O
 sl-0,21,15,opisal,,opisati,Vmep-sm,VERB,O,,O
 sl-0,21,16,oče,,oče,Ncmsn,NOUN,O,,O
 sl-0,21,17,poslanske,,poslanski,Agpfsg,ADJ,O,,O
-sl-0,21,18,zbornice,,zbornica,Ncfsg,NOUN,O,,I-ORG
+sl-0,21,18,zbornice,,zbornica,Ncfsg,NOUN,O,,O
 sl-0,21,19,",",,",",Z,PUNCT,O,,O
 sl-0,21,20,vsem,,ves,Pg-mpd,DET,O,,O
 sl-0,21,21,tem,,ta,Pd-mpd,DET,O,,O
@@ -553,7 +553,7 @@ sl-0,21,39,nasmeh,,nasmeh,Ncmsn,NOUN,O,,O
 sl-0,21,40,omenjenega,,omenjen,Appmsg,ADJ,O,,O
 sl-0,21,41,očeta,,oče,Ncmsg,NOUN,O,,O
 sl-0,21,42,poslanske,,poslanski,Agpfsg,ADJ,O,,O
-sl-0,21,43,zbornice,,zbornica,Ncfsg,NOUN,O,,I-ORG
+sl-0,21,43,zbornice,,zbornica,Ncfsg,NOUN,O,,O
 sl-0,21,44,",",,",",Z,PUNCT,O,,O
 sl-0,21,45,78-letnega,,7mvleten,Agpmsg,ADJ,O,,O
 sl-0,21,46,konservativnega,,konservativen,Agpmsg,ADJ,O,,O

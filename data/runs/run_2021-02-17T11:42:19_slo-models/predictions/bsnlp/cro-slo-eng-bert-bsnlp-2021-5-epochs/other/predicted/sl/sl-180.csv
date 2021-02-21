@@ -1,8 +1,8 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-180,0,1,Angleški,,angleški,Agpmsny,ADJ,O,,O
 sl-180,0,2,nogometni,,nogometen,Agpmsny,ADJ,O,,O
 sl-180,0,3,brexit,brexit,brexit,Ncmsn,NOUN,B-EVT,EVT-Brexit,B-EVT
-sl-180,1,1,Tottenham,Tottenham,Tottenham,Npmsn,PROPN,B-ORG,ORG-Tottenham-Hotspur-F.C.,B-ORG
+sl-180,1,1,Tottenham,Tottenham,Tottenham,Npmsn,PROPN,B-ORG,ORG-Tottenham-Hotspur-F.C.,B-PER
 sl-180,1,2,v,,v,Sl,ADP,O,,O
 sl-180,1,3,otoškem,,otoški,Agpmsl,ADJ,O,,O
 sl-180,1,4,finalu,,finale,Ncmsl,NOUN,O,,O
@@ -10,7 +10,7 @@ sl-180,1,5,lige,liga,liga,Ncfsg,NOUN,B-ORG,ORG-UEFA-Champions-League,B-ORG
 sl-180,1,6,prvakov,prvakov,prvak,Ncmpg,NOUN,I-ORG,ORG-UEFA-Champions-League,I-ORG
 sl-180,1,7,.,,.,Z,PUNCT,O,,O
 sl-180,2,1,Zaradi,,zaradi,Sg,ADP,O,,O
-sl-180,2,2,denarja,,denar,Ncmsg,NOUN,O,,I-PER
+sl-180,2,2,denarja,,denar,Ncmsg,NOUN,O,,O
 sl-180,2,3,ne,,ne,Q,PART,O,,O
 sl-180,2,4,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-180,2,5,izstopa,,izstop,Ncmsg,NOUN,O,,O
@@ -46,8 +46,8 @@ sl-180,3,26,.,,.,Z,PUNCT,O,,O
 sl-180,4,1,V,,v,Sl,ADP,O,,O
 sl-180,4,2,letošnji,,letošnji,Agpfsl,ADJ,O,,O
 sl-180,4,3,nogometni,,nogometen,Agpfsl,ADJ,O,,O
-sl-180,4,4,ligi,liga,liga,Ncfsl,NOUN,B-ORG,ORG-UEFA-Champions-League,O
-sl-180,4,5,prvakov,prvakov,prvak,Ncmpg,NOUN,I-ORG,ORG-UEFA-Champions-League,I-ORG
+sl-180,4,4,ligi,liga,liga,Ncfsl,NOUN,B-ORG,ORG-UEFA-Champions-League,B-EVT
+sl-180,4,5,prvakov,prvakov,prvak,Ncmpg,NOUN,I-ORG,ORG-UEFA-Champions-League,I-EVT
 sl-180,4,6,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-180,4,7,Angleži,Angleži,Anglež,Npmpn,PROPN,B-PER,GPE-England,B-PER
 sl-180,4,8,v,,v,Sl,ADP,O,,O
@@ -115,7 +115,7 @@ sl-180,5,44,35.,,35.,Mdo,NUM,O,,O
 sl-180,5,45,),,),Z,PUNCT,O,,O
 sl-180,5,46,",",,",",Z,PUNCT,O,,O
 sl-180,5,47,Lucas,Lucas,Lucas,Npmsn,PROPN,B-PER,PER-Lucas-Moura,B-PER
-sl-180,5,48,Moura,Moura,Moura,Npmsn,PROPN,I-PER,PER-Lucas-Moura,B-PER
+sl-180,5,48,Moura,Moura,Moura,Npmsn,PROPN,I-PER,PER-Lucas-Moura,I-PER
 sl-180,5,49,(,,(,Z,PUNCT,O,,O
 sl-180,5,50,55.,,55.,Mdo,NUM,O,,O
 sl-180,5,51,",",,",",Z,PUNCT,O,,O
@@ -150,7 +150,7 @@ sl-180,6,7,letu,,leto,Ncnsl,NOUN,O,,O
 sl-180,6,8,2008,,2008,Mdc,NUM,O,,O
 sl-180,6,9,(,,(,Z,PUNCT,O,,O
 sl-180,6,10,Manchester,Manchester,Manchester,Npmsn,PROPN,B-ORG,ORG-Manchester-United-FC,B-ORG
-sl-180,6,11,United,United,United,Npmsn,PROPN,I-ORG,ORG-Manchester-United-FC,B-ORG
+sl-180,6,11,United,United,United,Npmsn,PROPN,I-ORG,ORG-Manchester-United-FC,I-ORG
 sl-180,6,12,–,,–,Z,PUNCT,O,,O
 sl-180,6,13,Chelsea,Chelsea,Chelsea,Npmsn,PROPN,B-ORG,ORG-Chelsea-F.C.,B-ORG
 sl-180,6,14,),,),Z,PUNCT,O,,O
@@ -200,12 +200,12 @@ sl-180,9,4,bil,,biti,Va-p-sm,AUX,O,,O
 sl-180,9,5,seveda,,seveda,Q,PART,O,,O
 sl-180,9,6,Brazilec,Brazilec,Brazilec,Npmsn,PROPN,B-PER,GPE-Brazil,B-PER
 sl-180,9,7,Lucas,Lucas,Lucas,Npmsn,PROPN,B-PER,PER-Lucas-Moura,B-PER
-sl-180,9,8,Moura,Moura,Moura,Npmsn,PROPN,I-PER,PER-Lucas-Moura,B-PER
+sl-180,9,8,Moura,Moura,Moura,Npmsn,PROPN,I-PER,PER-Lucas-Moura,I-PER
 sl-180,9,9,",",,",",Z,PUNCT,O,,O
 sl-180,9,10,izgnanec,,izgnanec,Ncmsn,NOUN,O,,O
 sl-180,9,11,iz,,iz,Sg,ADP,O,,O
 sl-180,9,12,Paris,Paris,Paris,Npmsn,PROPN,B-ORG,ORG-Paris-Saint-Germaina,B-ORG
-sl-180,9,13,Saint-Germaina,Saint-Germain,Saintrgermain,Npmsg,PROPN,I-ORG,ORG-Paris-Saint-Germaina,B-ORG
+sl-180,9,13,Saint-Germaina,Saint-Germain,Saintrgermain,Npmsg,PROPN,I-ORG,ORG-Paris-Saint-Germaina,I-ORG
 sl-180,9,14,",",,",",Z,PUNCT,O,,O
 sl-180,9,15,ko,,ko,Cs,SCONJ,O,,O
 sl-180,9,16,je,,biti,Va-r3s-n,AUX,O,,O
@@ -222,7 +222,7 @@ sl-180,10,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-180,10,4,se,,se,Px------y,PRON,O,,O
 sl-180,10,5,letos,,letos,Rgp,ADV,O,,O
 sl-180,10,6,v,,v,Sl,ADP,O,,O
-sl-180,10,7,ligi,liga,liga,Ncfsl,NOUN,B-ORG,ORG-UEFA-Champions-League,O
+sl-180,10,7,ligi,liga,liga,Ncfsl,NOUN,B-ORG,ORG-UEFA-Champions-League,B-ORG
 sl-180,10,8,prvakov,prvakov,prvak,Ncmpg,NOUN,I-ORG,ORG-UEFA-Champions-League,I-ORG
 sl-180,10,9,spet,,spet,Rgp,ADV,O,,O
 sl-180,10,10,spotaknili,,spotakniti,Vmep-pm,VERB,O,,O
@@ -312,7 +312,7 @@ sl-180,14,15,je,,biti,Va-r3s-n,AUX,O,,O
 sl-180,14,16,pripovedoval,,pripovedovati,Vmpp-sm,VERB,O,,O
 sl-180,14,17,Moura,Moura,Moura,Npmsn,PROPN,B-PER,PER-Lucas-Moura,B-PER
 sl-180,14,18,.,,.,Z,PUNCT,O,,O
-sl-180,15,1,Tottenhamove,Tottenham,Tottenhamov,Aspmpa,ADJ,B-ORG,ORG-Tottenham-Hotspur-F.C.,B-ORG
+sl-180,15,1,Tottenhamove,Tottenham,Tottenhamov,Aspmpa,ADJ,B-ORG,ORG-Tottenham-Hotspur-F.C.,B-PER
 sl-180,15,2,soigralce,,soigralec,Ncmpa,NOUN,O,,O
 sl-180,15,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-180,15,4,z,,z,Si,ADP,O,,O
@@ -341,7 +341,7 @@ sl-180,15,26,kapetan,,kapetan,Ncmsn,NOUN,O,,O
 sl-180,15,27,angleške,,angleški,Agpfsg,ADJ,O,,O
 sl-180,15,28,reprezentance,,reprezentanca,Ncfsg,NOUN,O,,O
 sl-180,15,29,Harry,Harry,Harry,Npmsn,PROPN,B-PER,PER-Harry-Kane,B-PER
-sl-180,15,30,Kane,Kane,Kane,Npmsn,PROPN,I-PER,PER-Harry-Kane,B-PER
+sl-180,15,30,Kane,Kane,Kane,Npmsn,PROPN,I-PER,PER-Harry-Kane,I-PER
 sl-180,15,31,.,,.,Z,PUNCT,O,,O
 sl-180,16,1,»,,»,Z,PUNCT,O,,O
 sl-180,16,2,Fantje,,fant,Ncmpn,NOUN,O,,O
@@ -415,7 +415,7 @@ sl-180,18,8,.,,.,Z,PUNCT,O,,O
 sl-180,19,1,Je,,biti,Va-r3s-n,AUX,O,,O
 sl-180,19,2,pa,,pa,Cc,CCONJ,O,,O
 sl-180,19,3,liga,,liga,Ncfsn,NOUN,O,,O
-sl-180,19,4,prvakov,,prvak,Ncmpg,NOUN,O,,I-ORG
+sl-180,19,4,prvakov,,prvak,Ncmpg,NOUN,O,,I-EVT
 sl-180,19,5,tako,,tako,Rgp,ADV,O,,O
 sl-180,19,6,posebna,,poseben,Agpfsn,ADJ,O,,O
 sl-180,19,7,",",,",",Z,PUNCT,O,,O

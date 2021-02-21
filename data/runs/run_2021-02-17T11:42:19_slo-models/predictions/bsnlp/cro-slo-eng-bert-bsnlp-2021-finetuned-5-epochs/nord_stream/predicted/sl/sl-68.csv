@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-68,0,1,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
 sl-68,0,2,v,,v,Sl,ADP,O,,O
 sl-68,0,3,Berlinu,Berlin,Berlin,Npmsl,PROPN,B-LOC,GPE-Berlin,B-LOC
@@ -14,7 +14,7 @@ sl-68,1,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-68,1,2,državni,,državen,Agpmsny,ADJ,O,,O
 sl-68,1,3,sekretar,,sekretar,Ncmsn,NOUN,O,,O
 sl-68,1,4,Mike,Mike,Mike,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
-sl-68,1,5,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,B-PER
+sl-68,1,5,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,I-PER
 sl-68,1,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-68,1,7,v,,v,Sl,ADP,O,,O
 sl-68,1,8,govoru,,govor,Ncmsl,NOUN,O,,O
@@ -81,13 +81,13 @@ sl-68,3,13,ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-68,3,14,državni,,državen,Agpmsny,ADJ,O,,O
 sl-68,3,15,sekretar,,sekretar,Ncmsn,NOUN,O,,O
 sl-68,3,16,Mike,Mike,Mike,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
-sl-68,3,17,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,B-PER
+sl-68,3,17,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,I-PER
 sl-68,3,18,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-68,3,19,v,,v,Sl,ADP,O,,O
 sl-68,3,20,govoru,,govor,Ncmsl,NOUN,O,,O
 sl-68,3,21,pred,,pred,Si,ADP,O,,O
-sl-68,3,22,fundacijo,fundacija,fundacija,Ncfsi,NOUN,B-LOC,ORG-Körber-Foundation,B-ORG
-sl-68,3,23,Körber,Körber,Körber,Npmsn,PROPN,I-LOC,ORG-Körber-Foundation,B-LOC
+sl-68,3,22,fundacijo,fundacija,fundacija,Ncfsi,NOUN,B-LOC,ORG-Körber-Foundation,B-LOC
+sl-68,3,23,Körber,Körber,Körber,Npmsn,PROPN,I-LOC,ORG-Körber-Foundation,I-LOC
 sl-68,3,24,",",,",",Z,PUNCT,O,,O
 sl-68,3,25,le,,le,Q,PART,O,,O
 sl-68,3,26,nekaj,,nekaj,Rgp,DET,O,,O
@@ -188,7 +188,7 @@ sl-68,8,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-68,8,2,državni,,državen,Agpmsny,ADJ,O,,O
 sl-68,8,3,sekretar,,sekretar,Ncmsn,NOUN,O,,O
 sl-68,8,4,Mike,Mike,Mike,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
-sl-68,8,5,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,B-PER
+sl-68,8,5,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,I-PER
 sl-68,8,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-68,8,7,v,,v,Sl,ADP,O,,O
 sl-68,8,8,govoru,,govor,Ncmsl,NOUN,O,,O
@@ -292,7 +292,7 @@ sl-68,11,8,vizijo,,vizija,Ncfsa,NOUN,O,,O
 sl-68,11,9,avtoritarizma,,avtoritarizem,Ncmsg,NOUN,O,,O
 sl-68,11,10,"""",,"""",Z,PUNCT,O,,O
 sl-68,11,11,.,,.,Z,PUNCT,O,,O
-sl-68,12,1,Kitajska,Kitajska,kitajski,Agpfsn,ADJ,B-ORG,GPE-Communist-Party-of-China,B-LOC
+sl-68,12,1,Kitajska,Kitajska,kitajski,Agpfsn,ADJ,B-ORG,GPE-Communist-Party-of-China,B-ORG
 sl-68,12,2,komunistična,komunistična,komunističen,Agpfsn,ADJ,I-ORG,GPE-Communist-Party-of-China,I-ORG
 sl-68,12,3,partija,partija,partija,Ncfsn,NOUN,I-ORG,GPE-Communist-Party-of-China,I-ORG
 sl-68,12,4,pa,,pa,Cc,CCONJ,O,,O
@@ -313,7 +313,7 @@ sl-68,12,18,grozovito,,grozovito,Rgp,ADV,O,,O
 sl-68,12,19,znane,,znan,Appfpn,ADJ,O,,O
 sl-68,12,20,nekdanjim,,nekdanji,Agpmpd,ADJ,O,,O
 sl-68,12,21,vzhodnim,vzhodni,vzhoden,Agpmpd,ADJ,B-PER,GPE-East-Germany,B-PER
-sl-68,12,22,Nemcem,Nemci,Nemec,Npmpd,PROPN,I-PER,GPE-East-Germany,B-PER
+sl-68,12,22,Nemcem,Nemci,Nemec,Npmpd,PROPN,I-PER,GPE-East-Germany,I-PER
 sl-68,12,23,",",,",",Z,PUNCT,O,,O
 sl-68,12,24,"""",,"""",Z,PUNCT,O,,O
 sl-68,12,25,je,,biti,Va-r3s-n,AUX,O,,O
@@ -398,7 +398,7 @@ sl-68,15,9,za,,za,Sa,ADP,O,,O
 sl-68,15,10,izgradnjo,,izgradnja,Ncfsa,NOUN,O,,O
 sl-68,15,11,omrežja,,omrežje,Ncnsg,NOUN,O,,O
 sl-68,15,12,5,5,5,Mdc,NUM,B-PRO,PRO-5G,B-PRO
-sl-68,15,13,G,G,g,Ncmsn,NOUN,I-PRO,PRO-5G,B-PRO
+sl-68,15,13,G,G,g,Ncmsn,NOUN,I-PRO,PRO-5G,I-PRO
 sl-68,15,14,',,',Z,PUNCT,O,,O
 sl-68,16,1,V,,v,Sl,ADP,O,,O
 sl-68,16,2,govoru,,govor,Ncmsl,NOUN,O,,O
@@ -474,10 +474,10 @@ sl-68,19,1,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
 sl-68,19,2,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-68,19,3,na,,na,Sl,ADP,O,,O
 sl-68,19,4,balkonu,,balkon,Ncmsl,NOUN,O,,O
-sl-68,19,5,ameriškem,ameriško,ameriški,Agpnsl,ADJ,B-LOC,LOC-Embassy-of-the-United-States-of-America-in-Berlin,O
-sl-68,19,6,veleposlaništva,veleposlaništvo,veleposlaništvo,Ncnsg,NOUN,I-LOC,LOC-Embassy-of-the-United-States-of-America-in-Berlin,O
-sl-68,19,7,v,v,v,Sl,ADP,I-LOC,LOC-Embassy-of-the-United-States-of-America-in-Berlin,O
-sl-68,19,8,Berlinu,Berlinu,Berlin,Npmsl,PROPN,I-LOC,LOC-Embassy-of-the-United-States-of-America-in-Berlin,B-LOC
+sl-68,19,5,ameriškem,ameriško,ameriški,Agpnsl,ADJ,B-LOC,LOC-Embassy-of-the-United-States-of-America-in-Berlin,B-ORG
+sl-68,19,6,veleposlaništva,veleposlaništvo,veleposlaništvo,Ncnsg,NOUN,I-LOC,LOC-Embassy-of-the-United-States-of-America-in-Berlin,I-ORG
+sl-68,19,7,v,v,v,Sl,ADP,I-LOC,LOC-Embassy-of-the-United-States-of-America-in-Berlin,I-ORG
+sl-68,19,8,Berlinu,Berlinu,Berlin,Npmsl,PROPN,I-LOC,LOC-Embassy-of-the-United-States-of-America-in-Berlin,I-ORG
 sl-68,19,9,slovesno,,slovesno,Rgp,ADV,O,,O
 sl-68,19,10,odkril,,odkriti,Vmep-sm,VERB,O,,O
 sl-68,19,11,kip,,kip,Ncmsan,NOUN,O,,O
@@ -487,7 +487,7 @@ sl-68,19,14,predsednika,,predsednik,Ncmsg,NOUN,O,,O
 sl-68,19,15,Ronalda,Ronald,Ronald,Npmsg,PROPN,B-PER,PER-Ronald-Reagan,B-PER
 sl-68,19,16,Reagana,Reagan,Reagan,Npmsg,PROPN,I-PER,PER-Ronald-Reagan,I-PER
 sl-68,19,17,.,,.,Z,PUNCT,O,,O
-sl-68,20,1,Berlinske,,berlinski,Agpfpn,ADJ,O,,B-LOC
+sl-68,20,1,Berlinske,,berlinski,Agpfpn,ADJ,O,,O
 sl-68,20,2,oblasti,,oblast,Ncfpn,NOUN,O,,O
 sl-68,20,3,naj,,naj,Q,PART,O,,O
 sl-68,20,4,bi,,biti,Va-c,AUX,O,,O
@@ -566,7 +566,7 @@ sl-68,22,10,za,,za,Sa,ADP,O,,O
 sl-68,22,11,izgradnjo,,izgradnja,Ncfsa,NOUN,O,,O
 sl-68,22,12,omrežja,,omrežje,Ncnsg,NOUN,O,,O
 sl-68,22,13,5,5,5,Mdc,NUM,B-PRO,PRO-5G,B-PRO
-sl-68,22,14,G,G,g,Ncmsn,NOUN,I-PRO,PRO-5G,B-PRO
+sl-68,22,14,G,G,g,Ncmsn,NOUN,I-PRO,PRO-5G,I-PRO
 sl-68,22,15,"""",,"""",Z,PUNCT,O,,O
 sl-68,22,16,.,,.,Z,PUNCT,O,,O
 sl-68,23,1,S,,z,Si,ADP,O,,O
@@ -648,10 +648,10 @@ sl-68,26,5,trgovinski,,trgovinski,Agpmsny,ADJ,O,,O
 sl-68,26,6,partner,,partner,Ncmsn,NOUN,O,,O
 sl-68,26,7,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-68,26,8,.,,.,Z,PUNCT,O,,O
-sl-68,27,1,Francoski,,francoski,Agpmsny,ADJ,O,,B-PER
+sl-68,27,1,Francoski,,francoski,Agpmsny,ADJ,O,,O
 sl-68,27,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-68,27,3,Emmanuel,Emmanuel,Emmanuel,Npmsn,PROPN,B-PER,PER-Emmanuel-Macron,B-PER
-sl-68,27,4,Macron,Macron,Macron,Npmsn,PROPN,I-PER,PER-Emmanuel-Macron,B-PER
+sl-68,27,4,Macron,Macron,Macron,Npmsn,PROPN,I-PER,PER-Emmanuel-Macron,I-PER
 sl-68,27,5,pa,,pa,Cc,CCONJ,O,,O
 sl-68,27,6,v,,v,Sl,ADP,O,,O
 sl-68,27,7,teh,,ta,Pd-mpl,DET,O,,O
@@ -709,7 +709,7 @@ sl-68,29,21,ameriških,,ameriški,Agpfpg,ADJ,O,,O
 sl-68,29,22,enot,,enota,Ncfpg,NOUN,O,,O
 sl-68,29,23,iz,,iz,Sg,ADP,O,,O
 sl-68,29,24,severovzhodne,severovzhodna,severovzhoden,Agpfsg,ADJ,B-LOC,GPE-North-Eastern-Syria,B-LOC
-sl-68,29,25,Sirije,Sirija,Sirija,Npfsg,PROPN,I-LOC,GPE-North-Eastern-Syria,B-LOC
+sl-68,29,25,Sirije,Sirija,Sirija,Npfsg,PROPN,I-LOC,GPE-North-Eastern-Syria,I-LOC
 sl-68,29,26,.,,.,Z,PUNCT,O,,O
 sl-68,30,1,"""",,"""",Z,PUNCT,O,,O
 sl-68,30,2,Med,,med,Si,ADP,O,,O
@@ -773,7 +773,7 @@ sl-68,32,34,se,,se,Px------y,PRON,O,,O
 sl-68,32,35,"""",,"""",Z,PUNCT,O,,O
 sl-68,32,36,pospeši,,pospešiti,Vmer3s,VERB,O,,O
 sl-68,32,37,razvoj,,razvoj,Ncmsn,NOUN,O,,O
-sl-68,32,38,evropske,,evropski,Agpfsg,ADJ,O,,B-LOC
+sl-68,32,38,evropske,,evropski,Agpfsg,ADJ,O,,O
 sl-68,32,39,obrambe,,obramba,Ncfsg,NOUN,O,,O
 sl-68,32,40,"""",,"""",Z,PUNCT,O,,O
 sl-68,32,41,.,,.,Z,PUNCT,O,,O

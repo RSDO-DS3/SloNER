@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-155,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-155,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-155,0,3,",",,",",Z,PUNCT,O,,O
@@ -15,7 +15,7 @@ sl-155,0,13,Daniels,Daniels,Daniels,Npmsn,PROPN,I-PER,PER-Stormy-Daniels,I-PER
 sl-155,1,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-155,1,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-155,1,3,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-155,1,4,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-155,1,4,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-155,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-155,1,6,prekinil,,prekiniti,Vmep-sm,VERB,O,,O
 sl-155,1,7,dvomesečni,,dvomesečen,Agpmsay,ADJ,O,,O
@@ -119,7 +119,7 @@ sl-155,4,1,Predsednikov,,predsednikov,Aspmsnn,ADJ,O,,O
 sl-155,4,2,dolgoletni,,dolgoleten,Agpmsny,ADJ,O,,O
 sl-155,4,3,odvetnik,,odvetnik,Ncmsn,NOUN,O,,O
 sl-155,4,4,Michael,Michael,Michael,Npmsn,PROPN,B-PER,PER-Michael-Cohen,B-PER
-sl-155,4,5,Cohen,Cohen,Cohen,Npmsn,PROPN,I-PER,PER-Michael-Cohen,B-PER
+sl-155,4,5,Cohen,Cohen,Cohen,Npmsn,PROPN,I-PER,PER-Michael-Cohen,I-PER
 sl-155,4,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-155,4,7,priznal,,priznati,Vmep-sm,VERB,O,,O
 sl-155,4,8,",",,",",Z,PUNCT,O,,O
@@ -273,7 +273,7 @@ sl-155,10,20,vprašati,,vprašati,Vmen,VERB,O,,O
 sl-155,10,21,Michaela,Michael,Michael,Npmsay,PROPN,B-PER,PER-Michael-Cohen,B-PER
 sl-155,10,22,Cohena,Cohen,Cohen,Npmsay,PROPN,I-PER,PER-Michael-Cohen,I-PER
 sl-155,10,23,.,,.,Z,PUNCT,O,,O
-sl-155,11,1,Michael,Michael,Michael,Npmsn,PROPN,B-PER,PER-Michael-Cohen,B-PER
+sl-155,11,1,Michael,Michael,Michael,Npmsn,PROPN,B-PER,PER-Michael-Cohen,O
 sl-155,11,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-155,11,3,moj,,moj,Ps1msns,DET,O,,O
 sl-155,11,4,odvetnik,,odvetnik,Ncmsn,NOUN,O,,O

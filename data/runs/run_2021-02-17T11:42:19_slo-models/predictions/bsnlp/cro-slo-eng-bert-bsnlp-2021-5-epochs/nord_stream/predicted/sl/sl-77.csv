@@ -1,8 +1,8 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-77,0,1,Družba,,družba,Ncfsn,NOUN,O,,O
 sl-77,0,2,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-77,0,3,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-77,0,4,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-77,0,4,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-77,0,5,sprožila,,sprožiti,Vmep-sf,VERB,O,,O
 sl-77,0,6,arbitražo,,arbitraža,Ncfsa,NOUN,O,,O
 sl-77,0,7,za,,za,Sa,ADP,O,,O
@@ -13,7 +13,7 @@ sl-77,0,11,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-77,1,1,Družba,,družba,Ncfsn,NOUN,O,,O
 sl-77,1,2,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-77,1,3,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-77,1,4,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-77,1,4,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-77,1,5,",",,",",Z,PUNCT,O,,O
 sl-77,1,6,prek,,prek,Sg,ADP,O,,O
 sl-77,1,7,katere,,kateri,Pq-fsg,DET,O,,O
@@ -31,9 +31,9 @@ sl-77,1,18,je,,biti,Va-r3s-n,AUX,O,,O
 sl-77,1,19,zaradi,,zaradi,Sg,ADP,O,,O
 sl-77,1,20,letos,,letos,Rgp,ADV,O,,O
 sl-77,1,21,spremenjene,,spremenjen,Appfsg,ADJ,O,,O
-sl-77,1,22,plinske,plinska,plinski,Agpfsg,ADJ,B-PRO,PRO-Gas-Directive-EU,O
-sl-77,1,23,direktive,direktiva,direktiva,Ncfsg,NOUN,I-PRO,PRO-Gas-Directive-EU,O
-sl-77,1,24,EU,EU,EU,Npfsg,PROPN,I-PRO,PRO-Gas-Directive-EU,B-ORG
+sl-77,1,22,plinske,plinska,plinski,Agpfsg,ADJ,B-PRO,PRO-Gas-Directive-EU,B-PRO
+sl-77,1,23,direktive,direktiva,direktiva,Ncfsg,NOUN,I-PRO,PRO-Gas-Directive-EU,B-PRO
+sl-77,1,24,EU,EU,EU,Npfsg,PROPN,I-PRO,PRO-Gas-Directive-EU,I-PRO
 sl-77,1,25,sprožila,,sprožiti,Vmep-sf,VERB,O,,O
 sl-77,1,26,postopek,,postopek,Ncmsan,NOUN,O,,O
 sl-77,1,27,arbitraže,,arbitraža,Ncfsg,NOUN,O,,O
@@ -44,7 +44,7 @@ sl-77,1,31,z,,z,Si,ADP,O,,O
 sl-77,1,32,Evropsko,Evropska,evropski,Agpfsi,ADJ,B-ORG,ORG-European-Commission,B-ORG
 sl-77,1,33,komisijo,komisija,komisija,Ncfsi,NOUN,I-ORG,ORG-European-Commission,I-ORG
 sl-77,1,34,.,,.,Z,PUNCT,O,,O
-sl-77,2,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+sl-77,2,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-LOC
 sl-77,2,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-77,2,3,s,,z,Si,ADP,O,,O
 sl-77,2,4,spremembami,,sprememba,Ncfpi,NOUN,O,,O
@@ -56,9 +56,9 @@ sl-77,2,9,ki,,ki,Cs,SCONJ,O,,O
 sl-77,2,10,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-77,2,11,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-77,2,12,po,,po,Sl,ADP,O,,O
-sl-77,2,13,pogodbi,pogodba,pogodba,Ncfsl,NOUN,B-PRO,PRO-Energy-Charter-Treaty,O
-sl-77,2,14,o,o,o,Sl,ADP,I-PRO,PRO-Energy-Charter-Treaty,O
-sl-77,2,15,energetski,energetski,energetski,Agpfsl,ADJ,I-PRO,PRO-Energy-Charter-Treaty,O
+sl-77,2,13,pogodbi,pogodba,pogodba,Ncfsl,NOUN,B-PRO,PRO-Energy-Charter-Treaty,B-PRO
+sl-77,2,14,o,o,o,Sl,ADP,I-PRO,PRO-Energy-Charter-Treaty,I-PRO
+sl-77,2,15,energetski,energetski,energetski,Agpfsl,ADJ,I-PRO,PRO-Energy-Charter-Treaty,I-PRO
 sl-77,2,16,listini,listini,listina,Ncfsl,NOUN,I-PRO,PRO-Energy-Charter-Treaty,I-PRO
 sl-77,2,17,",",,",",Z,PUNCT,O,,O
 sl-77,2,18,je,,biti,Va-r3s-n,AUX,O,,O
@@ -76,7 +76,7 @@ sl-77,2,29,tiskovni,,tiskoven,Agpmsny,ADJ,O,,O
 sl-77,2,30,predstavnik,,predstavnik,Ncmsn,NOUN,O,,O
 sl-77,2,31,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-77,2,32,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-77,2,33,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-77,2,33,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-77,2,34,Jens,Jens,Jens,Npmsn,PROPN,B-PER,PER-Jens-Müller,B-PER
 sl-77,2,35,Müller,Müller,Müller,Npmsn,PROPN,I-PER,PER-Jens-Müller,I-PER
 sl-77,2,36,.,,.,Z,PUNCT,O,,O
@@ -92,7 +92,7 @@ sl-77,3,9,do,,do,Sg,ADP,O,,O
 sl-77,3,10,investicije,,investicija,Ncfsg,NOUN,O,,O
 sl-77,3,11,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-77,3,12,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-77,3,13,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-77,3,13,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-77,3,14,in,,in,Cc,CCONJ,O,,O
 sl-77,3,15,krši,,kršiti,Vmbr3s,VERB,O,,O
 sl-77,3,16,obveznosti,,obveznost,Ncfpa,NOUN,O,,O
@@ -111,7 +111,7 @@ sl-77,3,28,podjetju,,podjetje,Ncnsl,NOUN,O,,O
 sl-77,3,29,.,,.,Z,PUNCT,O,,O
 sl-77,4,1,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-77,4,2,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-77,4,3,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-77,4,3,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-77,4,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-77,4,5,Evropsko,Evropska,evropski,Agpfsa,ADJ,B-ORG,ORG-European-Commission,B-ORG
 sl-77,4,6,komisijo,komisija,komisija,Ncfsa,NOUN,I-ORG,ORG-European-Commission,I-ORG
@@ -179,11 +179,11 @@ sl-77,8,14,obrnila,,obrniti,Vmep-sf,VERB,O,,O
 sl-77,8,15,tudi,,tudi,Q,PART,O,,O
 sl-77,8,16,na,,na,Sa,ADP,O,,O
 sl-77,8,17,Sodišče,Sodišče,sodišče,Ncnsa,NOUN,B-ORG,ORG-European-Court-of-Justice,B-ORG
-sl-77,8,18,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-European-Court-of-Justice,B-ORG
+sl-77,8,18,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-European-Court-of-Justice,I-ORG
 sl-77,8,19,.,,.,Z,PUNCT,O,,O
-sl-77,9,1,Pogodba,pogodba,pogodba,Ncfsn,NOUN,B-PRO,PRO-Energy-Charter-Treaty,O
-sl-77,9,2,o,o,o,Sl,ADP,I-PRO,PRO-Energy-Charter-Treaty,O
-sl-77,9,3,energetski,energetski,energetski,Agpfsl,ADJ,I-PRO,PRO-Energy-Charter-Treaty,O
+sl-77,9,1,Pogodba,pogodba,pogodba,Ncfsn,NOUN,B-PRO,PRO-Energy-Charter-Treaty,B-PRO
+sl-77,9,2,o,o,o,Sl,ADP,I-PRO,PRO-Energy-Charter-Treaty,I-PRO
+sl-77,9,3,energetski,energetski,energetski,Agpfsl,ADJ,I-PRO,PRO-Energy-Charter-Treaty,I-PRO
 sl-77,9,4,listini,listini,listina,Ncfsl,NOUN,I-PRO,PRO-Energy-Charter-Treaty,I-PRO
 sl-77,9,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-77,9,6,večstranski,,večstranski,Agpmsny,ADJ,O,,O
@@ -212,7 +212,7 @@ sl-77,10,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-77,10,10,začela,,začeti,Vmep-sf,VERB,O,,O
 sl-77,10,11,aprila,,april,Ncmsg,NOUN,O,,O
 sl-77,10,12,1998.,,1998.,Mdo,NUM,O,,O
-sl-77,11,1,Trenutno,,trenutno,Rgp,ADV,O,,O
+sl-77,11,1,Trenutno,,trenutno,Rgp,ADV,O,,B-ORG
 sl-77,11,2,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-77,11,3,več,,več,Rgc,DET,O,,O
 sl-77,11,4,kot,,kot,Cs,SCONJ,O,,O
@@ -297,7 +297,7 @@ sl-77,15,8,nadzor,,nadzor,Ncmsan,NOUN,O,,O
 sl-77,15,9,nad,,nad,Si,ADP,O,,O
 sl-77,15,10,plinovodi,,plinovod,Ncmpi,NOUN,O,,O
 sl-77,15,11,",",,",",Z,PUNCT,O,,O
-sl-77,15,12,evropska,Evropa,evropski,Agpfsn,ADJ,B-LOC,LOC-Europe,O
+sl-77,15,12,evropska,Evropa,evropski,Agpfsn,ADJ,B-LOC,LOC-Europe,B-LOC
 sl-77,15,13,zakonodaja,,zakonodaja,Ncfsn,NOUN,O,,O
 sl-77,15,14,naj,,naj,Q,PART,O,,O
 sl-77,15,15,bi,,biti,Va-c,AUX,O,,O
@@ -398,8 +398,8 @@ sl-77,19,10,odstotkov,,odstotek,Ncmpg,NOUN,O,,O
 sl-77,19,11,predvidenih,,predviden,Appfpg,ADJ,O,,O
 sl-77,19,12,cevi,,cev,Ncfpg,NOUN,O,,O
 sl-77,19,13,za,,za,Sa,ADP,O,,O
-sl-77,19,14,Severni,,severen,Agpmsay,ADJ,O,,B-PRO
-sl-77,19,15,tok,,tok,Ncmsan,NOUN,O,,I-PRO
+sl-77,19,14,Severni,,severen,Agpmsay,ADJ,O,,O
+sl-77,19,15,tok,,tok,Ncmsan,NOUN,O,,O
 sl-77,19,16,2.,,2.,Mdo,NUM,O,,O
 sl-77,19,17,Rusijo,Rusija,Rusija,Npfsa,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-77,19,18,in,,in,Cc,CCONJ,O,,O

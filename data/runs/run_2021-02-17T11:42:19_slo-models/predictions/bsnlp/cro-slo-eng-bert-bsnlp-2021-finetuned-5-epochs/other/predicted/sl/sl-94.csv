@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-94,0,1,V,,v,Sl,ADP,O,,O
 sl-94,0,2,Bolgariji,Bolgarija,Bolgarija,Npfsl,PROPN,B-LOC,GPE-Bulgaria,B-LOC
 sl-94,0,3,v,,v,Sl,ADP,O,,O
@@ -105,7 +105,7 @@ sl-94,6,5,drugim,,drug,Mlpnsi,ADJ,O,,O
 sl-94,6,6,zahtevali,,zahtevati,Vmbp-pm,VERB,O,,O
 sl-94,6,7,izpustitev,,izpustitev,Ncfsa,NOUN,O,,O
 sl-94,6,8,ustanovitelja,,ustanovitelj,Ncmsg,NOUN,O,,O
-sl-94,6,9,Wikileaksa,Wikileaks,Wikileaks,Npmsg,PROPN,B-PRO,PRO-Wikileaks,B-PRO
+sl-94,6,9,Wikileaksa,Wikileaks,Wikileaks,Npmsg,PROPN,B-PRO,PRO-Wikileaks,B-ORG
 sl-94,6,10,Juliana,Julian,Julian,Npmsg,PROPN,B-PER,PER-Julian-Assange,B-PER
 sl-94,6,11,Assangea,Assange,Assange,Npmsg,PROPN,I-PER,PER-Julian-Assange,I-PER
 sl-94,6,12,.,,.,Z,PUNCT,O,,O

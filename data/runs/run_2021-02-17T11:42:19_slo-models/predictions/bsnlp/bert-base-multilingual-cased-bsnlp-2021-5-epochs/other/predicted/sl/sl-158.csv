@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-158,0,1,Psihologinja,,psihologinja,Ncfsn,NOUN,O,,O
 sl-158,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-158,0,3,",",,",",Z,PUNCT,O,,O
@@ -11,7 +11,7 @@ sl-158,0,9,gnal,,gnati,Vmpp-sm,VERB,O,,O
 sl-158,0,10,narcistični,,narcističen,Agpmsay,ADJ,O,,O
 sl-158,0,11,bes,,bes,Ncmsan,NOUN,O,,O
 sl-158,1,1,Bojan,Bojan,Bojan,Npmsn,PROPN,B-PER,PER-Bojan-Kajfež,B-PER
-sl-158,1,2,Kajfež,Kajfež,Kajfež,Npmsn,PROPN,I-PER,PER-Bojan-Kajfež,B-PER
+sl-158,1,2,Kajfež,Kajfež,Kajfež,Npmsn,PROPN,I-PER,PER-Bojan-Kajfež,I-PER
 sl-158,1,3,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-158,1,4,narcistično,,narcističen,Agpfsa,ADJ,O,,O
 sl-158,1,5,motnjo,,motnja,Ncfsa,NOUN,O,,O
@@ -31,7 +31,7 @@ sl-158,1,18,psihologinja,,psihologinja,Ncfsn,NOUN,O,,O
 sl-158,1,19,.,,.,Z,PUNCT,O,,O
 sl-158,2,1,Enainpetdesetletni,,enainpetdesetleten,Agpmsny,ADJ,O,,O
 sl-158,2,2,Bojan,Bojan,Bojan,Npmsn,PROPN,B-PER,PER-Bojan-Kajfež,B-PER
-sl-158,2,3,Kajfež,Kajfež,Kajfež,Npmsn,PROPN,I-PER,PER-Bojan-Kajfež,B-PER
+sl-158,2,3,Kajfež,Kajfež,Kajfež,Npmsn,PROPN,I-PER,PER-Bojan-Kajfež,I-PER
 sl-158,2,4,",",,",",Z,PUNCT,O,,O
 sl-158,2,5,ki,,ki,Cs,SCONJ,O,,O
 sl-158,2,6,mu,,on,Pp3msd--y,PRON,O,,O
@@ -503,7 +503,7 @@ sl-158,29,18,mu,,on,Pp3msd--y,PRON,O,,O
 sl-158,29,19,je,,biti,Va-r3s-n,AUX,O,,O
 sl-158,29,20,posmehovala,,posmehovati,Vmpp-sf,VERB,O,,O
 sl-158,29,21,.,,.,Z,PUNCT,O,,O
-sl-158,30,1,On,,on,Pp3msn,PRON,O,,O
+sl-158,30,1,On,,on,Pp3msn,PRON,O,,B-PER
 sl-158,30,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-158,30,3,po,,po,Sl,ADP,O,,O
 sl-158,30,4,drugi,,drug,Mlpfsl,ADJ,O,,O

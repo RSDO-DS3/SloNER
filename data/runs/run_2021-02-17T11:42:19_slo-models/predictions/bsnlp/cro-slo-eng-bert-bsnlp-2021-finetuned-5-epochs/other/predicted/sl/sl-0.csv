@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-0,0,1,Adria,Adria,Adria,Npfsn,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-0,0,2,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
 sl-0,0,3,s,,z,Si,ADP,O,,O
@@ -64,14 +64,14 @@ sl-0,2,25,v,,v,Sl,ADP,O,,O
 sl-0,2,26,srednji,srednja,srednji,Agpfsl,ADJ,B-LOC,LOC-Central-Europe,B-LOC
 sl-0,2,27,in,,in,Cc,CCONJ,O,,O
 sl-0,2,28,jugovzhodni,jugovzhodna,jugovzhoden,Agpfsl,ADJ,B-LOC,LOC-Southeast-Europe,B-LOC
-sl-0,2,29,Evropi,Evropa,Evropa,Npfsl,PROPN,I-LOC,LOC-Southeast-Europe,B-LOC
+sl-0,2,29,Evropi,Evropa,Evropa,Npfsl,PROPN,I-LOC,LOC-Southeast-Europe,I-LOC
 sl-0,2,30,.,,.,Z,PUNCT,O,,O
 sl-0,3,1,Direktor,,direktor,Ncmsn,NOUN,O,,O
 sl-0,3,2,družbe,,družba,Ncfsg,NOUN,O,,O
 sl-0,3,3,Adria,Adria,Adria,Npfsn,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-0,3,4,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
 sl-0,3,5,Holger,Holger,Holger,Npmsn,PROPN,B-PER,PER-Holger-Kowarsch,B-PER
-sl-0,3,6,Kowarsch,Kowarsch,Kowarsch,Npmsn,PROPN,I-PER,PER-Holger-Kowarsch,B-PER
+sl-0,3,6,Kowarsch,Kowarsch,Kowarsch,Npmsn,PROPN,I-PER,PER-Holger-Kowarsch,I-PER
 sl-0,3,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-0,3,8,ob,,ob,Sl,ADP,O,,O
 sl-0,3,9,novici,,novica,Ncfsl,NOUN,O,,O
@@ -149,7 +149,7 @@ sl-0,7,11,lasti,,last,Ncfsl,NOUN,O,,O
 sl-0,7,12,nemškega,,nemški,Agpmsg,ADJ,O,,O
 sl-0,7,13,sklada,,sklad,Ncmsg,NOUN,O,,O
 sl-0,7,14,4,4,4,Mdc,NUM,B-ORG,ORG-4K-Invest,B-ORG
-sl-0,7,15,K,K,k,Sd,ADP,I-ORG,ORG-4K-Invest,B-ORG
+sl-0,7,15,K,K,k,Sd,ADP,I-ORG,ORG-4K-Invest,I-ORG
 sl-0,7,16,Invest,Invest,Invest,Npmsn,PROPN,I-ORG,ORG-4K-Invest,I-ORG
 sl-0,7,17,",",,",",Z,PUNCT,O,,O
 sl-0,7,18,skoraj,,skoraj,Q,PART,O,,O
@@ -190,7 +190,7 @@ sl-0,7,52,na,,na,Sl,ADP,O,,O
 sl-0,7,53,področju,,področje,Ncnsl,NOUN,O,,O
 sl-0,7,54,izvajanja,,izvajanje,Ncnsg,NOUN,O,,O
 sl-0,7,55,storitev,,storitev,Ncfpg,NOUN,O,,O
-sl-0,7,56,ACMI,,ACMI,Npmsn,PROPN,O,,O
+sl-0,7,56,ACMI,,ACMI,Npmsn,PROPN,O,,B-PRO
 sl-0,7,57,(,,(,Z,PUNCT,O,,O
 sl-0,7,58,zakup,,zakup,Ncmsn,NOUN,O,,O
 sl-0,7,59,letala,,letalo,Ncnsg,NOUN,O,,O

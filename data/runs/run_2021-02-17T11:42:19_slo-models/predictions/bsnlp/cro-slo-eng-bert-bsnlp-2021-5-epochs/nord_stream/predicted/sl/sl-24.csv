@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-24,0,1,Plinska,,plinski,Agpfsn,ADJ,O,,O
 sl-24,0,2,vojna,,vojna,Ncfsn,NOUN,O,,O
 sl-24,0,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -209,14 +209,14 @@ sl-24,8,28,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-24,8,29,ruski,,ruski,Agpmsny,ADJ,O,,O
 sl-24,8,30,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-24,8,31,Vladimir,Vladimir,Vladimir,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
-sl-24,8,32,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,B-PER
+sl-24,8,32,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,I-PER
 sl-24,8,33,javno,,javno,Rgp,ADV,O,,O
 sl-24,8,34,ponuja,,ponujati,Vmpr3s,VERB,O,,O
 sl-24,8,35,s,,z,Si,ADP,O,,O
-sl-24,8,36,25-odstotnim,,25vodstoten,Agpmsi,ADJ,O,,I-PRO
+sl-24,8,36,25-odstotnim,,25vodstoten,Agpmsi,ADJ,O,,O
 sl-24,8,37,popustom,,popust,Ncmsi,NOUN,O,,O
 sl-24,8,38,.,,.,Z,PUNCT,O,,O
-sl-24,9,1,Kijev,Kijev,Kijev,Npmsn,PROPN,B-LOC,GPE-Kiev,B-LOC
+sl-24,9,1,Kijev,Kijev,Kijev,Npmsn,PROPN,B-LOC,GPE-Kiev,B-PER
 sl-24,9,2,",",,",",Z,PUNCT,O,,O
 sl-24,9,3,ki,,ki,Cs,SCONJ,O,,O
 sl-24,9,4,si,,se,Px---d--y,PRON,O,,O
@@ -317,7 +317,7 @@ sl-24,12,30,še,,še,Q,PART,O,,O
 sl-24,12,31,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-24,12,32,jasno,,jasen,Agpnsn,ADJ,O,,O
 sl-24,12,33,.,,.,Z,PUNCT,O,,O
-sl-24,13,1,Evropa,Evropa,Evropa,Npfsn,PROPN,B-LOC,LOC-Europe,B-LOC
+sl-24,13,1,Evropa,Evropa,Evropa,Npfsn,PROPN,B-LOC,LOC-Europe,O
 sl-24,13,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-24,13,3,pripravljena,,pripravljen,Appfsn,ADJ,O,,O
 sl-24,14,1,Dosedanja,,dosedanji,Agpfsn,ADJ,O,,O
@@ -480,7 +480,7 @@ sl-24,20,27,lani,,lani,Rgp,ADV,O,,O
 sl-24,20,28,Gazprom,Gazprom,Gazprom,Npmsn,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-24,20,29,prek,,prek,Sg,ADP,O,,O
 sl-24,20,30,omrežja,,omrežje,Ncnsg,NOUN,O,,O
-sl-24,20,31,ukrajinskega,,ukrajinski,Agpmsg,ADJ,O,,B-LOC
+sl-24,20,31,ukrajinskega,,ukrajinski,Agpmsg,ADJ,O,,O
 sl-24,20,32,Naftogaza,Naftogaz,Naftogaz,Npmsg,PROPN,B-ORG,ORG-Naftogaz,B-ORG
 sl-24,20,33,poslal,,poslati,Vmep-sm,VERB,O,,O
 sl-24,20,34,87,,87,Mdc,NUM,O,,O
@@ -499,7 +499,7 @@ sl-24,20,46,njegovega,,njegov,Ps3msgsm,DET,O,,O
 sl-24,20,47,izvoza,,izvoz,Ncmsg,NOUN,O,,O
 sl-24,20,48,v,,v,Sa,ADP,O,,O
 sl-24,20,49,Zahodno,Zahodna,zahoden,Agpfsa,ADJ,B-LOC,LOC-Western-Europe,B-LOC
-sl-24,20,50,Evropo,Evropa,Evropa,Npfsa,PROPN,I-LOC,LOC-Western-Europe,B-LOC
+sl-24,20,50,Evropo,Evropa,Evropa,Npfsa,PROPN,I-LOC,LOC-Western-Europe,I-LOC
 sl-24,20,51,in,,in,Cc,CCONJ,O,,O
 sl-24,20,52,Turčijo,Turčija,Turčija,Npfsa,PROPN,B-LOC,GPE-Turkey,B-LOC
 sl-24,20,53,.,,.,Z,PUNCT,O,,O
@@ -518,7 +518,7 @@ sl-24,21,12,postavlja,,postavljati,Vmpr3s,VERB,O,,O
 sl-24,21,13,še,,še,Q,PART,O,,O
 sl-24,21,14,dve,,dva,Mlcfda,NUM,O,,O
 sl-24,21,15,alternativi,,alternativa,Ncfda,NOUN,O,,O
-sl-24,21,16,ukrajinski,,ukrajinski,Agpfsd,ADJ,O,,B-LOC
+sl-24,21,16,ukrajinski,,ukrajinski,Agpfsd,ADJ,O,,O
 sl-24,21,17,poti,,pot,Ncfda,NOUN,O,,O
 sl-24,21,18,",",,",",Z,PUNCT,O,,O
 sl-24,21,19,Turški,Turški,turški,Agpmsay,ADJ,B-PRO,PRO-TurkStream,B-PRO
@@ -610,7 +610,7 @@ sl-24,24,14,",",,",",Z,PUNCT,O,,O
 sl-24,24,15,a,,a,Cc,CCONJ,O,,O
 sl-24,24,16,da,,da,Cs,SCONJ,O,,O
 sl-24,24,17,Rusijo,Rusija,Rusija,Npfsa,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-24,24,18,ukrajinski,,ukrajinski,Agpmsny,ADJ,O,,B-LOC
+sl-24,24,18,ukrajinski,,ukrajinski,Agpmsny,ADJ,O,,O
 sl-24,24,19,tranzit,,tranzit,Ncmsn,NOUN,O,,O
 sl-24,24,20,še,,še,Q,PART,O,,O
 sl-24,24,21,vedno,,vedno,Rgp,ADV,O,,O
@@ -633,5 +633,5 @@ sl-24,24,37,v,,v,Sa,ADP,O,,O
 sl-24,24,38,srednjo,srednji,srednji,Agpfsa,ADJ,B-LOC,LOC-Central-Europe,B-LOC
 sl-24,24,39,in,,in,Cc,CCONJ,O,,O
 sl-24,24,40,južno,južna,južen,Agpfsa,ADJ,B-LOC,LOC-Southern-Europe,B-LOC
-sl-24,24,41,Evropo,Evropa,Evropa,Npfsa,PROPN,I-LOC,LOC-Southern-Europe,B-LOC
+sl-24,24,41,Evropo,Evropa,Evropa,Npfsa,PROPN,I-LOC,LOC-Southern-Europe,I-LOC
 sl-24,24,42,.,,.,Z,PUNCT,O,,O

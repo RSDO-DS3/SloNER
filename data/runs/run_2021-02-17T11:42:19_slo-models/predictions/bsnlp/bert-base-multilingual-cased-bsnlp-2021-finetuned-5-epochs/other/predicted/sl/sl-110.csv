@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-110,0,1,Piranski,,piranski,Agpmsny,ADJ,O,,O
 sl-110,0,2,župan,,župan,Ncmsn,NOUN,O,,O
 sl-110,0,3,trdi,,trditi,Vmpr3s,VERB,O,,O
@@ -40,7 +40,7 @@ sl-110,1,26,",",,",",Z,PUNCT,O,,O
 sl-110,1,27,odzval,,odzvati,Vmep-sm,VERB,O,,O
 sl-110,1,28,župan,,župan,Ncmsn,NOUN,O,,O
 sl-110,1,29,Đenio,Đenio,Đenio,Npmsn,PROPN,B-PER,PER-Đenio-Zadković,B-PER
-sl-110,1,30,Zadković,Zadković,Zadković,Npmsn,PROPN,I-PER,PER-Đenio-Zadković,B-PER
+sl-110,1,30,Zadković,Zadković,Zadković,Npmsn,PROPN,I-PER,PER-Đenio-Zadković,I-PER
 sl-110,1,31,.,,.,Z,PUNCT,O,,O
 sl-110,2,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-110,2,2,je,,biti,Va-r3s-n,AUX,O,,O

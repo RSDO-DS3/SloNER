@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-172,0,1,Kraljičin,,kraljičin,Aspmsnn,ADJ,O,,B-PER
 sl-172,0,2,govor,,govor,Ncmsn,NOUN,O,,O
 sl-172,0,3,kot,,kot,Cs,SCONJ,O,,O
@@ -45,7 +45,7 @@ sl-172,3,1,Njegov,,njegov,Ps3msnsm,DET,O,,O
 sl-172,3,2,ključen,,ključen,Agpmsnn,ADJ,O,,O
 sl-172,3,3,del,,del,Ncmsn,NOUN,O,,O
 sl-172,3,4,je,,biti,Va-r3s-n,AUX,O,,O
-sl-172,3,5,kraljičin,,kraljičin,Agpmsnn,ADJ,O,,O
+sl-172,3,5,kraljičin,,kraljičin,Agpmsnn,ADJ,O,,B-PER
 sl-172,3,6,govor,,govor,Ncmsn,NOUN,O,,O
 sl-172,3,7,",",,",",Z,PUNCT,O,,O
 sl-172,3,8,v,,v,Sl,ADP,O,,O
@@ -53,7 +53,7 @@ sl-172,3,9,katerem,,kateri,Pq-msl,DET,O,,O
 sl-172,3,10,britanska,Britanska,britanski,Agpfsn,ADJ,B-PER,PER-Queen-Elizabeth-II,O
 sl-172,3,11,monarhinja,monarhinja,monarhinja,Ncfsn,NOUN,I-PER,PER-Queen-Elizabeth-II,O
 sl-172,3,12,Elizabeta,,Elizabeta,Npfsn,PROPN,O,,B-PER
-sl-172,3,13,II.,,II.,Mro,NUM,O,,O
+sl-172,3,13,II.,,II.,Mro,NUM,O,,I-PER
 sl-172,3,14,predstavi,,predstaviti,Vmer3s,VERB,O,,O
 sl-172,3,15,zakonodajno,,zakonodajen,Agpfsa,ADJ,O,,O
 sl-172,3,16,agendo,,agenda,Ncfsa,NOUN,O,,O
@@ -62,7 +62,7 @@ sl-172,3,18,britanske,,britanski,Agpfsg,ADJ,O,,O
 sl-172,3,19,vlade,,vlada,Ncfsg,NOUN,O,,O
 sl-172,3,20,.,,.,Z,PUNCT,O,,O
 sl-172,4,1,Tokratni,,tokraten,Agpmsny,ADJ,O,,O
-sl-172,4,2,kraljičin,,kraljičin,Agpmsnn,ADJ,O,,O
+sl-172,4,2,kraljičin,,kraljičin,Agpmsnn,ADJ,O,,B-PER
 sl-172,4,3,govor,,govor,Ncmsn,NOUN,O,,O
 sl-172,4,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-172,4,5,po,,po,Sl,ADP,O,,O
@@ -109,7 +109,7 @@ sl-172,5,11,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-172,5,12,ključna,,ključen,Agpfsn,ADJ,O,,O
 sl-172,5,13,prioriteta,,prioriteta,Ncfsn,NOUN,O,,O
 sl-172,5,14,Johnsonove,Johnson,Johnsonov,Aspfsg,ADJ,B-PER,PER-Boris-Johnson,B-PER
-sl-172,5,15,konservativne,,konservativen,Agpfsg,ADJ,O,,B-ORG
+sl-172,5,15,konservativne,,konservativen,Agpfsg,ADJ,O,,B-PER
 sl-172,5,16,vlade,,vlada,Ncfsg,NOUN,O,,O
 sl-172,5,17,in,,in,Cc,CCONJ,O,,O
 sl-172,5,18,podlaga,,podlaga,Ncfsn,NOUN,O,,O

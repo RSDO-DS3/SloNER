@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-113,0,1,Pogajalci,,pogajalec,Ncmpn,NOUN,O,,O
 sl-113,0,2,v,,v,Sl,ADP,O,,O
 sl-113,0,3,predoru,,predor,Ncmsl,NOUN,O,,O
@@ -17,15 +17,15 @@ sl-113,1,9,ne,,ne,Q,PART,O,,O
 sl-113,1,10,bo,,biti,Va-f3s-n,VERB,O,,O
 sl-113,1,11,pred,,pred,Si,ADP,O,,O
 sl-113,1,12,vrhom,vrh,vrh,Ncmsi,NOUN,B-EVT,EVT-EU-summit,B-EVT
-sl-113,1,13,EU,EU,EU,Npfsg,PROPN,I-EVT,EVT-EU-summit,B-ORG
+sl-113,1,13,EU,EU,EU,Npfsg,PROPN,I-EVT,EVT-EU-summit,I-EVT
 sl-113,1,14,prihodnji,,prihodnji,Agpmsay,ADJ,O,,O
 sl-113,1,15,teden,,teden,Ncmsan,NOUN,O,,O
 sl-113,1,16,.,,.,Z,PUNCT,O,,O
-sl-113,2,1,Bruselj,Bruselj,Bruselj,Npmsn,PROPN,B-LOC,GPE-Brussles,B-LOC
+sl-113,2,1,Bruselj,Bruselj,Bruselj,Npmsn,PROPN,B-LOC,GPE-Brussles,O
 sl-113,2,2,–,,–,Z,PUNCT,O,,O
 sl-113,2,3,Pred,,pred,Si,ADP,O,,O
 sl-113,2,4,vrhom,vrh,vrh,Ncmsi,NOUN,B-EVT,EVT-EU-summit,B-EVT
-sl-113,2,5,EU,EU,EU,Npfsg,PROPN,I-EVT,EVT-EU-summit,B-ORG
+sl-113,2,5,EU,EU,EU,Npfsg,PROPN,I-EVT,EVT-EU-summit,I-EVT
 sl-113,2,6,bi,,biti,Va-c,AUX,O,,O
 sl-113,2,7,-,,-,Z,PUNCT,O,,O
 sl-113,2,8,večja,,velik,Agcfsn,ADJ,O,,O
@@ -144,7 +144,7 @@ sl-113,6,21,izstop,,izstop,Ncmsan,NOUN,O,,O
 sl-113,6,22,iz,,iz,Sg,ADP,O,,O
 sl-113,6,23,Unije,Unija,unija,Ncfsg,NOUN,B-ORG,ORG-European-Union,B-ORG
 sl-113,6,24,Stevom,Steve,Steve,Npmsi,PROPN,B-PER,PER-Steve-Barclay,B-PER
-sl-113,6,25,Barclayjem,Barclay,Barclay,Npmsi,PROPN,I-PER,PER-Steve-Barclay,B-PER
+sl-113,6,25,Barclayjem,Barclay,Barclay,Npmsi,PROPN,I-PER,PER-Steve-Barclay,I-PER
 sl-113,6,26,.,,.,Z,PUNCT,O,,O
 sl-113,7,1,Pogajalci,,pogajalec,Ncmpn,NOUN,O,,O
 sl-113,7,2,naj,,naj,Q,PART,O,,O
@@ -257,7 +257,7 @@ sl-113,12,16,evropskega,evropski,evropski,Agpmsg,ADJ,B-ORG,ORG-European-Council,
 sl-113,12,17,sveta,svet,svet,Ncmsg,NOUN,I-ORG,ORG-European-Council,I-ORG
 sl-113,12,18,-,,-,Z,PUNCT,O,,O
 sl-113,12,19,Donalda,Donald,Donald,Npmsg,PROPN,B-PER,PER-Donald-Tusk,B-PER
-sl-113,12,20,Tuska,Tusk,Tusko,Npmsg,PROPN,I-PER,PER-Donald-Tusk,B-PER
+sl-113,12,20,Tuska,Tusk,Tusko,Npmsg,PROPN,I-PER,PER-Donald-Tusk,I-PER
 sl-113,12,21,.,,.,Z,PUNCT,O,,O
 sl-113,13,1,Opozoril,,opozoriti,Vmep-sm,VERB,O,,O
 sl-113,13,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -388,12 +388,12 @@ sl-113,20,12,carinski,,carinski,Agpmsny,ADJ,O,,O
 sl-113,20,13,nadzor,,nadzor,Ncmsn,NOUN,O,,O
 sl-113,20,14,potekal,,potekati,Vmpp-sm,VERB,O,,O
 sl-113,20,15,na,,na,Sl,ADP,O,,O
-sl-113,20,16,zelenem,,zelen,Agpmsl,ADJ,O,,B-LOC
+sl-113,20,16,zelenem,,zelen,Agpmsl,ADJ,O,,O
 sl-113,20,17,otoku,otok,otok,Ncmsl,NOUN,B-LOC,GPE-Great-Britain,I-LOC
 sl-113,20,18,",",,",",Z,PUNCT,O,,O
 sl-113,20,19,med,,med,Si,ADP,O,,O
 sl-113,20,20,Severno,Severna,severen,Agpfsi,ADJ,B-LOC,GPE-Northern-Ireland,B-LOC
-sl-113,20,21,Irsko,Irska,Irska,Npfsi,PROPN,I-LOC,GPE-Northern-Ireland,B-LOC
+sl-113,20,21,Irsko,Irska,Irska,Npfsi,PROPN,I-LOC,GPE-Northern-Ireland,I-LOC
 sl-113,20,22,in,,in,Cc,CCONJ,O,,O
 sl-113,20,23,Irsko,Irska,Irska,Npfsi,PROPN,B-LOC,GPE-Republic-of-Ireland,B-LOC
 sl-113,20,24,.,,.,Z,PUNCT,O,,O
@@ -424,7 +424,7 @@ sl-113,22,1,Vzpostavljanje,,vzpostavljanje,Ncnsn,NOUN,O,,O
 sl-113,22,2,nadzora,,nadzor,Ncmsg,NOUN,O,,O
 sl-113,22,3,na,,na,Sl,ADP,O,,O
 sl-113,22,4,zelenem,,zelen,Agpmsl,ADJ,O,,O
-sl-113,22,5,otoku,otok,otok,Ncmsl,NOUN,B-LOC,GPE-Great-Britain,I-LOC
+sl-113,22,5,otoku,otok,otok,Ncmsl,NOUN,B-LOC,GPE-Great-Britain,O
 sl-113,22,6,bi,,biti,Va-c,AUX,O,,O
 sl-113,22,7,že,,že,Q,PART,O,,O
 sl-113,22,8,tako,,tako,Rgp,ADV,O,,O
@@ -516,7 +516,7 @@ sl-113,25,18,regulatorno,,regulatorno,Rgp,ADV,O,,O
 sl-113,25,19,vezana,,vezan,Appfsn,ADJ,O,,O
 sl-113,25,20,na,,na,Sa,ADP,O,,O
 sl-113,25,21,pravila,,pravilo,Ncnpa,NOUN,O,,O
-sl-113,25,22,evropskega,,evropski,Agpmsg,ADJ,O,,B-ORG
+sl-113,25,22,evropskega,,evropski,Agpmsg,ADJ,O,,O
 sl-113,25,23,notranjega,,notranji,Agpmsg,ADJ,O,,O
 sl-113,25,24,trga,,trg,Ncmsg,NOUN,O,,O
 sl-113,25,25,",",,",",Z,PUNCT,O,,O
@@ -535,7 +535,7 @@ sl-113,25,37,),,),Z,PUNCT,O,,O
 sl-113,25,38,",",,",",Z,PUNCT,O,,O
 sl-113,25,39,je,,biti,Va-r3s-n,AUX,O,,O
 sl-113,25,40,za,,za,Sa,ADP,O,,O
-sl-113,25,41,Johnsona,Johnson,Johnson,Npmsay,PROPN,B-PER,PER-Boris-Johnson,I-PER
+sl-113,25,41,Johnsona,Johnson,Johnson,Npmsay,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-113,25,42,nesprejemljivo,,nesprejemljiv,Agpnsn,ADJ,O,,O
 sl-113,25,43,.,,.,Z,PUNCT,O,,O
 sl-113,26,1,Ni,,biti,Va-r3s-y,AUX,O,,O
@@ -638,8 +638,8 @@ sl-113,30,21,.,,.,Z,PUNCT,O,,O
 sl-113,31,1,Tudi,,tudi,Q,PART,O,,O
 sl-113,31,2,zato,,zato,Cc,CCONJ,O,,O
 sl-113,31,3,je,,biti,Va-r3s-n,AUX,O,,O
-sl-113,31,4,britanski,britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,O
-sl-113,31,5,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,O
+sl-113,31,4,britanski,britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,B-ORG
+sl-113,31,5,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-113,31,6,septembra,,september,Ncmsg,NOUN,O,,O
 sl-113,31,7,mimo,,mimo,Sg,ADP,O,,O
 sl-113,31,8,vlade,,vlada,Ncfsg,NOUN,O,,O
@@ -728,7 +728,7 @@ sl-113,34,7,zlasti,,zlasti,Q,PART,O,,O
 sl-113,34,8,njegovo,,njegov,Ps3nsasm,DET,O,,O
 sl-113,34,9,srečanje,,srečanje,Ncnsa,NOUN,O,,O
 sl-113,34,10,z,,z,Si,ADP,O,,O
-sl-113,34,11,irskim,,irski,Agpmsi,ADJ,O,,B-LOC
+sl-113,34,11,irskim,,irski,Agpmsi,ADJ,O,,O
 sl-113,34,12,premierom,,premier,Ncmsi,NOUN,O,,O
 sl-113,34,13,Leom,Leo,Leo,Npmsi,PROPN,B-PER,PER-Leo-Varadkar,B-PER
 sl-113,34,14,Varadkarjem,Varadkar,Varadkar,Npmsi,PROPN,I-PER,PER-Leo-Varadkar,I-PER
@@ -739,7 +739,7 @@ sl-113,34,18,kot,,kot,Cs,SCONJ,O,,O
 sl-113,34,19,dokaz,,dokaz,Ncmsan,NOUN,O,,O
 sl-113,34,20,",",,",",Z,PUNCT,O,,O
 sl-113,34,21,da,,da,Cs,SCONJ,O,,O
-sl-113,34,22,britanskemu,,britanski,Agpmsd,ADJ,O,,B-ORG
+sl-113,34,22,britanskemu,,britanski,Agpmsd,ADJ,O,,O
 sl-113,34,23,premieru,,premier,Ncmsd,NOUN,O,,O
 sl-113,34,24,dejansko,,dejansko,Rgp,ADV,O,,O
 sl-113,34,25,je,,biti,Va-r3s-n,VERB,O,,O
@@ -801,7 +801,7 @@ sl-113,35,34,ampak,,ampak,Cc,CCONJ,O,,O
 sl-113,35,35,odsev,,odsev,Ncmsn,NOUN,O,,O
 sl-113,35,36,prepričanj,,prepričanje,Ncnpg,NOUN,O,,O
 sl-113,35,37,širše,,širok,Agcfsg,ADJ,O,,O
-sl-113,35,38,otoške,,otoški,Agpfsg,ADJ,O,,B-LOC
+sl-113,35,38,otoške,,otoški,Agpfsg,ADJ,O,,O
 sl-113,35,39,javnosti,,javnost,Ncfsg,NOUN,O,,O
 sl-113,35,40,ter,,ter,Cc,CCONJ,O,,O
 sl-113,35,41,njegovih,,njegov,Ps3mpgsm,DET,O,,O

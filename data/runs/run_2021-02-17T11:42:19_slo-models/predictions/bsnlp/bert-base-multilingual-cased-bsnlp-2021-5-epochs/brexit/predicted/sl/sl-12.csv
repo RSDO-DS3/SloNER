@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-12,0,1,Bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-12,0,2,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-12,0,3,preložili,,preložiti,Vmep-pm,VERB,O,,O
@@ -79,7 +79,7 @@ sl-12,4,10,med,,med,Si,ADP,O,,O
 sl-12,4,11,obiskom,,obisk,Ncmsi,NOUN,O,,O
 sl-12,4,12,na,,na,Sl,ADP,O,,O
 sl-12,4,13,Severnem,Severna,severen,Agpnsl,ADJ,B-LOC,GPE-Northern-Ireland,B-LOC
-sl-12,4,14,Irskem,Irska,Irsko,Npnsl,PROPN,I-LOC,GPE-Northern-Ireland,B-LOC
+sl-12,4,14,Irskem,Irska,Irsko,Npnsl,PROPN,I-LOC,GPE-Northern-Ireland,I-LOC
 sl-12,4,15,namignila,,namigniti,Vmep-sf,VERB,O,,O
 sl-12,4,16,",",,",",Z,PUNCT,O,,O
 sl-12,4,17,da,,da,Cs,SCONJ,O,,O
@@ -430,13 +430,13 @@ sl-12,21,1,Britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-12,21,2,finančni,,finančen,Agpmsny,ADJ,O,,O
 sl-12,21,3,minister,,minister,Ncmsn,NOUN,O,,O
 sl-12,21,4,Philip,Philip,Philip,Npmsn,PROPN,B-PER,PER-Philip-Hammond,B-PER
-sl-12,21,5,Hammond,Hammond,Hammond,Npmsn,PROPN,I-PER,PER-Philip-Hammond,B-PER
+sl-12,21,5,Hammond,Hammond,Hammond,Npmsn,PROPN,I-PER,PER-Philip-Hammond,I-PER
 sl-12,21,6,in,,in,Cc,CCONJ,O,,O
 sl-12,21,7,minister,,minister,Ncmsn,NOUN,O,,O
 sl-12,21,8,za,,za,Sa,ADP,O,,O
 sl-12,21,9,trgovino,,trgovina,Ncfsa,NOUN,O,,O
 sl-12,21,10,Liam,Liam,Liam,Npmsn,PROPN,B-PER,PER-Liam-Fox,B-PER
-sl-12,21,11,Fox,Fox,Fox,Npmsn,PROPN,I-PER,PER-Liam-Fox,B-PER
+sl-12,21,11,Fox,Fox,Fox,Npmsn,PROPN,I-PER,PER-Liam-Fox,I-PER
 sl-12,21,12,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-12,21,13,že,,že,Q,PART,O,,O
 sl-12,21,14,minuli,,minul,Appmsay,ADJ,O,,O
@@ -592,7 +592,7 @@ sl-12,26,33,z,,z,Si,ADP,O,,O
 sl-12,26,34,alternativno,,alternativen,Agpfsi,ADJ,O,,O
 sl-12,26,35,ureditvijo,,ureditev,Ncfsi,NOUN,O,,O
 sl-12,26,36,.,,.,Z,PUNCT,O,,O
-sl-12,27,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+sl-12,27,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-LOC
 sl-12,27,2,vztrajno,,vztrajno,Rgp,ADV,O,,O
 sl-12,27,3,zavrača,,zavračati,Vmpr3s,VERB,O,,O
 sl-12,27,4,nova,,nov,Agpnpa,ADJ,O,,O

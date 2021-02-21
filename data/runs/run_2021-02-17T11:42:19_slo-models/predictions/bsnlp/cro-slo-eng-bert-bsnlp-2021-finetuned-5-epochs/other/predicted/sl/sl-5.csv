@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-5,0,1,Med,,med,Si,ADP,O,,O
 sl-5,0,2,prtljago,,prtljaga,Ncfsi,NOUN,O,,O
 sl-5,0,3,na,,na,Sl,ADP,O,,O
@@ -13,9 +13,9 @@ sl-5,1,1,Med,,med,Si,ADP,O,,O
 sl-5,1,2,patruljiranjem,,patruljiranje,Ncnsi,NOUN,O,,O
 sl-5,1,3,po,,po,Sl,ADP,O,,O
 sl-5,1,4,mednarodnem,mednarodno,mednaroden,Agpnsl,ADJ,B-LOC,ORG-Tijuana-International-Airport,B-LOC
-sl-5,1,5,letališču,letališče,letališče,Ncnsl,NOUN,I-LOC,ORG-Tijuana-International-Airport,O
-sl-5,1,6,v,v,v,Sl,ADP,I-LOC,ORG-Tijuana-International-Airport,O
-sl-5,1,7,Tijuani,Tijuani,Tijuana,Npfsl,PROPN,I-LOC,ORG-Tijuana-International-Airport,B-LOC
+sl-5,1,5,letališču,letališče,letališče,Ncnsl,NOUN,I-LOC,ORG-Tijuana-International-Airport,I-LOC
+sl-5,1,6,v,v,v,Sl,ADP,I-LOC,ORG-Tijuana-International-Airport,I-LOC
+sl-5,1,7,Tijuani,Tijuani,Tijuana,Npfsl,PROPN,I-LOC,ORG-Tijuana-International-Airport,I-LOC
 sl-5,1,8,so,,biti,Va-r3p-n,AUX,O,,O
 sl-5,1,9,policisti,,policist,Ncmpn,NOUN,O,,O
 sl-5,1,10,pred,,pred,Si,ADP,O,,O
@@ -71,7 +71,7 @@ sl-5,4,1,Po,,po,Sl,ADP,O,,O
 sl-5,4,2,navajanju,,navajanje,Ncnsl,NOUN,O,,O
 sl-5,4,3,portala,,portalo,Ncnsg,NOUN,O,,O
 sl-5,4,4,The,The,the,Xf,X,B-PRO,PRO-The-Dodo,B-PRO
-sl-5,4,5,Dodo,Dodo,Dodo,Npmsn,PROPN,I-PRO,PRO-The-Dodo,B-PRO
+sl-5,4,5,Dodo,Dodo,Dodo,Npmsn,PROPN,I-PRO,PRO-The-Dodo,I-PRO
 sl-5,4,6,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-5,4,7,bila,,biti,Va-p-dm,AUX,O,,O
 sl-5,4,8,nekaj,,nekaj,Rgp,DET,O,,O
@@ -154,7 +154,7 @@ sl-5,9,1,Po,,po,Sl,ADP,O,,O
 sl-5,9,2,pisanju,,pisanje,Ncnsl,NOUN,O,,O
 sl-5,9,3,portala,,portalo,Ncnsg,NOUN,O,,O
 sl-5,9,4,The,The,the,Xf,X,B-PRO,PRO-The-Dodo,B-PRO
-sl-5,9,5,Dodo,Dodo,Dodo,Npmsn,PROPN,I-PRO,PRO-The-Dodo,B-PRO
+sl-5,9,5,Dodo,Dodo,Dodo,Npmsn,PROPN,I-PRO,PRO-The-Dodo,I-PRO
 sl-5,9,6,so,,biti,Va-r3p-n,AUX,O,,O
 sl-5,9,7,bili,,biti,Va-p-pm,AUX,O,,O
 sl-5,9,8,vsi,,ves,Pg-mpn,DET,O,,O
@@ -205,7 +205,7 @@ sl-5,10,25,divjimi,,divji,Agpfpi,ADJ,O,,O
 sl-5,10,26,živalmi,,žival,Ncfpi,NOUN,O,,O
 sl-5,10,27,.,,.,Z,PUNCT,O,,O
 sl-5,11,1,Na,,na,Sl,ADP,O,,O
-sl-5,11,2,Heathrowu,Heathrow,Heathrow,Npmsl,PROPN,B-LOC,LOC-Heathrow-Airport,I-LOC
+sl-5,11,2,Heathrowu,Heathrow,Heathrow,Npmsl,PROPN,B-LOC,LOC-Heathrow-Airport,B-LOC
 sl-5,11,3,našli,,najti,Vmep-pm,VERB,O,,O
 sl-5,11,4,50,,50,Mdc,NUM,O,,O
 sl-5,11,5,majhnih,,majhen,Agpmpg,ADJ,O,,O
@@ -217,7 +217,7 @@ sl-5,12,4,prtljage,,prtljaga,Ncfsg,NOUN,O,,O
 sl-5,12,5,poročajo,,poročati,Vmpr3p,VERB,O,,O
 sl-5,12,6,tudi,,tudi,Q,PART,O,,O
 sl-5,12,7,z,,z,Sg,ADP,O,,O
-sl-5,12,8,letališča,letališče,letališče,Ncnsg,NOUN,B-ORG,GPE-Heathrow-Airport,O
+sl-5,12,8,letališča,letališče,letališče,Ncnsg,NOUN,B-ORG,GPE-Heathrow-Airport,B-LOC
 sl-5,12,9,Heathrow,Heathrow,Heathrow,Npmsn,PROPN,I-ORG,GPE-Heathrow-Airport,I-LOC
 sl-5,12,10,",",,",",Z,PUNCT,O,,O
 sl-5,12,11,kjer,,kjer,Cs,SCONJ,O,,O

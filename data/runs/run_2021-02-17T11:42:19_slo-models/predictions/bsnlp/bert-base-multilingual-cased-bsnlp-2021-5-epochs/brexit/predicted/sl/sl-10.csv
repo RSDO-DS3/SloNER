@@ -1,7 +1,7 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-10,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-10,0,2,:,,:,Z,PUNCT,O,,O
-sl-10,0,3,parlament,,parlament,Ncmsn,NOUN,O,,I-ORG
+sl-10,0,3,parlament,,parlament,Ncmsn,NOUN,O,,O
 sl-10,0,4,zavrnil,,zavrniti,Vmep-sm,VERB,O,,O
 sl-10,0,5,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-10,0,6,brez,,brez,Sg,ADP,O,,O
@@ -13,7 +13,7 @@ sl-10,0,11,nova,,nov,Agpnpa,ADJ,O,,O
 sl-10,0,12,pogajanja,,pogajanje,Ncnpa,NOUN,O,,O
 sl-10,1,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-10,1,2,:,,:,Z,PUNCT,O,,O
-sl-10,1,3,parlament,,parlament,Ncmsn,NOUN,O,,I-ORG
+sl-10,1,3,parlament,,parlament,Ncmsn,NOUN,O,,O
 sl-10,1,4,zavrnil,,zavrniti,Vmep-sm,VERB,O,,O
 sl-10,1,5,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-10,1,6,brez,,brez,Sg,ADP,O,,O
@@ -64,7 +64,7 @@ sl-10,3,25,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-10,3,26,brez,,brez,Sg,ADP,O,,O
 sl-10,3,27,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-10,3,28,.,,.,Z,PUNCT,O,,O
-sl-10,4,1,Parlament,,parlament,Ncmsn,NOUN,O,,O
+sl-10,4,1,Parlament,,parlament,Ncmsn,NOUN,O,,B-PER
 sl-10,4,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-10,4,3,nato,,nato,Rgp,ADV,O,,O
 sl-10,4,4,sprejel,,sprejeti,Vmep-sm,VERB,O,,O
@@ -77,7 +77,7 @@ sl-10,4,10,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-10,4,11,brez,,brez,Sg,ADP,O,,O
 sl-10,4,12,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-10,4,13,.,,.,Z,PUNCT,O,,O
-sl-10,5,1,Amandma,,amandma,Ncmsan,NOUN,O,,B-PER
+sl-10,5,1,Amandma,,amandma,Ncmsan,NOUN,O,,O
 sl-10,5,2,nalaga,,nalagati,Vmpr3s,VERB,O,,O
 sl-10,5,3,vladi,,vlada,Ncfsd,NOUN,O,,O
 sl-10,5,4,",",,",",Z,PUNCT,O,,O
@@ -94,14 +94,14 @@ sl-10,5,14,če,,če,Cs,SCONJ,O,,O
 sl-10,5,15,do,,do,Sg,ADP,O,,O
 sl-10,5,16,konca,,konec,Ncmsg,NOUN,O,,O
 sl-10,5,17,februarja,,februar,Ncmsg,NOUN,O,,O
-sl-10,5,18,parlament,,parlament,Ncmsn,NOUN,O,,I-ORG
+sl-10,5,18,parlament,,parlament,Ncmsn,NOUN,O,,O
 sl-10,5,19,ne,,ne,Q,PART,O,,O
 sl-10,5,20,sprejme,,sprejeti,Vmer3s,VERB,O,,O
 sl-10,5,21,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-10,5,22,o,,o,Sl,ADP,O,,O
 sl-10,5,23,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-10,5,24,.,,.,Z,PUNCT,O,,O
-sl-10,6,1,Amandma,,amandma,Ncmsn,NOUN,O,,B-PER
+sl-10,6,1,Amandma,,amandma,Ncmsn,NOUN,O,,O
 sl-10,6,2,za,,za,Sa,ADP,O,,O
 sl-10,6,3,vlado,,vlada,Ncfsa,NOUN,O,,O
 sl-10,6,4,ni,,biti,Va-r3s-y,AUX,O,,O
@@ -161,7 +161,7 @@ sl-10,9,18,ločitvenega,,ločitven,Agpmsg,ADJ,O,,O
 sl-10,9,19,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-10,9,20,izločili,,izločiti,Vmep-pm,VERB,O,,O
 sl-10,9,21,sporno,,sporen,Agpnsa,ADJ,O,,O
-sl-10,9,22,irsko,,irski,Agpnsa,ADJ,O,,B-LOC
+sl-10,9,22,irsko,,irski,Agpnsa,ADJ,O,,O
 sl-10,9,23,varovalo,,varovalo,Ncnsa,NOUN,O,,O
 sl-10,9,24,.,,.,Z,PUNCT,O,,O
 sl-10,10,1,Javni,,javen,Agpmsny,ADJ,O,,O
@@ -295,7 +295,7 @@ sl-10,14,16,kraljestva,kraljestvo,kraljestvo,Ncnsg,NOUN,I-LOC,GPE-Great-Britain,
 sl-10,14,17,iz,,iz,Sg,ADP,O,,O
 sl-10,14,18,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-10,14,19,.,,.,Z,PUNCT,O,,O
-sl-10,15,1,Irsko,,irski,Agpnsn,ADJ,O,,B-LOC
+sl-10,15,1,Irsko,,irski,Agpnsn,ADJ,O,,O
 sl-10,15,2,varovalo,,varovati,Vmpp-sn,VERB,O,,O
 sl-10,15,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-10,15,4,del,,del,Ncmsn,NOUN,O,,O
@@ -340,7 +340,7 @@ sl-10,17,14,predlagali,,predlagati,Vmbp-pm,VERB,O,,O
 sl-10,17,15,britanski,,britanski,Agpmpn,ADJ,O,,O
 sl-10,17,16,poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-10,17,17,.,,.,Z,PUNCT,O,,O
-sl-10,18,1,Parlament,,parlament,Ncmsn,NOUN,O,,O
+sl-10,18,1,Parlament,,parlament,Ncmsn,NOUN,O,,B-PER
 sl-10,18,2,",",,",",Z,PUNCT,O,,O
 sl-10,18,3,ki,,ki,Cs,SCONJ,O,,O
 sl-10,18,4,je,,biti,Va-r3s-n,AUX,O,,O
@@ -374,7 +374,7 @@ sl-10,18,31,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-10,18,32,",",,",",Z,PUNCT,O,,O
 sl-10,18,33,če,,če,Cs,SCONJ,O,,O
 sl-10,18,34,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-10,18,35,irsko,,irski,Agpnsn,ADJ,O,,B-LOC
+sl-10,18,35,irsko,,irski,Agpnsn,ADJ,O,,O
 sl-10,18,36,varovalo,,varovati,Vmpp-sn,VERB,O,,O
 sl-10,18,37,spremenjeno,,spremenjen,Appfsa,ADJ,O,,O
 sl-10,18,38,z,,z,Si,ADP,O,,O
@@ -409,10 +409,10 @@ sl-10,19,25,izognili,,izogniti,Vmep-pm,VERB,O,,O
 sl-10,19,26,trdi,,trd,Agpfsd,ADJ,O,,O
 sl-10,19,27,meji,,meja,Ncfsd,NOUN,O,,O
 sl-10,19,28,na,,na,Sl,ADP,O,,O
-sl-10,19,29,irskem,,irski,Agpmsl,ADJ,O,,B-LOC
+sl-10,19,29,irskem,,irski,Agpmsl,ADJ,O,,O
 sl-10,19,30,otoku,,otok,Ncmsl,NOUN,O,,O
 sl-10,19,31,.,,.,Z,PUNCT,O,,O
-sl-10,20,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+sl-10,20,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-PER
 sl-10,20,2,se,,se,Px------y,PRON,O,,O
 sl-10,20,3,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-10,20,4,še,,še,Q,PART,O,,O

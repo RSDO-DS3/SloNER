@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-82,0,1,(,,(,Z,PUNCT,O,,O
 sl-82,0,2,VIDEO,,video,Ncmsn,NOUN,O,,O
 sl-82,0,3,),,),Z,PUNCT,O,,O
@@ -7,7 +7,7 @@ sl-82,0,5,na,,na,Sl,ADP,O,,O
 sl-82,0,6,letalu,,letalo,Ncnsl,NOUN,O,,O
 sl-82,0,7,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-82,0,8,:,,:,Z,PUNCT,O,,O
-sl-82,0,9,Rasist,,Rasist,Npmsn,PROPN,O,,B-PER
+sl-82,0,9,Rasist,,Rasist,Npmsn,PROPN,O,,O
 sl-82,0,10,morda,,morda,Q,PART,O,,O
 sl-82,0,11,ne,,ne,Q,PART,O,,O
 sl-82,0,12,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -494,7 +494,7 @@ sl-82,23,4,sicer,,sicer,Q,PART,O,,O
 sl-82,23,5,član,,član,Ncmsn,NOUN,O,,O
 sl-82,23,6,opozicijske,,opozicijski,Agpfsg,ADJ,O,,O
 sl-82,23,7,laburistične,laburistična,laburističen,Agpfsg,ADJ,B-ORG,ORG-Labour-Party-UK,B-ORG
-sl-82,23,8,stranke,stranka,stranka,Ncfsg,NOUN,I-ORG,ORG-Labour-Party-UK,O
+sl-82,23,8,stranke,stranka,stranka,Ncfsg,NOUN,I-ORG,ORG-Labour-Party-UK,I-ORG
 sl-82,23,9,in,,in,Cc,CCONJ,O,,O
 sl-82,23,10,minister,,minister,Ncmsn,NOUN,O,,O
 sl-82,23,11,za,,za,Sa,ADP,O,,O
@@ -504,7 +504,7 @@ sl-82,23,14,v,,v,Sl,ADP,O,,O
 sl-82,23,15,senci,,senca,Ncfsl,NOUN,O,,O
 sl-82,23,16,",",,",",Z,PUNCT,O,,O
 sl-82,23,17,Karl,Karl,Karl,Npmsn,PROPN,B-PER,PER-Karl-Turner,B-PER
-sl-82,23,18,Turner,Turner,Turner,Npmsn,PROPN,I-PER,PER-Karl-Turner,B-PER
+sl-82,23,18,Turner,Turner,Turner,Npmsn,PROPN,I-PER,PER-Karl-Turner,I-PER
 sl-82,23,19,",",,",",Z,PUNCT,O,,O
 sl-82,23,20,pravi,,praviti,Vmbr3s,VERB,O,,O
 sl-82,23,21,",",,",",Z,PUNCT,O,,O

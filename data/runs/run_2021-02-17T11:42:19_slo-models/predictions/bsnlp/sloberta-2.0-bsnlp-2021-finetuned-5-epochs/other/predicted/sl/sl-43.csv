@@ -1,8 +1,8 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-43,0,1,V,,v,Sl,ADP,O,,O
 sl-43,0,2,Grčiji,Grčija,Grčija,Npfsl,PROPN,B-LOC,GPE-Greece,B-LOC
 sl-43,0,3,zaradi,,zaradi,Sg,ADP,O,,O
-sl-43,0,4,stavke,,stavka,Ncfsg,NOUN,O,,I-PER
+sl-43,0,4,stavke,,stavka,Ncfsg,NOUN,O,,O
 sl-43,0,5,ustavili,,ustaviti,Vmep-pm,VERB,O,,O
 sl-43,0,6,trajekte,,trajekt,Ncmpa,NOUN,O,,O
 sl-43,1,1,Trajekti,,trajekt,Ncmpn,NOUN,O,,O
@@ -121,10 +121,10 @@ sl-43,8,5,programa,,program,Ncmsg,NOUN,O,,O
 sl-43,8,6,mednarodne,,mednaroden,Agpfsg,ADJ,O,,O
 sl-43,8,7,pomoči,,pomoč,Ncfsg,NOUN,O,,O
 sl-43,9,1,Sindikat,,sindikat,Ncmsn,NOUN,O,,O
-sl-43,9,2,PNO,PNO,PNO,Npmsn,PROPN,B-ORG,ORG-Panhellenic-Seamen's-Federation,O
+sl-43,9,2,PNO,PNO,PNO,Npmsn,PROPN,B-ORG,ORG-Panhellenic-Seamen's-Federation,B-ORG
 sl-43,9,3,se,,se,Px------y,PRON,O,,O
 sl-43,9,4,je,,biti,Va-r3s-n,AUX,O,,O
-sl-43,9,5,s,,z,Si,ADP,O,,I-PER
+sl-43,9,5,s,,z,Si,ADP,O,,O
 sl-43,9,6,predstavniki,,predstavnik,Ncmpi,NOUN,O,,O
 sl-43,9,7,delodajalcev,,delodajalec,Ncmpg,NOUN,O,,O
 sl-43,9,8,pogajal,,pogajati,Vmpp-sm,VERB,O,,O
@@ -150,7 +150,7 @@ sl-43,10,7,ponujajo,,ponujati,Vmpr3p,VERB,O,,O
 sl-43,10,8,enoodstotno,,enoodstoten,Agpnsa,ADJ,O,,O
 sl-43,10,9,zvišanje,,zvišanje,Ncnsa,NOUN,O,,O
 sl-43,10,10,plač,,plača,Ncfpg,NOUN,O,,O
-sl-43,10,11,s,,z,Si,ADP,O,,I-PER
+sl-43,10,11,s,,z,Si,ADP,O,,O
 sl-43,10,12,septembrom,,september,Ncmsi,NOUN,O,,O
 sl-43,10,13,in,,in,Cc,CCONJ,O,,O
 sl-43,10,14,nato,,nato,Rgp,ADV,O,,O

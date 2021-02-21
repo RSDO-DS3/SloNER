@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-70,0,1,Prtljaga,,prtljaga,Ncfsn,NOUN,O,,O
 sl-70,0,2,",",,",",Z,PUNCT,O,,O
 sl-70,0,3,ki,,ki,Cs,SCONJ,O,,O
@@ -488,7 +488,7 @@ sl-70,22,1,K,,k,Sd,ADP,O,,O
 sl-70,22,2,sreči,,sreča,Ncfsd,NOUN,O,,O
 sl-70,22,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-70,22,4,hitrost,,hitrost,Ncfsn,NOUN,O,,O
-sl-70,22,5,kužka,,kužek,Ncmsg,NOUN,O,,O
+sl-70,22,5,kužka,,kužek,Ncmsg,NOUN,O,,B-PRO
 sl-70,22,6,zaradi,,zaradi,Sg,ADP,O,,O
 sl-70,22,7,varnostnih,,varnosten,Agpmpg,ADJ,O,,O
 sl-70,22,8,razlogov,,razlog,Ncmpg,NOUN,O,,O

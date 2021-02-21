@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-115,0,1,Mati,,mati,Ncfsn,NOUN,O,,O
 sl-115,0,2,samohranilka,,samohranilka,Ncfsn,NOUN,O,,O
 sl-115,0,3,vzela,,vzeti,Vmep-sf,VERB,O,,O
@@ -7,7 +7,7 @@ sl-115,0,5,za,,za,Sa,ADP,O,,O
 sl-115,0,6,stanovanje,,stanovanje,Ncnsa,NOUN,O,,O
 sl-115,0,7,",",,",",Z,PUNCT,O,,O
 sl-115,0,8,ga,,on,Pp3msa--y,PRON,O,,O
-sl-115,0,9,skoraj,,skoraj,Q,PART,O,,B-LOC
+sl-115,0,9,skoraj,,skoraj,Q,PART,O,,O
 sl-115,0,10,odplačala,,odplačati,Vmep-sf,VERB,O,,O
 sl-115,0,11,",",,",",Z,PUNCT,O,,O
 sl-115,0,12,nato,,nato,Rgp,ADV,O,,O
@@ -77,7 +77,7 @@ sl-115,5,1,Pripravim,,pripraviti,Vmer1s,VERB,O,,O
 sl-115,5,2,se,,se,Px------y,PRON,O,,O
 sl-115,5,3,nanje,,name,Pp3mpa--b,PRON,O,,O
 sl-115,5,4,...,,...,Y,X,O,,O
-sl-115,6,1,Ob,,ob,Sl,ADP,O,,I-PER
+sl-115,6,1,Ob,,ob,Sl,ADP,O,,O
 sl-115,6,2,prihodu,,prihod,Ncmsl,NOUN,O,,O
 sl-115,6,3,na,,na,Sa,ADP,O,,O
 sl-115,6,4,Proletarsko,Proletarska,proletarski,Agpfsa,ADJ,B-LOC,LOC-Proletarska-Cesta,B-LOC
@@ -86,7 +86,7 @@ sl-115,6,6,me,,jaz,Pp1-sa--y,PRON,O,,O
 sl-115,6,7,pričaka,,pričakati,Vmer3s,VERB,O,,O
 sl-115,6,8,mlada,,mlad,Agpfsn,ADJ,O,,O
 sl-115,6,9,",",,",",Z,PUNCT,O,,O
-sl-115,6,10,lepa,,lep,Agpfsn,ADJ,O,,B-LOC
+sl-115,6,10,lepa,,lep,Agpfsn,ADJ,O,,O
 sl-115,6,11,gospa,,gospa,Ncfsn,NOUN,O,,O
 sl-115,6,12,.,,.,Z,PUNCT,O,,O
 sl-115,7,1,"""",,"""",Z,PUNCT,O,,O
@@ -211,7 +211,7 @@ sl-115,13,34,in,,in,Cc,CCONJ,O,,O
 sl-115,13,35,znamo,,znati,Vmpr1p,VERB,O,,O
 sl-115,13,36,",",,",",Z,PUNCT,O,,O
 sl-115,13,37,ne,,ne,Q,PART,O,,O
-sl-115,13,38,tarnati,,tarnati,Vmpn,VERB,O,,B-LOC
+sl-115,13,38,tarnati,,tarnati,Vmpn,VERB,O,,O
 sl-115,13,39,",",,",",Z,PUNCT,O,,O
 sl-115,13,40,pač,,pač,Q,PART,O,,O
 sl-115,13,41,pa,,pa,Cc,CCONJ,O,,O
@@ -225,7 +225,7 @@ sl-115,13,48,ljudi,,človek,Ncmpg,NOUN,O,,O
 sl-115,13,49,naše,,naš,Ps1fsgp,DET,O,,O
 sl-115,13,50,dežele,,dežela,Ncfsg,NOUN,O,,O
 sl-115,13,51,.,,.,Z,PUNCT,O,,O
-sl-115,14,1,Z,,z,Si,ADP,O,,B-ORG
+sl-115,14,1,Z,,z,Si,ADP,O,,O
 sl-115,14,2,mlado,,mlad,Agpfsi,ADJ,O,,O
 sl-115,14,3,gospo,,gospa,Ncfsi,NOUN,O,,O
 sl-115,14,4,dogovoriva,,dogovoriti,Vmer1d,VERB,O,,O
@@ -242,7 +242,7 @@ sl-115,15,8,dopoldne,,dopoldne,Rgp,ADV,O,,O
 sl-115,15,9,hiti,,hiteti,Vmpr3s,VERB,O,,O
 sl-115,15,10,nazaj,,nazaj,Rgp,ADV,O,,O
 sl-115,15,11,v,,v,Sa,ADP,O,,O
-sl-115,15,12,Anglijo,Anglija,Anglija,Npfsa,PROPN,B-LOC,GPE-England,O
+sl-115,15,12,Anglijo,Anglija,Anglija,Npfsa,PROPN,B-LOC,GPE-England,B-LOC
 sl-115,15,13,.,,.,Z,PUNCT,O,,O
 sl-115,16,1,Sodelavke,,sodelavka,Ncfpn,NOUN,O,,O
 sl-115,16,2,imajo,,imeti,Vmpr3p-n,VERB,O,,O
@@ -295,7 +295,7 @@ sl-115,18,30,obutvi,,obutev,Ncfsl,NOUN,O,,O
 sl-115,18,31,kričita,,kričati,Vmpr3d,VERB,O,,O
 sl-115,18,32,revščino,,revščina,Ncfsa,NOUN,O,,O
 sl-115,18,33,.,,.,Z,PUNCT,O,,O
-sl-115,19,1,Z,,z,Si,ADP,O,,B-ORG
+sl-115,19,1,Z,,z,Si,ADP,O,,O
 sl-115,19,2,družino,,družina,Ncfsi,NOUN,O,,O
 sl-115,19,3,brez,,brez,Sg,ADP,O,,O
 sl-115,19,4,mamice,,mamica,Ncfsg,NOUN,O,,O
@@ -492,7 +492,7 @@ sl-115,34,9,obveznosti,,obveznost,Ncfpa,NOUN,O,,O
 sl-115,34,10,odplačila,,odplačilo,Ncnsg,NOUN,O,,O
 sl-115,34,11,dolga,,dolg,Agpfsn,ADJ,O,,O
 sl-115,34,12,.,,.,Z,PUNCT,O,,O
-sl-115,35,1,Po,,po,Sl,ADP,O,,I-LOC
+sl-115,35,1,Po,,po,Sl,ADP,O,,O
 sl-115,35,2,sistemu,,sistem,Ncmsl,NOUN,O,,O
 sl-115,35,3,en,,en,Mlpmsn,NUM,O,,O
 sl-115,35,4,sadež,,sadež,Ncmsn,NOUN,O,,O
@@ -582,7 +582,7 @@ sl-115,40,11,nista,,biti,Va-r3d-y,AUX,O,,O
 sl-115,40,12,pogrešala,,pogrešati,Vmpp-dm,VERB,O,,O
 sl-115,40,13,prijateljev,,prijatelj,Ncmpg,NOUN,O,,O
 sl-115,40,14,.,,.,Z,PUNCT,O,,O
-sl-115,41,1,Po,,po,Sl,ADP,O,,I-LOC
+sl-115,41,1,Po,,po,Sl,ADP,O,,O
 sl-115,41,2,njih,,on,Pp3mpl,PRON,O,,O
 sl-115,41,3,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-115,41,4,hrepenela,,hrepeneti,Vmpp-dm,VERB,O,,O
@@ -710,7 +710,7 @@ sl-115,49,5,',,',Z,PUNCT,O,,O
 sl-115,49,6,kar,,kar,Pr-nsn,PRON,O,,O
 sl-115,49,7,se,,se,Px------y,PRON,O,,O
 sl-115,49,8,je,,biti,Va-r3s-n,AUX,O,,O
-sl-115,49,9,le,,le,Q,PART,O,,B-LOC
+sl-115,49,9,le,,le,Q,PART,O,,O
 sl-115,49,10,dalo,,dati,Vmep-sn,VERB,O,,O
 sl-115,49,11,",",,",",Z,PUNCT,O,,O
 sl-115,49,12,da,,da,Cs,SCONJ,O,,O
@@ -1110,8 +1110,8 @@ sl-115,70,33,sedaj,,sedaj,Rgp,ADV,O,,O
 sl-115,70,34,pač,,pač,Q,PART,O,,O
 sl-115,70,35,njegovo,,njegov,Ps3nsnsm,DET,O,,O
 sl-115,70,36,.,,.,Z,PUNCT,O,,O
-sl-115,71,1,Anita,Anita,Anita,Npfsn,PROPN,B-PER,PER-Anita-Ogulin,O
-sl-115,71,2,Ogulin,Ogulin,Ogulin,Npfsn,PROPN,I-PER,PER-Anita-Ogulin,O
+sl-115,71,1,Anita,Anita,Anita,Npfsn,PROPN,B-PER,PER-Anita-Ogulin,B-PER
+sl-115,71,2,Ogulin,Ogulin,Ogulin,Npfsn,PROPN,I-PER,PER-Anita-Ogulin,I-PER
 sl-115,71,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-115,71,4,dolgoletna,,dolgoleten,Agpfsn,ADJ,O,,O
 sl-115,71,5,prostovoljka,,prostovoljka,Ncfsn,NOUN,O,,O

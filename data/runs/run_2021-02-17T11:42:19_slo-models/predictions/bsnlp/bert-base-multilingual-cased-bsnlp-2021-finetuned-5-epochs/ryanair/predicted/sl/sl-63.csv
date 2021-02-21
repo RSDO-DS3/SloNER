@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-63,0,1,Namesto,,namesto,Sg,ADP,O,,O
 sl-63,0,2,v,,v,Sa,ADP,O,,O
 sl-63,0,3,Grčijo,Grčija,Grčija,Npfsa,PROPN,B-LOC,GPE-Greece,B-LOC
@@ -22,7 +22,7 @@ sl-63,1,3,200,,200,Mdc,NUM,O,,O
 sl-63,1,4,potniki,,potnik,Ncmpi,NOUN,O,,O
 sl-63,1,5,na,,na,Sl,ADP,O,,O
 sl-63,1,6,letu,,leto,Ncnsl,NOUN,O,,O
-sl-63,1,7,FR8582,FR8582,fr8582,Mdc,NUM,B-PRO,PRO-FR8582,B-PRO
+sl-63,1,7,FR8582,FR8582,fr8582,Mdc,NUM,B-PRO,PRO-FR8582,O
 sl-63,1,8,iz,,iz,Sg,ADP,O,,O
 sl-63,1,9,Londona,London,London,Npmsg,PROPN,B-LOC,GPE-London,B-LOC
 sl-63,1,10,v,,v,Sa,ADP,O,,O
@@ -38,7 +38,7 @@ sl-63,1,19,preusmerjeno,,preusmerjen,Appnsn,ADJ,O,,O
 sl-63,1,20,na,,na,Sa,ADP,O,,O
 sl-63,1,21,letališče,,letališče,Ncnsa,NOUN,O,,B-LOC
 sl-63,1,22,v,,v,Sl,ADP,O,,O
-sl-63,1,23,Temišvaru,Temišvar,Temišvar,Npmsl,PROPN,B-LOC,GPE-Timisoara,B-LOC
+sl-63,1,23,Temišvaru,Temišvar,Temišvar,Npmsl,PROPN,B-LOC,GPE-Timisoara,I-LOC
 sl-63,1,24,na,,na,Sl,ADP,O,,O
 sl-63,1,25,zahodu,,zahod,Ncmsl,NOUN,O,,O
 sl-63,1,26,Romunije,Romunija,Romunija,Npfsg,PROPN,B-LOC,GPE-Romania,B-LOC

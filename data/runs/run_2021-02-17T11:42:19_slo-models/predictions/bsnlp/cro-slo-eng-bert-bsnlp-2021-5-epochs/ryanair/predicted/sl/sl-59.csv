@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-59,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-59,0,2,zaradi,,zaradi,Sg,ADP,O,,O
 sl-59,0,3,»,,»,Z,PUNCT,O,,O
@@ -18,8 +18,8 @@ sl-59,1,7,",",,",",Z,PUNCT,O,,O
 sl-59,1,8,ko,,ko,Cs,SCONJ,O,,O
 sl-59,1,9,so,,biti,Va-r3p-n,AUX,O,,O
 sl-59,1,10,v,,v,Sl,ADP,O,,O
-sl-59,1,11,južni,južna,južen,Agpfsl,ADJ,B-LOC,GPE-Southern-Spain,O
-sl-59,1,12,Španiji,Španija,Španija,Npfsl,PROPN,I-LOC,GPE-Southern-Spain,B-LOC
+sl-59,1,11,južni,južna,južen,Agpfsl,ADJ,B-LOC,GPE-Southern-Spain,B-LOC
+sl-59,1,12,Španiji,Španija,Španija,Npfsl,PROPN,I-LOC,GPE-Southern-Spain,I-LOC
 sl-59,1,13,in,,in,Cc,CCONJ,O,,O
 sl-59,1,14,na,,na,Sl,ADP,O,,O
 sl-59,1,15,Portugalskem,Portugalska,Portugalsko,Npnsl,PROPN,B-LOC,GPE-Portugal,B-LOC

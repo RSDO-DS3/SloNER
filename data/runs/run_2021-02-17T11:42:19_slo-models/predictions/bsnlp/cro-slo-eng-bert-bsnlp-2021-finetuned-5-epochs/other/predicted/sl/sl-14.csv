@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-14,0,1,Pingvini,,pingvin,Ncmpn,NOUN,O,,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-14,0,1,Pingvini,,pingvin,Ncmpn,NOUN,O,,O
 sl-14,0,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-14,0,3,se,,se,Px------y,PRON,O,,O
 sl-14,0,4,greli,,greti,Vmpp-pm,VERB,O,,O
@@ -11,7 +11,7 @@ sl-14,0,9,sušija,,suši,Ncmsg,NOUN,O,,O
 sl-14,0,10,niso,,biti,Va-r3p-y,AUX,O,,O
 sl-14,0,11,dobili,,dobiti,Vmep-pm,VERB,O,,O
 sl-14,1,1,Skrivališče,,skrivališče,Ncnsa,NOUN,O,,O
-sl-14,1,2,pingvinov,,pingvin,Ncmpg,NOUN,O,,B-PER
+sl-14,1,2,pingvinov,,pingvin,Ncmpg,NOUN,O,,O
 sl-14,1,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-14,1,4,odkril,,odkriti,Vmep-sm,VERB,O,,O
 sl-14,1,5,zaposleni,,zaposlen,Appmpn,ADJ,O,,O
@@ -51,7 +51,7 @@ sl-14,3,7,facebook,Facebook,facebook,Ncmsan,NOUN,B-PRO,PRO-Facebook,B-PRO
 sl-14,3,8,delil,,deliti,Vmpp-sm,VERB,O,,O
 sl-14,3,9,policist,,policist,Ncmsn,NOUN,O,,O
 sl-14,3,10,John,John,John,Npmsn,PROPN,B-PER,PER-John-Zhu,B-PER
-sl-14,3,11,Zhu,Zhu,Zhu,Npmsn,PROPN,I-PER,PER-John-Zhu,B-PER
+sl-14,3,11,Zhu,Zhu,Zhu,Npmsn,PROPN,I-PER,PER-John-Zhu,I-PER
 sl-14,3,12,",",,",",Z,PUNCT,O,,O
 sl-14,3,13,ki,,ki,Cs,SCONJ,O,,O
 sl-14,3,14,je,,biti,Va-r3s-n,AUX,O,,O
@@ -156,7 +156,7 @@ sl-14,8,4,predstavlja,,predstavljati,Vmpr3s,VERB,O,,O
 sl-14,8,5,prebivališče,,prebivališče,Ncnsa,NOUN,O,,O
 sl-14,8,6,kar,,kar,Rgp,ADV,O,,O
 sl-14,8,7,600,,600,Mdc,NUM,O,,O
-sl-14,8,8,pingvinom,,pingvin,Ncmpd,NOUN,O,,B-PER
+sl-14,8,8,pingvinom,,pingvin,Ncmpd,NOUN,O,,O
 sl-14,8,9,.,,.,Z,PUNCT,O,,O
 sl-14,9,1,Prebivalce,,prebivalec,Ncmpa,NOUN,O,,O
 sl-14,9,2,so,,biti,Va-r3p-n,AUX,O,,O
@@ -164,7 +164,7 @@ sl-14,9,3,opozorili,,opozoriti,Vmep-pm,VERB,O,,O
 sl-14,9,4,",",,",",Z,PUNCT,O,,O
 sl-14,9,5,naj,,naj,Cs,SCONJ,O,,O
 sl-14,9,6,se,,se,Px------y,PRON,O,,O
-sl-14,9,7,pingvinom,,pingvin,Ncmpd,NOUN,O,,B-PER
+sl-14,9,7,pingvinom,,pingvin,Ncmpd,NOUN,O,,O
 sl-14,9,8,ne,,ne,Q,PART,O,,O
 sl-14,9,9,približujejo,,približevati,Vmpr3p,VERB,O,,O
 sl-14,9,10,preveč,,preveč,Rgp,DET,O,,O

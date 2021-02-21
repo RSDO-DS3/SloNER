@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-17,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-17,0,2,na,,na,Sl,ADP,O,,O
 sl-17,0,3,vrhu,,vrh,Ncmsl,NOUN,O,,O
@@ -23,12 +23,12 @@ sl-17,0,21,BDP,,BDP,Ncmsg,NOUN,O,,O
 sl-17,1,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-17,1,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-17,1,3,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-17,1,4,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-17,1,4,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-17,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-17,1,6,danes,,danes,Rgp,ADV,O,,O
 sl-17,1,7,na,,na,Sl,ADP,O,,O
 sl-17,1,8,vrhu,,vrh,Ncmsl,NOUN,O,,O
-sl-17,1,9,zveze,,zveza,Ncfsg,NOUN,O,,B-ORG
+sl-17,1,9,zveze,,zveza,Ncfsg,NOUN,O,,O
 sl-17,1,10,Nato,Nato,Nato,Npmsn,PROPN,B-ORG,ORG-NATO,B-ORG
 sl-17,1,11,v,,v,Sl,ADP,O,,O
 sl-17,1,12,Bruslju,Bruselj,Bruselj,Npmsl,PROPN,B-LOC,GPE-Brussles,B-LOC
@@ -80,9 +80,9 @@ sl-17,2,31,kritičnim,,kritičen,Agpmsi,ADJ,O,,O
 sl-17,2,32,tvitom,,tvit,Ncmsi,NOUN,O,,O
 sl-17,2,33,.,,.,Z,PUNCT,O,,O
 sl-17,3,1,Voditelji,,voditelj,Ncmpn,NOUN,O,,O
-sl-17,3,2,29,,29,Mdc,NUM,O,,I-PRO
+sl-17,3,2,29,,29,Mdc,NUM,O,,O
 sl-17,3,3,članic,,članica,Ncfpg,NOUN,O,,O
-sl-17,3,4,zveze,,zveza,Ncfsg,NOUN,O,,B-ORG
+sl-17,3,4,zveze,,zveza,Ncfsg,NOUN,O,,O
 sl-17,3,5,Nato,Nato,Nato,Npmsn,PROPN,B-ORG,ORG-NATO,B-ORG
 sl-17,3,6,so,,biti,Va-r3p-n,AUX,O,,O
 sl-17,3,7,se,,se,Px------y,PRON,O,,O
@@ -95,8 +95,8 @@ sl-17,3,13,zaradi,,zaradi,Sg,ADP,O,,O
 sl-17,3,14,trgovinskih,,trgovinski,Agpnpg,ADJ,O,,O
 sl-17,3,15,vprašanj,,vprašanje,Ncnpg,NOUN,O,,O
 sl-17,3,16,",",,",",Z,PUNCT,O,,O
-sl-17,3,17,iranskega,iranski,iranski,Agpmsg,ADJ,B-PRO,PRO-Iran-nuclear-deal,O
-sl-17,3,18,jedrskega,jedrski,jedrski,Agpmsg,ADJ,I-PRO,PRO-Iran-nuclear-deal,O
+sl-17,3,17,iranskega,iranski,iranski,Agpmsg,ADJ,B-PRO,PRO-Iran-nuclear-deal,B-PRO
+sl-17,3,18,jedrskega,jedrski,jedrski,Agpmsg,ADJ,I-PRO,PRO-Iran-nuclear-deal,I-PRO
 sl-17,3,19,dogovora,dogovor,dogovor,Ncmsg,NOUN,I-PRO,PRO-Iran-nuclear-deal,I-PRO
 sl-17,3,20,in,,in,Cc,CCONJ,O,,O
 sl-17,3,21,podnebja,,podnebje,Ncnsg,NOUN,O,,O
@@ -220,8 +220,8 @@ sl-17,6,15,Nemčijo,Nemčija,Nemčija,Npfsa,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-17,6,16,zaradi,,zaradi,Sg,ADP,O,,O
 sl-17,6,17,načrtovanega,,načrtovan,Appmsg,ADJ,O,,O
 sl-17,6,18,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
-sl-17,6,19,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-17,6,20,tok,,tok,Ncmsn,NOUN,O,,I-PRO
+sl-17,6,19,Severni,,severen,Agpmsny,ADJ,O,,O
+sl-17,6,20,tok,,tok,Ncmsn,NOUN,O,,O
 sl-17,6,21,2.,,2.,Mdo,NUM,O,,O
 sl-17,6,22,Očital,,očitati,Vmpp-sm,VERB,O,,O
 sl-17,6,23,ji,,on,Pp3fsd--y,PRON,O,,O
@@ -362,7 +362,7 @@ sl-17,12,6,držav,,država,Ncfpg,NOUN,O,,O
 sl-17,12,7,izpolnjuje,,izpolnjevati,Vmpr3s,VERB,O,,O
 sl-17,12,8,zaveze,,zaveza,Ncfpa,NOUN,O,,O
 sl-17,12,9,?,,?,Z,PUNCT,O,,O
-sl-17,13,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
+sl-17,13,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,O
 sl-17,13,2,plačujejo,,plačevati,Vmpr3p,VERB,O,,O
 sl-17,13,3,za,,za,Sa,ADP,O,,O
 sl-17,13,4,zaščito,,zaščita,Ncfsa,NOUN,O,,O
@@ -730,7 +730,7 @@ sl-17,31,30,s,,z,Si,ADP,O,,O
 sl-17,31,31,trinajstimi,,trinajst,Mlc-pi,NUM,O,,O
 sl-17,31,32,točkami,,točka,Ncfpi,NOUN,O,,O
 sl-17,31,33,.,,.,Z,PUNCT,O,,O
-sl-17,32,1,Vrh,,vrh,Ncmsn,NOUN,O,,O
+sl-17,32,1,Vrh,,vrh,Ncmsn,NOUN,O,,B-PER
 sl-17,32,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-17,32,3,sicer,,sicer,Q,PART,O,,O
 sl-17,32,4,tudi,,tudi,Q,PART,O,,O
@@ -905,7 +905,7 @@ sl-17,38,12,s,,z,Si,ADP,O,,O
 sl-17,38,13,tremi,,trije,Mlcmpi,NUM,O,,O
 sl-17,38,14,predstavniki,,predstavnik,Ncmpi,NOUN,O,,O
 sl-17,38,15,Slovenske,Slovenska,slovenski,Agpfsg,ADJ,B-ORG,ORG-Slovenian-Armed-Forces,B-ORG
-sl-17,38,16,vojske,vojska,vojska,Ncfsg,NOUN,I-ORG,ORG-Slovenian-Armed-Forces,O
+sl-17,38,16,vojske,vojska,vojska,Ncfsg,NOUN,I-ORG,ORG-Slovenian-Armed-Forces,I-ORG
 sl-17,38,17,in,,in,Cc,CCONJ,O,,O
 sl-17,38,18,s,,z,Si,ADP,O,,O
 sl-17,38,19,cougarjem,,cougar,Ncmsi,NOUN,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-4,0,1,V,,v,Sl,ADP,O,,O
 sl-4,0,2,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
 sl-4,0,3,bodo,,biti,Va-f3p-n,AUX,O,,O

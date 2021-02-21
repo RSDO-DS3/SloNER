@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-179,0,1,Depp,Depp,Depp,Npmsn,PROPN,B-PER,PER-Johnny-Depp,I-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-179,0,1,Depp,Depp,Depp,Npmsn,PROPN,B-PER,PER-Johnny-Depp,B-PER
 sl-179,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-179,0,3,",",,",",Z,PUNCT,O,,O
 sl-179,0,4,da,,da,Cs,SCONJ,O,,O
@@ -110,7 +110,7 @@ sl-179,7,23,igralca,,igralec,Ncmsg,NOUN,O,,O
 sl-179,7,24,Johnnyja,Johnny,Johnny,Npmsg,PROPN,B-PER,PER-Johnny-Depp,B-PER
 sl-179,7,25,Deppa,Depp,Depp,Npmsg,PROPN,I-PER,PER-Johnny-Depp,I-PER
 sl-179,7,26,.,,.,Z,PUNCT,O,,O
-sl-179,8,1,Zvezdnik,,zvezdnik,Ncmsn,NOUN,O,,O
+sl-179,8,1,Zvezdnik,,zvezdnik,Ncmsn,NOUN,O,,B-PER
 sl-179,8,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-179,8,3,vse,,ves,Pg-nsa,DET,O,,O
 sl-179,8,4,zanikal,,zanikati,Vmep-sm,VERB,O,,O
@@ -395,7 +395,7 @@ sl-179,18,20,moral,,morati,Vmpp-sm,VERB,O,,O
 sl-179,18,21,prestaviti,,prestaviti,Vmen,VERB,O,,O
 sl-179,18,22,celo,,celo,Q,PART,O,,O
 sl-179,18,23,snemanje,,snemanje,Ncnsa,NOUN,O,,O
-sl-179,18,24,Piratov,Pirati,Pirat,Npmpg,PROPN,B-PRO,PRO-Pirates-of-the-caribbean,B-ORG
-sl-179,18,25,s,s,z,Sg,ADP,I-PRO,PRO-Pirates-of-the-caribbean,O
-sl-179,18,26,Karibov,Karibov,Karibi,Npmpg,PROPN,I-PRO,PRO-Pirates-of-the-caribbean,I-LOC
+sl-179,18,24,Piratov,Pirati,Pirat,Npmpg,PROPN,B-PRO,PRO-Pirates-of-the-caribbean,B-EVT
+sl-179,18,25,s,s,z,Sg,ADP,I-PRO,PRO-Pirates-of-the-caribbean,I-EVT
+sl-179,18,26,Karibov,Karibov,Karibi,Npmpg,PROPN,I-PRO,PRO-Pirates-of-the-caribbean,I-EVT
 sl-179,18,27,.,,.,Z,PUNCT,O,,O

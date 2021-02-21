@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-6,0,1,Eksplozija,,eksplozija,Ncfsn,NOUN,O,,O
 sl-6,0,2,na,,na,Sl,ADP,O,,O
 sl-6,0,3,letalu,,letalo,Ncnsl,NOUN,O,,O
@@ -75,7 +75,7 @@ sl-6,4,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-6,4,9,bilo,,biti,Va-p-sn,AUX,O,,O
 sl-6,4,10,iz,,iz,Sg,ADP,O,,O
 sl-6,4,11,New,New,New,Npmsn,PROPN,B-LOC,GPE-New-York,B-LOC
-sl-6,4,12,Yorka,York,York,Npmsg,PROPN,I-LOC,GPE-New-York,B-LOC
+sl-6,4,12,Yorka,York,York,Npmsg,PROPN,I-LOC,GPE-New-York,I-LOC
 sl-6,4,13,namenjeno,,namenjen,Appnsn,ADJ,O,,O
 sl-6,4,14,do,,do,Sg,ADP,O,,O
 sl-6,4,15,Dallasa,Dallas,Dallas,Npmsg,PROPN,B-LOC,GPE-Dallas,B-LOC
@@ -245,7 +245,7 @@ sl-6,12,24,.,,.,Z,PUNCT,O,,O
 sl-6,13,1,Isti,,isti,Pi-msn,DET,O,,O
 sl-6,13,2,motor,,motor,Ncmsn,NOUN,O,,O
 sl-6,13,3,",",,",",Z,PUNCT,O,,O
-sl-6,13,4,CFM56-7B,CFM56-7B,cfm56-7b,Mdc,NUM,B-PRO,PRO-Motor CFM56-7B,O
+sl-6,13,4,CFM56-7B,CFM56-7B,cfm56-7b,Mdc,NUM,B-PRO,PRO-Motor CFM56-7B,B-PRO
 sl-6,13,5,",",,",",Z,PUNCT,O,,O
 sl-6,13,6,pa,,pa,Cc,CCONJ,O,,O
 sl-6,13,7,je,,biti,Va-r3s-n,VERB,O,,O
@@ -261,7 +261,7 @@ sl-6,13,16,je,,biti,Va-r3s-n,AUX,O,,O
 sl-6,13,17,povedal,,povedati,Vmep-sm,VERB,O,,O
 sl-6,13,18,proizvajalec,,proizvajalec,Ncmsn,NOUN,O,,O
 sl-6,13,19,.,,.,Z,PUNCT,O,,O
-sl-6,14,1,CFM-jeva,CFM,Cfm-jev,Aspnpn,ADJ,B-ORG,ORG-CFM-International,O
+sl-6,14,1,CFM-jeva,CFM,Cfm-jev,Aspnpn,ADJ,B-ORG,ORG-CFM-International,B-ORG
 sl-6,14,2,partnerska,,partnerski,Agpnpn,ADJ,O,,O
 sl-6,14,3,podjetja,,podjetje,Ncnpn,NOUN,O,,O
 sl-6,14,4,so,,biti,Va-r3p-n,AUX,O,,O
@@ -424,9 +424,9 @@ sl-6,24,7,celo,,celo,Q,PART,O,,O
 sl-6,24,8,s,,z,Si,ADP,O,,O
 sl-6,24,9,pilotom,,pilot,Ncmsi,NOUN,O,,O
 sl-6,24,10,Chesleyjem,Chesley,Chesley,Npmsi,PROPN,B-PER,PER-Chelsey-Sullenberger,B-PER
-sl-6,24,11,"""","""","""",Z,PUNCT,I-PER,PER-Chelsey-Sullenberger,O
-sl-6,24,12,Sully,Sully,Sully,Npmsn,PROPN,I-PER,PER-Chelsey-Sullenberger,B-PER
-sl-6,24,13,"""","""","""",Z,PUNCT,I-PER,PER-Chelsey-Sullenberger,O
+sl-6,24,11,"""","""","""",Z,PUNCT,I-PER,PER-Chelsey-Sullenberger,I-PER
+sl-6,24,12,Sully,Sully,Sully,Npmsn,PROPN,I-PER,PER-Chelsey-Sullenberger,I-PER
+sl-6,24,13,"""","""","""",Z,PUNCT,I-PER,PER-Chelsey-Sullenberger,I-PER
 sl-6,24,14,Sullenbergerjem,Sullenberger,Sullenberger,Npmsi,PROPN,I-PER,PER-Chelsey-Sullenberger,I-PER
 sl-6,24,15,",",,",",Z,PUNCT,O,,O
 sl-6,24,16,ki,,ki,Cs,SCONJ,O,,O
@@ -435,8 +435,8 @@ sl-6,24,18,leta,,leto,Ncnsg,NOUN,O,,O
 sl-6,24,19,2009,,2009,Mdc,NUM,O,,O
 sl-6,24,20,pristal,,pristati,Vmep-sm,VERB,O,,O
 sl-6,24,21,na,,na,Sl,ADP,O,,O
-sl-6,24,22,reki,reka,reka,Ncfsl,NOUN,B-LOC,LOC-Hudson-river,O
-sl-6,24,23,Hudson,Hudson,Hudson,Npmsn,PROPN,I-LOC,LOC-Hudson-river,B-LOC
+sl-6,24,22,reki,reka,reka,Ncfsl,NOUN,B-LOC,LOC-Hudson-river,B-LOC
+sl-6,24,23,Hudson,Hudson,Hudson,Npmsn,PROPN,I-LOC,LOC-Hudson-river,I-LOC
 sl-6,24,24,.,,.,Z,PUNCT,O,,O
 sl-6,25,1,Letalske,,letalski,Agpfpn,ADJ,O,,O
 sl-6,25,2,družbe,,družba,Ncfpn,NOUN,O,,O

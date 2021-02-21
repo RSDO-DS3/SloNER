@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-150,0,1,S,,z,Si,ADP,O,,O
 sl-150,0,2,pestjo,,pest,Ncfsi,NOUN,O,,O
 sl-150,0,3,mu,,on,Pp3msd--y,PRON,O,,O
@@ -36,7 +36,7 @@ sl-150,1,16,za,,za,Sa,ADP,O,,O
 sl-150,1,17,dodatnih,,dodaten,Agpmpg,ADJ,O,,O
 sl-150,1,18,šest,,šest,Mlc-pa,NUM,O,,O
 sl-150,1,19,let,,leto,Ncnpg,NOUN,O,,O
-sl-150,1,20,v,,v,Sa,ADP,O,,I-LOC
+sl-150,1,20,v,,v,Sa,ADP,O,,O
 sl-150,1,21,zapor,,zapor,Ncmsan,NOUN,O,,O
 sl-150,1,22,.,,.,Z,PUNCT,O,,O
 sl-150,2,1,»,,»,Z,PUNCT,O,,O
@@ -54,7 +54,7 @@ sl-150,2,12,novomeška,,novomeški,Agpfsn,ADJ,O,,O
 sl-150,2,13,sodnica,,sodnica,Ncfsn,NOUN,O,,O
 sl-150,2,14,Mojca,Mojca,Mojca,Npfsn,PROPN,B-PER,PER-Mojca-Hode,B-PER
 sl-150,2,15,Hode,Hode,Hode,Npfsn,PROPN,I-PER,PER-Mojca-Hode,I-PER
-sl-150,2,16,v,,v,Sl,ADP,O,,I-LOC
+sl-150,2,16,v,,v,Sl,ADP,O,,O
 sl-150,2,17,obrazložitvi,,obrazložitev,Ncfsl,NOUN,O,,O
 sl-150,2,18,sodbe,,sodba,Ncfsg,NOUN,O,,O
 sl-150,2,19,dejala,,dejati,Vmep-sf,VERB,O,,O
@@ -73,8 +73,8 @@ sl-150,2,31,hude,,hud,Agpfsg,ADJ,O,,O
 sl-150,2,32,telesne,,telesen,Agpfsg,ADJ,O,,O
 sl-150,2,33,poškodbe,,poškodba,Ncfsg,NOUN,O,,O
 sl-150,2,34,",",,",",Z,PUNCT,O,,O
-sl-150,2,35,v,,v,Sl,ADP,O,,I-LOC
-sl-150,2,36,priporu,,pripor,Ncmsl,NOUN,O,,I-LOC
+sl-150,2,35,v,,v,Sl,ADP,O,,O
+sl-150,2,36,priporu,,pripor,Ncmsl,NOUN,O,,O
 sl-150,2,37,pa,,pa,Cc,CCONJ,O,,O
 sl-150,2,38,je,,biti,Va-r3s-n,VERB,O,,O
 sl-150,2,39,od,,od,Sg,ADP,O,,O
@@ -96,7 +96,7 @@ sl-150,4,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-150,4,4,kaznivo,,kazniv,Agpnsa,ADJ,O,,O
 sl-150,4,5,dejanje,,dejanje,Ncnsa,NOUN,O,,O
 sl-150,4,6,storil,,storiti,Vmep-sm,VERB,O,,O
-sl-150,4,7,v,,v,Sl,ADP,O,,I-LOC
+sl-150,4,7,v,,v,Sl,ADP,O,,O
 sl-150,4,8,času,,čas,Ncmsl,NOUN,O,,O
 sl-150,4,9,pogojnega,,pogojen,Agpmsg,ADJ,O,,O
 sl-150,4,10,odpusta,,odpust,Ncmsg,NOUN,O,,O
@@ -162,7 +162,7 @@ sl-150,6,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-150,6,10,storil,,storiti,Vmep-sm,VERB,O,,O
 sl-150,6,11,leta,,leto,Ncnsg,NOUN,O,,O
 sl-150,6,12,1999,,1999,Mdc,NUM,O,,O
-sl-150,6,13,v,,v,Sl,ADP,O,,I-LOC
+sl-150,6,13,v,,v,Sl,ADP,O,,O
 sl-150,6,14,Srbiji,Srbija,Srbija,Npfsl,PROPN,B-LOC,GPE-Serbia,B-LOC
 sl-150,6,15,",",,",",Z,PUNCT,O,,O
 sl-150,6,16,sodilo,,soditi,Vmpp-sn,VERB,O,,O
@@ -183,15 +183,15 @@ sl-150,6,30,.,,.,Z,PUNCT,O,,O
 sl-150,7,1,Pretepeni,,pretepen,Appmsny,ADJ,O,,O
 sl-150,7,2,42-letni,,42rleten,Agpmsny,ADJ,O,,O
 sl-150,7,3,Marko,Marko,Marko,Npmsn,PROPN,B-PER,PER-Marko-Potočar,B-PER
-sl-150,7,4,Potočar,Potočar,Potočar,Npmsn,PROPN,I-PER,PER-Marko-Potočar,B-PER
+sl-150,7,4,Potočar,Potočar,Potočar,Npmsn,PROPN,I-PER,PER-Marko-Potočar,I-PER
 sl-150,7,5,je,,biti,Va-r3s-n,AUX,O,,O
-sl-150,7,6,v,,v,Sl,ADP,O,,I-LOC
+sl-150,7,6,v,,v,Sl,ADP,O,,O
 sl-150,7,7,incidentu,,incident,Ncmsl,NOUN,O,,O
 sl-150,7,8,23.,,23.,Mdo,NUM,O,,O
 sl-150,7,9,avgusta,,avgust,Ncmsg,NOUN,O,,O
 sl-150,7,10,lani,,lani,Rgp,ADV,O,,O
-sl-150,7,11,v,,v,Sl,ADP,O,,I-LOC
-sl-150,7,12,baru,bar,bar,Ncmsl,NOUN,B-LOC,LOC-bar-Klanček-near-Novo-mesto,B-LOC
+sl-150,7,11,v,,v,Sl,ADP,O,,O
+sl-150,7,12,baru,bar,bar,Ncmsl,NOUN,B-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
 sl-150,7,13,Klanček,Klanček,Klanček,Npmsn,PROPN,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
 sl-150,7,14,v,v,v,Sl,ADP,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
 sl-150,7,15,Črmošnjicah,Črmošnjicah,Črmošnjice,Npfpl,PROPN,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
@@ -250,7 +250,7 @@ sl-150,8,25,da,,da,Cs,SCONJ,O,,O
 sl-150,8,26,oškodovanec,,oškodovanec,Ncmsn,NOUN,O,,O
 sl-150,8,27,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-150,8,28,bil,,biti,Va-p-sm,AUX,O,,O
-sl-150,8,29,v,,v,Sl,ADP,O,,I-LOC
+sl-150,8,29,v,,v,Sl,ADP,O,,O
 sl-150,8,30,smrtni,,smrten,Agpfsl,ADJ,O,,O
 sl-150,8,31,nevarnosti,,nevarnost,Ncfsl,NOUN,O,,O
 sl-150,8,32,.,,.,Z,PUNCT,O,,O
@@ -277,7 +277,7 @@ sl-150,10,11,",",,",",Z,PUNCT,O,,O
 sl-150,10,12,ko,,ko,Cs,SCONJ,O,,O
 sl-150,10,13,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-150,10,14,prišla,,priti,Vmep-dm,VERB,O,,O
-sl-150,10,15,v,,v,Sa,ADP,O,,I-LOC
+sl-150,10,15,v,,v,Sa,ADP,O,,O
 sl-150,10,16,bar,bar,bar,Ncmsan,NOUN,B-LOC,LOC-bar-Klanček-near-Novo-mesto,B-LOC
 sl-150,10,17,Klanček,Klanček,Klanček,Npmsan,PROPN,I-LOC,LOC-bar-Klanček-near-Novo-mesto,I-LOC
 sl-150,10,18,",",,",",Z,PUNCT,O,,O
@@ -306,7 +306,7 @@ sl-150,12,5,ga,,on,Pp3msa--y,PRON,O,,O
 sl-150,12,6,Potočar,Potočar,Potočar,Npmsn,PROPN,B-PER,PER-Marko-Potočar,B-PER
 sl-150,12,7,močno,,močno,Rgp,ADV,O,,O
 sl-150,12,8,sunil,,suniti,Vmep-sm,VERB,O,,O
-sl-150,12,9,v,,v,Sa,ADP,O,,I-LOC
+sl-150,12,9,v,,v,Sa,ADP,O,,O
 sl-150,12,10,rebra,,rebro,Ncnpa,NOUN,O,,O
 sl-150,12,11,",",,",",Z,PUNCT,O,,O
 sl-150,12,12,Mitrovič,Mitrovič,Mitrovič,Npmsn,PROPN,B-PER,PER-Štefan-Mitrović,B-PER
@@ -318,7 +318,7 @@ sl-150,12,17,s,,z,Si,ADP,O,,O
 sl-150,12,18,pestjo,,pest,Ncfsi,NOUN,O,,O
 sl-150,12,19,večkrat,,večkrat,Rgc,ADV,O,,O
 sl-150,12,20,udaril,,udariti,Vmep-sm,VERB,O,,O
-sl-150,12,21,v,,v,Sa,ADP,O,,I-LOC
+sl-150,12,21,v,,v,Sa,ADP,O,,O
 sl-150,12,22,glavo,,glava,Ncfsa,NOUN,O,,O
 sl-150,12,23,",",,",",Z,PUNCT,O,,O
 sl-150,12,24,da,,da,Cs,SCONJ,O,,O
@@ -478,10 +478,10 @@ sl-150,21,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-150,21,10,po,,po,Sl,ADP,O,,O
 sl-150,21,11,celodnevnem,,celodneven,Agpmsl,ADJ,O,,O
 sl-150,21,12,delu,,del,Ncmsl,NOUN,O,,O
-sl-150,21,13,v,,v,Sl,ADP,O,,I-LOC
+sl-150,21,13,v,,v,Sl,ADP,O,,O
 sl-150,21,14,gozdu,,gozd,Ncmsl,NOUN,O,,O
 sl-150,21,15,ustavil,,ustaviti,Vmep-sm,VERB,O,,O
-sl-150,21,16,v,,v,Sl,ADP,O,,I-LOC
+sl-150,21,16,v,,v,Sl,ADP,O,,O
 sl-150,21,17,Klančku,Klanček,Klanček,Npmsl,PROPN,B-LOC,LOC-bar-Klanček-near-Novo-mesto,B-LOC
 sl-150,21,18,",",,",",Z,PUNCT,O,,O
 sl-150,21,19,naj,,naj,Q,PART,O,,O

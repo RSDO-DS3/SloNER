@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-92,0,1,Trumpovo,Trump,Trumpov,Aspnsn,ADJ,B-PER,PER-Donald-Trump,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-92,0,1,Trumpovo,Trump,Trumpov,Aspnsn,ADJ,B-PER,PER-Donald-Trump,O
 sl-92,0,2,napenjanje,,napenjanje,Ncnsn,NOUN,O,,O
 sl-92,0,3,mišic,,mišica,Ncfpg,NOUN,O,,O
 sl-92,0,4,se,,se,Px------y,PRON,O,,O
@@ -32,7 +32,7 @@ sl-92,2,18,tudi,,tudi,Q,PART,O,,O
 sl-92,2,19,podjetje,,podjetje,Ncnsa,NOUN,O,,O
 sl-92,2,20,za,,za,Sa,ADP,O,,O
 sl-92,2,21,videonadzor,,videonadzor,Ncmsan,NOUN,O,,O
-sl-92,2,22,Hikvision,Hikvision,Hikvision,Npmsn,PROPN,B-ORG,ORG-Hikvision,B-PRO
+sl-92,2,22,Hikvision,Hikvision,Hikvision,Npmsn,PROPN,B-ORG,ORG-Hikvision,B-ORG
 sl-92,2,23,.,,.,Z,PUNCT,O,,O
 sl-92,3,1,Med,,med,Si,ADP,O,,O
 sl-92,3,2,kitajskimi,,kitajski,Agpnpi,ADJ,O,,O
@@ -150,7 +150,7 @@ sl-92,8,14,ameriški,,ameriški,Agpmsay,ADJ,O,,O
 sl-92,8,15,dolar,,dolar,Ncmsan,NOUN,O,,O
 sl-92,8,16,znižala,,znižati,Vmep-sf,VERB,O,,O
 sl-92,8,17,.,,.,Z,PUNCT,O,,O
-sl-92,9,1,Kitajska,,kitajski,Agpnpn,ADJ,O,,B-LOC
+sl-92,9,1,Kitajska,,kitajski,Agpnpn,ADJ,O,,O
 sl-92,9,2,letalska,,letalski,Agpnpn,ADJ,O,,O
 sl-92,9,3,podjetja,,podjetje,Ncnpn,NOUN,O,,O
 sl-92,9,4,",",,",",Z,PUNCT,O,,O
@@ -158,7 +158,7 @@ sl-92,9,5,med,,med,Si,ADP,O,,O
 sl-92,9,6,njimi,,on,Pp3mpi,PRON,O,,O
 sl-92,9,7,tudi,,tudi,Q,PART,O,,O
 sl-92,9,8,Air,Air,Air,Npmsn,PROPN,B-ORG,ORG-Air-China,B-ORG
-sl-92,9,9,China,China,China,Npmsn,PROPN,I-ORG,ORG-Air-China,B-ORG
+sl-92,9,9,China,China,China,Npmsn,PROPN,I-ORG,ORG-Air-China,I-ORG
 sl-92,9,10,in,,in,Cc,CCONJ,O,,O
 sl-92,9,11,China,China,China,Npmsn,PROPN,B-ORG,ORG-China-Southern-Airlines,B-ORG
 sl-92,9,12,Southern,Southern,Southern,Npmsn,PROPN,I-ORG,ORG-China-Southern-Airlines,I-ORG
@@ -282,7 +282,7 @@ sl-92,13,12,",",,",",Z,PUNCT,O,,O
 sl-92,13,13,merjena,,merjen,Appnpn,ADJ,O,,O
 sl-92,13,14,z,,z,Si,ADP,O,,O
 sl-92,13,15,indeksom,,indeks,Ncmsi,NOUN,O,,O
-sl-92,13,16,IFO,IFO,IFO,Npmsn,PROPN,B-ORG,ORG-IFO-Institute-for-Economic-Research,B-ORG
+sl-92,13,16,IFO,IFO,IFO,Npmsn,PROPN,B-ORG,ORG-IFO-Institute-for-Economic-Research,B-PRO
 sl-92,13,17,",",,",",Z,PUNCT,O,,O
 sl-92,13,18,ponovno,,ponovno,Rgp,ADV,O,,O
 sl-92,13,19,poslabšala,,poslabšati,Vmep-pn,VERB,O,,O

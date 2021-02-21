@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-53,0,1,Zaposlene,,zaposlen,Appmpa,ADJ,O,,O
 sl-53,0,2,v,,v,Sl,ADP,O,,O
 sl-53,0,3,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG

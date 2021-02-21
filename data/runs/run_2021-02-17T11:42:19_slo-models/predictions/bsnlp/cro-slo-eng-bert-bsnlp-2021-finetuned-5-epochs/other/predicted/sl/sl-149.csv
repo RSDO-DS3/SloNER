@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-149,0,1,Ta,,ta,Pd-msn,DET,O,,O
 sl-149,0,2,moški,,moški,Ncmsn,NOUN,O,,O
 sl-149,0,3,trdi,,trditi,Vmpr3s,VERB,O,,O
@@ -12,7 +12,7 @@ sl-149,0,10,Charlesa,Charles,Charles,Npmsg,PROPN,B-PER,PER-Charles-Prince-of-Wal
 sl-149,0,11,in,,in,Cc,CCONJ,O,,O
 sl-149,0,12,Camille,Camilla,Camilla,Npfsg,PROPN,B-PER,PER-Camilla-Duchess-of-Wales,B-PER
 sl-149,1,1,Simon,Simon,Simon,Npmsn,PROPN,B-PER,PER-SImon-Dorante-Day,B-PER
-sl-149,1,2,Dorante,Dorante,Dorante,Npmsn,PROPN,I-PER,PER-SImon-Dorante-Day,B-PER
+sl-149,1,2,Dorante,Dorante,Dorante,Npmsn,PROPN,I-PER,PER-SImon-Dorante-Day,I-PER
 sl-149,1,3,-,-,-,Z,PUNCT,I-PER,PER-SImon-Dorante-Day,I-PER
 sl-149,1,4,Day,Day,Day,Npmsn,PROPN,I-PER,PER-SImon-Dorante-Day,I-PER
 sl-149,1,5,trdi,,trditi,Vmpr3s,VERB,O,,O
@@ -31,7 +31,7 @@ sl-149,1,17,mu,,on,Pp3msd--y,PRON,O,,O
 sl-149,1,18,pripadajo,,pripadati,Vmpr3p,VERB,O,,O
 sl-149,1,19,.,,.,Z,PUNCT,O,,O
 sl-149,2,1,Simon,Simon,Simon,Npmsn,PROPN,B-PER,PER-SImon-Dorante-Day,B-PER
-sl-149,2,2,Dorante,Dorante,Dorante,Npmsn,PROPN,I-PER,PER-SImon-Dorante-Day,B-PER
+sl-149,2,2,Dorante,Dorante,Dorante,Npmsn,PROPN,I-PER,PER-SImon-Dorante-Day,I-PER
 sl-149,2,3,-,-,-,Z,PUNCT,I-PER,PER-SImon-Dorante-Day,I-PER
 sl-149,2,4,Day,Day,Day,Npmsn,PROPN,I-PER,PER-SImon-Dorante-Day,I-PER
 sl-149,2,5,trdi,,trditi,Vmpr3s,VERB,O,,O
@@ -114,7 +114,7 @@ sl-149,6,5,moški,,moški,Ncmsn,NOUN,O,,O
 sl-149,6,6,z,,z,Si,ADP,O,,O
 sl-149,6,7,imenom,,ime,Ncnsi,NOUN,O,,O
 sl-149,6,8,Simon,Simon,Simon,Npmsn,PROPN,B-PER,PER-SImon-Dorante-Day,B-PER
-sl-149,6,9,Dorante,Dorante,Dorante,Npmsn,PROPN,I-PER,PER-SImon-Dorante-Day,B-PER
+sl-149,6,9,Dorante,Dorante,Dorante,Npmsn,PROPN,I-PER,PER-SImon-Dorante-Day,I-PER
 sl-149,6,10,-,-,-,Z,PUNCT,I-PER,PER-SImon-Dorante-Day,I-PER
 sl-149,6,11,Day,Day,Day,Npmsn,PROPN,I-PER,PER-SImon-Dorante-Day,I-PER
 sl-149,6,12,",",,",",Z,PUNCT,O,,O
@@ -172,7 +172,7 @@ sl-149,8,16,v,,v,Sl,ADP,O,,O
 sl-149,8,17,avstralskem,,avstralski,Agpmsl,ADJ,O,,O
 sl-149,8,18,Queenslandu,Queensland,Queensland,Npmsl,PROPN,B-LOC,GPE-Queensland,B-LOC
 sl-149,8,19,.,,.,Z,PUNCT,O,,O
-sl-149,9,1,Princ,,princ,Ncmsn,NOUN,O,,B-PER
+sl-149,9,1,Princ,,princ,Ncmsn,NOUN,O,,O
 sl-149,9,2,Charles,Charles,Charles,Npmsn,PROPN,B-PER,PER-Charles-Prince-of-Wales,B-PER
 sl-149,9,3,in,,in,Cc,CCONJ,O,,O
 sl-149,9,4,vojvodinja,,vojvodinja,Ncfsn,NOUN,O,,O
@@ -201,7 +201,7 @@ sl-149,11,12,dala,,dati,Vmep-sf,VERB,O,,O
 sl-149,11,13,v,,v,Sa,ADP,O,,O
 sl-149,11,14,posvojitev,,posvojitev,Ncfsa,NOUN,O,,O
 sl-149,11,15,.,,.,Z,PUNCT,O,,O
-sl-149,12,1,Princ,,princ,Ncmsn,NOUN,O,,B-PER
+sl-149,12,1,Princ,,princ,Ncmsn,NOUN,O,,O
 sl-149,12,2,Charles,Charles,Charles,Npmsn,PROPN,B-PER,PER-Charles-Prince-of-Wales,B-PER
 sl-149,12,3,naj,,naj,Q,PART,O,,O
 sl-149,12,4,bi,,biti,Va-c,AUX,O,,O
@@ -260,7 +260,7 @@ sl-149,15,3,za,,za,Sa,ADP,O,,O
 sl-149,15,4,avstralsko,,avstralski,Agpfsa,ADJ,O,,O
 sl-149,15,5,revijo,,revija,Ncfsa,NOUN,O,,O
 sl-149,15,6,New,New,New,Npmsn,PROPN,B-PRO,PRO-New-Idea-Magazine,B-PRO
-sl-149,15,7,Idea,Idea,Idea,Npmsn,PROPN,I-PRO,PRO-New-Idea-Magazine,B-PRO
+sl-149,15,7,Idea,Idea,Idea,Npmsn,PROPN,I-PRO,PRO-New-Idea-Magazine,I-PRO
 sl-149,15,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-149,15,9,Dorante,Dorante,Dorante,Npmsn,PROPN,B-PER,PER-SImon-Dorante-Day,B-PER
 sl-149,15,10,",",,",",Z,PUNCT,O,,O
@@ -453,7 +453,7 @@ sl-149,25,5,zahteval,,zahtevati,Vmbp-sm,VERB,O,,O
 sl-149,25,6,test,,test,Ncmsan,NOUN,O,,O
 sl-149,25,7,očetovstva,,očetovstvo,Ncnsg,NOUN,O,,O
 sl-149,25,8,.,,.,Z,PUNCT,O,,O
-sl-149,26,1,Princ,,princ,Ncmsn,NOUN,O,,B-PER
+sl-149,26,1,Princ,,princ,Ncmsn,NOUN,O,,O
 sl-149,26,2,Charles,Charles,Charles,Npmsn,PROPN,B-PER,PER-Charles-Prince-of-Wales,B-PER
 sl-149,26,3,in,,in,Cc,CCONJ,O,,O
 sl-149,26,4,Camilla,Camilla,Camilla,Npfsn,PROPN,B-PER,PER-Camilla-Duchess-of-Wales,B-PER
@@ -473,7 +473,7 @@ sl-149,26,17,",",,",",Z,PUNCT,O,,O
 sl-149,26,18,ki,,ki,Cs,SCONJ,O,,O
 sl-149,26,19,naj,,naj,Q,PART,O,,O
 sl-149,26,20,bi,,biti,Va-c,AUX,O,,O
-sl-149,26,21,Simona,,Simon,Npmsay,PROPN,O,,B-PER
+sl-149,26,21,Simona,,Simon,Npmsay,PROPN,O,,O
 sl-149,26,22,Doranteja,Dorante,Dorante,Npmsay,PROPN,B-PER,PER-SImon-Dorante-Day,B-PER
 sl-149,26,23,umiril,,umiriti,Vmep-sm,VERB,O,,O
 sl-149,26,24,",",,",",Z,PUNCT,O,,O

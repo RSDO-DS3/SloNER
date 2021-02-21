@@ -1,9 +1,9 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-69,0,1,V,,v,Sl,ADP,O,,O
 sl-69,0,2,Zagrebu,Zagreb,Zagreb,Npmsl,PROPN,B-LOC,GPE-Zagreb,B-LOC
 sl-69,0,3,množični,,množičen,Agpmsny,ADJ,O,,O
 sl-69,0,4,protest,,protest,Ncmsn,NOUN,O,,O
-sl-69,0,5,sindikatov,,sindikat,Ncmpg,NOUN,O,,I-ORG
+sl-69,0,5,sindikatov,,sindikat,Ncmpg,NOUN,O,,O
 sl-69,0,6,proti,,proti,Sd,ADP,O,,O
 sl-69,0,7,pokojninski,,pokojninski,Agpfsd,ADJ,O,,O
 sl-69,0,8,reformi,,reforma,Ncfsd,NOUN,O,,O
@@ -14,7 +14,7 @@ sl-69,1,4,sindikata,,sindikat,Ncmsg,NOUN,O,,O
 sl-69,1,5,Zveze,Zveza,zveza,Ncfsg,NOUN,B-ORG,ORG-SSSH-The-Union-of-Autonomous-Trade-Unions-of-Croatia,B-ORG
 sl-69,1,6,samostojnih,samostojnih,samostojen,Agpmpg,ADJ,I-ORG,ORG-SSSH-The-Union-of-Autonomous-Trade-Unions-of-Croatia,I-ORG
 sl-69,1,7,sindikatov,sindikatov,sindikat,Ncmpg,NOUN,I-ORG,ORG-SSSH-The-Union-of-Autonomous-Trade-Unions-of-Croatia,I-ORG
-sl-69,1,8,Hrvaške,Hrvaške,Hrvaška,Npfsg,PROPN,I-ORG,ORG-SSSH-The-Union-of-Autonomous-Trade-Unions-of-Croatia,B-LOC
+sl-69,1,8,Hrvaške,Hrvaške,Hrvaška,Npfsg,PROPN,I-ORG,ORG-SSSH-The-Union-of-Autonomous-Trade-Unions-of-Croatia,I-ORG
 sl-69,1,9,(,,(,Z,PUNCT,O,,O
 sl-69,1,10,SSSH,SSSH,SSSH,Npmsn,PROPN,B-ORG,ORG-SSSH-The-Union-of-Autonomous-Trade-Unions-of-Croatia,B-ORG
 sl-69,1,11,),,),Z,PUNCT,O,,O
@@ -56,7 +56,7 @@ sl-69,2,11,se,,se,Px------y,PRON,O,,O
 sl-69,2,12,tiče,,tikati,Vmpr3s,VERB,O,,O
 sl-69,2,13,«,,«,Z,PUNCT,O,,O
 sl-69,2,14,.,,.,Z,PUNCT,O,,O
-sl-69,3,1,Vlada,,vlada,Ncfsn,NOUN,O,,O
+sl-69,3,1,Vlada,,vlada,Ncfsn,NOUN,O,,B-LOC
 sl-69,3,2,načrtuje,,načrtovati,Vmpr3s,VERB,O,,O
 sl-69,3,3,uveljavitev,,uveljavitev,Ncfsa,NOUN,O,,O
 sl-69,3,4,višje,,visok,Agcfsg,ADJ,O,,O
@@ -136,7 +136,7 @@ sl-69,6,6,naj,,naj,Q,PART,O,,O
 sl-69,6,7,zagotovijo,,zagotoviti,Vmer3p,VERB,O,,O
 sl-69,6,8,delovne,,deloven,Agpmpa,ADJ,O,,O
 sl-69,6,9,pogoje,,pogoj,Ncmpa,NOUN,O,,O
-sl-69,6,10,hrvaškim,Hrvaška,hrvaški,Agpmpd,ADJ,B-LOC,GPE-Croatia,O
+sl-69,6,10,hrvaškim,Hrvaška,hrvaški,Agpmpd,ADJ,B-LOC,GPE-Croatia,B-LOC
 sl-69,6,11,delavcem,,delavec,Ncmpd,NOUN,O,,O
 sl-69,6,12,",",,",",Z,PUNCT,O,,O
 sl-69,6,13,kot,,kot,Cs,SCONJ,O,,O
@@ -236,7 +236,7 @@ sl-69,10,12,danes,,danes,Rgp,ADV,O,,O
 sl-69,10,13,kot,,kot,Cs,SCONJ,O,,O
 sl-69,10,14,vodilna,,vodilen,Agpfsn,ADJ,O,,O
 sl-69,10,15,vladna,,vladen,Agpfsn,ADJ,O,,O
-sl-69,10,16,stranka,,stranka,Ncfsn,NOUN,O,,I-ORG
+sl-69,10,16,stranka,,stranka,Ncfsn,NOUN,O,,O
 sl-69,10,17,pa,,pa,Cc,CCONJ,O,,O
 sl-69,10,18,predlaga,,predlagati,Vmbr3s,VERB,O,,O
 sl-69,10,19,še,,še,Q,PART,O,,O

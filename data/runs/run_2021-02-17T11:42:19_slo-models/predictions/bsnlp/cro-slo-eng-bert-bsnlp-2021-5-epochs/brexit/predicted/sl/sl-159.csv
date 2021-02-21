@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-159,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-159,0,2,bi,,biti,Va-c,AUX,O,,O
 sl-159,0,3,Britance,Britanci,Britanec,Npmpa,PROPN,B-PER,GPE-Great-Britain,B-PER
@@ -119,7 +119,7 @@ sl-159,4,32,morali,,morati,Vmpp-pm,VERB,O,,O
 sl-159,4,33,plačati,,plačati,Vmen,VERB,O,,O
 sl-159,4,34,državljani,,državljan,Ncmpn,NOUN,O,,O
 sl-159,4,35,.,,.,Z,PUNCT,O,,O
-sl-159,5,1,Vladi,,vlada,Ncfsd,NOUN,O,,O
+sl-159,5,1,Vladi,,vlada,Ncfsd,NOUN,O,,B-PER
 sl-159,5,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-159,5,3,ob,,ob,Sl,ADP,O,,O
 sl-159,5,4,tem,,ta,Pd-nsl,DET,O,,O

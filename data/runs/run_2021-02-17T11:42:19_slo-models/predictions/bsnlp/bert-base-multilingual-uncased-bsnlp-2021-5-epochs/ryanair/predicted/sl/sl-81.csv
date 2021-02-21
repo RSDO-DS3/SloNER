@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-81,0,1,',,',Z,PUNCT,O,,O
 sl-81,0,2,Ne,,ne,Q,PART,O,,O
 sl-81,0,3,pogovarjaj,,pogovarjati,Vmpm2s,VERB,O,,O
@@ -40,7 +40,7 @@ sl-81,1,22,tujem,,tuj,Agpmsl,ADJ,O,,O
 sl-81,1,23,jeziku,,jezik,Ncmsl,NOUN,O,,O
 sl-81,1,24,',,',Z,PUNCT,O,,O
 sl-81,1,25,.,,.,Z,PUNCT,O,,O
-sl-81,2,1,Moški,,moški,Ncmsn,NOUN,O,,O
+sl-81,2,1,Moški,,moški,Ncmsn,NOUN,O,,B-PER
 sl-81,2,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-81,2,3,s,,z,Si,ADP,O,,O
 sl-81,2,4,temi,,ta,Pd-fpi,DET,O,,O
@@ -48,9 +48,9 @@ sl-81,2,5,besedami,,beseda,Ncfpi,NOUN,O,,O
 sl-81,2,6,na,,na,Sl,ADP,O,,O
 sl-81,2,7,letu,,leto,Ncnsl,NOUN,O,,O
 sl-81,2,8,iz,,iz,Sg,ADP,O,,O
-sl-81,2,9,Barcelone,Barcelona,Barcelona,Npfsg,PROPN,B-LOC,GPE-Barcelona,O
+sl-81,2,9,Barcelone,Barcelona,Barcelona,Npfsg,PROPN,B-LOC,GPE-Barcelona,B-LOC
 sl-81,2,10,v,,v,Sa,ADP,O,,O
-sl-81,2,11,Stansted,Stansted,Stansted,Npmsan,PROPN,B-LOC,LOC-Stansted-airport,O
+sl-81,2,11,Stansted,Stansted,Stansted,Npmsan,PROPN,B-LOC,LOC-Stansted-airport,B-LOC
 sl-81,2,12,napadel,,napasti,Vmep-sm,VERB,O,,O
 sl-81,2,13,77-letno,,7vrleten,Agpfsa,ADJ,O,,O
 sl-81,2,14,žensko,,ženska,Ncfsa,NOUN,O,,O
@@ -61,7 +61,7 @@ sl-81,3,3,sedaj,,sedaj,Rgp,ADV,O,,O
 sl-81,3,4,letijo,,leteti,Vmpr3p,VERB,O,,O
 sl-81,3,5,predvsem,,predvsem,Q,PART,O,,O
 sl-81,3,6,na,,na,Sa,ADP,O,,O
-sl-81,3,7,Ryanair,Ryanair,Ryanair,Npmsan,PROPN,B-ORG,ORG-Ryanair,O
+sl-81,3,7,Ryanair,Ryanair,Ryanair,Npmsan,PROPN,B-ORG,ORG-Ryanair,B-LOC
 sl-81,3,8,",",,",",Z,PUNCT,O,,O
 sl-81,3,9,ki,,ki,Cs,SCONJ,O,,O
 sl-81,3,10,z,,z,Sg,ADP,O,,O
@@ -102,9 +102,9 @@ sl-81,4,20,opazkami,,opazka,Ncfpi,NOUN,O,,O
 sl-81,4,21,na,,na,Sl,ADP,O,,O
 sl-81,4,22,letu,,leto,Ncnsl,NOUN,O,,O
 sl-81,4,23,iz,,iz,Sg,ADP,O,,O
-sl-81,4,24,Barcelone,Barcelona,Barcelona,Npfsg,PROPN,B-LOC,GPE-Barcelona,O
+sl-81,4,24,Barcelone,Barcelona,Barcelona,Npfsg,PROPN,B-LOC,GPE-Barcelona,B-LOC
 sl-81,4,25,v,,v,Sa,ADP,O,,O
-sl-81,4,26,Stansted,Stansted,Stansted,Npmsan,PROPN,B-LOC,LOC-Stansted-airport,O
+sl-81,4,26,Stansted,Stansted,Stansted,Npmsan,PROPN,B-LOC,LOC-Stansted-airport,B-LOC
 sl-81,4,27,napadel,,napasti,Vmep-sm,VERB,O,,O
 sl-81,4,28,starejšo,,star,Agcfsa,ADJ,O,,O
 sl-81,4,29,žensko,,ženska,Ncfsa,NOUN,O,,O
@@ -126,7 +126,7 @@ sl-81,4,44,omrežjih,,omrežje,Ncnpl,NOUN,O,,O
 sl-81,4,45,.,,.,Z,PUNCT,O,,O
 sl-81,5,1,Samo,,samo,Q,PART,O,,O
 sl-81,5,2,na,,na,Sl,ADP,O,,O
-sl-81,5,3,Facebooku,Facebook,Facebook,Npmsl,PROPN,B-PRO,PRO-Facebook,O
+sl-81,5,3,Facebooku,Facebook,Facebook,Npmsl,PROPN,B-PRO,PRO-Facebook,B-LOC
 sl-81,5,4,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-81,5,5,posnetek,,posnetek,Ncmsan,NOUN,O,,O
 sl-81,5,6,že,,že,Q,PART,O,,O
@@ -143,7 +143,7 @@ sl-81,6,5,da,,da,Cs,SCONJ,O,,O
 sl-81,6,6,bi,,biti,Va-c,AUX,O,,O
 sl-81,6,7,ga,,on,Pp3msa--y,PRON,O,,O
 sl-81,6,8,moral,,morati,Vmpp-sm,VERB,O,,O
-sl-81,6,9,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-81,6,9,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-81,6,10,odstraniti,,odstraniti,Vmen,VERB,O,,O
 sl-81,6,11,ter,,ter,Cc,CCONJ,O,,O
 sl-81,6,12,že,,že,Q,PART,O,,O
@@ -153,7 +153,7 @@ sl-81,6,15,bojkotom,,bojkot,Ncmsi,NOUN,O,,O
 sl-81,6,16,letalske,,letalski,Agpfsg,ADJ,O,,O
 sl-81,6,17,družbe,,družba,Ncfsg,NOUN,O,,O
 sl-81,6,18,.,,.,Z,PUNCT,O,,O
-sl-81,7,1,Ta,,ta,Pd-fsn,DET,O,,O
+sl-81,7,1,Ta,,ta,Pd-fsn,DET,O,,B-PER
 sl-81,7,2,sicer,,sicer,Q,PART,O,,O
 sl-81,7,3,odgovarja,,odgovarjati,Vmpr3s,VERB,O,,O
 sl-81,7,4,",",,",",Z,PUNCT,O,,O
@@ -233,9 +233,9 @@ sl-81,10,3,ženske,,ženska,Ncfsg,NOUN,O,,O
 sl-81,10,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-81,10,5,kasneje,,kasno,Rgc,ADV,O,,O
 sl-81,10,6,za,,za,Sa,ADP,O,,O
-sl-81,10,7,The,The,the,Xf,X,B-PRO,PRO-Huffington-Post,O
-sl-81,10,8,Huffington,Huffington,Huffington,Npmsan,PROPN,I-PRO,PRO-Huffington-Post,O
-sl-81,10,9,Post,Post,Post,Npmsan,PROPN,I-PRO,PRO-Huffington-Post,O
+sl-81,10,7,The,The,the,Xf,X,B-PRO,PRO-Huffington-Post,B-PRO
+sl-81,10,8,Huffington,Huffington,Huffington,Npmsan,PROPN,I-PRO,PRO-Huffington-Post,B-PRO
+sl-81,10,9,Post,Post,Post,Npmsan,PROPN,I-PRO,PRO-Huffington-Post,I-PRO
 sl-81,10,10,povedala,,povedati,Vmep-sf,VERB,O,,O
 sl-81,10,11,",",,",",Z,PUNCT,O,,O
 sl-81,10,12,da,,da,Cs,SCONJ,O,,O
@@ -269,8 +269,8 @@ sl-81,10,39,do,,do,Sg,ADP,O,,O
 sl-81,10,40,svojega,,svoj,Px-msg,DET,O,,O
 sl-81,10,41,sedeža,,sedež,Ncmsg,NOUN,O,,O
 sl-81,10,42,.,,.,Z,PUNCT,O,,O
-sl-81,11,1,David,David,David,Npmsn,PROPN,B-PER,PER-David-Lawrence,O
-sl-81,11,2,Lawrence,Lawrence,Lawrence,Npmsn,PROPN,I-PER,PER-David-Lawrence,O
+sl-81,11,1,David,David,David,Npmsn,PROPN,B-PER,PER-David-Lawrence,B-PER
+sl-81,11,2,Lawrence,Lawrence,Lawrence,Npmsn,PROPN,I-PER,PER-David-Lawrence,I-PER
 sl-81,11,3,",",,",",Z,PUNCT,O,,O
 sl-81,11,4,ki,,ki,Cs,SCONJ,O,,O
 sl-81,11,5,je,,biti,Va-r3s-n,AUX,O,,O
@@ -279,8 +279,8 @@ sl-81,11,7,posnel,,posneti,Vmep-sm,VERB,O,,O
 sl-81,11,8,",",,",",Z,PUNCT,O,,O
 sl-81,11,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-81,11,10,za,,za,Sa,ADP,O,,O
-sl-81,11,11,BBC,BBC,BBC,Npmsan,PROPN,B-PRO,PRO-BBC-Radio-5,O
-sl-81,11,12,Radio,Radio,radio,Ncmsn,NOUN,I-PRO,PRO-BBC-Radio-5,O
+sl-81,11,11,BBC,BBC,BBC,Npmsan,PROPN,B-PRO,PRO-BBC-Radio-5,B-PRO
+sl-81,11,12,Radio,Radio,radio,Ncmsn,NOUN,I-PRO,PRO-BBC-Radio-5,I-PRO
 sl-81,11,13,5,5,5,Mdc,NUM,I-PRO,PRO-BBC-Radio-5,I-PRO
 sl-81,11,14,povedal,,povedati,Vmep-sm,VERB,O,,O
 sl-81,11,15,:,,:,Z,PUNCT,O,,O
@@ -359,12 +359,12 @@ sl-81,14,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-81,14,3,prišla,,priti,Vmep-sf,VERB,O,,O
 sl-81,14,4,hčerka,,hčerka,Ncfsn,NOUN,O,,O
 sl-81,14,5,in,,in,Cc,CCONJ,O,,O
-sl-81,14,6,začel,,začeti,Vmep-sm,VERB,O,,O
+sl-81,14,6,začel,,začeti,Vmep-sm,VERB,O,,B-PER
 sl-81,14,7,se,,se,Px------y,PRON,O,,O
 sl-81,14,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-81,14,9,prepir,,prepir,Ncmsn,NOUN,O,,O
 sl-81,14,10,",",,",",Z,PUNCT,O,,O
-sl-81,14,11,David,David,David,Npmsn,PROPN,B-PER,PER-David-Lawrence,O
+sl-81,14,11,David,David,David,Npmsn,PROPN,B-PER,PER-David-Lawrence,B-PER
 sl-81,14,12,pa,,pa,Cc,CCONJ,O,,O
 sl-81,14,13,je,,biti,Va-r3s-n,AUX,O,,O
 sl-81,14,14,začel,,začeti,Vmep-sm,VERB,O,,O
@@ -401,8 +401,8 @@ sl-81,16,14,",",,",",Z,PUNCT,O,,O
 sl-81,16,15,ki,,ki,Cs,SCONJ,O,,O
 sl-81,16,16,je,,biti,Va-r3s-n,AUX,O,,O
 sl-81,16,17,v,,v,Sa,ADP,O,,O
-sl-81,16,18,Veliko,Velika,velik,Agpfsa,ADJ,B-LOC,GPE-Great-Britain,O
-sl-81,16,19,Britanijo,Britanija,Britanija,Npfsa,PROPN,I-LOC,GPE-Great-Britain,O
+sl-81,16,18,Veliko,Velika,velik,Agpfsa,ADJ,B-LOC,GPE-Great-Britain,B-LOC
+sl-81,16,19,Britanijo,Britanija,Britanija,Npfsa,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-81,16,20,prišla,,priti,Vmep-sf,VERB,O,,O
 sl-81,16,21,v,,v,Sl,ADP,O,,O
 sl-81,16,22,60.,,60.,Mdo,NUM,O,,O

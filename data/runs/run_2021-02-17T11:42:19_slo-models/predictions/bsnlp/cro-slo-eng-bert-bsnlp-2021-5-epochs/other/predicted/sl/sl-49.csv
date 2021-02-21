@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-49,0,1,Adria,Adria,Adria,Npfsn,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-49,0,2,Airways,Airways,Airways,Npfsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
 sl-49,0,3,do,,do,Sg,ADP,O,,O
@@ -91,7 +91,7 @@ sl-49,4,24,nočne,,nočen,Agpmpa,ADJ,O,,O
 sl-49,4,25,lete,,let,Ncmpa,NOUN,O,,O
 sl-49,4,26,na,,na,Sl,ADP,O,,O
 sl-49,4,27,relaciji,,relacija,Ncfsl,NOUN,O,,O
-sl-49,4,28,Ljubljana-Skopje-Ljubljana,,Ljubljanansenabljubljublja,Npmsg,PROPN,O,,B-LOC
+sl-49,4,28,Ljubljana-Skopje-Ljubljana,,Ljubljanansenabljubljublja,Npmsg,PROPN,O,,O
 sl-49,4,29,in,,in,Cc,CCONJ,O,,O
 sl-49,4,30,Ljubljana-Priština-Ljubljana,,Ljubljanaqpiblabljubljubljan,Npmsg,PROPN,O,,O
 sl-49,4,31,",",,",",Z,PUNCT,O,,O
@@ -200,7 +200,7 @@ sl-49,8,4,večinski,,večinski,Agpfsl,ADJ,O,,O
 sl-49,8,5,lasti,,last,Ncfsl,NOUN,O,,O
 sl-49,8,6,družbe,,družba,Ncfsg,NOUN,O,,O
 sl-49,8,7,AA,AA,AA,Npmsn,PROPN,B-ORG,ORG-AA-International-Aviation-Holding,B-ORG
-sl-49,8,8,International,International,International,Npmsn,PROPN,I-ORG,ORG-AA-International-Aviation-Holding,B-ORG
+sl-49,8,8,International,International,International,Npmsn,PROPN,I-ORG,ORG-AA-International-Aviation-Holding,I-ORG
 sl-49,8,9,Aviation,Aviation,Aviation,Npmsn,PROPN,I-ORG,ORG-AA-International-Aviation-Holding,I-ORG
 sl-49,8,10,Holding,Holding,holding,Ncmsn,NOUN,I-ORG,ORG-AA-International-Aviation-Holding,I-ORG
 sl-49,8,11,oz.,,oz.,Y,X,O,,O

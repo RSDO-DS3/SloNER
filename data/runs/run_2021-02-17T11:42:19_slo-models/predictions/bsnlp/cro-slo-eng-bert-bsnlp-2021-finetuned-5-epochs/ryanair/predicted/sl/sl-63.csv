@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-63,0,1,Namesto,,namesto,Sg,ADP,O,,O
 sl-63,0,2,v,,v,Sa,ADP,O,,O
 sl-63,0,3,Grčijo,Grčija,Grčija,Npfsa,PROPN,B-LOC,GPE-Greece,B-LOC
@@ -207,7 +207,7 @@ sl-63,9,6,Temišvaru,Temišvar,Temišvar,Npmsl,PROPN,B-LOC,GPE-Timisoara,B-LOC
 sl-63,9,7,",",,",",Z,PUNCT,O,,O
 sl-63,9,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-63,9,9,poskrbela,,poskrbeti,Vmep-sf,VERB,O,,O
-sl-63,9,10,grška,,grški,Agpfsn,ADJ,O,,B-LOC
+sl-63,9,10,grška,,grški,Agpfsn,ADJ,O,,O
 sl-63,9,11,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-63,9,12,",",,",",Z,PUNCT,O,,O
 sl-63,9,13,ki,,ki,Cs,SCONJ,O,,O

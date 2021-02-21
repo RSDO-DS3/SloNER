@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-8,0,1,Za,,za,Sa,ADP,O,,O
 sl-8,0,2,pomoč,,pomoč,Ncfsa,NOUN,O,,O
 sl-8,0,3,psihologa,,psiholog,Ncmsg,NOUN,O,,O
@@ -62,7 +62,7 @@ sl-8,5,14,sliši,,slišati,Vmbr3s,VERB,O,,O
 sl-8,5,15,na,,na,Sa,ADP,O,,O
 sl-8,5,16,ime,,ime,Ncnsa,NOUN,O,,O
 sl-8,5,17,leon,Leon,leon,Ncmsn,NOUN,B-PRO,PRO-Seat-Leon-Cupra-R,B-PRO
-sl-8,5,18,cupra,Cupra,cupra,Ncmsn,NOUN,I-PRO,PRO-Seat-Leon-Cupra-R,B-PRO
+sl-8,5,18,cupra,Cupra,cupra,Ncmsn,NOUN,I-PRO,PRO-Seat-Leon-Cupra-R,I-PRO
 sl-8,5,19,R,R,R,Ncmsn,NOUN,I-PRO,PRO-Seat-Leon-Cupra-R,I-PRO
 sl-8,5,20,",",,",",Z,PUNCT,O,,O
 sl-8,5,21,izdelali,,izdelati,Vmep-pm,VERB,O,,O

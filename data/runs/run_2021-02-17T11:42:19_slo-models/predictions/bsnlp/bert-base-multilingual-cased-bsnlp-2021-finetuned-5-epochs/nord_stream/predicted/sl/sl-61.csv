@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-61,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-61,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-ORG
 sl-61,0,2,uvedel,,uvesti,Vmep-sm,VERB,O,,O
 sl-61,0,3,sankcije,,sankcija,Ncfpa,NOUN,O,,O
 sl-61,0,4,proti,,proti,Sd,ADP,O,,O
@@ -71,7 +71,7 @@ sl-61,2,29,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
 sl-61,2,30,z,,z,Si,ADP,O,,O
 sl-61,2,31,Nemčijo,Nemčija,Nemčija,Npfsi,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-61,2,32,in,,in,Cc,CCONJ,O,,O
-sl-61,2,33,Evropo,Evropa,Evropa,Npfsi,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-61,2,33,Evropo,Evropa,Evropa,Npfsi,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-61,2,34,.,,.,Z,PUNCT,O,,O
 sl-61,3,1,Problematizirajo,,problematizirati,Vmbr3p,VERB,O,,O
 sl-61,3,2,tudi,,tudi,Q,PART,O,,O

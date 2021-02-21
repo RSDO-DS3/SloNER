@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-13,0,1,Za,,za,Sa,ADP,O,,O
 sl-13,0,2,gastritis,,gastritis,Ncmsan,NOUN,O,,O
 sl-13,0,3,okrivil,,okriviti,Vmep-sm,VERB,O,,O
@@ -145,10 +145,10 @@ sl-13,5,75,med,,med,Si,ADP,O,,O
 sl-13,5,76,drugim,,drug,Mlpnsi,ADJ,O,,O
 sl-13,5,77,zapisal,,zapisati,Vmep-sm,VERB,O,,O
 sl-13,5,78,:,,:,Z,PUNCT,O,,O
-sl-13,5,79,'',,'',Ncmsn,NOUN,O,,O
-sl-13,5,80,Slaba,,slab,Agpfsn,ADJ,O,,O
-sl-13,5,81,novica,,novica,Ncfsn,NOUN,O,,O
-sl-13,5,82,...,,...,Y,X,O,,O
+sl-13,5,79,'',,'',Ncmsn,NOUN,O,,
+sl-13,5,80,Slaba,,slab,Agpfsn,ADJ,O,,
+sl-13,5,81,novica,,novica,Ncfsn,NOUN,O,,
+sl-13,5,82,...,,...,Y,X,O,,
 sl-13,6,1,Ne,,ne,Q,PART,O,,O
 sl-13,6,2,umiram,,umirati,Vmpr1s,VERB,O,,O
 sl-13,6,3,.,,.,Z,PUNCT,O,,O

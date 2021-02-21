@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-145,0,1,Iranska,,iranski,Agpfsn,ADJ,O,,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-145,0,1,Iranska,,iranski,Agpfsn,ADJ,O,,O
 sl-145,0,2,novinarka,,novinarka,Ncfsn,NOUN,O,,O
 sl-145,0,3,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-145,0,4,",",,",",Z,PUNCT,O,,O
@@ -11,9 +11,9 @@ sl-145,0,9,zaprli,,zapreti,Vmep-pm,VERB,O,,O
 sl-145,0,10,zaradi,,zaradi,Sg,ADP,O,,O
 sl-145,0,11,njenega,,njen,Ps3nsgsf,DET,O,,O
 sl-145,0,12,dela,,delo,Ncnsg,NOUN,O,,O
-sl-145,0,13,in,,in,Cc,CCONJ,O,,I-LOC
+sl-145,0,13,in,,in,Cc,CCONJ,O,,O
 sl-145,0,14,prepričanj,,prepričanje,Ncnpg,NOUN,O,,O
-sl-145,1,1,FBI,FBI,FBI,Npmsn,PROPN,B-ORG,ORG-FBI-Federal-Bureau-of-Investigation,B-ORG
+sl-145,1,1,FBI,FBI,FBI,Npmsn,PROPN,B-ORG,ORG-FBI-Federal-Bureau-of-Investigation,O
 sl-145,1,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-145,1,3,v,,v,Sl,ADP,O,,O
 sl-145,1,4,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
@@ -55,7 +55,7 @@ sl-145,1,39,policijskemu,,policijski,Agpnsd,ADJ,O,,O
 sl-145,1,40,nasilju,,nasilje,Ncnsd,NOUN,O,,O
 sl-145,1,41,nad,,nad,Si,ADP,O,,O
 sl-145,1,42,temnopoltimi,,temnopolt,Agpmpi,ADJ,O,,O
-sl-145,1,43,.,,.,Z,PUNCT,O,,B-LOC
+sl-145,1,43,.,,.,Z,PUNCT,O,,O
 sl-145,2,1,Odpeljali,,odpeljati,Vmep-pm,VERB,O,,O
 sl-145,2,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-145,2,3,jo,,on,Pp3fsa--y,PRON,O,,O
@@ -88,9 +88,9 @@ sl-145,2,29,",",,",",Z,PUNCT,O,,O
 sl-145,2,30,da,,da,Cs,SCONJ,O,,O
 sl-145,2,31,bi,,biti,Va-c,AUX,O,,O
 sl-145,2,32,pobegnila,,pobegniti,Vmep-sf,VERB,O,,O
-sl-145,2,33,.,,.,Z,PUNCT,O,,B-LOC
+sl-145,2,33,.,,.,Z,PUNCT,O,,O
 sl-145,3,1,59-letna,,f9reten,Agpfsn,ADJ,O,,O
-sl-145,3,2,Hashemijeva,Hashemi,Hashemijev,Aspfsn,ADJ,B-PER,PER-Hashemi,O
+sl-145,3,2,Hashemijeva,Hashemi,Hashemijev,Aspfsn,ADJ,B-PER,PER-Hashemi,B-PER
 sl-145,3,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-145,3,4,ameriškim,,ameriški,Agpmpd,ADJ,O,,O
 sl-145,3,5,novinarjem,,novinar,Ncmpd,NOUN,O,,O
@@ -120,7 +120,7 @@ sl-145,3,28,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-145,3,29,storila,,storiti,Vmep-sf,VERB,O,,O
 sl-145,3,30,nič,,nič,Pz-nsa,PRON,O,,O
 sl-145,3,31,narobe,,narobe,Rgp,ADV,O,,O
-sl-145,3,32,.,,.,Z,PUNCT,O,,B-LOC
+sl-145,3,32,.,,.,Z,PUNCT,O,,O
 sl-145,4,1,Kljub,,kljub,Sd,ADP,O,,O
 sl-145,4,2,temu,,ta,Pd-nsd,DET,O,,O
 sl-145,4,3,so,,biti,Va-r3p-n,AUX,O,,O
@@ -141,7 +141,7 @@ sl-145,4,17,kjer,,kjer,Cs,SCONJ,O,,O
 sl-145,4,18,je,,biti,Va-r3s-n,AUX,O,,O
 sl-145,4,19,podala,,podati,Vmbp-sf,VERB,O,,O
 sl-145,4,20,izjavo,,izjava,Ncfsa,NOUN,O,,O
-sl-145,4,21,.,,.,Z,PUNCT,O,,B-LOC
+sl-145,4,21,.,,.,Z,PUNCT,O,,O
 sl-145,5,1,Iz,,iz,Sg,ADP,O,,O
 sl-145,5,2,zapora,,zapor,Ncmsg,NOUN,O,,O
 sl-145,5,3,so,,biti,Va-r3p-n,AUX,O,,O
@@ -172,8 +172,8 @@ sl-145,5,27,so,,biti,Va-r3p-n,AUX,O,,O
 sl-145,5,28,potrebovali,,potrebovati,Vmpp-pm,VERB,O,,O
 sl-145,5,29,njeno,,njen,Ps3fsasf,DET,O,,O
 sl-145,5,30,izjavo,,izjava,Ncfsa,NOUN,O,,O
-sl-145,5,31,.,,.,Z,PUNCT,O,,B-LOC
-sl-145,6,1,Hashemijeva,Hashemi,Hashemijev,Aspfsn,ADJ,B-PER,PER-Hashemi,O
+sl-145,5,31,.,,.,Z,PUNCT,O,,O
+sl-145,6,1,Hashemijeva,Hashemi,Hashemijev,Aspfsn,ADJ,B-PER,PER-Hashemi,B-PER
 sl-145,6,2,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-145,6,3,podrobnosti,,podrobnost,Ncfpa,NOUN,O,,O
 sl-145,6,4,morda,,morda,Q,PART,O,,O
@@ -185,8 +185,8 @@ sl-145,6,9,na,,na,Sl,ADP,O,,O
 sl-145,6,10,varnem,,varen,Agpmsl,ADJ,O,,O
 sl-145,6,11,doma,,dom,Ncmsl,NOUN,O,,O
 sl-145,6,12,v,,v,Sl,ADP,O,,O
-sl-145,6,13,Iranu,Iran,Iran,Npmsl,PROPN,B-LOC,GPE-Iran,O
-sl-145,6,14,.,,.,Z,PUNCT,O,,B-LOC
+sl-145,6,13,Iranu,Iran,Iran,Npmsl,PROPN,B-LOC,GPE-Iran,B-LOC
+sl-145,6,14,.,,.,Z,PUNCT,O,,O
 sl-145,7,1,Zagotovila,,zagotoviti,Vmep-sf,VERB,O,,O
 sl-145,7,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-145,7,3,",",,",",Z,PUNCT,O,,O
@@ -197,7 +197,7 @@ sl-145,7,7,bi,,biti,Va-c,AUX,O,,O
 sl-145,7,8,bilo,,biti,Va-p-sn,AUX,O,,O
 sl-145,7,9,potrebno,,potreben,Agpnsn,ADJ,O,,O
 sl-145,7,10,zapreti,,zapreti,Vmen,VERB,O,,O
-sl-145,7,11,.,,.,Z,PUNCT,O,,B-LOC
+sl-145,7,11,.,,.,Z,PUNCT,O,,O
 sl-145,8,1,Vsako,,vsak,Pg-nsa,DET,O,,O
 sl-145,8,2,leto,,leto,Ncnsa,NOUN,O,,O
 sl-145,8,3,pride,,priti,Vmer3s,VERB,O,,O
@@ -210,7 +210,7 @@ sl-145,8,9,družini,,družina,Ncfsd,NOUN,O,,O
 sl-145,8,10,in,,in,Cc,CCONJ,O,,O
 sl-145,8,11,zaradi,,zaradi,Sg,ADP,O,,O
 sl-145,8,12,dela,,delo,Ncnsg,NOUN,O,,O
-sl-145,8,13,.,,.,Z,PUNCT,O,,B-LOC
+sl-145,8,13,.,,.,Z,PUNCT,O,,O
 sl-145,9,1,Prepričana,,prepričan,Appfsn,ADJ,O,,O
 sl-145,9,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-145,9,3,",",,",",Z,PUNCT,O,,O
@@ -237,7 +237,7 @@ sl-145,9,23,politiko,,politika,Ncfsi,NOUN,O,,O
 sl-145,9,24,tistih,,tisti,Pd-mpg,DET,O,,O
 sl-145,9,25,na,,na,Sl,ADP,O,,O
 sl-145,9,26,oblasti,,oblast,Ncfsl,NOUN,O,,O
-sl-145,9,27,.,,.,Z,PUNCT,O,,B-LOC
+sl-145,9,27,.,,.,Z,PUNCT,O,,O
 sl-145,10,1,Omenila,,omeniti,Vmep-sf,VERB,O,,O
 sl-145,10,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-145,10,3,tudi,,tudi,Q,PART,O,,O
@@ -258,13 +258,13 @@ sl-145,10,17,istem,,isti,Pi-msl,DET,O,,O
 sl-145,10,18,objektu,,objekt,Ncmsl,NOUN,O,,O
 sl-145,10,19,z,,z,Si,ADP,O,,O
 sl-145,10,20,moškimi,,moški,Agpmpi,ADJ,O,,O
-sl-145,10,21,.,,.,Z,PUNCT,O,,B-LOC
+sl-145,10,21,.,,.,Z,PUNCT,O,,O
 sl-145,11,1,Njeno,,njen,Ps3fsasf,DET,O,,O
 sl-145,11,2,izpustitev,,izpustitev,Ncfsa,NOUN,O,,O
 sl-145,11,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-145,11,4,po,,po,Sl,ADP,O,,O
 sl-145,11,5,aretaciji,,aretacija,Ncfsl,NOUN,O,,O
-sl-145,11,6,FBI,FBI,FBI,Npmsn,PROPN,B-ORG,ORG-FBI-Federal-Bureau-of-Investigation,O
+sl-145,11,6,FBI,FBI,FBI,Npmsn,PROPN,B-ORG,ORG-FBI-Federal-Bureau-of-Investigation,B-ORG
 sl-145,11,7,nemudoma,,nemudoma,Rgp,ADV,O,,O
 sl-145,11,8,zahteval,,zahtevati,Vmbp-sm,VERB,O,,O
 sl-145,11,9,Iran,Iran,Iran,Npmsn,PROPN,B-LOC,GPE-Iran,B-LOC
@@ -278,8 +278,8 @@ sl-145,11,16,dni,,dan,Ncmpg,NOUN,O,,O
 sl-145,11,17,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-145,11,18,vedelo,,vedeti,Vmpp-sn,VERB,O,,O
 sl-145,11,19,nič,,nič,Pz-nsn,PRON,O,,O
-sl-145,11,20,.,,.,Z,PUNCT,O,,B-LOC
-sl-145,12,1,Američani,Američani,Američan,Npmpn,PROPN,B-PER,GPE-USA,B-PER
+sl-145,11,20,.,,.,Z,PUNCT,O,,O
+sl-145,12,1,Američani,Američani,Američan,Npmpn,PROPN,B-PER,GPE-USA,O
 sl-145,12,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-145,12,3,jo,,on,Pp3fsa--y,PRON,O,,O
 sl-145,12,4,po,,po,Sl,ADP,O,,O
@@ -295,4 +295,4 @@ sl-145,12,13,vse,,ves,Pg-fpa,DET,O,,O
 sl-145,12,14,izjave,,izjava,Ncfpa,NOUN,O,,O
 sl-145,12,15,",",,",",Z,PUNCT,O,,O
 sl-145,12,16,izpustili,,izpustiti,Vmep-pm,VERB,O,,O
-sl-145,12,17,.,,.,Z,PUNCT,O,,B-LOC
+sl-145,12,17,.,,.,Z,PUNCT,O,,O

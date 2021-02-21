@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-20,0,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
 sl-20,0,2,okarala,,okarati,Vmep-sf,VERB,O,,O
 sl-20,0,3,ZDA,ZDA,ZDA,Npfpa,PROPN,B-LOC,GPE-USA,B-LOC
@@ -164,8 +164,8 @@ sl-20,8,2,Merkel,Merkel,Merkel,Npfsn,PROPN,I-PER,PER-Angela-Merkel,I-PER
 sl-20,8,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-20,8,4,na,,na,Sl,ADP,O,,O
 sl-20,8,5,današnji,,današnji,Agpfsl,ADJ,O,,O
-sl-20,8,6,varnostni,,varnosten,Agpfsl,ADJ,O,,I-EVT
-sl-20,8,7,konferenci,,konferenca,Ncfsl,NOUN,O,,I-EVT
+sl-20,8,6,varnostni,,varnosten,Agpfsl,ADJ,O,,O
+sl-20,8,7,konferenci,,konferenca,Ncfsl,NOUN,O,,O
 sl-20,8,8,okarala,,okarati,Vmep-sf,VERB,O,,O
 sl-20,8,9,ZDA,ZDA,ZDA,Npfpa,PROPN,B-LOC,GPE-USA,B-LOC
 sl-20,8,10,in,,in,Cc,CCONJ,O,,O
@@ -177,7 +177,7 @@ sl-20,8,15,.,,.,Z,PUNCT,O,,O
 sl-20,9,1,V,,v,Sl,ADP,O,,O
 sl-20,9,2,nagovoru,,nagovor,Ncmsl,NOUN,O,,O
 sl-20,9,3,na,,na,Sl,ADP,O,,O
-sl-20,9,4,konferenci,,konferenca,Ncfsl,NOUN,O,,I-EVT
+sl-20,9,4,konferenci,,konferenca,Ncfsl,NOUN,O,,O
 sl-20,9,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-20,9,6,bila,,biti,Va-p-sf,AUX,O,,O
 sl-20,9,7,kanclerka,,kanclerka,Ncfsn,NOUN,O,,O
@@ -361,8 +361,8 @@ sl-20,17,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
 sl-20,17,2,pozvala,,pozvati,Vmep-sf,VERB,O,,O
 sl-20,17,3,k,,k,Sd,ADP,O,,O
 sl-20,17,4,ohranitvi,,ohranitev,Ncfsd,NOUN,O,,O
-sl-20,17,5,jedrskega,,jedrski,Agpmsg,ADJ,O,,I-PRO
-sl-20,17,6,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
+sl-20,17,5,jedrskega,,jedrski,Agpmsg,ADJ,O,,O
+sl-20,17,6,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-20,18,1,Pred,,pred,Si,ADP,O,,O
 sl-20,18,2,kritikami,,kritika,Ncfpi,NOUN,O,,O
 sl-20,18,3,iz,,iz,Sg,ADP,O,,O
@@ -454,7 +454,7 @@ sl-20,22,7,nadzoru,,nadzor,Ncmsl,NOUN,O,,O
 sl-20,22,8,orožja,,orožje,Ncnsg,NOUN,O,,O
 sl-20,22,9,",",,",",Z,PUNCT,O,,O
 sl-20,22,10,neširjenju,,neširjenje,Ncnsl,NOUN,O,,O
-sl-20,22,11,jedrskega,,jedrski,Agpnsg,ADJ,O,,I-PRO
+sl-20,22,11,jedrskega,,jedrski,Agpnsg,ADJ,O,,O
 sl-20,22,12,orožja,,orožje,Ncnsg,NOUN,O,,O
 sl-20,22,13,in,,in,Cc,CCONJ,O,,O
 sl-20,22,14,razorožitvi,,razorožitev,Ncfsl,NOUN,O,,O

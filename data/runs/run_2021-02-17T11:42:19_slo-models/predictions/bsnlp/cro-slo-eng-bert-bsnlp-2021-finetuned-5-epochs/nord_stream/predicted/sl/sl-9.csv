@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-9,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-9,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-LOC
 sl-9,0,2,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-9,0,3,zagotovljena,,zagotovljen,Appnpa,ADJ,O,,O
 sl-9,0,4,sredstva,,sredstvo,Ncnpa,NOUN,O,,O
@@ -40,7 +40,7 @@ sl-9,2,12,kongresa,,kongres,Ncmsg,NOUN,O,,I-ORG
 sl-9,2,13,.,,.,Z,PUNCT,O,,O
 sl-9,3,1,Zakonodaja,,zakonodaja,Ncfsn,NOUN,O,,O
 sl-9,3,2,na,,na,Sl,ADP,O,,O
-sl-9,3,3,2400,,2400,Mdc,NUM,O,,I-PRO
+sl-9,3,3,2400,,2400,Mdc,NUM,O,,O
 sl-9,3,4,straneh,,stran,Ncfpl,NOUN,O,,O
 sl-9,3,5,v,,v,Sl,ADP,O,,O
 sl-9,3,6,naslednjih,,naslednji,Agpnpl,ADJ,O,,O
@@ -221,7 +221,7 @@ sl-9,12,18,vojaških,,vojaški,Agpfpg,ADJ,O,,O
 sl-9,12,19,sil,,sila,Ncfpg,NOUN,O,,O
 sl-9,12,20,iz,,iz,Sg,ADP,O,,O
 sl-9,12,21,Južne,Južna,južen,Agpfsg,ADJ,B-LOC,GPE-South-Korea,B-LOC
-sl-9,12,22,Koreje,Koreja,Koreja,Npfsg,PROPN,I-LOC,GPE-South-Korea,B-LOC
+sl-9,12,22,Koreje,Koreja,Koreja,Npfsg,PROPN,I-LOC,GPE-South-Korea,I-LOC
 sl-9,12,23,.,,.,Z,PUNCT,O,,O
 sl-9,13,1,Zagotavlja,,zagotavljati,Vmpr3s,VERB,O,,O
 sl-9,13,2,300,,300,Mdc,NUM,O,,O
@@ -255,7 +255,7 @@ sl-9,13,29,prepoved,,prepoved,Ncfsn,NOUN,O,,O
 sl-9,13,30,priznanja,,priznanje,Ncnsg,NOUN,O,,O
 sl-9,13,31,ruske,,ruski,Agpfsg,ADJ,O,,O
 sl-9,13,32,zasedbe,,zasedba,Ncfsg,NOUN,O,,O
-sl-9,13,33,polotoka,,polotok,Ncmsg,NOUN,O,,B-LOC
+sl-9,13,33,polotoka,,polotok,Ncmsg,NOUN,O,,O
 sl-9,13,34,Krim,Krim,Krim,Npmsn,PROPN,B-LOC,GPE-Crimea,B-LOC
 sl-9,13,35,in,,in,Cc,CCONJ,O,,O
 sl-9,13,36,podobno,,podoben,Agpnsn,ADJ,O,,O
@@ -276,10 +276,10 @@ sl-9,14,13,ruskem,,ruski,Agpmsl,ADJ,O,,O
 sl-9,14,14,plinovodu,,plinovod,Ncmsl,NOUN,O,,O
 sl-9,14,15,do,,do,Sg,ADP,O,,O
 sl-9,14,16,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,B-LOC,GPE-Germany,B-LOC
-sl-9,14,17,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-9,14,18,tok,,tok,Ncmsan,NOUN,O,,I-PRO
+sl-9,14,17,Severni,,severen,Agpmsny,ADJ,O,,O
+sl-9,14,18,tok,,tok,Ncmsan,NOUN,O,,O
 sl-9,14,19,2.,,2.,Mdo,NUM,O,,O
-sl-9,14,20,Ameriške,,ameriški,Agpfsg,ADJ,O,,B-LOC
+sl-9,14,20,Ameriške,,ameriški,Agpfsg,ADJ,O,,O
 sl-9,14,21,oblasti,,oblast,Ncfsg,NOUN,O,,O
 sl-9,14,22,imajo,,imeti,Vmpr3p-n,VERB,O,,O
 sl-9,14,23,zdaj,ZDA,zdaj,Rgp,ADV,B-LOC,GPE-USA,O
@@ -302,9 +302,9 @@ sl-9,15,1,Kongresniki,,kongresnik,Ncmpn,NOUN,O,,O
 sl-9,15,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-9,15,3,tudi,,tudi,Q,PART,O,,O
 sl-9,15,4,povečali,,povečati,Vmep-pm,VERB,O,,O
-sl-9,15,5,sklad,,sklad,Ncmsan,NOUN,O,,O
-sl-9,15,6,za,,za,Sa,ADP,O,,O
-sl-9,15,7,Evropsko,Evropa,evropski,Agpfsa,ADJ,B-LOC,LOC-Europe,B-ORG
+sl-9,15,5,sklad,,sklad,Ncmsan,NOUN,O,,B-ORG
+sl-9,15,6,za,,za,Sa,ADP,O,,B-ORG
+sl-9,15,7,Evropsko,Evropa,evropski,Agpfsa,ADJ,B-LOC,LOC-Europe,I-ORG
 sl-9,15,8,obrambno,,obramben,Agpfsa,ADJ,O,,I-ORG
 sl-9,15,9,pobudo,,pobuda,Ncfsa,NOUN,O,,I-ORG
 sl-9,15,10,za,,za,Sa,ADP,O,,O
@@ -357,7 +357,7 @@ sl-9,17,21,in,,in,Cc,CCONJ,O,,O
 sl-9,17,22,Turški,Turški,turški,Agpmsny,ADJ,B-PRO,PRO-TurkStream,B-PRO
 sl-9,17,23,tok,tok,tok,Ncmsn,NOUN,I-PRO,PRO-TurkStream,I-PRO
 sl-9,17,24,.,,.,Z,PUNCT,O,,O
-sl-9,18,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+sl-9,18,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-LOC
 sl-9,18,2,in,,in,Cc,CCONJ,O,,O
 sl-9,18,3,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-9,18,4,sta,,biti,Va-r3d-n,AUX,O,,O
@@ -453,7 +453,7 @@ sl-9,21,18,od,,od,Sg,ADP,O,,O
 sl-9,21,19,tam,,tam,Rgp,ADV,O,,O
 sl-9,21,20,v,,v,Sa,ADP,O,,O
 sl-9,21,21,vzhodno,,vzhoden,Agpfsa,ADJ,O,,B-LOC
-sl-9,21,22,Evropo,Evropa,Evropa,Npfsa,PROPN,B-LOC,LOC-Europe,B-LOC
+sl-9,21,22,Evropo,Evropa,Evropa,Npfsa,PROPN,B-LOC,LOC-Europe,I-LOC
 sl-9,21,23,.,,.,Z,PUNCT,O,,O
 sl-9,22,1,Ameriška,,ameriški,Agpfsn,ADJ,O,,O
 sl-9,22,2,administracija,,administracija,Ncfsn,NOUN,O,,O

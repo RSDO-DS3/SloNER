@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-61,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-61,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-ORG
 sl-61,0,2,uvedel,,uvesti,Vmep-sm,VERB,O,,O
 sl-61,0,3,sankcije,,sankcija,Ncfpa,NOUN,O,,O
 sl-61,0,4,proti,,proti,Sd,ADP,O,,O
@@ -71,12 +71,12 @@ sl-61,2,29,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
 sl-61,2,30,z,,z,Si,ADP,O,,O
 sl-61,2,31,Nemčijo,Nemčija,Nemčija,Npfsi,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-61,2,32,in,,in,Cc,CCONJ,O,,O
-sl-61,2,33,Evropo,Evropa,Evropa,Npfsi,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-61,2,33,Evropo,Evropa,Evropa,Npfsi,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-61,2,34,.,,.,Z,PUNCT,O,,O
 sl-61,3,1,Problematizirajo,,problematizirati,Vmbr3p,VERB,O,,O
 sl-61,3,2,tudi,,tudi,Q,PART,O,,O
 sl-61,3,3,plinovod,,plinovod,Ncmsan,NOUN,O,,O
-sl-61,3,4,Turški,Turški,turški,Agpmsny,ADJ,B-PRO,PRO-TurkStream,O
+sl-61,3,4,Turški,Turški,turški,Agpmsny,ADJ,B-PRO,PRO-TurkStream,B-PRO
 sl-61,3,5,tok,tok,tok,Ncmsn,NOUN,I-PRO,PRO-TurkStream,I-PRO
 sl-61,3,6,",",,",",Z,PUNCT,O,,O
 sl-61,3,7,ki,,ki,Cs,SCONJ,O,,O
@@ -91,12 +91,12 @@ sl-61,3,15,v,,v,Sa,ADP,O,,O
 sl-61,3,16,Turčijo,Turčija,Turčija,Npfsa,PROPN,B-LOC,GPE-Turkey,B-LOC
 sl-61,3,17,in,,in,Cc,CCONJ,O,,O
 sl-61,3,18,od,,od,Sg,ADP,O,,O
-sl-61,3,19,tam,,tam,Rgp,ADV,O,,B-ORG
+sl-61,3,19,tam,,tam,Rgp,ADV,O,,O
 sl-61,3,20,v,,v,Sa,ADP,O,,O
 sl-61,3,21,vzhodno,vzhodna,vzhoden,Agpfsa,ADJ,B-LOC,LOC-Eastern-Europe,B-LOC
 sl-61,3,22,Evropo,Evropa,Evropa,Npfsa,PROPN,I-LOC,LOC-Eastern-Europe,I-LOC
 sl-61,3,23,.,,.,Z,PUNCT,O,,O
-sl-61,4,1,Ameriška,,ameriški,Agpfsn,ADJ,O,,B-LOC
+sl-61,4,1,Ameriška,,ameriški,Agpfsn,ADJ,O,,O
 sl-61,4,2,administracija,,administracija,Ncfsn,NOUN,O,,O
 sl-61,4,3,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-61,4,4,60,,60,Mdc,NUM,O,,O
@@ -114,7 +114,7 @@ sl-61,4,15,sodelujejo,,sodelovati,Vmpr3p,VERB,O,,O
 sl-61,4,16,pri,,pri,Sl,ADP,O,,O
 sl-61,4,17,gradnji,,gradnja,Ncfsl,NOUN,O,,O
 sl-61,4,18,.,,.,Z,PUNCT,O,,O
-sl-61,5,1,Zakonodaja,,zakonodaja,Ncfsn,NOUN,O,,I-PER
+sl-61,5,1,Zakonodaja,,zakonodaja,Ncfsn,NOUN,O,,O
 sl-61,5,2,omogoča,,omogočati,Vmpr3s,VERB,O,,O
 sl-61,5,3,odvzem,,odvzem,Ncmsan,NOUN,O,,O
 sl-61,5,4,ameriškega,,ameriški,Agpmsg,ADJ,O,,O
@@ -151,7 +151,7 @@ sl-61,7,5,ki,,ki,Cs,SCONJ,O,,O
 sl-61,7,6,sodeluje,,sodelovati,Vmpr3s,VERB,O,,O
 sl-61,7,7,pri,,pri,Sl,ADP,O,,O
 sl-61,7,8,gradnji,,gradnja,Ncfsl,NOUN,O,,O
-sl-61,7,9,Severnega,Severni,severen,Agpmsg,ADJ,B-PRO,PRO-Nord-Stream-2,O
+sl-61,7,9,Severnega,Severni,severen,Agpmsg,ADJ,B-PRO,PRO-Nord-Stream-2,B-PRO
 sl-61,7,10,toka,tok,tok,Ncmsg,NOUN,I-PRO,PRO-Nord-Stream-2,I-PRO
 sl-61,7,11,2,2,2,Mdc,NUM,I-PRO,PRO-Nord-Stream-2,I-PRO
 sl-61,7,12,",",,",",Z,PUNCT,O,,O
@@ -166,7 +166,7 @@ sl-61,7,20,prekinja,,prekinjati,Vmpr3s,VERB,O,,O
 sl-61,7,21,dela,,delo,Ncnsg,NOUN,O,,O
 sl-61,7,22,.,,.,Z,PUNCT,O,,O
 sl-61,8,1,"""",,"""",Z,PUNCT,O,,O
-sl-61,8,2,Allseas,Allseas,Allseas,Npmsn,PROPN,B-ORG,ORG-Allseas,O
+sl-61,8,2,Allseas,Allseas,Allseas,Npmsn,PROPN,B-ORG,ORG-Allseas,B-ORG
 sl-61,8,3,prekinja,,prekinjati,Vmpr3s,VERB,O,,O
 sl-61,8,4,polaganje,,polaganje,Ncnsa,NOUN,O,,O
 sl-61,8,5,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
@@ -225,7 +225,7 @@ sl-61,10,25,ruskega,,ruski,Agpnsg,ADJ,O,,O
 sl-61,10,26,zunanjega,,zunanji,Agpnsg,ADJ,O,,O
 sl-61,10,27,ministrstva,,ministrstvo,Ncnsg,NOUN,O,,O
 sl-61,10,28,Marija,Marija,Marija,Npfsn,PROPN,B-PER,PER-Maria-Zaharova,B-PER
-sl-61,10,29,Zaharova,Zaharova,Zaharova,Npfsn,PROPN,I-PER,PER-Maria-Zaharova,O
+sl-61,10,29,Zaharova,Zaharova,Zaharova,Npfsn,PROPN,I-PER,PER-Maria-Zaharova,I-PER
 sl-61,10,30,.,,.,Z,PUNCT,O,,O
 sl-61,11,1,Kritična,,kritičen,Agpfsn,ADJ,O,,O
 sl-61,11,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -320,7 +320,7 @@ sl-61,16,11,ravni,,raven,Ncfsl,NOUN,O,,O
 sl-61,16,12,",",,",",Z,PUNCT,O,,O
 sl-61,16,13,kar,,kar,Pr-nsn,PRON,O,,O
 sl-61,16,14,pa,,pa,Cc,CCONJ,O,,O
-sl-61,16,15,se,,se,Px------y,PRON,O,,B-ORG
+sl-61,16,15,se,,se,Px------y,PRON,O,,O
 sl-61,16,16,ne,,ne,Q,PART,O,,O
 sl-61,16,17,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-61,16,18,zgodilo,,zgoditi,Vmep-sn,VERB,O,,O

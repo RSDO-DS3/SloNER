@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-31,0,1,Trump,Trump,Trump,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-31,0,2,v,,v,Sl,ADP,O,,O
 sl-31,0,3,trgovini,,trgovina,Ncfsl,NOUN,O,,O
@@ -41,7 +41,7 @@ sl-31,2,13,gre,,iti,Vmbr3s,VERB,O,,O
 sl-31,2,14,ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-31,2,15,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-31,2,16,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-31,2,17,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-31,2,17,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-31,2,18,na,,na,Sa,ADP,O,,O
 sl-31,2,19,še,,še,Q,PART,O,,O
 sl-31,2,20,enega,,en,Mlpmsa,NUM,O,,O
@@ -69,7 +69,7 @@ sl-31,3,17,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-31,3,18,",",,",",Z,PUNCT,O,,O
 sl-31,3,19,odstopil,,odstopiti,Vmep-sm,VERB,O,,O
 sl-31,3,20,od,,od,Sg,ADP,O,,O
-sl-31,3,21,pariškega,,pariški,Agpmsg,ADJ,O,,O
+sl-31,3,21,pariškega,,pariški,Agpmsg,ADJ,O,,B-PRO
 sl-31,3,22,podnebnega,,podneben,Agpmsg,ADJ,O,,O
 sl-31,3,23,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-31,3,24,in,,in,Cc,CCONJ,O,,O
@@ -95,7 +95,7 @@ sl-31,3,43,najstarejšimi,,star,Agsfpi,ADJ,O,,O
 sl-31,3,44,zaveznicami,,zaveznica,Ncfpi,NOUN,O,,O
 sl-31,3,45,:,,:,Z,PUNCT,O,,O
 sl-31,3,46,v,,v,Sl,ADP,O,,O
-sl-31,3,47,zvezi,,zveza,Ncfsl,NOUN,O,,B-ORG
+sl-31,3,47,zvezi,,zveza,Ncfsl,NOUN,O,,O
 sl-31,3,48,Nato,Nato,Nato,Npmsn,PROPN,B-ORG,ORG-NATO,B-ORG
 sl-31,3,49,.,,.,Z,PUNCT,O,,O
 sl-31,4,1,Njegove,,njegov,Ps3fpnsm,DET,O,,O
@@ -123,7 +123,7 @@ sl-31,4,22,bi,,biti,Va-c,AUX,O,,O
 sl-31,4,23,se,,se,Px------y,PRON,O,,O
 sl-31,4,24,lahko,,lahko,Rgp,ADV,O,,O
 sl-31,4,25,srečanje,,srečanje,Ncnsn,NOUN,O,,O
-sl-31,4,26,29,,29,Mdc,NUM,O,,I-PRO
+sl-31,4,26,29,,29,Mdc,NUM,O,,O
 sl-31,4,27,najvišjih,,visok,Agsmpg,ADJ,O,,O
 sl-31,4,28,predstavnikov,,predstavnik,Ncmpg,NOUN,O,,O
 sl-31,4,29,končalo,,končati,Vmep-sn,VERB,O,,O
@@ -262,7 +262,7 @@ sl-31,10,4,o,,o,Sl,ADP,O,,O
 sl-31,10,5,tem,,ta,Pd-nsl,DET,O,,O
 sl-31,10,6,po,,po,Sl,ADP,O,,O
 sl-31,10,7,celem,,cel,Agpmsl,ADJ,O,,O
-sl-31,10,8,svetu,,svet,Ncmsl,NOUN,O,,B-LOC
+sl-31,10,8,svetu,,svet,Ncmsl,NOUN,O,,O
 sl-31,10,9,",",,",",Z,PUNCT,O,,O
 sl-31,10,10,govorijo,,govoriti,Vmpr3p,VERB,O,,O
 sl-31,10,11,",",,",",Z,PUNCT,O,,O
@@ -346,7 +346,7 @@ sl-31,14,18,ga,,on,Pp3msa--y,PRON,O,,O
 sl-31,14,19,je,,biti,Va-r3s-n,AUX,O,,O
 sl-31,14,20,nadzorovala,,nadzorovati,Vmpp-sf,VERB,O,,O
 sl-31,14,21,Sovjetska,Sovjetska,sovjetski,Agpfsn,ADJ,B-LOC,GPE-Soviet-Union-USSR,B-LOC
-sl-31,14,22,zveza,zveza,zveza,Ncfsn,NOUN,I-LOC,GPE-Soviet-Union-USSR,B-LOC
+sl-31,14,22,zveza,zveza,zveza,Ncfsn,NOUN,I-LOC,GPE-Soviet-Union-USSR,I-LOC
 sl-31,14,23,.,,.,Z,PUNCT,O,,O
 sl-31,15,1,"""",,"""",Z,PUNCT,O,,O
 sl-31,15,2,Zelo,,zelo,Rgp,ADV,O,,O
@@ -361,7 +361,7 @@ sl-31,15,10,v,,v,Sl,ADP,O,,O
 sl-31,15,11,svobodi,,svoboda,Ncfsl,NOUN,O,,O
 sl-31,15,12,v,,v,Sl,ADP,O,,O
 sl-31,15,13,Zvezni,Zvezna,zvezen,Agpfsl,ADJ,B-LOC,GPE-Germany,B-LOC
-sl-31,15,14,republiki,republika,republika,Ncfsl,NOUN,I-LOC,GPE-Germany,B-LOC
+sl-31,15,14,republiki,republika,republika,Ncfsl,NOUN,I-LOC,GPE-Germany,I-LOC
 sl-31,15,15,Nemčiji,Nemčija,Nemčija,Npfsl,PROPN,I-LOC,GPE-Germany,I-LOC
 sl-31,15,16,in,,in,Cc,CCONJ,O,,O
 sl-31,15,17,da,,da,Cs,SCONJ,O,,O
@@ -503,7 +503,7 @@ sl-31,21,1,Amerika,Amerika,Amerika,Npfsn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-31,21,2,pripravlja,,pripravljati,Vmpr3s,VERB,O,,O
 sl-31,21,3,seznam,,seznam,Ncmsan,NOUN,O,,O
 sl-31,21,4,dodatnih,,dodaten,Agpfpg,ADJ,O,,O
-sl-31,21,5,kitajskih,Kitajska,kitajski,Agpfpg,ADJ,B-LOC,GPE-China,O
+sl-31,21,5,kitajskih,Kitajska,kitajski,Agpfpg,ADJ,B-LOC,GPE-China,B-LOC
 sl-31,21,6,dobrin,,dobrina,Ncfpg,NOUN,O,,O
 sl-31,21,7,",",,",",Z,PUNCT,O,,O
 sl-31,21,8,na,,na,Sa,ADP,O,,O
@@ -613,7 +613,7 @@ sl-31,25,4,škodijo,,škoditi,Vmbr3p,VERB,O,,O
 sl-31,25,5,Kitajski,Kitajska,Kitajska,Npfsd,PROPN,B-LOC,GPE-China,B-LOC
 sl-31,25,6,",",,",",Z,PUNCT,O,,O
 sl-31,25,7,škodijo,,škoditi,Vmbr3p,VERB,O,,O
-sl-31,25,8,svetu,,svet,Ncmsd,NOUN,O,,B-LOC
+sl-31,25,8,svetu,,svet,Ncmsd,NOUN,O,,O
 sl-31,25,9,in,,in,Cc,CCONJ,O,,O
 sl-31,25,10,škodijo,,škoditi,Vmbr3p,VERB,O,,O
 sl-31,25,11,njim,,on,Pp3mpd,PRON,O,,O
@@ -800,7 +800,7 @@ sl-31,34,22,prodaja,,prodajati,Vmpr3s,VERB,O,,O
 sl-31,34,23,po,,po,Sl,ADP,O,,O
 sl-31,34,24,skoraj,,skoraj,Q,PART,O,,O
 sl-31,34,25,vsem,,ves,Pg-msl,DET,O,,O
-sl-31,34,26,svetu,,svet,Ncmsl,NOUN,O,,B-LOC
+sl-31,34,26,svetu,,svet,Ncmsl,NOUN,O,,O
 sl-31,34,27,in,,in,Cc,CCONJ,O,,O
 sl-31,34,28,z,,z,Si,ADP,O,,O
 sl-31,34,29,davki,,davek,Ncmpi,NOUN,O,,O
@@ -843,7 +843,7 @@ sl-31,35,31,podaljšanje,,podaljšanje,Ncnsa,NOUN,O,,O
 sl-31,35,32,finančne,,finančen,Agpfsg,ADJ,O,,O
 sl-31,35,33,pomoči,,pomoč,Ncfsg,NOUN,O,,O
 sl-31,35,34,za,,za,Sa,ADP,O,,O
-sl-31,35,35,afganistanske,,afganistanski,Agpfpa,ADJ,O,,B-LOC
+sl-31,35,35,afganistanske,,afganistanski,Agpfpa,ADJ,O,,O
 sl-31,35,36,varnostne,,varnosten,Agpfpa,ADJ,O,,O
 sl-31,35,37,sile,,sila,Ncfpa,NOUN,O,,O
 sl-31,35,38,do,,do,Sg,ADP,O,,O

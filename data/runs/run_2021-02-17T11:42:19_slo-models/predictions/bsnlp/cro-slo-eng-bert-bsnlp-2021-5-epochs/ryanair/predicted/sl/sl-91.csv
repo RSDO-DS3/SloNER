@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-91,0,1,Nov,,nov,Agpmsnn,ADJ,O,,O
 sl-91,0,2,dizajn,,dizajn,Ncmsn,NOUN,O,,O
 sl-91,0,3,letalskih,,letalski,Agpmpg,ADJ,O,,O
@@ -18,10 +18,10 @@ sl-91,1,4,noviteto,,noviteta,Ncfsa,NOUN,O,,O
 sl-91,1,5,predstavilo,,predstaviti,Vmep-sn,VERB,O,,O
 sl-91,1,6,na,,na,Sl,ADP,O,,O
 sl-91,1,7,sejmu,,sejem,Ncmsl,NOUN,O,,O
-sl-91,1,8,Aircraft,Aircraft,Aircraft,Npmsn,PROPN,B-EVT,EVT-Aircraft-Interiors-Expo-2018,O
-sl-91,1,9,Interiors,Interiors,Interiors,Npmsn,PROPN,I-EVT,EVT-Aircraft-Interiors-Expo-2018,O
+sl-91,1,8,Aircraft,Aircraft,Aircraft,Npmsn,PROPN,B-EVT,EVT-Aircraft-Interiors-Expo-2018,B-EVT
+sl-91,1,9,Interiors,Interiors,Interiors,Npmsn,PROPN,I-EVT,EVT-Aircraft-Interiors-Expo-2018,I-EVT
 sl-91,1,10,Expo,Expo,Expo,Npmsn,PROPN,I-EVT,EVT-Aircraft-Interiors-Expo-2018,I-EVT
-sl-91,1,11,2018,2018,2018,Mdc,NUM,I-EVT,EVT-Aircraft-Interiors-Expo-2018,O
+sl-91,1,11,2018,2018,2018,Mdc,NUM,I-EVT,EVT-Aircraft-Interiors-Expo-2018,I-EVT
 sl-91,1,12,v,,v,Sl,ADP,O,,O
 sl-91,1,13,Hamburgu,Hamburg,Hamburg,Npmsl,PROPN,B-LOC,GPE-Hamburg,B-LOC
 sl-91,1,14,.,,.,Z,PUNCT,O,,O
@@ -56,7 +56,7 @@ sl-91,3,5,ki,,ki,Cs,SCONJ,O,,O
 sl-91,3,6,se,,se,Px------y,PRON,O,,O
 sl-91,3,7,imenujejo,,imenovati,Vmbr3p,VERB,O,,O
 sl-91,3,8,SkyRider,SkyRider,SkyRider,Npmsn,PROPN,B-PRO,PRO-SkyRider-2.0,B-PRO
-sl-91,3,9,2.0,2.0,2.0,Mdc,NUM,I-PRO,PRO-SkyRider-2.0,O
+sl-91,3,9,2.0,2.0,2.0,Mdc,NUM,I-PRO,PRO-SkyRider-2.0,I-PRO
 sl-91,3,10,",",,",",Z,PUNCT,O,,O
 sl-91,3,11,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-91,3,12,letalskim,,letalski,Agpfpd,ADJ,O,,O
@@ -92,7 +92,7 @@ sl-91,4,7,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-91,4,8,Zvezna,Zvezna,zvezen,Agpfsn,ADJ,B-ORG,ORG-FAA-Federal-Aviation-Administration,B-ORG
 sl-91,4,9,letalska,letalska,letalski,Agpfsn,ADJ,I-ORG,ORG-FAA-Federal-Aviation-Administration,I-ORG
 sl-91,4,10,administracija,administracija,administracija,Ncfsn,NOUN,I-ORG,ORG-FAA-Federal-Aviation-Administration,I-ORG
-sl-91,4,11,ZDA,ZDA,ZDA,Npfpg,PROPN,I-ORG,ORG-FAA-Federal-Aviation-Administration,B-LOC
+sl-91,4,11,ZDA,ZDA,ZDA,Npfpg,PROPN,I-ORG,ORG-FAA-Federal-Aviation-Administration,I-ORG
 sl-91,4,12,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-91,4,13,odobrila,,odobriti,Vmep-sf,VERB,O,,O
 sl-91,4,14,",",,",",Z,PUNCT,O,,O
@@ -138,7 +138,7 @@ sl-91,6,14,udobje,,udobje,Ncnsa,NOUN,O,,O
 sl-91,6,15,.,,.,Z,PUNCT,O,,O
 sl-91,7,1,»,,»,Z,PUNCT,O,,O
 sl-91,7,2,SkyDiver,SkyRider,skydiver,Ncmsn,NOUN,B-PRO,PRO-SkyRider-2.0,B-PRO
-sl-91,7,3,2.0,2.0,2.0,Mdc,NUM,I-PRO,PRO-SkyRider-2.0,O
+sl-91,7,3,2.0,2.0,2.0,Mdc,NUM,I-PRO,PRO-SkyRider-2.0,I-PRO
 sl-91,7,4,sedeži,,sedež,Ncmpn,NOUN,O,,O
 sl-91,7,5,na,,na,Sl,ADP,O,,O
 sl-91,7,6,majhnem,,majhen,Agpmsl,ADJ,O,,O
@@ -179,7 +179,7 @@ sl-91,8,21,čas,,čas,Ncmsan,NOUN,O,,O
 sl-91,8,22,.,,.,Z,PUNCT,O,,O
 sl-91,9,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-91,9,2,piše,,pisati,Vmpr3s,VERB,O,,O
-sl-91,9,3,CNN,CNN,CNN,Npmsn,PROPN,B-PRO,PRO-CNN,B-ORG
+sl-91,9,3,CNN,CNN,CNN,Npmsn,PROPN,B-PRO,PRO-CNN,B-PRO
 sl-91,9,4,",",,",",Z,PUNCT,O,,O
 sl-91,9,5,v,,v,Sl,ADP,O,,O
 sl-91,9,6,podjetju,,podjetje,Ncnsl,NOUN,O,,O
@@ -271,7 +271,7 @@ sl-91,11,6,razmišljal,,razmišljati,Vmpp-sm,VERB,O,,O
 sl-91,11,7,o,,o,Sl,ADP,O,,O
 sl-91,11,8,uvedbi,,uvedba,Ncfsl,NOUN,O,,O
 sl-91,11,9,stojišč,,stojišče,Ncnpg,NOUN,O,,O
-sl-91,12,1,Ob,,ob,Sl,ADP,O,,B-PER
+sl-91,12,1,Ob,,ob,Sl,ADP,O,,O
 sl-91,12,2,pozitivnih,,pozitiven,Agpmpl,ADJ,O,,O
 sl-91,12,3,vidikih,,vidik,Ncmpl,NOUN,O,,O
 sl-91,12,4,",",,",",Z,PUNCT,O,,O
@@ -352,7 +352,7 @@ sl-91,15,6,irskega,,irski,Agpmsg,ADJ,O,,O
 sl-91,15,7,nizkocenovnika,,nizkocenovnik,Ncmsg,NOUN,O,,O
 sl-91,15,8,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-91,15,9,Michael,Michael,Michael,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
-sl-91,15,10,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,I-PER,PER-Michael-O'Leary,O
+sl-91,15,10,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,I-PER,PER-Michael-O'Leary,I-PER
 sl-91,15,11,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-91,15,12,",",,",",Z,PUNCT,O,,O
 sl-91,15,13,da,,da,Cs,SCONJ,O,,O
@@ -373,10 +373,10 @@ sl-91,15,27,prišlo,,priti,Vmep-sn,VERB,O,,O
 sl-91,15,28,.,,.,Z,PUNCT,O,,O
 sl-91,16,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-91,16,2,je,,biti,Va-r3s-n,AUX,O,,O
-sl-91,16,3,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-91,16,3,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-91,16,4,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-91,16,5,za,,za,Sa,ADP,O,,O
-sl-91,16,6,CNN,CNN,CNN,Npmsan,PROPN,B-PRO,PRO-CNN,B-ORG
+sl-91,16,6,CNN,CNN,CNN,Npmsan,PROPN,B-PRO,PRO-CNN,B-PRO
 sl-91,16,7,",",,",",Z,PUNCT,O,,O
 sl-91,16,8,pri,,pri,Sl,ADP,O,,O
 sl-91,16,9,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG

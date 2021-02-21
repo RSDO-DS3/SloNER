@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-25,0,1,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-25,0,2,in,,in,Cc,CCONJ,O,,O
 sl-25,0,3,Ukrajina,Ukrajina,Ukrajina,Npfsn,PROPN,B-LOC,GPE-Ukraine,B-LOC
@@ -34,7 +34,7 @@ sl-25,1,21,je,,biti,Va-r3s-n,AUX,O,,O
 sl-25,1,22,po,,po,Sl,ADP,O,,O
 sl-25,1,23,poročanju,,poročanje,Ncnsl,NOUN,O,,O
 sl-25,1,24,nemške,,nemški,Agpfsg,ADJ,O,,O
-sl-25,1,25,tiskovne,,tiskoven,Agpfsg,ADJ,O,,B-LOC
+sl-25,1,25,tiskovne,,tiskoven,Agpfsg,ADJ,O,,O
 sl-25,1,26,agencije,,agencija,Ncfsg,NOUN,O,,O
 sl-25,1,27,dpa,dpa,DPA,Npmsn,PROPN,B-ORG,ORG-DPA,B-ORG
 sl-25,1,28,povedal,,povedati,Vmep-sm,VERB,O,,O
@@ -51,7 +51,7 @@ sl-25,1,38,.,,.,Z,PUNCT,O,,O
 sl-25,2,1,S,,z,Si,ADP,O,,O
 sl-25,2,2,koncem,,konec,Ncmsi,NOUN,O,,O
 sl-25,2,3,tega,,ta,Pd-nsg,DET,O,,O
-sl-25,2,4,leta,,leto,Ncnsg,NOUN,O,,I-PER
+sl-25,2,4,leta,,leto,Ncnsg,NOUN,O,,O
 sl-25,2,5,namreč,,namreč,Cc,CCONJ,O,,O
 sl-25,2,6,poteče,,poteči,Vmer3s,VERB,O,,O
 sl-25,2,7,10-letna,,10vleten,Agpfsn,ADJ,O,,O
@@ -77,7 +77,7 @@ sl-25,2,26,poteka,,potekati,Vmpr3s,VERB,O,,O
 sl-25,2,27,prek,,prek,Sg,ADP,O,,O
 sl-25,2,28,Ukrajine,Ukrajina,Ukrajina,Npfsg,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-25,2,29,.,,.,Z,PUNCT,O,,O
-sl-25,3,1,O,,o,Sl,ADP,O,,I-PER
+sl-25,3,1,O,,o,Sl,ADP,O,,O
 sl-25,3,2,podrobnostih,,podrobnost,Ncfpl,NOUN,O,,O
 sl-25,3,3,se,,se,Px------y,PRON,O,,O
 sl-25,3,4,bosta,,biti,Va-f3d-n,AUX,O,,O
@@ -85,7 +85,7 @@ sl-25,3,5,strani,,stran,Ncfdn,NOUN,O,,O
 sl-25,3,6,pred,,pred,Si,ADP,O,,O
 sl-25,3,7,dokončnim,,dokončen,Agpmsi,ADJ,O,,O
 sl-25,3,8,podpisom,,podpis,Ncmsi,NOUN,O,,O
-sl-25,3,9,nove,,nov,Agpfsg,ADJ,O,,B-LOC
+sl-25,3,9,nove,,nov,Agpfsg,ADJ,O,,O
 sl-25,3,10,pogodbe,,pogodba,Ncfsg,NOUN,O,,O
 sl-25,3,11,pogovarjali,,pogovarjati,Vmpp-df,VERB,O,,O
 sl-25,3,12,še,,še,Q,PART,O,,O
@@ -135,7 +135,7 @@ sl-25,4,33,ki,,ki,Cs,SCONJ,O,,O
 sl-25,4,34,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-25,4,35,potoval,,potovati,Vmpp-sm,VERB,O,,O
 sl-25,4,36,skozi,,skozi,Sa,ADP,O,,O
-sl-25,4,37,Ukrajino,Ukrajina,Ukrajina,Npfsa,PROPN,B-LOC,GPE-Ukraine,O
+sl-25,4,37,Ukrajino,Ukrajina,Ukrajina,Npfsa,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-25,4,38,.,,.,Z,PUNCT,O,,O
 sl-25,5,1,Tako,,tako,Rgp,ADV,O,,O
 sl-25,5,2,ruski,,ruski,Agpmsny,ADJ,O,,O
@@ -146,13 +146,13 @@ sl-25,5,6,Aleksander,Aleksander,Aleksander,Npmsn,PROPN,B-PER,PER-Aleksandr-Novak
 sl-25,5,7,Novak,Novak,Novak,Npmsn,PROPN,I-PER,PER-Aleksandr-Novak,I-PER
 sl-25,5,8,kot,,kot,Cs,SCONJ,O,,O
 sl-25,5,9,njegov,,njegov,Ps3msnsm,DET,O,,O
-sl-25,5,10,ukrajinski,Ukrajina,ukrajinski,Agpmsny,ADJ,B-LOC,GPE-Ukraine,O
+sl-25,5,10,ukrajinski,Ukrajina,ukrajinski,Agpmsny,ADJ,B-LOC,GPE-Ukraine,B-LOC
 sl-25,5,11,kolega,,kolega,Ncmsn,NOUN,O,,O
-sl-25,5,12,Aleksej,Aleksej,Aleksej,Npmsn,PROPN,B-PER,PER-Oleksiy-Orzhel,O
-sl-25,5,13,Oršel,Oršel,Oršel,Npmsn,PROPN,I-PER,PER-Oleksiy-Orzhel,O
+sl-25,5,12,Aleksej,Aleksej,Aleksej,Npmsn,PROPN,B-PER,PER-Oleksiy-Orzhel,B-PER
+sl-25,5,13,Oršel,Oršel,Oršel,Npmsn,PROPN,I-PER,PER-Oleksiy-Orzhel,I-PER
 sl-25,5,14,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-25,5,15,se,,se,Px------y,PRON,O,,O
-sl-25,5,16,Šefčoviču,Šefčovič,Šefčovič,Npmsd,PROPN,B-PER,PER-Maros-Sefcovic,O
+sl-25,5,16,Šefčoviču,Šefčovič,Šefčovič,Npmsd,PROPN,B-PER,PER-Maros-Sefcovic,B-PER
 sl-25,5,17,in,,in,Cc,CCONJ,O,,O
 sl-25,5,18,nemški,,nemški,Agpfsd,ADJ,O,,O
 sl-25,5,19,vladi,,vlada,Ncfsd,NOUN,O,,O
@@ -242,7 +242,7 @@ sl-25,8,23,krajših,,kratek,Agcfpg,ADJ,O,,O
 sl-25,8,24,prekinitev,,prekinitev,Ncfpg,NOUN,O,,O
 sl-25,8,25,dobav,,dobava,Ncfpg,NOUN,O,,O
 sl-25,8,26,.,,.,Z,PUNCT,O,,O
-sl-25,9,1,Še,,še,Q,PART,O,,B-PER
+sl-25,9,1,Še,,še,Q,PART,O,,O
 sl-25,9,2,bolj,,bolj,Rgc,ADV,O,,O
 sl-25,9,3,pa,,pa,Cc,CCONJ,O,,O
 sl-25,9,4,je,,biti,Va-r3s-n,AUX,O,,O
@@ -256,7 +256,7 @@ sl-25,9,11,priključitev,,priključitev,Ncfsn,NOUN,O,,O
 sl-25,9,12,Krima,Krim,Krim,Npmsg,PROPN,B-LOC,GPE-Crimea,B-LOC
 sl-25,9,13,Rusiji,Rusija,Rusija,Npfsd,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-25,9,14,leta,,leto,Ncnsg,NOUN,O,,O
-sl-25,9,15,2014,,2014,Mdc,NUM,O,,I-PRO
+sl-25,9,15,2014,,2014,Mdc,NUM,O,,O
 sl-25,9,16,in,,in,Cc,CCONJ,O,,O
 sl-25,9,17,ruska,,ruski,Agpfsn,ADJ,O,,O
 sl-25,9,18,podpora,,podpora,Ncfsn,NOUN,O,,O

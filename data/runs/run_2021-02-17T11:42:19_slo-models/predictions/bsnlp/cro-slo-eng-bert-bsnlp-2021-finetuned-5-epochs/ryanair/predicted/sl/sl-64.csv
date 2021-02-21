@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-64,0,1,Vnovična,,vnovičen,Agpfsn,ADJ,O,,O
 sl-64,0,2,omejitev,,omejitev,Ncfsn,NOUN,O,,O
 sl-64,0,3,ročne,,ročen,Agpfsg,ADJ,O,,O

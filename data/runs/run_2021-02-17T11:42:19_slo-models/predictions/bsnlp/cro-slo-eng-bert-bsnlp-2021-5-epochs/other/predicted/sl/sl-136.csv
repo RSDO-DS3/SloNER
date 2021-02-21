@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-136,0,1,Vsi,,ves,Pg-mpn,DET,O,,O
 sl-136,0,2,bi,,biti,Va-c,AUX,O,,O
 sl-136,0,3,krepili,,krepiti,Vmpp-pm,VERB,O,,O
@@ -26,8 +26,8 @@ sl-136,1,10,da,,da,Cs,SCONJ,O,,O
 sl-136,1,11,so,,biti,Va-r3p-n,AUX,O,,O
 sl-136,1,12,bile,,biti,Va-p-pf,AUX,O,,O
 sl-136,1,13,spremembe,,sprememba,Ncfpn,NOUN,O,,O
-sl-136,1,14,prostorskega,,prostorski,Agpmsg,ADJ,O,,O
-sl-136,1,15,načrta,,načrt,Ncmsg,NOUN,O,,O
+sl-136,1,14,prostorskega,,prostorski,Agpmsg,ADJ,O,,B-PRO
+sl-136,1,15,načrta,,načrt,Ncmsg,NOUN,O,,I-PRO
 sl-136,1,16,(,,(,Z,PUNCT,O,,O
 sl-136,1,17,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
 sl-136,1,18,),,),Z,PUNCT,O,,O
@@ -63,7 +63,7 @@ sl-136,2,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-136,2,9,bil,,biti,Va-p-sm,AUX,O,,O
 sl-136,2,10,sprejet,,sprejet,Appmsnn,ADJ,O,,O
 sl-136,2,11,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
-sl-136,2,12,za,,za,Sa,ADP,O,,O
+sl-136,2,12,za,,za,Sa,ADP,O,,B-PRO
 sl-136,2,13,Rožno,Rožna,rožen,Agpfsa,ADJ,B-LOC,LOC-Rožna-dolina,B-LOC
 sl-136,2,14,dolino,dolina,dolina,Ncfsa,NOUN,I-LOC,LOC-Rožna-dolina,I-LOC
 sl-136,2,15,",",,",",Z,PUNCT,O,,O
@@ -122,7 +122,7 @@ sl-136,4,5,se,,se,Px------y,PRON,O,,O
 sl-136,4,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-136,4,7,podoba,,podoba,Ncfsn,NOUN,O,,O
 sl-136,4,8,Rožne,Rožna,rožen,Agpfsg,ADJ,B-LOC,LOC-Rožna-dolina,B-LOC
-sl-136,4,9,doline,dolina,dolina,Ncfsg,NOUN,I-LOC,LOC-Rožna-dolina,B-LOC
+sl-136,4,9,doline,dolina,dolina,Ncfsg,NOUN,I-LOC,LOC-Rožna-dolina,I-LOC
 sl-136,4,10,začela,,začeti,Vmep-sf,VERB,O,,O
 sl-136,4,11,hitro,,hitro,Rgp,ADV,O,,O
 sl-136,4,12,spreminjati,,spreminjati,Vmpn,VERB,O,,O
@@ -232,7 +232,7 @@ sl-136,8,14,za,,za,Sa,ADP,O,,O
 sl-136,8,15,manjši,,majhen,Agcmsay,ADJ,O,,O
 sl-136,8,16,del,,del,Ncmsan,NOUN,O,,O
 sl-136,8,17,Rožne,Rožna,rožen,Agpfsg,ADJ,B-LOC,LOC-Rožna-dolina,B-LOC
-sl-136,8,18,doline,dolina,dolina,Ncfsg,NOUN,I-LOC,LOC-Rožna-dolina,B-LOC
+sl-136,8,18,doline,dolina,dolina,Ncfsg,NOUN,I-LOC,LOC-Rožna-dolina,I-LOC
 sl-136,8,19,",",,",",Z,PUNCT,O,,O
 sl-136,8,20,predvsem,,predvsem,Q,PART,O,,O
 sl-136,8,21,pa,,pa,Cc,CCONJ,O,,O
@@ -242,14 +242,14 @@ sl-136,8,24,največjih,,velik,Agsfpl,ADJ,O,,O
 sl-136,8,25,parcelah,,parcela,Ncfpl,NOUN,O,,O
 sl-136,8,26,v,,v,Sl,ADP,O,,O
 sl-136,8,27,Rožni,Rožna,rožen,Agpfsl,ADJ,B-LOC,LOC-Rožna-dolina,B-LOC
-sl-136,8,28,dolini,dolina,dolina,Ncfsl,NOUN,I-LOC,LOC-Rožna-dolina,B-LOC
+sl-136,8,28,dolini,dolina,dolina,Ncfsl,NOUN,I-LOC,LOC-Rožna-dolina,I-LOC
 sl-136,8,29,še,,še,Q,PART,O,,O
 sl-136,8,30,vedno,,vedno,Rgp,ADV,O,,O
 sl-136,8,31,dopušča,,dopuščati,Vmpr3s,VERB,O,,O
 sl-136,8,32,gradnjo,,gradnja,Ncfsa,NOUN,O,,O
 sl-136,8,33,po,,po,Sl,ADP,O,,O
 sl-136,8,34,starem,,star,Agpmsl,ADJ,O,,O
-sl-136,8,35,OPN,OPN,OPN,Npmsl,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,8,35,OPN,OPN,OPN,Npmsl,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,O
 sl-136,8,36,.,,.,Z,PUNCT,O,,O
 sl-136,9,1,Na,,na,Sl,ADP,O,,O
 sl-136,9,2,teh,,ta,Pd-fpl,DET,O,,O
@@ -307,7 +307,7 @@ sl-136,10,32,gradnje,,gradnja,Ncfsg,NOUN,O,,O
 sl-136,10,33,na,,na,Sl,ADP,O,,O
 sl-136,10,34,območju,,območje,Ncnsl,NOUN,O,,O
 sl-136,10,35,Rožne,Rožna,rožen,Agpfsg,ADJ,B-LOC,LOC-Rožna-dolina,B-LOC
-sl-136,10,36,doline,dolina,dolina,Ncfsg,NOUN,I-LOC,LOC-Rožna-dolina,B-LOC
+sl-136,10,36,doline,dolina,dolina,Ncfsg,NOUN,I-LOC,LOC-Rožna-dolina,I-LOC
 sl-136,10,37,",",,",",Z,PUNCT,O,,O
 sl-136,10,38,februar,,februar,Ncmsn,NOUN,O,,O
 sl-136,10,39,2018,,2018,Mdc,NUM,O,,O
@@ -362,7 +362,7 @@ sl-136,12,11,že,,že,Q,PART,O,,O
 sl-136,12,12,zgodilo,,zgoditi,Vmep-sn,VERB,O,,O
 sl-136,12,13,.,,.,Z,PUNCT,O,,O
 sl-136,13,1,Novi,,nov,Agpmsny,ADJ,O,,O
-sl-136,13,2,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
+sl-136,13,2,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,O
 sl-136,13,3,zgoraj,,zgoraj,Rgp,ADV,O,,O
 sl-136,13,4,navedenih,,naveden,Appnpg,ADJ,O,,O
 sl-136,13,5,spoznanj,,spoznanje,Ncnpg,NOUN,O,,O
@@ -452,16 +452,16 @@ sl-136,16,14,in,,in,Cc,CCONJ,O,,O
 sl-136,16,15,med,,med,Si,ADP,O,,O
 sl-136,16,16,prebivalci,,prebivalec,Ncmpi,NOUN,O,,O
 sl-136,16,17,Rožne,Rožna,rožen,Agpfsg,ADJ,B-LOC,LOC-Rožna-dolina,B-LOC
-sl-136,16,18,doline,dolina,dolina,Ncfsg,NOUN,I-LOC,LOC-Rožna-dolina,B-LOC
+sl-136,16,18,doline,dolina,dolina,Ncfsg,NOUN,I-LOC,LOC-Rožna-dolina,I-LOC
 sl-136,16,19,izzvalo,,izzvati,Vmep-sn,VERB,O,,O
 sl-136,16,20,velik,,velik,Agpmsan,ADJ,O,,O
 sl-136,16,21,odpor,,odpor,Ncmsan,NOUN,O,,O
 sl-136,16,22,.,,.,Z,PUNCT,O,,O
 sl-136,17,1,Nastala,,nastati,Vmep-sf,VERB,O,,O
 sl-136,17,2,je,,biti,Va-r3s-n,AUX,O,,O
-sl-136,17,3,Civilna,Civilna,civilen,Agpfsn,ADJ,B-ORG,ORG-Civilna-iniciativa-Rožna-dolina,O
-sl-136,17,4,iniciativa,iniciativa,iniciativa,Ncfsn,NOUN,I-ORG,ORG-Civilna-iniciativa-Rožna-dolina,O
-sl-136,17,5,Rožna,Rožna,rožen,Agpfsn,ADJ,I-ORG,ORG-Civilna-iniciativa-Rožna-dolina,B-LOC
+sl-136,17,3,Civilna,Civilna,civilen,Agpfsn,ADJ,B-ORG,ORG-Civilna-iniciativa-Rožna-dolina,B-ORG
+sl-136,17,4,iniciativa,iniciativa,iniciativa,Ncfsn,NOUN,I-ORG,ORG-Civilna-iniciativa-Rožna-dolina,I-ORG
+sl-136,17,5,Rožna,Rožna,rožen,Agpfsn,ADJ,I-ORG,ORG-Civilna-iniciativa-Rožna-dolina,I-ORG
 sl-136,17,6,dolina,dolina,dolina,Ncfsn,NOUN,I-ORG,ORG-Civilna-iniciativa-Rožna-dolina,I-LOC
 sl-136,17,7,",",,",",Z,PUNCT,O,,O
 sl-136,17,8,ki,,ki,Cs,SCONJ,O,,O
@@ -469,7 +469,7 @@ sl-136,17,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-136,17,10,skupaj,,skupaj,Rgp,ADV,O,,O
 sl-136,17,11,z,,z,Si,ADP,O,,O
 sl-136,17,12,Olepševalnim,Olepševalno,olepševalen,Agpnsi,ADJ,B-ORG,ORG-Olepševalno-društvo-Rožna-dolina,B-ORG
-sl-136,17,13,društvom,društvo,društvo,Ncnsi,NOUN,I-ORG,ORG-Olepševalno-društvo-Rožna-dolina,O
+sl-136,17,13,društvom,društvo,društvo,Ncnsi,NOUN,I-ORG,ORG-Olepševalno-društvo-Rožna-dolina,I-ORG
 sl-136,17,14,v,,v,Sl,ADP,O,,O
 sl-136,17,15,nekaj,,nekaj,Rgp,DET,O,,O
 sl-136,17,16,dneh,,dan,Ncmpl,NOUN,O,,O
@@ -506,7 +506,7 @@ sl-136,18,13,maja,,maj,Ncmsg,NOUN,O,,O
 sl-136,18,14,sprejet,,sprejet,Appmsnn,ADJ,O,,O
 sl-136,18,15,nov,,nov,Agpmsnn,ADJ,O,,O
 sl-136,18,16,OPN,OPN,OPN,Npmsn,PROPN,B-PRO,PRO-OPN-Občinski-prostorski-načrt,B-PRO
-sl-136,18,17,za,,za,Sa,ADP,O,,O
+sl-136,18,17,za,,za,Sa,ADP,O,,B-PRO
 sl-136,18,18,Rožno,Rožna,rožen,Agpfsa,ADJ,B-LOC,LOC-Rožna-dolina,B-LOC
 sl-136,18,19,dolino,dolina,dolina,Ncfsa,NOUN,I-LOC,LOC-Rožna-dolina,I-LOC
 sl-136,18,20,",",,",",Z,PUNCT,O,,O
@@ -537,7 +537,7 @@ sl-136,19,6,za,,za,Sa,ADP,O,,O
 sl-136,19,7,manjši,,majhen,Agcmsay,ADJ,O,,O
 sl-136,19,8,del,,del,Ncmsan,NOUN,O,,O
 sl-136,19,9,Rožne,Rožna,rožen,Agpfsg,ADJ,B-LOC,LOC-Rožna-dolina,B-LOC
-sl-136,19,10,doline,dolina,dolina,Ncfsg,NOUN,I-LOC,LOC-Rožna-dolina,B-LOC
+sl-136,19,10,doline,dolina,dolina,Ncfsg,NOUN,I-LOC,LOC-Rožna-dolina,I-LOC
 sl-136,19,11,.,,.,Z,PUNCT,O,,O
 sl-136,20,1,Prebivalci,,prebivalec,Ncmpn,NOUN,O,,O
 sl-136,20,2,pa,,pa,Cc,CCONJ,O,,O

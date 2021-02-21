@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-170,0,1,Trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-170,0,2,brexit,brexit,brexit,Ncmsn,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-170,0,3,kot,,kot,Cs,SCONJ,O,,O
@@ -13,7 +13,7 @@ sl-170,1,4,premierski,,premierski,Agpmsay,ADJ,O,,O
 sl-170,1,5,obisk,,obisk,Ncmsan,NOUN,O,,O
 sl-170,1,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-170,1,7,Boris,Boris,Boris,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
-sl-170,1,8,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,B-PER
+sl-170,1,8,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,I-PER
 sl-170,1,9,posvetil,,posvetiti,Vmep-sm,VERB,O,,O
 sl-170,1,10,Škotom,Škoti,Škot,Npmpd,PROPN,B-PER,GPE-Scotland,B-PER
 sl-170,1,11,in,,in,Cc,CCONJ,O,,O
@@ -62,10 +62,10 @@ sl-170,1,53,.,,.,Z,PUNCT,O,,O
 sl-170,1,54,(,,(,Z,PUNCT,O,,O
 sl-170,1,55,Foto,,foto,Ncmsn,NOUN,O,,O
 sl-170,1,56,:,,:,Z,PUNCT,O,,O
-sl-170,1,57,AP,,AP,Npmsn,PROPN,O,,B-ORG
+sl-170,1,57,AP,,AP,Npmsn,PROPN,O,,O
 sl-170,1,58,),,),Z,PUNCT,O,,O
 sl-170,2,1,Boris,Boris,Boris,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
-sl-170,2,2,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,B-PER
+sl-170,2,2,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,I-PER
 sl-170,2,3,",",,",",Z,PUNCT,O,,O
 sl-170,2,4,ki,,ki,Cs,SCONJ,O,,O
 sl-170,2,5,",",,",",Z,PUNCT,O,,O
@@ -168,7 +168,7 @@ sl-170,3,13,ji,,on,Pp3fsd--y,PRON,O,,O
 sl-170,3,14,dal,,dati,Vmep-sm,VERB,O,,O
 sl-170,3,15,vodja,,vodja,Ncmsn,NOUN,O,,O
 sl-170,3,16,opozicijskih,,opozicijski,Agpmpg,ADJ,O,,O
-sl-170,3,17,laburistov,,laburist,Ncmpg,NOUN,O,,B-PER
+sl-170,3,17,laburistov,,laburist,Ncmpg,NOUN,O,,O
 sl-170,3,18,Jeremy,Jeremy,Jeremy,Npmsn,PROPN,B-PER,PER-Jeremy-Corbyn,B-PER
 sl-170,3,19,Corbyn,Corbyn,Corbyn,Npmsn,PROPN,I-PER,PER-Jeremy-Corbyn,I-PER
 sl-170,3,20,",",,",",Z,PUNCT,O,,O
@@ -197,7 +197,7 @@ sl-170,3,42,preteklosti,,preteklost,Ncfsl,NOUN,O,,O
 sl-170,3,43,simpatizer,,simpatizer,Ncmsn,NOUN,O,,O
 sl-170,3,44,vseh,,ves,Pg-mpg,DET,O,,O
 sl-170,3,45,nasprotnikov,,nasprotnik,Ncmpg,NOUN,O,,O
-sl-170,3,46,Britanije,Britanija,Britanija,Npfsg,PROPN,B-LOC,GPE-Great-Britain,I-LOC
+sl-170,3,46,Britanije,Britanija,Britanija,Npfsg,PROPN,B-LOC,GPE-Great-Britain,B-LOC
 sl-170,3,47,.,,.,Z,PUNCT,O,,O
 sl-170,4,1,Na,,na,Sa,ADP,O,,O
 sl-170,4,2,misel,,misel,Ncfsa,NOUN,O,,O
@@ -824,7 +824,7 @@ sl-170,29,14,naselil,,naseliti,Vmep-sm,VERB,O,,O
 sl-170,29,15,na,,na,Sa,ADP,O,,O
 sl-170,29,16,Downing,Downing,Downing,Npmsn,PROPN,B-LOC,LOC-Downing-Street,B-LOC
 sl-170,29,17,Street,Street,Street,Npmsn,PROPN,I-LOC,LOC-Downing-Street,I-LOC
-sl-170,29,18,10,,10,Mdc,NUM,O,,O
+sl-170,29,18,10,,10,Mdc,NUM,O,,I-LOC
 sl-170,29,19,",",,",",Z,PUNCT,O,,O
 sl-170,29,20,srečala,,srečati,Vmep-sf,VERB,O,,O
 sl-170,29,21,nekdanji,,nekdanji,Agpmsny,ADJ,O,,O
@@ -877,7 +877,7 @@ sl-170,29,67,mnogi,,mnog,Pi-mpn,DET,O,,O
 sl-170,29,68,vidijo,,videti,Vmbr3p,VERB,O,,O
 sl-170,29,69,naslednika,,naslednik,Ncmsay,NOUN,O,,O
 sl-170,29,70,Jeremyja,Jeremy,Jeremy,Npmsay,PROPN,B-PER,PER-Jeremy-Corbyn,B-PER
-sl-170,29,71,Corbyna,Corbyn,Corbyn,Npmsay,PROPN,I-PER,PER-Jeremy-Corbyn,B-PER
+sl-170,29,71,Corbyna,Corbyn,Corbyn,Npmsay,PROPN,I-PER,PER-Jeremy-Corbyn,I-PER
 sl-170,29,72,.,,.,Z,PUNCT,O,,O
 sl-170,30,1,Dogovorila,,dogovoriti,Vmep-dm,VERB,O,,O
 sl-170,30,2,sta,,biti,Va-r3d-n,AUX,O,,O

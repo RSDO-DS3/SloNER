@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-43,0,1,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
 sl-43,0,2,evropsko,,evropski,Agpfsa,ADJ,O,,O
 sl-43,0,3,turnejo,,turneja,Ncfsa,NOUN,O,,O
@@ -17,7 +17,7 @@ sl-43,1,7,Iran,Iran,Iran,Npmsn,PROPN,B-LOC,GPE-Iran,B-LOC
 sl-43,1,8,",",,",",Z,PUNCT,O,,O
 sl-43,1,9,medsebojna,,medsebojen,Agpfsn,ADJ,O,,O
 sl-43,1,10,trgovina,,trgovina,Ncfsn,NOUN,O,,O
-sl-43,1,11,so,,biti,Va-r3p-n,AUX,O,,I-PRO
+sl-43,1,11,so,,biti,Va-r3p-n,AUX,O,,O
 sl-43,1,12,najbolj,,najbolj,Rgs,ADV,O,,O
 sl-43,1,13,znane,,znan,Appfpn,ADJ,O,,O
 sl-43,1,14,teme,,tema,Ncfpn,NOUN,O,,O
@@ -49,7 +49,7 @@ sl-43,2,8,",",,",",Z,PUNCT,O,,O
 sl-43,2,9,da,,da,Cs,SCONJ,O,,O
 sl-43,2,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-43,2,11,Mike,Mike,Mike,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
-sl-43,2,12,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,B-PER
+sl-43,2,12,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,I-PER
 sl-43,2,13,šele,,šele,Q,PART,O,,O
 sl-43,2,14,leto,,leto,Ncnsa,NOUN,O,,O
 sl-43,2,15,po,,po,Sl,ADP,O,,O
@@ -115,8 +115,8 @@ sl-43,4,17,Huawei,Huawei,Huawei,Npmsn,PROPN,B-ORG,ORG-Huawei,B-ORG
 sl-43,4,18,postavljanja,,postavljanje,Ncnsg,NOUN,O,,O
 sl-43,4,19,telekomunikacijskega,,telekomunikacijski,Agpnsg,ADJ,O,,O
 sl-43,4,20,omrežja,,omrežje,Ncnsg,NOUN,O,,O
-sl-43,4,21,5,,5,Mdc,NUM,O,,B-PRO
-sl-43,4,22,G.,,G.,Y,X,O,,I-PRO
+sl-43,4,21,5,,5,Mdc,NUM,O,,O
+sl-43,4,22,G.,,G.,Y,X,O,,O
 sl-43,4,23,Po,,po,Sl,ADP,O,,O
 sl-43,4,24,srečanju,,srečanje,Ncnsl,NOUN,O,,O
 sl-43,4,25,z,,z,Si,ADP,O,,O
@@ -171,8 +171,8 @@ sl-43,5,8,da,,da,Cs,SCONJ,O,,O
 sl-43,5,9,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-43,5,10,z,,z,Si,ADP,O,,O
 sl-43,5,11,državami,,država,Ncfpi,NOUN,O,,O
-sl-43,5,12,s,,z,Si,ADP,O,,I-PRO
-sl-43,5,13,Huaweijevim,,Huaweijev,Aspnsi,ADJ,O,,B-ORG
+sl-43,5,12,s,,z,Si,ADP,O,,O
+sl-43,5,13,Huaweijevim,,Huaweijev,Aspnsi,ADJ,O,,B-PRO
 sl-43,5,14,omrežjem,,omrežje,Ncnsi,NOUN,O,,O
 sl-43,5,15,ne,,ne,Q,PART,O,,O
 sl-43,5,16,bodo,,biti,Va-f3p-n,AUX,O,,O
@@ -369,7 +369,7 @@ sl-43,14,2,se,,se,Px------y,PRON,O,,O
 sl-43,14,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-43,14,4,srečal,,srečati,Vmep-sm,VERB,O,,O
 sl-43,14,5,tudi,,tudi,Q,PART,O,,O
-sl-43,14,6,s,,z,Si,ADP,O,,I-PRO
+sl-43,14,6,s,,z,Si,ADP,O,,O
 sl-43,14,7,kanclerko,,kanclerka,Ncfsi,NOUN,O,,O
 sl-43,14,8,Angelo,Angela,Angela,Npfsi,PROPN,B-PER,PER-Angela-Merkel,B-PER
 sl-43,14,9,Merkel,Merkel,Merkel,Npfsi,PROPN,I-PER,PER-Angela-Merkel,I-PER
@@ -399,7 +399,7 @@ sl-43,15,11,.,,.,Z,PUNCT,O,,O
 sl-43,16,1,Na,,na,Sl,ADP,O,,O
 sl-43,16,2,tej,,ta,Pd-fsl,DET,O,,O
 sl-43,16,3,elitni,,eliten,Agpfsl,ADJ,O,,O
-sl-43,16,4,univerzi,,univerza,Ncfsl,NOUN,O,,B-ORG
+sl-43,16,4,univerzi,,univerza,Ncfsl,NOUN,O,,O
 sl-43,16,5,",",,",",Z,PUNCT,O,,O
 sl-43,16,6,znani,,znan,Appfsl,ADJ,O,,O
 sl-43,16,7,po,,po,Sl,ADP,O,,O
@@ -452,7 +452,7 @@ sl-43,18,7,svobodno,,svoboden,Agpfsa,ADJ,O,,O
 sl-43,18,8,svetovno,,svetoven,Agpfsa,ADJ,O,,O
 sl-43,18,9,trgovino,,trgovina,Ncfsa,NOUN,O,,O
 sl-43,18,10,in,,in,Cc,CCONJ,O,,O
-sl-43,18,11,s,,z,Si,ADP,O,,I-PRO
+sl-43,18,11,s,,z,Si,ADP,O,,O
 sl-43,18,12,tem,,ta,Pd-nsi,DET,O,,O
 sl-43,18,13,temelje,,temelj,Ncmpa,NOUN,O,,O
 sl-43,18,14,našega,,naš,Ps1nsgp,DET,O,,O
@@ -509,7 +509,7 @@ sl-43,20,15,navdušenih,,navdušen,Appmpg,ADJ,O,,O
 sl-43,20,16,vzklikov,,vzklik,Ncmpg,NOUN,O,,O
 sl-43,20,17,je,,biti,Va-r3s-n,AUX,O,,O
 sl-43,20,18,požela,,požeti,Vmep-sf,VERB,O,,O
-sl-43,20,19,s,,z,Si,ADP,O,,I-PRO
+sl-43,20,19,s,,z,Si,ADP,O,,O
 sl-43,20,20,tem,,ta,Pd-msi,DET,O,,O
 sl-43,20,21,napadom,,napad,Ncmsi,NOUN,O,,O
 sl-43,20,22,na,,na,Sa,ADP,O,,O

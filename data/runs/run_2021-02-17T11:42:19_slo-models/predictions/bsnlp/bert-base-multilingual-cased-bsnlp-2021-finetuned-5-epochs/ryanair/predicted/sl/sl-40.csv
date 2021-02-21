@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-40,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-40,0,2,potnikom,,potnik,Ncmpd,NOUN,O,,O
 sl-40,0,3,noče,,hoteti,Vmpr3s-y,VERB,O,,O
@@ -32,7 +32,7 @@ sl-40,1,15,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-40,1,16,je,,on,Pp3fsg--y,PRON,O,,O
 sl-40,1,17,ni,,biti,Va-r3s-y,VERB,O,,O
 sl-40,1,18,treba,,treba,Rgp,ADV,O,,O
-sl-40,2,1,Irski,,irski,Agpmsny,ADJ,O,,B-LOC
+sl-40,2,1,Irski,,irski,Agpmsny,ADJ,O,,O
 sl-40,2,2,letalski,,letalski,Agpmsny,ADJ,O,,O
 sl-40,2,3,prevoznik,,prevoznik,Ncmsn,NOUN,O,,O
 sl-40,2,4,je,,biti,Va-r3s-n,AUX,O,,O

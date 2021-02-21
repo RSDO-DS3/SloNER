@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-123,0,1,Betka,Betka,Betka,Npfsn,PROPN,B-PER,PER-Betka-Šuhel-Mikolič,B-PER
 sl-123,0,2,Šuhel,Šuhel,Šuhel,Npfsn,PROPN,I-PER,PER-Betka-Šuhel-Mikolič,I-PER
 sl-123,0,3,Mikolič,Mikolič,Mikolič,Npfsn,PROPN,I-PER,PER-Betka-Šuhel-Mikolič,I-PER
@@ -53,10 +53,10 @@ sl-123,3,15,letom,,leto,Ncnsi,NOUN,O,,O
 sl-123,3,16,bolj,,bolj,Rgc,ADV,O,,O
 sl-123,3,17,priljubljeno,,priljubljen,Agpfsa,ADJ,O,,O
 sl-123,3,18,zgodbo,,zgodba,Ncfsa,NOUN,O,,O
-sl-123,3,19,Od,Od,od,Sg,ADP,B-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,3,20,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,3,21,do,do,do,Sg,ADP,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,3,22,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
+sl-123,3,19,Od,Od,od,Sg,ADP,B-PRO,PRO-Od-vzhoda-do-vzhoda,B-PRO
+sl-123,3,20,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
+sl-123,3,21,do,do,do,Sg,ADP,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
+sl-123,3,22,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
 sl-123,3,23,",",,",",Z,PUNCT,O,,O
 sl-123,3,24,ki,,ki,Cs,SCONJ,O,,O
 sl-123,3,25,h,,k,Sd,ADP,O,,O
@@ -688,10 +688,10 @@ sl-123,44,7,",",,",",Z,PUNCT,O,,O
 sl-123,44,8,ki,,ki,Cs,SCONJ,O,,O
 sl-123,44,9,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-123,44,10,projekt,,projekt,Ncmsn,NOUN,O,,O
-sl-123,44,11,Od,Od,od,Sg,ADP,B-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,44,12,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,44,13,do,do,do,Sg,ADP,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,44,14,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
+sl-123,44,11,Od,Od,od,Sg,ADP,B-PRO,PRO-Od-vzhoda-do-vzhoda,B-PRO
+sl-123,44,12,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
+sl-123,44,13,do,do,do,Sg,ADP,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
+sl-123,44,14,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
 sl-123,44,15,premakne,,premakniti,Vmer3s,VERB,O,,O
 sl-123,44,16,iz,,iz,Sg,ADP,O,,O
 sl-123,44,17,cone,,cona,Ncfsg,NOUN,O,,O
@@ -1888,7 +1888,7 @@ sl-123,143,15,s,,z,Si,ADP,O,,O
 sl-123,143,16,plesnimi,,plesen,Agpmpi,ADJ,O,,O
 sl-123,143,17,treningi,,trening,Ncmpi,NOUN,O,,O
 sl-123,143,18,.,,.,Z,PUNCT,O,,O
-sl-123,144,1,Mali,,mali,Agpmsny,ADJ,O,,B-LOC
+sl-123,144,1,Mali,,mali,Agpmsny,ADJ,O,,O
 sl-123,144,2,Etijen,Etijen,Etijen,Npmsn,PROPN,B-PER,PER-Etijen,B-PER
 sl-123,144,3,pa,,pa,Cc,CCONJ,O,,O
 sl-123,144,4,talentiran,,talentiran,Appmsnn,ADJ,O,,O

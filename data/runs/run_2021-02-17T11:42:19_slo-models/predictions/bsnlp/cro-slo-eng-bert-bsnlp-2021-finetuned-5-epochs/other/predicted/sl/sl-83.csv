@@ -1,6 +1,6 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-83,0,1,Del,,del,Ncmsan,NOUN,O,,O
-sl-83,0,2,frankfurtskega,,frankfurtski,Agpnsg,ADJ,O,,B-LOC
+sl-83,0,2,frankfurtskega,,frankfurtski,Agpnsg,ADJ,O,,O
 sl-83,0,3,letališča,,letališče,Ncnsg,NOUN,O,,O
 sl-83,0,4,so,,biti,Va-r3p-n,AUX,O,,O
 sl-83,0,5,morali,,morati,Vmpp-pm,VERB,O,,O
@@ -28,9 +28,9 @@ sl-83,1,17,letala,,letalo,Ncnpa,NOUN,O,,O
 sl-83,1,18,",",,",",Z,PUNCT,O,,O
 sl-83,1,19,je,,biti,Va-r3s-n,AUX,O,,O
 sl-83,1,20,sporočila,,sporočiti,Vmep-sf,VERB,O,,O
-sl-83,1,21,nemška,nemška,nemški,Agpfsn,ADJ,B-ORG,ORG-German-Federal-Police,O
-sl-83,1,22,zvezna,zvezna,zvezen,Agpfsn,ADJ,I-ORG,ORG-German-Federal-Police,O
-sl-83,1,23,policija,policija,policija,Ncfsn,NOUN,I-ORG,ORG-German-Federal-Police,O
+sl-83,1,21,nemška,nemška,nemški,Agpfsn,ADJ,B-ORG,ORG-German-Federal-Police,B-ORG
+sl-83,1,22,zvezna,zvezna,zvezen,Agpfsn,ADJ,I-ORG,ORG-German-Federal-Police,I-ORG
+sl-83,1,23,policija,policija,policija,Ncfsn,NOUN,I-ORG,ORG-German-Federal-Police,I-ORG
 sl-83,1,24,.,,.,Z,PUNCT,O,,O
 sl-83,2,1,Razlog,,razlog,Ncmsn,NOUN,O,,O
 sl-83,2,2,za,,za,Sa,ADP,O,,O
@@ -250,7 +250,7 @@ sl-83,14,6,izpraznili,,izprazniti,Vmep-pm,VERB,O,,O
 sl-83,14,7,terminal,,terminal,Ncmsan,NOUN,O,,O
 sl-83,14,8,2,,2,Mdc,NUM,O,,O
 sl-83,14,9,na,,na,Sl,ADP,O,,O
-sl-83,14,10,münchenskem,,münchenski,Agpnsl,ADJ,O,,B-LOC
+sl-83,14,10,münchenskem,,münchenski,Agpnsl,ADJ,O,,O
 sl-83,14,11,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-83,14,12,",",,",",Z,PUNCT,O,,O
 sl-83,14,13,potem,,potem,Rgp,ADV,O,,O

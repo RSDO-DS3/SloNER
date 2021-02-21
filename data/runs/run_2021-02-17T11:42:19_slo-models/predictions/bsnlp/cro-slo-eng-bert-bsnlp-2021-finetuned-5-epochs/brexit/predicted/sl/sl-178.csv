@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-178,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-178,0,2,in,,in,Cc,CCONJ,O,,O
 sl-178,0,3,avtomobilska,,avtomobilski,Agpfsn,ADJ,O,,O
@@ -50,7 +50,7 @@ sl-178,2,27,.,,.,Z,PUNCT,O,,O
 sl-178,3,1,Če,,če,Cs,SCONJ,O,,O
 sl-178,3,2,držijo,,držati,Vmpr3p,VERB,O,,O
 sl-178,3,3,okrog,,okrog,Rgp,ADV,O,,O
-sl-178,3,4,deset,,deset,Mlc-pa,NUM,O,,I-PER
+sl-178,3,4,deset,,deset,Mlc-pa,NUM,O,,O
 sl-178,3,5,dni,,dan,Ncmpg,NOUN,O,,O
 sl-178,3,6,stare,,star,Agpfsg,ADJ,O,,O
 sl-178,3,7,napovedi,,napoved,Ncfsg,NOUN,O,,O
@@ -149,7 +149,7 @@ sl-178,6,12,prihodnje,,prihodnji,Agpnsa,ADJ,O,,O
 sl-178,6,13,trgovina,,trgovina,Ncfsn,NOUN,O,,O
 sl-178,6,14,na,,na,Sl,ADP,O,,O
 sl-178,6,15,relaciji,,relacija,Ncfsl,NOUN,O,,O
-sl-178,6,16,London-Bruselj,,Londonxbruselj,Npmsn,PROPN,O,,B-LOC
+sl-178,6,16,London-Bruselj,,Londonxbruselj,Npmsn,PROPN,O,,O
 sl-178,6,17,odvijala,,odvijati,Vmpp-sf,VERB,O,,O
 sl-178,6,18,po,,po,Sl,ADP,O,,O
 sl-178,6,19,načelih,,načelo,Ncnpl,NOUN,O,,O
@@ -693,7 +693,7 @@ sl-178,26,21,manevrskega,,manevrski,Agpmsg,ADJ,O,,O
 sl-178,26,22,prostora,,prostor,Ncmsg,NOUN,O,,O
 sl-178,26,23,oziroma,,oziroma,Cc,CCONJ,O,,O
 sl-178,26,24,časa,,čas,Ncmsg,NOUN,O,,O
-sl-178,26,25,-,,-,Z,PUNCT,O,,B-PRO
+sl-178,26,25,-,,-,Z,PUNCT,O,,O
 sl-178,26,26,vse,,ves,Pg-nsn,DET,O,,O
 sl-178,26,27,mora,,morati,Vmpr3s,VERB,O,,O
 sl-178,26,28,biti,,biti,Va-n,AUX,O,,O
@@ -739,13 +739,13 @@ sl-178,29,4,domuje,,domovati,Vmpr3s,VERB,O,,O
 sl-178,29,5,14,,14,Mdc,NUM,O,,O
 sl-178,29,6,avtomobilskih,,avtomobilski,Agpfpg,ADJ,O,,O
 sl-178,29,7,tovarn,,tovarna,Ncfpg,NOUN,O,,O
-sl-178,29,8,-,,-,Z,PUNCT,O,,B-PRO
+sl-178,29,8,-,,-,Z,PUNCT,O,,O
 sl-178,29,9,vse,,ves,Pg-fpn,DET,O,,O
 sl-178,29,10,so,,biti,Va-r3p-n,VERB,O,,O
 sl-178,29,11,v,,v,Sl,ADP,O,,O
 sl-178,29,12,tuji,,tuj,Agpfsl,ADJ,O,,O
 sl-178,29,13,lasti,,last,Ncfsl,NOUN,O,,O
-sl-178,29,14,-,,-,Z,PUNCT,O,,B-PRO
+sl-178,29,14,-,,-,Z,PUNCT,O,,O
 sl-178,29,15,",",,",",Z,PUNCT,O,,O
 sl-178,29,16,ki,,ki,Cs,SCONJ,O,,O
 sl-178,29,17,zaposlujejo,,zaposlovati,Vmpr3p,VERB,O,,O

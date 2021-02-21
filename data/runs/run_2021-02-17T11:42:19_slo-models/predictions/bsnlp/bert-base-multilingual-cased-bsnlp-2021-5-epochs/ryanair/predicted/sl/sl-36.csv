@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-36,0,1,Tudi,,tudi,Q,PART,O,,O
 sl-36,0,2,pri,,pri,Sl,ADP,O,,O
 sl-36,0,3,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG
@@ -31,7 +31,7 @@ sl-36,2,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-36,2,2,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-36,2,3,450,,450,Mdc,NUM,O,,O
 sl-36,2,4,letal,,letalo,Ncnpg,NOUN,O,,O
-sl-36,2,5,Boeing,Boeing,Boeing,Npmsn,PROPN,B-PRO,PRO-Boeing-737,B-ORG
+sl-36,2,5,Boeing,Boeing,Boeing,Npmsn,PROPN,B-PRO,PRO-Boeing-737,B-PRO
 sl-36,2,6,737,737,737,Mdc,NUM,I-PRO,PRO-Boeing-737,I-PRO
 sl-36,2,7,",",,",",Z,PUNCT,O,,O
 sl-36,2,8,na,,na,Sl,ADP,O,,O
@@ -45,9 +45,9 @@ sl-36,3,2,:,,:,Z,PUNCT,O,,O
 sl-36,3,3,Rafael,,Rafael,Npmsn,PROPN,O,,B-PER
 sl-36,3,4,Marchante,,Marchante,Npmsn,PROPN,O,,I-PER
 sl-36,3,5,/,,/,Z,PUNCT,O,,O
-sl-36,3,6,Reuters,,Reuters,Npmsn,PROPN,O,,B-ORG
+sl-36,3,6,Reuters,,Reuters,Npmsn,PROPN,O,,O
 sl-36,4,1,Časopis,,časopis,Ncmsn,NOUN,O,,O
-sl-36,4,2,The,The,the,Xf,X,B-ORG,ORG-The-Guardian,B-ORG
+sl-36,4,2,The,The,the,Xf,X,B-ORG,ORG-The-Guardian,B-PRO
 sl-36,4,3,Guardian,Guardian,Guardian,Npmsn,PROPN,I-ORG,ORG-The-Guardian,I-PRO
 sl-36,4,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-36,4,5,danes,,danes,Rgp,ADV,O,,O
@@ -126,7 +126,7 @@ sl-36,6,12,",",,",",Z,PUNCT,O,,O
 sl-36,6,13,čigar,,čigar,Pr----sm,DET,O,,O
 sl-36,6,14,najnovejši,,nov,Agsmsny,ADJ,O,,O
 sl-36,6,15,model,,model,Ncmsn,NOUN,O,,O
-sl-36,6,16,Boeing,Boeing,Boeing,Npmsn,PROPN,B-PRO,PRO-Boeing-737-Max,B-ORG
+sl-36,6,16,Boeing,Boeing,Boeing,Npmsn,PROPN,B-PRO,PRO-Boeing-737-Max,B-PRO
 sl-36,6,17,737,737,737,Mdc,NUM,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-36,6,18,max,max,max,Ncmsn,NOUN,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-36,6,19,je,,biti,Va-r3s-n,AUX,O,,O
@@ -178,7 +178,7 @@ sl-36,8,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-36,8,2,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-36,8,3,450,,450,Mdc,NUM,O,,O
 sl-36,8,4,letal,,letalo,Ncnpg,NOUN,O,,O
-sl-36,8,5,Boeing,Boeing,Boeing,Npmsn,PROPN,B-PRO,PRO-Boeing-737,B-ORG
+sl-36,8,5,Boeing,Boeing,Boeing,Npmsn,PROPN,B-PRO,PRO-Boeing-737,B-PRO
 sl-36,8,6,737,737,737,Mdc,NUM,I-PRO,PRO-Boeing-737,I-PRO
 sl-36,9,1,Po,,po,Sl,ADP,O,,O
 sl-36,9,2,svetu,,svet,Ncmsl,NOUN,O,,O
@@ -187,7 +187,7 @@ sl-36,9,4,v,,v,Sl,ADP,O,,O
 sl-36,9,5,uporabi,,uporaba,Ncfsl,NOUN,O,,O
 sl-36,9,6,7000,,7000,Mdc,NUM,O,,O
 sl-36,9,7,Boeingov,Boeing,Boeing,Npmpg,PROPN,B-PRO,PRO-Boeing-737-New-Generation,B-PRO
-sl-36,9,8,737-NG,737-NG,737-ng,Mdc,NUM,I-PRO,PRO-Boeing-737-New-Generation,O
+sl-36,9,8,737-NG,737-NG,737-ng,Mdc,NUM,I-PRO,PRO-Boeing-737-New-Generation,I-PRO
 sl-36,9,9,.,,.,Z,PUNCT,O,,O
 sl-36,10,1,Pred,,pred,Si,ADP,O,,O
 sl-36,10,2,Ryanairom,Ryanair,Ryanair,Npmsi,PROPN,B-ORG,ORG-Ryanair,B-ORG
@@ -251,8 +251,8 @@ sl-36,11,15,ki,,ki,Cs,SCONJ,O,,O
 sl-36,11,16,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-36,11,17,450,,450,Mdc,NUM,O,,O
 sl-36,11,18,letal,,letalo,Ncnpg,NOUN,O,,O
-sl-36,11,19,Boeing,Boeing,Boeing,Npmsn,PROPN,B-PRO,PRO-Boeing-737-New-Generation,B-ORG
-sl-36,11,20,737-NG,737-NG,737-ng,Mdc,NUM,I-PRO,PRO-Boeing-737-New-Generation,O
+sl-36,11,19,Boeing,Boeing,Boeing,Npmsn,PROPN,B-PRO,PRO-Boeing-737-New-Generation,B-PRO
+sl-36,11,20,737-NG,737-NG,737-ng,Mdc,NUM,I-PRO,PRO-Boeing-737-New-Generation,I-PRO
 sl-36,11,21,",",,",",Z,PUNCT,O,,O
 sl-36,11,22,kar,,kar,Pr-nsn,PRON,O,,O
 sl-36,11,23,je,,biti,Va-r3s-n,VERB,O,,O
@@ -271,7 +271,7 @@ sl-36,11,35,skrival,,skrivati,Vmpp-sm,VERB,O,,O
 sl-36,11,36,.,,.,Z,PUNCT,O,,O
 sl-36,12,1,Sedaj,,sedaj,Rgp,ADV,O,,O
 sl-36,12,2,so,,biti,Va-r3p-n,AUX,O,,O
-sl-36,12,3,Guardianu,Guardian,Guardian,Npmsd,PROPN,B-ORG,ORG-The-Guardian,B-ORG
+sl-36,12,3,Guardianu,Guardian,Guardian,Npmsd,PROPN,B-ORG,ORG-The-Guardian,B-PRO
 sl-36,12,4,zagotovili,,zagotoviti,Vmep-pm,VERB,O,,O
 sl-36,12,5,",",,",",Z,PUNCT,O,,O
 sl-36,12,6,da,,da,Cs,SCONJ,O,,O
@@ -388,7 +388,7 @@ sl-36,16,5,nova,,nov,Agpfsn,ADJ,O,,O
 sl-36,16,6,Boeingova,Boeing,Boeingov,Aspfsn,ADJ,B-ORG,ORG-Boeing,B-ORG
 sl-36,16,7,težava,,težava,Ncfsn,NOUN,O,,O
 sl-36,16,8,.,,.,Z,PUNCT,O,,O
-sl-36,17,1,Na,,na,Sa,ADP,O,,O
+sl-36,17,1,Na,,na,Sa,ADP,O,,B-LOC
 sl-36,17,2,popravilo,,popravilo,Ncnsa,NOUN,O,,O
 sl-36,17,3,v,,v,Sa,ADP,O,,O
 sl-36,17,4,Victorville,Victorville,Victorville,Npmsan,PROPN,B-LOC,GPE-Victorville,B-LOC
@@ -402,8 +402,8 @@ sl-36,18,7,kot,,kot,Cs,SCONJ,O,,O
 sl-36,18,8,sedem,,sedem,Mlc-pn,NUM,O,,O
 sl-36,18,9,tisoč,,tisoč,Mlc-pn,NUM,O,,O
 sl-36,18,10,letal,,letalo,Ncnpg,NOUN,O,,O
-sl-36,18,11,Boeing,Boeing,Boeing,Npmsn,PROPN,B-PRO,PRO-Boeing-737-New-Generation,B-ORG
-sl-36,18,12,737-NG,737-NG,737-ng,Mdc,NUM,I-PRO,PRO-Boeing-737-New-Generation,O
+sl-36,18,11,Boeing,Boeing,Boeing,Npmsn,PROPN,B-PRO,PRO-Boeing-737-New-Generation,B-PRO
+sl-36,18,12,737-NG,737-NG,737-ng,Mdc,NUM,I-PRO,PRO-Boeing-737-New-Generation,I-PRO
 sl-36,18,13,",",,",",Z,PUNCT,O,,O
 sl-36,18,14,po,,po,Sl,ADP,O,,O
 sl-36,18,15,priporočilih,,priporočilo,Ncnpl,NOUN,O,,O

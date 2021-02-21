@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-1,0,1,Porošenko,Porošenko,Porošenko,Npmsn,PROPN,B-PER,PER-Petro-Poroshenko,B-PER
 sl-1,0,2,pozval,,pozvati,Vmep-sm,VERB,O,,O
 sl-1,0,3,Nato,Nato,Nato,Npmsan,PROPN,B-ORG,ORG-NATO,B-ORG
@@ -21,7 +21,7 @@ sl-1,0,19,',,',Z,PUNCT,O,,O
 sl-1,1,1,Ukrajinski,Ukrajina,ukrajinski,Agpmsny,ADJ,B-LOC,GPE-Ukraine,B-LOC
 sl-1,1,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-1,1,3,Petro,Petro,Petro,Npmsn,PROPN,B-PER,PER-Petro-Poroshenko,B-PER
-sl-1,1,4,Porošenko,Porošenko,Porošenko,Npmsn,PROPN,I-PER,PER-Petro-Poroshenko,B-PER
+sl-1,1,4,Porošenko,Porošenko,Porošenko,Npmsn,PROPN,I-PER,PER-Petro-Poroshenko,I-PER
 sl-1,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,1,6,zvezo,,zveza,Ncfsa,NOUN,O,,O
 sl-1,1,7,Nato,Nato,Nato,Npmsn,PROPN,B-ORG,ORG-NATO,B-ORG
@@ -50,7 +50,7 @@ sl-1,1,29,velja,,veljati,Vmpr3s,VERB,O,,O
 sl-1,1,30,vojno,,vojna,Ncfsa,NOUN,O,,O
 sl-1,1,31,stanje,,stanje,Ncnsa,NOUN,O,,O
 sl-1,1,32,.,,.,Z,PUNCT,O,,O
-sl-1,2,1,Ruskega,,ruski,Agpmsa,ADJ,O,,B-LOC
+sl-1,2,1,Ruskega,,ruski,Agpmsa,ADJ,O,,O
 sl-1,2,2,predsednika,,predsednik,Ncmsay,NOUN,O,,O
 sl-1,2,3,Vladimirja,Vladimir,Vladimir,Npmsg,PROPN,B-PER,PER-Vladimir-Putin,B-PER
 sl-1,2,4,Putina,Putin,Putin,Npmsay,PROPN,I-PER,PER-Vladimir-Putin,I-PER
@@ -79,14 +79,14 @@ sl-1,3,12,celotno,,celoten,Agpfsa,ADJ,O,,O
 sl-1,3,13,Ukrajino,Ukrajina,Ukrajina,Npfsa,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-1,3,14,.,,.,Z,PUNCT,O,,O
 sl-1,4,1,Petro,Petro,Petra,Npfsa,PROPN,B-PER,PER-Petro-Poroshenko,B-PER
-sl-1,4,2,Porošenko,Porošenko,Porošenka,Npfsa,PROPN,I-PER,PER-Petro-Poroshenko,B-PER
+sl-1,4,2,Porošenko,Porošenko,Porošenka,Npfsa,PROPN,I-PER,PER-Petro-Poroshenko,I-PER
 sl-1,4,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,4,4,v,,v,Sl,ADP,O,,O
 sl-1,4,5,pogovoru,,pogovor,Ncmsl,NOUN,O,,O
 sl-1,4,6,za,,za,Sa,ADP,O,,O
 sl-1,4,7,nemški,,nemški,Agpmsay,ADJ,O,,O
 sl-1,4,8,tabloid,,tabloid,Ncmsan,NOUN,O,,O
-sl-1,4,9,Bild,Bild,Bild,Npmsn,PROPN,B-ORG,ORG-Bild,B-ORG
+sl-1,4,9,Bild,Bild,Bild,Npmsn,PROPN,B-ORG,ORG-Bild,B-PRO
 sl-1,4,10,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-1,4,11,:,,:,Z,PUNCT,O,,O
 sl-1,4,12,"""",,"""",Z,PUNCT,O,,O
@@ -118,8 +118,8 @@ sl-1,4,37,zagotoviti,,zagotoviti,Vmen,VERB,O,,O
 sl-1,4,38,varnost,,varnost,Ncfsa,NOUN,O,,O
 sl-1,4,39,.,,.,Z,PUNCT,O,,O
 sl-1,4,40,"""",,"""",Z,PUNCT,O,,O
-sl-1,5,1,',,',Z,PUNCT,O,,O
-sl-1,5,2,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
+sl-1,5,1,',,',Z,PUNCT,O,,B-PER
+sl-1,5,2,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,I-PER
 sl-1,5,3,se,,se,Px------y,PRON,O,,O
 sl-1,5,4,vidi,,videti,Vmbr3s,VERB,O,,O
 sl-1,5,5,kot,,kot,Cs,SCONJ,O,,O
@@ -211,7 +211,7 @@ sl-1,9,7,"""",,"""",Z,PUNCT,O,,O
 sl-1,9,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,9,9,izjavil,,izjaviti,Vmep-sm,VERB,O,,O
 sl-1,9,10,za,,za,Sa,ADP,O,,O
-sl-1,9,11,Bild,Bild,Bild,Npmsan,PROPN,B-ORG,ORG-Bild,B-ORG
+sl-1,9,11,Bild,Bild,Bild,Npmsan,PROPN,B-ORG,ORG-Bild,B-PRO
 sl-1,9,12,.,,.,Z,PUNCT,O,,O
 sl-1,9,13,"""",,"""",Z,PUNCT,O,,O
 sl-1,9,14,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
@@ -306,8 +306,8 @@ sl-1,13,7,zaustavitev,,zaustavitev,Ncfsn,NOUN,O,,O
 sl-1,13,8,projekta,,projekt,Ncmsg,NOUN,O,,O
 sl-1,13,9,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
 sl-1,13,10,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-1,13,11,tok,,tok,Ncmsn,NOUN,O,,I-PRO
-sl-1,13,12,2.,,2.,Mdo,NUM,O,,I-PRO
+sl-1,13,11,tok,,tok,Ncmsn,NOUN,O,,O
+sl-1,13,12,2.,,2.,Mdo,NUM,O,,O
 sl-1,14,1,Ukrajinski,Ukrajina,ukrajinski,Agpmsny,ADJ,B-LOC,GPE-Ukraine,B-LOC
 sl-1,14,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-1,14,3,je,,biti,Va-r3s-n,AUX,O,,O

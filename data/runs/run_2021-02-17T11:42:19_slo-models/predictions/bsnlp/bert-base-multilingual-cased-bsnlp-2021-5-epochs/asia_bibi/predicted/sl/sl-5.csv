@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-5,0,1,V,,v,Sl,ADP,O,,O
 sl-5,0,2,Pakistanu,Pakistan,Pakistan,Npmsl,PROPN,B-LOC,GPE-Pakistan,B-LOC
 sl-5,0,3,izpustili,,izpustiti,Vmep-pm,VERB,O,,O
@@ -85,7 +85,7 @@ sl-5,3,23,njihovi,,njihov,Ps3mpnp,DET,O,,O
 sl-5,3,24,podporniki,,podpornik,Ncmpn,NOUN,O,,O
 sl-5,3,25,odpravili,,odpraviti,Vmep-pm,VERB,O,,O
 sl-5,3,26,na,,na,Sa,ADP,O,,O
-sl-5,3,27,ulice,,ulica,Ncfpa,NOUN,O,,B-PER
+sl-5,3,27,ulice,,ulica,Ncfpa,NOUN,O,,O
 sl-5,3,28,in,,in,Cc,CCONJ,O,,O
 sl-5,3,29,zahtevali,,zahtevati,Vmbp-pm,VERB,O,,O
 sl-5,3,30,takojšnjo,,takojšnji,Agpfsa,ADJ,O,,O
@@ -207,7 +207,7 @@ sl-5,8,7,znova,,znova,Rgp,ADV,O,,O
 sl-5,8,8,izbruhnili,,izbruhniti,Vmep-pm,VERB,O,,O
 sl-5,8,9,protesti,,protest,Ncmpn,NOUN,O,,O
 sl-5,8,10,podpornikov,,podpornik,Ncmpg,NOUN,O,,O
-sl-5,8,11,islamističnih,,islamističen,Agpfpg,ADJ,O,,O
+sl-5,8,11,islamističnih,,islamističen,Agpfpg,ADJ,O,,B-ORG
 sl-5,8,12,strank,,stranka,Ncfpg,NOUN,O,,O
 sl-5,8,13,",",,",",Z,PUNCT,O,,O
 sl-5,8,14,ki,,ki,Cs,SCONJ,O,,O
@@ -240,8 +240,8 @@ sl-5,9,20,govornikov,,govornik,Ncmpg,NOUN,O,,O
 sl-5,9,21,na,,na,Sl,ADP,O,,O
 sl-5,9,22,protestih,,protest,Ncmpl,NOUN,O,,O
 sl-5,9,23,.,,.,Z,PUNCT,O,,O
-sl-5,10,1,Mož,,mož,Ncmsn,NOUN,O,,O
-sl-5,10,2,Bibijeve,Bibi,Bibijev,Aspfsg,ADJ,B-PER,PER-Asia-Bibi,B-PER
+sl-5,10,1,Mož,,mož,Ncmsn,NOUN,O,,B-PER
+sl-5,10,2,Bibijeve,Bibi,Bibijev,Aspfsg,ADJ,B-PER,PER-Asia-Bibi,I-PER
 sl-5,10,3,Ašik,,Ašik,Npmsn,PROPN,O,,B-PER
 sl-5,10,4,Masih,,Masih,Npmsn,PROPN,O,,I-PER
 sl-5,10,5,je,,biti,Va-r3s-n,AUX,O,,O

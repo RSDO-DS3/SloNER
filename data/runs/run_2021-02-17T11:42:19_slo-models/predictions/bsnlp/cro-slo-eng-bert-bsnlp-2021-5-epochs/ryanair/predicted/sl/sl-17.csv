@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-17,0,1,Dvanajst,,dvanajst,Mlc-pn,NUM,O,,O
 sl-17,0,2,letal,,letalo,Ncnpg,NOUN,O,,O
 sl-17,0,3,v,,v,Sa,ADP,O,,O
@@ -218,7 +218,7 @@ sl-17,9,18,je,,biti,Va-r3s-n,AUX,O,,O
 sl-17,9,19,dodal,,dodati,Vmep-sm,VERB,O,,O
 sl-17,9,20,.,,.,Z,PUNCT,O,,O
 sl-17,10,1,Predstavnik,,predstavnik,Ncmsn,NOUN,O,,O
-sl-17,10,2,švedskega,Švedska,švedski,Agpmsg,ADJ,B-LOC,GPE-Sweden,B-ORG
+sl-17,10,2,švedskega,Švedska,švedski,Agpmsg,ADJ,B-LOC,GPE-Sweden,O
 sl-17,10,3,sindikata,,sindikat,Ncmsg,NOUN,O,,O
 sl-17,10,4,SPF,SPF,SPF,Npmsn,PROPN,B-ORG,ORG-SPF-Svensk-Pilotförening,B-ORG
 sl-17,10,5,Martin,Martin,Martin,Npmsn,PROPN,B-PER,PER-Martin-Lindgren,B-PER
@@ -384,7 +384,7 @@ sl-17,16,6,kaj,,kaj,Pq-nsn,PRON,O,,O
 sl-17,16,7,letalski,,letalski,Agpmsny,ADJ,O,,O
 sl-17,16,8,prevoznik,,prevoznik,Ncmsn,NOUN,O,,O
 sl-17,17,1,Bert,Bert,Bert,Npmsn,PROPN,B-PER,PER-Bert-Logar,B-PER
-sl-17,17,2,Logar,Logar,Logar,Npmsn,PROPN,I-PER,PER-Bert-Logar,B-PER
+sl-17,17,2,Logar,Logar,Logar,Npmsn,PROPN,I-PER,PER-Bert-Logar,I-PER
 sl-17,17,3,iz,,iz,Sg,ADP,O,,O
 sl-17,17,4,popotniškega,,popotniški,Agpmsg,ADJ,O,,O
 sl-17,17,5,spletnega,,spleten,Agpmsg,ADJ,O,,O
@@ -523,7 +523,7 @@ sl-17,21,3,ostaja,,ostajati,Vmpr3s,VERB,O,,O
 sl-17,21,4,v,,v,Sl,ADP,O,,O
 sl-17,21,5,zraku,,zrak,Ncmsl,NOUN,O,,O
 sl-17,22,1,Zagrebško,Zagrebški,zagrebški,Agpnsn,ADJ,B-ORG,GPE-Zagreb,B-ORG
-sl-17,22,2,sodišče,,sodišče,Ncnsn,NOUN,O,,O
+sl-17,22,2,sodišče,,sodišče,Ncnsn,NOUN,O,,I-ORG
 sl-17,22,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-17,22,4,danes,,danes,Rgp,ADV,O,,O
 sl-17,22,5,dokončno,,dokončno,Rgp,ADV,O,,O
@@ -578,7 +578,7 @@ sl-17,24,15,vrhovnem,,vrhoven,Agpnsl,ADJ,O,,O
 sl-17,24,16,sodišču,,sodišče,Ncnsl,NOUN,O,,O
 sl-17,24,17,.,,.,Z,PUNCT,O,,O
 sl-17,25,1,Zagrebško,Zagrebški,zagrebški,Agpnsn,ADJ,B-ORG,GPE-Zagreb,B-ORG
-sl-17,25,2,sodišče,,sodišče,Ncnsn,NOUN,O,,O
+sl-17,25,2,sodišče,,sodišče,Ncnsn,NOUN,O,,I-ORG
 sl-17,25,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-17,25,4,predtem,,predtem,Rgp,ADV,O,,O
 sl-17,25,5,že,,že,Q,PART,O,,O
@@ -619,7 +619,7 @@ sl-17,26,22,53,,53,Mdc,NUM,O,,O
 sl-17,26,23,milijonov,,milijon,Ncmpg,NOUN,O,,O
 sl-17,26,24,kun,,kun,Ncmpg,NOUN,O,,O
 sl-17,26,25,.,,.,Z,PUNCT,O,,O
-sl-17,27,1,Uprava,,uprava,Ncfsn,NOUN,O,,O
+sl-17,27,1,Uprava,,uprava,Ncfsn,NOUN,O,,B-ORG
 sl-17,27,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-17,27,3,",",,",",Z,PUNCT,O,,O
 sl-17,27,4,da,,da,Cs,SCONJ,O,,O
@@ -654,12 +654,12 @@ sl-17,29,1,Damjana,Damjana,Damjana,Npfsn,PROPN,B-PER,PER-Damjana-Bokal,B-PER
 sl-17,29,2,Bokal,Bokal,Bokal,Npfsn,PROPN,I-PER,PER-Damjana-Bokal,I-PER
 sl-17,29,3,iz,,iz,Sg,ADP,O,,O
 sl-17,29,4,Evropskega,Evropski,evropski,Agpmsg,ADJ,B-ORG,ORG-EPC-European-Consumer-Centre-Slovenia,B-ORG
-sl-17,29,5,potrošniškega,potrošniški,potrošniški,Agpmsg,ADJ,I-ORG,ORG-EPC-European-Consumer-Centre-Slovenia,O
+sl-17,29,5,potrošniškega,potrošniški,potrošniški,Agpmsg,ADJ,I-ORG,ORG-EPC-European-Consumer-Centre-Slovenia,I-ORG
 sl-17,29,6,centra,center,center,Ncmsg,NOUN,I-ORG,ORG-EPC-European-Consumer-Centre-Slovenia,I-ORG
 sl-17,29,7,(,,(,Z,PUNCT,O,,O
 sl-17,29,8,EPC,EPC,EPC,Npmsn,PROPN,B-ORG,ORG-EPC-European-Consumer-Centre-Slovenia,B-ORG
 sl-17,29,9,),,),Z,PUNCT,O,,O
-sl-17,29,10,Slovenija,Slovenija,Slovenija,Npfsn,PROPN,B-LOC,GPE-Slovenia,B-LOC
+sl-17,29,10,Slovenija,Slovenija,Slovenija,Npfsn,PROPN,B-LOC,GPE-Slovenia,I-ORG
 sl-17,29,11,",",,",",Z,PUNCT,O,,O
 sl-17,29,12,je,,biti,Va-r3s-n,AUX,O,,O
 sl-17,29,13,povedala,,povedati,Vmep-sf,VERB,O,,O

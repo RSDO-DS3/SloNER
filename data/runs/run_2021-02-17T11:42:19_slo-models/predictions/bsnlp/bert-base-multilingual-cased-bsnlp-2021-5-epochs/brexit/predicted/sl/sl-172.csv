@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-172,0,1,Kraljičin,,kraljičin,Aspmsnn,ADJ,O,,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-172,0,1,Kraljičin,,kraljičin,Aspmsnn,ADJ,O,,O
 sl-172,0,2,govor,,govor,Ncmsn,NOUN,O,,O
 sl-172,0,3,kot,,kot,Cs,SCONJ,O,,O
 sl-172,0,4,uvod,,uvod,Ncmsn,NOUN,O,,O

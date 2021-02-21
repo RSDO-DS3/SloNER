@@ -1,7 +1,7 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-57,0,1,KSS,KSS,KSS,Npmsn,PROPN,B-ORG,ORG-Konfederacija-slovenskih-sindikatov,B-ORG
 sl-57,0,2,tudi,,tudi,Q,PART,O,,O
-sl-57,0,3,za,,za,Sa,ADP,O,,I-ORG
+sl-57,0,3,za,,za,Sa,ADP,O,,O
 sl-57,0,4,znižanje,,znižanje,Ncnsa,NOUN,O,,O
 sl-57,0,5,obdavčitve,,obdavčitev,Ncfsg,NOUN,O,,O
 sl-57,0,6,plač,,plača,Ncfpg,NOUN,O,,O
@@ -26,9 +26,9 @@ sl-57,1,18,delavci,,delavec,Ncmpn,NOUN,O,,O
 sl-57,1,19,prejeli,,prejeti,Vmep-pm,VERB,O,,O
 sl-57,1,20,dostojno,,dostojen,Agpnsa,ADJ,O,,O
 sl-57,1,21,plačilo,,plačilo,Ncnsa,NOUN,O,,O
-sl-57,1,22,za,,za,Sa,ADP,O,,I-ORG
+sl-57,1,22,za,,za,Sa,ADP,O,,O
 sl-57,1,23,svoje,,svoj,Px-nsa,DET,O,,O
-sl-57,1,24,delo,,delo,Ncnsa,NOUN,O,,I-ORG
+sl-57,1,24,delo,,delo,Ncnsa,NOUN,O,,O
 sl-57,1,25,.,,.,Z,PUNCT,O,,O
 sl-57,2,1,Opozarjajo,,opozarjati,Vmpr3p,VERB,O,,O
 sl-57,2,2,pa,,pa,Cc,CCONJ,O,,O
@@ -53,7 +53,7 @@ sl-57,3,1,"""",,"""",Z,PUNCT,O,,O
 sl-57,3,2,V,,v,Sl,ADP,O,,O
 sl-57,3,3,Sloveniji,Slovenija,Slovenija,Npfsl,PROPN,B-LOC,GPE-Slovenia,B-LOC
 sl-57,3,4,imamo,,imeti,Vmpr1p-n,VERB,O,,O
-sl-57,3,5,delo,,delo,Ncnsa,NOUN,O,,I-ORG
+sl-57,3,5,delo,,delo,Ncnsa,NOUN,O,,O
 sl-57,3,6,do,,do,Sg,ADP,O,,O
 sl-57,3,7,šestega,,šesti,Mlomsg,ADJ,O,,O
 sl-57,3,8,tarifnega,,tarifen,Agpmsg,ADJ,O,,O
@@ -65,7 +65,7 @@ sl-57,3,13,še,,še,Q,PART,O,,O
 sl-57,3,14,posebej,,posebej,Rgp,ADV,O,,O
 sl-57,3,15,zaradi,,zaradi,Sg,ADP,O,,O
 sl-57,3,16,visokih,,visok,Agpfpg,ADJ,O,,O
-sl-57,3,17,socialnih,,socialen,Agpfpg,ADJ,O,,I-ORG
+sl-57,3,17,socialnih,,socialen,Agpfpg,ADJ,O,,O
 sl-57,3,18,pomoči,,pomoč,Ncfpg,NOUN,O,,O
 sl-57,3,19,",",,",",Z,PUNCT,O,,O
 sl-57,3,20,saj,,saj,Cc,CCONJ,O,,O
@@ -79,9 +79,9 @@ sl-57,3,27,le,,le,Q,PART,O,,O
 sl-57,3,28,malo,,malo,Rgp,DET,O,,O
 sl-57,3,29,višje,,visok,Agcnsa,ADJ,O,,O
 sl-57,3,30,plačilo,,plačilo,Ncnsa,NOUN,O,,O
-sl-57,3,31,za,,za,Sa,ADP,O,,I-ORG
+sl-57,3,31,za,,za,Sa,ADP,O,,O
 sl-57,3,32,svoje,,svoj,Px-nsa,DET,O,,O
-sl-57,3,33,delo,,delo,Ncnsa,NOUN,O,,I-ORG
+sl-57,3,33,delo,,delo,Ncnsa,NOUN,O,,O
 sl-57,3,34,od,,od,Sg,ADP,O,,O
 sl-57,3,35,socialne,,socialen,Agpfsg,ADJ,O,,O
 sl-57,3,36,pomoči,,pomoč,Ncfsg,NOUN,O,,O
@@ -98,7 +98,7 @@ sl-57,3,46,"""",,"""",Z,PUNCT,O,,O
 sl-57,3,47,so,,biti,Va-r3p-n,AUX,O,,O
 sl-57,3,48,opozorili,,opozoriti,Vmep-pm,VERB,O,,O
 sl-57,3,49,v,,v,Sl,ADP,O,,O
-sl-57,3,50,KSS,KSS,KSS,Npfsl,PROPN,B-ORG,ORG-Konfederacija-slovenskih-sindikatov,O
+sl-57,3,50,KSS,KSS,KSS,Npfsl,PROPN,B-ORG,ORG-Konfederacija-slovenskih-sindikatov,B-ORG
 sl-57,3,51,.,,.,Z,PUNCT,O,,O
 sl-57,4,1,Predlagajo,,predlagati,Vmbr3p,VERB,O,,O
 sl-57,4,2,",",,",",Z,PUNCT,O,,O
@@ -124,7 +124,7 @@ sl-57,5,2,Brez,,brez,Sg,ADP,O,,O
 sl-57,5,3,korekcije,,korekcija,Ncfsg,NOUN,O,,O
 sl-57,5,4,obremenitev,,obremenitev,Ncfpg,NOUN,O,,O
 sl-57,5,5,plač,,plača,Ncfpg,NOUN,O,,O
-sl-57,5,6,za,,za,Sa,ADP,O,,I-ORG
+sl-57,5,6,za,,za,Sa,ADP,O,,O
 sl-57,5,7,delavce,,delavec,Ncmpa,NOUN,O,,O
 sl-57,5,8,in,,in,Cc,CCONJ,O,,O
 sl-57,5,9,delodajalce,,delodajalec,Ncmpa,NOUN,O,,O
@@ -223,7 +223,7 @@ sl-57,8,16,za,za,za,Sa,ADP,I-ORG,ORG-The-Committee-on-Labour-Family-Social-Affai
 sl-57,8,17,delo,delo,delo,Ncnsa,NOUN,I-ORG,ORG-The-Committee-on-Labour-Family-Social-Affairs-and-Disability-Slovenia,I-ORG
 sl-57,8,18,.,,.,Z,PUNCT,O,,O
 sl-57,9,1,V,,v,Sl,ADP,O,,O
-sl-57,9,2,Levici,Levica,Levica,Npfsl,PROPN,B-ORG,ORG-The-Left-Slovenia,O
+sl-57,9,2,Levici,Levica,Levica,Npfsl,PROPN,B-ORG,ORG-The-Left-Slovenia,B-ORG
 sl-57,9,3,",",,",",Z,PUNCT,O,,O
 sl-57,9,4,kjer,,kjer,Cs,SCONJ,O,,O
 sl-57,9,5,so,,biti,Va-r3p-n,AUX,O,,O
@@ -233,7 +233,7 @@ sl-57,9,8,pripravili,,pripraviti,Vmep-pm,VERB,O,,O
 sl-57,9,9,",",,",",Z,PUNCT,O,,O
 sl-57,9,10,so,,biti,Va-r3p-n,AUX,O,,O
 sl-57,9,11,zahtevo,,zahteva,Ncfsa,NOUN,O,,O
-sl-57,9,12,za,,za,Sa,ADP,O,,I-ORG
+sl-57,9,12,za,,za,Sa,ADP,O,,O
 sl-57,9,13,sklic,,sklic,Ncmsan,NOUN,O,,O
 sl-57,9,14,seje,,seja,Ncfsg,NOUN,O,,O
 sl-57,9,15,utemeljili,,utemeljiti,Vmep-pm,VERB,O,,O
@@ -312,7 +312,7 @@ sl-57,11,13,2021,,2021,Mdc,NUM,O,,O
 sl-57,11,14,pa,,pa,Cc,CCONJ,O,,O
 sl-57,11,15,uvedli,,uvesti,Vmep-pm,VERB,O,,O
 sl-57,11,16,formulo,,formula,Ncfsa,NOUN,O,,O
-sl-57,11,17,za,,za,Sa,ADP,O,,I-ORG
+sl-57,11,17,za,,za,Sa,ADP,O,,O
 sl-57,11,18,njen,,njen,Ps3msasf,DET,O,,O
 sl-57,11,19,izračun,,izračun,Ncmsan,NOUN,O,,O
 sl-57,11,20,",",,",",Z,PUNCT,O,,O

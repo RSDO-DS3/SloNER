@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-20,0,1,Najdaljši,,dolg,Agsmsny,ADJ,O,,O
 sl-20,0,2,polet,,polet,Ncmsn,NOUN,O,,O
 sl-20,0,3,na,,na,Sl,ADP,O,,O
@@ -16,7 +16,7 @@ sl-20,1,1,Na,,na,Sl,ADP,O,,O
 sl-20,1,2,letu,,leto,Ncnsl,NOUN,O,,O
 sl-20,1,3,iz,,iz,Sg,ADP,O,,O
 sl-20,1,4,singapurskega,singapursko,singapurski,Agpnsg,ADJ,B-LOC,ORG-Singapore-Changi-Airport,O
-sl-20,1,5,letališča,letališče,letališče,Ncnsg,NOUN,I-LOC,ORG-Singapore-Changi-Airport,B-LOC
+sl-20,1,5,letališča,letališče,letališče,Ncnsg,NOUN,I-LOC,ORG-Singapore-Changi-Airport,I-LOC
 sl-20,1,6,Changi,Changi,Changi,Npmsn,PROPN,I-LOC,ORG-Singapore-Changi-Airport,I-LOC
 sl-20,1,7,na,,na,Sa,ADP,O,,O
 sl-20,1,8,newyorško,,newyorški,Agpnsa,ADJ,O,,O
@@ -282,7 +282,7 @@ sl-20,12,2,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-20,12,3,opravljala,,opravljati,Vmpp-pn,VERB,O,,O
 sl-20,12,4,Airbusova,Airbusov,Airbusov,Aspnpn,ADJ,B-ORG,ORG-Airbus-SE,B-ORG
 sl-20,12,5,letala,,letalo,Ncnpn,NOUN,O,,O
-sl-20,12,6,A350-900,A350-900,a350-900,Mdc,NUM,B-PRO,PRO-A350-900ULR,B-PRO
+sl-20,12,6,A350-900,A350-900,a350-900,Mdc,NUM,B-PRO,PRO-A350-900ULR,I-PRO
 sl-20,12,7,ULR,ULR,ULR,Npmsn,PROPN,I-PRO,PRO-A350-900ULR,I-PRO
 sl-20,12,8,",",,",",Z,PUNCT,O,,O
 sl-20,12,9,ki,,ki,Cs,SCONJ,O,,O

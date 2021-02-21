@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-18,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-18,0,2,v,,v,Sl,ADP,O,,O
 sl-18,0,3,škripcih,,škripec,Ncmpl,NOUN,O,,O
@@ -182,7 +182,7 @@ sl-18,9,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-18,9,3,na,,na,Sl,ADP,O,,O
 sl-18,9,4,sredini,,sredina,Ncfsl,NOUN,O,,O
 sl-18,9,5,novinarski,,novinarski,Agpfsl,ADJ,O,,O
-sl-18,9,6,konferenci,,konferenca,Ncfsl,NOUN,O,,O
+sl-18,9,6,konferenci,,konferenca,Ncfsl,NOUN,O,,I-EVT
 sl-18,9,7,v,,v,Sl,ADP,O,,O
 sl-18,9,8,Frankfurtu,Frankfurt,Frankfurt,Npmsl,PROPN,B-LOC,GPE-Frankfurt-am-Main,B-LOC
 sl-18,9,9,dejal,,dejati,Vmep-sm,VERB,O,,O
@@ -322,7 +322,7 @@ sl-18,13,5,razmere,,razmera,Ncfpa,NOUN,O,,O
 sl-18,13,6,pri,,pri,Sl,ADP,O,,O
 sl-18,13,7,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-18,13,8,na,,na,Sl,ADP,O,,O
-sl-18,13,9,twitterju,Twitter,twitter,Ncmsl,NOUN,B-PRO,PRO-Twitter,O
+sl-18,13,9,twitterju,Twitter,twitter,Ncmsl,NOUN,B-PRO,PRO-Twitter,B-PRO
 sl-18,13,10,komentirala,,komentirati,Vmbp-sf,VERB,O,,O
 sl-18,13,11,Onika,Onika,Onika,Npfsn,PROPN,B-PER,PER-Onika-Staas,B-PER
 sl-18,13,12,Staas,Staas,Staas,Npfsn,PROPN,I-PER,PER-Onika-Staas,I-PER

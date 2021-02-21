@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-2,0,1,Kowarsch,Kowarsch,Kowarsch,Npmsn,PROPN,B-PER,PER-Holger-Kowarsch,B-PER
 sl-2,0,2,:,,:,Z,PUNCT,O,,O
 sl-2,0,3,Poslovanje,,poslovanje,Ncnsn,NOUN,O,,O
@@ -88,7 +88,7 @@ sl-2,3,9,letenje,,letenje,Ncnsa,NOUN,O,,O
 sl-2,4,1,Po,,po,Sl,ADP,O,,O
 sl-2,4,2,poročanju,,poročanje,Ncnsl,NOUN,O,,O
 sl-2,4,3,portala,,portalo,Ncnsg,NOUN,O,,O
-sl-2,4,4,Siol,Siol,Siol,Npmsn,PROPN,B-PRO,PRO-Siol.net,B-PER
+sl-2,4,4,Siol,Siol,Siol,Npmsn,PROPN,B-PRO,PRO-Siol.net,B-PRO
 sl-2,4,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-2,4,6,Adria,Adria,Adria,Npfsn,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-2,4,7,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
@@ -202,7 +202,7 @@ sl-2,9,13,posadk,,posadka,Ncfpg,NOUN,O,,O
 sl-2,9,14,",",,",",Z,PUNCT,O,,O
 sl-2,9,15,zato,,zato,Cc,CCONJ,O,,O
 sl-2,9,16,moramo,,morati,Vmpr1p,VERB,O,,O
-sl-2,9,17,zdaj,,zdaj,Rgp,ADV,O,,O
+sl-2,9,17,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
 sl-2,9,18,pohiteti,,pohiteti,Vmen,VERB,O,,O
 sl-2,9,19,ter,,ter,Cc,CCONJ,O,,O
 sl-2,9,20,usposobiti,,usposobiti,Vmen,VERB,O,,O

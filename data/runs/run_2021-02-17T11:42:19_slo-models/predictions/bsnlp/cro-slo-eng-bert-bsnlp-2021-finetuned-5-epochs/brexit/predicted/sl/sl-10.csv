@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-10,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-10,0,2,:,,:,Z,PUNCT,O,,O
 sl-10,0,3,parlament,,parlament,Ncmsn,NOUN,O,,O
@@ -34,7 +34,7 @@ sl-10,2,6,sestala,,sestati,Vmep-sf,VERB,O,,O
 sl-10,2,7,s,,z,Si,ADP,O,,O
 sl-10,2,8,poslansko,,poslanski,Agpfsi,ADJ,O,,O
 sl-10,2,9,skupino,,skupina,Ncfsi,NOUN,O,,O
-sl-10,2,10,torijcev,torijec,torijec,Ncmpg,NOUN,B-PER,ORG-Conservative-and-Unionist-Party-UK,B-PER
+sl-10,2,10,torijcev,torijec,torijec,Ncmpg,NOUN,B-PER,ORG-Conservative-and-Unionist-Party-UK,B-ORG
 sl-10,2,11,.,,.,Z,PUNCT,O,,O
 sl-10,3,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-10,3,2,so,,biti,Va-r3p-n,AUX,O,,O
@@ -137,8 +137,8 @@ sl-10,8,5,izognili,,izogniti,Vmep-pm,VERB,O,,O
 sl-10,8,6,trdi,,trd,Agpfsd,ADJ,O,,O
 sl-10,8,7,meji,,meja,Ncfsd,NOUN,O,,O
 sl-10,8,8,na,,na,Sl,ADP,O,,O
-sl-10,8,9,irskem,,irski,Agpmsl,ADJ,O,,B-LOC
-sl-10,8,10,otoku,,otok,Ncmsl,NOUN,O,,I-LOC
+sl-10,8,9,irskem,,irski,Agpmsl,ADJ,O,,O
+sl-10,8,10,otoku,,otok,Ncmsl,NOUN,O,,O
 sl-10,8,11,.,,.,Z,PUNCT,O,,O
 sl-10,9,1,Britansko,,britanski,Agpfsa,ADJ,O,,O
 sl-10,9,2,premierko,,premierka,Ncfsa,NOUN,O,,O
@@ -190,7 +190,7 @@ sl-10,11,3,in,,in,Cc,CCONJ,O,,O
 sl-10,11,4,delimo,,deliti,Vmpr1p,VERB,O,,O
 sl-10,11,5,ambicijo,,ambicija,Ncfsa,NOUN,O,,O
 sl-10,11,6,britanskega,britanski,britanski,Agpmsg,ADJ,B-ORG,ORG-British-Parlament,B-ORG
-sl-10,11,7,parlamenta,parlament,parlament,Ncmsg,NOUN,I-ORG,ORG-British-Parlament,O
+sl-10,11,7,parlamenta,parlament,parlament,Ncmsg,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-10,11,8,za,,za,Sa,ADP,O,,O
 sl-10,11,9,izognitev,,izognitev,Ncfsa,NOUN,O,,O
 sl-10,11,10,scenariju,,scenarij,Ncmsd,NOUN,O,,O
@@ -295,7 +295,7 @@ sl-10,14,16,kraljestva,kraljestvo,kraljestvo,Ncnsg,NOUN,I-LOC,GPE-Great-Britain,
 sl-10,14,17,iz,,iz,Sg,ADP,O,,O
 sl-10,14,18,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-10,14,19,.,,.,Z,PUNCT,O,,O
-sl-10,15,1,Irsko,,irski,Agpnsn,ADJ,O,,B-LOC
+sl-10,15,1,Irsko,,irski,Agpnsn,ADJ,O,,O
 sl-10,15,2,varovalo,,varovati,Vmpp-sn,VERB,O,,O
 sl-10,15,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-10,15,4,del,,del,Ncmsn,NOUN,O,,O
@@ -323,8 +323,8 @@ sl-10,16,1,Glasoval,,glasovati,Vmbp-sm,VERB,O,,O
 sl-10,16,2,o,,o,Sl,ADP,O,,O
 sl-10,16,3,šestih,,šest,Mlc-pl,NUM,O,,O
 sl-10,16,4,dopolnilih,,dopolnilo,Ncnpl,NOUN,O,,O
-sl-10,17,1,Britanski,Britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,B-LOC
-sl-10,17,2,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,O
+sl-10,17,1,Britanski,Britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,B-ORG
+sl-10,17,2,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-10,17,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-10,17,4,novoj,,novoj,Ncmsn,NOUN,O,,O
 sl-10,17,5,glasoval,,glasovati,Vmbp-sm,VERB,O,,O
@@ -387,7 +387,7 @@ sl-10,19,3,pozvala,,pozvati,Vmep-sf,VERB,O,,O
 sl-10,19,4,k,,k,Sd,ADP,O,,O
 sl-10,19,5,podpori,,podpora,Ncfsd,NOUN,O,,O
 sl-10,19,6,dopolnila,,dopolniti,Vmep-sf,VERB,O,,O
-sl-10,19,7,konservativnega,,konservativen,Agpmsg,ADJ,O,,B-ORG
+sl-10,19,7,konservativnega,,konservativen,Agpmsg,ADJ,O,,O
 sl-10,19,8,poslanca,,poslanec,Ncmsg,NOUN,O,,O
 sl-10,19,9,Grahama,Graham,Graham,Npmsg,PROPN,B-PER,PER-Graham-Brady,B-PER
 sl-10,19,10,Bradyja,Brady,Brady,Npmsg,PROPN,I-PER,PER-Graham-Brady,I-PER
@@ -409,10 +409,10 @@ sl-10,19,25,izognili,,izogniti,Vmep-pm,VERB,O,,O
 sl-10,19,26,trdi,,trd,Agpfsd,ADJ,O,,O
 sl-10,19,27,meji,,meja,Ncfsd,NOUN,O,,O
 sl-10,19,28,na,,na,Sl,ADP,O,,O
-sl-10,19,29,irskem,,irski,Agpmsl,ADJ,O,,B-LOC
-sl-10,19,30,otoku,,otok,Ncmsl,NOUN,O,,I-LOC
+sl-10,19,29,irskem,,irski,Agpmsl,ADJ,O,,O
+sl-10,19,30,otoku,,otok,Ncmsl,NOUN,O,,O
 sl-10,19,31,.,,.,Z,PUNCT,O,,O
-sl-10,20,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+sl-10,20,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-LOC
 sl-10,20,2,se,,se,Px------y,PRON,O,,O
 sl-10,20,3,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-10,20,4,še,,še,Q,PART,O,,O

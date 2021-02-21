@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-111,0,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-111,0,2,napovedala,,napovedati,Vmep-sf,VERB,O,,O
 sl-111,0,3,vložitev,,vložitev,Ncfsa,NOUN,O,,O
@@ -100,7 +100,7 @@ sl-111,4,16,v,,v,Sl,ADP,O,,O
 sl-111,4,17,začetku,,začetek,Ncmsl,NOUN,O,,O
 sl-111,4,18,junija,,junij,Ncmsg,NOUN,O,,O
 sl-111,4,19,.,,.,Z,PUNCT,O,,O
-sl-111,5,1,Vlada,Vlada,vlada,Ncfsn,NOUN,B-ORG,ORG-British-Government,O
+sl-111,5,1,Vlada,Vlada,vlada,Ncfsn,NOUN,B-ORG,ORG-British-Government,B-ORG
 sl-111,5,2,v,,v,Sl,ADP,O,,O
 sl-111,5,3,Londonu,London,London,Npmsl,PROPN,B-LOC,GPE-London,B-LOC
 sl-111,5,4,je,,biti,Va-r3s-n,AUX,O,,O
@@ -132,8 +132,8 @@ sl-111,6,9,temu,,ta,Pd-nsd,DET,O,,O
 sl-111,6,10,",",,",",Z,PUNCT,O,,O
 sl-111,6,11,da,,da,Cs,SCONJ,O,,O
 sl-111,6,12,bi,,biti,Va-c,AUX,O,,O
-sl-111,6,13,britanski,,britanski,Agpmpn,ADJ,O,,O
-sl-111,6,14,evroposlanci,evroposlanci,evroposlanec,Ncmpn,NOUN,B-PER,ORG-European-Parliament,B-PER
+sl-111,6,13,britanski,,britanski,Agpmpn,ADJ,O,,B-PER
+sl-111,6,14,evroposlanci,evroposlanci,evroposlanec,Ncmpn,NOUN,B-PER,ORG-European-Parliament,I-PER
 sl-111,6,15,",",,",",Z,PUNCT,O,,O
 sl-111,6,16,ki,,ki,Cs,SCONJ,O,,O
 sl-111,6,17,bodo,,biti,Va-f3p-n,AUX,O,,O
@@ -191,8 +191,8 @@ sl-111,8,24,britanska,,britanski,Agpfsn,ADJ,O,,O
 sl-111,8,25,kraljica,,kraljica,Ncfsn,NOUN,O,,O
 sl-111,8,26,Elizabeta,,Elizabeta,Npfsn,PROPN,O,,O
 sl-111,8,27,II.,,II.,Mro,NUM,O,,O
-sl-111,9,1,Britanski,britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,O
-sl-111,9,2,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,O
+sl-111,9,1,Britanski,britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,B-ORG
+sl-111,9,2,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-111,9,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-111,9,4,doslej,,doslej,Rgp,ADV,O,,O
 sl-111,9,5,že,,že,Q,PART,O,,O
@@ -252,8 +252,8 @@ sl-111,11,7,prej,,prej,Rgc,ADV,O,,O
 sl-111,11,8,",",,",",Z,PUNCT,O,,O
 sl-111,11,9,če,,če,Cs,SCONJ,O,,O
 sl-111,11,10,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-111,11,11,britanski,britanski,britanski,Agpmsay,ADJ,B-ORG,ORG-British-Parlament,O
-sl-111,11,12,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,O
+sl-111,11,11,britanski,britanski,britanski,Agpmsay,ADJ,B-ORG,ORG-British-Parlament,B-ORG
+sl-111,11,12,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-111,11,13,potrdil,,potrditi,Vmep-sm,VERB,O,,O
 sl-111,11,14,ločitveni,,ločitven,Agpmsay,ADJ,O,,O
 sl-111,11,15,dogovor,,dogovor,Ncmsan,NOUN,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-63,0,1,Namesto,,namesto,Sg,ADP,O,,O
 sl-63,0,2,v,,v,Sa,ADP,O,,O
 sl-63,0,3,Grčijo,Grčija,Grčija,Npfsa,PROPN,B-LOC,GPE-Greece,B-LOC
@@ -22,7 +22,7 @@ sl-63,1,3,200,,200,Mdc,NUM,O,,O
 sl-63,1,4,potniki,,potnik,Ncmpi,NOUN,O,,O
 sl-63,1,5,na,,na,Sl,ADP,O,,O
 sl-63,1,6,letu,,leto,Ncnsl,NOUN,O,,O
-sl-63,1,7,FR8582,FR8582,fr8582,Mdc,NUM,B-PRO,PRO-FR8582,B-ORG
+sl-63,1,7,FR8582,FR8582,fr8582,Mdc,NUM,B-PRO,PRO-FR8582,B-PRO
 sl-63,1,8,iz,,iz,Sg,ADP,O,,O
 sl-63,1,9,Londona,London,London,Npmsg,PROPN,B-LOC,GPE-London,B-LOC
 sl-63,1,10,v,,v,Sa,ADP,O,,O
@@ -207,7 +207,7 @@ sl-63,9,6,Temišvaru,Temišvar,Temišvar,Npmsl,PROPN,B-LOC,GPE-Timisoara,B-LOC
 sl-63,9,7,",",,",",Z,PUNCT,O,,O
 sl-63,9,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-63,9,9,poskrbela,,poskrbeti,Vmep-sf,VERB,O,,O
-sl-63,9,10,grška,,grški,Agpfsn,ADJ,O,,B-LOC
+sl-63,9,10,grška,,grški,Agpfsn,ADJ,O,,O
 sl-63,9,11,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-63,9,12,",",,",",Z,PUNCT,O,,O
 sl-63,9,13,ki,,ki,Cs,SCONJ,O,,O

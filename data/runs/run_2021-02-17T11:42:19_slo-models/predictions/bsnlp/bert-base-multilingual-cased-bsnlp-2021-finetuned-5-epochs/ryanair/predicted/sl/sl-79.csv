@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-79,0,1,Adia,Adria,Adia,Npmsn,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-79,0,2,Airways,Airways,Airways,Npfsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
 sl-79,0,3,vnaprej,,vnaprej,Rgp,ADV,O,,O
@@ -356,7 +356,7 @@ sl-79,15,5,Twitterju,Twitter,Twitter,Npmsl,PROPN,B-PRO,PRO-Twitter,B-PRO
 sl-79,15,6,",",,",",Z,PUNCT,O,,O
 sl-79,15,7,imajo,,imeti,Vmpr3p-n,VERB,O,,O
 sl-79,15,8,zahvaljujoč,,zahvaljujoč,Rr,ADV,O,,O
-sl-79,15,9,evropski,,evropski,Agpfsd,ADJ,O,,B-LOC
+sl-79,15,9,evropski,,evropski,Agpfsd,ADJ,O,,O
 sl-79,15,10,zakonodaji,,zakonodaja,Ncfsd,NOUN,O,,O
 sl-79,15,11,potniki,,potnik,Ncmpn,NOUN,O,,O
 sl-79,15,12,",",,",",Z,PUNCT,O,,O
@@ -441,7 +441,7 @@ sl-79,17,32,prevozniku,,prevoznik,Ncmsd,NOUN,O,,O
 sl-79,17,33,Air,Air,Air,Npmsn,PROPN,B-ORG,ORG-Air-Serbia,B-ORG
 sl-79,17,34,Serbia,Serbia,Serbia,Npmsn,PROPN,I-ORG,ORG-Air-Serbia,I-ORG
 sl-79,17,35,.,,.,Z,PUNCT,O,,O
-sl-79,18,1,Ta,,ta,Pd-fsn,DET,O,,O
+sl-79,18,1,Ta,,ta,Pd-fsn,DET,O,,B-LOC
 sl-79,18,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-79,18,3,v,,v,Sl,ADP,O,,O
 sl-79,18,4,51-odstotni,,5yvodstoten,Agpfsl,ADJ,O,,O
@@ -577,7 +577,7 @@ sl-79,23,10,izključno,,izključno,Rgp,ADV,O,,O
 sl-79,23,11,v,,v,Sl,ADP,O,,O
 sl-79,23,12,rokah,,roka,Ncfpl,NOUN,O,,O
 sl-79,23,13,srbske,,srbski,Agpfsg,ADJ,O,,O
-sl-79,23,14,komisije,,komisija,Ncfsg,NOUN,O,,I-ORG
+sl-79,23,14,komisije,,komisija,Ncfsg,NOUN,O,,O
 sl-79,23,15,za,,za,Sa,ADP,O,,O
 sl-79,23,16,nadzor,,nadzor,Ncmsan,NOUN,O,,O
 sl-79,23,17,državne,,državen,Agpfsg,ADJ,O,,O
@@ -598,7 +598,7 @@ sl-79,24,12,",",,",",Z,PUNCT,O,,O
 sl-79,24,13,a,,a,Cc,CCONJ,O,,O
 sl-79,24,14,se,,se,Px------y,PRON,O,,O
 sl-79,24,15,do,,do,Sg,ADP,O,,O
-sl-79,24,16,zdaj,,zdaj,Rgp,ADV,O,,O
+sl-79,24,16,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
 sl-79,24,17,glede,,glede,Sg,ADP,O,,O
 sl-79,24,18,pomoči,,pomoč,Ncfsg,NOUN,O,,O
 sl-79,24,19,Air,Air,Air,Npmsn,PROPN,B-ORG,ORG-Air-Serbia,B-ORG
@@ -609,7 +609,7 @@ sl-79,24,23,.,,.,Z,PUNCT,O,,O
 sl-79,25,1,Lahko,,lahko,Rgp,ADV,O,,O
 sl-79,25,2,pa,,pa,Cc,CCONJ,O,,O
 sl-79,25,3,v,,v,Sl,ADP,O,,O
-sl-79,25,4,komisiji,,komisija,Ncfsl,NOUN,O,,I-ORG
+sl-79,25,4,komisiji,,komisija,Ncfsl,NOUN,O,,O
 sl-79,25,5,po,,po,Sl,ADP,O,,O
 sl-79,25,6,neuradnih,,neuraden,Agpfpl,ADJ,O,,O
 sl-79,25,7,informacijah,,informacija,Ncfpl,NOUN,O,,O

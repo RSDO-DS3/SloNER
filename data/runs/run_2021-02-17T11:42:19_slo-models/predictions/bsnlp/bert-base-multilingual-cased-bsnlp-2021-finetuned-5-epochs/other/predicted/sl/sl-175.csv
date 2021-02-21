@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-175,0,1,Turčija,Turčija,Turčija,Npfsn,PROPN,B-LOC,GPE-Turkey,B-LOC
 sl-175,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-175,0,3,",",,",",Z,PUNCT,O,,O
@@ -98,7 +98,7 @@ sl-175,4,19,v,,v,Sl,ADP,O,,O
 sl-175,4,20,skrajni,,skrajen,Agpfsl,ADJ,O,,O
 sl-175,4,21,skupini,,skupina,Ncfsl,NOUN,O,,O
 sl-175,4,22,.,,.,Z,PUNCT,O,,O
-sl-175,5,1,Turški,,turški,Agpmpn,ADJ,O,,B-PER
+sl-175,5,1,Turški,,turški,Agpmpn,ADJ,O,,O
 sl-175,5,2,predstavniki,,predstavnik,Ncmpn,NOUN,O,,O
 sl-175,5,3,",",,",",Z,PUNCT,O,,O
 sl-175,5,4,ki,,ki,Cs,SCONJ,O,,O
@@ -175,7 +175,7 @@ sl-175,8,20,",",,",",Z,PUNCT,O,,O
 sl-175,8,21,ki,,ki,Cs,SCONJ,O,,O
 sl-175,8,22,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-175,8,23,je,,biti,Va-r3s-n,AUX,O,,O
-sl-175,8,24,Bagdadi,Bagdadi,Bagdadi,Npmsn,PROPN,B-PER,PER-Abu-Bakr-al-Baghdadi,I-PER
+sl-175,8,24,Bagdadi,Bagdadi,Bagdadi,Npmsn,PROPN,B-PER,PER-Abu-Bakr-al-Baghdadi,B-PER
 sl-175,8,25,zaupal,,zaupati,Vmbp-sm,VERB,O,,O
 sl-175,8,26,in,,in,Cc,CCONJ,O,,O
 sl-175,8,27,mreže,,mreža,Ncfpa,NOUN,O,,O
@@ -223,7 +223,7 @@ sl-175,9,15,v,,v,Sa,ADP,O,,O
 sl-175,9,16,mreže,,mreža,Ncfpa,NOUN,O,,O
 sl-175,9,17,IS,IS,IS,Npmsn,PROPN,B-ORG,ORG-ISIS-Islamic-State-of-Iraq-and-the-Levant,B-ORG
 sl-175,9,18,.,,.,Z,PUNCT,O,,O
-sl-175,10,1,Bagdadi,Bagdadi,Bagdadi,Npmsn,PROPN,B-PER,PER-Abu-Bakr-al-Baghdadi,I-PER
+sl-175,10,1,Bagdadi,Bagdadi,Bagdadi,Npmsn,PROPN,B-PER,PER-Abu-Bakr-al-Baghdadi,B-PER
 sl-175,10,2,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-175,10,3,sicer,,sicer,Q,PART,O,,O
 sl-175,10,4,več,,več,Rgc,DET,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-2,0,1,Porošenko,Porošenko,Porošenko,Npmsn,PROPN,B-PER,PER-Petro-Poroshenko,B-PER
 sl-2,0,2,pozval,,pozvati,Vmep-sm,VERB,O,,O
 sl-2,0,3,Nato,Nato,Nato,Npmsan,PROPN,B-ORG,ORG-NATO,B-ORG
@@ -202,7 +202,7 @@ sl-2,9,5,stari,,star,Agpmsay,ADJ,O,,O
 sl-2,9,6,ruski,ruski,ruski,Agpmsay,ADJ,B-LOC,GPE-Russian-Empire,O
 sl-2,9,7,imperij,imperij,imperij,Ncmsan,NOUN,I-LOC,GPE-Russian-Empire,O
 sl-2,9,8,.,,.,Z,PUNCT,O,,O
-sl-2,10,1,Sebe,,se,Px---a,PRON,O,,B-PRO
+sl-2,10,1,Sebe,,se,Px---a,PRON,O,,B-PER
 sl-2,10,2,vidi,,videti,Vmbr3s,VERB,O,,O
 sl-2,10,3,kot,,kot,Cs,SCONJ,O,,O
 sl-2,10,4,ruskega,,ruski,Agpmsa,ADJ,O,,O
@@ -286,6 +286,6 @@ sl-2,14,6,tudi,,tudi,Q,PART,O,,O
 sl-2,14,7,zaustavitev,,zaustavitev,Ncfsn,NOUN,O,,O
 sl-2,14,8,projekta,,projekt,Ncmsg,NOUN,O,,O
 sl-2,14,9,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
-sl-2,14,10,Severni,,severen,Agpmsny,ADJ,O,,O
-sl-2,14,11,tok,,tok,Ncmsn,NOUN,O,,O
+sl-2,14,10,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
+sl-2,14,11,tok,,tok,Ncmsn,NOUN,O,,I-PRO
 sl-2,14,12,2.,,2.,Mdo,NUM,O,,O

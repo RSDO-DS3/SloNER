@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-70,0,1,Prtljaga,,prtljaga,Ncfsn,NOUN,O,,O
 sl-70,0,2,",",,",",Z,PUNCT,O,,O
 sl-70,0,3,ki,,ki,Cs,SCONJ,O,,O
@@ -454,7 +454,7 @@ sl-70,21,8,predstavilo,,predstaviti,Vmep-sn,VERB,O,,O
 sl-70,21,9,na,,na,Sl,ADP,O,,O
 sl-70,21,10,letošnjem,,letošnji,Agpmsl,ADJ,O,,O
 sl-70,21,11,sejmu,,sejem,Ncmsl,NOUN,O,,O
-sl-70,21,12,CES,CES,CES,Npmsn,PROPN,B-EVT,EVT-CES-Consumer-Electronic-Show,B-ORG
+sl-70,21,12,CES,CES,CES,Npmsn,PROPN,B-EVT,EVT-CES-Consumer-Electronic-Show,I-EVT
 sl-70,21,13,v,,v,Sl,ADP,O,,O
 sl-70,21,14,Las,Las,Las,Npmsn,PROPN,B-LOC,GPE-Las-Vegas,B-LOC
 sl-70,21,15,Vegasu,Vegas,Vegas,Npmsl,PROPN,I-LOC,GPE-Las-Vegas,I-LOC
@@ -488,7 +488,7 @@ sl-70,22,1,K,,k,Sd,ADP,O,,O
 sl-70,22,2,sreči,,sreča,Ncfsd,NOUN,O,,O
 sl-70,22,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-70,22,4,hitrost,,hitrost,Ncfsn,NOUN,O,,O
-sl-70,22,5,kužka,,kužek,Ncmsg,NOUN,O,,O
+sl-70,22,5,kužka,,kužek,Ncmsg,NOUN,O,,B-PRO
 sl-70,22,6,zaradi,,zaradi,Sg,ADP,O,,O
 sl-70,22,7,varnostnih,,varnosten,Agpmpg,ADJ,O,,O
 sl-70,22,8,razlogov,,razlog,Ncmpg,NOUN,O,,O

@@ -1,13 +1,13 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-45,0,1,Rimska,,rimski,Agpfsn,ADJ,O,,O
 sl-45,0,2,županja,,županja,Ncfsn,NOUN,O,,O
-sl-45,0,3,Raggi,Raggi,Raggi,Npfsn,PROPN,B-PER,PER-Virginia-Raggi,I-PER
+sl-45,0,3,Raggi,Raggi,Raggi,Npfsn,PROPN,B-PER,PER-Virginia-Raggi,B-PER
 sl-45,0,4,oproščena,,oproščen,Appfsn,ADJ,O,,O
 sl-45,0,5,obtožb,,obtožba,Ncfpg,NOUN,O,,O
 sl-45,0,6,krivega,,kriv,Agpnsg,ADJ,O,,O
 sl-45,0,7,pričanja,,pričanje,Ncnsg,NOUN,O,,O
 sl-45,1,1,Virginia,Virginia,Virginia,Npfsn,PROPN,B-PER,PER-Virginie-Raggi,B-PER
-sl-45,1,2,Raggi,Raggi,Raggi,Npfsn,PROPN,I-PER,PER-Virginie-Raggi,I-PER
+sl-45,1,2,Raggi,Raggi,Raggi,Npfsn,PROPN,I-PER,PER-Virginie-Raggi,B-PER
 sl-45,2,1,Županja,,županja,Ncfsn,NOUN,O,,O
 sl-45,2,2,Rima,Rim,Rima,Npfsn,PROPN,B-LOC,GPE-Rome,B-LOC
 sl-45,2,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -186,7 +186,7 @@ sl-45,11,23,je,,biti,Va-r3s-n,AUX,O,,O
 sl-45,11,24,sama,,sam,Agpfsn,ADJ,O,,O
 sl-45,11,25,imenovala,,imenovati,Vmbp-sf,VERB,O,,O
 sl-45,11,26,Renata,Renato,Renata,Npfsn,PROPN,B-PER,PER-Renato-Marro,B-PER
-sl-45,11,27,Marro,Marro,Marro,Npfsn,PROPN,I-PER,PER-Renato-Marro,B-PER
+sl-45,11,27,Marro,Marro,Marro,Npfsn,PROPN,I-PER,PER-Renato-Marro,I-PER
 sl-45,11,28,na,,na,Sa,ADP,O,,O
 sl-45,11,29,položaj,,položaj,Ncmsan,NOUN,O,,O
 sl-45,11,30,vodje,,vodja,Ncmsg,NOUN,O,,O

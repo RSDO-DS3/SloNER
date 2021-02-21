@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-45,0,1,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-45,0,2,in,,in,Cc,CCONJ,O,,O
 sl-45,0,3,Ukrajina,Ukrajina,Ukrajina,Npfsn,PROPN,B-LOC,GPE-Ukraine,B-LOC
@@ -20,11 +20,11 @@ sl-45,1,8,komisar,,komisar,Ncmsn,NOUN,O,,O
 sl-45,1,9,za,,za,Sa,ADP,O,,O
 sl-45,1,10,energetiko,,energetika,Ncfsa,NOUN,O,,O
 sl-45,1,11,Maroš,Maroš,Maroš,Npmsn,PROPN,B-PER,PER-Maros-Sefcovic,B-PER
-sl-45,1,12,Šefčovič,Šefčovič,Šefčovič,Npmsn,PROPN,I-PER,PER-Maros-Sefcovic,B-PER
+sl-45,1,12,Šefčovič,Šefčovič,Šefčovič,Npmsn,PROPN,I-PER,PER-Maros-Sefcovic,I-PER
 sl-45,1,13,spet,,spet,Rgp,ADV,O,,O
 sl-45,1,14,posredoval,,posredovati,Vmbp-sm,VERB,O,,O
 sl-45,1,15,v,,v,Sl,ADP,O,,O
-sl-45,1,16,ukrajinsko-ruskem,,ukrajinskonruski,Agpmsl,ADJ,O,,B-LOC
+sl-45,1,16,ukrajinsko-ruskem,,ukrajinskonruski,Agpmsl,ADJ,O,,O
 sl-45,1,17,plinskem,,plinski,Agpmsl,ADJ,O,,O
 sl-45,1,18,sporu,,spor,Ncmsl,NOUN,O,,O
 sl-45,1,19,.,,.,Z,PUNCT,O,,O
@@ -109,7 +109,7 @@ sl-45,4,7,naprej,,naprej,Rgp,ADV,O,,O
 sl-45,4,8,na,,na,Sl,ADP,O,,O
 sl-45,4,9,pogajanjih,,pogajanje,Ncnpl,NOUN,O,,O
 sl-45,4,10,med,,med,Si,ADP,O,,O
-sl-45,4,11,ukrajinskim,,ukrajinski,Agpmsi,ADJ,O,,B-LOC
+sl-45,4,11,ukrajinskim,,ukrajinski,Agpmsi,ADJ,O,,O
 sl-45,4,12,energetskim,,energetski,Agpmsi,ADJ,O,,O
 sl-45,4,13,ministrom,,minister,Ncmsi,NOUN,O,,O
 sl-45,4,14,Aleksejem,Aleksej,Aleksej,Npmsi,PROPN,B-PER,PER-Oleksiy-Orzhel,B-PER
@@ -130,7 +130,7 @@ sl-45,4,28,",",,",",Z,PUNCT,O,,O
 sl-45,4,29,Andrejem,Andrej,Andrej,Npmsi,PROPN,B-PER,PER-Andriy-Kobolyev,B-PER
 sl-45,4,30,Kobolevom,Kobolev,Kobolev,Npmsi,PROPN,I-PER,PER-Andriy-Kobolyev,I-PER
 sl-45,4,31,iz,,iz,Sg,ADP,O,,O
-sl-45,4,32,ukrajinskega,,ukrajinski,Agpmsg,ADJ,O,,B-LOC
+sl-45,4,32,ukrajinskega,,ukrajinski,Agpmsg,ADJ,O,,O
 sl-45,4,33,Naftogaza,Naftogaz,Naftogaz,Npmsg,PROPN,B-ORG,ORG-Naftogaz,B-ORG
 sl-45,4,34,in,,in,Cc,CCONJ,O,,O
 sl-45,4,35,Aleksejem,Aleksej,Aleksej,Npmsi,PROPN,B-PER,PER-Aleksey-Miller,B-PER
@@ -183,7 +183,7 @@ sl-45,6,17,o,,o,Sl,ADP,O,,O
 sl-45,6,18,tranzitu,,tranzit,Ncmsl,NOUN,O,,O
 sl-45,6,19,plina,,plin,Ncmsg,NOUN,O,,O
 sl-45,6,20,.,,.,Z,PUNCT,O,,O
-sl-45,7,1,Evropska,,evropski,Agpnpn,ADJ,O,,B-ORG
+sl-45,7,1,Evropska,,evropski,Agpnpn,ADJ,O,,O
 sl-45,7,2,energetska,,energetski,Agpnpn,ADJ,O,,O
 sl-45,7,3,pravila,,pravilo,Ncnpn,NOUN,O,,O
 sl-45,7,4,za,,za,Sa,ADP,O,,O
@@ -263,7 +263,7 @@ sl-45,10,14,energetskega,,energetski,Agpmsg,ADJ,O,,O
 sl-45,10,15,svežnja,,sveženj,Ncmsg,NOUN,O,,O
 sl-45,10,16,tudi,,tudi,Q,PART,O,,O
 sl-45,10,17,na,,na,Sl,ADP,O,,O
-sl-45,10,18,ukrajinskih,,ukrajinski,Agpnpl,ADJ,O,,B-LOC
+sl-45,10,18,ukrajinskih,,ukrajinski,Agpnpl,ADJ,O,,O
 sl-45,10,19,tleh,,tla,Ncnpl,NOUN,O,,O
 sl-45,10,20,omogočajo,,omogočati,Vmpr3p,VERB,O,,O
 sl-45,10,21,sklenitev,,sklenitev,Ncfsa,NOUN,O,,O
@@ -290,10 +290,10 @@ sl-45,11,16,1.,,1.,Mdo,NUM,O,,O
 sl-45,11,17,decembra,,december,Ncmsg,NOUN,O,,O
 sl-45,11,18,po,,po,Sl,ADP,O,,O
 sl-45,11,19,načrtih,,načrt,Ncmpl,NOUN,O,,O
-sl-45,11,20,ukrajinske,,ukrajinski,Agpfsg,ADJ,O,,B-LOC
+sl-45,11,20,ukrajinske,,ukrajinski,Agpfsg,ADJ,O,,O
 sl-45,11,21,vlade,,vlada,Ncfsg,NOUN,O,,O
 sl-45,11,22,pridobilo,,pridobiti,Vmep-sn,VERB,O,,O
-sl-45,11,23,evropske,Evropa,evropski,Agpmpa,ADJ,B-LOC,LOC-Europe,B-ORG
+sl-45,11,23,evropske,Evropa,evropski,Agpmpa,ADJ,B-LOC,LOC-Europe,O
 sl-45,11,24,certifikate,,certifikat,Ncmpa,NOUN,O,,O
 sl-45,11,25,za,,za,Sa,ADP,O,,O
 sl-45,11,26,opravljanje,,opravljanje,Ncnsa,NOUN,O,,O
@@ -509,7 +509,7 @@ sl-45,20,10,ob,,ob,Sl,ADP,O,,O
 sl-45,20,11,večjih,,velik,Agcmpl,ADJ,O,,O
 sl-45,20,12,nakupih,,nakup,Ncmpl,NOUN,O,,O
 sl-45,20,13,za,,za,Sa,ADP,O,,O
-sl-45,20,14,ukrajinski,,ukrajinski,Agpmsay,ADJ,O,,B-LOC
+sl-45,20,14,ukrajinski,,ukrajinski,Agpmsay,ADJ,O,,O
 sl-45,20,15,trg,,trg,Ncmsan,NOUN,O,,O
 sl-45,20,16,dobavitelj,,dobavitelj,Ncmsn,NOUN,O,,O
 sl-45,20,17,plača,,plačati,Vmer3s,VERB,O,,O

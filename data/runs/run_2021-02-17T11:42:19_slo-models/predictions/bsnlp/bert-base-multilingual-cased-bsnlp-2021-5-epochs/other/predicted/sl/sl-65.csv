@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-65,0,1,Švedska,Švedska,Švedska,Npfsn,PROPN,B-LOC,GPE-Sweden,B-LOC
 sl-65,0,2,izdala,,izdati,Vmep-sf,VERB,O,,O
 sl-65,0,3,priročnik,,priročnik,Ncmsan,NOUN,O,,O

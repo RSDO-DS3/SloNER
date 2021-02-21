@@ -1,6 +1,6 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-4,0,1,V,,v,Sl,ADP,O,,O
-sl-4,0,2,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,O
+sl-4,0,2,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
 sl-4,0,3,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-4,0,4,na,,na,Sl,ADP,O,,O
 sl-4,0,5,zvezni,,zvezen,Agpfsl,ADJ,O,,O
@@ -9,7 +9,7 @@ sl-4,0,7,znova,,znova,Rgp,ADV,O,,O
 sl-4,0,8,izvrševali,,izvrševati,Vmpp-pm,VERB,O,,O
 sl-4,0,9,smrtne,,smrten,Agpfpa,ADJ,O,,O
 sl-4,0,10,kazni,,kazen,Ncfpa,NOUN,O,,O
-sl-4,1,1,Obama,Obama,Obama,Npmsn,PROPN,B-PER,PER-Barack-Obama,O
+sl-4,1,1,Obama,Obama,Obama,Npmsn,PROPN,B-PER,PER-Barack-Obama,B-PER
 sl-4,1,2,se,,se,Px------y,PRON,O,,O
 sl-4,1,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,1,4,za,,za,Sa,ADP,O,,O
@@ -26,7 +26,7 @@ sl-4,1,14,z,,z,Si,ADP,O,,O
 sl-4,1,15,injekcijo,,injekcija,Ncfsi,NOUN,O,,O
 sl-4,1,16,.,,.,Z,PUNCT,O,,O
 sl-4,2,1,V,,v,Sl,ADP,O,,O
-sl-4,2,2,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,O
+sl-4,2,2,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
 sl-4,2,3,vlada,,vladati,Vmpr3s,VERB,O,,O
 sl-4,2,4,pomanjkanje,,pomanjkanje,Ncnsn,NOUN,O,,O
 sl-4,2,5,tovrstnih,,tovrsten,Agpnpg,ADJ,O,,O
@@ -58,7 +58,7 @@ sl-4,3,9,tudi,,tudi,Q,PART,O,,O
 sl-4,3,10,nehali,,nehati,Vmep-pm,VERB,O,,O
 sl-4,3,11,prodajati,,prodajati,Vmpn,VERB,O,,O
 sl-4,3,12,v,,v,Sl,ADP,O,,O
-sl-4,3,13,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,O
+sl-4,3,13,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
 sl-4,3,14,.,,.,Z,PUNCT,O,,O
 sl-4,4,1,Zvezne,,zvezen,Agpfpn,ADJ,O,,O
 sl-4,4,2,države,,država,Ncfpn,NOUN,O,,O
@@ -83,7 +83,7 @@ sl-4,4,20,mučnih,,mučen,Agpfpg,ADJ,O,,O
 sl-4,4,21,dolgotrajnih,,dolgotrajen,Agpfpg,ADJ,O,,O
 sl-4,4,22,usmrtitev,,usmrtitev,Ncfpg,NOUN,O,,O
 sl-4,4,23,.,,.,Z,PUNCT,O,,O
-sl-4,5,1,Obama,Obama,Obama,Npmsn,PROPN,B-PER,PER-Barack-Obama,O
+sl-4,5,1,Obama,Obama,Obama,Npmsn,PROPN,B-PER,PER-Barack-Obama,B-PER
 sl-4,5,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,5,3,takrat,,takrat,Rgp,ADV,O,,O
 sl-4,5,4,posredoval,,posredovati,Vmbp-sm,VERB,O,,O
@@ -111,7 +111,7 @@ sl-4,6,17,spet,,spet,Rgp,ADV,O,,O
 sl-4,6,18,izvršujejo,,izvrševati,Vmpr3p,VERB,O,,O
 sl-4,6,19,.,,.,Z,PUNCT,O,,O
 sl-4,7,1,"""",,"""",Z,PUNCT,O,,O
-sl-4,7,2,Kongres,Kongres,kongres,Ncmsn,NOUN,B-ORG,ORG-United-States-Congress,O
+sl-4,7,2,Kongres,Kongres,kongres,Ncmsn,NOUN,B-ORG,ORG-United-States-Congress,B-PER
 sl-4,7,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,7,4,izrecno,,izrecno,Rgp,ADV,O,,O
 sl-4,7,5,dovolil,,dovoliti,Vmep-sm,VERB,O,,O
@@ -139,7 +139,7 @@ sl-4,7,26,",",,",",Z,PUNCT,O,,O
 sl-4,7,27,"""",,"""",Z,PUNCT,O,,O
 sl-4,7,28,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,7,29,sporočil,,sporočiti,Vmep-sm,VERB,O,,O
-sl-4,7,30,Barr,Barr,Barr,Npmsn,PROPN,B-PER,PER-William-Barr,O
+sl-4,7,30,Barr,Barr,Barr,Npmsn,PROPN,B-PER,PER-William-Barr,B-PER
 sl-4,7,31,.,,.,Z,PUNCT,O,,O
 sl-4,8,1,Izvrševanje,,izvrševanje,Ncnsn,NOUN,O,,O
 sl-4,8,2,smrtnih,,smrten,Agpfpg,ADJ,O,,O
@@ -150,7 +150,7 @@ sl-4,8,6,ravni,,raven,Ncfsl,NOUN,O,,O
 sl-4,8,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,8,8,bilo,,biti,Va-p-sn,AUX,O,,O
 sl-4,8,9,v,,v,Sl,ADP,O,,O
-sl-4,8,10,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,O
+sl-4,8,10,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
 sl-4,8,11,izjemno,,izjemno,Rgp,ADV,O,,O
 sl-4,8,12,redko,,redek,Agpnsn,ADJ,O,,O
 sl-4,8,13,.,,.,Z,PUNCT,O,,O
@@ -162,7 +162,7 @@ sl-4,9,5,ko,,ko,Cs,SCONJ,O,,O
 sl-4,9,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,9,7,vrhovno,,vrhoven,Agpnsn,ADJ,O,,O
 sl-4,9,8,sodišče,,sodišče,Ncnsn,NOUN,O,,O
-sl-4,9,9,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,O
+sl-4,9,9,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-ORG
 sl-4,9,10,obnovilo,,obnoviti,Vmep-sn,VERB,O,,O
 sl-4,9,11,smrtno,,smrten,Agpfsa,ADJ,O,,O
 sl-4,9,12,kazen,,kazen,Ncfsa,NOUN,O,,O
@@ -178,7 +178,7 @@ sl-4,10,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-4,10,3,leta,,leto,Ncnsg,NOUN,O,,O
 sl-4,10,4,2003,,2003,Mdc,NUM,O,,O
 sl-4,10,5,usmrtili,,usmrtiti,Vmep-pm,VERB,O,,O
-sl-4,10,6,moškega,,moški,Ncmsay,NOUN,O,,O
+sl-4,10,6,moškega,,moški,Ncmsay,NOUN,O,,B-PER
 sl-4,10,7,",",,",",Z,PUNCT,O,,O
 sl-4,10,8,ki,,ki,Cs,SCONJ,O,,O
 sl-4,10,9,je,,biti,Va-r3s-n,AUX,O,,O
@@ -194,7 +194,7 @@ sl-4,11,2,s,,z,Si,ADP,O,,O
 sl-4,11,3,smrtno,,smrten,Agpfsi,ADJ,O,,O
 sl-4,11,4,kaznijo,,kazen,Ncfsi,NOUN,O,,O
 sl-4,11,5,na,,na,Sa,ADP,O,,O
-sl-4,11,6,splošno,,splošen,Agpnsa,ADJ,O,,O
+sl-4,11,6,splošno,,splošen,Agpnsa,ADJ,O,,B-LOC
 sl-4,11,7,nimajo,,imeti,Vmpr3p-y,VERB,O,,O
 sl-4,11,8,težav,,težava,Ncfpg,NOUN,O,,O
 sl-4,11,9,",",,",",Z,PUNCT,O,,O
@@ -206,8 +206,8 @@ sl-4,11,14,stališča,,stališče,Ncnpa,NOUN,O,,O
 sl-4,11,15,.,,.,Z,PUNCT,O,,O
 sl-4,12,1,Predsedniški,,predsedniški,Agpmsny,ADJ,O,,O
 sl-4,12,2,kandidat,,kandidat,Ncmsn,NOUN,O,,O
-sl-4,12,3,Joe,Joe,Joe,Npmsn,PROPN,B-PER,PER-Joe-Biden,O
-sl-4,12,4,Biden,Biden,Biden,Npmsn,PROPN,I-PER,PER-Joe-Biden,O
+sl-4,12,3,Joe,Joe,Joe,Npmsn,PROPN,B-PER,PER-Joe-Biden,B-PER
+sl-4,12,4,Biden,Biden,Biden,Npmsn,PROPN,I-PER,PER-Joe-Biden,I-PER
 sl-4,12,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,12,6,na,,na,Sa,ADP,O,,O
 sl-4,12,7,primer,,primer,Ncmsan,NOUN,O,,O
@@ -256,7 +256,7 @@ sl-4,12,49,.,,.,Z,PUNCT,O,,O
 sl-4,13,1,Umor,,umor,Ncmsan,NOUN,O,,O
 sl-4,13,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,13,3,v,,v,Sl,ADP,O,,O
-sl-4,13,4,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,O
+sl-4,13,4,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
 sl-4,13,5,kaznivo,,kazniv,Agpnsa,ADJ,O,,O
 sl-4,13,6,dejanje,,dejanje,Ncnsa,NOUN,O,,O
 sl-4,13,7,po,,po,Sl,ADP,O,,O

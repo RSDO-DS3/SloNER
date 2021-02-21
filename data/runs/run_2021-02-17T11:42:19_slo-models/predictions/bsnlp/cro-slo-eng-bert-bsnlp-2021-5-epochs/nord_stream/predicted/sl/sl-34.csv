@@ -1,15 +1,15 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-34,0,1,Groza,,groza,Ncfsn,NOUN,O,,O
 sl-34,0,2,:,,:,Z,PUNCT,O,,O
 sl-34,0,3,3.,3.,3.,Mdo,NUM,B-EVT,EVT-World-War-III,B-EVT
-sl-34,0,4,svetovna,svetovna,svetoven,Agpfsn,ADJ,I-EVT,EVT-World-War-III,B-EVT
-sl-34,0,5,vojna,vojna,vojna,Ncfsn,NOUN,I-EVT,EVT-World-War-III,O
+sl-34,0,4,svetovna,svetovna,svetoven,Agpfsn,ADJ,I-EVT,EVT-World-War-III,I-EVT
+sl-34,0,5,vojna,vojna,vojna,Ncfsn,NOUN,I-EVT,EVT-World-War-III,I-EVT
 sl-34,0,6,v,,v,Sl,ADP,O,,O
 sl-34,0,7,Evropi,Evropa,Evropa,Npfsl,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-34,0,8,do,,do,Sg,ADP,O,,O
 sl-34,0,9,konca,,konec,Ncmsg,NOUN,O,,O
 sl-34,0,10,leta,,leto,Ncnsg,NOUN,O,,O
-sl-34,0,11,2019,,2019,Mdc,NUM,O,,I-PRO
+sl-34,0,11,2019,,2019,Mdc,NUM,O,,O
 sl-34,0,12,?,,?,Z,PUNCT,O,,O
 sl-34,1,1,Presenetilo,,presenetiti,Vmep-sn,VERB,O,,O
 sl-34,1,2,vas,,ti,Pp2-pa,PRON,O,,O
@@ -21,10 +21,10 @@ sl-34,1,7,naj,,naj,Q,PART,O,,O
 sl-34,1,8,bi,,biti,Va-c,AUX,O,,O
 sl-34,1,9,postale,,postati,Vmep-pf,VERB,O,,O
 sl-34,1,10,zaveznice,,zaveznica,Ncfpn,NOUN,O,,O
-sl-34,1,11,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,1,11,.,,.,Z,PUNCT,O,,O
 sl-34,2,1,KIJEV,Kijev,Kijev,Npmsn,PROPN,B-LOC,GPE-Kiev,B-LOC
 sl-34,2,2,–,,–,Z,PUNCT,O,,O
-sl-34,2,3,Poljski,,poljski,Agpmsny,ADJ,O,,B-LOC
+sl-34,2,3,Poljski,,poljski,Agpmsny,ADJ,O,,O
 sl-34,2,4,premier,,premier,Ncmsn,NOUN,O,,O
 sl-34,2,5,Mateusz,Mateusz,Mateusz,Npmsn,PROPN,B-PER,PER-Mateusz-Morawiecki,B-PER
 sl-34,2,6,Morawiecki,Morawiecki,Morawiecki,Npmsn,PROPN,I-PER,PER-Mateusz-Morawiecki,I-PER
@@ -42,8 +42,8 @@ sl-34,2,17,po,,po,Sl,ADP,O,,O
 sl-34,2,18,začetku,,začetek,Ncmsl,NOUN,O,,O
 sl-34,2,19,obratovanja,,obratovanje,Ncnsg,NOUN,O,,O
 sl-34,2,20,plinovod,,plinovod,Ncmsn,NOUN,O,,O
-sl-34,2,21,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-34,2,22,tok,,tok,Ncmsn,NOUN,O,,I-PRO
+sl-34,2,21,Severni,,severen,Agpmsny,ADJ,O,,O
+sl-34,2,22,tok,,tok,Ncmsn,NOUN,O,,O
 sl-34,2,23,2.,,2.,Mdo,NUM,O,,O
 sl-34,2,24,Slednji,,slednji,Agpmsny,ADJ,O,,O
 sl-34,2,25,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -66,10 +66,10 @@ sl-34,2,41,",",,",",Z,PUNCT,O,,O
 sl-34,2,42,da,,da,Cs,SCONJ,O,,O
 sl-34,2,43,obide,,obiti,Vmer3s,VERB,O,,O
 sl-34,2,44,Ukrajino,Ukrajina,Ukrajina,Npfsa,PROPN,B-LOC,GPE-Ukraine,B-LOC
-sl-34,2,45,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,2,45,.,,.,Z,PUNCT,O,,O
 sl-34,3,1,Po,,po,Sl,ADP,O,,O
 sl-34,3,2,besedah,,beseda,Ncfpl,NOUN,O,,O
-sl-34,3,3,poljskega,,poljski,Agpmsg,ADJ,O,,B-LOC
+sl-34,3,3,poljskega,,poljski,Agpmsg,ADJ,O,,O
 sl-34,3,4,premiera,,premier,Ncmsg,NOUN,O,,O
 sl-34,3,5,bio,,bio,Ncmsn,NOUN,O,,O
 sl-34,3,6,sledila,,slediti,Vmpp-sf,VERB,O,,O
@@ -86,7 +86,7 @@ sl-34,3,16,pomembno,,pomemben,Agpfsa,ADJ,O,,O
 sl-34,3,17,vlogo,,vloga,Ncfsa,NOUN,O,,O
 sl-34,3,18,za,,za,Sa,ADP,O,,O
 sl-34,3,19,Rusijo,Rusija,Rusija,Npfsa,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-34,3,20,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,3,20,.,,.,Z,PUNCT,O,,O
 sl-34,4,1,Mogočna,,mogočen,Agpfsn,ADJ,O,,O
 sl-34,4,2,ruska,,ruski,Agpfsn,ADJ,O,,O
 sl-34,4,3,vojska,,vojska,Ncfsn,NOUN,O,,O
@@ -121,7 +121,7 @@ sl-34,5,28,v,,v,Sa,ADP,O,,O
 sl-34,5,29,posodobitev,,posodobitev,Ncfsa,NOUN,O,,O
 sl-34,5,30,lastne,,lasten,Agpfsg,ADJ,O,,O
 sl-34,5,31,vojske,,vojska,Ncfsg,NOUN,O,,O
-sl-34,5,32,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,5,32,.,,.,Z,PUNCT,O,,O
 sl-34,6,1,»,,»,Z,PUNCT,O,,O
 sl-34,6,2,Kapitali,,kapital,Ncmpn,NOUN,O,,O
 sl-34,6,3,so,,biti,Va-r3p-n,AUX,O,,O
@@ -148,7 +148,7 @@ sl-34,6,23,poljski,,poljski,Agpmsny,ADJ,O,,O
 sl-34,6,24,premier,,premier,Ncmsn,NOUN,O,,O
 sl-34,6,25,citirajoč,,citirajoč,Appmsnn,ADJ,O,,O
 sl-34,6,26,Lenina,Lenin,Lenin,Aspmsg,ADJ,B-PER,PER-Lenin,B-PER
-sl-34,6,27,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,6,27,.,,.,Z,PUNCT,O,,O
 sl-34,7,1,Na,,na,Sl,ADP,O,,O
 sl-34,7,2,drugi,,drug,Mlpfsl,ADJ,O,,O
 sl-34,7,3,strani,,stran,Ncfsl,NOUN,O,,O
@@ -158,7 +158,7 @@ sl-34,7,6,napoveduje,,napovedovati,Vmpr3s,VERB,O,,O
 sl-34,7,7,vojno,,vojna,Ncfsa,NOUN,O,,O
 sl-34,7,8,z,,z,Si,ADP,O,,O
 sl-34,7,9,Rusijo,Rusija,Rusija,Npfsi,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-34,7,10,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,7,10,.,,.,Z,PUNCT,O,,O
 sl-34,8,1,»,,»,Z,PUNCT,O,,O
 sl-34,8,2,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-34,8,3,lahko,,lahko,Rgp,ADV,O,,O
@@ -191,7 +191,7 @@ sl-34,8,29,general,,general,Ncmsn,NOUN,O,,O
 sl-34,8,30,podpolkovnik,,podpolkovnik,Ncmsn,NOUN,O,,O
 sl-34,8,31,Igor,Igor,Igor,Npmsn,PROPN,B-PER,PER-Igor-Romanenko,B-PER
 sl-34,8,32,Romanjenko,Romanjenko,Romanjenko,Npmsn,PROPN,I-PER,PER-Igor-Romanenko,I-PER
-sl-34,8,33,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,8,33,.,,.,Z,PUNCT,O,,O
 sl-34,9,1,Meni,,meniti,Vmpr3s,VERB,O,,O
 sl-34,9,2,",",,",",Z,PUNCT,O,,O
 sl-34,9,3,da,,da,Cs,SCONJ,O,,O
@@ -213,9 +213,9 @@ sl-34,9,18,mogli,,moči,Vmpp-pm,VERB,O,,O
 sl-34,9,19,sploh,,sploh,Q,PART,O,,O
 sl-34,9,20,odzvati,,odzvati,Vmen,VERB,O,,O
 sl-34,9,21,na,,na,Sa,ADP,O,,O
-sl-34,9,22,rusko,,ruski,Agpfsa,ADJ,O,,B-LOC
+sl-34,9,22,rusko,,ruski,Agpfsa,ADJ,O,,O
 sl-34,9,23,vojsko,,vojska,Ncfsa,NOUN,O,,O
-sl-34,9,24,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,9,24,.,,.,Z,PUNCT,O,,O
 sl-34,10,1,Dodal,,dodati,Vmep-sm,VERB,O,,O
 sl-34,10,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-34,10,3,",",,",",Z,PUNCT,O,,O
@@ -237,9 +237,9 @@ sl-34,10,18,se,,se,Px------y,PRON,O,,O
 sl-34,10,19,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-34,10,20,začela,,začeti,Vmep-sf,VERB,O,,O
 sl-34,10,21,tretja,tretja,tretji,Mlofsn,ADJ,B-EVT,EVT-World-War-III,B-EVT
-sl-34,10,22,svetovna,svetovna,svetoven,Agpfsn,ADJ,I-EVT,EVT-World-War-III,B-EVT
-sl-34,10,23,vojna,vojna,vojna,Ncfsn,NOUN,I-EVT,EVT-World-War-III,O
-sl-34,10,24,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,10,22,svetovna,svetovna,svetoven,Agpfsn,ADJ,I-EVT,EVT-World-War-III,I-EVT
+sl-34,10,23,vojna,vojna,vojna,Ncfsn,NOUN,I-EVT,EVT-World-War-III,I-EVT
+sl-34,10,24,.,,.,Z,PUNCT,O,,O
 sl-34,11,1,Edina,,edin,Agpfsn,ADJ,O,,O
 sl-34,11,2,pomoč,,pomoč,Ncfsn,NOUN,O,,O
 sl-34,11,3,",",,",",Z,PUNCT,O,,O
@@ -253,7 +253,7 @@ sl-34,11,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-34,11,11,diplomatska,,diplomatski,Agpfsn,ADJ,O,,O
 sl-34,11,12,in,,in,Cc,CCONJ,O,,O
 sl-34,11,13,gospodarska,,gospodarski,Agpfsn,ADJ,O,,O
-sl-34,11,14,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,11,14,.,,.,Z,PUNCT,O,,O
 sl-34,12,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-34,12,2,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-34,12,3,plinovod,,plinovod,Ncmsan,NOUN,O,,O
@@ -290,7 +290,7 @@ sl-34,13,29,",",,",",Z,PUNCT,O,,O
 sl-34,13,30,poročajo,,poročati,Vmpr3p,VERB,O,,O
 sl-34,13,31,ukrajinski,Ukrajina,ukrajinski,Agpmpn,ADJ,B-LOC,GPE-Ukraine,B-LOC
 sl-34,13,32,mediji,,medij,Ncmpn,NOUN,O,,O
-sl-34,13,33,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,13,33,.,,.,Z,PUNCT,O,,O
 sl-34,14,1,»,,»,Z,PUNCT,O,,O
 sl-34,14,2,Še,,še,Q,PART,O,,O
 sl-34,14,3,naprej,,naprej,Rgp,ADV,O,,O
@@ -322,7 +322,7 @@ sl-34,14,28,še,,še,Q,PART,O,,O
 sl-34,14,29,bolj,,bolj,Rgc,ADV,O,,O
 sl-34,14,30,ogrozil,,ogroziti,Vmep-sm,VERB,O,,O
 sl-34,14,31,suverenost,,suverenost,Ncfsa,NOUN,O,,O
-sl-34,14,32,evropskih,,evropski,Agpfpg,ADJ,O,,B-LOC
+sl-34,14,32,evropskih,,evropski,Agpfpg,ADJ,O,,O
 sl-34,14,33,držav,,država,Ncfpg,NOUN,O,,O
 sl-34,14,34,",",,",",Z,PUNCT,O,,O
 sl-34,14,35,ki,,ki,Cs,SCONJ,O,,O
@@ -331,7 +331,7 @@ sl-34,14,37,odvisne,,odvisen,Agpfpn,ADJ,O,,O
 sl-34,14,38,od,,od,Sg,ADP,O,,O
 sl-34,14,39,ruskega,,ruski,Agpmsg,ADJ,O,,O
 sl-34,14,40,plin,,plin,Ncmsn,NOUN,O,,O
-sl-34,14,41,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,14,41,.,,.,Z,PUNCT,O,,O
 sl-34,14,42,«,,«,Z,PUNCT,O,,O
 sl-34,14,43,»,,»,Z,PUNCT,O,,O
 sl-34,14,44,Ne,,ne,Q,PART,O,,O
@@ -362,7 +362,7 @@ sl-34,14,68,se,,se,Px------y,PRON,O,,O
 sl-34,14,69,je,,biti,Va-r3s-n,AUX,O,,O
 sl-34,14,70,odločila,,odločiti,Vmep-sf,VERB,O,,O
 sl-34,14,71,zavrniti,,zavrniti,Vmen,VERB,O,,O
-sl-34,14,72,sovjetske,,sovjetski,Agpmpa,ADJ,O,,B-LOC
+sl-34,14,72,sovjetske,,sovjetski,Agpmpa,ADJ,O,,O
 sl-34,14,73,okove,,okov,Ncmpa,NOUN,O,,O
 sl-34,14,74,",",,",",Z,PUNCT,O,,O
 sl-34,14,75,«,,«,Z,PUNCT,O,,O
@@ -376,7 +376,7 @@ sl-34,14,82,šefom,,šef,Ncmsi,NOUN,O,,O
 sl-34,14,83,diplomacuje,,diplomacu,Ncmsg,NOUN,O,,O
 sl-34,14,84,Pavlom,Pavlo,Pavel,Npmsi,PROPN,B-PER,PER-Pavlo-Klimkin,B-PER
 sl-34,14,85,Klimkinom,Klimkin,Klimkin,Npmsi,PROPN,I-PER,PER-Pavlo-Klimkin,I-PER
-sl-34,14,86,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,14,86,.,,.,Z,PUNCT,O,,O
 sl-34,15,1,Po,,po,Sl,ADP,O,,O
 sl-34,15,2,drugi,,drug,Mlpfsl,ADJ,O,,O
 sl-34,15,3,strani,,stran,Ncfsl,NOUN,O,,O
@@ -399,4 +399,4 @@ sl-34,15,19,cenejšo,,poceni,Agcfsa,ADJ,O,,O
 sl-34,15,20,oskrbo,,oskrba,Ncfsa,NOUN,O,,O
 sl-34,15,21,s,,z,Si,ADP,O,,O
 sl-34,15,22,plinom,,plin,Ncmsi,NOUN,O,,O
-sl-34,15,23,.,,.,Z,PUNCT,O,,B-EVT
+sl-34,15,23,.,,.,Z,PUNCT,O,,O

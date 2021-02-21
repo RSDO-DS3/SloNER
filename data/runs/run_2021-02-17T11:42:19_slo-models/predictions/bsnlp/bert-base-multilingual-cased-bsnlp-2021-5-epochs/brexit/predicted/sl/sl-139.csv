@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-139,0,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-139,0,2,sredi,,sredi,Sg,ADP,O,,O
 sl-139,0,3,počitnic,,počitnice,Ncfpg,NOUN,O,,O
@@ -15,7 +15,7 @@ sl-139,1,5,prekinila,,prekiniti,Vmep-sf,VERB,O,,O
 sl-139,1,6,počitnice,,počitnice,Ncfpa,NOUN,O,,O
 sl-139,1,7,v,,v,Sl,ADP,O,,O
 sl-139,1,8,Italiji,Italija,Italija,Npfsl,PROPN,B-LOC,GPE-Italy,B-LOC
-sl-139,1,9,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,1,9,in,,in,Cc,CCONJ,O,,O
 sl-139,1,10,včeraj,,včeraj,Rgp,ADV,O,,O
 sl-139,1,11,prišla,,priti,Vmep-sf,VERB,O,,O
 sl-139,1,12,na,,na,Sa,ADP,O,,O
@@ -49,7 +49,7 @@ sl-139,3,2,britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-139,3,3,zunanji,,zunanji,Agpmsny,ADJ,O,,O
 sl-139,3,4,minister,,minister,Ncmsn,NOUN,O,,O
 sl-139,3,5,Jeremy,Jeremy,Jeremy,Npmsn,PROPN,B-PER,PER-Jeremy-Hunt,B-PER
-sl-139,3,6,Hunt,Hunt,Hunt,Npmsn,PROPN,I-PER,PER-Jeremy-Hunt,B-PER
+sl-139,3,6,Hunt,Hunt,Hunt,Npmsn,PROPN,I-PER,PER-Jeremy-Hunt,I-PER
 sl-139,3,7,",",,",",Z,PUNCT,O,,O
 sl-139,3,8,ki,,ki,Cs,SCONJ,O,,O
 sl-139,3,9,je,,biti,Va-r3s-n,AUX,O,,O
@@ -59,7 +59,7 @@ sl-139,3,12,referendumom,,referendum,Ncmsi,NOUN,O,,O
 sl-139,3,13,nasprotnik,,nasprotnik,Ncmsn,NOUN,O,,O
 sl-139,3,14,odhoda,,odhod,Ncmsg,NOUN,O,,O
 sl-139,3,15,Velike,Velika,velik,Agpfsg,ADJ,B-LOC,GPE-Great-Britain,B-LOC
-sl-139,3,16,Britanije,Britanija,Britanija,Npfsg,PROPN,I-LOC,GPE-Great-Britain,B-LOC
+sl-139,3,16,Britanije,Britanija,Britanija,Npfsg,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-139,3,17,iz,,iz,Sg,ADP,O,,O
 sl-139,3,18,Evropske,Evropska,evropski,Agpfsg,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-139,3,19,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-European-Union,I-ORG
@@ -73,7 +73,7 @@ sl-139,3,26,brexitska,brexit,brexitski,Agpnpn,ADJ,B-EVT,EVT-Brexit,B-EVT
 sl-139,3,27,pogajanja,,pogajanje,Ncnpn,NOUN,O,,O
 sl-139,3,28,med,,med,Si,ADP,O,,O
 sl-139,3,29,Londonom,London,London,Npmsi,PROPN,B-LOC,GPE-London,B-LOC
-sl-139,3,30,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,3,30,in,,in,Cc,CCONJ,O,,O
 sl-139,3,31,Brusljem,Bruselj,Bruselj,Npmsi,PROPN,B-LOC,GPE-Brussles,B-LOC
 sl-139,3,32,trenutno,,trenutno,Rgp,ADV,O,,O
 sl-139,3,33,ne,,ne,Q,PART,O,,O
@@ -109,7 +109,7 @@ sl-139,5,12,po,,po,Sl,ADP,O,,O
 sl-139,5,13,nesreči,,nesreča,Ncfsl,NOUN,O,,O
 sl-139,5,14,«,,«,Z,PUNCT,O,,O
 sl-139,5,15,",",,",",Z,PUNCT,O,,O
-sl-139,5,16,zaradi,,zaradi,Sg,ADP,O,,I-ORG
+sl-139,5,16,zaradi,,zaradi,Sg,ADP,O,,O
 sl-139,5,17,propada,,propad,Ncmsg,NOUN,O,,O
 sl-139,5,18,pogajanj,,pogajanje,Ncnpg,NOUN,O,,O
 sl-139,5,19,.,,.,Z,PUNCT,O,,O
@@ -138,7 +138,7 @@ sl-139,6,22,",",,",",Z,PUNCT,O,,O
 sl-139,6,23,ki,,ki,Cs,SCONJ,O,,O
 sl-139,6,24,imajo,,imeti,Vmpr3p-n,VERB,O,,O
 sl-139,6,25,najmanj,,najmanj,Rgs,ADV,O,,O
-sl-139,6,26,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,6,26,in,,in,Cc,CCONJ,O,,O
 sl-139,6,27,so,,biti,Va-r3p-n,AUX,O,,O
 sl-139,6,28,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-139,6,29,zagovorniki,,zagovornik,Ncmpn,NOUN,O,,O
@@ -164,11 +164,11 @@ sl-139,6,48,je,,biti,Va-r3s-n,AUX,O,,O
 sl-139,6,49,brexit,brexit,brexit,Ncmsn,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-139,6,50,ideja,,ideja,Ncfsn,NOUN,O,,O
 sl-139,6,51,bogatih,,bogat,Agpmpg,ADJ,O,,O
-sl-139,6,52,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,6,52,in,,in,Cc,CCONJ,O,,O
 sl-139,6,53,vplivnih,,vpliven,Agpmpg,ADJ,O,,O
 sl-139,6,54,",",,",",Z,PUNCT,O,,O
 sl-139,6,55,zasnovana,,zasnovan,Appfsn,ADJ,O,,O
-sl-139,6,56,za,,za,Sa,ADP,O,,I-ORG
+sl-139,6,56,za,,za,Sa,ADP,O,,O
 sl-139,6,57,samo,,samo,Q,PART,O,,O
 sl-139,6,58,njihovo,,njihov,Ps3fsap,DET,O,,O
 sl-139,6,59,korist,,korist,Ncfsa,NOUN,O,,O
@@ -217,9 +217,9 @@ sl-139,8,28,zunanji,,zunanji,Agpmsny,ADJ,O,,O
 sl-139,8,29,minister,,minister,Ncmsn,NOUN,O,,O
 sl-139,8,30,Boris,Boris,Boris,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-139,8,31,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,I-PER
-sl-139,8,32,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,8,32,in,,in,Cc,CCONJ,O,,O
 sl-139,8,33,minister,,minister,Ncmsn,NOUN,O,,O
-sl-139,8,34,za,,za,Sa,ADP,O,,I-ORG
+sl-139,8,34,za,,za,Sa,ADP,O,,O
 sl-139,8,35,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-139,8,36,David,David,David,Npmsn,PROPN,B-PER,PER-David-Davis,B-PER
 sl-139,8,37,Davis,Davis,Davis,Npmsn,PROPN,I-PER,PER-David-Davis,I-PER
@@ -274,7 +274,7 @@ sl-139,10,11,angleške,angleška,angleški,Agpfsg,ADJ,B-ORG,ORG-Bank-of-England,
 sl-139,10,12,centralne,centralna,centralen,Agpfsg,ADJ,I-ORG,ORG-Bank-of-England,I-ORG
 sl-139,10,13,banke,banka,banka,Ncfsg,NOUN,I-ORG,ORG-Bank-of-England,I-ORG
 sl-139,10,14,Mark,Mark,Mark,Npmsn,PROPN,B-PER,PER-Mark-Carney,B-PER
-sl-139,10,15,Carney,Carney,Carney,Npmsn,PROPN,I-PER,PER-Mark-Carney,B-PER
+sl-139,10,15,Carney,Carney,Carney,Npmsn,PROPN,I-PER,PER-Mark-Carney,I-PER
 sl-139,10,16,.,,.,Z,PUNCT,O,,O
 sl-139,11,1,Dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-139,11,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -291,7 +291,7 @@ sl-139,11,12,brez,,brez,Sg,ADP,O,,O
 sl-139,11,13,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-139,11,14,neprijetno,,neprijetno,Rgp,ADV,O,,O
 sl-139,11,15,visoka,,visok,Agpfsn,ADJ,O,,O
-sl-139,11,16,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,11,16,in,,in,Cc,CCONJ,O,,O
 sl-139,11,17,skrajno,,skrajno,Rgp,ADV,O,,O
 sl-139,11,18,nezaželena,,nezaželen,Agpfsn,ADJ,O,,O
 sl-139,11,19,«,,«,Z,PUNCT,O,,O
@@ -301,13 +301,13 @@ sl-139,12,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-139,12,3,agresivno,,agresivno,Rgp,ADV,O,,O
 sl-139,12,4,skočili,,skočiti,Vmep-pm,VERB,O,,O
 sl-139,12,5,pokonci,,pokonci,Rgp,ADV,O,,O
-sl-139,12,6,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,12,6,in,,in,Cc,CCONJ,O,,O
 sl-139,12,7,ga,,on,Pp3msa--y,PRON,O,,O
 sl-139,12,8,obtožili,,obtožiti,Vmep-pm,VERB,O,,O
 sl-139,12,9,",",,",",Z,PUNCT,O,,O
 sl-139,12,10,da,,da,Cs,SCONJ,O,,O
 sl-139,12,11,je,,biti,Va-r3s-n,AUX,O,,O
-sl-139,12,12,del,,del,Ncmsn,NOUN,O,,I-LOC
+sl-139,12,12,del,,del,Ncmsn,NOUN,O,,O
 sl-139,12,13,»,,»,Z,PUNCT,O,,O
 sl-139,12,14,zastraševalnega,,zastraševalen,Agpmsg,ADJ,O,,O
 sl-139,12,15,projekta,,projekt,Ncmsg,NOUN,O,,O
@@ -328,7 +328,7 @@ sl-139,13,12,napaka,,napaka,Ncfsn,NOUN,O,,O
 sl-139,13,13,.,,.,Z,PUNCT,O,,O
 sl-139,14,1,Mehčanje,,mehčanje,Ncnsn,NOUN,O,,O
 sl-139,14,2,trdega,,trd,Agpmsg,ADJ,O,,O
-sl-139,14,3,Macrona,Macron,Macron,Npmsg,PROPN,B-PER,PER-Emmanuel-Macron,B-PER
+sl-139,14,3,Macrona,Macron,Macron,Npmsg,PROPN,B-PER,PER-Emmanuel-Macron,B-ORG
 sl-139,15,1,Carney,Carney,Carney,Npmsn,PROPN,B-PER,PER-Mark-Carney,B-PER
 sl-139,15,2,se,,se,Px------y,PRON,O,,O
 sl-139,15,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -356,7 +356,7 @@ sl-139,15,24,s,,z,Si,ADP,O,,O
 sl-139,15,25,francoskim,,francoski,Agpmsi,ADJ,O,,O
 sl-139,15,26,predsednikom,,predsednik,Ncmsi,NOUN,O,,O
 sl-139,15,27,Emmanuelom,Emmanuel,Emmanuel,Npmsi,PROPN,B-PER,PER-Emmanuel-Macron,B-PER
-sl-139,15,28,Macronom,Macron,Macron,Npmsi,PROPN,I-PER,PER-Emmanuel-Macron,B-PER
+sl-139,15,28,Macronom,Macron,Macron,Npmsi,PROPN,I-PER,PER-Emmanuel-Macron,I-PER
 sl-139,15,29,v,,v,Sl,ADP,O,,O
 sl-139,15,30,poletni,,poleten,Agpfsl,ADJ,O,,O
 sl-139,15,31,rezidenci,,rezidenca,Ncfsl,NOUN,O,,O
@@ -403,7 +403,7 @@ sl-139,17,10,do,,do,Sg,ADP,O,,O
 sl-139,17,11,njene,,njen,Ps3fsgsf,DET,O,,O
 sl-139,17,12,brexitske,,brexitski,Agpfsg,ADJ,O,,O
 sl-139,17,13,vizije,,vizija,Ncfsg,NOUN,O,,O
-sl-139,17,14,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,17,14,in,,in,Cc,CCONJ,O,,O
 sl-139,17,15,najbolj,,najbolj,Rgs,ADV,O,,O
 sl-139,17,16,vztrajen,,vztrajen,Appmsnn,ADJ,O,,O
 sl-139,17,17,pri,,pri,Sl,ADP,O,,O
@@ -439,7 +439,7 @@ sl-139,18,22,",",,",",Z,PUNCT,O,,O
 sl-139,18,23,njena,,njen,Ps3fsnsf,DET,O,,O
 sl-139,18,24,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-139,18,25,padla,,pasti,Vmep-sf,VERB,O,,O
-sl-139,18,26,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,18,26,in,,in,Cc,CCONJ,O,,O
 sl-139,18,27,da,,da,Cs,SCONJ,O,,O
 sl-139,18,28,bi,,biti,Va-c,AUX,O,,O
 sl-139,18,29,jo,,on,Pp3fsa--y,PRON,O,,O
@@ -470,7 +470,7 @@ sl-139,19,5,vlade,,vlada,Ncfsg,NOUN,O,,O
 sl-139,19,6,prinesel,,prinesti,Vmep-sm,VERB,O,,O
 sl-139,19,7,predčasne,,predčasen,Agpfpa,ADJ,O,,O
 sl-139,19,8,volitve,,volitev,Ncfpa,NOUN,O,,O
-sl-139,19,9,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,19,9,in,,in,Cc,CCONJ,O,,O
 sl-139,19,10,zmago,,zmaga,Ncfsa,NOUN,O,,O
 sl-139,19,11,laburistov,laburist,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-ORG
 sl-139,19,12,pod,,pod,Si,ADP,O,,O
@@ -538,7 +538,7 @@ sl-139,22,20,da,,da,Cs,SCONJ,O,,O
 sl-139,22,21,bi,,biti,Va-c,AUX,O,,O
 sl-139,22,22,rešila,,rešiti,Vmep-sf,VERB,O,,O
 sl-139,22,23,njo,,on,Pp3fsa,PRON,O,,O
-sl-139,22,24,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,22,24,in,,in,Cc,CCONJ,O,,O
 sl-139,22,25,preprečila,,preprečiti,Vmep-sf,VERB,O,,O
 sl-139,22,26,britanski,,britanski,Agpmsay,ADJ,O,,O
 sl-139,22,27,odhod,,odhod,Ncmsan,NOUN,O,,O
@@ -565,11 +565,11 @@ sl-139,23,17,bi,,biti,Va-c,AUX,O,,O
 sl-139,23,18,se,,se,Px------y,PRON,O,,O
 sl-139,23,19,Britanci,Britanec,Britanec,Npmpn,PROPN,B-PER,GPE-Great-Britain,B-PER
 sl-139,23,20,odločali,,odločati,Vmpp-pm,VERB,O,,O
-sl-139,23,21,za,,za,Sa,ADP,O,,I-ORG
+sl-139,23,21,za,,za,Sa,ADP,O,,O
 sl-139,23,22,takšen,,takšen,Pd-msa,DET,O,,O
 sl-139,23,23,sporazum,,sporazum,Ncmsan,NOUN,O,,O
 sl-139,23,24,ali,,ali,Cc,CCONJ,O,,O
-sl-139,23,25,za,,za,Sa,ADP,O,,I-ORG
+sl-139,23,25,za,,za,Sa,ADP,O,,O
 sl-139,23,26,nadaljevanje,,nadaljevanje,Ncnsa,NOUN,O,,O
 sl-139,23,27,članstva,,članstvo,Ncnsg,NOUN,O,,O
 sl-139,23,28,.,,.,Z,PUNCT,O,,O
@@ -582,7 +582,7 @@ sl-139,24,6,bil,,biti,Va-p-sm,AUX,O,,O
 sl-139,24,7,takšen,,takšen,Pd-msn,DET,O,,O
 sl-139,24,8,slepi,,slep,Agpmsny,ADJ,O,,O
 sl-139,24,9,brexit,brexit,brexit,Ncmsn,NOUN,B-EVT,EVT-Brexit,B-EVT
-sl-139,24,10,za,,za,Sa,ADP,O,,I-ORG
+sl-139,24,10,za,,za,Sa,ADP,O,,O
 sl-139,24,11,rešitev,,rešitev,Ncfsa,NOUN,O,,O
 sl-139,24,12,Mayeve,May,Mayev,Aspfsg,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-139,24,13,",",,",",Z,PUNCT,O,,O
@@ -598,7 +598,7 @@ sl-139,24,22,odhodu,,odhod,Ncmsl,NOUN,O,,O
 sl-139,24,23,Britanije,Britanija,Britanija,Npfsg,PROPN,B-LOC,GPE-Great-Britain,B-LOC
 sl-139,24,24,iz,,iz,Sg,ADP,O,,O
 sl-139,24,25,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
-sl-139,24,26,in,,in,Cc,CCONJ,O,,I-ORG
+sl-139,24,26,in,,in,Cc,CCONJ,O,,O
 sl-139,24,27,potencialno,,potencialno,Rgp,ADV,O,,O
 sl-139,24,28,zadovoljil,,zadovoljiti,Vmep-sm,VERB,O,,O
 sl-139,24,29,večino,,večina,Ncfsa,NOUN,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-90,0,1,Od,,od,Sg,ADP,O,,O
 sl-90,0,2,danes,,danes,Rgp,ADV,O,,O
 sl-90,0,3,na,,na,Sa,ADP,O,,O
@@ -10,7 +10,7 @@ sl-90,0,8,z,,z,Si,ADP,O,,O
 sl-90,0,9,eno,,en,Mlpfsi,NUM,O,,O
 sl-90,0,10,torbo,,torba,Ncfsi,NOUN,O,,O
 sl-90,1,1,Potniki,,potnik,Ncmpn,NOUN,O,,O
-sl-90,1,2,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,O
+sl-90,1,2,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-90,1,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-90,1,4,bili,,biti,Va-p-pm,AUX,O,,O
 sl-90,1,5,do,,do,Sg,ADP,O,,O
@@ -46,9 +46,9 @@ sl-90,2,14,cm,,cm,Ncmsn,NOUN,O,,O
 sl-90,2,15,x,,x,Ncmsn,NOUN,O,,O
 sl-90,2,16,20,,20,Mdc,NUM,O,,O
 sl-90,2,17,cm,,cm,Ncmsn,NOUN,O,,O
-sl-90,2,18,in,,in,Cc,CCONJ,O,,B-ORG
+sl-90,2,18,in,,in,Cc,CCONJ,O,,O
 sl-90,2,19,eno,,en,Mlpfsa,NUM,O,,O
-sl-90,2,20,večjo,,velik,Agcfsa,ADJ,O,,B-ORG
+sl-90,2,20,večjo,,velik,Agcfsa,ADJ,O,,O
 sl-90,2,21,torbo,,torba,Ncfsa,NOUN,O,,O
 sl-90,2,22,v,,v,Sl,ADP,O,,O
 sl-90,2,23,merah,,mera,Ncfpl,NOUN,O,,O
@@ -238,9 +238,9 @@ sl-90,11,1,Vsa,,ves,Pg-npn,DET,O,,O
 sl-90,11,2,dodatna,,dodaten,Agpnpn,ADJ,O,,O
 sl-90,11,3,doplačila,,doplačilo,Ncnpn,NOUN,O,,O
 sl-90,11,4,razburjajo,,razburjati,Vmpr3p,VERB,O,,O
-sl-90,11,5,Ryanairove,Ryanair,Ryanairov,Aspmpa,ADJ,B-ORG,ORG-Ryanair,O
+sl-90,11,5,Ryanairove,Ryanair,Ryanairov,Aspmpa,ADJ,B-ORG,ORG-Ryanair,B-ORG
 sl-90,11,6,potnike,,potnik,Ncmpa,NOUN,O,,O
-sl-90,12,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-90,12,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-90,12,2,z,,z,Si,ADP,O,,O
 sl-90,12,3,vsemi,,ves,Pg-npi,DET,O,,O
 sl-90,12,4,dodatnimi,,dodaten,Agpnpi,ADJ,O,,O
@@ -248,7 +248,7 @@ sl-90,12,5,doplačili,,doplačilo,Ncnpi,NOUN,O,,O
 sl-90,12,6,na,,na,Sa,ADP,O,,O
 sl-90,12,7,sicer,,sicer,Q,PART,O,,O
 sl-90,12,8,poceni,,poceni,Agpfpa,ADJ,O,,O
-sl-90,12,9,vozovnice,,vozovnica,Ncfpa,NOUN,O,,B-ORG
+sl-90,12,9,vozovnice,,vozovnica,Ncfpa,NOUN,O,,O
 sl-90,12,10,razburja,,razburjati,Vmpr3s,VERB,O,,O
 sl-90,12,11,svoje,,svoj,Px-mpa,DET,O,,O
 sl-90,12,12,potnike,,potnik,Ncmpa,NOUN,O,,O
@@ -301,7 +301,7 @@ sl-90,15,12,dobička,,dobiček,Ncmsg,NOUN,O,,O
 sl-90,15,13,podjetja,,podjetje,Ncnsg,NOUN,O,,O
 sl-90,15,14,.,,.,Z,PUNCT,O,,O
 sl-90,16,1,V,,v,Sl,ADP,O,,O
-sl-90,16,2,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,O
+sl-90,16,2,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-90,16,3,sicer,,sicer,Q,PART,O,,O
 sl-90,16,4,izpostavljajo,,izpostavljati,Vmpr3p,VERB,O,,O
 sl-90,16,5,",",,",",Z,PUNCT,O,,O

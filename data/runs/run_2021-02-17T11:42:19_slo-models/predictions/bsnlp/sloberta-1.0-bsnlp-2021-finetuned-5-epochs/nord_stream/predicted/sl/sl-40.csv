@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-40,0,1,Evropski,Evropski,evropski,Agpmsny,ADJ,B-ORG,ORG-European-Parliament,B-ORG
 sl-40,0,2,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-European-Parliament,I-ORG
 sl-40,0,3,za,,za,Sa,ADP,O,,O
@@ -6,7 +6,7 @@ sl-40,0,4,dodatne,,dodaten,Agpfpa,ADJ,O,,O
 sl-40,0,5,sankcije,,sankcija,Ncfpa,NOUN,O,,O
 sl-40,0,6,proti,,proti,Sd,ADP,O,,O
 sl-40,0,7,Rusiji,Rusija,Rusija,Npfsd,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-40,1,1,Evropski,Evropski,evropski,Agpmpn,ADJ,B-PER,ORG-European-Parliament,B-ORG
+sl-40,1,1,Evropski,Evropski,evropski,Agpmpn,ADJ,B-PER,ORG-European-Parliament,B-PER
 sl-40,1,2,poslanci,poslanci,poslanec,Ncmpn,NOUN,I-PER,ORG-European-Parliament,I-PER
 sl-40,1,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-40,1,4,v,,v,Sl,ADP,O,,O
@@ -17,7 +17,7 @@ sl-40,1,8,da,,da,Cs,SCONJ,O,,O
 sl-40,1,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-40,1,10,po,,po,Sl,ADP,O,,O
 sl-40,1,11,letu,,leto,Ncnsl,NOUN,O,,O
-sl-40,1,12,2015,,2015,Mdc,NUM,O,,I-PRO
+sl-40,1,12,2015,,2015,Mdc,NUM,O,,O
 sl-40,1,13,prišlo,,priti,Vmep-sn,VERB,O,,O
 sl-40,1,14,do,,do,Sg,ADP,O,,O
 sl-40,1,15,novih,,nov,Agpfpg,ADJ,O,,O
@@ -30,7 +30,7 @@ sl-40,1,21,",",,",",Z,PUNCT,O,,O
 sl-40,1,22,pri,,pri,Sl,ADP,O,,O
 sl-40,1,23,čemer,,kar,Pr-nsl,PRON,O,,O
 sl-40,1,24,so,,biti,Va-r3p-n,AUX,O,,O
-sl-40,1,25,izpostavili,,izpostaviti,Vmep-pm,VERB,O,,I-PRO
+sl-40,1,25,izpostavili,,izpostaviti,Vmep-pm,VERB,O,,O
 sl-40,1,26,rusko,,ruski,Agpnsa,ADJ,O,,O
 sl-40,1,27,vmešavanje,,vmešavanje,Ncnsa,NOUN,O,,O
 sl-40,1,28,v,,v,Sl,ADP,O,,O
@@ -51,7 +51,7 @@ sl-40,1,42,ter,,ter,Cc,CCONJ,O,,O
 sl-40,1,43,agresivne,,agresiven,Agpfpn,ADJ,O,,O
 sl-40,1,44,dejavnosti,,dejavnost,Ncfpn,NOUN,O,,O
 sl-40,1,45,v,,v,Sl,ADP,O,,O
-sl-40,1,46,Ukrajini,Ukrajina,Ukrajina,Npfsl,PROPN,B-LOC,GPE-Ukraine,I-LOC
+sl-40,1,46,Ukrajini,Ukrajina,Ukrajina,Npfsl,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-40,1,47,.,,.,Z,PUNCT,O,,O
 sl-40,2,1,Prav,,prav,Q,PART,O,,O
 sl-40,2,2,tako,,tako,Rgp,ADV,O,,O
@@ -80,7 +80,7 @@ sl-40,2,24,človekovih,,človekov,Aspfpg,ADJ,O,,O
 sl-40,2,25,pravic,,pravica,Ncfpg,NOUN,O,,O
 sl-40,2,26,doma,,doma,Rgp,ADV,O,,O
 sl-40,2,27,.,,.,Z,PUNCT,O,,O
-sl-40,3,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,B-PER
+sl-40,3,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-40,3,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-40,3,3,ob,,ob,Sl,ADP,O,,O
 sl-40,3,4,pregledu,,pregled,Ncmsl,NOUN,O,,O
@@ -119,7 +119,7 @@ sl-40,4,4,sorazmerne,,sorazmeren,Agpfpn,ADJ,O,,O
 sl-40,4,5,glede,,glede,Rgp,ADV,O,,O
 sl-40,4,6,na,,na,Sa,ADP,O,,O
 sl-40,4,7,grožnje,,grožnja,Ncfpa,NOUN,O,,O
-sl-40,4,8,iz,,iz,Sg,ADP,O,,I-PRO
+sl-40,4,8,iz,,iz,Sg,ADP,O,,O
 sl-40,4,9,Rusije,Rusija,Rusija,Npfsg,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-40,4,10,.,,.,Z,PUNCT,O,,O
 sl-40,5,1,Resolucija,,resolucija,Ncfsn,NOUN,O,,O
@@ -172,7 +172,7 @@ sl-40,6,23,sodelovanje,,sodelovanje,Ncnsa,NOUN,O,,O
 sl-40,6,24,",",,",",Z,PUNCT,O,,O
 sl-40,6,25,so,,biti,Va-r3p-n,AUX,O,,O
 sl-40,6,26,poudarili,,poudariti,Vmep-pm,VERB,O,,O
-sl-40,6,27,poslanci,,poslanec,Ncmpn,NOUN,O,,I-PER
+sl-40,6,27,poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-40,6,28,.,,.,Z,PUNCT,O,,O
 sl-40,7,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-40,7,2,dodajajo,,dodajati,Vmpr3p,VERB,O,,O
@@ -207,7 +207,7 @@ sl-40,7,30,spoštovati,,spoštovati,Vmpn,VERB,O,,O
 sl-40,7,31,mednarodno,,mednaroden,Agpnsa,ADJ,O,,O
 sl-40,7,32,pravo,,pravo,Ncnsa,NOUN,O,,O
 sl-40,7,33,.,,.,Z,PUNCT,O,,O
-sl-40,8,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,B-PER
+sl-40,8,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-40,8,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-40,8,3,obsodili,,obsoditi,Vmep-pm,VERB,O,,O
 sl-40,8,4,rusko,,ruski,Agpfsa,ADJ,O,,O
@@ -304,7 +304,7 @@ sl-40,11,10,območju,,območje,Ncnsl,NOUN,O,,O
 sl-40,11,11,Črnega,Črno,črn,Agpnsg,ADJ,B-LOC,LOC-Black-Sea,B-LOC
 sl-40,11,12,morja,morje,morje,Ncnsg,NOUN,I-LOC,LOC-Black-Sea,I-LOC
 sl-40,11,13,",",,",",Z,PUNCT,O,,O
-sl-40,11,14,Baltskega,Baltsko,baltski,Agpnsg,ADJ,B-LOC,LOC-Baltic-Sea,O
+sl-40,11,14,Baltskega,Baltsko,baltski,Agpnsg,ADJ,B-LOC,LOC-Baltic-Sea,B-LOC
 sl-40,11,15,morja,morje,morje,Ncnsg,NOUN,I-LOC,LOC-Baltic-Sea,I-LOC
 sl-40,11,16,ter,,ter,Cc,CCONJ,O,,O
 sl-40,11,17,Sredozemlja,Sredozemlje,Sredozemlje,Npnsg,PROPN,B-LOC,LOC-Mediterranean-Sea,B-LOC
@@ -341,7 +341,7 @@ sl-40,12,25,trg,,trg,Ncmsan,NOUN,O,,O
 sl-40,12,26,Evropske,Evropska,evropski,Agpfsg,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-40,12,27,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-40,12,28,.,,.,Z,PUNCT,O,,O
-sl-40,13,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,B-PER
+sl-40,13,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-40,13,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-40,13,3,zaskrbljeni,,zaskrbljen,Appmpn,ADJ,O,,O
 sl-40,13,4,tudi,,tudi,Q,PART,O,,O
@@ -363,7 +363,7 @@ sl-40,13,19,Iran,Iran,Iran,Npmsn,PROPN,B-LOC,GPE-Iran,B-LOC
 sl-40,13,20,",",,",",Z,PUNCT,O,,O
 sl-40,13,21,Venezuela,Venezuela,Venezuela,Npfsn,PROPN,B-LOC,GPE-Venezuela,B-LOC
 sl-40,13,22,in,,in,Cc,CCONJ,O,,O
-sl-40,13,23,Sirija,Sirija,Sirija,Npfsn,PROPN,B-LOC,GPE-Syria,O
+sl-40,13,23,Sirija,Sirija,Sirija,Npfsn,PROPN,B-LOC,GPE-Syria,B-LOC
 sl-40,13,24,.,,.,Z,PUNCT,O,,O
 sl-40,14,1,Prav,,prav,Q,PART,O,,O
 sl-40,14,2,tako,,tako,Rgp,ADV,O,,O

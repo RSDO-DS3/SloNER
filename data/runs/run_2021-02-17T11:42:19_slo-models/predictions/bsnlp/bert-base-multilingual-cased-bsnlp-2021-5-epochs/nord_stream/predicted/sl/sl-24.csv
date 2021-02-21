@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-24,0,1,Plinska,,plinski,Agpfsn,ADJ,O,,O
 sl-24,0,2,vojna,,vojna,Ncfsn,NOUN,O,,O
 sl-24,0,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -209,14 +209,14 @@ sl-24,8,28,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-24,8,29,ruski,,ruski,Agpmsny,ADJ,O,,O
 sl-24,8,30,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-24,8,31,Vladimir,Vladimir,Vladimir,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
-sl-24,8,32,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,B-PER
+sl-24,8,32,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,I-PER
 sl-24,8,33,javno,,javno,Rgp,ADV,O,,O
 sl-24,8,34,ponuja,,ponujati,Vmpr3s,VERB,O,,O
 sl-24,8,35,s,,z,Si,ADP,O,,O
-sl-24,8,36,25-odstotnim,,25vodstoten,Agpmsi,ADJ,O,,I-PRO
+sl-24,8,36,25-odstotnim,,25vodstoten,Agpmsi,ADJ,O,,O
 sl-24,8,37,popustom,,popust,Ncmsi,NOUN,O,,O
 sl-24,8,38,.,,.,Z,PUNCT,O,,O
-sl-24,9,1,Kijev,Kijev,Kijev,Npmsn,PROPN,B-LOC,GPE-Kiev,B-LOC
+sl-24,9,1,Kijev,Kijev,Kijev,Npmsn,PROPN,B-LOC,GPE-Kiev,B-PER
 sl-24,9,2,",",,",",Z,PUNCT,O,,O
 sl-24,9,3,ki,,ki,Cs,SCONJ,O,,O
 sl-24,9,4,si,,se,Px---d--y,PRON,O,,O
@@ -299,7 +299,7 @@ sl-24,12,12,leta,,leto,Ncnpa,NOUN,O,,O
 sl-24,12,13,",",,",",Z,PUNCT,O,,O
 sl-24,12,14,a,,a,Cc,CCONJ,O,,O
 sl-24,12,15,kaj,,kaj,Pq-nsn,PRON,O,,O
-sl-24,12,16,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-24,12,16,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-24,12,17,zares,,zares,Rgp,ADV,O,,O
 sl-24,12,18,piše,,pisati,Vmpr3s,VERB,O,,O
 sl-24,12,19,v,,v,Sl,ADP,O,,O
@@ -385,7 +385,7 @@ sl-24,15,18,so,,biti,Va-r3p-n,AUX,O,,O
 sl-24,15,19,bile,,biti,Va-p-pf,AUX,O,,O
 sl-24,15,20,največje,,velik,Agsfpn,ADJ,O,,O
 sl-24,15,21,žrtve,,žrtev,Ncfpn,NOUN,O,,O
-sl-24,15,22,balkanske,,balkanski,Agpfsg,ADJ,O,,O
+sl-24,15,22,balkanske,,balkanski,Agpfsg,ADJ,O,,B-LOC
 sl-24,15,23,države,,država,Ncfsg,NOUN,O,,O
 sl-24,15,24,",",,",",Z,PUNCT,O,,O
 sl-24,15,25,kjer,,kjer,Cs,SCONJ,O,,O
@@ -425,7 +425,7 @@ sl-24,16,21,vstopom,,vstop,Ncmsi,NOUN,O,,O
 sl-24,16,22,v,,v,Sa,ADP,O,,O
 sl-24,16,23,EU,EU,EU,Npfsa,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-24,16,24,.,,.,Z,PUNCT,O,,O
-sl-24,17,1,Zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-24,17,1,Zdaj,,zdaj,Rgp,ADV,O,,O
 sl-24,17,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-24,17,3,Evropa,Evropa,Evropa,Npfsn,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-24,17,4,bolj,,bolj,Rgc,ADV,O,,O

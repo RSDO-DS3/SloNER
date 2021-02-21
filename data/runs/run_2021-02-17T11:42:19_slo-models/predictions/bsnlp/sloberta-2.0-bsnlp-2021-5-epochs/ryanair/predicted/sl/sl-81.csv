@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-81,0,1,',,',Z,PUNCT,O,,O
 sl-81,0,2,Ne,,ne,Q,PART,O,,O
 sl-81,0,3,pogovarjaj,,pogovarjati,Vmpm2s,VERB,O,,O
@@ -75,11 +75,11 @@ sl-81,3,17,so,,biti,Va-r3p-n,AUX,O,,O
 sl-81,3,18,prosili,,prositi,Vmpp-pm,VERB,O,,O
 sl-81,3,19,77-letnico,,hvvletnica,Ncfsa,NOUN,O,,O
 sl-81,3,20,",",,",",Z,PUNCT,O,,O
-sl-81,3,21,da,,da,Cs,SCONJ,O,,B-LOC
+sl-81,3,21,da,,da,Cs,SCONJ,O,,O
 sl-81,3,22,se,,se,Px------y,PRON,O,,O
 sl-81,3,23,presede,,presesti,Vmer3s,VERB,O,,O
 sl-81,3,24,.,,.,Z,PUNCT,O,,O
-sl-81,4,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-81,4,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-81,4,2,se,,se,Px------y,PRON,O,,O
 sl-81,4,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-81,4,4,znašel,,znajti,Vmep-sm,VERB,O,,O
@@ -104,7 +104,7 @@ sl-81,4,22,letu,,leto,Ncnsl,NOUN,O,,O
 sl-81,4,23,iz,,iz,Sg,ADP,O,,O
 sl-81,4,24,Barcelone,Barcelona,Barcelona,Npfsg,PROPN,B-LOC,GPE-Barcelona,B-LOC
 sl-81,4,25,v,,v,Sa,ADP,O,,O
-sl-81,4,26,Stansted,Stansted,Stansted,Npmsan,PROPN,B-LOC,LOC-Stansted-airport,O
+sl-81,4,26,Stansted,Stansted,Stansted,Npmsan,PROPN,B-LOC,LOC-Stansted-airport,B-LOC
 sl-81,4,27,napadel,,napasti,Vmep-sm,VERB,O,,O
 sl-81,4,28,starejšo,,star,Agcfsa,ADJ,O,,O
 sl-81,4,29,žensko,,ženska,Ncfsa,NOUN,O,,O
@@ -143,7 +143,7 @@ sl-81,6,5,da,,da,Cs,SCONJ,O,,O
 sl-81,6,6,bi,,biti,Va-c,AUX,O,,O
 sl-81,6,7,ga,,on,Pp3msa--y,PRON,O,,O
 sl-81,6,8,moral,,morati,Vmpp-sm,VERB,O,,O
-sl-81,6,9,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-81,6,9,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-81,6,10,odstraniti,,odstraniti,Vmen,VERB,O,,O
 sl-81,6,11,ter,,ter,Cc,CCONJ,O,,O
 sl-81,6,12,že,,že,Q,PART,O,,O
@@ -269,7 +269,7 @@ sl-81,10,39,do,,do,Sg,ADP,O,,O
 sl-81,10,40,svojega,,svoj,Px-msg,DET,O,,O
 sl-81,10,41,sedeža,,sedež,Ncmsg,NOUN,O,,O
 sl-81,10,42,.,,.,Z,PUNCT,O,,O
-sl-81,11,1,David,David,David,Npmsn,PROPN,B-PER,PER-David-Lawrence,B-PER
+sl-81,11,1,David,David,David,Npmsn,PROPN,B-PER,PER-David-Lawrence,O
 sl-81,11,2,Lawrence,Lawrence,Lawrence,Npmsn,PROPN,I-PER,PER-David-Lawrence,I-PER
 sl-81,11,3,",",,",",Z,PUNCT,O,,O
 sl-81,11,4,ki,,ki,Cs,SCONJ,O,,O

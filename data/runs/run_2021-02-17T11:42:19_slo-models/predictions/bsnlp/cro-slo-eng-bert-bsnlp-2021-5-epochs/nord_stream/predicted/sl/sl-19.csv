@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-19,0,1,Evropski,Evropski,evropski,Agpmsny,ADJ,B-ORG,ORG-European-Parliament,B-ORG
 sl-19,0,2,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-European-Parliament,I-ORG
 sl-19,0,3,za,,za,Sa,ADP,O,,O
@@ -53,8 +53,8 @@ sl-19,2,15,jih,,on,Pp3mpg--y,PRON,O,,O
 sl-19,2,16,je,,biti,Va-r3s-n,AUX,O,,O
 sl-19,2,17,vzdržalo,,vzdržati,Vmep-sn,VERB,O,,O
 sl-19,2,18,.,,.,Z,PUNCT,O,,O
-sl-19,3,1,Evropski,Evropski,evropski,Agpmpn,ADJ,B-PER,ORG-European-Parliament,B-ORG
-sl-19,3,2,poslanci,poslanci,poslanec,Ncmpn,NOUN,I-PER,ORG-European-Parliament,I-ORG
+sl-19,3,1,Evropski,Evropski,evropski,Agpmpn,ADJ,B-PER,ORG-European-Parliament,B-PER
+sl-19,3,2,poslanci,poslanci,poslanec,Ncmpn,NOUN,I-PER,ORG-European-Parliament,I-PER
 sl-19,3,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-19,3,4,v,,v,Sl,ADP,O,,O
 sl-19,3,5,resoluciji,,resolucija,Ncfsl,NOUN,O,,O
@@ -64,7 +64,7 @@ sl-19,3,8,da,,da,Cs,SCONJ,O,,O
 sl-19,3,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-19,3,10,po,,po,Sl,ADP,O,,O
 sl-19,3,11,letu,,leto,Ncnsl,NOUN,O,,O
-sl-19,3,12,2015,,2015,Mdc,NUM,O,,I-PRO
+sl-19,3,12,2015,,2015,Mdc,NUM,O,,O
 sl-19,3,13,prišlo,,priti,Vmep-sn,VERB,O,,O
 sl-19,3,14,do,,do,Sg,ADP,O,,O
 sl-19,3,15,novih,,nov,Agpfpg,ADJ,O,,O
@@ -219,7 +219,7 @@ sl-19,8,23,sodelovanje,,sodelovanje,Ncnsa,NOUN,O,,O
 sl-19,8,24,",",,",",Z,PUNCT,O,,O
 sl-19,8,25,so,,biti,Va-r3p-n,AUX,O,,O
 sl-19,8,26,poudarili,,poudariti,Vmep-pm,VERB,O,,O
-sl-19,8,27,poslanci,,poslanec,Ncmpn,NOUN,O,,I-ORG
+sl-19,8,27,poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-19,8,28,.,,.,Z,PUNCT,O,,O
 sl-19,9,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-19,9,2,dodajajo,,dodajati,Vmpr3p,VERB,O,,O
@@ -237,15 +237,15 @@ sl-19,9,13,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-19,9,14,polno,,polno,Rgp,ADV,O,,O
 sl-19,9,15,uveljavila,,uveljaviti,Vmep-sf,VERB,O,,O
 sl-19,9,16,določila,,določilo,Ncnpa,NOUN,O,,O
-sl-19,9,17,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
-sl-19,9,18,iz,,iz,Sg,ADP,O,,O
-sl-19,9,19,Minska,Minsk,Minsk,Npmsg,PROPN,B-LOC,GPE-Minsk,B-LOC
+sl-19,9,17,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
+sl-19,9,18,iz,,iz,Sg,ADP,O,,I-PRO
+sl-19,9,19,Minska,Minsk,Minsk,Npmsg,PROPN,B-LOC,GPE-Minsk,I-PRO
 sl-19,9,20,za,,za,Sa,ADP,O,,O
 sl-19,9,21,končanje,,končanje,Ncnsa,NOUN,O,,O
 sl-19,9,22,konflikta,,konflikt,Ncmsg,NOUN,O,,O
 sl-19,9,23,v,,v,Sl,ADP,O,,O
 sl-19,9,24,vzhodni,vzhodna,vzhoden,Agpfsl,ADJ,B-LOC,LOC-East-Ukraine,B-LOC
-sl-19,9,25,Ukrajini,Ukrajina,Ukrajina,Npfsl,PROPN,I-LOC,LOC-East-Ukraine,B-LOC
+sl-19,9,25,Ukrajini,Ukrajina,Ukrajina,Npfsl,PROPN,I-LOC,LOC-East-Ukraine,I-LOC
 sl-19,9,26,ter,,ter,Cc,CCONJ,O,,O
 sl-19,9,27,ko,,ko,Cs,SCONJ,O,,O
 sl-19,9,28,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -404,7 +404,7 @@ sl-19,15,13,",",,",",Z,PUNCT,O,,O
 sl-19,15,14,kot,,kot,Cs,SCONJ,O,,O
 sl-19,15,15,so,,biti,Va-r3p-n,AUX,O,,O
 sl-19,15,16,Severna,Severna,severen,Agpfsn,ADJ,B-LOC,GPE-North-Korea,B-LOC
-sl-19,15,17,Koreja,Koreja,Koreja,Npfsn,PROPN,I-LOC,GPE-North-Korea,B-LOC
+sl-19,15,17,Koreja,Koreja,Koreja,Npfsn,PROPN,I-LOC,GPE-North-Korea,I-LOC
 sl-19,15,18,",",,",",Z,PUNCT,O,,O
 sl-19,15,19,Iran,Iran,Iran,Npmsn,PROPN,B-LOC,GPE-Iran,B-LOC
 sl-19,15,20,",",,",",Z,PUNCT,O,,O
@@ -412,7 +412,7 @@ sl-19,15,21,Venezuela,Venezuela,Venezuela,Npfsn,PROPN,B-LOC,GPE-Venezuela,B-LOC
 sl-19,15,22,in,,in,Cc,CCONJ,O,,O
 sl-19,15,23,Sirija,Sirija,Sirija,Npfsn,PROPN,B-LOC,GPE-Syria,B-LOC
 sl-19,15,24,.,,.,Z,PUNCT,O,,O
-sl-19,16,1,Prav,,prav,Q,PART,O,,O
+sl-19,16,1,Prav,,prav,Q,PART,O,,B-LOC
 sl-19,16,2,tako,,tako,Rgp,ADV,O,,O
 sl-19,16,3,obžalujejo,,obžalovati,Vmpr3p,VERB,O,,O
 sl-19,16,4,",",,",",Z,PUNCT,O,,O
@@ -436,8 +436,8 @@ sl-19,16,21,sile,,sila,Ncfpa,NOUN,O,,O
 sl-19,16,22,",",,",",Z,PUNCT,O,,O
 sl-19,16,23,ki,,ki,Cs,SCONJ,O,,O
 sl-19,16,24,nasprotujejo,,nasprotovati,Vmpr3p,VERB,O,,O
-sl-19,16,25,Prespanskemu,Prespanski,prespanski,Agpmsd,ADJ,B-PRO,PRO-Prespa-Agreement,B-EVT
-sl-19,16,26,sporazumu,sporazum,sporazum,Ncmsd,NOUN,I-PRO,PRO-Prespa-Agreement,O
+sl-19,16,25,Prespanskemu,Prespanski,prespanski,Agpmsd,ADJ,B-PRO,PRO-Prespa-Agreement,B-PRO
+sl-19,16,26,sporazumu,sporazum,sporazum,Ncmsd,NOUN,I-PRO,PRO-Prespa-Agreement,I-PRO
 sl-19,16,27,",",,",",Z,PUNCT,O,,O
 sl-19,16,28,s,,z,Si,ADP,O,,O
 sl-19,16,29,katerim,,kateri,Pq-msi,DET,O,,O

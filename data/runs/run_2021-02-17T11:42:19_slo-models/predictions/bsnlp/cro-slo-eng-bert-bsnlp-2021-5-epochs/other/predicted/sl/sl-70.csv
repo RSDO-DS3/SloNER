@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-70,0,1,Prtljaga,,prtljaga,Ncfsn,NOUN,O,,O
 sl-70,0,2,",",,",",Z,PUNCT,O,,O
 sl-70,0,3,ki,,ki,Cs,SCONJ,O,,O
@@ -22,7 +22,7 @@ sl-70,1,15,komičnih,,komičen,Agpmpg,ADJ,O,,O
 sl-70,1,16,fantazijskih,,fantazijski,Agpmpg,ADJ,O,,O
 sl-70,1,17,romanov,,roman,Ncmpg,NOUN,O,,O
 sl-70,1,18,Ploščati,Ploščati,ploščat,Agpmsny,ADJ,B-PRO,PRO-Discworld,B-PRO
-sl-70,1,19,svet,svet,svet,Ncmsan,NOUN,I-PRO,PRO-Discworld,O
+sl-70,1,19,svet,svet,svet,Ncmsan,NOUN,I-PRO,PRO-Discworld,I-PRO
 sl-70,1,20,(,,(,Z,PUNCT,O,,O
 sl-70,1,21,Discworld,Discworld,Discworld,Npmsn,PROPN,B-PRO,PRO-Discworld,B-PRO
 sl-70,1,22,),,),Z,PUNCT,O,,O
@@ -248,7 +248,7 @@ sl-70,12,3,teh,,ta,Pd-mpg,DET,O,,O
 sl-70,12,4,razvija,,razvijati,Vmpr3s,VERB,O,,O
 sl-70,12,5,podjetje,,podjetje,Ncnsn,NOUN,O,,O
 sl-70,12,6,90,90,90,Mdc,NUM,B-ORG,ORG-90FUN,B-ORG
-sl-70,12,7,Fun,Fun,Fun,Npmsn,PROPN,I-ORG,ORG-90FUN,B-ORG
+sl-70,12,7,Fun,Fun,Fun,Npmsn,PROPN,I-ORG,ORG-90FUN,I-ORG
 sl-70,12,8,",",,",",Z,PUNCT,O,,O
 sl-70,12,9,hčerinsko,,hčerinski,Agpnsn,ADJ,O,,O
 sl-70,12,10,podjetje,,podjetje,Ncnsn,NOUN,O,,O
@@ -457,7 +457,7 @@ sl-70,21,11,sejmu,,sejem,Ncmsl,NOUN,O,,O
 sl-70,21,12,CES,CES,CES,Npmsn,PROPN,B-EVT,EVT-CES-Consumer-Electronic-Show,B-EVT
 sl-70,21,13,v,,v,Sl,ADP,O,,O
 sl-70,21,14,Las,Las,Las,Npmsn,PROPN,B-LOC,GPE-Las-Vegas,B-LOC
-sl-70,21,15,Vegasu,Vegas,Vegas,Npmsl,PROPN,I-LOC,GPE-Las-Vegas,B-LOC
+sl-70,21,15,Vegasu,Vegas,Vegas,Npmsl,PROPN,I-LOC,GPE-Las-Vegas,I-LOC
 sl-70,21,16,",",,",",Z,PUNCT,O,,O
 sl-70,21,17,tega,,ta,Pd-msg,DET,O,,O
 sl-70,21,18,sistema,,sistem,Ncmsg,NOUN,O,,O

@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-4,0,1,Skoraj,,skoraj,Q,PART,O,,B-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-4,0,1,Skoraj,,skoraj,Q,PART,O,,O
 sl-4,0,2,tradicionalen,,tradicionalen,Agpmsnn,ADJ,O,,O
 sl-4,0,3,preplah,,preplah,Ncmsn,NOUN,O,,O
 sl-4,0,4,na,,na,Sl,ADP,O,,O
@@ -341,7 +341,7 @@ sl-4,10,35,obliki,,oblika,Ncfsl,NOUN,O,,O
 sl-4,10,36,delnic,,delnica,Ncfpg,NOUN,O,,O
 sl-4,10,37,.,,.,Z,PUNCT,O,,O
 sl-4,11,1,Na,,na,Sa,ADP,O,,O
-sl-4,11,2,evropske,,evropski,Agpmpa,ADJ,O,,B-LOC
+sl-4,11,2,evropske,,evropski,Agpmpa,ADJ,O,,O
 sl-4,11,3,delniške,,delniški,Agpmpa,ADJ,O,,O
 sl-4,11,4,trge,,trg,Ncmpa,NOUN,O,,O
 sl-4,11,5,je,,biti,Va-r3s-n,AUX,O,,O
@@ -420,11 +420,11 @@ sl-4,12,58,saj,,saj,Cc,CCONJ,O,,O
 sl-4,12,59,so,,biti,Va-r3p-n,AUX,O,,O
 sl-4,12,60,registracije,,registracija,Ncfpn,NOUN,O,,O
 sl-4,12,61,novih,,nov,Agpnpg,ADJ,O,,O
-sl-4,12,62,vozil,,vozilo,Ncnpg,NOUN,O,,O
-sl-4,12,63,doživele,,doživeti,Vmep-pf,VERB,O,,O
-sl-4,12,64,občuten,,občuten,Agpmsan,ADJ,O,,O
-sl-4,12,65,upad,,upad,Ncmsan,NOUN,O,,O
-sl-4,12,66,v,,v,Sl,ADP,O,,O
-sl-4,12,67,poletnih,,poleten,Agpmpl,ADJ,O,,O
-sl-4,12,68,mesecih,,mesec,Ncmpl,NOUN,O,,O
-sl-4,12,69,.,,.,Z,PUNCT,O,,O
+sl-4,12,62,vozil,,vozilo,Ncnpg,NOUN,O,,
+sl-4,12,63,doživele,,doživeti,Vmep-pf,VERB,O,,
+sl-4,12,64,občuten,,občuten,Agpmsan,ADJ,O,,
+sl-4,12,65,upad,,upad,Ncmsan,NOUN,O,,
+sl-4,12,66,v,,v,Sl,ADP,O,,
+sl-4,12,67,poletnih,,poleten,Agpmpl,ADJ,O,,
+sl-4,12,68,mesecih,,mesec,Ncmpl,NOUN,O,,
+sl-4,12,69,.,,.,Z,PUNCT,O,,

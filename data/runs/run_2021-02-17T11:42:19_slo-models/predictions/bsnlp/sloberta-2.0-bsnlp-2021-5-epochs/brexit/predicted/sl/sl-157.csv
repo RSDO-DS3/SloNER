@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-157,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-157,0,2,:,,:,Z,PUNCT,O,,O
 sl-157,0,3,trgovinske,,trgovinski,Agpfpn,ADJ,O,,O
@@ -13,13 +13,13 @@ sl-157,1,3,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-157,1,4,o,,o,Sl,ADP,O,,O
 sl-157,1,5,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-157,1,6,Michel,Michel,Michel,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
-sl-157,1,7,Barnier,Barnier,Barnier,Npmsn,PROPN,I-PER,PER-Michel-Barnier,B-PER
+sl-157,1,7,Barnier,Barnier,Barnier,Npmsn,PROPN,I-PER,PER-Michel-Barnier,I-PER
 sl-157,1,8,in,,in,Cc,CCONJ,O,,O
 sl-157,1,9,vodja,,vodja,Ncmsn,NOUN,O,,O
 sl-157,1,10,britanskih,,britanski,Agpmpg,ADJ,O,,O
 sl-157,1,11,pogajalcev,,pogajalec,Ncmpg,NOUN,O,,O
 sl-157,1,12,David,David,David,Npmsn,PROPN,B-PER,PER-David-Davis,B-PER
-sl-157,1,13,Davis,Davis,Davis,Npmsn,PROPN,I-PER,PER-David-Davis,O
+sl-157,1,13,Davis,Davis,Davis,Npmsn,PROPN,I-PER,PER-David-Davis,I-PER
 sl-157,1,14,med,,med,Si,ADP,O,,O
 sl-157,1,15,današnjimi,,današnji,Agpmpi,ADJ,O,,O
 sl-157,1,16,pogovori,,pogovor,Ncmpi,NOUN,O,,O
@@ -32,7 +32,7 @@ sl-157,2,5,in,,in,Cc,CCONJ,O,,O
 sl-157,2,6,izven,,izven,Sg,ADP,O,,O
 sl-157,2,7,skupnega,,skupen,Agpmsg,ADJ,O,,O
 sl-157,2,8,trga,,trg,Ncmsg,NOUN,O,,O
-sl-157,2,9,so,,biti,Va-r3p-n,AUX,O,,B-PER
+sl-157,2,9,so,,biti,Va-r3p-n,AUX,O,,O
 sl-157,2,10,ovire,,ovira,Ncfpn,NOUN,O,,O
 sl-157,2,11,za,,za,Sa,ADP,O,,O
 sl-157,2,12,blagovno,,blagoven,Agpfsa,ADJ,O,,O
@@ -49,15 +49,15 @@ sl-157,3,5,",",,",",Z,PUNCT,O,,O
 sl-157,3,6,«,,«,Z,PUNCT,O,,O
 sl-157,3,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-157,3,8,dejal,,dejati,Vmep-sm,VERB,O,,O
-sl-157,3,9,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,O
+sl-157,3,9,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
 sl-157,3,10,po,,po,Sl,ADP,O,,O
 sl-157,3,11,pogovorih,,pogovor,Ncmpl,NOUN,O,,O
 sl-157,3,12,z,,z,Si,ADP,O,,O
 sl-157,3,13,vodjo,,vodja,Ncmsi,NOUN,O,,O
 sl-157,3,14,britanskih,,britanski,Agpmpg,ADJ,O,,O
 sl-157,3,15,pogajalcev,,pogajalec,Ncmpg,NOUN,O,,O
-sl-157,3,16,Davidom,David,David,Npmsi,PROPN,B-PER,PER-David-Davis,O
-sl-157,3,17,Davisom,Davis,Davis,Npmsi,PROPN,I-PER,PER-David-Davis,O
+sl-157,3,16,Davidom,David,David,Npmsi,PROPN,B-PER,PER-David-Davis,B-PER
+sl-157,3,17,Davisom,Davis,Davis,Npmsi,PROPN,I-PER,PER-David-Davis,I-PER
 sl-157,3,18,in,,in,Cc,CCONJ,O,,O
 sl-157,3,19,britansko,,britanski,Agpfsi,ADJ,O,,O
 sl-157,3,20,premierko,,premierka,Ncfsi,NOUN,O,,O
@@ -91,7 +91,7 @@ sl-157,4,24,začasni,,začasen,Agpmsay,ADJ,O,,O
 sl-157,4,25,dostop,,dostop,Ncmsan,NOUN,O,,O
 sl-157,4,26,do,,do,Sg,ADP,O,,O
 sl-157,4,27,skupnega,,skupen,Agpmsg,ADJ,O,,O
-sl-157,4,28,evropskega,,evropski,Agpmsg,ADJ,O,,I-LOC
+sl-157,4,28,evropskega,,evropski,Agpmsg,ADJ,O,,O
 sl-157,4,29,trga,,trg,Ncmsg,NOUN,O,,O
 sl-157,4,30,in,,in,Cc,CCONJ,O,,O
 sl-157,4,31,carinske,,carinski,Agpfsg,ADJ,O,,O
@@ -109,7 +109,7 @@ sl-157,5,2,pa,,pa,Cc,CCONJ,O,,O
 sl-157,5,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-157,5,4,",",,",",Z,PUNCT,O,,O
 sl-157,5,5,da,,da,Cs,SCONJ,O,,O
-sl-157,5,6,so,,biti,Va-r3p-n,AUX,O,,B-PER
+sl-157,5,6,so,,biti,Va-r3p-n,AUX,O,,O
 sl-157,5,7,pogoji,,pogoj,Ncmpn,NOUN,O,,O
 sl-157,5,8,zelo,,zelo,Rgp,ADV,O,,O
 sl-157,5,9,jasni,,jasen,Agpmpn,ADJ,O,,O
@@ -134,7 +134,7 @@ sl-157,6,17,na,,na,Sl,ADP,O,,O
 sl-157,6,18,Downing,Downing,Downing,Npmsl,PROPN,B-LOC,LOC-Downing-Street,B-LOC
 sl-157,6,19,Streetu,Street,Street,Npmsl,PROPN,I-LOC,LOC-Downing-Street,I-LOC
 sl-157,6,20,.,,.,Z,PUNCT,O,,O
-sl-157,7,1,Davis,Davis,Davis,Npmsn,PROPN,B-PER,PER-David-Davis,O
+sl-157,7,1,Davis,Davis,Davis,Npmsn,PROPN,B-PER,PER-David-Davis,B-PER
 sl-157,7,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-157,7,3,prepričan,,prepričan,Appmsnn,ADJ,O,,O
 sl-157,7,4,v,,v,Sa,ADP,O,,O
@@ -180,7 +180,7 @@ sl-157,9,16,poslancev,,poslanec,Ncmpg,NOUN,O,,O
 sl-157,9,17,",",,",",Z,PUNCT,O,,O
 sl-157,9,18,ki,,ki,Cs,SCONJ,O,,O
 sl-157,9,19,podpirajo,,podpirati,Vmpr3p,VERB,O,,O
-sl-157,9,20,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,O
+sl-157,9,20,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-157,9,21,",",,",",Z,PUNCT,O,,O
 sl-157,9,22,da,,da,Cs,SCONJ,O,,O
 sl-157,9,23,izključi,,izključiti,Vmer3s,VERB,O,,O
@@ -201,7 +201,7 @@ sl-157,10,5,da,,da,Cs,SCONJ,O,,O
 sl-157,10,6,bi,,biti,Va-c,AUX,O,,O
 sl-157,10,7,tovrstno,,tovrsten,Agpnsn,ADJ,O,,O
 sl-157,10,8,sodelovanje,,sodelovanje,Ncnsn,NOUN,O,,O
-sl-157,10,9,lahko,,lahko,Rgp,ADV,O,,B-PER
+sl-157,10,9,lahko,,lahko,Rgp,ADV,O,,O
 sl-157,10,10,omejilo,,omejiti,Vmep-sn,VERB,O,,O
 sl-157,10,11,trgovinske,,trgovinski,Agpmpa,ADJ,O,,O
 sl-157,10,12,dogovore,,dogovor,Ncmpa,NOUN,O,,O
@@ -218,7 +218,7 @@ sl-157,10,22,državami,,država,Ncfpi,NOUN,O,,O
 sl-157,10,23,izven,,izven,Sg,ADP,O,,O
 sl-157,10,24,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-157,10,25,.,,.,Z,PUNCT,O,,O
-sl-157,11,1,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,O
+sl-157,11,1,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
 sl-157,11,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-157,11,3,še,,še,Q,PART,O,,O
 sl-157,11,4,izpostavil,,izpostaviti,Vmep-sm,VERB,O,,O

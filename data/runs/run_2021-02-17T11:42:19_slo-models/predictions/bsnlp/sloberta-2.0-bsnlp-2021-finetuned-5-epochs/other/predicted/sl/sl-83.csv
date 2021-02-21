@@ -1,11 +1,11 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-83,0,1,Del,,del,Ncmsan,NOUN,O,,O
 sl-83,0,2,frankfurtskega,,frankfurtski,Agpnsg,ADJ,O,,O
 sl-83,0,3,letališča,,letališče,Ncnsg,NOUN,O,,O
 sl-83,0,4,so,,biti,Va-r3p-n,AUX,O,,O
 sl-83,0,5,morali,,morati,Vmpp-pm,VERB,O,,O
 sl-83,0,6,evakuirati,,evakuirati,Vmbn,VERB,O,,O
-sl-83,0,7,zaradi,,zaradi,Sg,ADP,O,,B-PER
+sl-83,0,7,zaradi,,zaradi,Sg,ADP,O,,O
 sl-83,0,8,policijske,,policijski,Agpfsg,ADJ,O,,O
 sl-83,0,9,operacije,,operacija,Ncfsg,NOUN,O,,O
 sl-83,1,1,Del,,del,Ncmsan,NOUN,O,,O
@@ -21,7 +21,7 @@ sl-83,1,10,",",,",",Z,PUNCT,O,,O
 sl-83,1,11,prekinili,,prekiniti,Vmep-pm,VERB,O,,O
 sl-83,1,12,pa,,pa,Cc,CCONJ,O,,O
 sl-83,1,13,so,,biti,Va-r3p-n,AUX,O,,O
-sl-83,1,14,tudi,,tudi,Q,PART,O,,B-LOC
+sl-83,1,14,tudi,,tudi,Q,PART,O,,O
 sl-83,1,15,vkrcavanje,,vkrcavanje,Ncnsa,NOUN,O,,O
 sl-83,1,16,na,,na,Sa,ADP,O,,O
 sl-83,1,17,letala,,letalo,Ncnpa,NOUN,O,,O
@@ -33,7 +33,7 @@ sl-83,1,22,zvezna,zvezna,zvezen,Agpfsn,ADJ,I-ORG,ORG-German-Federal-Police,I-ORG
 sl-83,1,23,policija,policija,policija,Ncfsn,NOUN,I-ORG,ORG-German-Federal-Police,I-ORG
 sl-83,1,24,.,,.,Z,PUNCT,O,,O
 sl-83,2,1,Razlog,,razlog,Ncmsn,NOUN,O,,O
-sl-83,2,2,za,,za,Sa,ADP,O,,B-PER
+sl-83,2,2,za,,za,Sa,ADP,O,,O
 sl-83,2,3,evakuacijo,,evakuacija,Ncfsa,NOUN,O,,O
 sl-83,2,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-83,2,5,bil,,biti,Va-p-sm,AUX,O,,O
@@ -47,7 +47,7 @@ sl-83,2,12,varovano,,varovan,Appnsa,ADJ,O,,O
 sl-83,2,13,območje,,območje,Ncnsa,NOUN,O,,O
 sl-83,2,14,",",,",",Z,PUNCT,O,,O
 sl-83,2,15,poroča,,poročati,Vmpr3s,VERB,O,,O
-sl-83,2,16,nemška,,nemški,Agpfsn,ADJ,O,,B-ORG
+sl-83,2,16,nemška,,nemški,Agpfsn,ADJ,O,,O
 sl-83,2,17,tiskovna,,tiskoven,Agpfsn,ADJ,O,,O
 sl-83,2,18,agencija,,agencija,Ncfsn,NOUN,O,,O
 sl-83,2,19,dpa,dpa,DPA,Npfsn,PROPN,B-ORG,ORG-DPA,B-ORG
@@ -66,7 +66,7 @@ sl-83,3,11,letališča,,letališče,Ncnsg,NOUN,O,,O
 sl-83,3,12,",",,",",Z,PUNCT,O,,O
 sl-83,3,13,"""",,"""",Z,PUNCT,O,,O
 sl-83,3,14,je,,biti,Va-r3s-n,AUX,O,,O
-sl-83,3,15,policija,,policija,Ncfsn,NOUN,O,,I-ORG
+sl-83,3,15,policija,,policija,Ncfsn,NOUN,O,,O
 sl-83,3,16,zapisala,,zapisati,Vmep-sf,VERB,O,,O
 sl-83,3,17,na,,na,Sl,ADP,O,,O
 sl-83,3,18,Twitterju,Twitter,Twitter,Npmsl,PROPN,B-PRO,PRO-Twitter,B-PRO
@@ -151,7 +151,7 @@ sl-83,8,8,vkrcavanje,,vkrcavanje,Ncnsa,NOUN,O,,O
 sl-83,8,9,ustavili,,ustaviti,Vmep-pm,VERB,O,,O
 sl-83,8,10,okoli,,okoli,Rgp,ADV,O,,O
 sl-83,8,11,11.30.,,11.30.,Mdc,NUM,O,,O
-sl-83,9,1,Letalska,,letalski,Agpfsn,ADJ,O,,B-LOC
+sl-83,9,1,Letalska,,letalski,Agpfsn,ADJ,O,,O
 sl-83,9,2,družba,,družba,Ncfsn,NOUN,O,,O
 sl-83,9,3,Lufthansa,Lufthansa,Lufthansa,Npfsn,PROPN,B-ORG,ORG-Lufthansa,B-ORG
 sl-83,9,4,je,,biti,Va-r3s-n,AUX,O,,O
@@ -283,7 +283,7 @@ sl-83,16,2,v,,v,Sl,ADP,O,,O
 sl-83,16,3,Frankfurtu,Frankfurt,Frankfurt,Npmsl,PROPN,B-LOC,GPE-Frankfurt-am-Main,B-LOC
 sl-83,16,4,sicer,,sicer,Q,PART,O,,O
 sl-83,16,5,velja,,veljati,Vmpr3s,VERB,O,,O
-sl-83,16,6,za,,za,Sa,ADP,O,,B-PER
+sl-83,16,6,za,,za,Sa,ADP,O,,O
 sl-83,16,7,najbolj,,najbolj,Rgs,ADV,O,,O
 sl-83,16,8,prometno,,prometen,Agpnsa,ADJ,O,,O
 sl-83,16,9,nemško,,nemški,Agpnsa,ADJ,O,,O

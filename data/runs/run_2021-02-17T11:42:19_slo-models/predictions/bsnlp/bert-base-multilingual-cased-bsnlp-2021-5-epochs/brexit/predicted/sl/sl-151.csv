@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-151,0,1,Od,,od,Sg,ADP,O,,O
 sl-151,0,2,srede,,sreda,Ncfsg,NOUN,O,,O
 sl-151,0,3,do,,do,Sg,ADP,O,,O
@@ -34,7 +34,7 @@ sl-151,2,2,se,,se,Px------y,PRON,O,,O
 sl-151,2,3,Britanci,Britanec,Britanec,Npmpn,PROPN,B-PER,GPE-Great-Britain,B-PER
 sl-151,2,4,odpravijo,,odpraviti,Vmer3p,VERB,O,,O
 sl-151,2,5,na,,na,Sa,ADP,O,,O
-sl-151,2,6,evropske,,evropski,Agpfpa,ADJ,O,,B-ORG
+sl-151,2,6,evropske,,evropski,Agpfpa,ADJ,O,,O
 sl-151,2,7,volitve,,volitev,Ncfpa,NOUN,O,,O
 sl-151,2,8,imajo,,imeti,Vmpr3p-n,VERB,O,,O
 sl-151,2,9,izjemno,,izjemno,Rgp,ADV,O,,O
@@ -68,7 +68,7 @@ sl-151,3,20,sprašuje,,spraševati,Vmpr3s,VERB,O,,O
 sl-151,3,21,Delov,Delo,Delov,Aspmsnn,ADJ,B-ORG,ORG-Delo,B-PER
 sl-151,3,22,komentator,,komentator,Ncmsn,NOUN,O,,O
 sl-151,3,23,Ali,Ali,Ali,Npmsn,PROPN,B-PER,PER-Ali-Žerdin,B-PER
-sl-151,3,24,Žerdin,Žerdin,Žerdin,Npmsn,PROPN,I-PER,PER-Ali-Žerdin,B-PER
+sl-151,3,24,Žerdin,Žerdin,Žerdin,Npmsn,PROPN,I-PER,PER-Ali-Žerdin,I-PER
 sl-151,3,25,.,,.,Z,PUNCT,O,,O
 sl-151,4,1,V,,v,Sl,ADP,O,,O
 sl-151,4,2,britanskem,,britanski,Agpmsl,ADJ,O,,B-ORG
@@ -108,7 +108,7 @@ sl-151,5,14,ulica,,ulica,Ncfsn,NOUN,O,,O
 sl-151,5,15,",",,",",Z,PUNCT,O,,O
 sl-151,5,16,meni,,meniti,Vmpr3s,VERB,O,,O
 sl-151,5,17,Janez,Janez,Janez,Npmsn,PROPN,B-PER,PER-Janez-Markeš,B-PER
-sl-151,5,18,Markeš,Markeš,Markeš,Npmsn,PROPN,I-PER,PER-Janez-Markeš,B-PER
+sl-151,5,18,Markeš,Markeš,Markeš,Npmsn,PROPN,I-PER,PER-Janez-Markeš,I-PER
 sl-151,5,19,.,,.,Z,PUNCT,O,,O
 sl-151,6,1,Evropska,Evropska,evropski,Agpfsn,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-151,6,2,Unija,Unija,Unija,Npfsn,PROPN,I-ORG,ORG-European-Union,I-ORG
@@ -134,7 +134,7 @@ sl-151,6,21,ne,,ne,Q,PART,O,,O
 sl-151,6,22,sme,,smeti,Vmpr3s,VERB,O,,O
 sl-151,6,23,vplivati,,vplivati,Vmpn,VERB,O,,O
 sl-151,6,24,na,,na,Sa,ADP,O,,O
-sl-151,6,25,evropske,,evropski,Agpfpa,ADJ,O,,B-ORG
+sl-151,6,25,evropske,,evropski,Agpfpa,ADJ,O,,O
 sl-151,6,26,volitve,,volitev,Ncfpa,NOUN,O,,O
 sl-151,6,27,.,,.,Z,PUNCT,O,,O
 sl-151,7,1,Žerdin,Žerdin,Žerdin,Npmsn,PROPN,B-PER,PER-Ali-Žerdin,B-PER
@@ -184,7 +184,7 @@ sl-151,9,17,gospodarstvenik,,gospodarstvenik,Ncmsn,NOUN,O,,O
 sl-151,9,18,",",,",",Z,PUNCT,O,,O
 sl-151,9,19,prav,,prav,Q,PART,O,,O
 sl-151,9,20,tako,,tako,Rgp,ADV,O,,O
-sl-151,9,21,Gros,Gros,Gros,Npmsn,PROPN,B-PER,PER-Anton-Gros,I-PER
+sl-151,9,21,Gros,Gros,Gros,Npmsn,PROPN,B-PER,PER-Anton-Gros,B-PER
 sl-151,9,22,",",,",",Z,PUNCT,O,,O
 sl-151,9,23,zato,,zato,Cc,CCONJ,O,,O
 sl-151,9,24,so,,biti,Va-r3p-n,AUX,O,,O
@@ -231,7 +231,7 @@ sl-151,11,8,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-151,11,9,tudi,,tudi,Q,PART,O,,O
 sl-151,11,10,dandanes,,dandanes,Rgp,ADV,O,,O
 sl-151,11,11,.,,.,Z,PUNCT,O,,O
-sl-151,12,1,Markeš,Markeš,Markeš,Npmsn,PROPN,B-PER,PER-Janez-Markeš,B-PER
+sl-151,12,1,Markeš,Markeš,Markeš,Npmsn,PROPN,B-PER,PER-Janez-Markeš,O
 sl-151,12,2,ob,,ob,Sl,ADP,O,,O
 sl-151,12,3,tem,,ta,Pd-nsl,DET,O,,O
 sl-151,12,4,opozori,,opozoriti,Vmer3s,VERB,O,,O

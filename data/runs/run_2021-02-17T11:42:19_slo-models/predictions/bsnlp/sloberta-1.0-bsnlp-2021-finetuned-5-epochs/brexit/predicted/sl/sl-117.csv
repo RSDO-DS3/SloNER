@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-117,0,1,Britanska,Britanska,britanski,Agpfsn,ADJ,B-ORG,ORG-British-Government,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-117,0,1,Britanska,Britanska,britanski,Agpfsn,ADJ,B-ORG,ORG-British-Government,B-ORG
 sl-117,0,2,vlada,vlada,vlada,Ncfsn,NOUN,I-ORG,ORG-British-Government,O
 sl-117,0,3,v,,v,Sl,ADP,O,,O
 sl-117,0,4,načrtih,,načrt,Ncmpl,NOUN,O,,O
@@ -32,7 +32,7 @@ sl-117,2,5,navajajo,,navajati,Vmpr3p,VERB,O,,O
 sl-117,2,6,",",,",",Z,PUNCT,O,,O
 sl-117,2,7,da,,da,Cs,SCONJ,O,,O
 sl-117,2,8,bi,,biti,Va-c,AUX,O,,O
-sl-117,2,9,brexit,brexit,brexit,Ncmsn,NOUN,B-EVT,EVT-Brexit,O
+sl-117,2,9,brexit,brexit,brexit,Ncmsn,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-117,2,10,brez,,brez,Sg,ADP,O,,O
 sl-117,2,11,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-117,2,12,vodil,,voditi,Vmpp-sm,VERB,O,,O
@@ -48,7 +48,7 @@ sl-117,2,21,in,,in,Cc,CCONJ,O,,O
 sl-117,2,22,sestavin,,sestavina,Ncfpg,NOUN,O,,O
 sl-117,2,23,ter,,ter,Cc,CCONJ,O,,O
 sl-117,2,24,dvig,,dvig,Ncmsan,NOUN,O,,O
-sl-117,2,25,cen,,cena,Ncfpg,NOUN,O,,I-PER
+sl-117,2,25,cen,,cena,Ncfpg,NOUN,O,,O
 sl-117,2,26,hrane,,hrana,Ncfsg,NOUN,O,,O
 sl-117,2,27,in,,in,Cc,CCONJ,O,,O
 sl-117,2,28,nafte,,nafta,Ncfsg,NOUN,O,,O
@@ -67,7 +67,7 @@ sl-117,3,2,motenj,,motnja,Ncfpg,NOUN,O,,O
 sl-117,3,3,",",,",",Z,PUNCT,O,,O
 sl-117,3,4,ki,,ki,Cs,SCONJ,O,,O
 sl-117,3,5,bi,,biti,Va-c,AUX,O,,O
-sl-117,3,6,lahko,,lahko,Rgp,ADV,O,,I-PER
+sl-117,3,6,lahko,,lahko,Rgp,ADV,O,,O
 sl-117,3,7,trajale,,trajati,Vmpp-pf,VERB,O,,O
 sl-117,3,8,pol,,pol,Rgp,DET,O,,O
 sl-117,3,9,leta,,leto,Ncnsg,NOUN,O,,O
@@ -99,7 +99,7 @@ sl-117,4,14,lahko,,lahko,Rgp,ADV,O,,O
 sl-117,4,15,v,,v,Sl,ADP,O,,O
 sl-117,4,16,državi,,država,Ncfsl,NOUN,O,,O
 sl-117,4,17,zvrstilo,,zvrstiti,Vmep-sn,VERB,O,,O
-sl-117,4,18,več,,več,Rgc,DET,O,,I-PER
+sl-117,4,18,več,,več,Rgc,DET,O,,O
 sl-117,4,19,protestov,,protest,Ncmpg,NOUN,O,,O
 sl-117,4,20,",",,",",Z,PUNCT,O,,O
 sl-117,4,21,tovornjaki,,tovornjak,Ncmpn,NOUN,O,,O
@@ -133,13 +133,13 @@ sl-117,5,14,na,,na,Sl,ADP,O,,O
 sl-117,5,15,črnem,,črn,Agpmsl,ADJ,O,,O
 sl-117,5,16,trgu,,trg,Ncmsl,NOUN,O,,O
 sl-117,5,17,.,,.,Z,PUNCT,O,,O
-sl-117,6,1,Laburisti,Laburisti,Laburist,Npmpn,PROPN,B-PER,ORG-Labour-Party-UK,O
+sl-117,6,1,Laburisti,Laburisti,Laburist,Npmpn,PROPN,B-PER,ORG-Labour-Party-UK,B-PER
 sl-117,6,2,:,,:,Z,PUNCT,O,,O
 sl-117,6,3,Nujen,,nujen,Agpmsnn,ADJ,O,,O
 sl-117,6,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-117,6,5,sklic,,sklic,Ncmsn,NOUN,O,,O
 sl-117,6,6,parlamenta,,parlament,Ncmsg,NOUN,O,,O
-sl-117,7,1,Laburisti,Laburisti,Laburist,Npmpn,PROPN,B-PER,ORG-Labour-Party-UK,O
+sl-117,7,1,Laburisti,Laburisti,Laburist,Npmpn,PROPN,B-PER,ORG-Labour-Party-UK,B-PER
 sl-117,7,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-117,7,3,danes,,danes,Rgp,ADV,O,,O
 sl-117,7,4,sporočili,,sporočiti,Vmep-pm,VERB,O,,O
@@ -156,7 +156,7 @@ sl-117,7,14,sklic,,sklic,Ncmsn,NOUN,O,,O
 sl-117,7,15,zasedanja,,zasedanje,Ncnsg,NOUN,O,,O
 sl-117,7,16,parlamenta,,parlament,Ncmsg,NOUN,O,,O
 sl-117,7,17,.,,.,Z,PUNCT,O,,O
-sl-117,8,1,Laburist,Laburisti,Laburist,Npmsn,PROPN,B-PER,ORG-Labour-Party-UK,O
+sl-117,8,1,Laburist,Laburisti,Laburist,Npmsn,PROPN,B-PER,ORG-Labour-Party-UK,B-PER
 sl-117,8,2,Keir,Keir,Keir,Npmsn,PROPN,B-PER,PER-Keir-Starmer,B-PER
 sl-117,8,3,Starmer,Starmer,Starmer,Npmsn,PROPN,I-PER,PER-Keir-Starmer,I-PER
 sl-117,8,4,je,,biti,Va-r3s-n,AUX,O,,O
@@ -170,11 +170,11 @@ sl-117,8,11,resne,,resen,Agpfpa,ADJ,O,,O
 sl-117,8,12,grožnje,,grožnja,Ncfpa,NOUN,O,,O
 sl-117,8,13,v,,v,Sl,ADP,O,,O
 sl-117,8,14,primeru,,primer,Ncmsl,NOUN,O,,O
-sl-117,8,15,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,O
+sl-117,8,15,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-117,8,16,brez,,brez,Sg,ADP,O,,O
 sl-117,8,17,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-117,8,18,.,,.,Z,PUNCT,O,,O
-sl-117,9,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,B-PER
+sl-117,9,1,Poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-117,9,2,bi,,biti,Va-c,AUX,O,,O
 sl-117,9,3,morali,,morati,Vmpp-pm,VERB,O,,O
 sl-117,9,4,imeti,,imeti,Vmpn,VERB,O,,O
@@ -188,7 +188,7 @@ sl-117,9,11,na,,na,Sa,ADP,O,,O
 sl-117,9,12,vse,,ves,Pg-mpa,DET,O,,O
 sl-117,9,13,načine,,način,Ncmpa,NOUN,O,,O
 sl-117,9,14,preprečijo,,preprečiti,Vmer3p,VERB,O,,O
-sl-117,9,15,ta,,ta,Pd-msa,DET,O,,B-EVT
+sl-117,9,15,ta,,ta,Pd-msa,DET,O,,O
 sl-117,9,16,scenarij,,scenarij,Ncmsan,NOUN,O,,O
 sl-117,9,17,.,,.,Z,PUNCT,O,,O
 sl-117,10,1,Britanski,Britanski,britanski,Agpmpn,ADJ,B-PER,PER-UK-MP,B-PER
@@ -225,7 +225,7 @@ sl-117,11,14,bi,,biti,Va-c,AUX,O,,O
 sl-117,11,15,ublažila,,ublažiti,Vmep-sf,VERB,O,,O
 sl-117,11,16,posledice,,posledica,Ncfpa,NOUN,O,,O
 sl-117,11,17,morebitnega,,morebiten,Agpmsg,ADJ,O,,O
-sl-117,11,18,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,O
+sl-117,11,18,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-117,11,19,brez,,brez,Sg,ADP,O,,O
 sl-117,11,20,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-117,11,21,.,,.,Z,PUNCT,O,,O
@@ -276,7 +276,7 @@ sl-117,14,8,britanski,,britanski,Agpfsl,ADJ,O,,O
 sl-117,14,9,vladi,,vlada,Ncfsl,NOUN,O,,O
 sl-117,14,10,zadolžen,,zadolžen,Appmsnn,ADJ,O,,O
 sl-117,14,11,za,,za,Sa,ADP,O,,O
-sl-117,14,12,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,O
+sl-117,14,12,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-117,14,13,",",,",",Z,PUNCT,O,,O
 sl-117,14,14,je,,biti,Va-r3s-n,AUX,O,,O
 sl-117,14,15,zagotovil,,zagotoviti,Vmep-sm,VERB,O,,O
@@ -295,7 +295,7 @@ sl-117,14,27,bi,,biti,Va-c,AUX,O,,O
 sl-117,14,28,zagotovili,,zagotoviti,Vmep-pm,VERB,O,,O
 sl-117,14,29,kar,,kar,Rgp,ADV,O,,O
 sl-117,14,30,najbolj,,najbolj,Rgs,ADV,O,,O
-sl-117,14,31,varno,,varen,Agpnsa,ADJ,O,,I-LOC
+sl-117,14,31,varno,,varen,Agpnsa,ADJ,O,,O
 sl-117,14,32,slovo,,slovo,Ncnsa,NOUN,O,,O
 sl-117,14,33,od,,od,Sg,ADP,O,,O
 sl-117,14,34,Evropske,Evropska,evropski,Agpfsg,ADJ,B-ORG,ORG-European-Union,B-ORG

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-130,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-130,0,2,:,,:,Z,PUNCT,O,,O
 sl-130,0,3,pred,,pred,Sa,ADP,O,,O
@@ -144,7 +144,7 @@ sl-130,5,15,tesno,,tesno,Rgp,ADV,O,,O
 sl-130,5,16,gospodarsko,,gospodarsko,Rgp,ADV,O,,O
 sl-130,5,17,povezana,,povezan,Appfsn,ADJ,O,,O
 sl-130,5,18,z,,z,Si,ADP,O,,O
-sl-130,5,19,unijo,,unija,Ncfsi,NOUN,O,,B-ORG
+sl-130,5,19,unijo,,unija,Ncfsi,NOUN,O,,O
 sl-130,5,20,",",,",",Z,PUNCT,O,,O
 sl-130,5,21,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-130,5,22,namreč,,namreč,Cc,CCONJ,O,,O
@@ -172,7 +172,7 @@ sl-130,6,7,teden,,teden,Ncmsan,NOUN,O,,O
 sl-130,6,8,računa,,računati,Vmpr3s,VERB,O,,O
 sl-130,6,9,na,,na,Sa,ADP,O,,O
 sl-130,6,10,podporo,,podpora,Ncfsa,NOUN,O,,O
-sl-130,6,11,ulstrskih,ulstrski,ulstrski,Agpmpg,ADJ,B-ORG,ORG-Ulster-Unionist-Party,O
+sl-130,6,11,ulstrskih,ulstrski,ulstrski,Agpmpg,ADJ,B-ORG,ORG-Ulster-Unionist-Party,B-PER
 sl-130,6,12,unionistov,unionisti,unionist,Ncmpg,NOUN,I-ORG,ORG-Ulster-Unionist-Party,I-PER
 sl-130,6,13,",",,",",Z,PUNCT,O,,O
 sl-130,6,14,s,,z,Si,ADP,O,,O
@@ -195,7 +195,7 @@ sl-130,7,6,trgovini,,trgovina,Ncfsl,NOUN,O,,O
 sl-130,8,1,Danes,,danes,Rgp,ADV,O,,O
 sl-130,8,2,naj,,naj,Q,PART,O,,O
 sl-130,8,3,bi,,biti,Va-c,AUX,O,,O
-sl-130,8,4,poslanci,,poslanec,Ncmpn,NOUN,O,,O
+sl-130,8,4,poslanci,,poslanec,Ncmpn,NOUN,O,,B-PER
 sl-130,8,5,odločali,,odločati,Vmpp-pm,VERB,O,,O
 sl-130,8,6,o,,o,Sl,ADP,O,,O
 sl-130,8,7,zakonu,,zakon,Ncmsl,NOUN,O,,O
@@ -218,8 +218,8 @@ sl-130,8,23,vlado,,vlada,Ncfsa,NOUN,O,,O
 sl-130,8,24,najbolj,,najbolj,Rgs,ADV,O,,O
 sl-130,8,25,skrbi,,skrbeti,Vmpr3s,VERB,O,,O
 sl-130,8,26,.,,.,Z,PUNCT,O,,O
-sl-130,9,1,Nekateri,,nekateri,Pi-mpn,DET,O,,O
-sl-130,9,2,poslanci,,poslanec,Ncmpn,NOUN,O,,O
+sl-130,9,1,Nekateri,,nekateri,Pi-mpn,DET,O,,B-PER
+sl-130,9,2,poslanci,,poslanec,Ncmpn,NOUN,O,,I-PER
 sl-130,9,3,namreč,,namreč,Cc,CCONJ,O,,O
 sl-130,9,4,nameravajo,,nameravati,Vmpr3p,VERB,O,,O
 sl-130,9,5,podpreti,,podpreti,Vmen,VERB,O,,O
@@ -231,7 +231,7 @@ sl-130,9,10,ki,,ki,Cs,SCONJ,O,,O
 sl-130,9,11,predvideva,,predvidevati,Vmpr3s,VERB,O,,O
 sl-130,9,12,trajno,,trajen,Agpfsa,ADJ,O,,O
 sl-130,9,13,carinsko,,carinski,Agpfsa,ADJ,O,,O
-sl-130,9,14,unijo,,unija,Ncfsa,NOUN,O,,B-ORG
+sl-130,9,14,unijo,,unija,Ncfsa,NOUN,O,,O
 sl-130,9,15,med,,med,Si,ADP,O,,O
 sl-130,9,16,Veliko,Velika,velik,Agpfsi,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-130,9,17,Britanijo,Britanija,Britanija,Npfsi,PROPN,I-LOC,GPE-Great-Britain,I-LOC
@@ -356,7 +356,7 @@ sl-130,14,12,«,,«,Z,PUNCT,O,,O
 sl-130,14,13,je,,biti,Va-r3s-n,AUX,O,,O
 sl-130,14,14,zapisala,,zapisati,Vmep-sf,VERB,O,,O
 sl-130,14,15,.,,.,Z,PUNCT,O,,O
-sl-130,15,1,Evroskeptiki,,evroskeptik,Ncmpn,NOUN,O,,B-PER
+sl-130,15,1,Evroskeptiki,,evroskeptik,Ncmpn,NOUN,O,,O
 sl-130,15,2,v,,v,Sl,ADP,O,,O
 sl-130,15,3,vrstah,,vrsta,Ncfpl,NOUN,O,,O
 sl-130,15,4,torijcev,torijci,torijec,Ncmpg,NOUN,B-ORG,ORG-Tories,B-PER
@@ -424,7 +424,7 @@ sl-130,18,18,glede,,glede,Sg,ADP,O,,O
 sl-130,18,19,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-130,18,20,in,,in,Cc,CCONJ,O,,O
 sl-130,18,21,razpadom,,razpad,Ncmsi,NOUN,O,,O
-sl-130,18,22,konservativcev,konservativci,konservativec,Ncmpg,NOUN,B-ORG,ORG-Conservative-and-Unionist-Party-UK,B-PER
+sl-130,18,22,konservativcev,konservativci,konservativec,Ncmpg,NOUN,B-ORG,ORG-Conservative-and-Unionist-Party-UK,B-ORG
 sl-130,18,23,.,,.,Z,PUNCT,O,,O
 sl-130,19,1,»,,»,Z,PUNCT,O,,O
 sl-130,19,2,Neizogibna,,neizogiben,Agpfsn,ADJ,O,,O
@@ -537,7 +537,7 @@ sl-130,21,48,spreminjati,,spreminjati,Vmpn,VERB,O,,O
 sl-130,21,49,.,,.,Z,PUNCT,O,,O
 sl-130,22,1,Namestnik,,namestnik,Ncmsn,NOUN,O,,O
 sl-130,22,2,vodje,,vodja,Ncmsg,NOUN,O,,O
-sl-130,22,3,laburistov,laburist,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-PER
+sl-130,22,3,laburistov,laburist,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-ORG
 sl-130,22,4,Tom,Tom,Tom,Npmsn,PROPN,B-PER,PER-Tom-Watson,B-PER
 sl-130,22,5,Watson,Watson,Watson,Npmsn,PROPN,I-PER,PER-Tom-Watson,I-PER
 sl-130,22,6,je,,biti,Va-r3s-n,AUX,O,,O

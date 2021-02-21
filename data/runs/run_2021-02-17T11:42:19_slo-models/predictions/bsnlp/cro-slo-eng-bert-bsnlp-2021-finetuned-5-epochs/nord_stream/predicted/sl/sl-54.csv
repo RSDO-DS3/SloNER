@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-54,0,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
 sl-54,0,2,in,,in,Cc,CCONJ,O,,O
 sl-54,0,3,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
@@ -12,11 +12,11 @@ sl-54,0,10,Siriji,Sirija,Sirija,Npfsl,PROPN,B-LOC,GPE-Syria,B-LOC
 sl-54,0,11,in,,in,Cc,CCONJ,O,,O
 sl-54,0,12,na,,na,Sl,ADP,O,,O
 sl-54,0,13,vzhodu,vzhod,vzhod,Ncmsl,NOUN,B-LOC,LOC-East-Ukraine,B-LOC
-sl-54,0,14,Ukrajine,Ukrajine,Ukrajina,Npfsg,PROPN,I-LOC,LOC-East-Ukraine,B-LOC
+sl-54,0,14,Ukrajine,Ukrajine,Ukrajina,Npfsg,PROPN,I-LOC,LOC-East-Ukraine,I-LOC
 sl-54,1,1,Ruski,,ruski,Agpmsny,ADJ,O,,O
 sl-54,1,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-54,1,3,Vladimir,Vladimir,Vladimir,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
-sl-54,1,4,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,B-PER
+sl-54,1,4,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,I-PER
 sl-54,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-54,1,6,pozno,,pozno,Rgp,ADV,O,,O
 sl-54,1,7,popoldne,,popoldne,Rgp,ADV,O,,O
@@ -37,7 +37,7 @@ sl-54,2,1,Njuni,,njun,Ps3mpnd,DET,O,,O
 sl-54,2,2,pogovori,,pogovor,Ncmpn,NOUN,O,,O
 sl-54,2,3,v,,v,Sl,ADP,O,,O
 sl-54,2,4,gradu,grad,grad,Ncmsl,NOUN,B-LOC,GPE-Schloss-Meseberg,O
-sl-54,2,5,Meseberg,Meseberg,Meseberg,Npmsn,PROPN,I-LOC,GPE-Schloss-Meseberg,B-LOC
+sl-54,2,5,Meseberg,Meseberg,Meseberg,Npmsn,PROPN,I-LOC,GPE-Schloss-Meseberg,I-LOC
 sl-54,2,6,na,,na,Sl,ADP,O,,O
 sl-54,2,7,obrobju,,obrobje,Ncnsl,NOUN,O,,O
 sl-54,2,8,Berlina,Berlin,Berlin,Npmsg,PROPN,B-LOC,GPE-Berlin,B-LOC
@@ -54,7 +54,7 @@ sl-54,2,18,Siriji,Sirija,Sirija,Npfsl,PROPN,B-LOC,GPE-Syria,B-LOC
 sl-54,2,19,in,,in,Cc,CCONJ,O,,O
 sl-54,2,20,na,,na,Sl,ADP,O,,O
 sl-54,2,21,vzhodu,vzhod,vzhod,Ncmsl,NOUN,B-LOC,LOC-East-Ukraine,B-LOC
-sl-54,2,22,Ukrajine,Ukrajine,Ukrajina,Npfsg,PROPN,I-LOC,LOC-East-Ukraine,B-LOC
+sl-54,2,22,Ukrajine,Ukrajine,Ukrajina,Npfsg,PROPN,I-LOC,LOC-East-Ukraine,I-LOC
 sl-54,2,23,.,,.,Z,PUNCT,O,,O
 sl-54,3,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
 sl-54,3,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -374,7 +374,7 @@ sl-54,16,15,predsednika,,predsednik,Ncmsg,NOUN,O,,O
 sl-54,16,16,Donalda,Donald,Donald,Npmsg,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-54,16,17,Trumpa,Trump,Trump,Npmsg,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-54,16,18,.,,.,Z,PUNCT,O,,O
-sl-54,17,1,Ta,,ta,Pd-msn,DET,O,,O
+sl-54,17,1,Ta,,ta,Pd-msn,DET,O,,B-PER
 sl-54,17,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-54,17,3,med,,med,Si,ADP,O,,O
 sl-54,17,4,drugim,,drug,Mlpnsi,ADJ,O,,O
@@ -453,7 +453,7 @@ sl-54,20,13,odnosov,,odnos,Ncmpg,NOUN,O,,O
 sl-54,20,14,z,,z,Si,ADP,O,,O
 sl-54,20,15,Zahodom,Zahod,Zahod,Npmsi,PROPN,B-LOC,LOC-West,B-LOC
 sl-54,20,16,zaradi,,zaradi,Sg,ADP,O,,O
-sl-54,20,17,ukrajinske,ukrajinska,ukrajinski,Agpfsg,ADJ,B-EVT,EVT-Ukrainian-crisis,B-LOC
+sl-54,20,17,ukrajinske,ukrajinska,ukrajinski,Agpfsg,ADJ,B-EVT,EVT-Ukrainian-crisis,O
 sl-54,20,18,krize,kriza,kriza,Ncfsg,NOUN,I-EVT,EVT-Ukrainian-crisis,O
 sl-54,20,19,.,,.,Z,PUNCT,O,,O
 sl-54,21,1,Avstrijski,Avstrijski,avstrijski,Agpmpn,ADJ,B-PER,ORG-Freedom-Party-of-Austria,B-ORG
@@ -489,7 +489,7 @@ sl-54,21,30,",",,",",Z,PUNCT,O,,O
 sl-54,21,31,tako,,tako,Cc,CCONJ,O,,O
 sl-54,21,32,glede,,glede,Sg,ADP,O,,O
 sl-54,21,33,zasedbe,zasedba,zasedba,Ncfsg,NOUN,B-EVT,EVT-Annexation-of-Crimea,O
-sl-54,21,34,ukrajinskega,ukrajinskega,ukrajinski,Agpmsg,ADJ,I-EVT,EVT-Annexation-of-Crimea,B-LOC
+sl-54,21,34,ukrajinskega,ukrajinskega,ukrajinski,Agpmsg,ADJ,I-EVT,EVT-Annexation-of-Crimea,O
 sl-54,21,35,polotoka,polotoka,polotok,Ncmsg,NOUN,I-EVT,EVT-Annexation-of-Crimea,O
 sl-54,21,36,Krim,Krim,Krim,Npmsn,PROPN,I-EVT,EVT-Annexation-of-Crimea,B-LOC
 sl-54,21,37,kot,,kot,Cs,SCONJ,O,,O
@@ -500,5 +500,5 @@ sl-54,21,41,Evropske,Evropska,evropski,Agpfsg,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-54,21,42,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-54,21,43,.,,.,Z,PUNCT,O,,O
 sl-54,21,44,(,,(,Z,PUNCT,O,,O
-sl-54,21,45,sta,sta,sta,X,X,B-ORG,ORG-Slovenian-Press-Agency,O
+sl-54,21,45,sta,sta,sta,X,X,B-ORG,ORG-Slovenian-Press-Agency,B-ORG
 sl-54,21,46,),,),Z,PUNCT,O,,O

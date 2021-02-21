@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-61,0,1,Italija,Italija,Italija,Npfsn,PROPN,B-LOC,GPE-Italy,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-61,0,1,Italija,Italija,Italija,Npfsn,PROPN,B-LOC,GPE-Italy,B-ORG
 sl-61,0,2,zaradi,,zaradi,Sg,ADP,O,,O
 sl-61,0,3,sprememb,,sprememba,Ncfpg,NOUN,O,,O
 sl-61,0,4,pravil,,pravilo,Ncnpg,NOUN,O,,O
@@ -12,14 +12,14 @@ sl-61,0,10,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-61,0,11,in,,in,Cc,CCONJ,O,,O
 sl-61,0,12,Wizz,Wizz,Wizz,Npmsn,PROPN,B-ORG,ORG-Wizz-Air,B-ORG
 sl-61,0,13,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Wizz-Air,I-ORG
-sl-61,1,1,Italijanski,,italijanski,Agpmsny,ADJ,O,,B-ORG
-sl-61,1,2,varuh,,varuh,Ncmsn,NOUN,O,,I-ORG
+sl-61,1,1,Italijanski,,italijanski,Agpmsny,ADJ,O,,O
+sl-61,1,2,varuh,,varuh,Ncmsn,NOUN,O,,O
 sl-61,1,3,konkurence,,konkurenca,Ncfsg,NOUN,O,,I-ORG
 sl-61,1,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-61,1,5,pred,,pred,Si,ADP,O,,O
 sl-61,1,6,tednom,,teden,Ncmsi,NOUN,O,,O
 sl-61,1,7,dni,,dan,Ncmpg,NOUN,O,,O
-sl-61,1,8,irski,,irski,Agpfsd,ADJ,O,,B-LOC
+sl-61,1,8,irski,,irski,Agpfsd,ADJ,O,,O
 sl-61,1,9,in,,in,Cc,CCONJ,O,,O
 sl-61,1,10,madžarski,,madžarski,Agpfsd,ADJ,O,,O
 sl-61,1,11,letalski,,letalski,Agpfsd,ADJ,O,,O
@@ -123,7 +123,7 @@ sl-61,4,34,prejšnji,,prejšnji,Agpmsay,ADJ,O,,O
 sl-61,4,35,teden,,teden,Ncmsan,NOUN,O,,O
 sl-61,4,36,sporočil,,sporočiti,Vmep-sm,VERB,O,,O
 sl-61,4,37,italijanski,,italijanski,Agpmsny,ADJ,O,,O
-sl-61,4,38,varuh,,varuh,Ncmsn,NOUN,O,,I-ORG
+sl-61,4,38,varuh,,varuh,Ncmsn,NOUN,O,,O
 sl-61,4,39,konkurence,,konkurenca,Ncfsg,NOUN,O,,I-ORG
 sl-61,4,40,.,,.,Z,PUNCT,O,,O
 sl-61,5,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG

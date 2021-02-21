@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-12,0,1,Let,,leto,Ncnpg,NOUN,O,,O
 sl-12,0,2,iz,,iz,Sg,ADP,O,,O
 sl-12,0,3,pekla,,pekel,Ncmsg,NOUN,O,,O
@@ -107,8 +107,8 @@ sl-12,4,23,mladeniči,,mladenič,Ncmpn,NOUN,O,,O
 sl-12,4,24,namenjena,,namenjen,Appfsn,ADJ,O,,O
 sl-12,4,25,na,,na,Sa,ADP,O,,O
 sl-12,4,26,festival,,festival,Ncmsan,NOUN,O,,O
-sl-12,4,27,Hard,Hard,Hard,Npmsn,PROPN,B-EVT,EVT-Hard-Island,B-ORG
-sl-12,4,28,Island,Island,Island,Npmsn,PROPN,I-EVT,EVT-Hard-Island,I-LOC
+sl-12,4,27,Hard,Hard,Hard,Npmsn,PROPN,B-EVT,EVT-Hard-Island,B-PRO
+sl-12,4,28,Island,Island,Island,Npmsn,PROPN,I-EVT,EVT-Hard-Island,I-PRO
 sl-12,4,29,v,,v,Sa,ADP,O,,O
 sl-12,4,30,Zrće,Zrće,Zrće,Npmsan,PROPN,B-LOC,LOC-Zrće,B-LOC
 sl-12,4,31,.,,.,Z,PUNCT,O,,O
@@ -349,7 +349,7 @@ sl-12,13,4,na,,na,Sl,ADP,O,,O
 sl-12,13,5,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-12,13,6,že,,že,Q,PART,O,,O
 sl-12,13,7,bila,,biti,Va-p-sf,AUX,O,,O
-sl-12,13,8,hrvaška,,hrvaški,Agpfsn,ADJ,O,,O
+sl-12,13,8,hrvaška,,hrvaški,Agpfsn,ADJ,O,,B-LOC
 sl-12,13,9,policija,,policija,Ncfsn,NOUN,O,,O
 sl-12,13,10,in,,in,Cc,CCONJ,O,,O
 sl-12,13,11,nihče,,nihče,Pz-msn,PRON,O,,O

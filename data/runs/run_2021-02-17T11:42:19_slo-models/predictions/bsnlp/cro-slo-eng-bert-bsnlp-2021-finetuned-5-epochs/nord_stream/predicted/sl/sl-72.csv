@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-72,0,1,Strožji,,strog,Agcmsny,ADJ,O,,O
 sl-72,0,2,nadzor,,nadzor,Ncmsn,NOUN,O,,O
 sl-72,0,3,za,,za,Sa,ADP,O,,O
@@ -76,7 +76,7 @@ sl-72,2,30,hkrati,,hkrati,Rgp,ADV,O,,O
 sl-72,2,31,pa,,pa,Cc,CCONJ,O,,O
 sl-72,2,32,glasne,,glasen,Agpmpa,ADJ,O,,O
 sl-72,2,33,zadržke,,zadržek,Ncmpa,NOUN,O,,O
-sl-72,2,34,baltskih,,baltski,Agpfpg,ADJ,O,,B-LOC
+sl-72,2,34,baltskih,,baltski,Agpfpg,ADJ,O,,O
 sl-72,2,35,držav,,država,Ncfpg,NOUN,O,,O
 sl-72,2,36,",",,",",Z,PUNCT,O,,O
 sl-72,2,37,Poljske,Poljska,Poljska,Npfsg,PROPN,B-LOC,GPE-Poland,B-LOC
@@ -181,9 +181,9 @@ sl-72,6,8,pritisk,,pritisk,Ncmsan,NOUN,O,,O
 sl-72,6,9,lotila,,lotiti,Vmep-sf,VERB,O,,O
 sl-72,6,10,spreminjanja,,spreminjanje,Ncnsg,NOUN,O,,O
 sl-72,6,11,obstoječe,,obstoječ,Appfsg,ADJ,O,,O
-sl-72,6,12,direktive,direktiva,direktiva,Ncfsg,NOUN,B-PRO,PRO-Gas-Directive-EU,O
-sl-72,6,13,o,o,o,Sl,ADP,I-PRO,PRO-Gas-Directive-EU,O
-sl-72,6,14,plinu,plinu,plin,Ncmsl,NOUN,I-PRO,PRO-Gas-Directive-EU,O
+sl-72,6,12,direktive,direktiva,direktiva,Ncfsg,NOUN,B-PRO,PRO-Gas-Directive-EU,B-PRO
+sl-72,6,13,o,o,o,Sl,ADP,I-PRO,PRO-Gas-Directive-EU,I-PRO
+sl-72,6,14,plinu,plinu,plin,Ncmsl,NOUN,I-PRO,PRO-Gas-Directive-EU,I-PRO
 sl-72,6,15,",",,",",Z,PUNCT,O,,O
 sl-72,6,16,da,,da,Cs,SCONJ,O,,O
 sl-72,6,17,bi,,biti,Va-c,AUX,O,,O
@@ -383,7 +383,7 @@ sl-72,12,19,energetski,,energetski,Agpmsny,ADJ,O,,O
 sl-72,12,20,gigant,,gigant,Ncmsn,NOUN,O,,O
 sl-72,12,21,Gazprom,Gazprom,Gazprom,Npmsn,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-72,12,22,slediti,,slediti,Vmpn,VERB,O,,O
-sl-72,12,23,evropski,Evropa,evropski,Agpfsd,ADJ,B-LOC,LOC-Europe,B-ORG
+sl-72,12,23,evropski,Evropa,evropski,Agpfsd,ADJ,B-LOC,LOC-Europe,B-LOC
 sl-72,12,24,regulativi,,regulativa,Ncfsd,NOUN,O,,O
 sl-72,12,25,in,,in,Cc,CCONJ,O,,O
 sl-72,12,26,ne,,ne,Q,PART,O,,O
@@ -404,7 +404,7 @@ sl-72,12,40,tako,,tako,Rgp,ADV,O,,O
 sl-72,12,41,kot,,kot,Cs,SCONJ,O,,O
 sl-72,12,42,pri,,pri,Sl,ADP,O,,O
 sl-72,12,43,Severnem,,severen,Agpmsl,ADJ,O,,B-PRO
-sl-72,12,44,toku,,tok,Ncmsl,NOUN,O,,I-PRO
+sl-72,12,44,toku,,tok,Ncmsl,NOUN,O,,O
 sl-72,12,45,1.,,1.,Mdo,NUM,O,,O
 sl-72,12,46,Prostor,,prostor,Ncmsn,NOUN,O,,O
 sl-72,12,47,za,,za,Sa,ADP,O,,O
@@ -461,7 +461,7 @@ sl-72,13,13,do,,do,Sg,ADP,O,,O
 sl-72,13,14,srednje,srednji,srednji,Agpfsg,ADJ,B-LOC,LOC-Central-Europe,B-LOC
 sl-72,13,15,in,,in,Cc,CCONJ,O,,O
 sl-72,13,16,zahodne,zahodna,zahoden,Agpfsg,ADJ,B-LOC,LOC-Western-Europe,B-LOC
-sl-72,13,17,Evrope,Evropa,Evropa,Npfsg,PROPN,I-LOC,LOC-Western-Europe,B-LOC
+sl-72,13,17,Evrope,Evropa,Evropa,Npfsg,PROPN,I-LOC,LOC-Western-Europe,I-LOC
 sl-72,13,18,Moskva,Moskva,Moskva,Npfsn,PROPN,B-LOC,GPE-Moscow,B-LOC
 sl-72,13,19,stiskala,,stiskati,Vmbp-sf,VERB,O,,O
 sl-72,13,20,v,,v,Sa,ADP,O,,O
@@ -523,6 +523,6 @@ sl-72,14,43,Hrvaško,Hrvaška,Hrvaška,Npfsa,PROPN,B-LOC,GPE-Croatia,B-LOC
 sl-72,14,44,s,,z,Si,ADP,O,,O
 sl-72,14,45,terminalom,,terminal,Ncmsi,NOUN,O,,O
 sl-72,14,46,na,,na,Sl,ADP,O,,O
-sl-72,14,47,otoku,,otok,Ncmsl,NOUN,O,,B-LOC
+sl-72,14,47,otoku,,otok,Ncmsl,NOUN,O,,O
 sl-72,14,48,Krk,Krk,Krk,Npmsn,PROPN,B-LOC,GPE-Krk,B-LOC
 sl-72,14,49,.,,.,Z,PUNCT,O,,O

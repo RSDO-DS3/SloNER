@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-39,0,1,Prvi,,prvi,Mlomsn,ADJ,O,,O
 sl-39,0,2,mož,,mož,Ncmsn,NOUN,O,,O
 sl-39,0,3,Lufthanse,Lufthansa,Lufthansa,Npfsg,PROPN,B-ORG,ORG-Lufthansa,B-ORG
@@ -42,7 +42,7 @@ sl-39,1,31,bila,,biti,Va-p-dm,AUX,O,,O
 sl-39,1,32,to,,ta,Pd-nsn,DET,O,,O
 sl-39,1,33,poletje,,poletje,Ncnsn,NOUN,O,,O
 sl-39,1,34,priča,,pričati,Vmpr3s,VERB,O,,O
-sl-39,1,35,avstrijski,,avstrijski,Agpmsny,ADJ,O,,B-LOC
+sl-39,1,35,avstrijski,,avstrijski,Agpmsny,ADJ,O,,O
 sl-39,1,36,in,,in,Cc,CCONJ,O,,O
 sl-39,1,37,nemški,,nemški,Agpmsny,ADJ,O,,O
 sl-39,1,38,trg,,trg,Ncmsn,NOUN,O,,O
@@ -71,7 +71,7 @@ sl-39,2,13,dpa,dpa,dpa,Npfsg,PROPN,B-ORG,ORG-DPA,B-ORG
 sl-39,2,14,najverjetneje,,verjetno,Rgs,ADV,O,,O
 sl-39,2,15,v,,v,Sl,ADP,O,,O
 sl-39,2,16,mislih,,misel,Ncfpl,NOUN,O,,O
-sl-39,2,17,irskega,,irski,Agpmsg,ADJ,O,,B-ORG
+sl-39,2,17,irskega,,irski,Agpmsg,ADJ,O,,O
 sl-39,2,18,nizkocenovnega,,nizkocenoven,Agpmsa,ADJ,O,,O
 sl-39,2,19,prevoznika,,prevoznik,Ncmsg,NOUN,O,,O
 sl-39,2,20,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
@@ -96,7 +96,7 @@ sl-39,3,9,trg,,trg,Ncmsan,NOUN,O,,O
 sl-39,3,10,",",,",",Z,PUNCT,O,,O
 sl-39,3,11,temveč,,temveč,Cc,CCONJ,O,,O
 sl-39,3,12,nas,,jaz,Pp1-pa,PRON,O,,O
-sl-39,3,13,tudi,,tudi,Q,PART,O,,B-LOC
+sl-39,3,13,tudi,,tudi,Q,PART,O,,O
 sl-39,3,14,bolj,,bolj,Rgc,ADV,O,,O
 sl-39,3,15,izpostavijo,,izpostaviti,Vmer3p,VERB,O,,O
 sl-39,3,16,kritikam,,kritika,Ncfpd,NOUN,O,,O
@@ -122,9 +122,9 @@ sl-39,4,1,Poudaril,,poudariti,Vmep-sm,VERB,O,,O
 sl-39,4,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-39,4,3,",",,",",Z,PUNCT,O,,O
 sl-39,4,4,da,,da,Cs,SCONJ,O,,O
-sl-39,4,5,se,,se,Px------y,PRON,O,,B-ORG
+sl-39,4,5,se,,se,Px------y,PRON,O,,O
 sl-39,4,6,pri,,pri,Sl,ADP,O,,O
-sl-39,4,7,Lufthansi,Lufthansa,Lufthansa,Npfsl,PROPN,B-ORG,ORG-Lufthansa,O
+sl-39,4,7,Lufthansi,Lufthansa,Lufthansa,Npfsl,PROPN,B-ORG,ORG-Lufthansa,B-ORG
 sl-39,4,8,zavedajo,,zavedati,Vmpr3p,VERB,O,,O
 sl-39,4,9,svoje,,svoj,Px-fsg,DET,O,,O
 sl-39,4,10,odgovornosti,,odgovornost,Ncfsg,NOUN,O,,O
@@ -174,8 +174,8 @@ sl-39,5,29,proizvajali,,proizvajati,Vmpp-pm,VERB,O,,O
 sl-39,5,30,tudi,,tudi,Q,PART,O,,O
 sl-39,5,31,sintetično,,sintetično,Rgp,ADV,O,,O
 sl-39,5,32,.,,.,Z,PUNCT,O,,O
-sl-39,6,1,Spohr,Spohr,Spohr,Npmsn,PROPN,B-PER,PER-Carsten-Spohr,O
-sl-39,6,2,se,,se,Px------y,PRON,O,,B-ORG
+sl-39,6,1,Spohr,Spohr,Spohr,Npmsn,PROPN,B-PER,PER-Carsten-Spohr,B-PER
+sl-39,6,2,se,,se,Px------y,PRON,O,,O
 sl-39,6,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-39,6,4,obenem,,obenem,Rgp,ADV,O,,O
 sl-39,6,5,zavzel,,zavzeti,Vmep-sm,VERB,O,,O
@@ -215,7 +215,7 @@ sl-39,6,38,.,,.,Z,PUNCT,O,,O
 sl-39,7,1,Nemška,,nemški,Agpfsn,ADJ,O,,O
 sl-39,7,2,letalska,,letalski,Agpfsn,ADJ,O,,O
 sl-39,7,3,skupina,,skupina,Ncfsn,NOUN,O,,O
-sl-39,7,4,Lufthansa,Lufthansa,Lufthansa,Npfsn,PROPN,B-ORG,ORG-Lufthansa,O
+sl-39,7,4,Lufthansa,Lufthansa,Lufthansa,Npfsn,PROPN,B-ORG,ORG-Lufthansa,B-ORG
 sl-39,7,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-39,7,6,v,,v,Sl,ADP,O,,O
 sl-39,7,7,letošnjem,,letošnji,Agpnsl,ADJ,O,,O
@@ -267,7 +267,7 @@ sl-39,8,24,v,,v,Sl,ADP,O,,O
 sl-39,8,25,Evropi,Evropa,Evropa,Npfsl,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-39,8,26,.,,.,Z,PUNCT,O,,O
 sl-39,9,1,Tudi,,tudi,Q,PART,O,,O
-sl-39,9,2,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-39,9,2,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-39,9,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-39,9,4,sicer,,sicer,Q,PART,O,,O
 sl-39,9,5,v,,v,Sl,ADP,O,,O

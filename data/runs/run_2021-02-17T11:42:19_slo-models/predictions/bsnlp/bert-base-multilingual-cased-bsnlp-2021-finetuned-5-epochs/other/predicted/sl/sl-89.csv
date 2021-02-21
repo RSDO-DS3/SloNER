@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-89,0,1,Kako,,kako,Rgp,ADV,O,,O
 sl-89,0,2,letalske,,letalski,Agpfpn,ADJ,O,,O
 sl-89,0,3,družbe,,družba,Ncfpn,NOUN,O,,O
@@ -315,7 +315,7 @@ sl-89,17,18,ne,,ne,Q,PART,O,,O
 sl-89,17,19,poslovnim,,posloven,Agpnpd,ADJ,O,,O
 sl-89,17,20,letom,,leto,Ncnpd,NOUN,O,,O
 sl-89,17,21,.,,.,Z,PUNCT,O,,O
-sl-89,18,1,Turisti,,turist,Ncmpn,NOUN,O,,B-PER
+sl-89,18,1,Turisti,,turist,Ncmpn,NOUN,O,,O
 sl-89,18,2,za,,za,Sa,ADP,O,,O
 sl-89,18,3,letalske,,letalski,Agpfpa,ADJ,O,,O
 sl-89,18,4,karte,,karta,Ncfpa,NOUN,O,,O

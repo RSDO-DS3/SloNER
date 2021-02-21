@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-78,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-78,0,2,med,,med,Si,ADP,O,,O
 sl-78,0,3,top,,top,Ncmsn,NOUN,O,,O
@@ -213,11 +213,11 @@ sl-78,8,25,energije,,energija,Ncfsg,NOUN,O,,O
 sl-78,8,26,uporabljajo,,uporabljati,Vmpr3p,VERB,O,,O
 sl-78,8,27,lignit,,lignit,Ncmsan,NOUN,O,,O
 sl-78,8,28,.,,.,Z,PUNCT,O,,O
-sl-78,9,1,Agencija,Agencija,agencija,Ncfsn,NOUN,B-ORG,ORG-European-Environment-Agency,O
-sl-78,9,2,za,za,za,Sa,ADP,I-ORG,ORG-European-Environment-Agency,O
-sl-78,9,3,transport,transport,transport,Ncmsan,NOUN,I-ORG,ORG-European-Environment-Agency,O
-sl-78,9,4,in,in,in,Cc,CCONJ,I-ORG,ORG-European-Environment-Agency,O
-sl-78,9,5,okolje,okolje,okolje,Ncnsa,NOUN,I-ORG,ORG-European-Environment-Agency,O
+sl-78,9,1,Agencija,Agencija,agencija,Ncfsn,NOUN,B-ORG,ORG-European-Environment-Agency,B-ORG
+sl-78,9,2,za,za,za,Sa,ADP,I-ORG,ORG-European-Environment-Agency,I-ORG
+sl-78,9,3,transport,transport,transport,Ncmsan,NOUN,I-ORG,ORG-European-Environment-Agency,I-ORG
+sl-78,9,4,in,in,in,Cc,CCONJ,I-ORG,ORG-European-Environment-Agency,I-ORG
+sl-78,9,5,okolje,okolje,okolje,Ncnsa,NOUN,I-ORG,ORG-European-Environment-Agency,I-ORG
 sl-78,9,6,zavoljo,,zavoljo,Sg,ADP,O,,O
 sl-78,9,7,sestave,,sestava,Ncfsg,NOUN,O,,O
 sl-78,9,8,seznama,,seznam,Ncmsg,NOUN,O,,O
@@ -313,7 +313,7 @@ sl-78,12,26,uvedli,,uvesti,Vmep-pm,VERB,O,,O
 sl-78,12,27,že,,že,Q,PART,O,,O
 sl-78,12,28,leta,,leto,Ncnsg,NOUN,O,,O
 sl-78,12,29,2005.,,2005.,Mdo,NUM,O,,O
-sl-78,13,1,ETS,ETS,ETS,Npmsn,PROPN,B-ORG,ORG-ETS-EU-Emissions-Trading-System,B-PRO
+sl-78,13,1,ETS,ETS,ETS,Npmsn,PROPN,B-ORG,ORG-ETS-EU-Emissions-Trading-System,B-ORG
 sl-78,13,2,deluje,,delovati,Vmpr3s,VERB,O,,O
 sl-78,13,3,po,,po,Sl,ADP,O,,O
 sl-78,13,4,načelu,,načelo,Ncnsl,NOUN,O,,O

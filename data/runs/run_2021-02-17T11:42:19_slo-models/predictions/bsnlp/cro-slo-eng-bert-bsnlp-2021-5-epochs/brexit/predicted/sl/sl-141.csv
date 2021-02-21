@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-141,0,1,Velika,Velika,velik,Agpfsn,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-141,0,2,Britanija,Britanija,Britanija,Npfsn,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-141,0,3,lahko,,lahko,Rgp,ADV,O,,O
@@ -18,7 +18,7 @@ sl-141,1,10,z,,z,Si,ADP,O,,O
 sl-141,1,11,drugimi,,drug,Mlpfpi,ADJ,O,,O
 sl-141,1,12,članicami,,članica,Ncfpi,NOUN,O,,O
 sl-141,1,13,Evropske,Evropska,evropski,Agpfsg,ADJ,B-ORG,ORG-European-Union,B-ORG
-sl-141,1,14,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-European-Union,B-ORG
+sl-141,1,14,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-141,1,15,odloči,,odločiti,Vmer3s,VERB,O,,O
 sl-141,1,16,",",,",",Z,PUNCT,O,,O
 sl-141,1,17,da,,da,Cs,SCONJ,O,,O
@@ -35,7 +35,7 @@ sl-141,1,27,je,,biti,Va-r3s-n,AUX,O,,O
 sl-141,1,28,danes,,danes,Rgp,ADV,O,,O
 sl-141,1,29,odločilo,,odločiti,Vmep-sn,VERB,O,,O
 sl-141,1,30,Sodišče,Sodišče,sodišče,Ncnsn,NOUN,B-ORG,ORG-European-Court-of-Justice,B-ORG
-sl-141,1,31,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-European-Court-of-Justice,B-ORG
+sl-141,1,31,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-European-Court-of-Justice,I-ORG
 sl-141,1,32,v,,v,Sl,ADP,O,,O
 sl-141,1,33,Luksemburgu,Luksemburg,Luksemburg,Npmsl,PROPN,B-LOC,GPE-Luxembourg,B-LOC
 sl-141,1,34,.,,.,Z,PUNCT,O,,O
@@ -96,7 +96,7 @@ sl-141,4,15,iz,,iz,Sg,ADP,O,,O
 sl-141,4,16,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-141,4,17,ostala,,ostati,Vmep-sf,VERB,O,,O
 sl-141,4,18,članica,,članica,Ncfsn,NOUN,O,,O
-sl-141,4,19,unije,,unija,Ncfsg,NOUN,O,,B-ORG
+sl-141,4,19,unije,,unija,Ncfsg,NOUN,O,,O
 sl-141,4,20,",",,",",Z,PUNCT,O,,O
 sl-141,4,21,njen,,njen,Ps3msnsf,DET,O,,O
 sl-141,4,22,status,,status,Ncmsn,NOUN,O,,O
@@ -156,7 +156,7 @@ sl-141,6,5,tem,,ta,Pd-nsl,DET,O,,O
 sl-141,6,6,vprašanju,,vprašanje,Ncnsl,NOUN,O,,O
 sl-141,6,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-141,6,8,na,,na,Sa,ADP,O,,O
-sl-141,6,9,škotsko,,škotski,Agpnsa,ADJ,O,,B-LOC
+sl-141,6,9,škotsko,,škotski,Agpnsa,ADJ,O,,O
 sl-141,6,10,sodišče,Sodišče,sodišče,Ncnsa,NOUN,B-ORG,ORG-European-Court-of-Justice,O
 sl-141,6,11,skupaj,,skupaj,Rgp,ADV,O,,O
 sl-141,6,12,z,,z,Si,ADP,O,,O
@@ -173,7 +173,7 @@ sl-141,7,1,Zadeva,,zadeva,Ncfsn,NOUN,O,,O
 sl-141,7,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-141,7,3,pred,,pred,Sa,ADP,O,,O
 sl-141,7,4,Sodišče,Sodišče,sodišče,Ncnsa,NOUN,B-ORG,ORG-European-Court-of-Justice,B-ORG
-sl-141,7,5,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-European-Court-of-Justice,B-ORG
+sl-141,7,5,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-European-Court-of-Justice,I-ORG
 sl-141,7,6,prišla,,priti,Vmep-sf,VERB,O,,O
 sl-141,7,7,v,,v,Sl,ADP,O,,O
 sl-141,7,8,začetku,,začetek,Ncmsl,NOUN,O,,O
@@ -218,8 +218,8 @@ sl-141,9,2,torek,,torek,Ncmsan,NOUN,O,,O
 sl-141,9,3,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-141,9,4,poslanci,,poslanec,Ncmpn,NOUN,O,,O
 sl-141,9,5,v,,v,Sl,ADP,O,,O
-sl-141,9,6,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,O
-sl-141,9,7,parlamentu,parlament,parlament,Ncmsl,NOUN,I-ORG,ORG-British-Parlament,O
+sl-141,9,6,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,B-ORG
+sl-141,9,7,parlamentu,parlament,parlament,Ncmsl,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-141,9,8,sicer,,sicer,Q,PART,O,,O
 sl-141,9,9,glasovali,,glasovati,Vmbp-pm,VERB,O,,O
 sl-141,9,10,o,,o,Sl,ADP,O,,O

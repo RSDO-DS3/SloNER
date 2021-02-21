@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-43,0,1,V,,v,Sl,ADP,O,,O
 sl-43,0,2,Grčiji,Grčija,Grčija,Npfsl,PROPN,B-LOC,GPE-Greece,B-LOC
 sl-43,0,3,zaradi,,zaradi,Sg,ADP,O,,O
@@ -113,7 +113,7 @@ sl-43,7,14,trajekte,,trajekt,Ncmpa,NOUN,O,,O
 sl-43,7,15,v,,v,Sa,ADP,O,,O
 sl-43,7,16,nedeljo,,nedelja,Ncfsa,NOUN,O,,O
 sl-43,7,17,.,,.,Z,PUNCT,O,,O
-sl-43,8,1,Prva,,prvi,Mlofsn,ADJ,O,,O
+sl-43,8,1,Prva,,prvi,Mlofsn,ADJ,O,,B-PER
 sl-43,8,2,stavka,,stavka,Ncfsn,NOUN,O,,O
 sl-43,8,3,od,,od,Sg,ADP,O,,O
 sl-43,8,4,zapustitve,,zapustitev,Ncfsg,NOUN,O,,O

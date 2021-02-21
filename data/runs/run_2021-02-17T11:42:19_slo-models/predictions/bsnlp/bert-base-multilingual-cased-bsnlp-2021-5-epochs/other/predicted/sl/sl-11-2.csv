@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-11-2,0,1,Obsojen,,obsojen,Appmsnn,ADJ,O,,O
 sl-11-2,0,2,na,,na,Sa,ADP,O,,O
 sl-11-2,0,3,20,,20,Mdc,NUM,O,,O

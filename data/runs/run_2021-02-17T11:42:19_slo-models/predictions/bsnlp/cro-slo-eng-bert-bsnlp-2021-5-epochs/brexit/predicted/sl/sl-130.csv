@@ -1,12 +1,12 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-130,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-130,0,2,:,,:,Z,PUNCT,O,,O
 sl-130,0,3,pred,,pred,Sa,ADP,O,,O
 sl-130,0,4,Mayevo,May,Mayev,Aspfsa,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-130,0,5,teden,,teden,Ncmsan,NOUN,O,,O
 sl-130,0,6,preizkusov,,preizkus,Ncmpg,NOUN,O,,O
-sl-130,1,1,Theresa,Theresa,Theresa,Npfsn,PROPN,B-PER,PER-Theresa-May,B-PRO
-sl-130,1,2,May,May,May,Npfsn,PROPN,I-PER,PER-Theresa-May,O
+sl-130,1,1,Theresa,Theresa,Theresa,Npfsn,PROPN,B-PER,PER-Theresa-May,I-PER
+sl-130,1,2,May,May,May,Npfsn,PROPN,I-PER,PER-Theresa-May,I-PER
 sl-130,2,1,Ob,,ob,Sl,ADP,O,,O
 sl-130,2,2,več,,več,Rgc,DET,O,,O
 sl-130,2,3,glasovanjih,,glasovanje,Ncnpl,NOUN,O,,O
@@ -218,8 +218,8 @@ sl-130,8,23,vlado,,vlada,Ncfsa,NOUN,O,,O
 sl-130,8,24,najbolj,,najbolj,Rgs,ADV,O,,O
 sl-130,8,25,skrbi,,skrbeti,Vmpr3s,VERB,O,,O
 sl-130,8,26,.,,.,Z,PUNCT,O,,O
-sl-130,9,1,Nekateri,,nekateri,Pi-mpn,DET,O,,O
-sl-130,9,2,poslanci,,poslanec,Ncmpn,NOUN,O,,O
+sl-130,9,1,Nekateri,,nekateri,Pi-mpn,DET,O,,B-PER
+sl-130,9,2,poslanci,,poslanec,Ncmpn,NOUN,O,,I-PER
 sl-130,9,3,namreč,,namreč,Cc,CCONJ,O,,O
 sl-130,9,4,nameravajo,,nameravati,Vmpr3p,VERB,O,,O
 sl-130,9,5,podpreti,,podpreti,Vmen,VERB,O,,O
@@ -356,7 +356,7 @@ sl-130,14,12,«,,«,Z,PUNCT,O,,O
 sl-130,14,13,je,,biti,Va-r3s-n,AUX,O,,O
 sl-130,14,14,zapisala,,zapisati,Vmep-sf,VERB,O,,O
 sl-130,14,15,.,,.,Z,PUNCT,O,,O
-sl-130,15,1,Evroskeptiki,,evroskeptik,Ncmpn,NOUN,O,,B-PER
+sl-130,15,1,Evroskeptiki,,evroskeptik,Ncmpn,NOUN,O,,O
 sl-130,15,2,v,,v,Sl,ADP,O,,O
 sl-130,15,3,vrstah,,vrsta,Ncfpl,NOUN,O,,O
 sl-130,15,4,torijcev,torijci,torijec,Ncmpg,NOUN,B-ORG,ORG-Tories,B-PER
@@ -424,7 +424,7 @@ sl-130,18,18,glede,,glede,Sg,ADP,O,,O
 sl-130,18,19,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-130,18,20,in,,in,Cc,CCONJ,O,,O
 sl-130,18,21,razpadom,,razpad,Ncmsi,NOUN,O,,O
-sl-130,18,22,konservativcev,konservativci,konservativec,Ncmpg,NOUN,B-ORG,ORG-Conservative-and-Unionist-Party-UK,B-PER
+sl-130,18,22,konservativcev,konservativci,konservativec,Ncmpg,NOUN,B-ORG,ORG-Conservative-and-Unionist-Party-UK,B-ORG
 sl-130,18,23,.,,.,Z,PUNCT,O,,O
 sl-130,19,1,»,,»,Z,PUNCT,O,,O
 sl-130,19,2,Neizogibna,,neizogiben,Agpfsn,ADJ,O,,O
@@ -537,7 +537,7 @@ sl-130,21,48,spreminjati,,spreminjati,Vmpn,VERB,O,,O
 sl-130,21,49,.,,.,Z,PUNCT,O,,O
 sl-130,22,1,Namestnik,,namestnik,Ncmsn,NOUN,O,,O
 sl-130,22,2,vodje,,vodja,Ncmsg,NOUN,O,,O
-sl-130,22,3,laburistov,laburist,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-PER
+sl-130,22,3,laburistov,laburist,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-ORG
 sl-130,22,4,Tom,Tom,Tom,Npmsn,PROPN,B-PER,PER-Tom-Watson,B-PER
 sl-130,22,5,Watson,Watson,Watson,Npmsn,PROPN,I-PER,PER-Tom-Watson,I-PER
 sl-130,22,6,je,,biti,Va-r3s-n,AUX,O,,O

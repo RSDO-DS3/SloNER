@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-131,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-131,0,2,in,,in,Cc,CCONJ,O,,O
 sl-131,0,3,evropska,Evropa,evropski,Agpfsn,ADJ,B-LOC,LOC-Europe,B-LOC
@@ -22,7 +22,7 @@ sl-131,1,7,še,,še,Q,PART,O,,O
 sl-131,1,8,naprej,,naprej,Rgp,ADV,O,,O
 sl-131,1,9,sodelovati,,sodelovati,Vmpn,VERB,O,,O
 sl-131,1,10,v,,v,Sl,ADP,O,,O
-sl-131,1,11,evropskih,,evropski,Agpfpl,ADJ,O,,B-LOC
+sl-131,1,11,evropskih,,evropski,Agpfpl,ADJ,O,,O
 sl-131,1,12,operacijah,,operacija,Ncfpl,NOUN,O,,O
 sl-131,1,13,in,,in,Cc,CCONJ,O,,O
 sl-131,1,14,misijah,,misija,Ncfpl,NOUN,O,,O
@@ -50,7 +50,7 @@ sl-131,2,12,.,,.,Z,PUNCT,O,,O
 sl-131,3,1,Z,,z,Si,ADP,O,,O
 sl-131,3,2,uslužbenko,,uslužbenka,Ncfsi,NOUN,O,,O
 sl-131,3,3,britanskega,,britanski,Agpnsg,ADJ,O,,O
-sl-131,3,4,obrambnega,,obramben,Agpnsg,ADJ,O,,I-PRO
+sl-131,3,4,obrambnega,,obramben,Agpnsg,ADJ,O,,O
 sl-131,3,5,ministrstva,,ministrstvo,Ncnsg,NOUN,O,,O
 sl-131,3,6,Lindo,Linda,Linda,Npfsi,PROPN,B-PER,PER-Linda-Dann,B-PER
 sl-131,3,7,Dann,Dann,Dann,Npmsn,PROPN,I-PER,PER-Linda-Dann,I-PER
@@ -164,7 +164,7 @@ sl-131,8,2,ostajamo,,ostajati,Vmpr1p,VERB,O,,O
 sl-131,8,3,predana,,predan,Appfsn,ADJ,O,,O
 sl-131,8,4,članica,,članica,Ncfsn,NOUN,O,,O
 sl-131,8,5,zveze,zveza,zveza,Ncfsg,NOUN,B-ORG,ORG-NATO,B-ORG
-sl-131,8,6,Nato,Nato,Nato,Npmsn,PROPN,I-ORG,ORG-NATO,B-ORG
+sl-131,8,6,Nato,Nato,Nato,Npmsn,PROPN,I-ORG,ORG-NATO,I-ORG
 sl-131,8,7,in,,in,Cc,CCONJ,O,,O
 sl-131,8,8,prihodnjim,,prihodnji,Agpnpd,ADJ,O,,O
 sl-131,8,9,partnerstvom,,partnerstvo,Ncnsi,NOUN,O,,O
@@ -192,7 +192,7 @@ sl-131,8,30,Linda,Linda,Linda,Npfsn,PROPN,B-PER,PER-Linda-Dann,B-PER
 sl-131,8,31,Dann,Dann,Dann,Npfsn,PROPN,I-PER,PER-Linda-Dann,I-PER
 sl-131,8,32,z,,z,Sg,ADP,O,,O
 sl-131,8,33,britanskega,,britanski,Agpnsg,ADJ,O,,O
-sl-131,8,34,obrambnega,,obramben,Agpnsg,ADJ,O,,I-PRO
+sl-131,8,34,obrambnega,,obramben,Agpnsg,ADJ,O,,O
 sl-131,8,35,ministrstva,,ministrstvo,Ncnsg,NOUN,O,,O
 sl-131,8,36,.,,.,Z,PUNCT,O,,O
 sl-131,9,1,Linda,Linda,Linda,Npfsn,PROPN,B-PER,PER-Linda-Dann,B-PER
@@ -234,7 +234,7 @@ sl-131,10,3,premierka,,premierka,Ncfsn,NOUN,O,,O
 sl-131,10,4,Theresa,Theresa,Theresa,Npfsn,PROPN,B-PER,PER-Theresa-May,B-PER
 sl-131,10,5,May,May,May,Npfsn,PROPN,I-PER,PER-Theresa-May,I-PER
 sl-131,10,6,kot,,kot,Cs,SCONJ,O,,O
-sl-131,10,7,obrambni,,obramben,Agpmsny,ADJ,O,,I-PRO
+sl-131,10,7,obrambni,,obramben,Agpmsny,ADJ,O,,O
 sl-131,10,8,minister,,minister,Ncmsn,NOUN,O,,O
 sl-131,10,9,Gavin,Gavin,Gavin,Npmsn,PROPN,B-PER,PER-Gavin-Williamson,B-PER
 sl-131,10,10,Williamson,Williamson,Williamson,Npmsn,PROPN,I-PER,PER-Gavin-Williamson,I-PER
@@ -669,7 +669,7 @@ sl-131,32,2,tej,,ta,Pd-fsl,DET,O,,O
 sl-131,32,3,ideji,,ideja,Ncfsl,NOUN,O,,O
 sl-131,32,4,bi,,biti,Va-c,AUX,O,,O
 sl-131,32,5,ta,,ta,Pd-msn,DET,O,,O
-sl-131,32,6,sklad,,sklad,Ncmsn,NOUN,O,,I-PRO
+sl-131,32,6,sklad,,sklad,Ncmsn,NOUN,O,,O
 sl-131,32,7,imel,,imeti,Vmpp-sm,VERB,O,,O
 sl-131,32,8,na,,na,Sa,ADP,O,,O
 sl-131,32,9,voljo,,volja,Ncfsa,NOUN,O,,O
@@ -768,7 +768,7 @@ sl-131,36,10,da,,da,Cs,SCONJ,O,,O
 sl-131,36,11,bi,,biti,Va-c,AUX,O,,O
 sl-131,36,12,bil,,biti,Va-p-sm,AUX,O,,O
 sl-131,36,13,tak,,tak,Pd-msn,DET,O,,O
-sl-131,36,14,sklad,,sklad,Ncmsn,NOUN,O,,I-PRO
+sl-131,36,14,sklad,,sklad,Ncmsn,NOUN,O,,O
 sl-131,36,15,odprt,,odprt,Appmsnn,ADJ,O,,O
 sl-131,36,16,za,,za,Sa,ADP,O,,O
 sl-131,36,17,industrijo,,industrija,Ncfsa,NOUN,O,,O
@@ -838,7 +838,7 @@ sl-131,38,8,nas,,jaz,Pp1-pa,PRON,O,,O
 sl-131,38,9,.,,.,Z,PUNCT,O,,O
 sl-131,38,10,"""",,"""",Z,PUNCT,O,,O
 sl-131,39,1,Bo,,biti,Va-f3s-n,AUX,O,,O
-sl-131,39,2,sklad,,sklad,Ncmsn,NOUN,O,,I-PRO
+sl-131,39,2,sklad,,sklad,Ncmsn,NOUN,O,,O
 sl-131,39,3,odprt,,odprt,Appmsnn,ADJ,O,,O
 sl-131,39,4,",",,",",Z,PUNCT,O,,O
 sl-131,39,5,denimo,,deti,Vmem1p,VERB,O,,O
@@ -925,7 +925,7 @@ sl-131,45,12,bolj,,bolj,Rgc,ADV,O,,O
 sl-131,45,13,mednarodno,,mednarodno,Rgp,ADV,O,,O
 sl-131,45,14,usmerjeno,,usmerjen,Appfsa,ADJ,O,,O
 sl-131,45,15,.,,.,Z,PUNCT,O,,O
-sl-131,46,1,Veliko,,veliko,Rgp,DET,O,,B-LOC
+sl-131,46,1,Veliko,,veliko,Rgp,DET,O,,O
 sl-131,46,2,takšnih,,takšen,Pd-fpg,DET,O,,O
 sl-131,46,3,praks,,praksa,Ncfpg,NOUN,O,,O
 sl-131,46,4,je,,biti,Va-r3s-n,VERB,O,,O
@@ -989,7 +989,7 @@ sl-131,48,4,besedami,,beseda,Ncfpi,NOUN,O,,O
 sl-131,48,5,govori,,govoriti,Vmpr3s,VERB,O,,O
 sl-131,48,6,isto,,isti,Pi-fsa,DET,O,,O
 sl-131,48,7,kot,,kot,Cs,SCONJ,O,,O
-sl-131,48,8,Obama,Obama,Obama,Npmsn,PROPN,B-PER,PER-Barack-Obama,I-PER
+sl-131,48,8,Obama,Obama,Obama,Npmsn,PROPN,B-PER,PER-Barack-Obama,B-PER
 sl-131,49,1,Kateri,,kateri,Pq-mpn,DET,O,,O
 sl-131,49,2,varnostni,,varnosten,Agpmpn,ADJ,O,,O
 sl-131,49,3,izzivi,,izziv,Ncmpn,NOUN,O,,O
@@ -998,7 +998,7 @@ sl-131,49,5,vaši,,vaš,Ps2fslp,DET,O,,O
 sl-131,49,6,oceni,,ocena,Ncfsl,NOUN,O,,O
 sl-131,49,7,čakajo,,čakati,Vmpr3p,VERB,O,,O
 sl-131,49,8,zvezo,zveza,zveza,Ncfsa,NOUN,B-ORG,ORG-NATO,B-ORG
-sl-131,49,9,Nato,Nato,Nato,Npmsn,PROPN,I-ORG,ORG-NATO,B-ORG
+sl-131,49,9,Nato,Nato,Nato,Npmsn,PROPN,I-ORG,ORG-NATO,I-ORG
 sl-131,49,10,po,,po,Sl,ADP,O,,O
 sl-131,49,11,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-131,49,12,?,,?,Z,PUNCT,O,,O
@@ -1106,7 +1106,7 @@ sl-131,54,20,način,,način,Ncmsan,NOUN,O,,O
 sl-131,54,21,soočimo,,soočiti,Vmer1p,VERB,O,,O
 sl-131,54,22,.,,.,Z,PUNCT,O,,O
 sl-131,55,1,Zveza,Zveza,zveza,Ncfsn,NOUN,B-ORG,ORG-NATO,B-ORG
-sl-131,55,2,Nato,Nato,Nato,Npmsn,PROPN,I-ORG,ORG-NATO,B-ORG
+sl-131,55,2,Nato,Nato,Nato,Npmsn,PROPN,I-ORG,ORG-NATO,I-ORG
 sl-131,55,3,mora,,morati,Vmpr3s,VERB,O,,O
 sl-131,55,4,reformirati,,reformirati,Vmbn,VERB,O,,O
 sl-131,55,5,nadzor,,nadzor,Ncmsan,NOUN,O,,O
@@ -1123,7 +1123,7 @@ sl-131,56,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-131,56,3,ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-131,56,4,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-131,56,5,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-131,56,6,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-131,56,6,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-131,56,7,vsem,,ves,Pg-mpd,DET,O,,O
 sl-131,56,8,skupaj,,skupaj,Rgp,ADV,O,,O
 sl-131,56,9,postavil,,postaviti,Vmep-sm,VERB,O,,O

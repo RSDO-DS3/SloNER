@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-18,0,1,Pred,,pred,Si,ADP,O,,O
 sl-18,0,2,Britanci,Britanci,Britanec,Npmpi,PROPN,B-PER,GPE-Great-Britain,B-PER
 sl-18,0,3,po,,po,Sl,ADP,O,,O
@@ -86,7 +86,7 @@ sl-18,5,1,Predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-18,5,2,Evropskega,Evropski,evropski,Agpmsg,ADJ,B-ORG,ORG-European-Council,B-ORG
 sl-18,5,3,sveta,svet,svet,Ncmsg,NOUN,I-ORG,ORG-European-Council,I-ORG
 sl-18,5,4,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Tusk,B-PER
-sl-18,5,5,Tusk,Tusk,Tusk,Npmsn,PROPN,I-PER,PER-Donald-Tusk,B-PER
+sl-18,5,5,Tusk,Tusk,Tusk,Npmsn,PROPN,I-PER,PER-Donald-Tusk,I-PER
 sl-18,5,6,ugotavlja,,ugotavljati,Vmpr3s,VERB,O,,O
 sl-18,5,7,",",,",",Z,PUNCT,O,,O
 sl-18,5,8,da,,da,Cs,SCONJ,O,,O
@@ -127,7 +127,7 @@ sl-18,6,14,ali,,ali,Cc,CCONJ,O,,O
 sl-18,6,15,podaljšanje,,podaljšanje,Ncnsn,NOUN,O,,O
 sl-18,6,16,članstva,,članstvo,Ncnsg,NOUN,O,,O
 sl-18,6,17,v,,v,Sl,ADP,O,,O
-sl-18,6,18,uniji,,unija,Ncfsl,NOUN,O,,I-ORG
+sl-18,6,18,uniji,,unija,Ncfsl,NOUN,O,,O
 sl-18,6,19,po,,po,Sl,ADP,O,,O
 sl-18,6,20,29.,,29.,Mdo,NUM,O,,O
 sl-18,6,21,marcu,,marec,Ncmsl,NOUN,O,,O
@@ -587,7 +587,7 @@ sl-18,27,3,sicer,,sicer,Q,PART,O,,O
 sl-18,27,4,jutri,,jutri,Rgp,ADV,O,,O
 sl-18,27,5,nagovorila,,nagovoriti,Vmep-sf,VERB,O,,O
 sl-18,27,6,britanski,,britanski,Agpmsay,ADJ,O,,O
-sl-18,27,7,parlament,,parlament,Ncmsan,NOUN,O,,O
+sl-18,27,7,parlament,,parlament,Ncmsan,NOUN,O,,I-ORG
 sl-18,27,8,",",,",",Z,PUNCT,O,,O
 sl-18,27,9,ki,,ki,Cs,SCONJ,O,,O
 sl-18,27,10,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -717,7 +717,7 @@ sl-18,32,12,v,,v,Sl,ADP,O,,O
 sl-18,32,13,Evropski,Evropska,evropski,Agpfsl,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-18,32,14,uniji,unija,unija,Ncfsl,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-18,32,15,?,,?,Z,PUNCT,O,,O
-sl-18,33,1,Britanski,,britanski,Agpmsny,ADJ,O,,B-PER
+sl-18,33,1,Britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-18,33,2,The,The,the,Xf,X,B-PRO,PRO-The-Guardian,B-PRO
 sl-18,33,3,Guardian,Guardian,Guardian,Npmsn,PROPN,I-PRO,PRO-The-Guardian,I-PRO
 sl-18,33,4,poroča,,poročati,Vmpr3s,VERB,O,,O

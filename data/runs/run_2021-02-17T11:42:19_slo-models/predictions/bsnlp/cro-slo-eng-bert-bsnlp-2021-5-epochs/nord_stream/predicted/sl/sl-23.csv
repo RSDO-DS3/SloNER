@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-23,0,1,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-23,0,2,si,,se,Px---d--y,PRON,O,,O
 sl-23,0,3,krepi,,krepiti,Vmpr3s,VERB,O,,O
@@ -33,7 +33,7 @@ sl-23,2,5,in,,in,Cc,CCONJ,O,,O
 sl-23,2,6,ruski,,ruski,Agpmsny,ADJ,O,,O
 sl-23,2,7,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-23,2,8,Vladimir,Vladimir,Vladimir,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
-sl-23,2,9,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,B-PER
+sl-23,2,9,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,I-PER
 sl-23,2,10,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-23,2,11,prek,,prek,Sg,ADP,O,,O
 sl-23,2,12,videokonference,,videokonferenca,Ncfsg,NOUN,O,,O
@@ -76,7 +76,7 @@ sl-23,3,19,",",,",",Z,PUNCT,O,,O
 sl-23,3,20,odprla,,odpreti,Vmep-sf,VERB,O,,O
 sl-23,3,21,do,,do,Sg,ADP,O,,O
 sl-23,3,22,poletja,,poletje,Ncnsg,NOUN,O,,O
-sl-23,3,23,2020.,,2020.,Mdo,NUM,O,,I-PRO
+sl-23,3,23,2020.,,2020.,Mdo,NUM,O,,O
 sl-23,4,1,Druga,,drug,Mlpfsn,ADJ,O,,O
 sl-23,4,2,dva,,dva,Mlcmdn,NUM,O,,O
 sl-23,4,3,sta,,biti,Va-r3d-n,AUX,O,,O
@@ -107,7 +107,7 @@ sl-23,6,1,Tako,,tako,Rgp,ADV,O,,O
 sl-23,6,2,se,,se,Px------y,PRON,O,,O
 sl-23,6,3,utrjuje,,utrjevati,Vmpr3s,VERB,O,,O
 sl-23,6,4,na,,na,Sl,ADP,O,,O
-sl-23,6,5,evropskih,,evropski,Agpmpl,ADJ,O,,B-LOC
+sl-23,6,5,evropskih,,evropski,Agpmpl,ADJ,O,,O
 sl-23,6,6,trgih,,trg,Ncmpl,NOUN,O,,O
 sl-23,6,7,in,,in,Cc,CCONJ,O,,O
 sl-23,6,8,uveljavlja,,uveljavljati,Vmpr3s,VERB,O,,O
@@ -143,7 +143,7 @@ sl-23,8,4,ki,,ki,Cs,SCONJ,O,,O
 sl-23,8,5,nosi,,nositi,Vmpr3s,VERB,O,,O
 sl-23,8,6,ime,,ime,Ncnsa,NOUN,O,,O
 sl-23,8,7,Moč,Moč,moč,Ncfsa,NOUN,B-PRO,PRO-Power-of-Siberia-gas-pipeline,B-PRO
-sl-23,8,8,Sibirije,Sibirije,Sibirija,Npfsg,PROPN,I-PRO,PRO-Power-of-Siberia-gas-pipeline,B-LOC
+sl-23,8,8,Sibirije,Sibirije,Sibirija,Npfsg,PROPN,I-PRO,PRO-Power-of-Siberia-gas-pipeline,I-PRO
 sl-23,8,9,",",,",",Z,PUNCT,O,,O
 sl-23,8,10,vsekakor,,vsekakor,Q,PART,O,,O
 sl-23,8,11,krepi,,krepiti,Vmpr3s,VERB,O,,O
@@ -247,7 +247,7 @@ sl-23,11,23,uvoziti,,uvoziti,Vmen,VERB,O,,O
 sl-23,11,24,Kitajska,Kitajska,Kitajska,Npfsn,PROPN,B-LOC,GPE-China,B-LOC
 sl-23,11,25,po,,po,Sl,ADP,O,,O
 sl-23,11,26,novem,,nov,Agpmsl,ADJ,O,,O
-sl-23,11,27,sibirskem,,sibirski,Agpmsl,ADJ,O,,B-LOC
+sl-23,11,27,sibirskem,,sibirski,Agpmsl,ADJ,O,,O
 sl-23,11,28,plinovodu,,plinovod,Ncmsl,NOUN,O,,O
 sl-23,11,29,.,,.,Z,PUNCT,O,,O
 sl-23,12,1,V,,v,Sl,ADP,O,,O
@@ -419,7 +419,7 @@ sl-23,20,12,v,,v,Sa,ADP,O,,O
 sl-23,20,13,preostale,,preostal,Appmpa,ADJ,O,,O
 sl-23,20,14,dele,,del,Ncmpa,NOUN,O,,O
 sl-23,20,15,južne,južna,južen,Agpfsg,ADJ,B-LOC,LOC-Southern-Europe,B-LOC
-sl-23,20,16,Evrope,Evropa,Evropa,Npfsg,PROPN,I-LOC,LOC-Southern-Europe,B-LOC
+sl-23,20,16,Evrope,Evropa,Evropa,Npfsg,PROPN,I-LOC,LOC-Southern-Europe,I-LOC
 sl-23,20,17,in,,in,Cc,CCONJ,O,,O
 sl-23,20,18,na,,na,Sa,ADP,O,,O
 sl-23,20,19,Balkan,Balkan,Balkan,Npmsan,PROPN,B-LOC,LOC-Balkans,B-LOC
@@ -446,7 +446,7 @@ sl-23,21,19,.,,.,Z,PUNCT,O,,O
 sl-23,22,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-23,22,2,",",,",",Z,PUNCT,O,,O
 sl-23,22,3,več,,več,Rgc,DET,O,,O
-sl-23,22,4,evropskih,,evropski,Agpfpg,ADJ,O,,B-LOC
+sl-23,22,4,evropskih,,evropski,Agpfpg,ADJ,O,,O
 sl-23,22,5,držav,,država,Ncfpg,NOUN,O,,O
 sl-23,22,6,in,,in,Cc,CCONJ,O,,O
 sl-23,22,7,Ukrajina,Ukrajina,Ukrajina,Npfsn,PROPN,B-LOC,GPE-Ukraine,B-LOC
@@ -592,7 +592,7 @@ sl-23,27,37,.,,.,Z,PUNCT,O,,O
 sl-23,28,1,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
 sl-23,28,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-23,28,3,posvaril,,posvariti,Vmep-sm,VERB,O,,O
-sl-23,28,4,ukrajinskega,,ukrajinski,Agpmsa,ADJ,O,,B-LOC
+sl-23,28,4,ukrajinskega,,ukrajinski,Agpmsa,ADJ,O,,O
 sl-23,28,5,predsednika,,predsednik,Ncmsay,NOUN,O,,O
 sl-23,28,6,Volodimirja,Volodimir,Volodimir,Npmsay,PROPN,B-PER,PER-Volodymyr-Zelensky,B-PER
 sl-23,28,7,Zelenskega,Zelenski,Zelenski,Npmsay,PROPN,I-PER,PER-Volodymyr-Zelensky,I-PER
@@ -631,7 +631,7 @@ sl-23,29,24,se,,se,Px------y,PRON,O,,O
 sl-23,29,25,konča,,končati,Vmer3s,VERB,O,,O
 sl-23,29,26,konflikt,,konflikt,Ncmsn,NOUN,O,,O
 sl-23,29,27,na,,na,Sl,ADP,O,,O
-sl-23,29,28,vzhodu,,vzhod,Ncmsl,NOUN,O,,B-LOC
+sl-23,29,28,vzhodu,,vzhod,Ncmsl,NOUN,O,,O
 sl-23,29,29,Ukrajine,Ukrajina,Ukrajina,Npfsg,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-23,29,30,.,,.,Z,PUNCT,O,,O
 sl-23,30,1,Sestavni,,sestaven,Agpmsny,ADJ,O,,O

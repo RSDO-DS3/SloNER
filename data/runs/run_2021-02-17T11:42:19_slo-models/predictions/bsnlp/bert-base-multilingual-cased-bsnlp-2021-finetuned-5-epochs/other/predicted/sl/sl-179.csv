@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-179,0,1,Depp,Depp,Depp,Npmsn,PROPN,B-PER,PER-Johnny-Depp,I-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-179,0,1,Depp,Depp,Depp,Npmsn,PROPN,B-PER,PER-Johnny-Depp,B-PER
 sl-179,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-179,0,3,",",,",",Z,PUNCT,O,,O
 sl-179,0,4,da,,da,Cs,SCONJ,O,,O

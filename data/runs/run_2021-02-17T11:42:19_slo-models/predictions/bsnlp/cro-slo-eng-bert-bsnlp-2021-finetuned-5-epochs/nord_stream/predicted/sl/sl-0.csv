@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-0,0,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
 sl-0,0,2,in,,in,Cc,CCONJ,O,,O
 sl-0,0,3,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
@@ -256,7 +256,7 @@ sl-0,12,11,unija,unija,unija,Ncfsn,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-0,12,12,uvedla,,uvesti,Vmep-sf,VERB,O,,O
 sl-0,12,13,po,,po,Sl,ADP,O,,O
 sl-0,12,14,priključitvi,,priključitev,Ncfsl,NOUN,O,,O
-sl-0,12,15,polotoka,,polotok,Ncmsg,NOUN,O,,B-LOC
+sl-0,12,15,polotoka,,polotok,Ncmsg,NOUN,O,,O
 sl-0,12,16,Krim,Krim,Krim,Npmsn,PROPN,B-LOC,GPE-Crimea,B-LOC
 sl-0,12,17,Rusiji,Rusija,Rusija,Npfsd,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-0,12,18,",",,",",Z,PUNCT,O,,O
@@ -292,7 +292,7 @@ sl-0,13,16,predsednika,,predsednik,Ncmsg,NOUN,O,,O
 sl-0,13,17,Donalda,Donald,Donald,Npmsg,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-0,13,18,Trumpa,Trump,Trump,Npmsg,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-0,13,19,.,,.,Z,PUNCT,O,,O
-sl-0,14,1,Ta,,ta,Pd-msn,DET,O,,O
+sl-0,14,1,Ta,,ta,Pd-msn,DET,O,,B-PER
 sl-0,14,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-0,14,3,med,,med,Si,ADP,O,,O
 sl-0,14,4,drugim,,drug,Mlpnsi,ADJ,O,,O
@@ -351,7 +351,7 @@ sl-0,16,14,avstrijskem,avstrijska,avstrijski,Agpnsl,ADJ,B-LOC,LOC-Styria,B-LOC
 sl-0,16,15,Štajerskem,Štajerska,Štajersko,Npnsl,PROPN,I-LOC,LOC-Styria,I-LOC
 sl-0,16,16,udeležil,,udeležiti,Vmep-sm,VERB,O,,O
 sl-0,16,17,poroke,,poroka,Ncfsg,NOUN,O,,O
-sl-0,16,18,avstrijske,Avstrija,avstrijski,Agpfsg,ADJ,B-LOC,GPE-Austria,O
+sl-0,16,18,avstrijske,Avstrija,avstrijski,Agpfsg,ADJ,B-LOC,GPE-Austria,B-LOC
 sl-0,16,19,zunanje,,zunanji,Agpfsg,ADJ,O,,O
 sl-0,16,20,ministrice,,ministrica,Ncfsg,NOUN,O,,O
 sl-0,16,21,Karin,Karin,Karin,Npfsn,PROPN,B-PER,PER-Karin-Kneissl,B-PER

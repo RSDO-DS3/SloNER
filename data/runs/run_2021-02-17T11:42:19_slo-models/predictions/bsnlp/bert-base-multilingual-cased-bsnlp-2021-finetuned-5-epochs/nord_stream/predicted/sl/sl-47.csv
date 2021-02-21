@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-47,0,1,Moskva,Moskva,Moskva,Npfsn,PROPN,B-LOC,GPE-Moscow,I-PRO
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-47,0,1,Moskva,Moskva,Moskva,Npfsn,PROPN,B-LOC,GPE-Moscow,B-LOC
 sl-47,0,2,in,,in,Cc,CCONJ,O,,O
 sl-47,0,3,Kijev,Kijev,Kijev,Npmsn,PROPN,B-LOC,GPE-Kiev,B-LOC
 sl-47,0,4,dosegla,,doseči,Vmep-sf,VERB,O,,O
@@ -72,13 +72,13 @@ sl-47,3,4,trajajočih,,trajajoč,Appnpl,ADJ,O,,O
 sl-47,3,5,pogajanjih,,pogajanje,Ncnpl,NOUN,O,,O
 sl-47,3,6,ruskih,,ruski,Agpmpg,ADJ,O,,O
 sl-47,3,7,in,,in,Cc,CCONJ,O,,O
-sl-47,3,8,ukrajinskih,,ukrajinski,Agpmpg,ADJ,O,,B-LOC
+sl-47,3,8,ukrajinskih,,ukrajinski,Agpmpg,ADJ,O,,O
 sl-47,3,9,predstavnikov,,predstavnik,Ncmpg,NOUN,O,,O
 sl-47,3,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-47,3,11,podpredsednik,,podpredsednik,Ncmsn,NOUN,O,,O
 sl-47,3,12,komisije,,komisija,Ncfsg,NOUN,O,,O
 sl-47,3,13,Maroš,Maroš,Maroš,Npmsn,PROPN,B-PER,PER-Maros-Sefcovic,B-PER
-sl-47,3,14,Šefčovič,Šefčovič,Šefčovič,Npmsn,PROPN,I-PER,PER-Maros-Sefcovic,B-PER
+sl-47,3,14,Šefčovič,Šefčovič,Šefčovič,Npmsn,PROPN,I-PER,PER-Maros-Sefcovic,I-PER
 sl-47,3,15,",",,",",Z,PUNCT,O,,O
 sl-47,3,16,ki,,ki,Cs,SCONJ,O,,O
 sl-47,3,17,je,,biti,Va-r3s-n,AUX,O,,O
@@ -136,7 +136,7 @@ sl-47,6,16,začetku,,začetek,Ncmsl,NOUN,O,,O
 sl-47,6,17,leta,,leto,Ncnsg,NOUN,O,,O
 sl-47,6,18,2014,,2014,Mdc,NUM,O,,O
 sl-47,6,19,in,,in,Cc,CCONJ,O,,O
-sl-47,6,20,ukrajinski,Ukrajina,ukrajinski,Agpfsl,ADJ,B-LOC,GPE-Ukraine,B-LOC
+sl-47,6,20,ukrajinski,Ukrajina,ukrajinski,Agpfsl,ADJ,B-LOC,GPE-Ukraine,O
 sl-47,6,21,revoluciji,,revolucija,Ncfsl,NOUN,O,,O
 sl-47,6,22,",",,",",Z,PUNCT,O,,O
 sl-47,6,23,ki,,ki,Cs,SCONJ,O,,O
@@ -273,7 +273,7 @@ sl-47,11,18,možgansko,,možgansko,Rgp,ADV,O,,O
 sl-47,11,19,mrtva,,mrtev,Agpfsn,ADJ,O,,O
 sl-47,11,20,«,,«,Z,PUNCT,O,,O
 sl-47,11,21,.,,.,Z,PUNCT,O,,O
-sl-47,12,1,Macronu,Macron,Macron,Npmsd,PROPN,B-PER,PER-Emmanuel-Macron,B-PER
+sl-47,12,1,Macronu,Macron,Macron,Npmsd,PROPN,B-PER,PER-Emmanuel-Macron,B-ORG
 sl-47,12,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-47,12,3,skupaj,,skupaj,Rgp,ADV,O,,O
 sl-47,12,4,z,,z,Si,ADP,O,,O
@@ -425,7 +425,7 @@ sl-47,18,15,Minsk,Minsk,Minsk,Npmsn,PROPN,B-LOC,GPE-Minsk,B-LOC
 sl-47,18,16,.,,.,Z,PUNCT,O,,O
 sl-47,19,1,Preboj,,preboj,Ncmsan,NOUN,O,,O
 sl-47,19,2,v,,v,Sl,ADP,O,,O
-sl-47,19,3,Berlinu,Berlin,Berlin,Npmsl,PROPN,B-LOC,GPE-Berlin,B-LOC
+sl-47,19,3,Berlinu,Berlin,Berlin,Npmsl,PROPN,B-LOC,GPE-Berlin,I-EVT
 sl-47,19,4,naj,,naj,Q,PART,O,,O
 sl-47,19,5,bi,,biti,Va-c,AUX,O,,O
 sl-47,19,6,omogočila,,omogočiti,Vmep-sf,VERB,O,,O
@@ -452,7 +452,7 @@ sl-47,19,26,v,,v,Sl,ADP,O,,O
 sl-47,19,27,nasprotju,,nasprotje,Ncnsl,NOUN,O,,O
 sl-47,19,28,s,,z,Si,ADP,O,,O
 sl-47,19,29,tranzitno,,tranziten,Agpfsi,ADJ,O,,O
-sl-47,19,30,pogodbo,,pogodba,Ncfsi,NOUN,O,,O
+sl-47,19,30,pogodbo,,pogodba,Ncfsi,NOUN,O,,I-PRO
 sl-47,19,31,Moskva,Moskva,Moskva,Npfsn,PROPN,B-LOC,GPE-Moscow,I-PRO
 sl-47,19,32,Ukrajini,Ukrajina,Ukrajina,Npfsd,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-47,19,33,ustavila,,ustaviti,Vmep-sf,VERB,O,,O

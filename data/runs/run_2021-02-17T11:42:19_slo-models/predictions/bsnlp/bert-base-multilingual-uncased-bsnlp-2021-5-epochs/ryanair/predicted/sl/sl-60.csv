@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-60,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
 sl-60,0,2,odpustil,,odpustiti,Vmep-sm,VERB,O,,O
 sl-60,0,3,kabinsko,,kabinski,Agpnsa,ADJ,O,,O
@@ -71,7 +71,7 @@ sl-60,3,2,fotografija,,fotografija,Ncfsn,NOUN,O,,O
 sl-60,3,3,kabinskega,,kabinski,Agpnsg,ADJ,O,,O
 sl-60,3,4,osebja,,osebje,Ncnsg,NOUN,O,,O
 sl-60,3,5,nizkocenovnika,,nizkocenovnik,Ncmsg,NOUN,O,,O
-sl-60,3,6,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,O
+sl-60,3,6,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,B-PER
 sl-60,3,7,",",,",",Z,PUNCT,O,,O
 sl-60,3,8,ki,,ki,Cs,SCONJ,O,,O
 sl-60,3,9,je,,biti,Va-r3s-n,AUX,O,,O
@@ -144,8 +144,8 @@ sl-60,6,15,bila,,biti,Va-p-pn,AUX,O,,O
 sl-60,6,16,na,,na,Sl,ADP,O,,O
 sl-60,6,17,poti,,pot,Ncfsl,NOUN,O,,O
 sl-60,6,18,v,,v,Sa,ADP,O,,O
-sl-60,6,19,portugalski,,portugalski,Agpmsay,ADJ,O,,O
-sl-60,6,20,Porto,Porto,Porto,Npmsan,PROPN,B-LOC,GPE-Porto,O
+sl-60,6,19,portugalski,,portugalski,Agpmsay,ADJ,O,,B-LOC
+sl-60,6,20,Porto,Porto,Porto,Npmsan,PROPN,B-LOC,GPE-Porto,I-LOC
 sl-60,6,21,",",,",",Z,PUNCT,O,,O
 sl-60,6,22,preusmeriti,,preusmeriti,Vmen,VERB,O,,O
 sl-60,6,23,",",,",",Z,PUNCT,O,,O
@@ -249,7 +249,7 @@ sl-60,10,25,fotografijo,,fotografija,Ncfsa,NOUN,O,,O
 sl-60,10,26,.,,.,Z,PUNCT,O,,O
 sl-60,11,1,Portugalski,,portugalski,Agpmsny,ADJ,O,,O
 sl-60,11,2,sindikat,,sindikat,Ncmsn,NOUN,O,,O
-sl-60,11,3,SNPVAC,SNPVAC,SNPVAC,Npmsn,PROPN,B-ORG,ORG-National-Flight-Personnel-Civil-Aviation-Union,O
+sl-60,11,3,SNPVAC,SNPVAC,SNPVAC,Npmsn,PROPN,B-ORG,ORG-National-Flight-Personnel-Civil-Aviation-Union,B-ORG
 sl-60,11,4,",",,",",Z,PUNCT,O,,O
 sl-60,11,5,ki,,ki,Cs,SCONJ,O,,O
 sl-60,11,6,je,,biti,Va-r3s-n,AUX,O,,O
@@ -265,7 +265,7 @@ sl-60,11,15,",",,",",Z,PUNCT,O,,O
 sl-60,11,16,da,,da,Cs,SCONJ,O,,O
 sl-60,11,17,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-60,11,18,druž,,druž,Ncfsn,NOUN,O,,O
-sl-60,11,19,ba,,ba,Npmsn,PROPN,O,,B-ORG
+sl-60,11,19,ba,,ba,Npmsn,PROPN,O,,O
 sl-60,11,20,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-60,11,21,zagotovila,,zagotoviti,Vmep-sf,VERB,O,,O
 sl-60,11,22,niti,,niti,Q,PART,O,,O
@@ -277,7 +277,7 @@ sl-60,11,27,želel,,želeti,Vmpp-sm,VERB,O,,O
 sl-60,11,28,komentirati,,komentirati,Vmbn,VERB,O,,O
 sl-60,11,29,.,,.,Z,PUNCT,O,,O
 sl-60,12,1,"""",,"""",Z,PUNCT,O,,O
-sl-60,12,2,Osebje,,osebje,Ncnsn,NOUN,O,,O
+sl-60,12,2,Osebje,,osebje,Ncnsn,NOUN,O,,B-ORG
 sl-60,12,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-60,12,4,v,,v,Sa,ADP,O,,O
 sl-60,12,5,znak,,znak,Ncmsan,NOUN,O,,O
@@ -315,7 +315,7 @@ sl-60,12,36,izjavi,,izjava,Ncfsl,NOUN,O,,O
 sl-60,12,37,za,,za,Sa,ADP,O,,O
 sl-60,12,38,javnost,,javnost,Ncfsa,NOUN,O,,O
 sl-60,12,39,.,,.,Z,PUNCT,O,,O
-sl-60,13,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-60,13,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-PER
 sl-60,13,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-60,13,3,na,,na,Sl,ADP,O,,O
 sl-60,13,4,drugi,,drug,Mlpfsl,ADJ,O,,O
@@ -356,7 +356,7 @@ sl-60,14,10,v,,v,Sl,ADP,O,,O
 sl-60,14,11,tistem,,tisti,Pd-msl,DET,O,,O
 sl-60,14,12,času,,čas,Ncmsl,NOUN,O,,O
 sl-60,14,13,v,,v,Sl,ADP,O,,O
-sl-60,14,14,Malagi,Malaga,Malaga,Npfsl,PROPN,B-LOC,GPE-Malaga,O
+sl-60,14,14,Malagi,Malaga,Malaga,Npfsl,PROPN,B-LOC,GPE-Malaga,B-LOC
 sl-60,14,15,zaradi,,zaradi,Sg,ADP,O,,O
 sl-60,14,16,praznika,,praznik,Ncmsg,NOUN,O,,O
 sl-60,14,17,vsi,,ves,Pg-mpn,DET,O,,O

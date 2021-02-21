@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-13,0,1,Dolgočasen,,dolgočasen,Agpmsnn,ADJ,O,,O
 sl-13,0,2,borzni,,borzen,Agpmsny,ADJ,O,,O
 sl-13,0,3,teden,,teden,Ncmsn,NOUN,O,,O
@@ -26,7 +26,7 @@ sl-13,1,17,ne,,ne,Q,PART,O,,O
 sl-13,1,18,pozna,,poznati,Vmpr3s,VERB,O,,O
 sl-13,1,19,meja,,meja,Ncfpg,NOUN,O,,O
 sl-13,1,20,.,,.,Z,PUNCT,O,,O
-sl-13,2,1,Tokrat,,tokrat,Rgp,ADV,O,,O
+sl-13,2,1,Tokrat,,tokrat,Rgp,ADV,O,,B-PER
 sl-13,2,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-13,2,3,skušal,,skušati,Vmpp-sm,VERB,O,,O
 sl-13,2,4,prisiliti,,prisiliti,Vmen,VERB,O,,O
@@ -40,7 +40,7 @@ sl-13,2,11,priti,,priti,Vmen,VERB,O,,O
 sl-13,2,12,na,,na,Sa,ADP,O,,O
 sl-13,2,13,srečanje,,srečanje,Ncnsa,NOUN,O,,O
 sl-13,2,14,skupine,,skupina,Ncfsg,NOUN,O,,O
-sl-13,2,15,G20,G20,G20,Npmsn,PROPN,B-ORG,ORG-G20,B-ORG
+sl-13,2,15,G20,G20,G20,Npmsn,PROPN,B-ORG,ORG-G20,I-EVT
 sl-13,2,16,v,,v,Sl,ADP,O,,O
 sl-13,2,17,Osaki,Osaka,Osak,Npmsl,PROPN,B-LOC,GPE-Osaka,B-LOC
 sl-13,2,18,konec,,konec,Sg,ADP,O,,O
@@ -95,7 +95,7 @@ sl-13,4,12,deluje,,delovati,Vmpr3s,VERB,O,,O
 sl-13,4,13,naravnost,,naravnost,Rgp,ADV,O,,O
 sl-13,4,14,otročje,,otročje,Ncnsn,NOUN,O,,O
 sl-13,4,15,.,,.,Z,PUNCT,O,,O
-sl-13,5,1,Ker,,ker,Cs,SCONJ,O,,O
+sl-13,5,1,Ker,,ker,Cs,SCONJ,O,,B-PER
 sl-13,5,2,Trumpu,Trump,Trump,Npmsd,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-13,5,3,konflikti,,konflikt,Ncmpn,NOUN,O,,O
 sl-13,5,4,s,,z,Si,ADP,O,,O
@@ -124,7 +124,7 @@ sl-13,5,26,projektu,,projekt,Ncmsd,NOUN,O,,O
 sl-13,5,27,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
 sl-13,5,28,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
 sl-13,5,29,tok,,tok,Ncmsn,NOUN,O,,I-PRO
-sl-13,5,30,2.,,2.,Mdo,NUM,O,,I-PRO
+sl-13,5,30,2.,,2.,Mdo,NUM,O,,O
 sl-13,5,31,Očitki,,očitek,Ncmpn,NOUN,O,,O
 sl-13,5,32,so,,biti,Va-r3p-n,AUX,O,,O
 sl-13,5,33,leteli,,leteti,Vmpp-pm,VERB,O,,O
@@ -231,7 +231,7 @@ sl-13,9,11,za,,za,Sa,ADP,O,,O
 sl-13,9,12,"9,3",,"9,3",Mdc,NUM,O,,O
 sl-13,9,13,odstotka,,odstotek,Ncmsg,NOUN,O,,O
 sl-13,9,14,.,,.,Z,PUNCT,O,,O
-sl-13,10,1,Trumpovo,Trump,Trumpov,Aspnsn,ADJ,B-PER,PER-Donald-Trump,B-PER
+sl-13,10,1,Trumpovo,Trump,Trumpov,Aspnsn,ADJ,B-PER,PER-Donald-Trump,O
 sl-13,10,2,bahanje,,bahanje,Ncnsn,NOUN,O,,O
 sl-13,10,3,",",,",",Z,PUNCT,O,,O
 sl-13,10,4,da,,da,Cs,SCONJ,O,,O

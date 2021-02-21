@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-13,0,1,Pjongjang,Pjongjang,Pjongjang,Npmsn,PROPN,B-LOC,GPE-Pyongyang,B-LOC
 sl-13,0,2,:,,:,Z,PUNCT,O,,O
 sl-13,0,3,Ameriško-južnokorejske,,ameriškonjužnokorejski,Agpfpn,ADJ,O,,O
@@ -22,7 +22,7 @@ sl-13,1,11,se,,se,Px------y,PRON,O,,O
 sl-13,1,12,ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-13,1,13,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-13,1,14,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-13,1,15,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-13,1,15,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-13,1,16,in,,in,Cc,CCONJ,O,,O
 sl-13,1,17,severnokorejski,,severnokorejski,Agpmsny,ADJ,O,,O
 sl-13,1,18,voditelj,,voditelj,Ncmsn,NOUN,O,,O
@@ -142,7 +142,7 @@ sl-13,6,7,zmanjšali,,zmanjšati,Vmep-df,VERB,O,,O
 sl-13,6,8,po,,po,Sl,ADP,O,,O
 sl-13,6,9,prvem,,prvi,Mlomsl,ADJ,O,,O
 sl-13,6,10,vrhu,,vrh,Ncmsl,NOUN,O,,O
-sl-13,6,11,Trump-Kim,,trumpok,Agpmpd,ADJ,O,,O
+sl-13,6,11,Trump-Kim,,trumpok,Agpmpd,ADJ,O,,B-PER
 sl-13,6,12,lani,,lani,Rgp,ADV,O,,O
 sl-13,6,13,v,,v,Sl,ADP,O,,O
 sl-13,6,14,Singapurju,Singapur,Singapur,Npmsl,PROPN,B-LOC,GPE-Singapore,B-LOC

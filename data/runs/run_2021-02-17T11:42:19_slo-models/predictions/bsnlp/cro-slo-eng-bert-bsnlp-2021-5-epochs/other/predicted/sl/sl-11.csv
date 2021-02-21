@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-11,0,1,Novi,,nov,Agpmpn,ADJ,O,,O
 sl-11,0,2,vozni,,vozen,Agpmpn,ADJ,O,,O
 sl-11,0,3,redi,,red,Ncmpn,NOUN,O,,O
@@ -179,10 +179,10 @@ sl-11,10,9,",",,",",Z,PUNCT,O,,O
 sl-11,10,10,«,,«,Z,PUNCT,O,,O
 sl-11,10,11,pravi,,praviti,Vmbr3s,VERB,O,,O
 sl-11,10,12,Jakob,Jakob,Jakob,Npmsn,PROPN,B-PER,PER-Jakob-Počivavšek,B-PER
-sl-11,10,13,Počivavšek,Počivavšek,Počivavšek,Npmsn,PROPN,I-PER,PER-Jakob-Počivavšek,B-PER
+sl-11,10,13,Počivavšek,Počivavšek,Počivavšek,Npmsn,PROPN,I-PER,PER-Jakob-Počivavšek,I-PER
 sl-11,10,14,",",,",",Z,PUNCT,O,,O
 sl-11,10,15,predsednik,,predsednik,Ncmsn,NOUN,O,,O
-sl-11,10,16,sindikata,sindikat,sindikat,Ncmsg,NOUN,B-ORG,ORG-Syndicate-Pergam,O
+sl-11,10,16,sindikata,sindikat,sindikat,Ncmsg,NOUN,B-ORG,ORG-Syndicate-Pergam,B-ORG
 sl-11,10,17,Pergam,Pergam,Pergam,Npmsn,PROPN,I-ORG,ORG-Syndicate-Pergam,B-ORG
 sl-11,10,18,:,,:,Z,PUNCT,O,,O
 sl-11,10,19,»,,»,Z,PUNCT,O,,O
@@ -192,7 +192,7 @@ sl-11,10,22,kabinsko,,kabinski,Agpnsn,ADJ,O,,O
 sl-11,10,23,osebje,,osebje,Ncnsn,NOUN,O,,O
 sl-11,10,24,imajo,,imeti,Vmpr3p-n,VERB,O,,O
 sl-11,10,25,v,,v,Sl,ADP,O,,O
-sl-11,10,26,Sloveniji,Slovenija,Slovenija,Npfsl,PROPN,B-LOC,GPE-Slovenia,O
+sl-11,10,26,Sloveniji,Slovenija,Slovenija,Npfsl,PROPN,B-LOC,GPE-Slovenia,B-LOC
 sl-11,10,27,v,,v,Sl,ADP,O,,O
 sl-11,10,28,svojem,,svoj,Px-msl,DET,O,,O
 sl-11,10,29,poklicu,,poklic,Ncmsl,NOUN,O,,O
@@ -288,7 +288,7 @@ sl-11,15,19,pilot,,pilot,Ncmsn,NOUN,O,,O
 sl-11,15,20,Marko,Marko,Marko,Npmsn,PROPN,B-PER,PER-Marko-Kastelic,B-PER
 sl-11,15,21,Kastelic,Kastelic,Kastelic,Npmsn,PROPN,I-PER,PER-Marko-Kastelic,I-PER
 sl-11,15,22,.,,.,Z,PUNCT,O,,O
-sl-11,16,1,Adria,Adria,Adria,Npfsn,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
+sl-11,16,1,Adria,Adria,Adria,Npfsn,PROPN,B-ORG,ORG-Adria-Airways,O
 sl-11,16,2,zaposlenim,,zaposlen,Appmpd,ADJ,O,,O
 sl-11,16,3,dolguje,,dolgovati,Vmpr3s,VERB,O,,O
 sl-11,16,4,septembrsko,,septembrski,Agpfsa,ADJ,O,,O
@@ -401,7 +401,7 @@ sl-11,21,4,lete,,let,Ncmpa,NOUN,O,,O
 sl-11,21,5,iz,,iz,Sg,ADP,O,,O
 sl-11,21,6,Maribora,Maribor,Maribor,Npmsg,PROPN,B-LOC,LOC-Maribor,B-LOC
 sl-11,21,7,?,,?,Z,PUNCT,O,,O
-sl-11,22,1,Vlada,,vlada,Ncfsn,NOUN,O,,O
+sl-11,22,1,Vlada,,vlada,Ncfsn,NOUN,O,,B-LOC
 sl-11,22,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-11,22,3,včeraj,,včeraj,Rgp,ADV,O,,O
 sl-11,22,4,sprejela,,sprejeti,Vmep-sf,VERB,O,,O

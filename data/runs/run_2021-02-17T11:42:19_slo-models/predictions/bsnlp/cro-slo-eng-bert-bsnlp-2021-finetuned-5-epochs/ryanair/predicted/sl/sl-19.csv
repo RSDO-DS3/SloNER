@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-19,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-19,0,2,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-19,0,3,še,,še,Q,PART,O,,O
@@ -303,7 +303,7 @@ sl-19,13,25,kot,,kot,Cs,SCONJ,O,,O
 sl-19,13,26,ročno,,ročen,Agpfsi,ADJ,O,,O
 sl-19,13,27,prtljago,,prtljaga,Ncfsi,NOUN,O,,O
 sl-19,13,28,.,,.,Z,PUNCT,O,,O
-sl-19,14,1,Francois,Francois,Francois,Npmsn,PROPN,B-PER,PER-Francois-Lenoir,B-PER
+sl-19,14,1,Francois,Francois,Francois,Npmsn,PROPN,B-PER,PER-Francois-Lenoir,I-PER
 sl-19,14,2,Lenoir,Lenoir,Lenoir,Npmsn,PROPN,I-PER,PER-Francois-Lenoir,I-PER
 sl-19,15,1,V,,v,Sl,ADP,O,,O
 sl-19,15,2,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG

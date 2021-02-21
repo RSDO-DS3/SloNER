@@ -1,11 +1,11 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-73,0,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
 sl-73,0,2,s,,z,Si,ADP,O,,O
 sl-73,0,3,premierji,,premier,Ncmpi,NOUN,O,,O
 sl-73,0,4,višegrajske,,višegrajski,Agpfsg,ADJ,O,,B-ORG
 sl-73,0,5,četverice,,četverica,Ncfsg,NOUN,O,,I-ORG
 sl-73,0,6,predvsem,,predvsem,Q,PART,O,,O
-sl-73,0,7,o,,o,Sl,ADP,O,,I-PRO
+sl-73,0,7,o,,o,Sl,ADP,O,,O
 sl-73,0,8,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-73,1,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
 sl-73,1,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -22,7 +22,7 @@ sl-73,1,12,še,,še,Q,PART,O,,O
 sl-73,1,13,vedno,,vedno,Rgp,ADV,O,,O
 sl-73,1,14,dosežeta,,doseči,Vmer3d,VERB,O,,O
 sl-73,1,15,dogovor,,dogovor,Ncmsan,NOUN,O,,O
-sl-73,1,16,o,,o,Sl,ADP,O,,I-PRO
+sl-73,1,16,o,,o,Sl,ADP,O,,O
 sl-73,1,17,urejenem,,urejen,Appmsl,ADJ,O,,O
 sl-73,1,18,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-73,1,19,tudi,,tudi,Q,PART,O,,O
@@ -38,7 +38,7 @@ sl-73,2,3,še,,še,Q,PART,O,,O
 sl-73,2,4,",",,",",Z,PUNCT,O,,O
 sl-73,2,5,da,,da,Cs,SCONJ,O,,O
 sl-73,2,6,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-73,2,7,unija,,unija,Ncfsn,NOUN,O,,I-ORG
+sl-73,2,7,unija,,unija,Ncfsn,NOUN,O,,O
 sl-73,2,8,storila,,storiti,Vmep-sf,VERB,O,,O
 sl-73,2,9,vse,,ves,Pg-nsa,DET,O,,O
 sl-73,2,10,",",,",",Z,PUNCT,O,,O
@@ -74,7 +74,7 @@ sl-73,3,23,.,,.,Z,PUNCT,O,,O
 sl-73,4,1,Govorili,,govoriti,Vmpp-pm,VERB,O,,O
 sl-73,4,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-73,4,3,tudi,,tudi,Q,PART,O,,O
-sl-73,4,4,o,,o,Sl,ADP,O,,I-PRO
+sl-73,4,4,o,,o,Sl,ADP,O,,O
 sl-73,4,5,migracijah,,migracija,Ncfpl,NOUN,O,,O
 sl-73,4,6,",",,",",Z,PUNCT,O,,O
 sl-73,4,7,pri,,pri,Sl,ADP,O,,O
@@ -98,7 +98,7 @@ sl-73,4,24,.,,.,Z,PUNCT,O,,O
 sl-73,5,1,Danes,,danes,Rgp,ADV,O,,O
 sl-73,5,2,pa,,pa,Cc,CCONJ,O,,O
 sl-73,5,3,so,,biti,Va-r3p-n,AUX,O,,O
-sl-73,5,4,višegrajske,,višegrajski,Agpfpn,ADJ,O,,B-ORG
+sl-73,5,4,višegrajske,,višegrajski,Agpfpn,ADJ,O,,O
 sl-73,5,5,države,,država,Ncfpn,NOUN,O,,O
 sl-73,5,6,z,,z,Si,ADP,O,,O
 sl-73,5,7,Nemčijo,Nemčija,Nemčija,Npfsi,PROPN,B-LOC,GPE-Germany,B-LOC
@@ -113,7 +113,7 @@ sl-73,5,15,namenjen,,namenjen,Appmsnn,ADJ,O,,O
 sl-73,5,16,zajezitvi,,zajezitev,Ncfsd,NOUN,O,,O
 sl-73,5,17,migracij,,migracija,Ncfpg,NOUN,O,,O
 sl-73,5,18,.,,.,Z,PUNCT,O,,O
-sl-73,6,1,To,,ta,Pd-nsn,DET,O,,O
+sl-73,6,1,To,,ta,Pd-nsn,DET,O,,B-PER
 sl-73,6,2,po,,po,Sl,ADP,O,,O
 sl-73,6,3,mnenju,,mnenje,Ncnsl,NOUN,O,,O
 sl-73,6,4,Merklove,Merkel,Merklov,Aspfsg,ADJ,B-PER,PER-Angela-Merkel,B-PER
@@ -155,9 +155,9 @@ sl-73,7,17,podpira,,podpirati,Vmpr3s,VERB,O,,O
 sl-73,7,18,gradnje,,gradnja,Ncfsg,NOUN,O,,O
 sl-73,7,19,rusko-nemškega,,ruskonnemški,Agpmsg,ADJ,O,,O
 sl-73,7,20,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
-sl-73,7,21,Severni,,severen,Agpmsny,ADJ,O,,B-LOC
+sl-73,7,21,Severni,,severen,Agpmsny,ADJ,O,,O
 sl-73,7,22,tok,,tok,Ncmsn,NOUN,O,,O
-sl-73,7,23,2.,,2.,Mdo,NUM,O,,I-PRO
+sl-73,7,23,2.,,2.,Mdo,NUM,O,,O
 sl-73,7,24,Pariz,Pariz,Pariz,Npmsn,PROPN,B-LOC,GPE-Paris,B-LOC
 sl-73,7,25,je,,biti,Va-r3s-n,AUX,O,,O
 sl-73,7,26,namreč,,namreč,Cc,CCONJ,O,,O
@@ -167,7 +167,7 @@ sl-73,7,29,novi,,nov,Agpfsd,ADJ,O,,O
 sl-73,7,30,evropski,,evropski,Agpfsd,ADJ,O,,B-PRO
 sl-73,7,31,direktivi,,direktiva,Ncfsd,NOUN,O,,I-PRO
 sl-73,7,32,o,,o,Sl,ADP,O,,I-PRO
-sl-73,7,33,plinovodih,,plinovod,Ncmpl,NOUN,O,,O
+sl-73,7,33,plinovodih,,plinovod,Ncmpl,NOUN,O,,I-PRO
 sl-73,7,34,",",,",",Z,PUNCT,O,,O
 sl-73,7,35,ki,,ki,Cs,SCONJ,O,,O
 sl-73,7,36,bi,,biti,Va-c,AUX,O,,O
@@ -179,8 +179,8 @@ sl-73,7,41,sprejet,,sprejet,Appmsnn,ADJ,O,,O
 sl-73,7,42,",",,",",Z,PUNCT,O,,O
 sl-73,7,43,zapletel,,zaplesti,Vmep-sm,VERB,O,,O
 sl-73,7,44,gradnjo,,gradnja,Ncfsa,NOUN,O,,O
-sl-73,7,45,Severnega,,severen,Agpmsg,ADJ,O,,B-PRO
-sl-73,7,46,toka,,tok,Ncmsg,NOUN,O,,I-PRO
+sl-73,7,45,Severnega,,severen,Agpmsg,ADJ,O,,O
+sl-73,7,46,toka,,tok,Ncmsg,NOUN,O,,O
 sl-73,7,47,2.,,2.,Mdo,NUM,O,,O
 sl-73,8,1,Dejala,,dejati,Vmep-sf,VERB,O,,O
 sl-73,8,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -192,7 +192,7 @@ sl-73,8,7,novega,,nov,Agpnsg,ADJ,O,,O
 sl-73,8,8,",",,",",Z,PUNCT,O,,O
 sl-73,8,9,da,,da,Cs,SCONJ,O,,O
 sl-73,8,10,so,,biti,Va-r3p-n,AUX,O,,O
-sl-73,8,11,o,,o,Sl,ADP,O,,I-PRO
+sl-73,8,11,o,,o,Sl,ADP,O,,O
 sl-73,8,12,tem,,ta,Pd-msl,DET,O,,O
 sl-73,8,13,plinovodu,,plinovod,Ncmsl,NOUN,O,,O
 sl-73,8,14,različna,,različen,Agpnpn,ADJ,O,,O
@@ -283,7 +283,7 @@ sl-73,12,6,obeležili,,obeležiti,Vmep-pm,VERB,O,,O
 sl-73,12,7,30.,,30.,Mdo,NUM,O,,O
 sl-73,12,8,obletnico,,obletnica,Ncfsa,NOUN,O,,O
 sl-73,12,9,padca,,padec,Ncmsg,NOUN,O,,B-EVT
-sl-73,12,10,berlinskega,,berlinski,Agpmsg,ADJ,O,,B-EVT
+sl-73,12,10,berlinskega,,berlinski,Agpmsg,ADJ,O,,I-EVT
 sl-73,12,11,zidu,,zid,Ncmsg,NOUN,O,,I-EVT
 sl-73,12,12,.,,.,Z,PUNCT,O,,O
 sl-73,13,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER

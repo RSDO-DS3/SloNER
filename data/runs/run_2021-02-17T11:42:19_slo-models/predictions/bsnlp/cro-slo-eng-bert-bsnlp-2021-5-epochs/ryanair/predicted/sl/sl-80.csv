@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-80,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-80,0,2,in,,in,Cc,CCONJ,O,,O
 sl-80,0,3,nemški,,nemški,Agpmpn,ADJ,O,,O
@@ -59,7 +59,7 @@ sl-80,3,11,akcij,,akcija,Ncfpg,NOUN,O,,O
 sl-80,3,12,.,,.,Z,PUNCT,O,,O
 sl-80,4,1,S,,z,Si,ADP,O,,O
 sl-80,4,2,kolektivno,,kolektiven,Agpfsi,ADJ,O,,O
-sl-80,4,3,pogodbo,,pogodba,Ncfsi,NOUN,O,,O
+sl-80,4,3,pogodbo,,pogodba,Ncfsi,NOUN,O,,I-PRO
 sl-80,4,4,se,,se,Px------y,PRON,O,,O
 sl-80,4,5,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-80,4,6,zvišala,,zvišati,Vmep-sf,VERB,O,,O

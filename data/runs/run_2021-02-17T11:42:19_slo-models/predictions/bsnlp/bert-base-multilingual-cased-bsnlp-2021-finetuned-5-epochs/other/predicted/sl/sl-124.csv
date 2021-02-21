@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-124,0,1,Minister,,minister,Ncmsn,NOUN,O,,O
 sl-124,0,2,BiH,BiH,Bih,Npfsg,PROPN,B-LOC,GPE-Bosnia-and-Herzegovina,B-LOC
 sl-124,0,3,trdi,,trditi,Vmpr3s,VERB,O,,O
@@ -9,7 +9,7 @@ sl-124,0,7,dokaze,,dokaz,Ncmpa,NOUN,O,,O
 sl-124,0,8,o,,o,Sl,ADP,O,,O
 sl-124,0,9,neprimernem,,neprimeren,Agpnsl,ADJ,O,,O
 sl-124,0,10,ravnanju,,ravnanje,Ncnsl,NOUN,O,,O
-sl-124,0,11,hrvaških,,hrvaški,Agpmpg,ADJ,O,,B-LOC
+sl-124,0,11,hrvaških,,hrvaški,Agpmpg,ADJ,O,,O
 sl-124,0,12,policistov,,policist,Ncmpg,NOUN,O,,O
 sl-124,0,13,z,,z,Si,ADP,O,,O
 sl-124,0,14,migranti,,migrant,Ncmpi,NOUN,O,,O

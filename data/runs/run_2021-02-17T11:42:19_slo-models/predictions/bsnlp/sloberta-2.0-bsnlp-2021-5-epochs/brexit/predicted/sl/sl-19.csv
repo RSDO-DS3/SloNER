@@ -1,10 +1,10 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-19,0,1,Bank,Bank,bank,Xf,X,B-ORG,ORG-Bank-of-England,B-ORG
-sl-19,0,2,of,of,of,Xf,X,I-ORG,ORG-Bank-of-England,I-ORG
-sl-19,0,3,England,England,England,Npmsn,PROPN,I-ORG,ORG-Bank-of-England,I-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-19,0,1,Bank,Bank,bank,Xf,X,B-ORG,ORG-Bank-of-England,B-LOC
+sl-19,0,2,of,of,of,Xf,X,I-ORG,ORG-Bank-of-England,I-LOC
+sl-19,0,3,England,England,England,Npmsn,PROPN,I-ORG,ORG-Bank-of-England,I-LOC
 sl-19,0,4,:,,:,Z,PUNCT,O,,O
 sl-19,0,5,Brexit,,Brexit,Npmsn,PROPN,B-EVT,,B-EVT
-sl-19,0,6,brez,,brez,Sg,ADP,O,,B-EVT
+sl-19,0,6,brez,,brez,Sg,ADP,O,,O
 sl-19,0,7,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-19,0,8,bi,,biti,Va-c,AUX,O,,O
 sl-19,0,9,bil,,biti,Va-p-sm,AUX,O,,O
@@ -14,7 +14,7 @@ sl-19,0,12,za,,za,Sa,ADP,O,,O
 sl-19,0,13,evropski,,evropski,Agpmsay,ADJ,O,,O
 sl-19,0,14,finančni,,finančen,Agpmsay,ADJ,O,,O
 sl-19,0,15,sistem,,sistem,Ncmsan,NOUN,O,,O
-sl-19,1,1,Londonski,Londonski,londonski,Agpmsny,ADJ,B-LOC,LOC-City-of-London,B-LOC
+sl-19,1,1,Londonski,Londonski,londonski,Agpmsny,ADJ,B-LOC,LOC-City-of-London,O
 sl-19,1,2,City,City,City,Npmsn,PROPN,I-LOC,LOC-City-of-London,I-LOC
 sl-19,1,3,velja,,veljati,Vmpr3s,VERB,O,,O
 sl-19,1,4,za,,za,Sa,ADP,O,,O
@@ -31,7 +31,7 @@ sl-19,1,14,ključnih,,ključen,Agpfpg,ADJ,O,,O
 sl-19,1,15,transakcij,,transakcija,Ncfpg,NOUN,O,,O
 sl-19,1,16,",",,",",Z,PUNCT,O,,O
 sl-19,1,17,in,,in,Cc,CCONJ,O,,O
-sl-19,1,18,centralna,,centralen,Agpfsn,ADJ,O,,I-ORG
+sl-19,1,18,centralna,,centralen,Agpfsn,ADJ,O,,B-ORG
 sl-19,1,19,banka,,banka,Ncfsn,NOUN,O,,I-ORG
 sl-19,1,20,je,,biti,Va-r3s-n,AUX,O,,O
 sl-19,1,21,v,,v,Sl,ADP,O,,O
@@ -63,7 +63,7 @@ sl-19,1,46,nekaterim,,nekateri,Pi-mpd,DET,O,,O
 sl-19,1,47,tveganjem,,tveganje,Ncnpd,NOUN,O,,O
 sl-19,1,48,v,,v,Sl,ADP,O,,O
 sl-19,1,49,primeru,,primer,Ncmsl,NOUN,O,,O
-sl-19,1,50,brexita,,brexit,Ncmsg,NOUN,B-EVT,,O
+sl-19,1,50,brexita,,brexit,Ncmsg,NOUN,B-EVT,,B-EVT
 sl-19,1,51,brez,,brez,Sg,ADP,O,,O
 sl-19,1,52,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-19,1,53,.,,.,Z,PUNCT,O,,O
@@ -117,8 +117,8 @@ sl-19,3,16,učinke,,učinek,Ncmpa,NOUN,O,,O
 sl-19,3,17,občutili,,občutiti,Vmep-pm,VERB,O,,O
 sl-19,3,18,tudi,,tudi,Q,PART,O,,O
 sl-19,3,19,v,,v,Sl,ADP,O,,O
-sl-19,3,20,Združenem,Združeno,združen,Appnsl,ADJ,B-LOC,GPE-Great-Britain,O
-sl-19,3,21,kraljestvu,kraljestvo,kraljestvo,Ncnsl,NOUN,I-LOC,GPE-Great-Britain,O
+sl-19,3,20,Združenem,Združeno,združen,Appnsl,ADJ,B-LOC,GPE-Great-Britain,B-LOC
+sl-19,3,21,kraljestvu,kraljestvo,kraljestvo,Ncnsl,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-19,3,22,",",,",",Z,PUNCT,O,,O
 sl-19,3,23,«,,«,Z,PUNCT,O,,O
 sl-19,3,24,je,,biti,Va-r3s-n,AUX,O,,O
@@ -155,7 +155,7 @@ sl-19,4,16,napredka,,napredek,Ncmsg,NOUN,O,,O
 sl-19,4,17,.,,.,Z,PUNCT,O,,O
 sl-19,5,1,Nedavno,,nedavno,Rgp,ADV,O,,O
 sl-19,5,2,je,,biti,Va-r3s-n,AUX,O,,O
-sl-19,5,3,tako,,tako,Rgp,ADV,O,,B-EVT
+sl-19,5,3,tako,,tako,Rgp,ADV,O,,O
 sl-19,5,4,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-19,5,5,trem,,trije,Mlcfpd,NUM,O,,O
 sl-19,5,6,družbam,,družba,Ncfpd,NOUN,O,,O
@@ -175,7 +175,7 @@ sl-19,5,19,uniji,,unija,Ncfsl,NOUN,O,,O
 sl-19,5,20,tudi,,tudi,Q,PART,O,,O
 sl-19,5,21,v,,v,Sl,ADP,O,,O
 sl-19,5,22,primeru,,primer,Ncmsl,NOUN,O,,O
-sl-19,5,23,brexita,,brexit,Ncmsg,NOUN,B-EVT,,O
+sl-19,5,23,brexita,,brexit,Ncmsg,NOUN,B-EVT,,B-EVT
 sl-19,5,24,brez,,brez,Sg,ADP,O,,O
 sl-19,5,25,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-19,5,26,.,,.,Z,PUNCT,O,,O
@@ -195,7 +195,7 @@ sl-19,7,4,da,,da,Cs,SCONJ,O,,O
 sl-19,7,5,finančna,,finančen,Agpfsn,ADJ,O,,O
 sl-19,7,6,stabilnost,,stabilnost,Ncfsn,NOUN,O,,O
 sl-19,7,7,na,,na,Sl,ADP,O,,O
-sl-19,7,8,Otoku,Otok,otok,Ncmsl,NOUN,B-LOC,GPE-Great-Britain,O
+sl-19,7,8,Otoku,Otok,otok,Ncmsl,NOUN,B-LOC,GPE-Great-Britain,B-LOC
 sl-19,7,9,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-19,7,10,ogrožena,,ogrožen,Appfsn,ADJ,O,,O
 sl-19,7,11,in,,in,Cc,CCONJ,O,,O
@@ -210,7 +210,7 @@ sl-19,7,19,oblike,,oblika,Ncfpa,NOUN,O,,O
 sl-19,7,20,tveganj,,tveganje,Ncnpg,NOUN,O,,O
 sl-19,7,21,.,,.,Z,PUNCT,O,,O
 sl-19,8,1,V,,v,Sa,ADP,O,,O
-sl-19,8,2,ta,,ta,Pd-msa,DET,O,,B-EVT
+sl-19,8,2,ta,,ta,Pd-msa,DET,O,,O
 sl-19,8,3,namen,,namen,Ncmsan,NOUN,O,,O
 sl-19,8,4,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-19,8,5,še,,še,Q,PART,O,,O
@@ -276,7 +276,7 @@ sl-19,11,2,vedno,,vedno,Rgp,ADV,O,,O
 sl-19,11,3,tako,,tako,Rgp,ADV,O,,O
 sl-19,11,4,v,,v,Sl,ADP,O,,O
 sl-19,11,5,primeru,,primer,Ncmsl,NOUN,O,,O
-sl-19,11,6,brexita,,brexit,Ncmsg,NOUN,B-EVT,,O
+sl-19,11,6,brexita,,brexit,Ncmsg,NOUN,B-EVT,,B-EVT
 sl-19,11,7,brez,,brez,Sg,ADP,O,,O
 sl-19,11,8,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-19,11,9,pričakujejo,,pričakovati,Vmpr3p,VERB,O,,O
@@ -308,7 +308,7 @@ sl-19,12,16,vlagateljev,,vlagatelj,Ncmpg,NOUN,O,,O
 sl-19,12,17,za,,za,Si,ADP,O,,O
 sl-19,12,18,naložbami,,naložba,Ncfpi,NOUN,O,,O
 sl-19,12,19,na,,na,Sl,ADP,O,,O
-sl-19,12,20,Otoku,Otok,otok,Ncmsl,NOUN,B-LOC,GPE-Great-Britain,O
+sl-19,12,20,Otoku,Otok,otok,Ncmsl,NOUN,B-LOC,GPE-Great-Britain,B-LOC
 sl-19,12,21,«,,«,Z,PUNCT,O,,O
 sl-19,12,22,",",,",",Z,PUNCT,O,,O
 sl-19,12,23,če,,če,Cs,SCONJ,O,,O

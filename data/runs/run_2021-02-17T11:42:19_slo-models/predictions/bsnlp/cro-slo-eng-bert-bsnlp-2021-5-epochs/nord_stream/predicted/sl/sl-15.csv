@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-15,0,1,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
 sl-15,0,2,iz,,iz,Sg,ADP,O,,O
 sl-15,0,3,poroke,,poroka,Ncfsg,NOUN,O,,O
@@ -137,7 +137,7 @@ sl-15,6,20,zdravili,,zdravilo,Ncnpi,NOUN,O,,O
 sl-15,6,21,",",,",",Z,PUNCT,O,,O
 sl-15,6,22,je,,biti,Va-r3s-n,AUX,O,,O
 sl-15,6,23,spomnil,,spomniti,Vmep-sm,VERB,O,,O
-sl-15,6,24,ruski,,ruski,Agpmsny,ADJ,O,,B-LOC
+sl-15,6,24,ruski,,ruski,Agpmsny,ADJ,O,,O
 sl-15,6,25,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-15,6,26,.,,.,Z,PUNCT,O,,O
 sl-15,7,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
@@ -191,8 +191,8 @@ sl-15,10,7,spregovoriti,,spregovoriti,Vmen,VERB,O,,O
 sl-15,10,8,o,,o,Sl,ADP,O,,O
 sl-15,10,9,možnosti,,možnost,Ncfsl,NOUN,O,,O
 sl-15,10,10,napotitve,,napotitev,Ncfsg,NOUN,O,,O
-sl-15,10,11,modrih,modre,moder,Agpfpg,ADJ,B-PER,ORG-United-Nations-Peacekeeping,O
-sl-15,10,12,čelad,čelade,čelada,Ncfpg,NOUN,I-PER,ORG-United-Nations-Peacekeeping,O
+sl-15,10,11,modrih,modre,moder,Agpfpg,ADJ,B-PER,ORG-United-Nations-Peacekeeping,B-ORG
+sl-15,10,12,čelad,čelade,čelada,Ncfpg,NOUN,I-PER,ORG-United-Nations-Peacekeeping,I-ORG
 sl-15,10,13,ZN,ZN,ZN,Npfsg,PROPN,I-PER,ORG-United-Nations-Peacekeeping,B-ORG
 sl-15,10,14,",",,",",Z,PUNCT,O,,O
 sl-15,10,15,ki,,ki,Cs,SCONJ,O,,O
@@ -273,7 +273,7 @@ sl-15,14,10,in,,in,Cc,CCONJ,O,,O
 sl-15,14,11,Nemčijo,Nemčija,Nemčija,Npfsi,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-15,14,12,ter,,ter,Cc,CCONJ,O,,O
 sl-15,14,13,iranski,iranski,iranski,Agpmsay,ADJ,B-PRO,PRO-Iran-nuclear-deal,B-PRO
-sl-15,14,14,jedrski,jedrski,jedrski,Agpmsay,ADJ,I-PRO,PRO-Iran-nuclear-deal,O
+sl-15,14,14,jedrski,jedrski,jedrski,Agpmsay,ADJ,I-PRO,PRO-Iran-nuclear-deal,I-PRO
 sl-15,14,15,sporazum,sporazum,sporazum,Ncmsan,NOUN,I-PRO,PRO-Iran-nuclear-deal,I-PRO
 sl-15,14,16,",",,",",Z,PUNCT,O,,O
 sl-15,14,17,ki,,ki,Cs,SCONJ,O,,O
@@ -327,7 +327,7 @@ sl-15,17,15,predsednika,,predsednik,Ncmsg,NOUN,O,,O
 sl-15,17,16,Donalda,Donald,Donald,Npmsg,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-15,17,17,Trumpa,Trump,Trump,Npmsg,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-15,17,18,.,,.,Z,PUNCT,O,,O
-sl-15,18,1,Ta,,ta,Pd-msn,DET,O,,O
+sl-15,18,1,Ta,,ta,Pd-msn,DET,O,,B-PER
 sl-15,18,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-15,18,3,med,,med,Si,ADP,O,,O
 sl-15,18,4,drugim,,drug,Mlpnsi,ADJ,O,,O
@@ -411,7 +411,7 @@ sl-15,22,13,odnosov,,odnos,Ncmpg,NOUN,O,,O
 sl-15,22,14,z,,z,Si,ADP,O,,O
 sl-15,22,15,Zahodom,Zahod,Zahod,Npmsi,PROPN,B-LOC,LOC-West,B-LOC
 sl-15,22,16,zaradi,,zaradi,Sg,ADP,O,,O
-sl-15,22,17,ukrajinske,,ukrajinski,Agpfsg,ADJ,O,,B-LOC
+sl-15,22,17,ukrajinske,,ukrajinski,Agpfsg,ADJ,O,,O
 sl-15,22,18,krize,,kriza,Ncfsg,NOUN,O,,O
 sl-15,22,19,.,,.,Z,PUNCT,O,,O
 sl-15,23,1,Avstrijski,Avstrijski,avstrijski,Agpmpn,ADJ,B-ORG,ORG-Freedom-Party-of-Austria,B-ORG
@@ -447,7 +447,7 @@ sl-15,23,30,",",,",",Z,PUNCT,O,,O
 sl-15,23,31,tako,,tako,Cc,CCONJ,O,,O
 sl-15,23,32,glede,,glede,Sg,ADP,O,,O
 sl-15,23,33,zasedbe,,zasedba,Ncfsg,NOUN,O,,O
-sl-15,23,34,ukrajinskega,,ukrajinski,Agpmsg,ADJ,O,,B-LOC
+sl-15,23,34,ukrajinskega,,ukrajinski,Agpmsg,ADJ,O,,O
 sl-15,23,35,polotoka,,polotok,Ncmsg,NOUN,O,,O
 sl-15,23,36,Krim,Krim,Krim,Npmsn,PROPN,B-LOC,GPE-Crimea,B-LOC
 sl-15,23,37,kot,,kot,Cs,SCONJ,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-89,0,1,Kako,,kako,Rgp,ADV,O,,O
 sl-89,0,2,letalske,,letalski,Agpfpn,ADJ,O,,O
 sl-89,0,3,družbe,,družba,Ncfpn,NOUN,O,,O
@@ -136,10 +136,10 @@ sl-89,7,12,na,,na,Sa,ADP,O,,O
 sl-89,7,13,primer,,primer,Ncmsan,NOUN,O,,O
 sl-89,7,14,od,,od,Sg,ADP,O,,O
 sl-89,7,15,New,New,New,Npmsn,PROPN,B-LOC,GPE-New-York,B-LOC
-sl-89,7,16,Yorka,York,York,Npmsg,PROPN,I-LOC,GPE-New-York,B-LOC
+sl-89,7,16,Yorka,York,York,Npmsg,PROPN,I-LOC,GPE-New-York,I-LOC
 sl-89,7,17,do,,do,Sg,ADP,O,,O
 sl-89,7,18,Los,Los,Los,Npmsn,PROPN,B-LOC,GPE-Los-Angeles,B-LOC
-sl-89,7,19,Angelesa,Angeles,Angeles,Npmsg,PROPN,I-LOC,GPE-Los-Angeles,B-LOC
+sl-89,7,19,Angelesa,Angeles,Angeles,Npmsg,PROPN,I-LOC,GPE-Los-Angeles,I-LOC
 sl-89,7,20,.,,.,Z,PUNCT,O,,O
 sl-89,8,1,Potniki,,potnik,Ncmpn,NOUN,O,,O
 sl-89,8,2,tako,,tako,Rgp,ADV,O,,O

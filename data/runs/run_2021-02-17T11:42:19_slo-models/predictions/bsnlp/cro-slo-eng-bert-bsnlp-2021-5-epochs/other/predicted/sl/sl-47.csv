@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-47,0,1,Romunija,Romunija,Romunija,Npfsn,PROPN,B-LOC,GPE-Romania,B-LOC
 sl-47,0,2,kot,,kot,Cs,SCONJ,O,,O
 sl-47,0,3,volk,,volk,Ncmsn,NOUN,O,,O
@@ -22,8 +22,8 @@ sl-47,2,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-47,2,3,prevzela,,prevzeti,Vmep-sf,VERB,O,,O
 sl-47,2,4,šestmesečno,,šestmesečen,Agpnsa,ADJ,O,,O
 sl-47,2,5,predsedstvo,,predsedstvo,Ncnsa,NOUN,O,,O
-sl-47,2,6,sveta,svet,svet,Ncmsg,NOUN,B-ORG,ORG-EU-Council,I-ORG
-sl-47,2,7,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-EU-Council,B-ORG
+sl-47,2,6,sveta,svet,svet,Ncmsg,NOUN,B-ORG,ORG-EU-Council,B-ORG
+sl-47,2,7,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-EU-Council,I-ORG
 sl-47,2,8,",",,",",Z,PUNCT,O,,O
 sl-47,2,9,torej,,torej,Cc,CCONJ,O,,O
 sl-47,2,10,za,,za,Sa,ADP,O,,O
@@ -74,7 +74,7 @@ sl-47,3,13,več,,več,Rgc,DET,O,,O
 sl-47,3,14,sto,,sto,Mlc-pa,NUM,O,,O
 sl-47,3,15,ljudi,,človek,Ncmpg,NOUN,O,,O
 sl-47,3,16,na,,na,Sl,ADP,O,,O
-sl-47,3,17,bukareških,,bukareški,Agpfpl,ADJ,O,,B-LOC
+sl-47,3,17,bukareških,,bukareški,Agpfpl,ADJ,O,,O
 sl-47,3,18,ulicah,,ulica,Ncfpl,NOUN,O,,O
 sl-47,3,19,.,,.,Z,PUNCT,O,,O
 sl-47,4,1,V,,v,Sl,ADP,O,,O
@@ -255,7 +255,7 @@ sl-47,11,5,od,,od,Sg,ADP,O,,O
 sl-47,11,6,volilne,,volilen,Agpfsg,ADJ,O,,O
 sl-47,11,7,zmage,,zmaga,Ncfsg,NOUN,O,,O
 sl-47,11,8,socialnih,socialni,socialen,Agpmpg,ADJ,B-ORG,ORG-Social-Democratic-Party-Romania,B-ORG
-sl-47,11,9,demokratov,demokrati,demokrat,Ncmpg,NOUN,I-ORG,ORG-Social-Democratic-Party-Romania,B-ORG
+sl-47,11,9,demokratov,demokrati,demokrat,Ncmpg,NOUN,I-ORG,ORG-Social-Democratic-Party-Romania,I-ORG
 sl-47,11,10,decembra,,december,Ncmsg,NOUN,O,,O
 sl-47,11,11,2016,,2016,Mdc,NUM,O,,O
 sl-47,11,12,ne,,ne,Q,PART,O,,O
@@ -275,10 +275,10 @@ sl-47,11,25,da,,da,Cs,SCONJ,O,,O
 sl-47,11,26,bi,,biti,Va-c,AUX,O,,O
 sl-47,11,27,voditelja,,voditelj,Ncmsay,NOUN,O,,O
 sl-47,11,28,vladajoče,,vladajoč,Appfsg,ADJ,O,,O
-sl-47,11,29,socialdemokratske,socialdemokrati,socialdemokratski,Agpfsg,ADJ,B-ORG,ORG-Social-Democratic-Party-Romania,O
+sl-47,11,29,socialdemokratske,socialdemokrati,socialdemokratski,Agpfsg,ADJ,B-ORG,ORG-Social-Democratic-Party-Romania,B-ORG
 sl-47,11,30,stranke,,stranka,Ncfsg,NOUN,O,,O
 sl-47,11,31,Livia,Liviu,Livia,Npfsn,PROPN,B-PER,PER-Liviu-Dragnea,B-PER
-sl-47,11,32,Dragneo,Dragnea,Dragneo,Npfsn,PROPN,I-PER,PER-Liviu-Dragnea,B-PER
+sl-47,11,32,Dragneo,Dragnea,Dragneo,Npfsn,PROPN,I-PER,PER-Liviu-Dragnea,I-PER
 sl-47,11,33,zaprli,,zapreti,Vmep-pm,VERB,O,,O
 sl-47,11,34,.,,.,Z,PUNCT,O,,O
 sl-47,12,1,Ta,,ta,Pd-msn,DET,O,,O
@@ -340,7 +340,7 @@ sl-47,14,6,ker,,ker,Cs,SCONJ,O,,O
 sl-47,14,7,naj,,naj,Q,PART,O,,O
 sl-47,14,8,bi,,biti,Va-c,AUX,O,,O
 sl-47,14,9,zlorabil,,zlorabiti,Vmep-sm,VERB,O,,O
-sl-47,14,10,evropska,,evropski,Agpnpa,ADJ,O,,B-ORG
+sl-47,14,10,evropska,,evropski,Agpnpa,ADJ,O,,O
 sl-47,14,11,sredstva,,sredstvo,Ncnpa,NOUN,O,,O
 sl-47,14,12,.,,.,Z,PUNCT,O,,O
 sl-47,15,1,Tako,,tako,Rgp,ADV,O,,O
@@ -505,7 +505,7 @@ sl-47,23,12,",",,",",Z,PUNCT,O,,O
 sl-47,23,13,ko,,ko,Cs,SCONJ,O,,O
 sl-47,23,14,je,,biti,Va-r3s-n,AUX,O,,O
 sl-47,23,15,bila,,biti,Va-p-sf,AUX,O,,O
-sl-47,23,16,evropska,,evropski,Agpfsn,ADJ,O,,B-ORG
+sl-47,23,16,evropska,,evropski,Agpfsn,ADJ,O,,O
 sl-47,23,17,poslanka,,poslanka,Ncfsn,NOUN,O,,O
 sl-47,23,18,",",,",",Z,PUNCT,O,,O
 sl-47,23,19,izjavila,,izjaviti,Vmep-sf,VERB,O,,O

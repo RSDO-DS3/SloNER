@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-161,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-161,0,2,:,,:,Z,PUNCT,O,,O
 sl-161,0,3,veliko,,veliko,Rgp,DET,O,,O
@@ -11,7 +11,7 @@ sl-161,1,3,pogajanja,,pogajanje,Ncnsg,NOUN,O,,O
 sl-161,1,4,za,,za,Sa,ADP,O,,O
 sl-161,1,5,EU,EU,EU,Npfsa,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-161,1,6,Michael,Michael,Michael,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
-sl-161,1,7,Barnier,Barnier,Barnier,Npmsn,PROPN,I-PER,PER-Michel-Barnier,B-PER
+sl-161,1,7,Barnier,Barnier,Barnier,Npmsn,PROPN,I-PER,PER-Michel-Barnier,I-PER
 sl-161,1,8,med,,med,Si,ADP,O,,O
 sl-161,1,9,današnjo,,današnji,Agpfsi,ADJ,O,,O
 sl-161,1,10,tiskovno,,tiskoven,Agpfsi,ADJ,O,,O
@@ -35,7 +35,7 @@ sl-161,2,14,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-161,2,15,o,,o,Sl,ADP,O,,O
 sl-161,2,16,treh,,trije,Mlcnpl,NUM,O,,O
 sl-161,2,17,prednostnih,,prednosten,Agpnpl,ADJ,O,,O
-sl-161,2,18,ločitvenih,,ločitven,Agpnpl,ADJ,O,,B-PER
+sl-161,2,18,ločitvenih,,ločitven,Agpnpl,ADJ,O,,O
 sl-161,2,19,vprašanjih,,vprašanje,Ncnpl,NOUN,O,,O
 sl-161,2,20,-,,-,Z,PUNCT,O,,O
 sl-161,2,21,pravicah,,pravica,Ncfpl,NOUN,O,,O
@@ -43,15 +43,15 @@ sl-161,2,22,državljanov,,državljan,Ncmpg,NOUN,O,,O
 sl-161,2,23,",",,",",Z,PUNCT,O,,O
 sl-161,2,24,finančni,,finančen,Agpfsl,ADJ,O,,O
 sl-161,2,25,poravnavi,,poravnava,Ncfsl,NOUN,O,,O
-sl-161,2,26,in,,in,Cc,CCONJ,O,,B-LOC
+sl-161,2,26,in,,in,Cc,CCONJ,O,,O
 sl-161,2,27,meji,,meja,Ncfsl,NOUN,O,,O
 sl-161,2,28,na,,na,Sl,ADP,O,,O
-sl-161,2,29,irskem,irski,irski,Agpmsl,ADJ,B-LOC,GPE-Ireland,O
+sl-161,2,29,irskem,irski,irski,Agpmsl,ADJ,B-LOC,GPE-Ireland,B-LOC
 sl-161,2,30,otoku,otok,otok,Ncmsl,NOUN,I-LOC,GPE-Ireland,I-LOC
 sl-161,2,31,",",,",",Z,PUNCT,O,,O
 sl-161,2,32,vključuje,,vključevati,Vmpr3s,VERB,O,,O
 sl-161,2,33,pa,,pa,Cc,CCONJ,O,,O
-sl-161,2,34,tudi,,tudi,Q,PART,O,,B-EVT
+sl-161,2,34,tudi,,tudi,Q,PART,O,,O
 sl-161,2,35,besedilo,,besedilo,Ncnsa,NOUN,O,,O
 sl-161,2,36,o,,o,Sl,ADP,O,,O
 sl-161,2,37,prehodnem,,prehoden,Agpnsl,ADJ,O,,O
@@ -65,9 +65,9 @@ sl-161,3,1,Glavni,,glaven,Agpmsny,ADJ,O,,O
 sl-161,3,2,pogajalec,,pogajalec,Ncmsn,NOUN,O,,O
 sl-161,3,3,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-161,3,4,o,,o,Sl,ADP,O,,O
-sl-161,3,5,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,O
+sl-161,3,5,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-161,3,6,Michel,Michael,Michel,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
-sl-161,3,7,Barnier,Barnier,Barnier,Npmsn,PROPN,I-PER,PER-Michel-Barnier,O
+sl-161,3,7,Barnier,Barnier,Barnier,Npmsn,PROPN,I-PER,PER-Michel-Barnier,I-PER
 sl-161,3,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-161,3,9,danes,,danes,Rgp,ADV,O,,O
 sl-161,3,10,ponovil,,ponoviti,Vmep-sm,VERB,O,,O
@@ -82,7 +82,7 @@ sl-161,3,18,stranmi,,stran,Ncfpi,NOUN,O,,O
 sl-161,3,19,in,,in,Cc,CCONJ,O,,O
 sl-161,3,20,168,,168,Mdc,NUM,O,,O
 sl-161,3,21,členi,,člen,Ncmpi,NOUN,O,,O
-sl-161,3,22,ni,,biti,Va-r3s-y,VERB,O,,B-PER
+sl-161,3,22,ni,,biti,Va-r3s-y,VERB,O,,O
 sl-161,3,23,presenečenj,,presenečenje,Ncnpg,NOUN,O,,O
 sl-161,3,24,.,,.,Z,PUNCT,O,,O
 sl-161,4,1,Kljub,,kljub,Sd,ADP,O,,O
@@ -95,7 +95,7 @@ sl-161,4,7,veliko,,veliko,Rgp,DET,O,,O
 sl-161,4,8,hrupa,,hrup,Ncmsg,NOUN,O,,O
 sl-161,4,9,protokol,,protokol,Ncmsn,NOUN,O,,O
 sl-161,4,10,o,,o,Sl,ADP,O,,O
-sl-161,4,11,Irski,Irska,Irska,Npfsl,PROPN,B-LOC,GPE-Ireland,O
+sl-161,4,11,Irski,Irska,Irska,Npfsl,PROPN,B-LOC,GPE-Ireland,B-LOC
 sl-161,4,12,",",,",",Z,PUNCT,O,,O
 sl-161,4,13,ki,,ki,Cs,SCONJ,O,,O
 sl-161,4,14,predvideva,,predvidevati,Vmpr3s,VERB,O,,O
@@ -114,7 +114,7 @@ sl-161,4,26,bo,,biti,Va-f3s-n,VERB,O,,O
 sl-161,4,27,mogoče,,mogoč,Agpnsn,ADJ,O,,O
 sl-161,4,28,najti,,najti,Vmen,VERB,O,,O
 sl-161,4,29,boljše,,dober,Agcfsg,ADJ,O,,O
-sl-161,4,30,rešitve,,rešitev,Ncfsg,NOUN,O,,B-PER
+sl-161,4,30,rešitve,,rešitev,Ncfsg,NOUN,O,,O
 sl-161,4,31,.,,.,Z,PUNCT,O,,O
 sl-161,5,1,Da,,da,Cs,SCONJ,O,,O
 sl-161,5,2,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -127,7 +127,7 @@ sl-161,5,8,izstopnega,,izstopen,Agpmsg,ADJ,O,,O
 sl-161,5,9,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-161,5,10,",",,",",Z,PUNCT,O,,O
 sl-161,5,11,je,,biti,Va-r3s-n,AUX,O,,O
-sl-161,5,12,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,O
+sl-161,5,12,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
 sl-161,5,13,napovedal,,napovedati,Vmep-sm,VERB,O,,O
 sl-161,5,14,že,,že,Q,PART,O,,O
 sl-161,5,15,pred,,pred,Si,ADP,O,,O
@@ -146,14 +146,14 @@ sl-161,5,27,znova,,znova,Rgp,ADV,O,,O
 sl-161,5,28,izpostavil,,izpostaviti,Vmep-sm,VERB,O,,O
 sl-161,5,29,",",,",",Z,PUNCT,O,,O
 sl-161,5,30,da,,da,Cs,SCONJ,O,,O
-sl-161,5,31,se,,se,Px------y,PRON,O,,B-PER
+sl-161,5,31,se,,se,Px------y,PRON,O,,O
 sl-161,5,32,je,,biti,Va-r3s-n,VERB,O,,O
 sl-161,5,33,treba,,treba,Rgp,ADV,O,,O
 sl-161,5,34,izogniti,,izogniti,Vmen,VERB,O,,O
 sl-161,5,35,neprepustni,,neprepusten,Agpfsd,ADJ,O,,O
 sl-161,5,36,meji,,meja,Ncfsd,NOUN,O,,O
 sl-161,5,37,na,,na,Sl,ADP,O,,O
-sl-161,5,38,irskem,irski,irski,Agpmsl,ADJ,B-LOC,GPE-Ireland,O
+sl-161,5,38,irskem,irski,irski,Agpmsl,ADJ,B-LOC,GPE-Ireland,B-LOC
 sl-161,5,39,otoku,otok,otok,Ncmsl,NOUN,I-LOC,GPE-Ireland,I-LOC
 sl-161,5,40,ter,,ter,Cc,CCONJ,O,,O
 sl-161,5,41,da,,da,Cs,SCONJ,O,,O
@@ -177,7 +177,7 @@ sl-161,6,9,vprašanja,,vprašanje,Ncnsg,NOUN,O,,O
 sl-161,6,10,",",,",",Z,PUNCT,O,,O
 sl-161,6,11,predvidene,,predviden,Appfsg,ADJ,O,,O
 sl-161,6,12,v,,v,Sl,ADP,O,,O
-sl-161,6,13,sklopu,,sklop,Ncmsl,NOUN,O,,I-PER
+sl-161,6,13,sklopu,,sklop,Ncmsl,NOUN,O,,O
 sl-161,6,14,decembrskega,,decembrski,Agpmsg,ADJ,O,,O
 sl-161,6,15,kompromisa,,kompromis,Ncmsg,NOUN,O,,O
 sl-161,6,16,:,,:,Z,PUNCT,O,,O
@@ -204,7 +204,7 @@ sl-161,6,36,",",,",",Z,PUNCT,O,,O
 sl-161,6,37,ter,,ter,Cc,CCONJ,O,,O
 sl-161,6,38,ohranitev,,ohranitev,Ncfsn,NOUN,O,,O
 sl-161,6,39,Severne,Severna,severen,Agpfsg,ADJ,B-LOC,GPE-Northern-Ireland,B-LOC
-sl-161,6,40,Irske,Irska,Irska,Npfsg,PROPN,I-LOC,GPE-Northern-Ireland,O
+sl-161,6,40,Irske,Irska,Irska,Npfsg,PROPN,I-LOC,GPE-Northern-Ireland,I-LOC
 sl-161,6,41,v,,v,Sl,ADP,O,,O
 sl-161,6,42,notranjem,,notranji,Agpmsl,ADJ,O,,O
 sl-161,6,43,trgu,,trg,Ncmsl,NOUN,O,,O
@@ -245,7 +245,7 @@ sl-161,7,30,je,,biti,Va-r3s-n,AUX,O,,O
 sl-161,7,31,že,,že,Q,PART,O,,O
 sl-161,7,32,tedaj,,tedaj,Rgp,ADV,O,,O
 sl-161,7,33,pojasnil,,pojasniti,Vmep-sm,VERB,O,,O
-sl-161,7,34,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,O
+sl-161,7,34,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
 sl-161,7,35,.,,.,Z,PUNCT,O,,O
 sl-161,8,1,To,,ta,Pd-fsa,DET,O,,O
 sl-161,8,2,tretjo,,tretji,Mlofsa,ADJ,O,,O
@@ -278,7 +278,7 @@ sl-161,9,2,temu,,ta,Pd-nsd,DET,O,,O
 sl-161,9,3,povzroča,,povzročati,Vmpr3s,VERB,O,,O
 sl-161,9,4,protokol,,protokol,Ncmsn,NOUN,O,,O
 sl-161,9,5,o,,o,Sl,ADP,O,,O
-sl-161,9,6,Irski,Irska,irski,Agpfsl,ADJ,B-LOC,GPE-Ireland,O
+sl-161,9,6,Irski,Irska,irski,Agpfsl,ADJ,B-LOC,GPE-Ireland,B-LOC
 sl-161,9,7,veliko,,veliko,Rgp,DET,O,,O
 sl-161,9,8,hrupa,,hrup,Ncmsg,NOUN,O,,O
 sl-161,10,1,Na,,na,Sl,ADP,O,,O
@@ -288,7 +288,7 @@ sl-161,10,4,",",,",",Z,PUNCT,O,,O
 sl-161,10,5,na,,na,Sl,ADP,O,,O
 sl-161,10,6,kateri,,kateri,Pq-fsl,DET,O,,O
 sl-161,10,7,je,,biti,Va-r3s-n,AUX,O,,O
-sl-161,10,8,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,O
+sl-161,10,8,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
 sl-161,10,9,danes,,danes,Rgp,ADV,O,,O
 sl-161,10,10,predstavil,,predstaviti,Vmep-sm,VERB,O,,O
 sl-161,10,11,osnutek,,osnutek,Ncmsan,NOUN,O,,O
@@ -331,7 +331,7 @@ sl-161,10,47,kraljestva,kraljestvo,kraljestvo,Ncnsg,NOUN,I-LOC,GPE-Great-Britain
 sl-161,10,48,in,,in,Cc,CCONJ,O,,O
 sl-161,10,49,podobno,,podoben,Agpnsn,ADJ,O,,O
 sl-161,10,50,.,,.,Z,PUNCT,O,,O
-sl-161,11,1,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,O
+sl-161,11,1,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
 sl-161,11,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-161,11,3,izpostavil,,izpostaviti,Vmep-sm,VERB,O,,O
 sl-161,11,4,",",,",",Z,PUNCT,O,,O
@@ -348,8 +348,8 @@ sl-161,11,14,institucionalnega,,institucionalen,Agpmsg,ADJ,O,,O
 sl-161,11,15,in,,in,Cc,CCONJ,O,,O
 sl-161,11,16,ustavnega,,ustaven,Agpmsg,ADJ,O,,O
 sl-161,11,17,reda,,red,Ncmsg,NOUN,O,,O
-sl-161,11,18,Združenega,Združeno,združen,Appnsg,ADJ,B-LOC,GPE-Great-Britain,O
-sl-161,11,19,kraljestva,kraljestvo,kraljestvo,Ncnsg,NOUN,I-LOC,GPE-Great-Britain,O
+sl-161,11,18,Združenega,Združeno,združen,Appnsg,ADJ,B-LOC,GPE-Great-Britain,B-LOC
+sl-161,11,19,kraljestva,kraljestvo,kraljestvo,Ncnsg,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-161,11,20,ter,,ter,Cc,CCONJ,O,,O
 sl-161,11,21,da,,da,Cs,SCONJ,O,,O
 sl-161,11,22,nikakor,,nikakor,Rgp,ADV,O,,O
@@ -382,7 +382,7 @@ sl-161,12,14,«,,«,Z,PUNCT,O,,O
 sl-161,12,15,je,,biti,Va-r3s-n,AUX,O,,O
 sl-161,12,16,poudaril,,poudariti,Vmep-sm,VERB,O,,O
 sl-161,12,17,.,,.,Z,PUNCT,O,,O
-sl-161,13,1,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,O
+sl-161,13,1,Barnier,Barnier,Barnier,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
 sl-161,13,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-161,13,3,danes,,danes,Rgp,ADV,O,,O
 sl-161,13,4,znova,,znova,Rgp,ADV,O,,O
@@ -390,7 +390,7 @@ sl-161,13,5,posvaril,,posvariti,Vmep-sm,VERB,O,,O
 sl-161,13,6,",",,",",Z,PUNCT,O,,O
 sl-161,13,7,da,,da,Cs,SCONJ,O,,O
 sl-161,13,8,časa,,čas,Ncmsg,NOUN,O,,O
-sl-161,13,9,ni,,biti,Va-r3s-y,VERB,O,,B-PER
+sl-161,13,9,ni,,biti,Va-r3s-y,VERB,O,,O
 sl-161,13,10,veliko,,veliko,Rgp,DET,O,,O
 sl-161,13,11,",",,",",Z,PUNCT,O,,O
 sl-161,13,12,saj,,saj,Cc,CCONJ,O,,O
@@ -406,8 +406,8 @@ sl-161,13,21,še,,še,Q,PART,O,,O
 sl-161,13,22,13,,13,Mdc,NUM,O,,O
 sl-161,13,23,mesecev,,mesec,Ncmpg,NOUN,O,,O
 sl-161,13,24,.,,.,Z,PUNCT,O,,O
-sl-161,14,1,Združeno,Združeno,združen,Appnsn,ADJ,B-LOC,GPE-Great-Britain,O
-sl-161,14,2,kraljestva,kraljestvo,kraljestvo,Ncnsg,NOUN,I-LOC,GPE-Great-Britain,O
+sl-161,14,1,Združeno,Združeno,združen,Appnsn,ADJ,B-LOC,GPE-Great-Britain,B-LOC
+sl-161,14,2,kraljestva,kraljestvo,kraljestvo,Ncnsg,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-161,14,3,naj,,naj,Q,PART,O,,O
 sl-161,14,4,bi,,biti,Va-c,AUX,O,,O
 sl-161,14,5,namreč,,namreč,Cc,CCONJ,O,,O
@@ -443,7 +443,7 @@ sl-161,15,23,ratifikacije,,ratifikacija,Ncfpa,NOUN,O,,O
 sl-161,15,24,v,,v,Sl,ADP,O,,O
 sl-161,15,25,članicah,,članica,Ncfpl,NOUN,O,,O
 sl-161,15,26,.,,.,Z,PUNCT,O,,O
-sl-161,16,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+sl-161,16,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,O
 sl-161,16,2,sicer,,sicer,Q,PART,O,,O
 sl-161,16,3,čaka,,čakati,Vmpr3s,VERB,O,,O
 sl-161,16,4,na,,na,Sa,ADP,O,,O
@@ -519,7 +519,7 @@ sl-161,18,9,",",,",",Z,PUNCT,O,,O
 sl-161,18,10,da,,da,Cs,SCONJ,O,,O
 sl-161,18,11,notranji,,notranji,Agpmsny,ADJ,O,,O
 sl-161,18,12,trg,,trg,Ncmsn,NOUN,O,,O
-sl-161,18,13,ni,,biti,Va-r3s-y,AUX,O,,B-PER
+sl-161,18,13,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-161,18,14,»,,»,Z,PUNCT,O,,O
 sl-161,18,15,a,,a,Xf,X,O,,O
 sl-161,18,16,la,,la,Xf,X,O,,O
@@ -528,7 +528,7 @@ sl-161,18,18,«,,«,Z,PUNCT,O,,O
 sl-161,18,19,",",,",",Z,PUNCT,O,,O
 sl-161,18,20,da,,da,Cs,SCONJ,O,,O
 sl-161,18,21,torej,,torej,Rgp,ADV,O,,O
-sl-161,18,22,ni,,biti,Va-r3s-y,VERB,O,,B-PER
+sl-161,18,22,ni,,biti,Va-r3s-y,VERB,O,,O
 sl-161,18,23,mogoče,,mogoč,Agpnsn,ADJ,O,,O
 sl-161,18,24,med,,med,Si,ADP,O,,O
 sl-161,18,25,pravili,,pravilo,Ncnpi,NOUN,O,,O

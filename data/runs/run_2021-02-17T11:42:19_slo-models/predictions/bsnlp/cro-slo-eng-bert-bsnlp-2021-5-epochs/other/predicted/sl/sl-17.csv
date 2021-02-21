@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-17,0,1,Zdravnik,,zdravnik,Ncmsn,NOUN,O,,O
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-17,0,1,Zdravnik,,zdravnik,Ncmsn,NOUN,O,,B-PER
 sl-17,0,2,",",,",",Z,PUNCT,O,,O
 sl-17,0,3,obtožen,,obtožen,Appmsnn,ADJ,O,,O
 sl-17,0,4,nedovoljenega,,nedovoljen,Agpnsg,ADJ,O,,O
@@ -78,7 +78,7 @@ sl-17,4,13,je,,biti,Va-r3s-n,AUX,O,,O
 sl-17,4,14,obtoženi,,obtožen,Appmsny,ADJ,O,,O
 sl-17,4,15,dr.,,dr.,Y,X,O,,O
 sl-17,4,16,Zoran,Zoran,Zoran,Npmsn,PROPN,B-PER,PER-Zoran-Miloševič,B-PER
-sl-17,4,17,Miloševič,Miloševič,Miloševič,Npmsn,PROPN,I-PER,PER-Zoran-Miloševič,B-PER
+sl-17,4,17,Miloševič,Miloševič,Miloševič,Npmsn,PROPN,I-PER,PER-Zoran-Miloševič,I-PER
 sl-17,4,18,",",,",",Z,PUNCT,O,,O
 sl-17,4,19,po,,po,Sl,ADP,O,,O
 sl-17,4,20,poklicu,,poklic,Ncmsl,NOUN,O,,O
@@ -86,13 +86,13 @@ sl-17,4,21,interventni,,interventen,Agpmsny,ADJ,O,,O
 sl-17,4,22,nevroradiolog,,nevroradiolog,Ncmsn,NOUN,O,,O
 sl-17,4,23,v,,v,Sl,ADP,O,,O
 sl-17,4,24,UKC,UKC,UKC,Npfsl,PROPN,B-LOC,LOC-University-Medical-Centre-Ljubljana,B-ORG
-sl-17,4,25,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,I-LOC,LOC-University-Medical-Centre-Ljubljana,B-ORG
+sl-17,4,25,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,I-LOC,LOC-University-Medical-Centre-Ljubljana,I-ORG
 sl-17,4,26,",",,",",Z,PUNCT,O,,O
 sl-17,4,27,danes,,danes,Rgp,ADV,O,,O
 sl-17,4,28,na,,na,Sl,ADP,O,,O
-sl-17,4,29,ljubljanskem,,ljubljanski,Agpnsl,ADJ,O,,O
-sl-17,4,30,okrožnem,,okrožen,Agpnsl,ADJ,O,,O
-sl-17,4,31,sodišču,,sodišče,Ncnsl,NOUN,O,,O
+sl-17,4,29,ljubljanskem,,ljubljanski,Agpnsl,ADJ,O,,B-LOC
+sl-17,4,30,okrožnem,,okrožen,Agpnsl,ADJ,O,,I-LOC
+sl-17,4,31,sodišču,,sodišče,Ncnsl,NOUN,O,,I-LOC
 sl-17,4,32,prebral,,prebrati,Vmep-sm,VERB,O,,O
 sl-17,4,33,svoj,,svoj,Px-msa,DET,O,,O
 sl-17,4,34,zagovor,,zagovor,Ncmsan,NOUN,O,,O
@@ -182,7 +182,7 @@ sl-17,9,11,direktorico,,direktorica,Ncfsa,NOUN,O,,O
 sl-17,9,12,Irmo,Irma,Irma,Npfsa,PROPN,B-PER,PER-Irma-Košutar-Gašparič,B-PER
 sl-17,9,13,Košutar-Gašparić,Košutar-Gašparić,Košutar-Gašparić,Npfsa,PROPN,I-PER,PER-Irma-Košutar-Gašparič,I-PER
 sl-17,9,14,.,,.,Z,PUNCT,O,,O
-sl-17,10,1,Njej,,on,Pp3fsd,PRON,O,,O
+sl-17,10,1,Njej,,on,Pp3fsd,PRON,O,,B-PER
 sl-17,10,2,očita,,očitati,Vmpr3s,VERB,O,,O
 sl-17,10,3,nedovoljeno,,nedovoljen,Agpnsa,ADJ,O,,O
 sl-17,10,4,dajanje,,dajanje,Ncnsa,NOUN,O,,O
@@ -218,11 +218,11 @@ sl-17,11,16,",",,",",Z,PUNCT,O,,O
 sl-17,11,17,da,,da,Cs,SCONJ,O,,O
 sl-17,11,18,je,,biti,Va-r3s-n,AUX,O,,O
 sl-17,11,19,UKC,UKC,UKC,Npfsn,PROPN,B-LOC,LOC-University-Medical-Centre-Ljubljana,B-ORG
-sl-17,11,20,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,I-LOC,LOC-University-Medical-Centre-Ljubljana,B-ORG
+sl-17,11,20,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,I-LOC,LOC-University-Medical-Centre-Ljubljana,I-ORG
 sl-17,11,21,določen,,določen,Appmsnn,ADJ,O,,O
 sl-17,11,22,medicinski,,medicinski,Agpmsny,ADJ,O,,O
 sl-17,11,23,pripomoček,,pripomoček,Ncmsn,NOUN,O,,O
-sl-17,11,24,-,,-,Z,PUNCT,O,,I-PER
+sl-17,11,24,-,,-,Z,PUNCT,O,,O
 sl-17,11,25,gre,,iti,Vmbr3s,VERB,O,,O
 sl-17,11,26,za,,za,Sa,ADP,O,,O
 sl-17,11,27,tako,,tako,Rgp,ADV,O,,O
@@ -232,7 +232,7 @@ sl-17,11,30,za,,za,Sa,ADP,O,,O
 sl-17,11,31,zdravljenje,,zdravljenje,Ncnsa,NOUN,O,,O
 sl-17,11,32,možganske,,možganski,Agpfsg,ADJ,O,,O
 sl-17,11,33,kapi,,kap,Ncfsg,NOUN,O,,O
-sl-17,11,34,-,,-,Z,PUNCT,O,,I-PER
+sl-17,11,34,-,,-,Z,PUNCT,O,,O
 sl-17,11,35,naročil,,naročilo,Ncnpg,NOUN,O,,O
 sl-17,11,36,pri,,pri,Sl,ADP,O,,O
 sl-17,11,37,Animusu,Animus,Animus,Npmsl,PROPN,B-ORG,ORG-Animus,B-ORG

@@ -1,7 +1,7 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-2,0,1,Pakistansko,Pakistansko,pakistanski,Agpnsn,ADJ,B-ORG,ORG-High-Court-Pakistan,B-LOC
-sl-2,0,2,vrhovno,vrhovno,vrhoven,Agpnsn,ADJ,I-ORG,ORG-High-Court-Pakistan,O
-sl-2,0,3,sodišče,sodišče,sodišče,Ncnsn,NOUN,I-ORG,ORG-High-Court-Pakistan,O
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-2,0,1,Pakistansko,Pakistansko,pakistanski,Agpnsn,ADJ,B-ORG,ORG-High-Court-Pakistan,B-ORG
+sl-2,0,2,vrhovno,vrhovno,vrhoven,Agpnsn,ADJ,I-ORG,ORG-High-Court-Pakistan,I-ORG
+sl-2,0,3,sodišče,sodišče,sodišče,Ncnsn,NOUN,I-ORG,ORG-High-Court-Pakistan,I-ORG
 sl-2,0,4,dokončno,,dokončno,Rgp,ADV,O,,O
 sl-2,0,5,oprostilo,,oprostiti,Vmep-sn,VERB,O,,O
 sl-2,0,6,kristjanko,,kristjanka,Ncfsa,NOUN,O,,O
@@ -250,8 +250,8 @@ sl-2,11,18,na,,na,Sa,ADP,O,,O
 sl-2,11,19,smrtno,,smrten,Agpfsa,ADJ,O,,O
 sl-2,11,20,kazen,,kazen,Ncfsa,NOUN,O,,O
 sl-2,11,21,.,,.,Z,PUNCT,O,,O
-sl-2,12,1,Vrhovno,Vrhovno,vrhoven,Agpnsn,ADJ,B-ORG,ORG-High-Court-Pakistan,O
-sl-2,12,2,sodišče,sodišče,sodišče,Ncnsn,NOUN,I-ORG,ORG-High-Court-Pakistan,O
+sl-2,12,1,Vrhovno,Vrhovno,vrhoven,Agpnsn,ADJ,B-ORG,ORG-High-Court-Pakistan,B-ORG
+sl-2,12,2,sodišče,sodišče,sodišče,Ncnsn,NOUN,I-ORG,ORG-High-Court-Pakistan,I-ORG
 sl-2,12,3,jo,,on,Pp3fsa--y,PRON,O,,O
 sl-2,12,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-2,12,5,konec,,konec,Sg,ADP,O,,O

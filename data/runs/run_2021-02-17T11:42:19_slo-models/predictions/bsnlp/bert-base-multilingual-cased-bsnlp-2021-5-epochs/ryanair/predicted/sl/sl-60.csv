@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-60,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-60,0,2,odpustil,,odpustiti,Vmep-sm,VERB,O,,O
 sl-60,0,3,kabinsko,,kabinski,Agpnsa,ADJ,O,,O
@@ -87,7 +87,7 @@ sl-60,3,18,dobila,,dobiti,Vmep-sf,VERB,O,,O
 sl-60,3,19,svoj,,svoj,Px-msa,DET,O,,O
 sl-60,3,20,epilog,,epilog,Ncmsan,NOUN,O,,O
 sl-60,3,21,.,,.,Z,PUNCT,O,,O
-sl-60,4,1,Irsko,,irski,Agpnsn,ADJ,O,,B-LOC
+sl-60,4,1,Irsko,,irski,Agpnsn,ADJ,O,,O
 sl-60,4,2,podjetje,,podjetje,Ncnsn,NOUN,O,,O
 sl-60,4,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-60,4,4,odpustilo,,odpustiti,Vmep-sn,VERB,O,,O
@@ -155,7 +155,7 @@ sl-60,6,26,zaradi,,zaradi,Sg,ADP,O,,O
 sl-60,6,27,slabega,,slab,Agpnsg,ADJ,O,,O
 sl-60,6,28,vremena,,vreme,Ncnsg,NOUN,O,,O
 sl-60,6,29,.,,.,Z,PUNCT,O,,O
-sl-60,7,1,Let,,leto,Ncnpg,NOUN,O,,O
+sl-60,7,1,Let,,leto,Ncnpg,NOUN,O,,B-LOC
 sl-60,7,2,",",,",",Z,PUNCT,O,,O
 sl-60,7,3,na,,na,Sl,ADP,O,,O
 sl-60,7,4,katerem,,kateri,Pq-msl,DET,O,,O
@@ -213,9 +213,9 @@ sl-60,9,7,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-60,9,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-60,9,9,kasneje,,kasno,Rgc,ADV,O,,O
 sl-60,9,10,objavila,,objaviti,Vmep-sf,VERB,O,,O
-sl-60,9,11,letalska,,letalski,Agpfsn,ADJ,O,,O
+sl-60,9,11,letalska,,letalski,Agpfsn,ADJ,O,,B-ORG
 sl-60,9,12,druž,,druž,Ncfsn,NOUN,O,,O
-sl-60,9,13,ba,,ba,Npmsn,PROPN,O,,O
+sl-60,9,13,ba,,ba,Npmsn,PROPN,O,,I-ORG
 sl-60,9,14,",",,",",Z,PUNCT,O,,O
 sl-60,9,15,pripovedujejo,,pripovedovati,Vmpr3p,VERB,O,,O
 sl-60,9,16,drugačno,,drugačen,Agpfsa,ADJ,O,,O
@@ -247,7 +247,7 @@ sl-60,10,23,posneli,,posneti,Vmep-pm,VERB,O,,O
 sl-60,10,24,viralno,,viralen,Agpfsa,ADJ,O,,O
 sl-60,10,25,fotografijo,,fotografija,Ncfsa,NOUN,O,,O
 sl-60,10,26,.,,.,Z,PUNCT,O,,O
-sl-60,11,1,Portugalski,,portugalski,Agpmsny,ADJ,O,,B-LOC
+sl-60,11,1,Portugalski,,portugalski,Agpmsny,ADJ,O,,O
 sl-60,11,2,sindikat,,sindikat,Ncmsn,NOUN,O,,O
 sl-60,11,3,SNPVAC,SNPVAC,SNPVAC,Npmsn,PROPN,B-ORG,ORG-National-Flight-Personnel-Civil-Aviation-Union,B-ORG
 sl-60,11,4,",",,",",Z,PUNCT,O,,O

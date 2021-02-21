@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-14,0,1,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-14,0,1,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,O
 sl-14,0,2,danes,,danes,Rgp,ADV,O,,O
 sl-14,0,3,pri,,pri,Sl,ADP,O,,O
 sl-14,0,4,Merklovi,Merkel,Merklov,Aspfsl,ADJ,B-PER,PER-Angela-Merkel,B-PER
@@ -98,8 +98,8 @@ sl-14,5,17,tradicionalni,,tradicionalen,Agpmsay,ADJ,O,,O
 sl-14,5,18,pevski,,pevski,Agpmsay,ADJ,O,,O
 sl-14,5,19,zbor,,zbor,Ncmsan,NOUN,O,,O
 sl-14,5,20,.,,.,Z,PUNCT,O,,O
-sl-14,6,1,Avstrijska,,avstrijski,Agpfsn,ADJ,O,,B-LOC
-sl-14,6,2,policija,,policija,Ncfsn,NOUN,O,,O
+sl-14,6,1,Avstrijska,,avstrijski,Agpfsn,ADJ,O,,B-ORG
+sl-14,6,2,policija,,policija,Ncfsn,NOUN,O,,I-ORG
 sl-14,6,3,zaradi,,zaradi,Sg,ADP,O,,O
 sl-14,6,4,prihoda,,prihod,Ncmsg,NOUN,O,,O
 sl-14,6,5,ruskega,,ruski,Agpmsg,ADJ,O,,O
@@ -123,7 +123,7 @@ sl-14,7,11,",",,",",Z,PUNCT,O,,O
 sl-14,7,12,tudi,,tudi,Q,PART,O,,O
 sl-14,7,13,na,,na,Sl,ADP,O,,O
 sl-14,7,14,letališču,,letališče,Ncnsl,NOUN,O,,B-LOC
-sl-14,7,15,v,,v,Sl,ADP,O,,O
+sl-14,7,15,v,,v,Sl,ADP,O,,B-LOC
 sl-14,7,16,Gradcu,Gradec,Gradec,Npmsl,PROPN,B-LOC,GPE-Graz,B-LOC
 sl-14,7,17,.,,.,Z,PUNCT,O,,O
 sl-14,8,1,Po,,po,Sl,ADP,O,,O
@@ -137,7 +137,7 @@ sl-14,9,1,Po,,po,Sl,ADP,O,,O
 sl-14,9,2,udeležbi,,udeležba,Ncfsl,NOUN,O,,O
 sl-14,9,3,na,,na,Sl,ADP,O,,O
 sl-14,9,4,poroki,,poroka,Ncfsl,NOUN,O,,O
-sl-14,9,5,avstrijske,Avstrija,avstrijski,Agpfsg,ADJ,B-LOC,GPE-Austria,B-LOC
+sl-14,9,5,avstrijske,Avstrija,avstrijski,Agpfsg,ADJ,B-LOC,GPE-Austria,O
 sl-14,9,6,zunanje,,zunanji,Agpfsg,ADJ,O,,O
 sl-14,9,7,ministrice,,ministrica,Ncfsg,NOUN,O,,O
 sl-14,9,8,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -174,7 +174,7 @@ sl-14,11,7,v,,v,Sl,ADP,O,,O
 sl-14,11,8,Siriji,Sirija,Sirija,Npfsl,PROPN,B-LOC,GPE-Syria,B-LOC
 sl-14,11,9,in,,in,Cc,CCONJ,O,,O
 sl-14,11,10,na,,na,Sl,ADP,O,,O
-sl-14,11,11,vzhodu,vzhod,vzhod,Ncmsl,NOUN,B-LOC,LOC-East-Ukraine,O
+sl-14,11,11,vzhodu,vzhod,vzhod,Ncmsl,NOUN,B-LOC,LOC-East-Ukraine,B-LOC
 sl-14,11,12,Ukrajine,Ukrajine,Ukrajina,Npfsg,PROPN,I-LOC,LOC-East-Ukraine,B-LOC
 sl-14,11,13,",",,",",Z,PUNCT,O,,O
 sl-14,11,14,pa,,pa,Cc,CCONJ,O,,O

@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-16,0,1,BREXIT,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-16,0,1,BREXIT,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-16,0,2,:,,:,Z,PUNCT,O,,O
 sl-16,0,3,Velika,Velika,velik,Agpfsn,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-16,0,4,Britanija,Britanija,Britanija,Npfsn,PROPN,I-LOC,GPE-Great-Britain,I-LOC
@@ -108,7 +108,7 @@ sl-16,3,47,portalu,,portalo,Ncnsl,NOUN,O,,O
 sl-16,3,48,Izvozno,,izvozen,Agpnsn,ADJ,O,,O
 sl-16,3,49,okno,,okno,Ncnsn,NOUN,O,,O
 sl-16,3,50,.,,.,Z,PUNCT,O,,O
-sl-16,4,1,Slovenija,Slovenija,Slovenija,Npfsn,PROPN,B-LOC,GPE-Slovenia,I-ORG
+sl-16,4,1,Slovenija,Slovenija,Slovenija,Npfsn,PROPN,B-LOC,GPE-Slovenia,B-LOC
 sl-16,4,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,4,3,v,,v,Sa,ADP,O,,O
 sl-16,4,4,Veliko,Velika,velik,Agpfsa,ADJ,B-LOC,GPE-Great-Britain,B-LOC
@@ -736,8 +736,8 @@ sl-16,29,14,.,,.,Z,PUNCT,O,,O
 sl-16,30,1,V,,v,Sl,ADP,O,,O
 sl-16,30,2,raziskavi,,raziskava,Ncfsl,NOUN,O,,O
 sl-16,30,3,Združenja,Združenje,združenje,Ncnsg,NOUN,B-ORG,ORG-DIHK-Association-of-German-Chambers-of-Industry-and-Commerce,B-ORG
-sl-16,30,4,nemških,nemških,nemški,Agpfpg,ADJ,I-ORG,ORG-DIHK-Association-of-German-Chambers-of-Industry-and-Commerce,O
-sl-16,30,5,gospodarskih,gospodarskih,gospodarski,Agpfpg,ADJ,I-ORG,ORG-DIHK-Association-of-German-Chambers-of-Industry-and-Commerce,O
+sl-16,30,4,nemških,nemških,nemški,Agpfpg,ADJ,I-ORG,ORG-DIHK-Association-of-German-Chambers-of-Industry-and-Commerce,I-ORG
+sl-16,30,5,gospodarskih,gospodarskih,gospodarski,Agpfpg,ADJ,I-ORG,ORG-DIHK-Association-of-German-Chambers-of-Industry-and-Commerce,I-ORG
 sl-16,30,6,zbornic,zbornic,zbornica,Ncfpg,NOUN,I-ORG,ORG-DIHK-Association-of-German-Chambers-of-Industry-and-Commerce,I-ORG
 sl-16,30,7,",",,",",Z,PUNCT,O,,O
 sl-16,30,8,v,,v,Sl,ADP,O,,O

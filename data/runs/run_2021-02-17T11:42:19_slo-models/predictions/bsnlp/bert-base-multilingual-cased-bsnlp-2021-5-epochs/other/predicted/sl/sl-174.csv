@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-174,0,1,Kolumnistka,,kolumnistka,Ncfsn,NOUN,O,,O
 sl-174,0,2,toži,,tožiti,Vmpr3s,VERB,O,,O
 sl-174,0,3,Trumpa,Trump,Trump,Npmsay,PROPN,B-PER,PER-Donald-Trump,B-PER
@@ -39,11 +39,11 @@ sl-174,1,19,z,,z,Si,ADP,O,,O
 sl-174,1,20,njo,,on,Pp3fsi,PRON,O,,O
 sl-174,1,21,tudi,,tudi,Q,PART,O,,O
 sl-174,1,22,fotografiral,,fotografirati,Vmbp-sm,VERB,O,,O
-sl-174,1,23,.,,.,Z,PUNCT,O,,B-PER
+sl-174,1,23,.,,.,Z,PUNCT,O,,O
 sl-174,2,1,Kolumnistka,,kolumnistka,Ncfsn,NOUN,O,,O
 sl-174,2,2,revije,,revija,Ncfsg,NOUN,O,,O
 sl-174,2,3,Elle,Elle,Elle,Npfsn,PROPN,B-PRO,PRO-Elle,B-PER
-sl-174,2,4,E.,E.,E.,Y,X,B-PER,PER-Elizabeth-Jean-Carroll,O
+sl-174,2,4,E.,E.,E.,Y,X,B-PER,PER-Elizabeth-Jean-Carroll,B-PER
 sl-174,2,5,Jean,Jean,Jean,Npmsn,PROPN,I-PER,PER-Elizabeth-Jean-Carroll,I-PER
 sl-174,2,6,Carroll,Carroll,Carroll,Npmsn,PROPN,I-PER,PER-Elizabeth-Jean-Carroll,I-PER
 sl-174,2,7,",",,",",Z,PUNCT,O,,O
@@ -57,7 +57,7 @@ sl-174,2,14,da,,da,Cs,SCONJ,O,,O
 sl-174,2,15,jo,,on,Pp3fsa--y,PRON,O,,O
 sl-174,2,16,je,,biti,Va-r3s-n,AUX,O,,O
 sl-174,2,17,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-174,2,18,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-174,2,18,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-174,2,19,pred,,pred,Si,ADP,O,,O
 sl-174,2,20,tremi,,trije,Mlcnpi,NUM,O,,O
 sl-174,2,21,desetletji,,desetletje,Ncnpi,NOUN,O,,O
@@ -73,7 +73,7 @@ sl-174,2,30,predsedniku,,predsednik,Ncmsd,NOUN,O,,O
 sl-174,2,31,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
 sl-174,2,32,zaradi,,zaradi,Sg,ADP,O,,O
 sl-174,2,33,obrekovanja,,obrekovanje,Ncnsg,NOUN,O,,O
-sl-174,2,34,.,,.,Z,PUNCT,O,,B-PER
+sl-174,2,34,.,,.,Z,PUNCT,O,,O
 sl-174,3,1,V,,v,Sl,ADP,O,,O
 sl-174,3,2,tožbi,,tožba,Ncfsl,NOUN,O,,O
 sl-174,3,3,ponovno,,ponovno,Rgp,ADV,O,,O
@@ -101,7 +101,7 @@ sl-174,3,24,laže,,lahko,Rgc,ADV,O,,O
 sl-174,3,25,za,,za,Sa,ADP,O,,O
 sl-174,3,26,finančno,,finančen,Agpfsa,ADJ,O,,O
 sl-174,3,27,korist,,korist,Ncfsa,NOUN,O,,O
-sl-174,3,28,.,,.,Z,PUNCT,O,,B-PER
+sl-174,3,28,.,,.,Z,PUNCT,O,,O
 sl-174,4,1,»,,»,Z,PUNCT,O,,O
 sl-174,4,2,Ob,,ob,Sl,ADP,O,,O
 sl-174,4,3,tem,,ta,Pd-nsl,DET,O,,O
@@ -110,7 +110,7 @@ sl-174,4,5,celo,,celo,Q,PART,O,,O
 sl-174,4,6,žalil,,žaliti,Vmpp-sm,VERB,O,,O
 sl-174,4,7,moj,,moj,Ps1msas,DET,O,,O
 sl-174,4,8,videz,,videz,Ncmsan,NOUN,O,,O
-sl-174,4,9,.,,.,Z,PUNCT,O,,B-PER
+sl-174,4,9,.,,.,Z,PUNCT,O,,O
 sl-174,5,1,Nobena,,noben,Pz-fsn,DET,O,,O
 sl-174,5,2,ženska,,ženska,Ncfsn,NOUN,O,,O
 sl-174,5,3,ne,,ne,Q,PART,O,,O
@@ -143,7 +143,7 @@ sl-174,5,29,ene,,en,Mlpfsg,NUM,O,,O
 sl-174,5,30,od,,od,Sg,ADP,O,,O
 sl-174,5,31,newyorških,,newyorški,Agpfpg,ADJ,O,,O
 sl-174,5,32,veleblagovnic,,veleblagovnica,Ncfpg,NOUN,O,,O
-sl-174,5,33,.,,.,Z,PUNCT,O,,B-PER
+sl-174,5,33,.,,.,Z,PUNCT,O,,O
 sl-174,6,1,»,,»,Z,PUNCT,O,,O
 sl-174,6,2,Nihče,,nihče,Pz-msn,PRON,O,,O
 sl-174,6,3,ni,,biti,Va-r3s-y,VERB,O,,O
@@ -195,7 +195,7 @@ sl-174,6,48,z,,z,Si,ADP,O,,O
 sl-174,6,49,njo,,on,Pp3fsi,PRON,O,,O
 sl-174,6,50,tudi,,tudi,Q,PART,O,,O
 sl-174,6,51,fotografiral,,fotografirati,Vmbp-sm,VERB,O,,O
-sl-174,6,52,.,,.,Z,PUNCT,O,,B-PER
+sl-174,6,52,.,,.,Z,PUNCT,O,,O
 sl-174,7,1,Trumpova,Trump,Trumpov,Aspfsn,ADJ,B-PER,PER-Donald-Trump,B-PER
 sl-174,7,2,tiskovna,,tiskoven,Agpfsn,ADJ,O,,O
 sl-174,7,3,predstavnica,,predstavnica,Ncfsn,NOUN,O,,O
@@ -225,7 +225,7 @@ sl-174,7,26,denarja,,denar,Ncmsg,NOUN,O,,O
 sl-174,7,27,po,,po,Sl,ADP,O,,O
 sl-174,7,28,drugi,,drug,Mlpfsl,ADJ,O,,O
 sl-174,7,29,poti,,pot,Ncfsl,NOUN,O,,O
-sl-174,7,30,.,,.,Z,PUNCT,O,,B-PER
+sl-174,7,30,.,,.,Z,PUNCT,O,,O
 sl-174,8,1,»,,»,Z,PUNCT,O,,O
 sl-174,8,2,Zgodba,,zgodba,Ncfsn,NOUN,O,,O
 sl-174,8,3,",",,",",Z,PUNCT,O,,O
@@ -249,7 +249,7 @@ sl-174,8,20,med,,med,Si,ADP,O,,O
 sl-174,8,21,drugim,,drug,Mlpnsi,ADJ,O,,O
 sl-174,8,22,dodala,,dodati,Vmep-sf,VERB,O,,O
 sl-174,8,23,Grishamova,Grisham,Grishamov,Aspfsn,ADJ,B-PER,PER-Stephanie-Grisham,B-PER
-sl-174,8,24,.,,.,Z,PUNCT,O,,B-PER
+sl-174,8,24,.,,.,Z,PUNCT,O,,O
 sl-174,9,1,Trumpa,Trump,Trump,Npmsay,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-174,9,2,iz,,iz,Sg,ADP,O,,O
 sl-174,9,3,podobnega,,podoben,Agpmsg,ADJ,O,,O
@@ -267,7 +267,7 @@ sl-174,9,14,NBC,NBC,NBC,Npmsn,PROPN,B-ORG,ORG-National-Broadcasting-Company,B-OR
 sl-174,9,15,Vajenec,Vajenec,vajenec,Ncmsn,NOUN,B-PRO,PRO-The-Apprentice,B-PRO
 sl-174,9,16,Summer,Summer,Summer,Npmsn,PROPN,B-PER,PER-Summer-Zervos,B-PER
 sl-174,9,17,Zervos,Zervos,Zervos,Npmsn,PROPN,I-PER,PER-Summer-Zervos,I-PER
-sl-174,9,18,.,,.,Z,PUNCT,O,,B-PER
+sl-174,9,18,.,,.,Z,PUNCT,O,,O
 sl-174,10,1,Tudi,,tudi,Q,PART,O,,O
 sl-174,10,2,ona,,on,Pp3fsn,PRON,O,,O
 sl-174,10,3,trdi,,trditi,Vmpr3s,VERB,O,,O
@@ -289,7 +289,7 @@ sl-174,10,18,in,,in,Cc,CCONJ,O,,O
 sl-174,10,19,Zervosova,Zervos,Zervosov,Aspfsn,ADJ,B-PER,PER-Summer-Zervos,B-PER
 sl-174,10,20,ga,,on,Pp3msa--y,PRON,O,,O
 sl-174,10,21,toži,,tožiti,Vmpr3s,VERB,O,,O
-sl-174,10,22,.,,.,Z,PUNCT,O,,B-PER
+sl-174,10,22,.,,.,Z,PUNCT,O,,O
 sl-174,11,1,Tožila,,tožiti,Vmpp-sf,VERB,O,,O
 sl-174,11,2,ga,,on,Pp3msa--y,PRON,O,,O
 sl-174,11,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -304,7 +304,7 @@ sl-174,11,11,prav,,prav,Q,PART,O,,O
 sl-174,11,12,tako,,tako,Rgp,ADV,O,,O
 sl-174,11,13,zaradi,,zaradi,Sg,ADP,O,,O
 sl-174,11,14,obrekovanja,,obrekovanje,Ncnsg,NOUN,O,,O
-sl-174,11,15,.,,.,Z,PUNCT,O,,B-PER
+sl-174,11,15,.,,.,Z,PUNCT,O,,O
 sl-174,12,1,Danielsova,Daniels,Danielsov,Aspfsn,ADJ,B-PER,PER-Stormy-Daniels,B-PER
 sl-174,12,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-174,12,3,",",,",",Z,PUNCT,O,,O
@@ -333,7 +333,7 @@ sl-174,12,25,je,,biti,Va-r3s-n,AUX,O,,O
 sl-174,12,26,ozmerjal,,ozmerjati,Vmep-sm,VERB,O,,O
 sl-174,12,27,z,,z,Si,ADP,O,,O
 sl-174,12,28,lažnivko,,lažnivka,Ncfsi,NOUN,O,,O
-sl-174,12,29,.,,.,Z,PUNCT,O,,B-PER
+sl-174,12,29,.,,.,Z,PUNCT,O,,O
 sl-174,13,1,Danielsova,Daniels,Danielsov,Aspfsn,ADJ,B-PER,PER-Stormy-Daniels,B-PER
 sl-174,13,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-174,13,3,tožbo,,tožba,Ncfsa,NOUN,O,,O
@@ -346,4 +346,4 @@ sl-174,13,9,povrniti,,povrniti,Vmen,VERB,O,,O
 sl-174,13,10,pravdne,,pravden,Agpmpa,ADJ,O,,O
 sl-174,13,11,stroške,,strošek,Ncmpa,NOUN,O,,O
 sl-174,13,12,Trumpu,Trump,Trump,Npmsd,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-174,13,13,.,,.,Z,PUNCT,O,,B-PER
+sl-174,13,13,.,,.,Z,PUNCT,O,,O

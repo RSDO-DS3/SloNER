@@ -1,7 +1,7 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-74,0,1,Tudi,,tudi,Q,PART,O,,O
-sl-74,0,2,poslanci,,poslanec,Ncmpn,NOUN,O,,O
-sl-74,0,3,zavrnili,,zavrniti,Vmep-pm,VERB,O,,I-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-74,0,1,Tudi,,tudi,Q,PART,O,,B-PER
+sl-74,0,2,poslanci,,poslanec,Ncmpn,NOUN,O,,I-PER
+sl-74,0,3,zavrnili,,zavrniti,Vmep-pm,VERB,O,,O
 sl-74,0,4,predlagano,,predlagan,Appfsa,ADJ,O,,O
 sl-74,0,5,novelo,,novela,Ncfsa,NOUN,O,,O
 sl-74,0,6,zakona,,zakon,Ncmsg,NOUN,O,,O
@@ -26,7 +26,7 @@ sl-74,1,16,omogočila,,omogočiti,Vmep-sf,VERB,O,,O
 sl-74,1,17,ustanovitev,,ustanovitev,Ncfsa,NOUN,O,,O
 sl-74,1,18,javne,,javen,Agpfsg,ADJ,O,,O
 sl-74,1,19,gospodarske,,gospodarski,Agpfsg,ADJ,O,,O
-sl-74,1,20,službe,,služba,Ncfsg,NOUN,O,,I-ORG
+sl-74,1,20,službe,,služba,Ncfsg,NOUN,O,,O
 sl-74,1,21,",",,",",Z,PUNCT,O,,O
 sl-74,1,22,je,,biti,Va-r3s-n,AUX,O,,O
 sl-74,1,23,končala,,končati,Vmep-sf,VERB,O,,O
@@ -42,8 +42,8 @@ sl-74,2,4,noveli,,novela,Ncfsd,NOUN,O,,O
 sl-74,2,5,prižgal,,prižgati,Vmep-sm,VERB,O,,O
 sl-74,2,6,že,,že,Q,PART,O,,O
 sl-74,2,7,pristojni,,pristojen,Agpmsny,ADJ,O,,O
-sl-74,2,8,odbor,odbor,odbor,Ncmsn,NOUN,B-ORG,ORG-Odbor-za-infrastrukturo-okolje-in-prostor,O
-sl-74,2,9,DZ,DZ,DZ,Npmsg,PROPN,I-ORG,ORG-Odbor-za-infrastrukturo-okolje-in-prostor,B-ORG
+sl-74,2,8,odbor,odbor,odbor,Ncmsn,NOUN,B-ORG,ORG-Odbor-za-infrastrukturo-okolje-in-prostor,B-ORG
+sl-74,2,9,DZ,DZ,DZ,Npmsg,PROPN,I-ORG,ORG-Odbor-za-infrastrukturo-okolje-in-prostor,I-ORG
 sl-74,2,10,za,za,za,Sa,ADP,I-ORG,ORG-Odbor-za-infrastrukturo-okolje-in-prostor,I-ORG
 sl-74,2,11,infrastrukturo,infrastrukturo,infrastruktura,Ncfsa,NOUN,I-ORG,ORG-Odbor-za-infrastrukturo-okolje-in-prostor,I-ORG
 sl-74,2,12,",",,",",Z,PUNCT,O,,O
@@ -79,7 +79,7 @@ sl-74,3,14,.,,.,Z,PUNCT,O,,O
 sl-74,4,1,Zvonko,Zvonko,Zvonko,Npmsn,PROPN,B-PER,PER-Zvonko-Černač,B-PER
 sl-74,4,2,Černač,Černač,Černač,Npmsn,PROPN,I-PER,PER-Zvonko-Černač,I-PER
 sl-74,4,3,je,,biti,Va-r3s-n,AUX,O,,O
-sl-74,4,4,za,,za,Sa,ADP,O,,I-ORG
+sl-74,4,4,za,,za,Sa,ADP,O,,O
 sl-74,4,5,grobarje,,grobar,Ncmpa,NOUN,O,,O
 sl-74,4,6,Adrie,Adria,Adria,Npfsg,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-74,4,7,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
@@ -104,7 +104,7 @@ sl-74,4,25,je,,biti,Va-r3s-n,AUX,O,,O
 sl-74,4,26,novelo,,novela,Ncfsa,NOUN,O,,O
 sl-74,4,27,zakona,,zakon,Ncmsg,NOUN,O,,O
 sl-74,4,28,označil,,označiti,Vmep-sm,VERB,O,,O
-sl-74,4,29,za,,za,Sa,ADP,O,,I-ORG
+sl-74,4,29,za,,za,Sa,ADP,O,,O
 sl-74,4,30,PR,,PR,Agpfsa,ADJ,O,,O
 sl-74,4,31,potezo,,poteza,Ncfsa,NOUN,O,,O
 sl-74,4,32,vlade,,vlada,Ncfsg,NOUN,O,,O
@@ -185,7 +185,7 @@ sl-74,7,21,zapolni,,zapolniti,Vmer3s,VERB,O,,O
 sl-74,7,22,letalske,,letalski,Agpfpa,ADJ,O,,O
 sl-74,7,23,linije,,linija,Ncfpa,NOUN,O,,O
 sl-74,7,24,",",,",",Z,PUNCT,O,,O
-sl-74,7,25,za,,za,Sa,ADP,O,,I-ORG
+sl-74,7,25,za,,za,Sa,ADP,O,,O
 sl-74,7,26,katere,,kateri,Pq-mpa,DET,O,,O
 sl-74,7,27,obstaja,,obstajati,Vmpr3s,VERB,O,,O
 sl-74,7,28,komercialni,,komercialen,Agpmsny,ADJ,O,,O
@@ -210,7 +210,7 @@ sl-74,8,15,",",,",",Z,PUNCT,O,,O
 sl-74,8,16,ki,,ki,Cs,SCONJ,O,,O
 sl-74,8,17,so,,biti,Va-r3p-n,AUX,O,,O
 sl-74,8,18,ključne,,ključen,Agpfpn,ADJ,O,,O
-sl-74,8,19,za,,za,Sa,ADP,O,,I-ORG
+sl-74,8,19,za,,za,Sa,ADP,O,,O
 sl-74,8,20,gospodarski,,gospodarski,Agpmsay,ADJ,O,,O
 sl-74,8,21,in,,in,Cc,CCONJ,O,,O
 sl-74,8,22,turistični,,turističen,Agpmsay,ADJ,O,,O
@@ -243,14 +243,14 @@ sl-74,10,15,želi,,želeti,Vmpr3s,VERB,O,,O
 sl-74,10,16,stečajni,,stečajen,Agpmsny,ADJ,O,,O
 sl-74,10,17,upravitelj,,upravitelj,Ncmsn,NOUN,O,,O
 sl-74,10,18,Blaž,Blaž,Blaž,Npmsn,PROPN,B-PER,PER-Blaž-Poljanšek,B-PER
-sl-74,10,19,Poljanšek,Poljanšek,Poljanšek,Npmsn,PROPN,I-PER,PER-Blaž-Poljanšek,B-PER
+sl-74,10,19,Poljanšek,Poljanšek,Poljanšek,Npmsn,PROPN,I-PER,PER-Blaž-Poljanšek,I-PER
 sl-74,10,20,prodati,,prodati,Vmen,VERB,O,,O
 sl-74,10,21,.,,.,Z,PUNCT,O,,O
 sl-74,11,1,Glavno,,glaven,Agpnsa,ADJ,O,,O
 sl-74,11,2,premoženje,,premoženje,Ncnsa,NOUN,O,,O
 sl-74,11,3,predstavlja,,predstavljati,Vmpr3s,VERB,O,,O
 sl-74,11,4,licenca,,licenca,Ncfsn,NOUN,O,,O
-sl-74,11,5,za,,za,Sa,ADP,O,,I-ORG
+sl-74,11,5,za,,za,Sa,ADP,O,,O
 sl-74,11,6,šolanje,,šolanje,Ncnsa,NOUN,O,,O
 sl-74,11,7,pilotov,,pilot,Ncmpg,NOUN,O,,O
 sl-74,11,8,",",,",",Z,PUNCT,O,,O
@@ -275,7 +275,7 @@ sl-74,12,5,novembra,,november,Ncmsg,NOUN,O,,O
 sl-74,12,6,letos,,letos,Rgp,ADV,O,,O
 sl-74,12,7,oddajo,,oddati,Vmer3p,VERB,O,,O
 sl-74,12,8,ponudbo,,ponudba,Ncfsa,NOUN,O,,O
-sl-74,12,9,za,,za,Sa,ADP,O,,I-ORG
+sl-74,12,9,za,,za,Sa,ADP,O,,O
 sl-74,12,10,nakup,,nakup,Ncmsan,NOUN,O,,O
 sl-74,12,11,poslovne,,posloven,Agpfsg,ADJ,O,,O
 sl-74,12,12,celote,,celota,Ncfsg,NOUN,O,,O
@@ -302,7 +302,7 @@ sl-74,12,32,FNPT,FNPT,FNPT,Npmsn,PROPN,B-PRO,PRO-FNPT-II-stimulator,B-PRO
 sl-74,12,33,II,II,II,Mrc,NUM,I-PRO,PRO-FNPT-II-stimulator,I-PRO
 sl-74,12,34,",",,",",Z,PUNCT,O,,O
 sl-74,12,35,poročajo,,poročati,Vmpr3p,VERB,O,,O
-sl-74,12,36,Finance,Finance,finance,Ncfpn,NOUN,B-PRO,PRO-The-Finance-Business-Daily,B-ORG
+sl-74,12,36,Finance,Finance,finance,Ncfpn,NOUN,B-PRO,PRO-The-Finance-Business-Daily,B-PRO
 sl-74,12,37,.,,.,Z,PUNCT,O,,O
 sl-74,13,1,Poljanšek,Poljanšek,Poljanšek,Npmsn,PROPN,B-PER,PER-Blaž-Poljanšek,B-PER
 sl-74,13,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -312,7 +312,7 @@ sl-74,13,5,",",,",",Z,PUNCT,O,,O
 sl-74,13,6,da,,da,Cs,SCONJ,O,,O
 sl-74,13,7,se,,se,Px------y,PRON,O,,O
 sl-74,13,8,je,,biti,Va-r3s-n,AUX,O,,O
-sl-74,13,9,za,,za,Sa,ADP,O,,I-ORG
+sl-74,13,9,za,,za,Sa,ADP,O,,O
 sl-74,13,10,nakup,,nakup,Ncmsan,NOUN,O,,O
 sl-74,13,11,licence,,licenca,Ncfsg,NOUN,O,,O
 sl-74,13,12,ATO,ATO,Ato,Npmsn,PROPN,B-ORG,ORG-Approved-Training-Organisations,B-ORG
@@ -388,7 +388,7 @@ sl-74,14,37,",",,",",Z,PUNCT,O,,O
 sl-74,14,38,da,,da,Cs,SCONJ,O,,O
 sl-74,14,39,gre,,iti,Vmbr3s,VERB,O,,O
 sl-74,14,40,zgolj,,zgolj,Q,PART,O,,O
-sl-74,14,41,za,,za,Sa,ADP,O,,I-ORG
+sl-74,14,41,za,,za,Sa,ADP,O,,O
 sl-74,14,42,vzpostavitev,,vzpostavitev,Ncfsa,NOUN,O,,O
 sl-74,14,43,pravne,,praven,Agpfsg,ADJ,O,,O
 sl-74,14,44,podlage,,podlaga,Ncfsg,NOUN,O,,O
@@ -406,7 +406,7 @@ sl-74,14,55,sploh,,sploh,Q,PART,O,,O
 sl-74,14,56,lahko,,lahko,Rgp,ADV,O,,O
 sl-74,14,57,začnemo,,začeti,Vmer1p,VERB,O,,O
 sl-74,14,58,pogajati,,pogajati,Vmpn,VERB,O,,O
-sl-74,14,59,za,,za,Sa,ADP,O,,I-ORG
+sl-74,14,59,za,,za,Sa,ADP,O,,O
 sl-74,14,60,vzpostavitev,,vzpostavitev,Ncfsa,NOUN,O,,O
 sl-74,14,61,neke,,nek,Pi-fsg,DET,O,,O
 sl-74,14,62,letalske,,letalski,Agpfsg,ADJ,O,,O
@@ -422,8 +422,8 @@ sl-74,15,7,",",,",",Z,PUNCT,O,,O
 sl-74,15,8,ki,,ki,Cs,SCONJ,O,,O
 sl-74,15,9,upravlja,,upravljati,Vmpr3s,VERB,O,,O
 sl-74,15,10,z,,z,Si,ADP,O,,O
-sl-74,15,11,ljubljanskim,Ljubljana,ljubljanski,Agpnsi,ADJ,B-LOC,GPE-Ljubljana,O
-sl-74,15,12,letališčem,,letališče,Ncnsi,NOUN,O,,O
+sl-74,15,11,ljubljanskim,Ljubljana,ljubljanski,Agpnsi,ADJ,B-LOC,GPE-Ljubljana,B-LOC
+sl-74,15,12,letališčem,,letališče,Ncnsi,NOUN,O,,I-LOC
 sl-74,15,13,pričakuje,,pričakovati,Vmpr3s,VERB,O,,O
 sl-74,15,14,",",,",",Z,PUNCT,O,,O
 sl-74,15,15,da,,da,Cs,SCONJ,O,,O
@@ -444,7 +444,7 @@ sl-74,16,1,Sprejem,,sprejem,Ncmsn,NOUN,O,,O
 sl-74,16,2,bi,,biti,Va-c,AUX,O,,O
 sl-74,16,3,bil,,biti,Va-p-sm,AUX,O,,O
 sl-74,16,4,priložnost,,priložnost,Ncfsn,NOUN,O,,O
-sl-74,16,5,za,,za,Sa,ADP,O,,I-ORG
+sl-74,16,5,za,,za,Sa,ADP,O,,O
 sl-74,16,6,Maribor,Maribor,Maribor,Npmsan,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-74,17,1,Članice,,članica,Ncfpn,NOUN,O,,O
 sl-74,17,2,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
@@ -455,8 +455,8 @@ sl-74,17,6,da,,da,Cs,SCONJ,O,,O
 sl-74,17,7,uvedejo,,uvesti,Vmer3p,VERB,O,,O
 sl-74,17,8,obveznost,,obveznost,Ncfsa,NOUN,O,,O
 sl-74,17,9,javnih,,javen,Agpfpg,ADJ,O,,O
-sl-74,17,10,služb,,služba,Ncfpg,NOUN,O,,I-ORG
-sl-74,17,11,za,,za,Sa,ADP,O,,I-ORG
+sl-74,17,10,služb,,služba,Ncfpg,NOUN,O,,O
+sl-74,17,11,za,,za,Sa,ADP,O,,O
 sl-74,17,12,redne,,reden,Agpmpa,ADJ,O,,O
 sl-74,17,13,zračne,,zračen,Agpmpa,ADJ,O,,O
 sl-74,17,14,prevoze,,prevoz,Ncmpa,NOUN,O,,O
@@ -468,7 +468,7 @@ sl-74,17,19,veljajo,,veljati,Vmpr3p,VERB,O,,O
 sl-74,17,20,kot,,kot,Cs,SCONJ,O,,O
 sl-74,17,21,izredno,,izredno,Rgp,ADV,O,,O
 sl-74,17,22,pomembne,,pomemben,Agpfpn,ADJ,O,,O
-sl-74,17,23,za,,za,Sa,ADP,O,,I-ORG
+sl-74,17,23,za,,za,Sa,ADP,O,,O
 sl-74,17,24,gospodarski,,gospodarski,Agpmsay,ADJ,O,,O
 sl-74,17,25,in,,in,Cc,CCONJ,O,,O
 sl-74,17,26,socialni,,socialen,Agpmsay,ADJ,O,,O
@@ -503,7 +503,7 @@ sl-74,18,21,lahko,,lahko,Rgp,ADV,O,,O
 sl-74,18,22,ministrstvo,,ministrstvo,Ncnsn,NOUN,O,,O
 sl-74,18,23,začelo,,začeti,Vmep-sn,VERB,O,,O
 sl-74,18,24,postopek,,postopek,Ncmsan,NOUN,O,,O
-sl-74,18,25,za,,za,Sa,ADP,O,,I-ORG
+sl-74,18,25,za,,za,Sa,ADP,O,,O
 sl-74,18,26,vzpostavitev,,vzpostavitev,Ncfsa,NOUN,O,,O
 sl-74,18,27,obvezne,,obvezen,Agpfsg,ADJ,O,,O
 sl-74,18,28,javne,,javen,Agpfsg,ADJ,O,,O
@@ -544,7 +544,7 @@ sl-74,19,32,Balkan,Balkan,Balkan,Npmsan,PROPN,B-LOC,LOC-Balkans,B-LOC
 sl-74,19,33,",",,",",Z,PUNCT,O,,O
 sl-74,19,34,je,,biti,Va-r3s-n,AUX,O,,O
 sl-74,19,35,verjetnost,,verjetnost,Ncfsn,NOUN,O,,O
-sl-74,19,36,za,,za,Sa,ADP,O,,I-ORG
+sl-74,19,36,za,,za,Sa,ADP,O,,O
 sl-74,19,37,subvencionirane,,subvencioniran,Appfpa,ADJ,O,,O
 sl-74,19,38,proge,,proga,Ncfpa,NOUN,O,,O
 sl-74,19,39,z,,z,Sg,ADP,O,,O
@@ -559,7 +559,7 @@ sl-74,20,1,Omenjajo,,omenjati,Vmpr3p,VERB,O,,O
 sl-74,20,2,pa,,pa,Cc,CCONJ,O,,O
 sl-74,20,3,nekateri,,nekateri,Pi-mpn,DET,O,,O
 sl-74,20,4,priložnost,,priložnost,Ncfsa,NOUN,O,,O
-sl-74,20,5,za,,za,Sa,ADP,O,,I-ORG
+sl-74,20,5,za,,za,Sa,ADP,O,,O
 sl-74,20,6,mariborsko,,mariborski,Agpnsa,ADJ,O,,O
 sl-74,20,7,letališče,,letališče,Ncnsa,NOUN,O,,O
 sl-74,20,8,",",,",",Z,PUNCT,O,,O
@@ -584,9 +584,9 @@ sl-74,21,4,že,,že,Q,PART,O,,O
 sl-74,21,5,na,,na,Sl,ADP,O,,O
 sl-74,21,6,zavodu,,zavod,Ncmsl,NOUN,O,,O
 sl-74,22,1,Na,,na,Sa,ADP,O,,O
-sl-74,22,2,Zavod,Zavod,zavod,Ncmsan,NOUN,B-ORG,ORG-Employment-Service-of-Slovenia,O
+sl-74,22,2,Zavod,Zavod,zavod,Ncmsan,NOUN,B-ORG,ORG-Employment-Service-of-Slovenia,B-ORG
 sl-74,22,3,za,za,za,Sa,ADP,I-ORG,ORG-Employment-Service-of-Slovenia,I-ORG
-sl-74,22,4,zaposlovanje,zaposlovanje,zaposlovanje,Ncnsa,NOUN,I-ORG,ORG-Employment-Service-of-Slovenia,O
+sl-74,22,4,zaposlovanje,zaposlovanje,zaposlovanje,Ncnsa,NOUN,I-ORG,ORG-Employment-Service-of-Slovenia,I-ORG
 sl-74,22,5,so,,biti,Va-r3p-n,AUX,O,,O
 sl-74,22,6,se,,se,Px------y,PRON,O,,O
 sl-74,22,7,medtem,,medtem,Rgp,ADV,O,,O
@@ -636,7 +636,7 @@ sl-74,24,14,voljo,,volja,Ncfsa,NOUN,O,,O
 sl-74,24,15,tudi,,tudi,Q,PART,O,,O
 sl-74,24,16,izredni,,izreden,Agpmsny,ADJ,O,,O
 sl-74,24,17,termin,,termin,Ncmsn,NOUN,O,,O
-sl-74,24,18,za,,za,Sa,ADP,O,,I-ORG
+sl-74,24,18,za,,za,Sa,ADP,O,,O
 sl-74,24,19,prijavo,,prijava,Ncfsa,NOUN,O,,O
 sl-74,24,20,in,,in,Cc,CCONJ,O,,O
 sl-74,24,21,prvi,,prvi,Mlomsn,ADJ,O,,O
@@ -651,13 +651,13 @@ sl-74,24,29,.,,.,Z,PUNCT,O,,O
 sl-74,25,1,Možnosti,,možnost,Ncfpn,NOUN,O,,O
 sl-74,25,2,specifičnega,,specifičen,Agpmsg,ADJ,O,,O
 sl-74,25,3,kadra,,kader,Ncmsg,NOUN,O,,O
-sl-74,25,4,-,,-,Z,PUNCT,O,,B-PRO
+sl-74,25,4,-,,-,Z,PUNCT,O,,O
 sl-74,25,5,pilotov,,pilot,Ncmpg,NOUN,O,,O
 sl-74,25,6,in,,in,Cc,CCONJ,O,,O
 sl-74,25,7,kabinskega,,kabinski,Agpnsg,ADJ,O,,O
 sl-74,25,8,osebja,,osebje,Ncnsg,NOUN,O,,O
-sl-74,25,9,-,,-,Z,PUNCT,O,,B-PRO
-sl-74,25,10,za,,za,Sa,ADP,O,,I-ORG
+sl-74,25,9,-,,-,Z,PUNCT,O,,O
+sl-74,25,10,za,,za,Sa,ADP,O,,O
 sl-74,25,11,zaposlitev,,zaposlitev,Ncfsa,NOUN,O,,O
 sl-74,25,12,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-74,25,13,po,,po,Sl,ADP,O,,O
@@ -692,10 +692,10 @@ sl-74,26,10,kadru,,kader,Ncmsl,NOUN,O,,O
 sl-74,26,11,.,,.,Z,PUNCT,O,,O
 sl-74,27,1,V,,v,Sl,ADP,O,,O
 sl-74,27,2,mreži,mreža,mreža,Ncfsl,NOUN,B-ORG,ORG-European-Employment-Services,B-ORG
-sl-74,27,3,evropskih,evropskih,evropski,Agpfpg,ADJ,I-ORG,ORG-European-Employment-Services,B-ORG
+sl-74,27,3,evropskih,evropskih,evropski,Agpfpg,ADJ,I-ORG,ORG-European-Employment-Services,I-ORG
 sl-74,27,4,služb,služb,služba,Ncfpg,NOUN,I-ORG,ORG-European-Employment-Services,I-ORG
 sl-74,27,5,za,za,za,Sa,ADP,I-ORG,ORG-European-Employment-Services,I-ORG
-sl-74,27,6,zaposlovanje,zaposlovanje,zaposlovanje,Ncnsa,NOUN,I-ORG,ORG-European-Employment-Services,O
+sl-74,27,6,zaposlovanje,zaposlovanje,zaposlovanje,Ncnsa,NOUN,I-ORG,ORG-European-Employment-Services,I-ORG
 sl-74,27,7,(,,(,Z,PUNCT,O,,O
 sl-74,27,8,EURES,EURES,Eures,Npmsn,PROPN,B-ORG,ORG-European-Employment-Services,B-ORG
 sl-74,27,9,),,),Z,PUNCT,O,,O

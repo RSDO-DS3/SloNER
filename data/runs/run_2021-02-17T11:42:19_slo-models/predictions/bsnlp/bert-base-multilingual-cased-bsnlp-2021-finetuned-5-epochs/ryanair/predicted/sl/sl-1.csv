@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-1,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-1,0,2,se,,se,Px------y,PRON,O,,O
 sl-1,0,3,ni,,biti,Va-r3s-y,AUX,O,,O
@@ -56,7 +56,7 @@ sl-1,3,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-1,3,2,poroča,,poročati,Vmpr3s,VERB,O,,O
 sl-1,3,3,CNN,CNN,CNN,Npmsn,PROPN,B-PRO,PRO-CNN,B-PRO
 sl-1,3,4,",",,",",Z,PUNCT,O,,O
-sl-1,3,5,španska,,španski,Agpfsn,ADJ,O,,O
+sl-1,3,5,španska,,španski,Agpfsn,ADJ,O,,B-LOC
 sl-1,3,6,policija,,policija,Ncfsn,NOUN,O,,O
 sl-1,3,7,preiskuje,,preiskovati,Vmpr3s,VERB,O,,O
 sl-1,3,8,rasistični,,rasističen,Agpmsay,ADJ,O,,O
@@ -130,7 +130,7 @@ sl-1,5,1,V,,v,Sa,ADP,O,,O
 sl-1,5,2,preiskavo,,preiskava,Ncfsa,NOUN,O,,O
 sl-1,5,3,se,,se,Px------y,PRON,O,,O
 sl-1,5,4,je,,biti,Va-r3s-n,AUX,O,,O
-sl-1,5,5,zdaj,,zdaj,Rgp,ADV,O,,B-LOC
+sl-1,5,5,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-1,5,6,vključila,,vključiti,Vmep-sf,VERB,O,,O
 sl-1,5,7,tudi,,tudi,Q,PART,O,,O
 sl-1,5,8,britanska,,britanski,Agpfsn,ADJ,O,,O
@@ -155,7 +155,7 @@ sl-1,5,26,predala,,predati,Vmep-sf,VERB,O,,O
 sl-1,5,27,španskim,,španski,Agpfpd,ADJ,O,,O
 sl-1,5,28,oblastem,,oblast,Ncfpd,NOUN,O,,O
 sl-1,5,29,.,,.,Z,PUNCT,O,,O
-sl-1,6,1,Mirror,Mirror,Mirror,Npmsn,PROPN,B-PRO,PRO-Daily-Mirror,I-PRO
+sl-1,6,1,Mirror,Mirror,Mirror,Npmsn,PROPN,B-PRO,PRO-Daily-Mirror,B-PER
 sl-1,6,2,poroča,,poročati,Vmpr3s,VERB,O,,O
 sl-1,6,3,",",,",",Z,PUNCT,O,,O
 sl-1,6,4,da,,da,Cs,SCONJ,O,,O

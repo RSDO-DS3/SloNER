@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-14,0,1,Pingvini,,pingvin,Ncmpn,NOUN,O,,O
 sl-14,0,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-14,0,3,se,,se,Px------y,PRON,O,,O
@@ -51,7 +51,7 @@ sl-14,3,7,facebook,Facebook,facebook,Ncmsan,NOUN,B-PRO,PRO-Facebook,B-PRO
 sl-14,3,8,delil,,deliti,Vmpp-sm,VERB,O,,O
 sl-14,3,9,policist,,policist,Ncmsn,NOUN,O,,O
 sl-14,3,10,John,John,John,Npmsn,PROPN,B-PER,PER-John-Zhu,B-PER
-sl-14,3,11,Zhu,Zhu,Zhu,Npmsn,PROPN,I-PER,PER-John-Zhu,B-PER
+sl-14,3,11,Zhu,Zhu,Zhu,Npmsn,PROPN,I-PER,PER-John-Zhu,I-PER
 sl-14,3,12,",",,",",Z,PUNCT,O,,O
 sl-14,3,13,ki,,ki,Cs,SCONJ,O,,O
 sl-14,3,14,je,,biti,Va-r3s-n,AUX,O,,O

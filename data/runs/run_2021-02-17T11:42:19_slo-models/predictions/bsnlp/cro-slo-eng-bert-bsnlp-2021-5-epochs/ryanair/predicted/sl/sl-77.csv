@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-77,0,1,Nove,,nov,Agpfpn,ADJ,O,,O
 sl-77,0,2,slike,,slika,Ncfpn,NOUN,O,,O
 sl-77,0,3,kažejo,,kazati,Vmpr3p,VERB,O,,O
@@ -19,8 +19,8 @@ sl-77,1,4,se,,se,Px------y,PRON,O,,O
 sl-77,1,5,pojavile,,pojaviti,Vmep-pf,VERB,O,,O
 sl-77,1,6,fotografije,,fotografija,Ncfpn,NOUN,O,,O
 sl-77,1,7,Ryanairovih,Ryanair,Ryanairov,Aspnpg,ADJ,B-ORG,ORG-Ryanair,B-ORG
-sl-77,1,8,letal,,letalo,Ncnpg,NOUN,O,,O
-sl-77,1,9,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737-Max,B-PRO
+sl-77,1,8,letal,,letalo,Ncnpg,NOUN,O,,B-PRO
+sl-77,1,9,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737-Max,I-PRO
 sl-77,1,10,max,max,max,Ncmsn,NOUN,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-77,1,11,",",,",",Z,PUNCT,O,,O
 sl-77,1,12,ki,,ki,Cs,SCONJ,O,,O
@@ -48,7 +48,7 @@ sl-77,2,13,očitno,,očitno,Rgp,ADV,O,,O
 sl-77,2,14,označil,,označiti,Vmep-sm,VERB,O,,O
 sl-77,2,15,kot,,kot,Cs,SCONJ,O,,O
 sl-77,2,16,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737-8200,B-PRO
-sl-77,2,17,–,–,–,Z,PUNCT,I-PRO,PRO-Boeing-737-8200,O
+sl-77,2,17,–,–,–,Z,PUNCT,I-PRO,PRO-Boeing-737-8200,I-PRO
 sl-77,2,18,8200.,8200,8200.,Mdo,NUM,I-PRO,PRO-Boeing-737-8200,I-PRO
 sl-77,3,1,Nihče,,nihče,Pz-msn,PRON,O,,O
 sl-77,3,2,še,,še,Q,PART,O,,O
@@ -67,7 +67,7 @@ sl-77,3,14,da,,da,Cs,SCONJ,O,,O
 sl-77,3,15,bi,,biti,Va-c,AUX,O,,O
 sl-77,3,16,opustili,,opustiti,Vmep-pm,VERB,O,,O
 sl-77,3,17,ime,,ime,Ncnsa,NOUN,O,,O
-sl-77,3,18,max,,max,Ncmsn,NOUN,O,,I-PRO
+sl-77,3,18,max,,max,Ncmsn,NOUN,O,,O
 sl-77,3,19,",",,",",Z,PUNCT,O,,O
 sl-77,3,20,ali,,ali,Cc,CCONJ,O,,O
 sl-77,3,21,zgolj,,zgolj,Q,PART,O,,O
@@ -81,10 +81,10 @@ sl-77,4,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-77,4,3,naročil,,naročiti,Vmep-sm,VERB,O,,O
 sl-77,4,4,več,,več,Rgc,DET,O,,O
 sl-77,4,5,kot,,kot,Cs,SCONJ,O,,O
-sl-77,4,6,200,,200,Mdc,NUM,O,,I-PRO
+sl-77,4,6,200,,200,Mdc,NUM,O,,O
 sl-77,4,7,novih,,nov,Agpnpg,ADJ,O,,O
 sl-77,4,8,letal,,letalo,Ncnpg,NOUN,O,,O
-sl-77,4,9,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737-Max,B-PRO
+sl-77,4,9,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737-Max,I-PRO
 sl-77,4,10,max,max,max,Ncmsn,NOUN,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-77,4,11,",",,",",Z,PUNCT,O,,O
 sl-77,4,12,in,,in,Cc,CCONJ,O,,O
@@ -101,7 +101,7 @@ sl-77,4,22,vgraditi,,vgraditi,Vmen,VERB,O,,O
 sl-77,4,23,med,,med,Sa,ADP,O,,O
 sl-77,4,24,197,,197,Mdc,NUM,O,,O
 sl-77,4,25,in,,in,Cc,CCONJ,O,,O
-sl-77,4,26,200,,200,Mdc,NUM,O,,I-PRO
+sl-77,4,26,200,,200,Mdc,NUM,O,,O
 sl-77,4,27,sedežev,,sedež,Ncmpg,NOUN,O,,O
 sl-77,4,28,",",,",",Z,PUNCT,O,,O
 sl-77,4,29,zato,,zato,Cc,CCONJ,O,,O
@@ -113,7 +113,7 @@ sl-77,4,34,oznako,,oznaka,Ncfsa,NOUN,O,,O
 sl-77,4,35,737,737,737,Mdc,NUM,B-PRO,PRO-Being-737-Max-200,B-PRO
 sl-77,4,36,(,(,(,Z,PUNCT,I-PRO,PRO-Being-737-Max-200,I-PRO
 sl-77,4,37,max,max,max,Ncmsn,NOUN,I-PRO,PRO-Being-737-Max-200,I-PRO
-sl-77,4,38,),),),Z,PUNCT,I-PRO,PRO-Being-737-Max-200,O
+sl-77,4,38,),),),Z,PUNCT,I-PRO,PRO-Being-737-Max-200,I-PRO
 sl-77,4,39,200.,200,200.,Mdo,NUM,I-PRO,PRO-Being-737-Max-200,O
 sl-77,5,1,A,,a,Cc,CCONJ,O,,O
 sl-77,5,2,zaradi,,zaradi,Sg,ADP,O,,O
@@ -129,8 +129,8 @@ sl-77,5,11,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-77,5,12,odkrili,,odkriti,Vmep-pm,VERB,O,,O
 sl-77,5,13,na,,na,Sl,ADP,O,,O
 sl-77,5,14,posodobljenem,,posodobljen,Appnsl,ADJ,O,,O
-sl-77,5,15,letalu,,letalo,Ncnsl,NOUN,O,,O
-sl-77,5,16,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737,B-PRO
+sl-77,5,15,letalu,,letalo,Ncnsl,NOUN,O,,B-PRO
+sl-77,5,16,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737,I-PRO
 sl-77,5,17,",",,",",Z,PUNCT,O,,O
 sl-77,5,18,so,,biti,Va-r3p-n,AUX,O,,O
 sl-77,5,19,se,,se,Px------y,PRON,O,,O
@@ -184,7 +184,7 @@ sl-77,6,27,objavila,,objaviti,Vmep-sf,VERB,O,,O
 sl-77,6,28,namero,,namera,Ncfsa,NOUN,O,,O
 sl-77,6,29,o,,o,Sl,ADP,O,,O
 sl-77,6,30,nakupu,,nakup,Ncmsl,NOUN,O,,O
-sl-77,6,31,200,,200,Mdc,NUM,O,,I-PRO
+sl-77,6,31,200,,200,Mdc,NUM,O,,O
 sl-77,6,32,novih,,nov,Agpnpg,ADJ,O,,O
 sl-77,6,33,letal,,letalo,Ncnpg,NOUN,O,,O
 sl-77,6,34,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737-Max,B-PRO
@@ -242,7 +242,7 @@ sl-77,6,85,",",,",",Z,PUNCT,O,,O
 sl-77,6,86,da,,da,Cs,SCONJ,O,,O
 sl-77,6,87,je,,biti,Va-r3s-n,AUX,O,,O
 sl-77,6,88,beseda,,beseda,Ncfsn,NOUN,O,,O
-sl-77,6,89,max,,max,Ncmsn,NOUN,O,,I-PRO
+sl-77,6,89,max,,max,Ncmsn,NOUN,O,,O
 sl-77,6,90,uničena,,uničen,Appfsn,ADJ,O,,O
 sl-77,6,91,in,,in,Cc,CCONJ,O,,O
 sl-77,6,92,bi,,biti,Va-c,AUX,O,,O
@@ -253,7 +253,7 @@ sl-77,6,96,zamenjati,,zamenjati,Vmen,VERB,O,,O
 sl-77,6,97,.,,.,Z,PUNCT,O,,O
 sl-77,7,1,"""",,"""",Z,PUNCT,O,,O
 sl-77,7,2,Napis,,napis,Ncmsn,NOUN,O,,O
-sl-77,7,3,max,,max,Ncmsn,NOUN,O,,I-PRO
+sl-77,7,3,max,,max,Ncmsn,NOUN,O,,O
 sl-77,7,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-77,7,5,izginil,,izginiti,Vmep-sm,VERB,O,,O
 sl-77,7,6,"""",,"""",Z,PUNCT,O,,O
@@ -286,12 +286,12 @@ sl-77,8,26,tako,,tako,Rgp,ADV,O,,O
 sl-77,8,27,ni,,biti,Va-r3s-y,VERB,O,,O
 sl-77,8,28,videti,,videti,Vmbn,VERB,O,,O
 sl-77,8,29,besede,,beseda,Ncfsg,NOUN,O,,O
-sl-77,8,30,max,,max,Ncmsn,NOUN,O,,I-PRO
+sl-77,8,30,max,,max,Ncmsn,NOUN,O,,O
 sl-77,8,31,",",,",",Z,PUNCT,O,,O
 sl-77,8,32,ampak,,ampak,Cc,CCONJ,O,,O
 sl-77,8,33,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737-8200,B-PRO
 sl-77,8,34,-,-,-,Z,PUNCT,I-PRO,PRO-Boeing-737-8200,I-PRO
-sl-77,8,35,8200.,8200,8200.,Mdo,NUM,I-PRO,PRO-Boeing-737-8200,O
+sl-77,8,35,8200.,8200,8200.,Mdo,NUM,I-PRO,PRO-Boeing-737-8200,I-PRO
 sl-77,9,1,Prejšnja,,prejšnji,Agpfsn,ADJ,O,,O
 sl-77,9,2,varianta,,varianta,Ncfsn,NOUN,O,,O
 sl-77,9,3,se,,se,Px------y,PRON,O,,O
@@ -349,9 +349,9 @@ sl-77,10,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-77,10,3,naročil,,naročiti,Vmep-sm,VERB,O,,O
 sl-77,10,4,več,,več,Rgc,DET,O,,O
 sl-77,10,5,kot,,kot,Cs,SCONJ,O,,O
-sl-77,10,6,200,,200,Mdc,NUM,O,,I-PRO
+sl-77,10,6,200,,200,Mdc,NUM,O,,O
 sl-77,10,7,novih,,nov,Agpnpg,ADJ,O,,O
-sl-77,10,8,letal,,letalo,Ncnpg,NOUN,O,,O
+sl-77,10,8,letal,,letalo,Ncnpg,NOUN,O,,B-PRO
 sl-77,10,9,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737-Max,B-PRO
 sl-77,10,10,max,max,max,Ncmsn,NOUN,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-77,10,11,in,,in,Cc,CCONJ,O,,O
@@ -368,7 +368,7 @@ sl-77,10,21,vgraditi,,vgraditi,Vmen,VERB,O,,O
 sl-77,10,22,med,,med,Sa,ADP,O,,O
 sl-77,10,23,197,,197,Mdc,NUM,O,,O
 sl-77,10,24,in,,in,Cc,CCONJ,O,,O
-sl-77,10,25,200,,200,Mdc,NUM,O,,I-PRO
+sl-77,10,25,200,,200,Mdc,NUM,O,,O
 sl-77,10,26,sedežev,,sedež,Ncmpg,NOUN,O,,O
 sl-77,10,27,.,,.,Z,PUNCT,O,,O
 sl-77,11,1,737,737,737,Mdc,NUM,B-PRO,PRO-Boeing-737-Max,B-PRO

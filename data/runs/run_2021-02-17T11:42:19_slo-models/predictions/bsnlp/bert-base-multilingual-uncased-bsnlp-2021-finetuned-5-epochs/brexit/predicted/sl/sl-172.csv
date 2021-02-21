@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-172,0,1,Kraljičin,,kraljičin,Aspmsnn,ADJ,O,,O
 sl-172,0,2,govor,,govor,Ncmsn,NOUN,O,,O
 sl-172,0,3,kot,,kot,Cs,SCONJ,O,,O
@@ -24,7 +24,7 @@ sl-172,2,2,novega,,nov,Agpnsg,ADJ,O,,O
 sl-172,2,3,zakonodajnega,,zakonodajen,Agpnsg,ADJ,O,,O
 sl-172,2,4,obdobja,,obdobje,Ncnsg,NOUN,O,,O
 sl-172,2,5,v,,v,Sl,ADP,O,,O
-sl-172,2,6,Združenem,Združeno,združen,Appnsl,ADJ,B-LOC,GPE-Great-Britain,O
+sl-172,2,6,Združenem,Združeno,združen,Appnsl,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-172,2,7,kraljestvu,kraljestvo,kraljestvo,Ncnsl,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-172,2,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-172,2,9,obred,,obred,Ncmsn,NOUN,O,,O
@@ -73,10 +73,10 @@ sl-172,4,9,zavezo,,zaveza,Ncfsa,NOUN,O,,O
 sl-172,4,10,o,,o,Sl,ADP,O,,O
 sl-172,4,11,izstopu,,izstop,Ncmsl,NOUN,O,,O
 sl-172,4,12,iz,,iz,Sg,ADP,O,,O
-sl-172,4,13,Združenega,Združeno,združen,Appnsg,ADJ,B-LOC,GPE-Great-Britain,O
+sl-172,4,13,Združenega,Združeno,združen,Appnsg,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-172,4,14,kraljestva,kraljestvo,kraljestvo,Ncnsg,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-172,4,15,iz,,iz,Sg,ADP,O,,O
-sl-172,4,16,Evropske,Evropska,evropski,Agpfsg,ADJ,B-ORG,ORG-European-Union,O
+sl-172,4,16,Evropske,Evropska,evropski,Agpfsg,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-172,4,17,unije,unija,unija,Ncfsg,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-172,4,18,do,,do,Sg,ADP,O,,O
 sl-172,4,19,31.,,31.,Mdo,NUM,O,,O
@@ -92,8 +92,8 @@ sl-172,4,28,politični,,političen,Agpmsny,ADJ,O,,O
 sl-172,4,29,kapital,,kapital,Ncmsn,NOUN,O,,O
 sl-172,4,30,britanskega,,britanski,Agpmsg,ADJ,O,,O
 sl-172,4,31,premiera,,premier,Ncmsg,NOUN,O,,O
-sl-172,4,32,Borisa,Boris,Boris,Npmsg,PROPN,B-PER,PER-Boris-Johnson,O
-sl-172,4,33,Johnsona,Johnson,Johnson,Npmsg,PROPN,I-PER,PER-Boris-Johnson,O
+sl-172,4,32,Borisa,Boris,Boris,Npmsg,PROPN,B-PER,PER-Boris-Johnson,B-PER
+sl-172,4,33,Johnsona,Johnson,Johnson,Npmsg,PROPN,I-PER,PER-Boris-Johnson,I-PER
 sl-172,4,34,.,,.,Z,PUNCT,O,,O
 sl-172,5,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-172,5,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -110,7 +110,7 @@ sl-172,5,12,ključna,,ključen,Agpfsn,ADJ,O,,O
 sl-172,5,13,prioriteta,,prioriteta,Ncfsn,NOUN,O,,O
 sl-172,5,14,Johnsonove,Johnson,Johnsonov,Aspfsg,ADJ,B-PER,PER-Boris-Johnson,O
 sl-172,5,15,konservativne,,konservativen,Agpfsg,ADJ,O,,B-ORG
-sl-172,5,16,vlade,,vlada,Ncfsg,NOUN,O,,O
+sl-172,5,16,vlade,,vlada,Ncfsg,NOUN,O,,I-ORG
 sl-172,5,17,in,,in,Cc,CCONJ,O,,O
 sl-172,5,18,podlaga,,podlaga,Ncfsn,NOUN,O,,O
 sl-172,5,19,za,,za,Sa,ADP,O,,O
@@ -160,7 +160,7 @@ sl-172,7,2,na,,na,Sa,ADP,O,,O
 sl-172,7,3,to,,ta,Pd-nsa,DET,O,,O
 sl-172,7,4,",",,",",Z,PUNCT,O,,O
 sl-172,7,5,da,,da,Cs,SCONJ,O,,O
-sl-172,7,6,Johnsonova,Johnson,Johnsonov,Aspfsn,ADJ,B-PER,PER-Boris-Johnson,O
+sl-172,7,6,Johnsonova,Johnson,Johnsonov,Aspfsn,ADJ,B-PER,PER-Boris-Johnson,B-ORG
 sl-172,7,7,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-172,7,8,nima,,imeti,Vmpr3s-y,VERB,O,,O
 sl-172,7,9,večine,,večina,Ncfsg,NOUN,O,,O
@@ -226,7 +226,7 @@ sl-172,11,2,novega,,nov,Agpnsg,ADJ,O,,O
 sl-172,11,3,zakonodajnega,,zakonodajen,Agpnsg,ADJ,O,,O
 sl-172,11,4,obdobja,,obdobje,Ncnsg,NOUN,O,,O
 sl-172,11,5,na,,na,Sl,ADP,O,,O
-sl-172,11,6,Otoku,otok,otok,Ncmsl,NOUN,B-LOC,GPE-Great-Britain,O
+sl-172,11,6,Otoku,otok,otok,Ncmsl,NOUN,B-LOC,GPE-Great-Britain,B-LOC
 sl-172,11,7,predstavlja,,predstavljati,Vmpr3s,VERB,O,,O
 sl-172,11,8,uvod,,uvod,Ncmsn,NOUN,O,,O
 sl-172,11,9,v,,v,Sa,ADP,O,,O
@@ -235,11 +235,11 @@ sl-172,11,11,odločilen,,odločilen,Agpmsan,ADJ,O,,O
 sl-172,11,12,teden,,teden,Ncmsan,NOUN,O,,O
 sl-172,11,13,tako,,tako,Rgp,ADV,O,,O
 sl-172,11,14,za,,za,Sa,ADP,O,,O
-sl-172,11,15,Združeno,Združeno,združen,Appnsa,ADJ,B-LOC,GPE-Great-Britain,O
+sl-172,11,15,Združeno,Združeno,združen,Appnsa,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-172,11,16,kraljestvo,kraljestvo,kraljestvo,Ncnsa,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-172,11,17,kot,,kot,Cs,SCONJ,O,,O
 sl-172,11,18,za,,za,Sa,ADP,O,,O
-sl-172,11,19,EU,EU,EU,Npfsa,PROPN,B-ORG,ORG-European-Union,O
+sl-172,11,19,EU,EU,EU,Npfsa,PROPN,B-ORG,ORG-European-Union,B-LOC
 sl-172,11,20,",",,",",Z,PUNCT,O,,O
 sl-172,11,21,v,,v,Sl,ADP,O,,O
 sl-172,11,22,katerem,,kateri,Pq-msl,DET,O,,O

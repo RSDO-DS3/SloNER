@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-11,0,1,Novi,,nov,Agpmpn,ADJ,O,,O
 sl-11,0,2,vozni,,vozen,Agpmpn,ADJ,O,,O
 sl-11,0,3,redi,,red,Ncmpn,NOUN,O,,O
@@ -17,7 +17,7 @@ sl-11,1,5,upravitelj,,upravitelj,Ncmsn,NOUN,O,,O
 sl-11,1,6,začel,,začeti,Vmep-sm,VERB,O,,O
 sl-11,1,7,vročati,,vročati,Vmpn,VERB,O,,O
 sl-11,1,8,odpovedi,,odpoved,Ncfpa,NOUN,O,,O
-sl-11,2,1,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,B-LOC,GPE-Ljubljana,B-LOC
+sl-11,2,1,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,B-LOC,GPE-Ljubljana,O
 sl-11,2,2,–,,–,Z,PUNCT,O,,O
 sl-11,2,3,Stečajni,,stečajen,Agpmsny,ADJ,O,,O
 sl-11,2,4,upravitelj,,upravitelj,Ncmsn,NOUN,O,,O
@@ -42,7 +42,7 @@ sl-11,3,6,še,,še,Q,PART,O,,O
 sl-11,3,7,ne,,ne,Q,PART,O,,O
 sl-11,3,8,ve,,vedeti,Vmpr3s,VERB,O,,O
 sl-11,3,9,.,,.,Z,PUNCT,O,,O
-sl-11,4,1,Osebje,,osebje,Ncnsa,NOUN,O,,B-LOC
+sl-11,4,1,Osebje,,osebje,Ncnsa,NOUN,O,,O
 sl-11,4,2,iščejo,,iskati,Vmpr3p,VERB,O,,O
 sl-11,4,3,Easyjet,easyjet,Easyjet,Npmsan,PROPN,B-ORG,ORG-EasyJet,B-ORG
 sl-11,4,4,",",,",",Z,PUNCT,O,,O
@@ -179,7 +179,7 @@ sl-11,10,9,",",,",",Z,PUNCT,O,,O
 sl-11,10,10,«,,«,Z,PUNCT,O,,O
 sl-11,10,11,pravi,,praviti,Vmbr3s,VERB,O,,O
 sl-11,10,12,Jakob,Jakob,Jakob,Npmsn,PROPN,B-PER,PER-Jakob-Počivavšek,B-PER
-sl-11,10,13,Počivavšek,Počivavšek,Počivavšek,Npmsn,PROPN,I-PER,PER-Jakob-Počivavšek,B-PER
+sl-11,10,13,Počivavšek,Počivavšek,Počivavšek,Npmsn,PROPN,I-PER,PER-Jakob-Počivavšek,I-PER
 sl-11,10,14,",",,",",Z,PUNCT,O,,O
 sl-11,10,15,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-11,10,16,sindikata,sindikat,sindikat,Ncmsg,NOUN,B-ORG,ORG-Syndicate-Pergam,B-ORG
@@ -231,7 +231,7 @@ sl-11,12,16,iskali,,iskati,Vmpp-pm,VERB,O,,O
 sl-11,12,17,zaposlitve,,zaposlitev,Ncfpa,NOUN,O,,O
 sl-11,12,18,.,,.,Z,PUNCT,O,,O
 sl-11,12,19,«,,«,Z,PUNCT,O,,O
-sl-11,12,20,Osebje,,osebje,Ncnsa,NOUN,O,,B-LOC
+sl-11,12,20,Osebje,,osebje,Ncnsa,NOUN,O,,O
 sl-11,12,21,denimo,,deti,Vmem1p,VERB,O,,O
 sl-11,12,22,iščejo,,iskati,Vmpr3p,VERB,O,,O
 sl-11,12,23,prevozniki,,prevoznik,Ncmpn,NOUN,O,,O

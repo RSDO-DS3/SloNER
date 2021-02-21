@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-65,0,1,Švedska,Švedska,Švedska,Npfsn,PROPN,B-LOC,GPE-Sweden,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-65,0,1,Švedska,Švedska,Švedska,Npfsn,PROPN,B-LOC,GPE-Sweden,O
 sl-65,0,2,izdala,,izdati,Vmep-sf,VERB,O,,O
 sl-65,0,3,priročnik,,priročnik,Ncmsan,NOUN,O,,O
 sl-65,0,4,feministične,,feminističen,Agpfsg,ADJ,O,,O
@@ -205,7 +205,7 @@ sl-65,7,26,",",,",",Z,PUNCT,O,,O
 sl-65,7,27,Liberijo,Liberija,Liberija,Npfsa,PROPN,B-LOC,GPE-Liberia,B-LOC
 sl-65,7,28,in,,in,Cc,CCONJ,O,,O
 sl-65,7,29,palestinska,palestinska,palestinski,Agpnpa,ADJ,B-LOC,GPE-Palestinian-territories,B-LOC
-sl-65,7,30,ozemlja,ozemlja,ozemlje,Ncnpa,NOUN,I-LOC,GPE-Palestinian-territories,O
+sl-65,7,30,ozemlja,ozemlja,ozemlje,Ncnpa,NOUN,I-LOC,GPE-Palestinian-territories,I-LOC
 sl-65,7,31,.,,.,Z,PUNCT,O,,O
 sl-65,8,1,Načrt,,načrt,Ncmsn,NOUN,O,,O
 sl-65,8,2,vključuje,,vključevati,Vmpr3s,VERB,O,,O

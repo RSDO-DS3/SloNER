@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-14,0,1,Pingvini,,pingvin,Ncmpn,NOUN,O,,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-14,0,1,Pingvini,,pingvin,Ncmpn,NOUN,O,,O
 sl-14,0,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-14,0,3,se,,se,Px------y,PRON,O,,O
 sl-14,0,4,greli,,greti,Vmpp-pm,VERB,O,,O
@@ -8,7 +8,7 @@ sl-14,0,6,bližini,,bližina,Ncfsl,NOUN,O,,O
 sl-14,0,7,žara,,žar,Ncmsg,NOUN,O,,O
 sl-14,0,8,",",,",",Z,PUNCT,O,,O
 sl-14,0,9,sušija,,suši,Ncmsg,NOUN,O,,O
-sl-14,0,10,niso,,biti,Va-r3p-y,AUX,O,,B-PER
+sl-14,0,10,niso,,biti,Va-r3p-y,AUX,O,,O
 sl-14,0,11,dobili,,dobiti,Vmep-pm,VERB,O,,O
 sl-14,1,1,Skrivališče,,skrivališče,Ncnsa,NOUN,O,,O
 sl-14,1,2,pingvinov,,pingvin,Ncmpg,NOUN,O,,O
@@ -51,7 +51,7 @@ sl-14,3,7,facebook,Facebook,facebook,Ncmsan,NOUN,B-PRO,PRO-Facebook,B-PRO
 sl-14,3,8,delil,,deliti,Vmpp-sm,VERB,O,,O
 sl-14,3,9,policist,,policist,Ncmsn,NOUN,O,,O
 sl-14,3,10,John,John,John,Npmsn,PROPN,B-PER,PER-John-Zhu,B-PER
-sl-14,3,11,Zhu,Zhu,Zhu,Npmsn,PROPN,I-PER,PER-John-Zhu,B-PER
+sl-14,3,11,Zhu,Zhu,Zhu,Npmsn,PROPN,I-PER,PER-John-Zhu,I-PER
 sl-14,3,12,",",,",",Z,PUNCT,O,,O
 sl-14,3,13,ki,,ki,Cs,SCONJ,O,,O
 sl-14,3,14,je,,biti,Va-r3s-n,AUX,O,,O
@@ -81,7 +81,7 @@ sl-14,4,3,povedali,,povedati,Vmep-pm,VERB,O,,O
 sl-14,4,4,",",,",",Z,PUNCT,O,,O
 sl-14,4,5,da,,da,Cs,SCONJ,O,,O
 sl-14,4,6,to,,ta,Pd-nsn,DET,O,,O
-sl-14,4,7,ni,,biti,Va-r3s-y,AUX,O,,B-PER
+sl-14,4,7,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-14,4,8,prva,,prvi,Mlofsn,ADJ,O,,O
 sl-14,4,9,prijava,,prijava,Ncfsn,NOUN,O,,O
 sl-14,4,10,o,,o,Sl,ADP,O,,O
@@ -151,7 +151,7 @@ sl-14,7,19,trgovini,,trgovina,Ncfsl,NOUN,O,,O
 sl-14,7,20,.,,.,Z,PUNCT,O,,O
 sl-14,8,1,Pristanišče,,pristanišče,Ncnsn,NOUN,O,,O
 sl-14,8,2,v,,v,Sl,ADP,O,,O
-sl-14,8,3,Wellingtonu,Wellington,Wellington,Npmsl,PROPN,B-LOC,GPE-Wellington,O
+sl-14,8,3,Wellingtonu,Wellington,Wellington,Npmsl,PROPN,B-LOC,GPE-Wellington,B-LOC
 sl-14,8,4,predstavlja,,predstavljati,Vmpr3s,VERB,O,,O
 sl-14,8,5,prebivališče,,prebivališče,Ncnsa,NOUN,O,,O
 sl-14,8,6,kar,,kar,Rgp,ADV,O,,O
@@ -175,7 +175,7 @@ sl-14,9,14,lahko,,lahko,Rgp,ADV,O,,O
 sl-14,9,15,ugriznejo,,ugrizniti,Vmer3p,VERB,O,,O
 sl-14,9,16,.,,.,Z,PUNCT,O,,O
 sl-14,10,1,Policist,,policist,Ncmsn,NOUN,O,,O
-sl-14,10,2,Zhu,Zhu,Zhu,Npmsn,PROPN,B-PER,PER-John-Zhu,O
+sl-14,10,2,Zhu,Zhu,Zhu,Npmsn,PROPN,B-PER,PER-John-Zhu,B-ORG
 sl-14,10,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-14,10,4,s,,z,Si,ADP,O,,O
 sl-14,10,5,pomočjo,,pomoč,Ncfsi,NOUN,O,,O
@@ -191,5 +191,5 @@ sl-14,10,14,v,,v,Sa,ADP,O,,O
 sl-14,10,15,morje,,morje,Ncnsa,NOUN,O,,O
 sl-14,10,16,v,,v,Sl,ADP,O,,O
 sl-14,10,17,pristanišču,,pristanišče,Ncnsl,NOUN,O,,O
-sl-14,10,18,Wellington,Wellington,Wellington,Npmsn,PROPN,B-LOC,GPE-Wellington,O
+sl-14,10,18,Wellington,Wellington,Wellington,Npmsn,PROPN,B-LOC,GPE-Wellington,B-LOC
 sl-14,10,19,.,,.,Z,PUNCT,O,,O

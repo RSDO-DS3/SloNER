@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-2,0,1,Pakistansko,Pakistansko,pakistanski,Agpnsn,ADJ,B-ORG,ORG-High-Court-Pakistan,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-2,0,1,Pakistansko,Pakistansko,pakistanski,Agpnsn,ADJ,B-ORG,ORG-High-Court-Pakistan,B-ORG
 sl-2,0,2,vrhovno,vrhovno,vrhoven,Agpnsn,ADJ,I-ORG,ORG-High-Court-Pakistan,I-ORG
 sl-2,0,3,sodišče,sodišče,sodišče,Ncnsn,NOUN,I-ORG,ORG-High-Court-Pakistan,I-ORG
 sl-2,0,4,dokončno,,dokončno,Rgp,ADV,O,,O
@@ -100,7 +100,7 @@ sl-2,5,22,jo,,on,Pp3fsa--y,PRON,O,,O
 sl-2,5,23,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-2,5,24,ubili,,ubiti,Vmep-pm,VERB,O,,O
 sl-2,5,25,.,,.,Z,PUNCT,O,,O
-sl-2,6,1,Islamistična,,islamističen,Agpfsn,ADJ,O,,B-ORG
+sl-2,6,1,Islamistična,,islamističen,Agpfsn,ADJ,O,,O
 sl-2,6,2,stranka,,stranka,Ncfsn,NOUN,O,,O
 sl-2,6,3,Tehrik-e-Labaik,Tehrik-e-Labaik,Tehrikvenlabaik,Npmsn,PROPN,B-ORG,ORG-Tehreek-e-Labbaik-Pakistan,B-ORG
 sl-2,6,4,Pakistan,Pakistan,Pakistan,Npmsn,PROPN,I-ORG,ORG-Tehreek-e-Labbaik-Pakistan,I-ORG

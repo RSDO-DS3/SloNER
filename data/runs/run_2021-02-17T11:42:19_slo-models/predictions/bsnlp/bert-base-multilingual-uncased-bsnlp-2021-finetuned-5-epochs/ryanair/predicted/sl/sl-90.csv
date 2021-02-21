@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-90,0,1,Od,,od,Sg,ADP,O,,O
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-90,0,1,Od,,od,Sg,ADP,O,,B-ORG
 sl-90,0,2,danes,,danes,Rgp,ADV,O,,O
 sl-90,0,3,na,,na,Sa,ADP,O,,O
 sl-90,0,4,Ryanairovo,Ryanair,Ryanairov,Aspnsa,ADJ,B-ORG,ORG-Ryanair,O
@@ -161,7 +161,7 @@ sl-90,7,13,oddano,,oddan,Appfsa,ADJ,O,,O
 sl-90,7,14,prtljago,,prtljaga,Ncfsa,NOUN,O,,O
 sl-90,7,15,(,,(,Z,PUNCT,O,,O
 sl-90,7,16,checked,,checked,Xf,X,O,,O
-sl-90,7,17,luggage,,luggage,Xf,X,O,,O
+sl-90,7,17,luggage,,luggage,Xf,X,O,,I-PRO
 sl-90,7,18,),,),Z,PUNCT,O,,O
 sl-90,7,19,.,,.,Z,PUNCT,O,,O
 sl-90,8,1,Po,,po,Sl,ADP,O,,O
@@ -301,7 +301,7 @@ sl-90,15,12,dobička,,dobiček,Ncmsg,NOUN,O,,O
 sl-90,15,13,podjetja,,podjetje,Ncnsg,NOUN,O,,O
 sl-90,15,14,.,,.,Z,PUNCT,O,,O
 sl-90,16,1,V,,v,Sl,ADP,O,,O
-sl-90,16,2,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,O
+sl-90,16,2,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-90,16,3,sicer,,sicer,Q,PART,O,,O
 sl-90,16,4,izpostavljajo,,izpostavljati,Vmpr3p,VERB,O,,O
 sl-90,16,5,",",,",",Z,PUNCT,O,,O
@@ -334,9 +334,9 @@ sl-90,17,12,zamud,,zamuda,Ncfpg,NOUN,O,,O
 sl-90,17,13,.,,.,Z,PUNCT,O,,O
 sl-90,18,1,Glavni,,glaven,Agpmsny,ADJ,O,,O
 sl-90,18,2,direktor,,direktor,Ncmsn,NOUN,O,,O
-sl-90,18,3,trženja,,trženje,Ncnsg,NOUN,O,,O
-sl-90,18,4,Kenny,Kenny,Kenny,Npmsn,PROPN,B-PER,PER-Kenny-Jacobs,O
-sl-90,18,5,Jacobs,Jacobs,Jacobs,Npmsn,PROPN,I-PER,PER-Kenny-Jacobs,O
+sl-90,18,3,trženja,,trženje,Ncnsg,NOUN,O,,B-ORG
+sl-90,18,4,Kenny,Kenny,Kenny,Npmsn,PROPN,B-PER,PER-Kenny-Jacobs,B-PER
+sl-90,18,5,Jacobs,Jacobs,Jacobs,Npmsn,PROPN,I-PER,PER-Kenny-Jacobs,I-PER
 sl-90,18,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-90,18,7,pojasnil,,pojasniti,Vmep-sm,VERB,O,,O
 sl-90,18,8,",",,",",Z,PUNCT,O,,O

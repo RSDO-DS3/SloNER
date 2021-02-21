@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-37,0,1,Pahor,Pahor,Pahor,Npmsn,PROPN,B-PER,PER-Borut-Pahor,B-PER
 sl-37,0,2,okrcal,,okrcati,Vmep-sm,VERB,O,,O
 sl-37,0,3,Junckerja,Juncker,Juncker,Npmsay,PROPN,B-PER,PER-Jean-Claude-Juncker,B-PER
@@ -29,11 +29,11 @@ sl-37,1,18,slej,,slej,Rgp,ADV,O,,O
 sl-37,1,19,začela,,začeti,Vmep-sf,VERB,O,,O
 sl-37,1,20,spoštovati,,spoštovati,Vmpn,VERB,O,,O
 sl-37,2,1,Bruselj,Bruselj,Bruselj,Npmsn,PROPN,B-LOC,GPE-Brussels,B-LOC
-sl-37,2,2,-,,-,Z,PUNCT,O,,B-PER
+sl-37,2,2,-,,-,Z,PUNCT,O,,O
 sl-37,2,3,Predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-37,2,4,republike,,republika,Ncfsg,NOUN,O,,O
 sl-37,2,5,Borut,Borut,Borut,Npmsn,PROPN,B-PER,PER-Borut-Pahor,B-PER
-sl-37,2,6,Pahor,Pahor,Pahor,Npmsn,PROPN,I-PER,PER-Borut-Pahor,B-PER
+sl-37,2,6,Pahor,Pahor,Pahor,Npmsn,PROPN,I-PER,PER-Borut-Pahor,I-PER
 sl-37,2,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-37,2,8,na,,na,Sl,ADP,O,,O
 sl-37,2,9,pogovorih,,pogovor,Ncmpl,NOUN,O,,O
@@ -165,7 +165,7 @@ sl-37,7,19,v,,v,Sl,ADP,O,,O
 sl-37,7,20,postopku,,postopek,Ncmsl,NOUN,O,,O
 sl-37,7,21,pred,,pred,Si,ADP,O,,O
 sl-37,7,22,Sodiščem,Sodišče,sodišče,Ncnsi,NOUN,B-ORG,ORG-European-Court-of-Justice,B-ORG
-sl-37,7,23,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-European-Court-of-Justice,B-ORG
+sl-37,7,23,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-European-Court-of-Justice,I-ORG
 sl-37,7,24,",",,",",Z,PUNCT,O,,O
 sl-37,7,25,Pahor,Pahor,Pahor,Npmsn,PROPN,B-PER,PER-Borut-Pahor,B-PER
 sl-37,7,26,svetuje,,svetovati,Vmbr3s,VERB,O,,O
@@ -310,8 +310,8 @@ sl-37,14,12,iz,,iz,Sg,ADP,O,,O
 sl-37,14,13,sabora,,sabor,Ncmsg,NOUN,O,,O
 sl-37,14,14,iz,,iz,Sg,ADP,O,,O
 sl-37,14,15,leta,,leto,Ncnsg,NOUN,O,,O
-sl-37,14,16,2015,,2015,Mdc,NUM,O,,I-PRO
-sl-37,14,17,-,,-,Z,PUNCT,O,,B-PER
+sl-37,14,16,2015,,2015,Mdc,NUM,O,,O
+sl-37,14,17,-,,-,Z,PUNCT,O,,O
 sl-37,14,18,",",,",",Z,PUNCT,O,,O
 sl-37,14,19,hitela,,hiteti,Vmpp-sf,VERB,O,,O
 sl-37,14,20,s,,z,Si,ADP,O,,O
@@ -361,8 +361,8 @@ sl-37,15,3,niso,,biti,Va-r3p-y,AUX,O,,O
 sl-37,15,4,kot,,kot,Cs,SCONJ,O,,O
 sl-37,15,5,kitajskih,,kitajski,Agpmpg,ADJ,O,,O
 sl-37,15,6,16,16,16,Mdc,NUM,B-PRO,PRO-Cooperation-between-China-and-Central-and-Eastern-European_Countries-16-+-1,B-PRO
-sl-37,15,7,+,+,+,Z,SYM,I-PRO,PRO-Cooperation-between-China-and-Central-and-Eastern-European_Countries-16-+-1,I-PRO
-sl-37,15,8,1,1,1,Mdc,NUM,I-PRO,PRO-Cooperation-between-China-and-Central-and-Eastern-European_Countries-16-+-1,I-PRO
+sl-37,15,7,+,+,+,Z,SYM,I-PRO,PRO-Cooperation-between-China-and-Central-and-Eastern-European_Countries-16-+-1,B-PRO
+sl-37,15,8,1,1,1,Mdc,NUM,I-PRO,PRO-Cooperation-between-China-and-Central-and-Eastern-European_Countries-16-+-1,B-PRO
 sl-37,16,1,Pahor,Pahor,Pahor,Npmsn,PROPN,B-PER,PER-Borut-Pahor,B-PER
 sl-37,16,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-37,16,3,v,,v,Sl,ADP,O,,O
@@ -431,7 +431,7 @@ sl-37,18,27,začetku,,začetek,Ncmsl,NOUN,O,,O
 sl-37,18,28,močno,,močno,Rgp,ADV,O,,O
 sl-37,18,29,podprle,,podpreti,Vmep-pf,VERB,O,,O
 sl-37,18,30,.,,.,Z,PUNCT,O,,O
-sl-37,19,1,Pahor,Pahor,Pahor,Npmsn,PROPN,B-PER,PER-Borut-Pahor,B-PER
+sl-37,19,1,Pahor,Pahor,Pahor,Npmsn,PROPN,B-PER,PER-Borut-Pahor,B-PRO
 sl-37,19,2,noče,,hoteti,Vmpr3s-y,VERB,O,,O
 sl-37,19,3,",",,",",Z,PUNCT,O,,O
 sl-37,19,4,da,,da,Cs,SCONJ,O,,O
@@ -444,7 +444,7 @@ sl-37,19,10,različica,,različica,Ncfsn,NOUN,O,,O
 sl-37,19,11,kitajskega,Kitajska,kitajski,Agpmsg,ADJ,B-LOC,GPE-China,O
 sl-37,19,12,projekta,,projekt,Ncmsg,NOUN,O,,O
 sl-37,19,13,16,16,16,Mdc,NUM,B-PRO,PRO-Cooperation-between-China-and-Central-and-Eastern-European_Countries-16-+-1,B-PRO
-sl-37,19,14,+,+,+,Z,SYM,I-PRO,PRO-Cooperation-between-China-and-Central-and-Eastern-European_Countries-16-+-1,I-PRO
+sl-37,19,14,+,+,+,Z,SYM,I-PRO,PRO-Cooperation-between-China-and-Central-and-Eastern-European_Countries-16-+-1,B-PRO
 sl-37,19,15,1,1,1,Mdc,NUM,I-PRO,PRO-Cooperation-between-China-and-Central-and-Eastern-European_Countries-16-+-1,I-PRO
 sl-37,19,16,",",,",",Z,PUNCT,O,,O
 sl-37,19,17,v,,v,Sl,ADP,O,,O
@@ -501,7 +501,7 @@ sl-37,21,4,vseh,,ves,Pg-mpg,DET,O,,O
 sl-37,21,5,v,,v,Sl,ADP,O,,O
 sl-37,21,6,pobudi,,pobuda,Ncfsl,NOUN,O,,O
 sl-37,21,7,.,,.,Z,PUNCT,O,,O
-sl-37,22,1,Lomijo,,lomiti,Vmpr3p,VERB,O,,O
+sl-37,22,1,Lomijo,,lomiti,Vmpr3p,VERB,O,,B-LOC
 sl-37,22,2,se,,se,Px------y,PRON,O,,O
 sl-37,22,3,namreč,,namreč,Cc,CCONJ,O,,O
 sl-37,22,4,kopja,,kopje,Ncnpn,NOUN,O,,O
@@ -514,7 +514,7 @@ sl-37,22,10,2,2,2,Mdc,NUM,I-PRO,PRO-Nord-Stream-2,I-PRO
 sl-37,22,11,",",,",",Z,PUNCT,O,,O
 sl-37,22,12,ki,,ki,Cs,SCONJ,O,,O
 sl-37,22,13,ga,,on,Pp3msa--y,PRON,O,,O
-sl-37,22,14,vzhodne,vzhodna,vzhoden,Agpfpn,ADJ,B-LOC,LOC-Eastern-Europe,B-LOC
+sl-37,22,14,vzhodne,vzhodna,vzhoden,Agpfpn,ADJ,B-LOC,LOC-Eastern-Europe,O
 sl-37,22,15,članice,,članica,Ncfpn,NOUN,O,,O
 sl-37,22,16,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-37,22,17,na,,na,Sl,ADP,O,,O
@@ -550,7 +550,7 @@ sl-37,24,8,za,,za,Sa,ADP,O,,O
 sl-37,24,9,to,,ta,Pd-nsa,DET,O,,O
 sl-37,24,10,se,,se,Px------y,PRON,O,,O
 sl-37,24,11,trudi,,truditi,Vmpr3s,VERB,O,,O
-sl-37,24,12,Ruska,Ruska,ruski,Agpfsn,ADJ,B-LOC,GPE-Russia,B-LOC
+sl-37,24,12,Ruska,Ruska,ruski,Agpfsn,ADJ,B-LOC,GPE-Russia,B-ORG
 sl-37,24,13,federacija,federacija,federacija,Ncfsn,NOUN,I-LOC,GPE-Russia,I-ORG
 sl-37,24,14,.,,.,Z,PUNCT,O,,O
 sl-37,25,1,Ne,,ne,Q,PART,O,,O

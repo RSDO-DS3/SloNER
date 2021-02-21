@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-62,0,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-62,0,2,proti,,proti,Sd,ADP,O,,O
 sl-62,0,3,nekaterim,,nekateri,Pi-mpd,DET,O,,O
@@ -24,10 +24,10 @@ sl-62,1,13,plinovodu,,plinovod,Ncmsl,NOUN,O,,O
 sl-62,1,14,do,,do,Sg,ADP,O,,O
 sl-62,1,15,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-62,1,16,–,,–,Z,PUNCT,O,,O
-sl-62,1,17,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-62,1,18,tok,,tok,Ncmsn,NOUN,O,,I-PRO
-sl-62,1,19,2.,,2.,Mdo,NUM,O,,I-PRO
-sl-62,1,20,Kremelj,Kremelj,Kremelj,Npmsn,PROPN,B-ORG,ORG-Kremlin,B-LOC
+sl-62,1,17,Severni,,severen,Agpmsny,ADJ,O,,O
+sl-62,1,18,tok,,tok,Ncmsn,NOUN,O,,O
+sl-62,1,19,2.,,2.,Mdo,NUM,O,,O
+sl-62,1,20,Kremelj,Kremelj,Kremelj,Npmsn,PROPN,B-ORG,ORG-Kremlin,B-ORG
 sl-62,1,21,in,,in,Cc,CCONJ,O,,O
 sl-62,1,22,Berlin,Berlin,Berlin,Npmsn,PROPN,B-LOC,GPE-Berlin,B-LOC
 sl-62,1,23,pa,,pa,Cc,CCONJ,O,,O
@@ -116,7 +116,7 @@ sl-62,5,6,akcij,,akcija,Ncfpg,NOUN,O,,O
 sl-62,5,7,",",,",",Z,PUNCT,O,,O
 sl-62,5,8,pa,,pa,Cc,CCONJ,O,,O
 sl-62,5,9,tudi,,tudi,Q,PART,O,,O
-sl-62,5,10,evropske,,evropski,Agpfsg,ADJ,O,,B-LOC
+sl-62,5,10,evropske,,evropski,Agpfsg,ADJ,O,,O
 sl-62,5,11,prestolnice,,prestolnica,Ncfsg,NOUN,O,,O
 sl-62,5,12,ne,,ne,Q,PART,O,,O
 sl-62,5,13,.,,.,Z,PUNCT,O,,O
@@ -296,7 +296,7 @@ sl-62,13,18,od,,od,Sg,ADP,O,,O
 sl-62,13,19,tam,,tam,Rgp,ADV,O,,O
 sl-62,13,20,v,,v,Sa,ADP,O,,O
 sl-62,13,21,Vzhodno,Vzhodna,vzhoden,Agpfsa,ADJ,B-LOC,LOC-Eastern-Europe,B-LOC
-sl-62,13,22,Evropo,Evropa,Evropa,Npfsa,PROPN,I-LOC,LOC-Eastern-Europe,B-LOC
+sl-62,13,22,Evropo,Evropa,Evropa,Npfsa,PROPN,I-LOC,LOC-Eastern-Europe,I-LOC
 sl-62,13,23,.,,.,Z,PUNCT,O,,O
 sl-62,14,1,Skladno,,skladno,Rgp,ADV,O,,O
 sl-62,14,2,s,,z,Si,ADP,O,,O
@@ -360,7 +360,7 @@ sl-62,16,12,energetskega,,energetski,Agpmsg,ADJ,O,,O
 sl-62,16,13,velikana,,velikan,Ncmsg,NOUN,O,,O
 sl-62,16,14,Gazprom,Gazprom,Gazprom,Npmsn,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-62,16,15,.,,.,Z,PUNCT,O,,O
-sl-62,17,1,Rusi,Rusi,Rus,Npmpn,PROPN,B-PER,GPE-Russia,B-PER
+sl-62,17,1,Rusi,Rusi,Rus,Npmpn,PROPN,B-PER,GPE-Russia,B-LOC
 sl-62,17,2,napovedujejo,,napovedovati,Vmpr3p,VERB,O,,O
 sl-62,17,3,",",,",",Z,PUNCT,O,,O
 sl-62,17,4,da,,da,Cs,SCONJ,O,,O

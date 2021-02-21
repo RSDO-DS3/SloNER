@@ -1,10 +1,10 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-189,0,1,Knovs,Knovs,Knovs,Npmsn,PROPN,B-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,B-ORG
 sl-189,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-189,0,3,",",,",",Z,PUNCT,O,,O
 sl-189,0,4,da,,da,Cs,SCONJ,O,,O
 sl-189,0,5,je,,biti,Va-r3s-n,AUX,O,,O
-sl-189,0,6,zaposlovanje,,zaposlovanje,Ncnsn,NOUN,O,,I-ORG
+sl-189,0,6,zaposlovanje,,zaposlovanje,Ncnsn,NOUN,O,,O
 sl-189,0,7,na,,na,Sl,ADP,O,,O
 sl-189,0,8,Sovi,Sova,Sova,Npfsl,PROPN,B-ORG,ORG-SOVA-Slovenian-Intelligence-and-Security-Agency,B-ORG
 sl-189,0,9,sistemsko,,sistemsko,Rgp,ADV,O,,O
@@ -13,7 +13,7 @@ sl-189,1,1,Komisija,Komisija,komisija,Ncfsn,NOUN,B-ORG,ORG-KNOVS-Commission-for-
 sl-189,1,2,za,za,za,Sa,ADP,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
 sl-189,1,3,nadzor,nadzor,nadzor,Ncmsan,NOUN,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
 sl-189,1,4,obveščevalnih,obveščevalnih,obveščevalen,Agpfpg,ADJ,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
-sl-189,1,5,in,in,in,Cc,CCONJ,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,O
+sl-189,1,5,in,in,in,Cc,CCONJ,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
 sl-189,1,6,varnostnih,varnostnih,varnosten,Agpfpg,ADJ,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
 sl-189,1,7,služb,služb,služba,Ncfpg,NOUN,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
 sl-189,1,8,je,,biti,Va-r3s-n,AUX,O,,O
@@ -29,7 +29,7 @@ sl-189,2,1,Komisija,Komisija,komisija,Ncfsn,NOUN,B-ORG,ORG-KNOVS-Commission-for-
 sl-189,2,2,za,za,za,Sa,ADP,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
 sl-189,2,3,nadzor,nadzor,nadzor,Ncmsan,NOUN,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
 sl-189,2,4,obveščevalnih,obveščevalnih,obveščevalen,Agpfpg,ADJ,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
-sl-189,2,5,in,in,in,Cc,CCONJ,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,O
+sl-189,2,5,in,in,in,Cc,CCONJ,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
 sl-189,2,6,varnostnih,varnostnih,varnosten,Agpfpg,ADJ,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
 sl-189,2,7,služb,služb,služba,Ncfpg,NOUN,I-ORG,ORG-KNOVS-Commission-for-Supervision-of-the-Security-and-Intelligence-Services-Slovenia,I-ORG
 sl-189,2,8,(,,(,Z,PUNCT,O,,O
@@ -44,7 +44,7 @@ sl-189,2,16,napovedal,,napovedati,Vmep-sm,VERB,O,,O
 sl-189,2,17,njen,,njen,Ps3msnsf,DET,O,,O
 sl-189,2,18,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-189,2,19,Matej,Matej,Matej,Npmsn,PROPN,B-PER,PER-Matej-Tonin,B-PER
-sl-189,2,20,Tonin,Tonin,Tonin,Npmsn,PROPN,I-PER,PER-Matej-Tonin,B-PER
+sl-189,2,20,Tonin,Tonin,Tonin,Npmsn,PROPN,I-PER,PER-Matej-Tonin,I-PER
 sl-189,2,21,",",,",",Z,PUNCT,O,,O
 sl-189,2,22,v,,v,Sl,ADP,O,,O
 sl-189,2,23,uradnem,,uraden,Agpnsl,ADJ,O,,O
@@ -63,7 +63,7 @@ sl-189,3,6,Tonin,Tonin,Tonin,Npmsn,PROPN,B-PER,PER-Matej-Tonin,B-PER
 sl-189,3,7,",",,",",Z,PUNCT,O,,O
 sl-189,3,8,edini,,edin,Agpmsny,ADJ,O,,O
 sl-189,3,9,pristojen,,pristojen,Agpmsnn,ADJ,O,,O
-sl-189,3,10,za,,za,Sa,ADP,O,,I-ORG
+sl-189,3,10,za,,za,Sa,ADP,O,,O
 sl-189,3,11,dajanje,,dajanje,Ncnsa,NOUN,O,,O
 sl-189,3,12,izjav,,izjava,Ncfpg,NOUN,O,,O
 sl-189,3,13,javnosti,,javnost,Ncfsg,NOUN,O,,O
@@ -116,7 +116,7 @@ sl-189,5,23,Jordanom,Jordan,Jordan,Npmsi,PROPN,I-PER,PER-Ivan-Jordan,I-PER
 sl-189,5,24,",",,",",Z,PUNCT,O,,O
 sl-189,5,25,županom,,župan,Ncmsi,NOUN,O,,O
 sl-189,5,26,Občine,Občina,občina,Ncfsg,NOUN,B-ORG,ORG-Munincipality-of-Škofljica-Slovenia,B-ORG
-sl-189,5,27,Škofljica,Škofljica,Škofljica,Npfsn,PROPN,I-ORG,ORG-Munincipality-of-Škofljica-Slovenia,B-LOC
+sl-189,5,27,Škofljica,Škofljica,Škofljica,Npfsn,PROPN,I-ORG,ORG-Munincipality-of-Škofljica-Slovenia,I-ORG
 sl-189,5,28,",",,",",Z,PUNCT,O,,O
 sl-189,5,29,Lidijo,Lidija,Lidija,Npfsi,PROPN,B-PER,PER-Lidija-Apohal-Vučković,B-PER
 sl-189,5,30,Apohal,Apohal,Apohal,Npfsi,PROPN,I-PER,PER-Lidija-Apohal-Vučković,I-PER
@@ -127,7 +127,7 @@ sl-189,5,34,inšpektorico,,inšpektorica,Ncfsi,NOUN,O,,O
 sl-189,5,35,na,,na,Sl,ADP,O,,O
 sl-189,5,36,Inšpektoratu,Inšpektorat,inšpektorat,Ncmsl,NOUN,B-ORG,ORG-Public-Sector-Inspectorate-Slovenia,B-ORG
 sl-189,5,37,za,za,za,Sa,ADP,I-ORG,ORG-Public-Sector-Inspectorate-Slovenia,I-ORG
-sl-189,5,38,javni,javni,javen,Agpmsay,ADJ,I-ORG,ORG-Public-Sector-Inspectorate-Slovenia,O
+sl-189,5,38,javni,javni,javen,Agpmsay,ADJ,I-ORG,ORG-Public-Sector-Inspectorate-Slovenia,I-ORG
 sl-189,5,39,sektor,sektor,sektor,Ncmsan,NOUN,I-ORG,ORG-Public-Sector-Inspectorate-Slovenia,I-ORG
 sl-189,5,40,",",,",",Z,PUNCT,O,,O
 sl-189,5,41,ter,,ter,Cc,CCONJ,O,,O
@@ -137,7 +137,7 @@ sl-189,5,44,",",,",",Z,PUNCT,O,,O
 sl-189,5,45,direktorjem,,direktor,Ncmsi,NOUN,O,,O
 sl-189,5,46,Sove,Sova,sova,Npfsg,PROPN,B-ORG,ORG-SOVA-Slovenian-Intelligence-and-Security-Agency,B-ORG
 sl-189,5,47,.,,.,Z,PUNCT,O,,O
-sl-189,6,1,Komisija,,komisija,Ncfsn,NOUN,O,,B-ORG
+sl-189,6,1,Komisija,,komisija,Ncfsn,NOUN,O,,O
 sl-189,6,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-189,6,3,na,,na,Sl,ADP,O,,O
 sl-189,6,4,podlagi,,podlaga,Ncfsl,NOUN,O,,O
@@ -157,7 +157,7 @@ sl-189,6,17,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-189,6,18,izpolnjevala,,izpolnjevati,Vmpp-sf,VERB,O,,O
 sl-189,6,19,vseh,,ves,Pg-mpg,DET,O,,O
 sl-189,6,20,pogojev,,pogoj,Ncmpg,NOUN,O,,O
-sl-189,6,21,za,,za,Sa,ADP,O,,I-ORG
+sl-189,6,21,za,,za,Sa,ADP,O,,O
 sl-189,6,22,delovno,,deloven,Agpnsa,ADJ,O,,O
 sl-189,6,23,mesto,,mesto,Ncnsa,NOUN,O,,O
 sl-189,6,24,",",,",",Z,PUNCT,O,,O
@@ -196,7 +196,7 @@ sl-189,7,27,na,,na,Sa,ADP,O,,O
 sl-189,7,28,delovno,,deloven,Agpnsa,ADJ,O,,O
 sl-189,7,29,mesto,,mesto,Ncnsa,NOUN,O,,O
 sl-189,7,30,",",,",",Z,PUNCT,O,,O
-sl-189,7,31,za,,za,Sa,ADP,O,,I-ORG
+sl-189,7,31,za,,za,Sa,ADP,O,,O
 sl-189,7,32,katerega,,kateri,Pq-msa,DET,O,,O
 sl-189,7,33,je,,biti,Va-r3s-n,AUX,O,,O
 sl-189,7,34,izpolnjevala,,izpolnjevati,Vmpp-sf,VERB,O,,O
@@ -215,7 +215,7 @@ sl-189,8,10,dobila,,dobiti,Vmep-sf,VERB,O,,O
 sl-189,8,11,pozitivno,,pozitiven,Agpnsa,ADJ,O,,O
 sl-189,8,12,zdravniško,,zdravniški,Agpnsa,ADJ,O,,O
 sl-189,8,13,spričevalo,,spričevalo,Ncnsa,NOUN,O,,O
-sl-189,8,14,za,,za,Sa,ADP,O,,I-ORG
+sl-189,8,14,za,,za,Sa,ADP,O,,O
 sl-189,8,15,zaposlitev,,zaposlitev,Ncfsa,NOUN,O,,O
 sl-189,8,16,na,,na,Sl,ADP,O,,O
 sl-189,8,17,Sovi,Sova,Sova,Npfsl,PROPN,B-ORG,ORG-SOVA-Slovenian-Intelligence-and-Security-Agency,B-ORG
@@ -234,7 +234,7 @@ sl-189,9,1,Če,,če,Cs,SCONJ,O,,O
 sl-189,9,2,bi,,biti,Va-c,AUX,O,,O
 sl-189,9,3,bil,,biti,Va-p-sm,AUX,O,,O
 sl-189,9,4,inšpekcijski,,inšpekcijski,Agpmsny,ADJ,O,,O
-sl-189,9,5,nadzor,,nadzor,Ncmsn,NOUN,O,,I-ORG
+sl-189,9,5,nadzor,,nadzor,Ncmsn,NOUN,O,,O
 sl-189,9,6,opravljen,,opravljen,Appmsnn,ADJ,O,,O
 sl-189,9,7,v,,v,Sl,ADP,O,,O
 sl-189,9,8,času,,čas,Ncmsl,NOUN,O,,O
@@ -258,10 +258,10 @@ sl-189,10,1,Na,,na,Sa,ADP,O,,O
 sl-189,10,2,prihodnjo,,prihodnji,Agpfsa,ADJ,O,,O
 sl-189,10,3,sejo,,seja,Ncfsa,NOUN,O,,O
 sl-189,10,4,povabili,,povabiti,Vmep-pm,VERB,O,,O
-sl-189,10,5,Šarca,Šarec,Šarec,Npmsay,PROPN,B-PER,PER-Marjan-Šarec,I-PER
+sl-189,10,5,Šarca,Šarec,Šarec,Npmsay,PROPN,B-PER,PER-Marjan-Šarec,B-PER
 sl-189,10,6,in,,in,Cc,CCONJ,O,,O
-sl-189,10,7,Črnčeca,Črnčec,Črnčec,Npmsay,PROPN,B-PER,PER-Damir-Črnčec,I-PER
-sl-189,11,1,Komisija,,komisija,Ncfsn,NOUN,O,,B-ORG
+sl-189,10,7,Črnčeca,Črnčec,Črnčec,Npmsay,PROPN,B-PER,PER-Damir-Črnčec,B-PER
+sl-189,11,1,Komisija,,komisija,Ncfsn,NOUN,O,,O
 sl-189,11,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-189,11,3,prepričana,,prepričan,Appfsn,ADJ,O,,O
 sl-189,11,4,",",,",",Z,PUNCT,O,,O
@@ -281,7 +281,7 @@ sl-189,11,17,vsebinskih,,vsebinski,Agpfpg,ADJ,O,,O
 sl-189,11,18,kompetenc,,kompetenca,Ncfpg,NOUN,O,,O
 sl-189,11,19,",",,",",Z,PUNCT,O,,O
 sl-189,11,20,saj,,saj,Cc,CCONJ,O,,O
-sl-189,11,21,za,,za,Sa,ADP,O,,I-ORG
+sl-189,11,21,za,,za,Sa,ADP,O,,O
 sl-189,11,22,to,,ta,Pd-nsa,DET,O,,O
 sl-189,11,23,nima,,imeti,Vmpr3s-y,VERB,O,,O
 sl-189,11,24,pooblastil,,pooblastilo,Ncnpg,NOUN,O,,O
@@ -300,7 +300,7 @@ sl-189,12,11,jezika,,jezik,Ncmsg,NOUN,O,,O
 sl-189,12,12,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-189,12,13,bil,,biti,Va-p-sm,AUX,O,,O
 sl-189,12,14,pogoj,,pogoj,Ncmsn,NOUN,O,,O
-sl-189,12,15,za,,za,Sa,ADP,O,,I-ORG
+sl-189,12,15,za,,za,Sa,ADP,O,,O
 sl-189,12,16,zaposlitev,,zaposlitev,Ncfsa,NOUN,O,,O
 sl-189,12,17,na,,na,Sa,ADP,O,,O
 sl-189,12,18,delovno,,deloven,Agpnsa,ADJ,O,,O
@@ -315,7 +315,7 @@ sl-189,12,26,z,,z,Si,ADP,O,,O
 sl-189,12,27,mednarodnim,,mednaroden,Agpnsi,ADJ,O,,O
 sl-189,12,28,sodelovanjem,,sodelovanje,Ncnsi,NOUN,O,,O
 sl-189,12,29,.,,.,Z,PUNCT,O,,O
-sl-189,13,1,Komisija,,komisija,Ncfsn,NOUN,O,,B-ORG
+sl-189,13,1,Komisija,,komisija,Ncfsn,NOUN,O,,B-LOC
 sl-189,13,2,",",,",",Z,PUNCT,O,,O
 sl-189,13,3,kot,,kot,Cs,SCONJ,O,,O
 sl-189,13,4,še,,še,Q,PART,O,,O

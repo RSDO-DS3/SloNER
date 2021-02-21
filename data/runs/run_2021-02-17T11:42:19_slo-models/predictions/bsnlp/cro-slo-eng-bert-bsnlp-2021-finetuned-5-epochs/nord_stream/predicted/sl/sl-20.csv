@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-20,0,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
 sl-20,0,2,okarala,,okarati,Vmep-sf,VERB,O,,O
 sl-20,0,3,ZDA,ZDA,ZDA,Npfpa,PROPN,B-LOC,GPE-USA,B-LOC
@@ -16,8 +16,8 @@ sl-20,1,4,Merkel,Merkel,Merkel,Npfsn,PROPN,I-PER,PER-Angela-Merkel,I-PER
 sl-20,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-20,1,6,na,,na,Sl,ADP,O,,O
 sl-20,1,7,münchenski,münchenska,münchenski,Agpfsl,ADJ,B-EVT,EVT-MSC-Munich-Security-Conference,B-EVT
-sl-20,1,8,varnostni,varnostna,varnosten,Agpfsl,ADJ,I-EVT,EVT-MSC-Munich-Security-Conference,O
-sl-20,1,9,konferenci,konferenca,konferenca,Ncfsl,NOUN,I-EVT,EVT-MSC-Munich-Security-Conference,O
+sl-20,1,8,varnostni,varnostna,varnosten,Agpfsl,ADJ,I-EVT,EVT-MSC-Munich-Security-Conference,I-EVT
+sl-20,1,9,konferenci,konferenca,konferenca,Ncfsl,NOUN,I-EVT,EVT-MSC-Munich-Security-Conference,I-EVT
 sl-20,1,10,posvarila,,posvariti,Vmep-sf,VERB,O,,O
 sl-20,1,11,pred,,pred,Si,ADP,O,,O
 sl-20,1,12,razpadom,,razpad,Ncmsi,NOUN,O,,O
@@ -238,7 +238,7 @@ sl-20,11,25,zmogljivosti,,zmogljivost,Ncfpg,NOUN,O,,O
 sl-20,11,26,.,,.,Z,PUNCT,O,,O
 sl-20,12,1,Tudi,,tudi,Q,PART,O,,O
 sl-20,12,2,umik,,umik,Ncmsn,NOUN,O,,O
-sl-20,12,3,ameriških,,ameriški,Agpmpg,ADJ,O,,O
+sl-20,12,3,ameriških,,ameriški,Agpmpg,ADJ,O,,B-PER
 sl-20,12,4,vojakov,,vojak,Ncmpg,NOUN,O,,O
 sl-20,12,5,iz,,iz,Sg,ADP,O,,O
 sl-20,12,6,Sirije,Sirija,Sirija,Npfsg,PROPN,B-LOC,GPE-Syria,B-LOC
@@ -327,8 +327,8 @@ sl-20,15,12,so,,biti,Va-r3p-n,AUX,O,,O
 sl-20,15,13,že,,že,Q,PART,O,,O
 sl-20,15,14,v,,v,Sl,ADP,O,,O
 sl-20,15,15,času,,čas,Ncmsl,NOUN,O,,O
-sl-20,15,16,hladne,hladna,hladen,Agpfsg,ADJ,B-EVT,EVT-Cold-War,O
-sl-20,15,17,vojne,vojna,vojna,Ncfsg,NOUN,I-EVT,EVT-Cold-War,O
+sl-20,15,16,hladne,hladna,hladen,Agpfsg,ADJ,B-EVT,EVT-Cold-War,B-EVT
+sl-20,15,17,vojne,vojna,vojna,Ncfsg,NOUN,I-EVT,EVT-Cold-War,I-EVT
 sl-20,15,18,uvažali,,uvažati,Vmpp-pm,VERB,O,,O
 sl-20,15,19,plin,,plin,Ncmsan,NOUN,O,,O
 sl-20,15,20,iz,,iz,Sg,ADP,O,,O
@@ -362,7 +362,7 @@ sl-20,17,2,pozvala,,pozvati,Vmep-sf,VERB,O,,O
 sl-20,17,3,k,,k,Sd,ADP,O,,O
 sl-20,17,4,ohranitvi,,ohranitev,Ncfsd,NOUN,O,,O
 sl-20,17,5,jedrskega,,jedrski,Agpmsg,ADJ,O,,O
-sl-20,17,6,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
+sl-20,17,6,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-20,18,1,Pred,,pred,Si,ADP,O,,O
 sl-20,18,2,kritikami,,kritika,Ncfpi,NOUN,O,,O
 sl-20,18,3,iz,,iz,Sg,ADP,O,,O
@@ -376,7 +376,7 @@ sl-20,18,10,in,,in,Cc,CCONJ,O,,O
 sl-20,18,11,jedrski,,jedrski,Agpmsay,ADJ,O,,O
 sl-20,18,12,dogovor,,dogovor,Ncmsan,NOUN,O,,O
 sl-20,18,13,.,,.,Z,PUNCT,O,,O
-sl-20,19,1,Sicer,,sicer,Q,PART,O,,O
+sl-20,19,1,Sicer,,sicer,Q,PART,O,,B-PER
 sl-20,19,2,se,,se,Px------y,PRON,O,,O
 sl-20,19,3,strinja,,strinjati,Vmpr3s,VERB,O,,O
 sl-20,19,4,z,,z,Si,ADP,O,,O
@@ -413,7 +413,7 @@ sl-20,20,10,naj,,naj,Cs,SCONJ,O,,O
 sl-20,20,11,odstopijo,,odstopiti,Vmer3p,VERB,O,,O
 sl-20,20,12,od,,od,Sg,ADP,O,,O
 sl-20,20,13,iranskega,iranski,iranski,Agpmsg,ADJ,B-PRO,PRO-Iran-nuclear-deal,B-PRO
-sl-20,20,14,jedrskega,jedrski,jedrski,Agpmsg,ADJ,I-PRO,PRO-Iran-nuclear-deal,O
+sl-20,20,14,jedrskega,jedrski,jedrski,Agpmsg,ADJ,I-PRO,PRO-Iran-nuclear-deal,I-PRO
 sl-20,20,15,sporazuma,sporazum,sporazum,Ncmsg,NOUN,I-PRO,PRO-Iran-nuclear-deal,I-PRO
 sl-20,20,16,",",,",",Z,PUNCT,O,,O
 sl-20,20,17,je,,biti,Va-r3s-n,AUX,O,,O
@@ -464,7 +464,7 @@ sl-20,22,17,v,,v,Sl,ADP,O,,O
 sl-20,22,18,jugovzhodni,jugovzhodni,jugovzhoden,Agpfsl,ADJ,B-LOC,LOC-Southeast-Europe,B-LOC
 sl-20,22,19,in,,in,Cc,CCONJ,O,,O
 sl-20,22,20,vzhodni,vzhodna,vzhoden,Agpfsl,ADJ,B-LOC,LOC-Eastern-Europe,B-LOC
-sl-20,22,21,Evropi,Evropa,Evropa,Npfsl,PROPN,I-LOC,LOC-Eastern-Europe,B-LOC
+sl-20,22,21,Evropi,Evropa,Evropa,Npfsl,PROPN,I-LOC,LOC-Eastern-Europe,I-LOC
 sl-20,22,22,ter,,ter,Cc,CCONJ,O,,O
 sl-20,22,23,podnebnih,,podneben,Agpfpl,ADJ,O,,O
 sl-20,22,24,spremembah,,sprememba,Ncfpl,NOUN,O,,O

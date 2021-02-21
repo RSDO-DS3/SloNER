@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-33,0,1,Radovljičani,Radovljičani,Radovljičan,Npmpn,PROPN,B-PER,GPE-Radovljica,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-33,0,1,Radovljičani,Radovljičani,Radovljičan,Npmpn,PROPN,B-PER,GPE-Radovljica,O
 sl-33,0,2,rekorderji,,rekorder,Ncmpn,NOUN,O,,O
 sl-33,0,3,v,,v,Sl,ADP,O,,O
 sl-33,0,4,prijavah,,prijava,Ncfpl,NOUN,O,,O
@@ -48,14 +48,14 @@ sl-33,2,8,«,,«,Z,PUNCT,O,,O
 sl-33,2,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-33,2,10,povedal,,povedati,Vmep-sm,VERB,O,,O
 sl-33,2,11,Miha,Miha,Miha,Npmsn,PROPN,B-PER,PER-Miha-Bogataj,B-PER
-sl-33,2,12,Bogataj,Bogataj,Bogataj,Npmsn,PROPN,I-PER,PER-Miha-Bogataj,B-PER
+sl-33,2,12,Bogataj,Bogataj,Bogataj,Npmsn,PROPN,I-PER,PER-Miha-Bogataj,I-PER
 sl-33,2,13,",",,",",Z,PUNCT,O,,O
 sl-33,2,14,direktor,,direktor,Ncmsn,NOUN,O,,O
 sl-33,2,15,zavoda,zavod,zavod,Ncmsg,NOUN,B-ORG,ORG-Zavod-Zlata-mreža,O
-sl-33,2,16,Zlata,Zlata,zlat,Agpfsn,ADJ,I-ORG,ORG-Zavod-Zlata-mreža,B-ORG
-sl-33,2,17,mreža,mreža,mreža,Ncfsn,NOUN,I-ORG,ORG-Zavod-Zlata-mreža,B-PRO
+sl-33,2,16,Zlata,Zlata,zlat,Agpfsn,ADJ,I-ORG,ORG-Zavod-Zlata-mreža,B-PRO
+sl-33,2,17,mreža,mreža,mreža,Ncfsn,NOUN,I-ORG,ORG-Zavod-Zlata-mreža,I-PRO
 sl-33,2,18,.,,.,Z,PUNCT,O,,O
-sl-33,3,1,Prostofer,Prostofer,prostofer,Ncmsn,NOUN,B-PRO,PRO-Prostofer,B-PRO
+sl-33,3,1,Prostofer,Prostofer,prostofer,Ncmsn,NOUN,B-PRO,PRO-Prostofer,O
 sl-33,3,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-33,3,3,",",,",",Z,PUNCT,O,,O
 sl-33,3,4,kot,,kot,Cs,SCONJ,O,,O
@@ -191,7 +191,7 @@ sl-33,7,17,finančni,,finančen,Agpmsny,ADJ,O,,O
 sl-33,7,18,zalogaj,,zalogaj,Ncmsn,NOUN,O,,O
 sl-33,7,19,.,,.,Z,PUNCT,O,,O
 sl-33,7,20,«,,«,Z,PUNCT,O,,O
-sl-33,7,21,Prostofer,Prostofer,Prostofer,Npmsn,PROPN,B-PRO,PRO-Prostofer,B-PRO
+sl-33,7,21,Prostofer,Prostofer,Prostofer,Npmsn,PROPN,B-PRO,PRO-Prostofer,O
 sl-33,7,22,tako,,tako,Rgp,ADV,O,,O
 sl-33,7,23,starejšim,,star,Agcmpd,ADJ,O,,O
 sl-33,7,24,omogoča,,omogočati,Vmpr3s,VERB,O,,O

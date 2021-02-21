@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-6,0,1,Eksplozija,,eksplozija,Ncfsn,NOUN,O,,O
 sl-6,0,2,na,,na,Sl,ADP,O,,O
 sl-6,0,3,letalu,,letalo,Ncnsl,NOUN,O,,O
@@ -245,7 +245,7 @@ sl-6,12,24,.,,.,Z,PUNCT,O,,O
 sl-6,13,1,Isti,,isti,Pi-msn,DET,O,,O
 sl-6,13,2,motor,,motor,Ncmsn,NOUN,O,,O
 sl-6,13,3,",",,",",Z,PUNCT,O,,O
-sl-6,13,4,CFM56-7B,CFM56-7B,cfm56-7b,Mdc,NUM,B-PRO,PRO-Motor CFM56-7B,O
+sl-6,13,4,CFM56-7B,CFM56-7B,cfm56-7b,Mdc,NUM,B-PRO,PRO-Motor CFM56-7B,B-PRO
 sl-6,13,5,",",,",",Z,PUNCT,O,,O
 sl-6,13,6,pa,,pa,Cc,CCONJ,O,,O
 sl-6,13,7,je,,biti,Va-r3s-n,VERB,O,,O
@@ -261,7 +261,7 @@ sl-6,13,16,je,,biti,Va-r3s-n,AUX,O,,O
 sl-6,13,17,povedal,,povedati,Vmep-sm,VERB,O,,O
 sl-6,13,18,proizvajalec,,proizvajalec,Ncmsn,NOUN,O,,O
 sl-6,13,19,.,,.,Z,PUNCT,O,,O
-sl-6,14,1,CFM-jeva,CFM,Cfm-jev,Aspnpn,ADJ,B-ORG,ORG-CFM-International,O
+sl-6,14,1,CFM-jeva,CFM,Cfm-jev,Aspnpn,ADJ,B-ORG,ORG-CFM-International,B-ORG
 sl-6,14,2,partnerska,,partnerski,Agpnpn,ADJ,O,,O
 sl-6,14,3,podjetja,,podjetje,Ncnpn,NOUN,O,,O
 sl-6,14,4,so,,biti,Va-r3p-n,AUX,O,,O
@@ -535,9 +535,9 @@ sl-6,30,15,",",,",",Z,PUNCT,O,,O
 sl-6,30,16,varno,,varno,Rgp,ADV,O,,O
 sl-6,30,17,prepeljal,,prepeljati,Vmep-sm,VERB,O,,O
 sl-6,30,18,svojega,,svoj,Px-msa,DET,O,,O
-sl-6,30,19,"""",,"""",Z,PUNCT,O,,I-PER
+sl-6,30,19,"""",,"""",Z,PUNCT,O,,O
 sl-6,30,20,milijardnega,,milijarden,Agpmsa,ADJ,O,,O
-sl-6,30,21,"""",,"""",Z,PUNCT,O,,I-PER
+sl-6,30,21,"""",,"""",Z,PUNCT,O,,O
 sl-6,30,22,potnika,,potnik,Ncmsay,NOUN,O,,O
 sl-6,30,23,.,,.,Z,PUNCT,O,,O
 sl-6,31,1,Število,,število,Ncnsn,NOUN,O,,O
@@ -566,9 +566,9 @@ sl-6,33,1,Med,,med,Sa,ADP,O,,O
 sl-6,33,2,letalske,,letalski,Agpfpa,ADJ,O,,O
 sl-6,33,3,družbe,,družba,Ncfpa,NOUN,O,,O
 sl-6,33,4,s,,z,Si,ADP,O,,O
-sl-6,33,5,"""",,"""",Z,PUNCT,O,,I-PER
+sl-6,33,5,"""",,"""",Z,PUNCT,O,,O
 sl-6,33,6,čisto,,čist,Agpfsi,ADJ,O,,O
-sl-6,33,7,"""",,"""",Z,PUNCT,O,,I-PER
+sl-6,33,7,"""",,"""",Z,PUNCT,O,,O
 sl-6,33,8,kartoteko,,kartoteka,Ncfsi,NOUN,O,,O
 sl-6,33,9,se,,se,Px------y,PRON,O,,O
 sl-6,33,10,uvrščajo,,uvrščati,Vmpr3p,VERB,O,,O

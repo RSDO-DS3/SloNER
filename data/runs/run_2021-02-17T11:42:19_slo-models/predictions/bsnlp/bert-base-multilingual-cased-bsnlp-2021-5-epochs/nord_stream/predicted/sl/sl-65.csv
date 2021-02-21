@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-65,0,1,Slavje,,slavje,Ncnsa,NOUN,O,,B-PRO
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-65,0,1,Slavje,,slavje,Ncnsa,NOUN,O,,O
 sl-65,0,2,ob,,ob,Sl,ADP,O,,O
 sl-65,0,3,70.,,70.,Mdo,NUM,O,,O
 sl-65,0,4,obletnici,,obletnica,Ncfsl,NOUN,O,,O
@@ -27,7 +27,7 @@ sl-65,1,13,zasedanju,,zasedanje,Ncnsl,NOUN,O,,O
 sl-65,1,14,zbrali,,zbrati,Vmep-pm,VERB,O,,O
 sl-65,1,15,zunanji,,zunanji,Agpmpn,ADJ,O,,O
 sl-65,1,16,ministri,,minister,Ncmpn,NOUN,O,,O
-sl-65,1,17,29,,29,Mdc,NUM,O,,B-EVT
+sl-65,1,17,29,,29,Mdc,NUM,O,,O
 sl-65,1,18,držav,,država,Ncfpg,NOUN,O,,O
 sl-65,1,19,članic,,članica,Ncfpg,NOUN,O,,O
 sl-65,1,20,in,,in,Cc,CCONJ,O,,O
@@ -39,7 +39,7 @@ sl-65,1,25,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-65,1,26,to,,ta,Pd-nsn,DET,O,,O
 sl-65,1,27,postala,,postati,Vmep-sf,VERB,O,,O
 sl-65,1,28,letos,,letos,Rgp,ADV,O,,O
-sl-65,1,29,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,1,29,.,,.,Z,PUNCT,O,,O
 sl-65,2,1,Med,,med,Si,ADP,O,,O
 sl-65,2,2,njimi,,on,Pp3mpi,PRON,O,,O
 sl-65,2,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -48,11 +48,11 @@ sl-65,2,5,zunanji,,zunanji,Agpmsny,ADJ,O,,O
 sl-65,2,6,minister,,minister,Ncmsn,NOUN,O,,O
 sl-65,2,7,Miro,Miro,Miro,Npmsn,PROPN,B-PER,PER-Miro-Cerar,B-PER
 sl-65,2,8,Cerar,Cerar,Cerar,Npmsn,PROPN,I-PER,PER-Miro-Cerar,I-PER
-sl-65,2,9,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,2,9,.,,.,Z,PUNCT,O,,O
 sl-65,3,1,Podpredsednik,,podpredsednik,Ncmsn,NOUN,O,,O
 sl-65,3,2,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
 sl-65,3,3,Mike,Mike,Mike,Npmsn,PROPN,B-PER,PER-Mike-Pence,B-PER
-sl-65,3,4,Pence,Pence,Pence,Npmsn,PROPN,I-PER,PER-Mike-Pence,B-PER
+sl-65,3,4,Pence,Pence,Pence,Npmsn,PROPN,I-PER,PER-Mike-Pence,I-PER
 sl-65,3,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,3,6,v,,v,Sl,ADP,O,,O
 sl-65,3,7,govoru,,govor,Ncmsl,NOUN,O,,O
@@ -70,8 +70,8 @@ sl-65,3,18,pri,,pri,Sl,ADP,O,,O
 sl-65,3,19,plinovodu,,plinovod,Ncmsl,NOUN,O,,O
 sl-65,3,20,iz,,iz,Sg,ADP,O,,O
 sl-65,3,21,Rusije,Rusija,Rusija,Npfsg,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-65,3,22,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-65,3,23,tok,,tok,Ncmsan,NOUN,O,,I-PRO
+sl-65,3,22,Severni,,severen,Agpmsny,ADJ,O,,O
+sl-65,3,23,tok,,tok,Ncmsan,NOUN,O,,O
 sl-65,3,24,2.,,2.,Mdo,NUM,O,,O
 sl-65,3,25,Turčijo,Turčija,Turčija,Npfsa,PROPN,B-LOC,GPE-Turkey,B-LOC
 sl-65,3,26,pa,,pa,Cc,CCONJ,O,,O
@@ -85,7 +85,7 @@ sl-65,3,33,protiraketne,,protiraketen,Agpfsg,ADJ,O,,O
 sl-65,3,34,obrambe,,obramba,Ncfsg,NOUN,O,,O
 sl-65,3,35,od,,od,Sg,ADP,O,,O
 sl-65,3,36,Rusije,Rusija,Rusija,Npfsg,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-65,3,37,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,3,37,.,,.,Z,PUNCT,O,,O
 sl-65,4,1,V,,v,Sl,ADP,O,,O
 sl-65,4,2,Washingtonu,Washington,Washington,Npmsl,PROPN,B-LOC,GPE-WashingtonDC,B-LOC
 sl-65,4,3,so,,biti,Va-r3p-n,AUX,O,,O
@@ -114,7 +114,7 @@ sl-65,4,25,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-65,4,26,to,,ta,Pd-nsn,DET,O,,O
 sl-65,4,27,postala,,postati,Vmep-sf,VERB,O,,O
 sl-65,4,28,letos,,letos,Rgp,ADV,O,,O
-sl-65,4,29,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,4,29,.,,.,Z,PUNCT,O,,O
 sl-65,5,1,Med,,med,Si,ADP,O,,O
 sl-65,5,2,njimi,,on,Pp3mpi,PRON,O,,O
 sl-65,5,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -123,7 +123,7 @@ sl-65,5,5,zunanji,,zunanji,Agpmsny,ADJ,O,,O
 sl-65,5,6,minister,,minister,Ncmsn,NOUN,O,,O
 sl-65,5,7,Miro,Miro,Miro,Npmsn,PROPN,B-PER,PER-Miro-Cerar,B-PER
 sl-65,5,8,Cerar,Cerar,Cerar,Npmsn,PROPN,I-PER,PER-Miro-Cerar,I-PER
-sl-65,5,9,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,5,9,.,,.,Z,PUNCT,O,,O
 sl-65,6,1,Pence,Pence,Pence,Npmsn,PROPN,B-PER,PER-Mike-Pence,B-PER
 sl-65,6,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,6,3,dejal,,dejati,Vmep-sm,VERB,O,,O
@@ -149,7 +149,7 @@ sl-65,6,22,postajali,,postajati,Vmpp-pm,VERB,O,,O
 sl-65,6,23,odvisni,,odvisen,Agpmpn,ADJ,O,,O
 sl-65,6,24,od,,od,Sg,ADP,O,,O
 sl-65,6,25,Rusije,Rusija,Rusija,Npfsg,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-65,6,26,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,6,26,.,,.,Z,PUNCT,O,,O
 sl-65,7,1,»,,»,Z,PUNCT,O,,O
 sl-65,7,2,Nesprejemljivo,,nesprejemljiv,Agpnsn,ADJ,O,,O
 sl-65,7,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -175,7 +175,7 @@ sl-65,7,22,«,,«,Z,PUNCT,O,,O
 sl-65,7,23,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,7,24,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-65,7,25,Pence,Pence,Pence,Npmsn,PROPN,B-PER,PER-Mike-Pence,B-PER
-sl-65,7,26,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,7,26,.,,.,Z,PUNCT,O,,O
 sl-65,8,1,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-65,8,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,8,3,na,,na,Sl,ADP,O,,O
@@ -198,7 +198,7 @@ sl-65,8,19,največje,,velik,Agsfsg,ADJ,O,,O
 sl-65,8,20,članice,,članica,Ncfsg,NOUN,O,,O
 sl-65,8,21,ne,,ne,Q,PART,O,,O
 sl-65,8,22,poudarja,,poudarjati,Vmpr3s,VERB,O,,O
-sl-65,8,23,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,8,23,.,,.,Z,PUNCT,O,,O
 sl-65,9,1,Zato,,zato,Cc,CCONJ,O,,O
 sl-65,9,2,pa,,pa,Cc,CCONJ,O,,O
 sl-65,9,3,to,,ta,Pd-nsa,DET,O,,O
@@ -215,7 +215,7 @@ sl-65,9,13,",",,",",Z,PUNCT,O,,O
 sl-65,9,14,državni,,državen,Agpmsny,ADJ,O,,O
 sl-65,9,15,sekretar,,sekretar,Ncmsn,NOUN,O,,O
 sl-65,9,16,Mike,Mike,Mike,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
-sl-65,9,17,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,B-PER
+sl-65,9,17,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,I-PER
 sl-65,9,18,",",,",",Z,PUNCT,O,,O
 sl-65,9,19,veleposlanica,,veleposlanica,Ncfsn,NOUN,O,,O
 sl-65,9,20,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
@@ -226,7 +226,7 @@ sl-65,9,24,Bailey,Bailey,Bailey,Npfsn,PROPN,I-PER,PER-Kay-Bailey-Hutchison,I-PER
 sl-65,9,25,Hutchinson,Hutchison,Hutchinson,Npfsn,PROPN,I-PER,PER-Kay-Bailey-Hutchison,I-PER
 sl-65,9,26,in,,in,Cc,CCONJ,O,,O
 sl-65,9,27,drugi,,drug,Mlpmpn,ADJ,O,,O
-sl-65,9,28,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,9,28,.,,.,Z,PUNCT,O,,O
 sl-65,10,1,Pence,Pence,Pence,Npmsn,PROPN,B-PER,PER-Mike-Pence,B-PER
 sl-65,10,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,10,3,Nemčijo,Nemčija,Nemčija,Npfsa,PROPN,B-LOC,GPE-Germany,B-LOC
@@ -236,7 +236,7 @@ sl-65,10,6,zaradi,,zaradi,Sg,ADP,O,,O
 sl-65,10,7,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
 sl-65,10,8,Severni,Severni,severen,Agpmsny,ADJ,B-PRO,PRO-Nord-Stream-2,B-PRO
 sl-65,10,9,tok,tok,tok,Ncmsn,NOUN,I-PRO,PRO-Nord-Stream-2,I-PRO
-sl-65,10,10,2,2,2,Mdc,NUM,I-PRO,PRO-Nord-Stream-2,B-EVT
+sl-65,10,10,2,2,2,Mdc,NUM,I-PRO,PRO-Nord-Stream-2,I-PRO
 sl-65,10,11,",",,",",Z,PUNCT,O,,O
 sl-65,10,12,ki,,ki,Cs,SCONJ,O,,O
 sl-65,10,13,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -246,7 +246,7 @@ sl-65,10,16,nakupe,,nakup,Ncmpa,NOUN,O,,O
 sl-65,10,17,plina,,plin,Ncmsg,NOUN,O,,O
 sl-65,10,18,iz,,iz,Sg,ADP,O,,O
 sl-65,10,19,Rusije,Rusija,Rusija,Npfsg,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-65,10,20,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,10,20,.,,.,Z,PUNCT,O,,O
 sl-65,11,1,Vendar,,vendar,Cc,CCONJ,O,,O
 sl-65,11,2,pa,,pa,Cc,CCONJ,O,,O
 sl-65,11,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -262,12 +262,12 @@ sl-65,11,12,vedno,,vedno,Rgp,ADV,O,,O
 sl-65,11,13,največji,,velik,Agsmsny,ADJ,O,,O
 sl-65,11,14,zaveznik,,zaveznik,Ncmsn,NOUN,O,,O
 sl-65,11,15,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,B-LOC
-sl-65,11,16,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,11,16,.,,.,Z,PUNCT,O,,O
 sl-65,12,1,Nemški,,nemški,Agpmsny,ADJ,O,,O
 sl-65,12,2,zunanji,,zunanji,Agpmsny,ADJ,O,,O
 sl-65,12,3,minister,,minister,Ncmsn,NOUN,O,,O
 sl-65,12,4,Heiko,Heiko,Heiko,Npmsn,PROPN,B-PER,PER-Heiko-Maas,B-PER
-sl-65,12,5,Maas,Maas,Maas,Npmsn,PROPN,I-PER,PER-Heiko-Maas,B-PER
+sl-65,12,5,Maas,Maas,Maas,Npmsn,PROPN,I-PER,PER-Heiko-Maas,I-PER
 sl-65,12,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,12,7,odgovoril,,odgovoriti,Vmep-sm,VERB,O,,O
 sl-65,12,8,",",,",",Z,PUNCT,O,,O
@@ -287,7 +287,7 @@ sl-65,12,21,več,,več,Rgc,DET,O,,O
 sl-65,12,22,kot,,kot,Cs,SCONJ,O,,O
 sl-65,12,23,le,,le,Q,PART,O,,O
 sl-65,12,24,porabo,,poraba,Ncfsa,NOUN,O,,O
-sl-65,12,25,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,12,25,.,,.,Z,PUNCT,O,,O
 sl-65,13,1,Velika,,velik,Agpfsn,ADJ,O,,O
 sl-65,13,2,poraba,,poraba,Ncfsn,NOUN,O,,O
 sl-65,13,3,za,,za,Sa,ADP,O,,O
@@ -335,7 +335,7 @@ sl-65,13,44,zato,,zato,Cc,CCONJ,O,,O
 sl-65,13,45,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-65,13,46,delila,,deliti,Vmpp-sf,VERB,O,,O
 sl-65,13,47,breme,,breme,Ncnsa,NOUN,O,,O
-sl-65,13,48,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,13,48,.,,.,Z,PUNCT,O,,O
 sl-65,14,1,Pence,Pence,Pence,Npmsn,PROPN,B-PER,PER-Mike-Pence,B-PER
 sl-65,14,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,14,3,dejal,,dejati,Vmep-sm,VERB,O,,O
@@ -363,7 +363,7 @@ sl-65,14,24,partnerstva,,partnerstvo,Ncnsg,NOUN,O,,O
 sl-65,14,25,z,,z,Si,ADP,O,,O
 sl-65,14,26,nepremišljenimi,,nepremišljen,Agpfpi,ADJ,O,,O
 sl-65,14,27,odločitvami,,odločitev,Ncfpi,NOUN,O,,O
-sl-65,14,28,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,14,28,.,,.,Z,PUNCT,O,,O
 sl-65,15,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-65,15,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-65,15,3,v,,v,Sa,ADP,O,,O
@@ -382,8 +382,8 @@ sl-65,15,15,kupuje,,kupovati,Vmpr3s,VERB,O,,O
 sl-65,15,16,sistem,,sistem,Ncmsan,NOUN,O,,O
 sl-65,15,17,protiraketne,,protiraketen,Agpfsg,ADJ,O,,O
 sl-65,15,18,obrambe,,obramba,Ncfsg,NOUN,O,,O
-sl-65,15,19,S-400,S-400,s-400,Mdc,NUM,B-PRO,PRO-S-400-Triumf,O
-sl-65,15,20,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,15,19,S-400,S-400,s-400,Mdc,NUM,B-PRO,PRO-S-400-Triumf,B-PRO
+sl-65,15,20,.,,.,Z,PUNCT,O,,O
 sl-65,16,1,Turčija,Turčija,Turčija,Npfsn,PROPN,B-LOC,GPE-Turkey,B-LOC
 sl-65,16,2,ne,,ne,Q,PART,O,,O
 sl-65,16,3,bo,,biti,Va-f3s-n,AUX,O,,O
@@ -395,13 +395,13 @@ sl-65,17,1,Turški,,turški,Agpmsny,ADJ,O,,O
 sl-65,17,2,zunanji,,zunanji,Agpmsny,ADJ,O,,O
 sl-65,17,3,minister,,minister,Ncmsn,NOUN,O,,O
 sl-65,17,4,Mevlut,Mevlut,Mevlut,Npmsn,PROPN,B-PER,PER-Mevlut-Cavusoglu,B-PER
-sl-65,17,5,Cavusoglu,Cavusoglu,Cavusoglu,Npmsn,PROPN,I-PER,PER-Mevlut-Cavusoglu,B-PER
+sl-65,17,5,Cavusoglu,Cavusoglu,Cavusoglu,Npmsn,PROPN,I-PER,PER-Mevlut-Cavusoglu,I-PER
 sl-65,17,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,17,7,odvrnil,,odvrniti,Vmep-sm,VERB,O,,O
 sl-65,17,8,",",,",",Z,PUNCT,O,,O
 sl-65,17,9,da,,da,Cs,SCONJ,O,,O
 sl-65,17,10,je,,biti,Va-r3s-n,AUX,O,,O
-sl-65,17,11,S-400,S-400,s-400,Mdc,NUM,B-PRO,PRO-S-400-Triumf,O
+sl-65,17,11,S-400,S-400,s-400,Mdc,NUM,B-PRO,PRO-S-400-Triumf,B-PRO
 sl-65,17,12,dokončan,,dokončan,Appmsnn,ADJ,O,,O
 sl-65,17,13,posel,,posel,Ncmsn,NOUN,O,,O
 sl-65,17,14,in,,in,Cc,CCONJ,O,,O
@@ -411,7 +411,7 @@ sl-65,17,17,njega,,on,Pp3msg,PRON,O,,O
 sl-65,17,18,ne,,ne,Q,PART,O,,O
 sl-65,17,19,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-65,17,20,odstopila,,odstopiti,Vmep-sf,VERB,O,,O
-sl-65,17,21,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,17,21,.,,.,Z,PUNCT,O,,O
 sl-65,18,1,Vendar,,vendar,Cc,CCONJ,O,,O
 sl-65,18,2,pa,,pa,Cc,CCONJ,O,,O
 sl-65,18,3,Turčija,Turčija,Turčija,Npfsn,PROPN,B-LOC,GPE-Turkey,B-LOC
@@ -432,7 +432,7 @@ sl-65,18,17,priključitve,,priključitev,Ncfsg,NOUN,O,,O
 sl-65,18,18,polotoka,,polotok,Ncmsg,NOUN,O,,O
 sl-65,18,19,Krim,Krim,Krim,Npmsn,PROPN,B-LOC,GPE-Crimea,B-LOC
 sl-65,18,20,Rusiji,Rusija,Rusija,Npfsd,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-65,18,21,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,18,21,.,,.,Z,PUNCT,O,,O
 sl-65,19,1,»,,»,Z,PUNCT,O,,O
 sl-65,19,2,Sodelujemo,,sodelovati,Vmpr1p,VERB,O,,O
 sl-65,19,3,z,,z,Si,ADP,O,,O
@@ -457,7 +457,7 @@ sl-65,19,21,",",,",",Z,PUNCT,O,,O
 sl-65,19,22,«,,«,Z,PUNCT,O,,O
 sl-65,19,23,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,19,24,dejal,,dejati,Vmep-sm,VERB,O,,O
-sl-65,19,25,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,19,25,.,,.,Z,PUNCT,O,,O
 sl-65,20,1,Cavusoglu,Cavusoglu,Cavusoglu,Npmsn,PROPN,B-PER,PER-Mevlut-Cavusoglu,B-PER
 sl-65,20,2,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-65,20,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -468,7 +468,7 @@ sl-65,20,7,od,,od,Sg,ADP,O,,O
 sl-65,20,8,Pompea,Pompeo,Pompe,Npmsg,PROPN,B-PER,PER-Mike-Pompeo,B-PER
 sl-65,20,9,glede,,glede,Sg,ADP,O,,O
 sl-65,20,10,Sirije,Sirija,Sirija,Npfsg,PROPN,B-LOC,GPE-Syria,B-LOC
-sl-65,20,11,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,20,11,.,,.,Z,PUNCT,O,,O
 sl-65,21,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-65,21,2,državni,,državen,Agpmsny,ADJ,O,,O
 sl-65,21,3,sekretar,,sekretar,Ncmsn,NOUN,O,,O
@@ -491,7 +491,7 @@ sl-65,21,19,kurdskih,,kurdski,Agpmpg,ADJ,O,,O
 sl-65,21,20,borcev,,borec,Ncmpg,NOUN,O,,O
 sl-65,21,21,v,,v,Sl,ADP,O,,O
 sl-65,21,22,Siriji,Sirija,Sirija,Npfsl,PROPN,B-LOC,GPE-Syria,B-LOC
-sl-65,21,23,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,21,23,.,,.,Z,PUNCT,O,,O
 sl-65,22,1,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
 sl-65,22,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,22,3,potem,,potem,Rgp,ADV,O,,O
@@ -522,7 +522,7 @@ sl-65,22,27,da,,da,Cs,SCONJ,O,,O
 sl-65,22,28,je,,biti,Va-r3s-n,VERB,O,,O
 sl-65,22,29,dosežkov,,dosežek,Ncmpg,NOUN,O,,O
 sl-65,22,30,veliko,,veliko,Rgp,DET,O,,O
-sl-65,22,31,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,22,31,.,,.,Z,PUNCT,O,,O
 sl-65,23,1,Med,,med,Si,ADP,O,,O
 sl-65,23,2,njimi,,on,Pp3mpi,PRON,O,,O
 sl-65,23,3,odvrnitev,,odvrnitev,Ncfsn,NOUN,O,,O
@@ -536,7 +536,7 @@ sl-65,23,10,preprečitev,,preprečitev,Ncfsn,NOUN,O,,O
 sl-65,23,11,velikega,,velik,Agpmsg,ADJ,O,,O
 sl-65,23,12,spopada,,spopad,Ncmsg,NOUN,O,,O
 sl-65,23,13,po,,po,Sl,ADP,O,,O
-sl-65,23,14,2.,2.,2.,Mdo,NUM,B-EVT,EVT-World-War-II,O
+sl-65,23,14,2.,2.,2.,Mdo,NUM,B-EVT,EVT-World-War-II,B-EVT
 sl-65,23,15,svetovni,svetovna,svetoven,Agpfsl,ADJ,I-EVT,EVT-World-War-II,I-EVT
 sl-65,23,16,vojni,vojna,vojna,Ncfsl,NOUN,I-EVT,EVT-World-War-II,I-EVT
 sl-65,23,17,",",,",",Z,PUNCT,O,,O
@@ -551,7 +551,7 @@ sl-65,23,25,skupen,,skupen,Agpmsnn,ADJ,O,,O
 sl-65,23,26,boj,,boj,Ncmsn,NOUN,O,,O
 sl-65,23,27,proti,,proti,Sd,ADP,O,,O
 sl-65,23,28,terorizmu,,terorizem,Ncmsd,NOUN,O,,O
-sl-65,23,29,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,23,29,.,,.,Z,PUNCT,O,,O
 sl-65,24,1,Med,,med,Si,ADP,O,,O
 sl-65,24,2,novimi,,nov,Agpmpi,ADJ,O,,O
 sl-65,24,3,izzivi,,izziv,Ncmpi,NOUN,O,,O
@@ -574,7 +574,7 @@ sl-65,24,19,in,,in,Cc,CCONJ,O,,O
 sl-65,24,20,ranljivosti,,ranljivost,Ncfpa,NOUN,O,,O
 sl-65,24,21,novih,,nov,Agpfpg,ADJ,O,,O
 sl-65,24,22,tehnologij,,tehnologija,Ncfpg,NOUN,O,,O
-sl-65,24,23,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,24,23,.,,.,Z,PUNCT,O,,O
 sl-65,25,1,»,,»,Z,PUNCT,O,,O
 sl-65,25,2,Geopolitično,,geopolitičen,Agpnsn,ADJ,O,,O
 sl-65,25,3,okolje,,okolje,Ncnsn,NOUN,O,,O
@@ -584,7 +584,7 @@ sl-65,25,6,bolj,,bolj,Rgc,ADV,O,,O
 sl-65,25,7,nestabilno,,nestabilen,Agpnsn,ADJ,O,,O
 sl-65,25,8,in,,in,Cc,CCONJ,O,,O
 sl-65,25,9,tekmovalno,,tekmovalen,Agpnsn,ADJ,O,,O
-sl-65,25,10,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,25,10,.,,.,Z,PUNCT,O,,O
 sl-65,26,1,Naša,,naš,Ps1fsnp,DET,O,,O
 sl-65,26,2,naloga,,naloga,Ncfsn,NOUN,O,,O
 sl-65,26,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -602,7 +602,7 @@ sl-65,26,14,«,,«,Z,PUNCT,O,,O
 sl-65,26,15,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,26,16,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-65,26,17,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
-sl-65,26,18,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,26,18,.,,.,Z,PUNCT,O,,O
 sl-65,27,1,Med,,med,Si,ADP,O,,O
 sl-65,27,2,drugim,,drug,Mlpnsi,ADJ,O,,O
 sl-65,27,3,je,,biti,Va-r3s-n,AUX,O,,O
@@ -629,8 +629,8 @@ sl-65,27,23,imel,,imeti,Vmpp-sm,VERB,O,,O
 sl-65,27,24,tako,,tako,Rgp,ADV,O,,O
 sl-65,27,25,30,,30,Mdc,NUM,O,,O
 sl-65,27,26,članic,,članica,Ncfpg,NOUN,O,,O
-sl-65,27,27,.,,.,Z,PUNCT,O,,B-EVT
-sl-65,28,1,Nato,Nato,nato,Rgp,ADV,B-ORG,ORG-NATO,B-ORG
+sl-65,27,27,.,,.,Z,PUNCT,O,,O
+sl-65,28,1,Nato,Nato,nato,Rgp,ADV,B-ORG,ORG-NATO,B-LOC
 sl-65,28,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,28,3,utrdil,,utrditi,Vmep-sm,VERB,O,,O
 sl-65,28,4,prisotnost,,prisotnost,Ncfsa,NOUN,O,,O
@@ -652,7 +652,7 @@ sl-65,28,19,kibernetskimi,,kibernetski,Agpfpi,ADJ,O,,O
 sl-65,28,20,grožnjami,,grožnja,Ncfpi,NOUN,O,,O
 sl-65,28,21,sodobnega,,sodoben,Agpmsg,ADJ,O,,O
 sl-65,28,22,časa,,čas,Ncmsg,NOUN,O,,O
-sl-65,28,23,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,28,23,.,,.,Z,PUNCT,O,,O
 sl-65,29,1,»,,»,Z,PUNCT,O,,O
 sl-65,29,2,Za,,za,Sa,ADP,O,,O
 sl-65,29,3,vse,,ves,Pg-nsa,DET,O,,O
@@ -662,7 +662,7 @@ sl-65,29,6,potrebna,,potreben,Agpnpn,ADJ,O,,O
 sl-65,29,7,dodatna,,dodaten,Agpnpn,ADJ,O,,O
 sl-65,29,8,vlaganja,,vlaganje,Ncnpn,NOUN,O,,O
 sl-65,29,9,vseh,,ves,Pg-mpg,DET,O,,O
-sl-65,29,10,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,29,10,.,,.,Z,PUNCT,O,,O
 sl-65,30,1,Kanada,Kanada,Kanada,Npfsn,PROPN,B-LOC,GPE-Canada,B-LOC
 sl-65,30,2,in,,in,Cc,CCONJ,O,,O
 sl-65,30,3,evropski,Evropa,evropski,Agpmpn,ADJ,B-LOC,LOC-Europe,B-LOC
@@ -680,8 +680,8 @@ sl-65,30,14,dolarjev,,dolar,Ncmpg,NOUN,O,,O
 sl-65,30,15,za,,za,Sa,ADP,O,,O
 sl-65,30,16,kolektivno,,kolektiven,Agpfsa,ADJ,O,,O
 sl-65,30,17,varnost,,varnost,Ncfsa,NOUN,O,,O
-sl-65,30,18,.,,.,Z,PUNCT,O,,B-EVT
-sl-65,31,1,Amerika,Amerika,Amerika,Npfsn,PROPN,B-LOC,GPE-USA,B-LOC
+sl-65,30,18,.,,.,Z,PUNCT,O,,O
+sl-65,31,1,Amerika,Amerika,Amerika,Npfsn,PROPN,B-LOC,GPE-USA,B-PER
 sl-65,31,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,31,3,za,,za,Sa,ADP,O,,O
 sl-65,31,4,ta,,ta,Pd-npa,DET,O,,O
@@ -697,4 +697,4 @@ sl-65,31,13,«,,«,Z,PUNCT,O,,O
 sl-65,31,14,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,31,15,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-65,31,16,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
-sl-65,31,17,.,,.,Z,PUNCT,O,,B-EVT
+sl-65,31,17,.,,.,Z,PUNCT,O,,O

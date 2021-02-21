@@ -1,12 +1,12 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-4,0,1,Skoraj,,skoraj,Q,PART,O,,B-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-4,0,1,Skoraj,,skoraj,Q,PART,O,,O
 sl-4,0,2,tradicionalen,,tradicionalen,Agpmsnn,ADJ,O,,O
 sl-4,0,3,preplah,,preplah,Ncmsn,NOUN,O,,O
-sl-4,0,4,na,,na,Sl,ADP,O,,B-EVT
+sl-4,0,4,na,,na,Sl,ADP,O,,O
 sl-4,0,5,finančnih,,finančen,Agpmpl,ADJ,O,,O
 sl-4,0,6,trgih,,trg,Ncmpl,NOUN,O,,O
 sl-4,1,1,Powellov,Powell,Powellov,Aspmsan,ADJ,B-PER,PER-Jerome-Powell,B-PER
-sl-4,1,2,optimizem,,optimizem,Ncmsan,NOUN,O,,B-ORG
+sl-4,1,2,optimizem,,optimizem,Ncmsan,NOUN,O,,O
 sl-4,1,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-4,1,4,v,,v,Sa,ADP,O,,O
 sl-4,1,5,petek,,petek,Ncmsan,NOUN,O,,O
@@ -15,13 +15,13 @@ sl-4,1,7,podatki,,podatek,Ncmpn,NOUN,O,,O
 sl-4,1,8,z,,z,Sg,ADP,O,,O
 sl-4,1,9,ameriškega,,ameriški,Agpmsg,ADJ,O,,O
 sl-4,1,10,trga,,trg,Ncmsg,NOUN,O,,O
-sl-4,1,11,dela,,delo,Ncnsg,NOUN,O,,B-ORG
+sl-4,1,11,dela,,delo,Ncnsg,NOUN,O,,O
 sl-4,1,12,",",,",",Z,PUNCT,O,,O
 sl-4,1,13,ki,,ki,Cs,SCONJ,O,,O
 sl-4,1,14,so,,biti,Va-r3p-n,AUX,O,,O
 sl-4,1,15,pokazali,,pokazati,Vmep-pm,VERB,O,,O
 sl-4,1,16,",",,",",Z,PUNCT,O,,O
-sl-4,1,17,da,,da,Cs,SCONJ,O,,B-ORG
+sl-4,1,17,da,,da,Cs,SCONJ,O,,O
 sl-4,1,18,zagon,,zagon,Ncmsn,NOUN,O,,O
 sl-4,1,19,ameriškega,,ameriški,Agpnsg,ADJ,O,,O
 sl-4,1,20,gospodarstva,,gospodarstvo,Ncnsg,NOUN,O,,O
@@ -33,7 +33,7 @@ sl-4,1,25,.,,.,Z,PUNCT,O,,O
 sl-4,2,1,Kljub,,kljub,Sd,ADP,O,,O
 sl-4,2,2,manjšemu,,majhen,Agcmsd,ADJ,O,,O
 sl-4,2,3,številu,,število,Ncnsd,NOUN,O,,O
-sl-4,2,4,dodatnih,,dodaten,Agpnpg,ADJ,O,,B-ORG
+sl-4,2,4,dodatnih,,dodaten,Agpnpg,ADJ,O,,O
 sl-4,2,5,delovnih,,deloven,Agpnpg,ADJ,O,,O
 sl-4,2,6,mest,,mesto,Ncnpg,NOUN,O,,O
 sl-4,2,7,",",,",",Z,PUNCT,O,,O
@@ -43,7 +43,7 @@ sl-4,2,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,2,11,najverjetneje,,verjetno,Rgs,ADV,O,,O
 sl-4,2,12,negativno,,negativno,Rgp,ADV,O,,O
 sl-4,2,13,vplival,,vplivati,Vmpp-sm,VERB,O,,O
-sl-4,2,14,orkan,orkan,orkan,Ncmsn,NOUN,B-EVT,EVT-Hurricane-Florence,O
+sl-4,2,14,orkan,orkan,orkan,Ncmsn,NOUN,B-EVT,EVT-Hurricane-Florence,B-EVT
 sl-4,2,15,Florence,Florence,Florenca,Npfsg,PROPN,I-EVT,EVT-Hurricane-Florence,B-EVT
 sl-4,2,16,",",,",",Z,PUNCT,O,,O
 sl-4,2,17,so,,biti,Va-r3p-n,AUX,O,,O
@@ -87,7 +87,7 @@ sl-4,3,12,gre,,iti,Vmbr3s,VERB,O,,O
 sl-4,3,13,pripisati,,pripisati,Vmen,VERB,O,,O
 sl-4,3,14,dejstvu,,dejstvo,Ncnsd,NOUN,O,,O
 sl-4,3,15,",",,",",Z,PUNCT,O,,O
-sl-4,3,16,da,,da,Cs,SCONJ,O,,B-ORG
+sl-4,3,16,da,,da,Cs,SCONJ,O,,O
 sl-4,3,17,postaja,,postajati,Vmpr3s,VERB,O,,O
 sl-4,3,18,za,,za,Sa,ADP,O,,O
 sl-4,3,19,svetovno,,svetoven,Agpnsa,ADJ,O,,O
@@ -98,7 +98,7 @@ sl-4,3,23,dnem,,dan,Ncmsi,NOUN,O,,O
 sl-4,3,24,bolj,,bolj,Rgc,ADV,O,,O
 sl-4,3,25,pomembna,,pomemben,Agpfsn,ADJ,O,,O
 sl-4,3,26,debata,,debata,Ncfsn,NOUN,O,,O
-sl-4,3,27,o,,o,Sl,ADP,O,,B-ORG
+sl-4,3,27,o,,o,Sl,ADP,O,,O
 sl-4,3,28,ravni,,raven,Ncfsl,NOUN,O,,O
 sl-4,3,29,nevtralne,,nevtralen,Agpfsg,ADJ,O,,O
 sl-4,3,30,ključne,,ključen,Agpfsg,ADJ,O,,O
@@ -155,7 +155,7 @@ sl-4,4,36,na,,na,Sl,ADP,O,,O
 sl-4,4,37,denarnem,,denaren,Agpmsl,ADJ,O,,O
 sl-4,4,38,trgu,,trg,Ncmsl,NOUN,O,,O
 sl-4,4,39,",",,",",Z,PUNCT,O,,O
-sl-4,4,40,da,,da,Cs,SCONJ,O,,B-ORG
+sl-4,4,40,da,,da,Cs,SCONJ,O,,O
 sl-4,4,41,bi,,biti,Va-c,AUX,O,,O
 sl-4,4,42,tako,,tako,Rgp,ADV,O,,O
 sl-4,4,43,preprečile,,preprečiti,Vmep-pf,VERB,O,,O
@@ -165,8 +165,8 @@ sl-4,4,46,prevelik,,prevelik,Agpmsan,ADJ,O,,O
 sl-4,4,47,odliv,,odliv,Ncmsan,NOUN,O,,O
 sl-4,4,48,kapitala,,kapital,Ncmsg,NOUN,O,,O
 sl-4,4,49,.,,.,Z,PUNCT,O,,O
-sl-4,5,1,Po,,po,Sl,ADP,O,,B-PER
-sl-4,5,2,Fedovem,Fed,Fedov,Aspmsl,ADJ,B-ORG,ORG-Fed,O
+sl-4,5,1,Po,,po,Sl,ADP,O,,O
+sl-4,5,2,Fedovem,Fed,Fedov,Aspmsl,ADJ,B-ORG,ORG-Fed,B-ORG
 sl-4,5,3,dvigu,,dvig,Ncmsl,NOUN,O,,O
 sl-4,5,4,obrestne,,obresten,Agpfsg,ADJ,O,,O
 sl-4,5,5,mere,,mera,Ncfsg,NOUN,O,,O
@@ -180,7 +180,7 @@ sl-4,5,12,obrestne,,obresten,Agpfsg,ADJ,O,,O
 sl-4,5,13,mere,,mera,Ncfsg,NOUN,O,,O
 sl-4,5,14,od,,od,Sg,ADP,O,,O
 sl-4,5,15,"2,00",,"2,00",Mdc,NUM,O,,O
-sl-4,5,16,do,,do,Sg,ADP,O,,B-ORG
+sl-4,5,16,do,,do,Sg,ADP,O,,O
 sl-4,5,17,"2,25",,"2,25",Mdc,NUM,O,,O
 sl-4,5,18,odstotka,,odstotek,Ncmsg,NOUN,O,,O
 sl-4,5,19,.,,.,Z,PUNCT,O,,O
@@ -190,7 +190,7 @@ sl-4,6,3,glede,,glede,Sg,ADP,O,,O
 sl-4,6,4,nevtralne,,nevtralen,Agpfsg,ADJ,O,,O
 sl-4,6,5,obrestne,,obresten,Agpfsg,ADJ,O,,O
 sl-4,6,6,mere,,mera,Ncfsg,NOUN,O,,O
-sl-4,6,7,Fed,Fed,Fed,Npmsn,PROPN,B-ORG,ORG-Fed,O
+sl-4,6,7,Fed,Fed,Fed,Npmsn,PROPN,B-ORG,ORG-Fed,B-ORG
 sl-4,6,8,znaša,,znašati,Vmpr3s,VERB,O,,O
 sl-4,6,9,3,,3,Mdc,NUM,O,,O
 sl-4,6,10,odstotke,,odstotek,Ncmpa,NOUN,O,,O
@@ -201,7 +201,7 @@ sl-4,6,14,še,,še,Q,PART,O,,O
 sl-4,6,15,na,,na,Sa,ADP,O,,O
 sl-4,6,16,nadaljnje,,nadaljnji,Agpmpa,ADJ,O,,O
 sl-4,6,17,tri,,trije,Mlcmpa,NUM,O,,O
-sl-4,6,18,do,,do,Sg,ADP,O,,B-ORG
+sl-4,6,18,do,,do,Sg,ADP,O,,O
 sl-4,6,19,štiri,,štirje,Mlcmpa,NUM,O,,O
 sl-4,6,20,dvige,,dvig,Ncmpa,NOUN,O,,O
 sl-4,6,21,osrednje,,osrednji,Agpfsg,ADJ,O,,O
@@ -221,7 +221,7 @@ sl-4,7,10,v,,v,Sl,ADP,O,,O
 sl-4,7,11,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
 sl-4,7,12,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,7,13,vodila,,voditi,Vmpp-sf,VERB,O,,O
-sl-4,7,14,do,,do,Sg,ADP,O,,B-ORG
+sl-4,7,14,do,,do,Sg,ADP,O,,O
 sl-4,7,15,padca,,padec,Ncmsg,NOUN,O,,O
 sl-4,7,16,tečajev,,tečaj,Ncmpg,NOUN,O,,O
 sl-4,7,17,v,,v,Sl,ADP,O,,O
@@ -268,7 +268,7 @@ sl-4,9,3,je,,biti,Va-r3s-n,VERB,O,,O
 sl-4,9,4,pomembno,,pomemben,Agpnsn,ADJ,O,,O
 sl-4,9,5,poudariti,,poudariti,Vmen,VERB,O,,O
 sl-4,9,6,",",,",",Z,PUNCT,O,,O
-sl-4,9,7,da,,da,Cs,SCONJ,O,,B-ORG
+sl-4,9,7,da,,da,Cs,SCONJ,O,,O
 sl-4,9,8,razprodaja,,razprodaja,Ncfsn,NOUN,O,,O
 sl-4,9,9,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-4,9,10,bila,,biti,Va-p-sf,AUX,O,,O

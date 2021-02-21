@@ -1,11 +1,11 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-56,0,1,“,,“,Z,PUNCT,O,,O
 sl-56,0,2,Prodaja,,prodaja,Ncfsn,NOUN,O,,O
 sl-56,0,3,”,,”,Z,PUNCT,O,,O
 sl-56,0,4,dojenčkov,,dojenček,Ncmpg,NOUN,O,,O
 sl-56,0,5,in,,in,Cc,CCONJ,O,,O
 sl-56,0,6,jajčec,,jajčece,Ncnpg,NOUN,O,,O
-sl-56,1,1,Mlade,,mlad,Agpfpn,ADJ,O,,O
+sl-56,1,1,Mlade,,mlad,Agpfpn,ADJ,O,,B-PER
 sl-56,1,2,Bolgarke,Bolgarke,Bolgarke,Npfpn,PROPN,B-PER,GPE-Bulgaria,B-PER
 sl-56,1,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-56,1,4,dojenčke,,dojenček,Ncmpa,NOUN,O,,O
@@ -13,7 +13,7 @@ sl-56,1,5,",",,",",Z,PUNCT,O,,O
 sl-56,1,6,ki,,ki,Cs,SCONJ,O,,O
 sl-56,1,7,so,,biti,Va-r3p-n,AUX,O,,O
 sl-56,1,8,jih,,on,Pp3mpa--y,PRON,O,,O
-sl-56,1,9,grški,,grški,Agpmpn,ADJ,O,,B-LOC
+sl-56,1,9,grški,,grški,Agpmpn,ADJ,O,,O
 sl-56,1,10,kriminalci,,kriminalec,Ncmpn,NOUN,O,,O
 sl-56,1,11,prodajali,,prodajati,Vmpp-pm,VERB,O,,O
 sl-56,1,12,naprej,,naprej,Rgp,ADV,O,,O
@@ -33,7 +33,7 @@ sl-56,2,4,.,,.,Z,PUNCT,O,,O
 sl-56,3,1,Pred,,pred,Si,ADP,O,,O
 sl-56,3,2,dnevi,,dan,Ncmpi,NOUN,O,,O
 sl-56,3,3,so,,biti,Va-r3p-n,AUX,O,,O
-sl-56,3,4,grške,,grški,Agpfpn,ADJ,O,,B-LOC
+sl-56,3,4,grške,,grški,Agpfpn,ADJ,O,,O
 sl-56,3,5,oblasti,,oblast,Ncfpn,NOUN,O,,O
 sl-56,3,6,s,,z,Si,ADP,O,,O
 sl-56,3,7,podporo,,podpora,Ncfsi,NOUN,O,,O
@@ -72,7 +72,7 @@ sl-56,4,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-56,4,11,iz,,iz,Sg,ADP,O,,O
 sl-56,4,12,Bolgarije,Bolgarija,Bolgarija,Npfsg,PROPN,B-LOC,GPE-Bulgaria,B-LOC
 sl-56,4,13,v,,v,Sa,ADP,O,,O
-sl-56,4,14,grški,,grški,Agpmsay,ADJ,O,,B-LOC
+sl-56,4,14,grški,,grški,Agpmsay,ADJ,O,,O
 sl-56,4,15,Solun,Solun,Solun,Npmsan,PROPN,B-LOC,GPE-Solun,B-LOC
 sl-56,4,16,preseljevala,,preseljevati,Vmpp-sf,VERB,O,,O
 sl-56,4,17,revne,,reven,Agpfpa,ADJ,O,,O
@@ -175,8 +175,8 @@ sl-56,8,27,število,,število,Ncnsa,NOUN,O,,O
 sl-56,8,28,pridobljenih,,pridobljen,Appnpg,ADJ,O,,O
 sl-56,8,29,jajčec,,jajčece,Ncnpg,NOUN,O,,O
 sl-56,8,30,.,,.,Z,PUNCT,O,,O
-sl-56,9,1,Grška,,grški,Agpfsn,ADJ,O,,B-LOC
-sl-56,9,2,policija,,policija,Ncfsn,NOUN,O,,O
+sl-56,9,1,Grška,,grški,Agpfsn,ADJ,O,,B-ORG
+sl-56,9,2,policija,,policija,Ncfsn,NOUN,O,,I-ORG
 sl-56,9,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-56,9,4,23.,,23.,Mdo,NUM,O,,O
 sl-56,9,5,septembra,,september,Ncmsg,NOUN,O,,O

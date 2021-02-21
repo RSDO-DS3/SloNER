@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-66,0,1,Zamudil,,zamuditi,Vmep-sm,VERB,O,,O
 sl-66,0,2,letalo,,letalo,Ncnsa,NOUN,O,,O
 sl-66,0,3,",",,",",Z,PUNCT,O,,O

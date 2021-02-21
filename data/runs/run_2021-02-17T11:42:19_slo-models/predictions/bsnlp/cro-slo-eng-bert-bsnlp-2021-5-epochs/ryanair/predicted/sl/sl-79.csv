@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-79,0,1,Adia,Adria,Adia,Npmsn,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-79,0,2,Airways,Airways,Airways,Npfsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
 sl-79,0,3,vnaprej,,vnaprej,Rgp,ADV,O,,O
@@ -96,7 +96,7 @@ sl-79,4,24,nočne,,nočen,Agpmpa,ADJ,O,,O
 sl-79,4,25,lete,,let,Ncmpa,NOUN,O,,O
 sl-79,4,26,na,,na,Sl,ADP,O,,O
 sl-79,4,27,relaciji,,relacija,Ncfsl,NOUN,O,,O
-sl-79,4,28,Ljubljana-Skopje-Ljubljana,,Ljubljanansenabljubljublja,Npmsg,PROPN,O,,B-LOC
+sl-79,4,28,Ljubljana-Skopje-Ljubljana,,Ljubljanansenabljubljublja,Npmsg,PROPN,O,,O
 sl-79,4,29,in,,in,Cc,CCONJ,O,,O
 sl-79,4,30,Ljubljana-Priština-Ljubljana,,Ljubljanaqpiblabljubljubljan,Npmsg,PROPN,O,,O
 sl-79,4,31,",",,",",Z,PUNCT,O,,O
@@ -205,7 +205,7 @@ sl-79,9,4,večinski,,večinski,Agpfsl,ADJ,O,,O
 sl-79,9,5,lasti,,last,Ncfsl,NOUN,O,,O
 sl-79,9,6,družbe,,družba,Ncfsg,NOUN,O,,O
 sl-79,9,7,AA,AA,AA,Npmsn,PROPN,B-ORG,ORG-AA-International-Aviation-Holding,B-ORG
-sl-79,9,8,International,International,International,Npmsn,PROPN,I-ORG,ORG-AA-International-Aviation-Holding,B-ORG
+sl-79,9,8,International,International,International,Npmsn,PROPN,I-ORG,ORG-AA-International-Aviation-Holding,I-ORG
 sl-79,9,9,Aviation,Aviation,Aviation,Npmsn,PROPN,I-ORG,ORG-AA-International-Aviation-Holding,I-ORG
 sl-79,9,10,Holding,Holding,holding,Ncmsn,NOUN,I-ORG,ORG-AA-International-Aviation-Holding,I-ORG
 sl-79,9,11,oz.,,oz.,Y,X,O,,O
@@ -577,7 +577,7 @@ sl-79,23,10,izključno,,izključno,Rgp,ADV,O,,O
 sl-79,23,11,v,,v,Sl,ADP,O,,O
 sl-79,23,12,rokah,,roka,Ncfpl,NOUN,O,,O
 sl-79,23,13,srbske,,srbski,Agpfsg,ADJ,O,,O
-sl-79,23,14,komisije,,komisija,Ncfsg,NOUN,O,,I-ORG
+sl-79,23,14,komisije,,komisija,Ncfsg,NOUN,O,,O
 sl-79,23,15,za,,za,Sa,ADP,O,,O
 sl-79,23,16,nadzor,,nadzor,Ncmsan,NOUN,O,,O
 sl-79,23,17,državne,,državen,Agpfsg,ADJ,O,,O
@@ -609,7 +609,7 @@ sl-79,24,23,.,,.,Z,PUNCT,O,,O
 sl-79,25,1,Lahko,,lahko,Rgp,ADV,O,,O
 sl-79,25,2,pa,,pa,Cc,CCONJ,O,,O
 sl-79,25,3,v,,v,Sl,ADP,O,,O
-sl-79,25,4,komisiji,,komisija,Ncfsl,NOUN,O,,I-ORG
+sl-79,25,4,komisiji,,komisija,Ncfsl,NOUN,O,,O
 sl-79,25,5,po,,po,Sl,ADP,O,,O
 sl-79,25,6,neuradnih,,neuraden,Agpfpl,ADJ,O,,O
 sl-79,25,7,informacijah,,informacija,Ncfpl,NOUN,O,,O
@@ -658,7 +658,7 @@ sl-79,26,30,letih,,leto,Ncnpl,NOUN,O,,O
 sl-79,26,31,na,,na,Sa,ADP,O,,O
 sl-79,26,32,območje,,območje,Ncnsa,NOUN,O,,O
 sl-79,26,33,zahodnega,zahodni,zahoden,Agpmsg,ADJ,B-LOC,LOC-Western-Balkans,B-LOC
-sl-79,26,34,Balkana,Balkan,Balkan,Npmsg,PROPN,I-LOC,LOC-Western-Balkans,B-LOC
+sl-79,26,34,Balkana,Balkan,Balkan,Npmsg,PROPN,I-LOC,LOC-Western-Balkans,I-LOC
 sl-79,26,35,.,,.,Z,PUNCT,O,,O
 sl-79,27,1,Na,,na,Sl,ADP,O,,O
 sl-79,27,2,Siolu,Siol,SiOL,Npmsl,PROPN,B-ORG,ORG-Siol,B-ORG

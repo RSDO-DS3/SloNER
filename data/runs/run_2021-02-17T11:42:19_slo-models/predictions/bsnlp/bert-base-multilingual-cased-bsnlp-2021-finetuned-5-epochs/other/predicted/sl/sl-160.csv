@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-160,0,1,Ronaldo,Ronaldo,Ronaldo,Npmsn,PROPN,B-PER,PER-Cristiano-Ronaldo,B-PER
 sl-160,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-160,0,3,",",,",",Z,PUNCT,O,,O
@@ -37,7 +37,7 @@ sl-160,1,15,zvezdnik,,zvezdnik,Ncmsn,NOUN,O,,O
 sl-160,1,16,madridskega,madridski,madridski,Agpmsg,ADJ,B-ORG,ORG-Real-Madrid,B-ORG
 sl-160,1,17,Reala,Real,Real,Npmsg,PROPN,I-ORG,ORG-Real-Madrid,I-ORG
 sl-160,1,18,Cristiano,Cristiano,Cristiano,Npmsn,PROPN,B-PER,PER-Cristiano-Ronaldo,B-PER
-sl-160,1,19,Ronaldo,Ronaldo,Ronaldo,Npmsn,PROPN,I-PER,PER-Cristiano-Ronaldo,B-PER
+sl-160,1,19,Ronaldo,Ronaldo,Ronaldo,Npmsn,PROPN,I-PER,PER-Cristiano-Ronaldo,I-PER
 sl-160,1,20,oglasil,,oglasiti,Vmep-sm,VERB,O,,O
 sl-160,1,21,s,,z,Si,ADP,O,,O
 sl-160,1,22,trditvijo,,trditev,Ncfsi,NOUN,O,,O
@@ -111,7 +111,7 @@ sl-160,4,33,Perezom,Perez,Perez,Npmsi,PROPN,I-PER,PER-Florentino-Perez,I-PER
 sl-160,4,34,.,,.,Z,PUNCT,O,,O
 sl-160,5,1,Prvi,,prvi,Mlomsn,ADJ,O,,O
 sl-160,5,2,mož,,mož,Ncmsn,NOUN,O,,O
-sl-160,5,3,Reala,Real,Real,Npmsg,PROPN,B-ORG,ORG-Real-Madrid,I-ORG
+sl-160,5,3,Reala,Real,Real,Npmsg,PROPN,B-ORG,ORG-Real-Madrid,B-ORG
 sl-160,5,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-160,5,5,bojda,,bojda,Rgp,ADV,O,,O
 sl-160,5,6,prelomil,,prelomiti,Vmep-sm,VERB,O,,O
@@ -267,7 +267,7 @@ sl-160,11,9,trdo,,trdo,Rgp,ADV,O,,O
 sl-160,11,10,delati,,delati,Vmpn,VERB,O,,O
 sl-160,11,11,v,,v,Sl,ADP,O,,O
 sl-160,11,12,La,La,la,Xf,X,B-EVT,EVT-La-Liga,B-EVT
-sl-160,11,13,Ligi,Liga,liga,Ncfsl,NOUN,I-EVT,EVT-La-Liga,B-EVT
+sl-160,11,13,Ligi,Liga,liga,Ncfsl,NOUN,I-EVT,EVT-La-Liga,I-EVT
 sl-160,11,14,.,,.,Z,PUNCT,O,,O
 sl-160,12,1,To,,ta,Pd-nsn,DET,O,,O
 sl-160,12,2,pa,,pa,Cc,CCONJ,O,,O
@@ -298,7 +298,7 @@ sl-160,13,2,še,,še,Q,PART,O,,O
 sl-160,13,3,premagani,,premagan,Appmpn,ADJ,O,,O
 sl-160,13,4,.,,.,Z,PUNCT,O,,O
 sl-160,14,1,Cristiano,Cristiano,Cristiano,Npmsn,PROPN,B-PER,PER-Cristiano-Ronaldo,B-PER
-sl-160,14,2,Ronaldo,Ronaldo,Ronaldo,Npmsn,PROPN,I-PER,PER-Cristiano-Ronaldo,B-PER
+sl-160,14,2,Ronaldo,Ronaldo,Ronaldo,Npmsn,PROPN,I-PER,PER-Cristiano-Ronaldo,I-PER
 sl-160,14,3,",",,",",Z,PUNCT,O,,O
 sl-160,14,4,napadalec,,napadalec,Ncmsn,NOUN,O,,O
 sl-160,14,5,madridskega,madridski,madridski,Agpmsg,ADJ,B-ORG,ORG-Real-Madrid,B-ORG

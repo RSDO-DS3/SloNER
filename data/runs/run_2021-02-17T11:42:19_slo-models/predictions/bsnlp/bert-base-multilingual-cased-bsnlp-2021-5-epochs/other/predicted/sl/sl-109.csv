@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-109,0,1,BackBlaze,BackBlaze,Backblaze,Npmsn,PROPN,B-ORG,ORG-BackBlaze,B-PRO
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-109,0,1,BackBlaze,BackBlaze,Backblaze,Npmsn,PROPN,B-ORG,ORG-BackBlaze,B-ORG
 sl-109,1,1,Najmanj,,najmanj,Rgs,ADV,O,,O
 sl-109,1,2,nezanesljiv,,nezanesljiv,Agpmsnn,ADJ,O,,O
 sl-109,1,3,trdi,,trd,Agpmsny,ADJ,O,,O
@@ -20,7 +20,7 @@ sl-109,2,11,zanesljivi,,zanesljiv,Agpmpn,ADJ,O,,O
 sl-109,2,12,trdi,,trd,Agpmpn,ADJ,O,,O
 sl-109,2,13,diski,,disk,Ncmpn,NOUN,O,,O
 sl-109,2,14,družbe,,družba,Ncfsg,NOUN,O,,O
-sl-109,2,15,Seagate,Seagate,Seagate,Npmsn,PROPN,B-ORG,ORG-Seagate-Technology,B-PRO
+sl-109,2,15,Seagate,Seagate,Seagate,Npmsn,PROPN,B-ORG,ORG-Seagate-Technology,B-ORG
 sl-109,2,16,.,,.,Z,PUNCT,O,,O
 sl-109,3,1,Ameriško,,ameriški,Agpnsn,ADJ,O,,O
 sl-109,3,2,podjetje,,podjetje,Ncnsn,NOUN,O,,O
@@ -56,7 +56,7 @@ sl-109,3,31,podatkov,,podatek,Ncmpg,NOUN,O,,O
 sl-109,3,32,v,,v,Sl,ADP,O,,O
 sl-109,3,33,oblaku,,oblak,Ncmsl,NOUN,O,,O
 sl-109,3,34,.,,.,Z,PUNCT,O,,O
-sl-109,4,1,Ker,,ker,Cs,SCONJ,O,,O
+sl-109,4,1,Ker,,ker,Cs,SCONJ,O,,B-ORG
 sl-109,4,2,za,,za,Sa,ADP,O,,O
 sl-109,4,3,shranjevanje,,shranjevanje,Ncnsa,NOUN,O,,O
 sl-109,4,4,podatkov,,podatek,Ncmpg,NOUN,O,,O
@@ -118,7 +118,7 @@ sl-109,6,11,zanesljivi,,zanesljiv,Agpmpn,ADJ,O,,O
 sl-109,6,12,trdi,,trd,Agpmpn,ADJ,O,,O
 sl-109,6,13,diski,,disk,Ncmpn,NOUN,O,,O
 sl-109,6,14,družbe,,družba,Ncfsg,NOUN,O,,O
-sl-109,6,15,Seagate,Seagate,Seagate,Npmsn,PROPN,B-ORG,ORG-Seagate-Technology,B-PRO
+sl-109,6,15,Seagate,Seagate,Seagate,Npmsn,PROPN,B-ORG,ORG-Seagate-Technology,B-ORG
 sl-109,6,16,.,,.,Z,PUNCT,O,,O
 sl-109,7,1,Predvsem,,predvsem,Q,PART,O,,O
 sl-109,7,2,njihov,,njihov,Ps3msnp,DET,O,,O
@@ -182,7 +182,7 @@ sl-109,9,8,diski,,disk,Ncmpi,NOUN,O,,O
 sl-109,9,9,pa,,pa,Cc,CCONJ,O,,O
 sl-109,9,10,najdemo,,najti,Vmer1p,VERB,O,,O
 sl-109,9,11,Seagate,Seagate,Seagate,Npmsan,PROPN,B-PRO,ORG-Seagate-Technology,B-PRO
-sl-109,9,12,ST8000DM002,ST8000DM002,ST8000DM002,Mdc,NUM,I-PRO,ORG-Seagate-Technology,B-PRO
+sl-109,9,12,ST8000DM002,ST8000DM002,ST8000DM002,Mdc,NUM,I-PRO,ORG-Seagate-Technology,I-PRO
 sl-109,9,13,kapacitete,,kapaciteta,Ncfpa,NOUN,O,,O
 sl-109,9,14,osem,,osem,Mlc-pa,NUM,O,,O
 sl-109,9,15,terabajtov,,terabajt,Ncmpg,NOUN,O,,O

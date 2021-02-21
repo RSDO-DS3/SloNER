@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-14,0,1,Pingvini,,pingvin,Ncmpn,NOUN,O,,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-14,0,1,Pingvini,,pingvin,Ncmpn,NOUN,O,,O
 sl-14,0,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-14,0,3,se,,se,Px------y,PRON,O,,O
 sl-14,0,4,greli,,greti,Vmpp-pm,VERB,O,,O
@@ -11,7 +11,7 @@ sl-14,0,9,sušija,,suši,Ncmsg,NOUN,O,,O
 sl-14,0,10,niso,,biti,Va-r3p-y,AUX,O,,O
 sl-14,0,11,dobili,,dobiti,Vmep-pm,VERB,O,,O
 sl-14,1,1,Skrivališče,,skrivališče,Ncnsa,NOUN,O,,O
-sl-14,1,2,pingvinov,,pingvin,Ncmpg,NOUN,O,,B-PER
+sl-14,1,2,pingvinov,,pingvin,Ncmpg,NOUN,O,,O
 sl-14,1,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-14,1,4,odkril,,odkriti,Vmep-sm,VERB,O,,O
 sl-14,1,5,zaposleni,,zaposlen,Appmpn,ADJ,O,,O
@@ -51,7 +51,7 @@ sl-14,3,7,facebook,Facebook,facebook,Ncmsan,NOUN,B-PRO,PRO-Facebook,B-PRO
 sl-14,3,8,delil,,deliti,Vmpp-sm,VERB,O,,O
 sl-14,3,9,policist,,policist,Ncmsn,NOUN,O,,O
 sl-14,3,10,John,John,John,Npmsn,PROPN,B-PER,PER-John-Zhu,B-PER
-sl-14,3,11,Zhu,Zhu,Zhu,Npmsn,PROPN,I-PER,PER-John-Zhu,B-PER
+sl-14,3,11,Zhu,Zhu,Zhu,Npmsn,PROPN,I-PER,PER-John-Zhu,I-PER
 sl-14,3,12,",",,",",Z,PUNCT,O,,O
 sl-14,3,13,ki,,ki,Cs,SCONJ,O,,O
 sl-14,3,14,je,,biti,Va-r3s-n,AUX,O,,O
@@ -174,7 +174,7 @@ sl-14,9,13,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-14,9,14,lahko,,lahko,Rgp,ADV,O,,O
 sl-14,9,15,ugriznejo,,ugrizniti,Vmer3p,VERB,O,,O
 sl-14,9,16,.,,.,Z,PUNCT,O,,O
-sl-14,10,1,Policist,,policist,Ncmsn,NOUN,O,,O
+sl-14,10,1,Policist,,policist,Ncmsn,NOUN,O,,B-PER
 sl-14,10,2,Zhu,Zhu,Zhu,Npmsn,PROPN,B-PER,PER-John-Zhu,B-PER
 sl-14,10,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-14,10,4,s,,z,Si,ADP,O,,O

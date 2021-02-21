@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-115,0,1,Mati,,mati,Ncfsn,NOUN,O,,O
 sl-115,0,2,samohranilka,,samohranilka,Ncfsn,NOUN,O,,O
 sl-115,0,3,vzela,,vzeti,Vmep-sf,VERB,O,,O
@@ -58,7 +58,7 @@ sl-115,4,4,se,,se,Px------y,PRON,O,,O
 sl-115,4,5,s,,z,Si,ADP,O,,O
 sl-115,4,6,sodelavci,,sodelavec,Ncmpi,NOUN,O,,O
 sl-115,4,7,ZPM,ZPM,ZPM,Npmsn,PROPN,B-ORG,ORG-Zveza-Prijateljev-Mladine-Ljubljana-Moste-Polje,B-ORG
-sl-115,4,8,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,I-ORG,ORG-Zveza-Prijateljev-Mladine-Ljubljana-Moste-Polje,B-LOC
+sl-115,4,8,Ljubljana,Ljubljana,Ljubljana,Npfsn,PROPN,I-ORG,ORG-Zveza-Prijateljev-Mladine-Ljubljana-Moste-Polje,I-LOC
 sl-115,4,9,Moste,Moste,Moste,Npfpn,PROPN,I-ORG,ORG-Zveza-Prijateljev-Mladine-Ljubljana-Moste-Polje,I-LOC
 sl-115,4,10,-,-,-,Z,PUNCT,I-ORG,ORG-Zveza-Prijateljev-Mladine-Ljubljana-Moste-Polje,I-LOC
 sl-115,4,11,Polje,Polje,Polje,Npnsn,PROPN,I-ORG,ORG-Zveza-Prijateljev-Mladine-Ljubljana-Moste-Polje,I-LOC
@@ -702,7 +702,7 @@ sl-115,48,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-115,48,3,zelo,,zelo,Rgp,ADV,O,,O
 sl-115,48,4,skromno,,skromno,Rgp,ADV,O,,O
 sl-115,48,5,.,,.,Z,PUNCT,O,,O
-sl-115,49,1,Mamica,,mamica,Ncfsn,NOUN,O,,O
+sl-115,49,1,Mamica,,mamica,Ncfsn,NOUN,O,,B-PER
 sl-115,49,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-115,49,3,',,',Z,PUNCT,O,,O
 sl-115,49,4,štedila,,štediti,Vmpp-sf,VERB,O,,O
@@ -833,7 +833,7 @@ sl-115,54,35,živeli,,živeti,Vmpp-pm,VERB,O,,O
 sl-115,54,36,daleč,,daleč,Rgp,ADV,O,,O
 sl-115,54,37,stran,,stran,Rgp,ADV,O,,O
 sl-115,54,38,.,,.,Z,PUNCT,O,,O
-sl-115,55,1,Gospa,,gospa,Ncfsn,NOUN,O,,O
+sl-115,55,1,Gospa,,gospa,Ncfsn,NOUN,O,,B-LOC
 sl-115,55,2,nikoli,,nikoli,Rgp,ADV,O,,O
 sl-115,55,3,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-115,55,4,razmišljala,,razmišljati,Vmpp-sf,VERB,O,,O
@@ -1110,8 +1110,8 @@ sl-115,70,33,sedaj,,sedaj,Rgp,ADV,O,,O
 sl-115,70,34,pač,,pač,Q,PART,O,,O
 sl-115,70,35,njegovo,,njegov,Ps3nsnsm,DET,O,,O
 sl-115,70,36,.,,.,Z,PUNCT,O,,O
-sl-115,71,1,Anita,Anita,Anita,Npfsn,PROPN,B-PER,PER-Anita-Ogulin,B-PER
-sl-115,71,2,Ogulin,Ogulin,Ogulin,Npfsn,PROPN,I-PER,PER-Anita-Ogulin,I-PER
+sl-115,71,1,Anita,Anita,Anita,Npfsn,PROPN,B-PER,PER-Anita-Ogulin,O
+sl-115,71,2,Ogulin,Ogulin,Ogulin,Npfsn,PROPN,I-PER,PER-Anita-Ogulin,B-LOC
 sl-115,71,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-115,71,4,dolgoletna,,dolgoleten,Agpfsn,ADJ,O,,O
 sl-115,71,5,prostovoljka,,prostovoljka,Ncfsn,NOUN,O,,O

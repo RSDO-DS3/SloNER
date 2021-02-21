@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-107,0,1,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,I-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-107,0,1,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,B-PER
 sl-107,0,2,v,,v,Sl,ADP,O,,O
 sl-107,0,3,LA-ju,LA,La,Npmsl,PROPN,B-LOC,GPE-Los-Angeles,B-LOC
 sl-107,0,4,čaka,,čakati,Vmpr3s,VERB,O,,O
@@ -17,7 +17,7 @@ sl-107,0,15,bolj,,bolj,Rgc,ADV,O,,O
 sl-107,0,16,kot,,kot,Cs,SCONJ,O,,O
 sl-107,0,17,Luka,Luka,Luka,Npmsn,PROPN,B-PER,PER-Luka-Dončić,B-PER
 sl-107,0,18,',,',Z,PUNCT,O,,O
-sl-107,1,1,Slovenski,,slovenski,Agpmsny,ADJ,O,,B-PER
+sl-107,1,1,Slovenski,,slovenski,Agpmsny,ADJ,O,,O
 sl-107,1,2,košarkar,,košarkar,Ncmsn,NOUN,O,,O
 sl-107,1,3,Luka,Luka,Luka,Npmsn,PROPN,B-PER,PER-Luka-Dončić,B-PER
 sl-107,1,4,Dončić,Dončić,Dončić,Npmsn,PROPN,I-PER,PER-Luka-Dončić,I-PER
@@ -57,7 +57,7 @@ sl-107,3,1,Pred,,pred,Si,ADP,O,,O
 sl-107,3,2,podelitvijo,,podelitev,Ncfsi,NOUN,O,,O
 sl-107,3,3,v,,v,Sl,ADP,O,,O
 sl-107,3,4,Los,Los,Los,Npmsn,PROPN,B-LOC,GPE-Los-Angeles,B-LOC
-sl-107,3,5,Angelesu,Angeles,Angeles,Npmsl,PROPN,I-LOC,GPE-Los-Angeles,B-LOC
+sl-107,3,5,Angelesu,Angeles,Angeles,Npmsl,PROPN,I-LOC,GPE-Los-Angeles,I-LOC
 sl-107,3,6,",",,",",Z,PUNCT,O,,O
 sl-107,3,7,kjer,,kjer,Cs,SCONJ,O,,O
 sl-107,3,8,je,,biti,Va-r3s-n,AUX,O,,O
@@ -69,11 +69,11 @@ sl-107,3,13,",",,",",Z,PUNCT,O,,O
 sl-107,3,14,pa,,pa,Cc,CCONJ,O,,O
 sl-107,3,15,je,,biti,Va-r3s-n,AUX,O,,O
 sl-107,3,16,Trae,Trae,Trae,Npmsn,PROPN,B-PER,PER-Trae-Young,B-PER
-sl-107,3,17,Young,Young,Young,Npmsn,PROPN,I-PER,PER-Trae-Young,B-PER
+sl-107,3,17,Young,Young,Young,Npmsn,PROPN,I-PER,PER-Trae-Young,I-PER
 sl-107,3,18,v,,v,Sl,ADP,O,,O
 sl-107,3,19,pogovoru,,pogovor,Ncmsl,NOUN,O,,O
 sl-107,3,20,za,,za,Sa,ADP,O,,O
-sl-107,3,21,ESPN,ESPN,ESPN,Npmsn,PROPN,B-ORG,ORG-Entertainment-and-Sports-Programming-Network,B-ORG
+sl-107,3,21,ESPN,ESPN,ESPN,Npmsn,PROPN,B-ORG,ORG-Entertainment-and-Sports-Programming-Network,B-PRO
 sl-107,3,22,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-107,3,23,",",,",",Z,PUNCT,O,,O
 sl-107,3,24,da,,da,Cs,SCONJ,O,,O
@@ -139,7 +139,7 @@ sl-107,5,40,",",,",",Z,PUNCT,O,,O
 sl-107,5,41,kar,,kar,Pr-nsa,PRON,O,,O
 sl-107,5,42,počne,,početi,Vmbr3s,VERB,O,,O
 sl-107,5,43,najbolje,,dobro,Rgs,ADV,O,,O
-sl-107,5,44,-,,-,Z,PUNCT,O,,B-EVT
+sl-107,5,44,-,,-,Z,PUNCT,O,,O
 sl-107,5,45,navduševal,,navduševati,Vmpp-sm,VERB,O,,O
 sl-107,5,46,na,,na,Sl,ADP,O,,O
 sl-107,5,47,parketu,,parket,Ncmsl,NOUN,O,,O
@@ -245,7 +245,7 @@ sl-107,11,21,Dallasu,Dallas,Dallas,Npmsl,PROPN,B-LOC,GPE-Dallas,B-LOC
 sl-107,11,22,Rick,Rick,Rick,Npmsn,PROPN,B-PER,PER-Rick-Carlisle,B-PER
 sl-107,11,23,Carlisle,Carlisle,Carlisle,Npmsn,PROPN,I-PER,PER-Rick-Carlisle,I-PER
 sl-107,11,24,.,,.,Z,PUNCT,O,,O
-sl-107,12,1,Ob,,ob,Sl,ADP,O,,I-PER
+sl-107,12,1,Ob,,ob,Sl,ADP,O,,O
 sl-107,12,2,prvotnem,,prvoten,Agpmsl,ADJ,O,,O
 sl-107,12,3,poskusu,,poskus,Ncmsl,NOUN,O,,O
 sl-107,12,4,",",,",",Z,PUNCT,O,,O
@@ -264,7 +264,7 @@ sl-107,12,16,spoznal,,spoznati,Vmbp-sm,VERB,O,,O
 sl-107,12,17,",",,",",Z,PUNCT,O,,O
 sl-107,12,18,da,,da,Cs,SCONJ,O,,O
 sl-107,12,19,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-107,12,20,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,I-PER
+sl-107,12,20,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,B-PER
 sl-107,12,21,precej,,precej,Rgp,ADV,O,,O
 sl-107,12,22,bolj,,bolj,Rgc,ADV,O,,O
 sl-107,12,23,koristen,,koristen,Agpmsnn,ADJ,O,,O
@@ -289,8 +289,8 @@ sl-107,13,12,navijači,,navijač,Ncmpn,NOUN,O,,O
 sl-107,13,13,v,,v,Sl,ADP,O,,O
 sl-107,13,14,glasovanju,,glasovanje,Ncnsl,NOUN,O,,O
 sl-107,13,15,za,,za,Sa,ADP,O,,O
-sl-107,13,16,tekmo,tekma,tekma,Ncfsa,NOUN,B-EVT,EVT-NBA-All-Star-Game,O
-sl-107,13,17,All-Star,All-Star,Allxstar,Npmsn,PROPN,I-EVT,EVT-NBA-All-Star-Game,B-EVT
+sl-107,13,16,tekmo,tekma,tekma,Ncfsa,NOUN,B-EVT,EVT-NBA-All-Star-Game,B-EVT
+sl-107,13,17,All-Star,All-Star,Allxstar,Npmsn,PROPN,I-EVT,EVT-NBA-All-Star-Game,I-EVT
 sl-107,13,18,namenili,,nameniti,Vmep-pm,VERB,O,,O
 sl-107,13,19,celo,,celo,Q,PART,O,,O
 sl-107,13,20,tretje,,tretji,Mlonsa,ADJ,O,,O
@@ -325,7 +325,7 @@ sl-107,13,48,podatki,,podatek,Ncmpn,NOUN,O,,O
 sl-107,13,49,.,,.,Z,PUNCT,O,,O
 sl-107,14,1,"""",,"""",Z,PUNCT,O,,O
 sl-107,14,2,Trae,Trae,Trae,Npmsn,PROPN,B-PER,PER-Trae-Young,B-PER
-sl-107,14,3,Young,Young,Young,Npmsn,PROPN,I-PER,PER-Trae-Young,B-PER
+sl-107,14,3,Young,Young,Young,Npmsn,PROPN,I-PER,PER-Trae-Young,I-PER
 sl-107,14,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-107,14,5,imel,,imeti,Vmpp-sm,VERB,O,,O
 sl-107,14,6,fantastično,,fantastičen,Agpfsa,ADJ,O,,O
@@ -387,7 +387,7 @@ sl-107,17,11,lastnik,,lastnik,Ncmsn,NOUN,O,,O
 sl-107,17,12,franšize,,franšiza,Ncfsg,NOUN,O,,O
 sl-107,17,13,Mavs,Mavs,Mavs,Npmsn,PROPN,B-ORG,ORG-Dallas-Mavericks,B-ORG
 sl-107,17,14,Mark,Mark,Mark,Npmsn,PROPN,B-PER,PER-Mark-Cuban,B-PER
-sl-107,17,15,Cuban,Cuban,Cuban,Npmsn,PROPN,I-PER,PER-Mark-Cuban,B-PER
+sl-107,17,15,Cuban,Cuban,Cuban,Npmsn,PROPN,I-PER,PER-Mark-Cuban,I-PER
 sl-107,17,16,.,,.,Z,PUNCT,O,,O
 sl-107,18,1,Z,,z,Si,ADP,O,,O
 sl-107,18,2,njim,,on,Pp3msi,PRON,O,,O
@@ -480,9 +480,9 @@ sl-107,23,12,je,,biti,Va-r3s-n,AUX,O,,O
 sl-107,23,13,med,,med,Si,ADP,O,,O
 sl-107,23,14,sezono,,sezona,Ncfsi,NOUN,O,,O
 sl-107,23,15,razlagal,,razlagati,Vmpp-sm,VERB,O,,O
-sl-107,23,16,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,I-PER
+sl-107,23,16,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,B-PER
 sl-107,23,17,.,,.,Z,PUNCT,O,,O
-sl-107,24,1,Ta,,ta,Pd-fsn,DET,O,,O
+sl-107,24,1,Ta,,ta,Pd-fsn,DET,O,,B-PER
 sl-107,24,2,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-107,24,3,v,,v,Sl,ADP,O,,O
 sl-107,24,4,boju,,boj,Ncmsl,NOUN,O,,O
@@ -532,7 +532,7 @@ sl-107,26,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-107,26,6,imel,,imeti,Vmpp-sm,VERB,O,,O
 sl-107,26,7,vselej,,vselej,Rgp,ADV,O,,O
 sl-107,26,8,košarkar,,košarkar,Ncmsn,NOUN,O,,O
-sl-107,26,9,Dallasa,Dallas,Dallas,Npmsg,PROPN,B-LOC,GPE-Dallas,B-ORG
+sl-107,26,9,Dallasa,Dallas,Dallas,Npmsg,PROPN,B-LOC,GPE-Dallas,B-LOC
 sl-107,26,10,veliko,,velik,Agpfsa,ADJ,O,,O
 sl-107,26,11,prednost,,prednost,Ncfsa,NOUN,O,,O
 sl-107,26,12,.,,.,Z,PUNCT,O,,O
@@ -565,7 +565,7 @@ sl-107,28,9,podelitvijo,,podelitev,Ncfsi,NOUN,O,,O
 sl-107,28,10,nagrad,,nagrada,Ncfpg,NOUN,O,,O
 sl-107,28,11,v,,v,Sl,ADP,O,,O
 sl-107,28,12,Santa,Santa,Santa,Npmsn,PROPN,B-LOC,GPE-Santa-Monica,B-LOC
-sl-107,28,13,Monici,Monica,Monica,Npfsl,PROPN,I-LOC,GPE-Santa-Monica,B-LOC
+sl-107,28,13,Monici,Monica,Monica,Npfsl,PROPN,I-LOC,GPE-Santa-Monica,I-LOC
 sl-107,28,14,",",,",",Z,PUNCT,O,,O
 sl-107,28,15,ki,,ki,Cs,SCONJ,O,,O
 sl-107,28,16,jo,,on,Pp3fsa--y,PRON,O,,O
@@ -578,9 +578,9 @@ sl-107,28,22,TNT,TNT,TNT,Npmsn,PROPN,B-PRO,PRO-Turner-Network-Television,B-PRO
 sl-107,28,23,vodil,,voditi,Vmpp-sm,VERB,O,,O
 sl-107,28,24,legendarni,,legendaren,Agpmsny,ADJ,O,,O
 sl-107,28,25,S,Shaquille,z,Si,ADP,B-PER,PER-Shaquille-O'Neal,B-PER
-sl-107,28,26,haquille,O,haquille,Ncfsi,NOUN,I-PER,PER-Shaquille-O'Neal,B-PER
+sl-107,28,26,haquille,O,haquille,Ncfsi,NOUN,I-PER,PER-Shaquille-O'Neal,I-PER
 sl-107,28,27,O,’,o,Sl,ADP,I-PER,PER-Shaquille-O'Neal,I-PER
-sl-107,28,28,’,Neal,’,Z,PUNCT,I-PER,PER-Shaquille-O'Neal,O
+sl-107,28,28,’,Neal,’,Z,PUNCT,I-PER,PER-Shaquille-O'Neal,I-PER
 sl-107,28,29,Neal,PAD,Neal,Npmsn,PROPN,I-PER,PER-Shaquille-O'Neal,I-PER
 sl-107,28,30,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-107,28,31,Cuban,Cuban,Cuban,Npmsn,PROPN,B-PER,PER-Mark-Cuban,B-PER
@@ -608,9 +608,9 @@ sl-107,30,3,kot,,kot,Cs,SCONJ,O,,O
 sl-107,30,4,analitiki,,analitik,Ncmpn,NOUN,O,,O
 sl-107,30,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-107,30,6,Trae,Trae,Trae,Npmsn,PROPN,B-PER,PER-Trae-Young,B-PER
-sl-107,30,7,Young,Young,Young,Npmsn,PROPN,I-PER,PER-Trae-Young,B-PER
+sl-107,30,7,Young,Young,Young,Npmsn,PROPN,I-PER,PER-Trae-Young,I-PER
 sl-107,30,8,.,,.,Z,PUNCT,O,,O
-sl-107,31,1,Ta,,ta,Pd-fsn,DET,O,,O
+sl-107,31,1,Ta,,ta,Pd-fsn,DET,O,,B-PER
 sl-107,31,2,meni,,meniti,Vmpr3s,VERB,O,,O
 sl-107,31,3,",",,",",Z,PUNCT,O,,O
 sl-107,31,4,da,,da,Cs,SCONJ,O,,O
@@ -626,7 +626,7 @@ sl-107,31,13,leta,,leto,Ncnsg,NOUN,O,,O
 sl-107,31,14,.,,.,Z,PUNCT,O,,O
 sl-107,32,1,Če,,če,Cs,SCONJ,O,,O
 sl-107,32,2,je,,biti,Va-r3s-n,AUX,O,,O
-sl-107,32,3,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,I-PER
+sl-107,32,3,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,B-PER
 sl-107,32,4,blestel,,blesteti,Vmpp-sm,VERB,O,,O
 sl-107,32,5,in,,in,Cc,CCONJ,O,,O
 sl-107,32,6,navduševal,,navduševati,Vmpp-sm,VERB,O,,O
@@ -651,7 +651,7 @@ sl-107,32,24,dveh,,dva,Mlcmdl,NUM,O,,O
 sl-107,32,25,mesecih,,mesec,Ncmdl,NOUN,O,,O
 sl-107,32,26,oz.,,oz.,Y,X,O,,O
 sl-107,32,27,po,,po,Sl,ADP,O,,O
-sl-107,32,28,All-Star,All-Star,Allxstar,Npmsn,PROPN,B-EVT,EVT-NBA-All-Star-Game,O
+sl-107,32,28,All-Star,All-Star,Allxstar,Npmsn,PROPN,B-EVT,EVT-NBA-All-Star-Game,B-EVT
 sl-107,32,29,premoru,,premor,Ncmsl,NOUN,O,,O
 sl-107,32,30,.,,.,Z,PUNCT,O,,O
 sl-107,33,1,A,,a,Cc,CCONJ,O,,O
@@ -708,7 +708,7 @@ sl-107,37,5,.,,.,Z,PUNCT,O,,O
 sl-107,38,1,Imel,,imeti,Vmpp-sm,VERB,O,,O
 sl-107,38,2,sem,,biti,Va-r1s-n,AUX,O,,O
 sl-107,38,3,le,,le,Q,PART,O,,O
-sl-107,38,4,en,,en,Mlpmsa,NUM,O,,B-PER
+sl-107,38,4,en,,en,Mlpmsa,NUM,O,,O
 sl-107,38,5,slab,,slab,Agpmsan,ADJ,O,,O
 sl-107,38,6,mesec,,mesec,Ncmsan,NOUN,O,,O
 sl-107,38,7,",",,",",Z,PUNCT,O,,O
@@ -768,7 +768,7 @@ sl-107,41,2,se,,se,Px------y,PRON,O,,O
 sl-107,41,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-107,41,4,legendarnemu,,legendaren,Agpmsd,ADJ,O,,O
 sl-107,41,5,Oscarju,Oscar,Oscar,Npmsd,PROPN,B-PER,PER-Oscar-Robertson,B-PER
-sl-107,41,6,Robertsonu,Robertson,Robertson,Npmsd,PROPN,I-PER,PER-Oscar-Robertson,B-PER
+sl-107,41,6,Robertsonu,Robertson,Robertson,Npmsd,PROPN,I-PER,PER-Oscar-Robertson,I-PER
 sl-107,41,7,(,,(,Z,PUNCT,O,,O
 sl-107,41,8,1961,,1961,Mdc,NUM,O,,O
 sl-107,41,9,),,),Z,PUNCT,O,,O
@@ -818,7 +818,7 @@ sl-107,43,7,26,,26,Mdc,NUM,O,,O
 sl-107,43,8,),,),Z,PUNCT,O,,O
 sl-107,43,9,in,,in,Cc,CCONJ,O,,O
 sl-107,43,10,B,Ben,B,Ncmsn,NOUN,B-PER,PER-Ben-Simmons,B-PER
-sl-107,43,11,en,Simmons,en,Mlpmsn,NUM,I-PER,PER-Ben-Simmons,B-PER
+sl-107,43,11,en,Simmons,en,Mlpmsn,NUM,I-PER,PER-Ben-Simmons,I-PER
 sl-107,43,12,Simmons,PAD,Simmons,Npmsn,PROPN,I-PER,PER-Ben-Simmons,I-PER
 sl-107,43,13,(,,(,Z,PUNCT,O,,O
 sl-107,43,14,12,,12,Mdc,NUM,O,,O
@@ -828,7 +828,7 @@ sl-107,43,17,lanskoletni,,lanskoleten,Agpmsny,ADJ,O,,O
 sl-107,43,18,dobitnik,,dobitnik,Ncmsn,NOUN,O,,O
 sl-107,43,19,nagrade,,nagrada,Ncfsg,NOUN,O,,O
 sl-107,43,20,.,,.,Z,PUNCT,O,,O
-sl-107,44,1,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,I-PER
+sl-107,44,1,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,B-PER
 sl-107,44,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-107,44,3,prav,,prav,Q,PART,O,,O
 sl-107,44,4,tako,,tako,Rgp,ADV,O,,O
@@ -849,7 +849,7 @@ sl-107,44,18,21.,,21.,Mdo,NUM,O,,O
 sl-107,44,19,rojstnim,,rojsten,Agpmsi,ADJ,O,,O
 sl-107,44,20,dnevom,,dan,Ncmsi,NOUN,O,,O
 sl-107,44,21,.,,.,Z,PUNCT,O,,O
-sl-107,45,1,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,I-PER
+sl-107,45,1,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,B-PER
 sl-107,45,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-107,45,3,postal,,postati,Vmep-sm,VERB,O,,O
 sl-107,45,4,tudi,,tudi,Q,PART,O,,O
@@ -872,7 +872,7 @@ sl-107,46,6,Fultz,Fultz,Fultz,Npmsn,PROPN,I-PER,PER-Markelle-Fultz,I-PER
 sl-107,46,7,.,,.,Z,PUNCT,O,,O
 sl-107,47,1,Komaj,,komaj,Rgp,ADV,O,,O
 sl-107,47,2,20-letni,,2trleten,Agpmsny,ADJ,O,,O
-sl-107,47,3,Ljubljančan,Ljubljančan,Ljubljančan,Npmsn,PROPN,B-PER,GPE-Ljubljana,O
+sl-107,47,3,Ljubljančan,Ljubljančan,Ljubljančan,Npmsn,PROPN,B-PER,GPE-Ljubljana,B-PER
 sl-107,47,4,je,,biti,Va-r3s-n,VERB,O,,O
 sl-107,47,5,med,,med,Si,ADP,O,,O
 sl-107,47,6,novinci,,novinec,Ncmpi,NOUN,O,,O
@@ -899,7 +899,7 @@ sl-107,47,26,ukradenih,,ukraden,Appfpl,ADJ,O,,O
 sl-107,47,27,žogah,,žoga,Ncfpl,NOUN,O,,O
 sl-107,47,28,.,,.,Z,PUNCT,O,,O
 sl-107,48,1,Če,,če,Cs,SCONJ,O,,O
-sl-107,48,2,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,I-PER
+sl-107,48,2,Dončić,Dončić,Dončić,Npmsn,PROPN,B-PER,PER-Luka-Dončić,B-PER
 sl-107,48,3,osvoji,,osvojiti,Vmer3s,VERB,O,,O
 sl-107,48,4,prestižni,,prestižen,Agpmsay,ADJ,O,,O
 sl-107,48,5,naziv,,naziv,Ncmsan,NOUN,O,,O
@@ -963,11 +963,11 @@ sl-107,49,32,ga,,on,Pp3msa--y,PRON,O,,O
 sl-107,49,33,v,,v,Sl,ADP,O,,O
 sl-107,49,34,izboru,,izbor,Ncmsl,NOUN,O,,O
 sl-107,49,35,ESPY,ESPY,ESPY,Npmsn,PROPN,B-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,B-PRO
-sl-107,49,36,nagrad,nagrade,nagrada,Ncfpg,NOUN,I-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,O
-sl-107,49,37,za,za,za,Sa,ADP,I-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,O
-sl-107,49,38,najbolj,najbolj,najbolj,Rgs,ADV,I-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,O
-sl-107,49,39,prodornega,prodornega,prodoren,Agpmsa,ADJ,I-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,O
-sl-107,49,40,športnika,športnika,športnik,Ncmsay,NOUN,I-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,O
+sl-107,49,36,nagrad,nagrade,nagrada,Ncfpg,NOUN,I-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,I-PRO
+sl-107,49,37,za,za,za,Sa,ADP,I-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,I-PRO
+sl-107,49,38,najbolj,najbolj,najbolj,Rgs,ADV,I-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,I-PRO
+sl-107,49,39,prodornega,prodornega,prodoren,Agpmsa,ADJ,I-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,I-PRO
+sl-107,49,40,športnika,športnika,športnik,Ncmsay,NOUN,I-PRO,PRO-Excellence-in-Sports-Performance-Yearly-Award,I-PRO
 sl-107,49,41,",",,",",Z,PUNCT,O,,O
 sl-107,49,42,kjer,,kjer,Cs,SCONJ,O,,O
 sl-107,49,43,je,,biti,Va-r3s-n,AUX,O,,O

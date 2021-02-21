@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-142,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-142,0,2,lahko,,lahko,Rgp,ADV,O,,O
 sl-142,0,3,ogrozi,,ogroziti,Vmer3s,VERB,O,,O
@@ -7,7 +7,7 @@ sl-142,0,5,80.000,,80.000,Mdc,NUM,O,,O
 sl-142,0,6,delovnih,,deloven,Agpnpg,ADJ,O,,O
 sl-142,0,7,mest,,mesto,Ncnpg,NOUN,O,,O
 sl-142,0,8,na,,na,Sl,ADP,O,,O
-sl-142,0,9,Irskem,Irsko,Irsko,Npnsl,PROPN,B-LOC,GPE-Ireland,I-LOC
+sl-142,0,9,Irskem,Irsko,Irsko,Npnsl,PROPN,B-LOC,GPE-Ireland,B-LOC
 sl-142,1,1,Ne,,ne,Q,PART,O,,O
 sl-142,1,2,glede,,glede,Rgp,ADV,O,,O
 sl-142,1,3,na,,na,Sa,ADP,O,,O
@@ -197,7 +197,7 @@ sl-142,8,3,",",,",",Z,PUNCT,O,,O
 sl-142,8,4,da,,da,Cs,SCONJ,O,,O
 sl-142,8,5,bo,,biti,Va-f3s-n,VERB,O,,O
 sl-142,8,6,na,,na,Sl,ADP,O,,O
-sl-142,8,7,Irskem,Irsko,Irsko,Npnsl,PROPN,B-LOC,GPE-Ireland,I-LOC
+sl-142,8,7,Irskem,Irsko,Irsko,Npnsl,PROPN,B-LOC,GPE-Ireland,B-LOC
 sl-142,8,8,desetletje,,desetletje,Ncnsn,NOUN,O,,O
 sl-142,8,9,po,,po,Sl,ADP,O,,O
 sl-142,8,10,izstopu,,izstop,Ncmsl,NOUN,O,,O
@@ -244,8 +244,8 @@ sl-142,11,2,",",,",",Z,PUNCT,O,,O
 sl-142,11,3,o,,o,Sl,ADP,O,,O
 sl-142,11,4,kateri,,kateri,Pq-fsl,DET,O,,O
 sl-142,11,5,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-142,11,6,britanski,britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,O
-sl-142,11,7,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,O
+sl-142,11,6,britanski,britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,B-ORG
+sl-142,11,7,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-142,11,8,razpravljal,,razpravljati,Vmpp-sm,VERB,O,,O
 sl-142,11,9,v,,v,Sa,ADP,O,,O
 sl-142,11,10,ponedeljek,,ponedeljek,Ncmsan,NOUN,O,,O
@@ -261,8 +261,8 @@ sl-142,11,19,ljudi,,človek,Ncmpg,NOUN,O,,O
 sl-142,11,20,.,,.,Z,PUNCT,O,,O
 sl-142,12,1,Spomnimo,,spomniti,Vmem1p,VERB,O,,O
 sl-142,12,2,",",,",",Z,PUNCT,O,,O
-sl-142,12,3,britanski,britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,O
-sl-142,12,4,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,O
+sl-142,12,3,britanski,britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,B-ORG
+sl-142,12,4,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-142,12,5,mora,,morati,Vmpr3s,VERB,O,,O
 sl-142,12,6,obravnavati,,obravnavati,Vmpn,VERB,O,,O
 sl-142,12,7,vsako,,vsak,Pg-fsa,DET,O,,O
@@ -458,8 +458,8 @@ sl-142,21,4,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-142,21,5,bila,,biti,Va-p-dm,AUX,O,,O
 sl-142,21,6,nekdanji,,nekdanji,Agpmsny,ADJ,O,,O
 sl-142,21,7,vodja,,vodja,Ncmsn,NOUN,O,,O
-sl-142,21,8,irske,Irsko,irski,Agpfsg,ADJ,B-LOC,GPE-Ireland,B-ORG
-sl-142,21,9,republikanske,,republikanski,Agpfsg,ADJ,O,,B-ORG
+sl-142,21,8,irske,Irsko,irski,Agpfsg,ADJ,B-LOC,GPE-Ireland,O
+sl-142,21,9,republikanske,,republikanski,Agpfsg,ADJ,O,,O
 sl-142,21,10,stranke,,stranka,Ncfsg,NOUN,O,,O
 sl-142,21,11,Sinn,Sinn,Sinn,Npfsn,PROPN,B-ORG,ORG-Sinn-Fein,B-ORG
 sl-142,21,12,Fein,Fein,Fein,Npfsn,PROPN,I-ORG,ORG-Sinn-Fein,I-ORG
@@ -485,7 +485,7 @@ sl-142,22,9,med,,med,Si,ADP,O,,O
 sl-142,22,10,Irsko,Irsko,Irska,Npfsi,PROPN,B-LOC,GPE-Ireland,B-LOC
 sl-142,22,11,in,,in,Cc,CCONJ,O,,O
 sl-142,22,12,Severno,Severna,severen,Agpfsi,ADJ,B-LOC,GPE-Northern-Ireland,B-LOC
-sl-142,22,13,Irsko,Irska,Irska,Npfsi,PROPN,I-LOC,GPE-Northern-Ireland,B-LOC
+sl-142,22,13,Irsko,Irska,Irska,Npfsi,PROPN,I-LOC,GPE-Northern-Ireland,I-LOC
 sl-142,22,14,je,,biti,Va-r3s-n,AUX,O,,O
 sl-142,22,15,razlika,,razlika,Ncfsn,NOUN,O,,O
 sl-142,22,16,v,,v,Sl,ADP,O,,O
@@ -502,12 +502,12 @@ sl-142,23,7,avtocesto,,avtocesta,Ncfsa,NOUN,O,,O
 sl-142,23,8,",",,",",Z,PUNCT,O,,O
 sl-142,23,9,ki,,ki,Cs,SCONJ,O,,O
 sl-142,23,10,povezuje,,povezovati,Vmpr3s,VERB,O,,O
-sl-142,23,11,severnoirsko,,severnoirski,Agpnsa,ADJ,O,,B-LOC
+sl-142,23,11,severnoirsko,,severnoirski,Agpnsa,ADJ,O,,O
 sl-142,23,12,glavno,,glaven,Agpnsa,ADJ,O,,O
 sl-142,23,13,mesto,,mesto,Ncnsa,NOUN,O,,O
 sl-142,23,14,Belfast,Belfast,Belfast,Npmsn,PROPN,B-LOC,GPE-Belfast,B-LOC
 sl-142,23,15,in,,in,Cc,CCONJ,O,,O
-sl-142,23,16,irsko,Irsko,irski,Agpfsa,ADJ,B-LOC,GPE-Ireland,B-LOC
+sl-142,23,16,irsko,Irsko,irski,Agpfsa,ADJ,B-LOC,GPE-Ireland,O
 sl-142,23,17,prestolnico,,prestolnica,Ncfsa,NOUN,O,,O
 sl-142,23,18,Dublin,Dublin,Dublin,Npmsn,PROPN,B-LOC,GPE-Dublin,B-LOC
 sl-142,23,19,.,,.,Z,PUNCT,O,,O

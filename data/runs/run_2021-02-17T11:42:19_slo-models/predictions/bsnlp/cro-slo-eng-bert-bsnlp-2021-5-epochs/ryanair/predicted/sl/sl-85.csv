@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-85,0,1,10,,10,Mdc,NUM,O,,O
 sl-85,0,2,najvarnejših,,varen,Agsmpg,ADJ,O,,O
 sl-85,0,3,nizkocenovnih,,nizkocenoven,Agpmpg,ADJ,O,,O
@@ -30,7 +30,7 @@ sl-85,2,3,po,,po,Sl,ADP,O,,O
 sl-85,2,4,svetu,,svet,Ncmsl,NOUN,O,,O
 sl-85,2,5,",",,",",Z,PUNCT,O,,O
 sl-85,2,6,predvsem,,predvsem,Q,PART,O,,O
-sl-85,2,7,za,,za,Sa,ADP,O,,I-ORG
+sl-85,2,7,za,,za,Sa,ADP,O,,O
 sl-85,2,8,zasebne,,zaseben,Agpmpa,ADJ,O,,O
 sl-85,2,9,namene,,namen,Ncmpa,NOUN,O,,O
 sl-85,2,10,",",,",",Z,PUNCT,O,,O
@@ -184,7 +184,7 @@ sl-85,7,24,pa,,pa,Cc,CCONJ,O,,O
 sl-85,7,25,imajo,,imeti,Vmpr3p-n,VERB,O,,O
 sl-85,7,26,zamrznjeno,,zamrznjen,Appfsa,ADJ,O,,O
 sl-85,7,27,licenco,,licenca,Ncfsa,NOUN,O,,O
-sl-85,7,28,za,,za,Sa,ADP,O,,I-ORG
+sl-85,7,28,za,,za,Sa,ADP,O,,O
 sl-85,7,29,letenje,,letenje,Ncnsa,NOUN,O,,O
 sl-85,7,30,.,,.,Z,PUNCT,O,,O
 sl-85,8,1,Nizkocenovne,,nizkocenoven,Agpfpn,ADJ,O,,O
@@ -256,7 +256,7 @@ sl-85,9,21,kadar,,kadar,Cs,SCONJ,O,,O
 sl-85,9,22,ste,,biti,Va-r2p-n,VERB,O,,O
 sl-85,9,23,v,,v,Sl,ADP,O,,O
 sl-85,9,24,skrbeh,,skrb,Ncfpl,NOUN,O,,O
-sl-85,9,25,za,,za,Sa,ADP,O,,I-ORG
+sl-85,9,25,za,,za,Sa,ADP,O,,O
 sl-85,9,26,varnost,,varnost,Ncfsa,NOUN,O,,O
 sl-85,9,27,letal,,letalo,Ncnpg,NOUN,O,,O
 sl-85,9,28,",",,",",Z,PUNCT,O,,O
@@ -277,7 +277,7 @@ sl-85,11,3,",",,",",Z,PUNCT,O,,O
 sl-85,11,4,ki,,ki,Cs,SCONJ,O,,O
 sl-85,11,5,so,,biti,Va-r3p-n,AUX,O,,O
 sl-85,11,6,del,,del,Ncmsn,NOUN,O,,O
-sl-85,11,7,združenja,,združenje,Ncnsg,NOUN,O,,I-ORG
+sl-85,11,7,združenja,,združenje,Ncnsg,NOUN,O,,O
 sl-85,11,8,IATA,IATA,IATA,Npmsn,PROPN,B-ORG,ORG-IATA-International-Air-Transport-Association,B-ORG
 sl-85,11,9,(,,(,Z,PUNCT,O,,O
 sl-85,11,10,Mednarodnega,Mednarodno,mednaroden,Agpnsg,ADJ,B-ORG,ORG-IATA-International-Air-Transport-Association,B-ORG
@@ -338,8 +338,8 @@ sl-85,13,6,prestajanje,,prestajanje,Ncnsn,NOUN,O,,O
 sl-85,13,7,pregleda,,pregled,Ncmsg,NOUN,O,,O
 sl-85,13,8,IOSA,IOSA,Ios,Npmsg,PROPN,B-PRO,PRO-IATA-Operational-Safety-Audit,B-PRO
 sl-85,13,9,(,,(,Z,PUNCT,O,,O
-sl-85,13,10,Operativno-varnostni,Operativno-varnostni,operativnovvarnosten,Agpmsny,ADJ,B-PRO,PRO-IATA-Operational-Safety-Audit,O
-sl-85,13,11,pregled,pregled,pregled,Ncmsn,NOUN,I-PRO,PRO-IATA-Operational-Safety-Audit,O
+sl-85,13,10,Operativno-varnostni,Operativno-varnostni,operativnovvarnosten,Agpmsny,ADJ,B-PRO,PRO-IATA-Operational-Safety-Audit,B-PRO
+sl-85,13,11,pregled,pregled,pregled,Ncmsn,NOUN,I-PRO,PRO-IATA-Operational-Safety-Audit,I-PRO
 sl-85,13,12,),,),Z,PUNCT,O,,O
 sl-85,13,13,",",,",",Z,PUNCT,O,,O
 sl-85,13,14,ki,,ki,Cs,SCONJ,O,,O
@@ -410,7 +410,7 @@ sl-85,15,39,pomanjkljive,,pomanjkljiv,Agpfsg,ADJ,O,,O
 sl-85,15,40,varnosti,,varnost,Ncfsg,NOUN,O,,O
 sl-85,15,41,nimajo,,imeti,Vmpr3p-y,VERB,O,,O
 sl-85,15,42,dovoljenja,,dovoljenje,Ncnsg,NOUN,O,,O
-sl-85,15,43,za,,za,Sa,ADP,O,,I-ORG
+sl-85,15,43,za,,za,Sa,ADP,O,,O
 sl-85,15,44,uporabo,,uporaba,Ncfsa,NOUN,O,,O
 sl-85,15,45,zračnega,,zračen,Agpmsg,ADJ,O,,O
 sl-85,15,46,prostora,,prostor,Ncmsg,NOUN,O,,O

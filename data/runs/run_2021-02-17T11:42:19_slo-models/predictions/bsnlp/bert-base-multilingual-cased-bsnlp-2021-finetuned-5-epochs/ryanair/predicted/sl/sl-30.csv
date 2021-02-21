@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-30,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-30,0,2,odpoveduje,,odpovedovati,Vmpr3s,VERB,O,,O
 sl-30,0,3,lete,,let,Ncmpa,NOUN,O,,O
@@ -19,7 +19,7 @@ sl-30,1,8,135,,135,Mdc,NUM,O,,O
 sl-30,1,9,modelov,,model,Ncmpg,NOUN,O,,O
 sl-30,1,10,letala,,letalo,Ncnsg,NOUN,O,,O
 sl-30,1,11,boeing,boeing,boeing,Ncmsn,NOUN,B-PRO,PRO-Boeing-737-Max,B-PRO
-sl-30,1,12,737,737,737,Mdc,NUM,I-PRO,PRO-Boeing-737-Max,B-PRO
+sl-30,1,12,737,737,737,Mdc,NUM,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-30,1,13,xax,max,xax,Ncmsn,NOUN,I-PRO,PRO-Boeing-737-Max,I-PRO
 sl-30,1,14,",",,",",Z,PUNCT,O,,O
 sl-30,1,15,ki,,ki,Cs,SCONJ,O,,O
@@ -134,7 +134,7 @@ sl-30,7,2,podjetja,,podjetje,Ncnsg,NOUN,O,,O
 sl-30,7,3,Raynair,Ryanair,Raynair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-30,7,4,Michael,Michael,Michael,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-30,7,5,O,O,o,Sl,ADP,I-PER,PER-Michael-O'Leary,I-PER
-sl-30,7,6,’,’,’,Z,PUNCT,I-PER,PER-Michael-O'Leary,O
+sl-30,7,6,’,’,’,Z,PUNCT,I-PER,PER-Michael-O'Leary,I-PER
 sl-30,7,7,Leary,Leary,Leary,Npmsn,PROPN,I-PER,PER-Michael-O'Leary,I-PER
 sl-30,7,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-30,7,9,povedal,,povedati,Vmep-sm,VERB,O,,O

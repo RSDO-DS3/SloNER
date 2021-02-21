@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-44,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-44,0,2,in,,in,Cc,CCONJ,O,,O
 sl-44,0,3,nemški,,nemški,Agpmpn,ADJ,O,,O
@@ -35,7 +35,7 @@ sl-44,2,3,se,,se,Px------y,PRON,O,,O
 sl-44,2,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-44,2,5,izognil,,izogniti,Vmep-sm,VERB,O,,O
 sl-44,2,6,morebitnim,,morebiten,Agpfpd,ADJ,O,,O
-sl-44,2,7,stavkam,,stavka,Ncfpd,NOUN,O,,B-ORG
+sl-44,2,7,stavkam,,stavka,Ncfpd,NOUN,O,,O
 sl-44,2,8,",",,",",Z,PUNCT,O,,O
 sl-44,2,9,ki,,ki,Cs,SCONJ,O,,O
 sl-44,2,10,bi,,biti,Va-c,AUX,O,,O

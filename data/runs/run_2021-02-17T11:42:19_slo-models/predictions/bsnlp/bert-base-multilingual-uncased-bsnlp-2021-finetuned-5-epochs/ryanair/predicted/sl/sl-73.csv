@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-73,0,1,Potniki,,potnik,Ncmpn,NOUN,O,,O
 sl-73,0,2,zaradi,,zaradi,Sg,ADP,O,,O
 sl-73,0,3,pijanega,,pijan,Agpmsg,ADJ,O,,O
@@ -12,8 +12,8 @@ sl-73,0,10,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-73,1,1,Letališko,,letališki,Agpnsn,ADJ,O,,O
 sl-73,1,2,osebje,,osebje,Ncnsn,NOUN,O,,O
 sl-73,1,3,v,,v,Sl,ADP,O,,O
-sl-73,1,4,nemškem,,nemški,Agpmsl,ADJ,O,,O
-sl-73,1,5,Stuttgartu,Stuttgart,Stuttgart,Npmsl,PROPN,B-LOC,GPE-Stuttgart,O
+sl-73,1,4,nemškem,,nemški,Agpmsl,ADJ,O,,B-LOC
+sl-73,1,5,Stuttgartu,Stuttgart,Stuttgart,Npmsl,PROPN,B-LOC,GPE-Stuttgart,I-ORG
 sl-73,1,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-73,1,7,v,,v,Sa,ADP,O,,O
 sl-73,1,8,petek,,petek,Ncmsan,NOUN,O,,O
@@ -27,9 +27,9 @@ sl-73,1,15,se,,se,Px------y,PRON,O,,O
 sl-73,1,16,kopilot,,kopilot,Ncmsn,NOUN,O,,O
 sl-73,1,17,letalske,,letalski,Agpfsg,ADJ,O,,O
 sl-73,1,18,družbe,,družba,Ncfsg,NOUN,O,,O
-sl-73,1,19,TAP,TAP,TAP,Npmsn,PROPN,B-ORG,ORG-TAP-Air-Portugal,O
-sl-73,1,20,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-TAP-Air-Portugal,O
-sl-73,1,21,Portugal,Portugal,Portugal,Npmsn,PROPN,I-ORG,ORG-TAP-Air-Portugal,O
+sl-73,1,19,TAP,TAP,TAP,Npmsn,PROPN,B-ORG,ORG-TAP-Air-Portugal,B-ORG
+sl-73,1,20,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-TAP-Air-Portugal,I-ORG
+sl-73,1,21,Portugal,Portugal,Portugal,Npmsn,PROPN,I-ORG,ORG-TAP-Air-Portugal,I-ORG
 sl-73,1,22,opoteka,,opotekati,Vmpr3s,VERB,O,,O
 sl-73,1,23,in,,in,Cc,CCONJ,O,,O
 sl-73,1,24,smrdi,,smrdeti,Vmpr3s,VERB,O,,O
@@ -39,7 +39,7 @@ sl-73,1,27,.,,.,Z,PUNCT,O,,O
 sl-73,2,1,Let,,leto,Ncnpg,NOUN,O,,O
 sl-73,2,2,letala,,letalo,Ncnsg,NOUN,O,,O
 sl-73,2,3,v,,v,Sa,ADP,O,,O
-sl-73,2,4,Lizbono,Lizbona,Lizbona,Npfsa,PROPN,B-LOC,GPE-Lisbon,O
+sl-73,2,4,Lizbono,Lizbona,Lizbona,Npfsa,PROPN,B-LOC,GPE-Lisbon,B-LOC
 sl-73,2,5,so,,biti,Va-r3p-n,AUX,O,,O
 sl-73,2,6,zaradi,,zaradi,Sg,ADP,O,,O
 sl-73,2,7,tega,,ta,Pd-nsg,DET,O,,O
@@ -63,7 +63,7 @@ sl-73,3,6,šele,,šele,Q,PART,O,,O
 sl-73,3,7,v,,v,Sa,ADP,O,,O
 sl-73,3,8,ponedeljek,,ponedeljek,Ncmsan,NOUN,O,,O
 sl-73,3,9,.,,.,Z,PUNCT,O,,O
-sl-73,4,1,Uslužbenec,,uslužbenec,Ncmsn,NOUN,O,,O
+sl-73,4,1,Uslužbenec,,uslužbenec,Ncmsn,NOUN,O,,B-PER
 sl-73,4,2,",",,",",Z,PUNCT,O,,O
 sl-73,4,3,ki,,ki,Cs,SCONJ,O,,O
 sl-73,4,4,je,,biti,Va-r3s-n,AUX,O,,O
@@ -162,7 +162,7 @@ sl-73,8,18,morali,,morati,Vmpp-pm,VERB,O,,O
 sl-73,8,19,vikend,,vikend,Ncmsan,NOUN,O,,O
 sl-73,8,20,preživeti,,preživeti,Vmen,VERB,O,,O
 sl-73,8,21,v,,v,Sl,ADP,O,,O
-sl-73,8,22,Nemčiji,Nemčija,Nemčija,Npfsl,PROPN,B-LOC,GPE-Germany,O
+sl-73,8,22,Nemčiji,Nemčija,Nemčija,Npfsl,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-73,8,23,.,,.,Z,PUNCT,O,,O
 sl-73,9,1,Ponedeljek,,ponedeljek,Ncmsn,NOUN,O,,O
 sl-73,9,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -181,9 +181,9 @@ sl-73,9,14,",",,",",Z,PUNCT,O,,O
 sl-73,9,15,je,,biti,Va-r3s-n,AUX,O,,O
 sl-73,9,16,letalska,,letalski,Agpfsn,ADJ,O,,O
 sl-73,9,17,družba,,družba,Ncfsn,NOUN,O,,O
-sl-73,9,18,TAP,TAP,TAP,Npmsn,PROPN,B-ORG,ORG-TAP-Air-Portugal,O
-sl-73,9,19,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-TAP-Air-Portugal,O
-sl-73,9,20,Portugal,Portugal,Portugal,Npmsn,PROPN,I-ORG,ORG-TAP-Air-Portugal,O
+sl-73,9,18,TAP,TAP,TAP,Npmsn,PROPN,B-ORG,ORG-TAP-Air-Portugal,B-ORG
+sl-73,9,19,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-TAP-Air-Portugal,I-ORG
+sl-73,9,20,Portugal,Portugal,Portugal,Npmsn,PROPN,I-ORG,ORG-TAP-Air-Portugal,I-ORG
 sl-73,9,21,na,,na,Sl,ADP,O,,O
 sl-73,9,22,Twitterju,Twitter,Twitter,Npmsl,PROPN,B-PRO,PRO-Twitter,O
 sl-73,9,23,odgovorila,,odgovoriti,Vmep-sf,VERB,O,,O
@@ -196,5 +196,5 @@ sl-73,9,29,ki,,ki,Cs,SCONJ,O,,O
 sl-73,9,30,je,,biti,Va-r3s-n,AUX,O,,O
 sl-73,9,31,obtičal,,obtičati,Vmep-sm,VERB,O,,O
 sl-73,9,32,v,,v,Sl,ADP,O,,O
-sl-73,9,33,Nemčiji,Nemčija,Nemčija,Npfsl,PROPN,B-LOC,GPE-Germany,O
+sl-73,9,33,Nemčiji,Nemčija,Nemčija,Npfsl,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-73,9,34,.,,.,Z,PUNCT,O,,O

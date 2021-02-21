@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-57,0,1,KSS,KSS,KSS,Npmsn,PROPN,B-ORG,ORG-Konfederacija-slovenskih-sindikatov,B-ORG
 sl-57,0,2,tudi,,tudi,Q,PART,O,,O
 sl-57,0,3,za,,za,Sa,ADP,O,,O
@@ -51,7 +51,7 @@ sl-57,2,18,minimalne,,minimalen,Agpfsg,ADJ,O,,O
 sl-57,2,19,.,,.,Z,PUNCT,O,,O
 sl-57,3,1,"""",,"""",Z,PUNCT,O,,O
 sl-57,3,2,V,,v,Sl,ADP,O,,O
-sl-57,3,3,Sloveniji,Slovenija,Slovenija,Npfsl,PROPN,B-LOC,GPE-Slovenia,O
+sl-57,3,3,Sloveniji,Slovenija,Slovenija,Npfsl,PROPN,B-LOC,GPE-Slovenia,B-LOC
 sl-57,3,4,imamo,,imeti,Vmpr1p-n,VERB,O,,O
 sl-57,3,5,delo,,delo,Ncnsa,NOUN,O,,O
 sl-57,3,6,do,,do,Sg,ADP,O,,O
@@ -201,7 +201,7 @@ sl-57,7,17,resno,,resen,Agpfsa,ADJ,O,,O
 sl-57,7,18,razpravo,,razprava,Ncfsa,NOUN,O,,O
 sl-57,7,19,"""",,"""",Z,PUNCT,O,,O
 sl-57,7,20,na,,na,Sl,ADP,O,,O
-sl-57,7,21,Ekonomsko-socialnem,Ekonomsko-socialni,ekonomskonsocialen,Agpmsl,ADJ,B-ORG,ORG-Economic-and-social-council-Slovenia,B-ORG
+sl-57,7,21,Ekonomsko-socialnem,Ekonomsko-socialni,ekonomskonsocialen,Agpmsl,ADJ,B-ORG,ORG-Economic-and-social-council-Slovenia,I-ORG
 sl-57,7,22,svetu,svet,svet,Ncmsl,NOUN,I-ORG,ORG-Economic-and-social-council-Slovenia,I-ORG
 sl-57,7,23,.,,.,Z,PUNCT,O,,O
 sl-57,8,1,O,,o,Sl,ADP,O,,O
@@ -218,9 +218,9 @@ sl-57,8,11,seji,,seja,Ncfsl,NOUN,O,,O
 sl-57,8,12,razpravljal,,razpravljati,Vmpp-sm,VERB,O,,O
 sl-57,8,13,tudi,,tudi,Q,PART,O,,O
 sl-57,8,14,odbor,odbor,odbor,Ncmsn,NOUN,B-ORG,ORG-The-Committee-on-Labour-Family-Social-Affairs-and-Disability-Slovenia,B-ORG
-sl-57,8,15,DZ,DZ,DZ,Npmsg,PROPN,I-ORG,ORG-The-Committee-on-Labour-Family-Social-Affairs-and-Disability-Slovenia,B-ORG
-sl-57,8,16,za,za,za,Sa,ADP,I-ORG,ORG-The-Committee-on-Labour-Family-Social-Affairs-and-Disability-Slovenia,O
-sl-57,8,17,delo,delo,delo,Ncnsa,NOUN,I-ORG,ORG-The-Committee-on-Labour-Family-Social-Affairs-and-Disability-Slovenia,O
+sl-57,8,15,DZ,DZ,DZ,Npmsg,PROPN,I-ORG,ORG-The-Committee-on-Labour-Family-Social-Affairs-and-Disability-Slovenia,I-ORG
+sl-57,8,16,za,za,za,Sa,ADP,I-ORG,ORG-The-Committee-on-Labour-Family-Social-Affairs-and-Disability-Slovenia,I-ORG
+sl-57,8,17,delo,delo,delo,Ncnsa,NOUN,I-ORG,ORG-The-Committee-on-Labour-Family-Social-Affairs-and-Disability-Slovenia,I-ORG
 sl-57,8,18,.,,.,Z,PUNCT,O,,O
 sl-57,9,1,V,,v,Sl,ADP,O,,O
 sl-57,9,2,Levici,Levica,Levica,Npfsl,PROPN,B-ORG,ORG-The-Left-Slovenia,B-ORG

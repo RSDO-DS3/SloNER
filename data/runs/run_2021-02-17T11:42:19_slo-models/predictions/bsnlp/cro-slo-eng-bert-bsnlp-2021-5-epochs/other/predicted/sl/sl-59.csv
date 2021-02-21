@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-59,0,1,Občinam,,občina,Ncfpd,NOUN,O,,O
 sl-59,0,2,prihodnje,,prihodnji,Agpnsa,ADJ,O,,O
 sl-59,0,3,leto,,leto,Ncnsa,NOUN,O,,O
@@ -106,7 +106,7 @@ sl-59,6,11,pričakovanji,,pričakovanje,Ncnpi,NOUN,O,,O
 sl-59,6,12,.,,.,Z,PUNCT,O,,O
 sl-59,7,1,V,,v,Sl,ADP,O,,O
 sl-59,7,2,Združenju,Združenje,združenje,Ncnsl,NOUN,B-ORG,ORG-Association-of-Municipalities-of-Slovenia,B-ORG
-sl-59,7,3,občin,občin,občina,Ncfpg,NOUN,I-ORG,ORG-Association-of-Municipalities-of-Slovenia,O
+sl-59,7,3,občin,občin,občina,Ncfpg,NOUN,I-ORG,ORG-Association-of-Municipalities-of-Slovenia,I-ORG
 sl-59,7,4,Slovenije,Slovenije,Slovenija,Npfsg,PROPN,I-ORG,ORG-Association-of-Municipalities-of-Slovenia,I-ORG
 sl-59,7,5,",",,",",Z,PUNCT,O,,O
 sl-59,7,6,ki,,ki,Cs,SCONJ,O,,O
@@ -217,7 +217,7 @@ sl-59,10,15,drugje,,drugje,Rgp,ADV,O,,O
 sl-59,10,16,.,,.,Z,PUNCT,O,,O
 sl-59,11,1,Predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-59,11,2,Skupnosti,Skupnost,skupnost,Ncfsg,NOUN,B-ORG,ORG-Association-of-Municipalities-and-towns-of-Slovenia,B-ORG
-sl-59,11,3,občin,občin,občina,Ncfpg,NOUN,I-ORG,ORG-Association-of-Municipalities-and-towns-of-Slovenia,O
+sl-59,11,3,občin,občin,občina,Ncfpg,NOUN,I-ORG,ORG-Association-of-Municipalities-and-towns-of-Slovenia,I-ORG
 sl-59,11,4,Slovenije,Slovenije,Slovenija,Npfsg,PROPN,I-ORG,ORG-Association-of-Municipalities-and-towns-of-Slovenia,I-ORG
 sl-59,11,5,Aleksander,Aleksander,Aleksander,Npmsn,PROPN,B-PER,PER-Aleksander-Jevšek,B-PER
 sl-59,11,6,Jevšek,Jevšek,Jevšek,Npmsn,PROPN,I-PER,PER-Aleksander-Jevšek,I-PER
@@ -253,7 +253,7 @@ sl-59,11,35,odpravi,,odprava,Ncfsl,NOUN,O,,O
 sl-59,11,36,birokratskih,,birokratski,Agpfpg,ADJ,O,,O
 sl-59,11,37,ovir,,ovira,Ncfpg,NOUN,O,,O
 sl-59,11,38,.,,.,Z,PUNCT,O,,O
-sl-59,12,1,Minister,,minister,Ncmsn,NOUN,O,,O
+sl-59,12,1,Minister,,minister,Ncmsn,NOUN,O,,B-ORG
 sl-59,12,2,za,,za,Sa,ADP,O,,O
 sl-59,12,3,javno,,javen,Agpfsa,ADJ,O,,O
 sl-59,12,4,upravo,,uprava,Ncfsa,NOUN,O,,O

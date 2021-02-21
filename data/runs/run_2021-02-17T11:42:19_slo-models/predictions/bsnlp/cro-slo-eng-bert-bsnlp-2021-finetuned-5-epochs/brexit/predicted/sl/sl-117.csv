@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-117,0,1,Britanska,Britanska,britanski,Agpfsn,ADJ,B-ORG,ORG-British-Government,O
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-117,0,1,Britanska,Britanska,britanski,Agpfsn,ADJ,B-ORG,ORG-British-Government,B-ORG
 sl-117,0,2,vlada,vlada,vlada,Ncfsn,NOUN,I-ORG,ORG-British-Government,O
 sl-117,0,3,v,,v,Sl,ADP,O,,O
 sl-117,0,4,načrtih,,načrt,Ncmpl,NOUN,O,,O
@@ -191,8 +191,8 @@ sl-117,9,14,preprečijo,,preprečiti,Vmer3p,VERB,O,,O
 sl-117,9,15,ta,,ta,Pd-msa,DET,O,,O
 sl-117,9,16,scenarij,,scenarij,Ncmsan,NOUN,O,,O
 sl-117,9,17,.,,.,Z,PUNCT,O,,O
-sl-117,10,1,Britanski,Britanski,britanski,Agpmpn,ADJ,B-PER,PER-UK-MP,O
-sl-117,10,2,poslanci,poslanci,poslanec,Ncmpn,NOUN,I-PER,PER-UK-MP,O
+sl-117,10,1,Britanski,Britanski,britanski,Agpmpn,ADJ,B-PER,PER-UK-MP,B-PER
+sl-117,10,2,poslanci,poslanci,poslanec,Ncmpn,NOUN,I-PER,PER-UK-MP,I-PER
 sl-117,10,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-117,10,4,v,,v,Sa,ADP,O,,O
 sl-117,10,5,torek,,torek,Ncmsan,NOUN,O,,O

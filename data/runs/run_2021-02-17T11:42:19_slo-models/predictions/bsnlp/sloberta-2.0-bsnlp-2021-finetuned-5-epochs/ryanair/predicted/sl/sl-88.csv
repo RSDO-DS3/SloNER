@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-88,0,1,Ali,,ali,Rgp,ADV,O,,O
 sl-88,0,2,veste,,vedeti,Vmpr2p,VERB,O,,O
 sl-88,0,3,",",,",",Z,PUNCT,O,,O
@@ -45,7 +45,7 @@ sl-88,2,12,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-British-Airways,I-ORG
 sl-88,2,13,",",,",",Z,PUNCT,O,,O
 sl-88,2,14,pa,,pa,Cc,CCONJ,O,,O
 sl-88,2,15,American,American,American,Npmsn,PROPN,B-ORG,ORG-American-Airlines,B-ORG
-sl-88,2,16,Airlines,Airlines,Airlines,Npmsn,PROPN,I-ORG,ORG-American-Airlines,O
+sl-88,2,16,Airlines,Airlines,Airlines,Npmsn,PROPN,I-ORG,ORG-American-Airlines,I-ORG
 sl-88,2,17,(,,(,Z,PUNCT,O,,O
 sl-88,2,18,sicer,,sicer,Q,PART,O,,O
 sl-88,2,19,svetovno,,svetovno,Rgp,ADV,O,,O
@@ -58,7 +58,7 @@ sl-88,2,25,še,,še,Q,PART,O,,O
 sl-88,2,26,kopica,,kopica,Ncfsn,NOUN,O,,O
 sl-88,2,27,drugih,,drug,Mlpfpg,ADJ,O,,O
 sl-88,2,28,letalskih,,letalski,Agpfpg,ADJ,O,,O
-sl-88,2,29,linij,,linija,Ncfpg,NOUN,O,,I-ORG
+sl-88,2,29,linij,,linija,Ncfpg,NOUN,O,,O
 sl-88,2,30,po,,po,Sl,ADP,O,,O
 sl-88,2,31,vsem,,ves,Pg-msl,DET,O,,O
 sl-88,2,32,svetu,,svet,Ncmsl,NOUN,O,,O
@@ -252,13 +252,13 @@ sl-88,9,25,",",,",",Z,PUNCT,O,,O
 sl-88,9,26,kot,,kot,Cs,SCONJ,O,,O
 sl-88,9,27,je,,biti,Va-r3s-n,AUX,O,,O
 sl-88,9,28,recimo,,reči,Vmem1p,VERB,O,,O
-sl-88,9,29,British,British,British,Npmsn,PROPN,B-ORG,ORG-British-Airways,O
-sl-88,9,30,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-British-Airways,O
+sl-88,9,29,British,British,British,Npmsn,PROPN,B-ORG,ORG-British-Airways,B-ORG
+sl-88,9,30,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-British-Airways,I-ORG
 sl-88,9,31,.,,.,Z,PUNCT,O,,O
 sl-88,10,1,Čeprav,,čeprav,Cs,SCONJ,O,,O
 sl-88,10,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-88,10,3,letalske,,letalski,Agpfpn,ADJ,O,,O
-sl-88,10,4,nesreče,,nesreča,Ncfpn,NOUN,O,,I-ORG
+sl-88,10,4,nesreče,,nesreča,Ncfpn,NOUN,O,,O
 sl-88,10,5,izredno,,izredno,Rgp,ADV,O,,O
 sl-88,10,6,redke,,redek,Agpfpn,ADJ,O,,O
 sl-88,10,7,",",,",",Z,PUNCT,O,,O

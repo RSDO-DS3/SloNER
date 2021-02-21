@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-43,0,1,V,,v,Sl,ADP,O,,O
 sl-43,0,2,Grčiji,Grčija,Grčija,Npfsl,PROPN,B-LOC,GPE-Greece,B-LOC
 sl-43,0,3,zaradi,,zaradi,Sg,ADP,O,,O

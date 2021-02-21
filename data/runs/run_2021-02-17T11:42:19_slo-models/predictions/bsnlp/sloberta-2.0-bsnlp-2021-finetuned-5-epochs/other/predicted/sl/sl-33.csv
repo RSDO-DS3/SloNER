@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-33,0,1,Radovljičani,Radovljičani,Radovljičan,Npmpn,PROPN,B-PER,GPE-Radovljica,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-33,0,1,Radovljičani,Radovljičani,Radovljičan,Npmpn,PROPN,B-PER,GPE-Radovljica,O
 sl-33,0,2,rekorderji,,rekorder,Ncmpn,NOUN,O,,O
 sl-33,0,3,v,,v,Sl,ADP,O,,O
 sl-33,0,4,prijavah,,prijava,Ncfpl,NOUN,O,,O
@@ -21,7 +21,7 @@ sl-33,1,11,so,,biti,Va-r3p-n,AUX,O,,O
 sl-33,1,12,izvedeli,,izvedeti,Vmep-pm,VERB,O,,O
 sl-33,1,13,",",,",",Z,PUNCT,O,,O
 sl-33,1,14,da,,da,Cs,SCONJ,O,,O
-sl-33,1,15,Prostofer,Prostofer,Prostofer,Npmsn,PROPN,B-PRO,PRO-Prostofer,B-ORG
+sl-33,1,15,Prostofer,Prostofer,Prostofer,Npmsn,PROPN,B-PRO,PRO-Prostofer,B-PER
 sl-33,1,16,prihaja,,prihajati,Vmpr3s,VERB,O,,O
 sl-33,1,17,tudi,,tudi,Q,PART,O,,O
 sl-33,1,18,v,,v,Sa,ADP,O,,O
@@ -48,7 +48,7 @@ sl-33,2,8,«,,«,Z,PUNCT,O,,O
 sl-33,2,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-33,2,10,povedal,,povedati,Vmep-sm,VERB,O,,O
 sl-33,2,11,Miha,Miha,Miha,Npmsn,PROPN,B-PER,PER-Miha-Bogataj,B-PER
-sl-33,2,12,Bogataj,Bogataj,Bogataj,Npmsn,PROPN,I-PER,PER-Miha-Bogataj,B-PER
+sl-33,2,12,Bogataj,Bogataj,Bogataj,Npmsn,PROPN,I-PER,PER-Miha-Bogataj,I-PER
 sl-33,2,13,",",,",",Z,PUNCT,O,,O
 sl-33,2,14,direktor,,direktor,Ncmsn,NOUN,O,,O
 sl-33,2,15,zavoda,zavod,zavod,Ncmsg,NOUN,B-ORG,ORG-Zavod-Zlata-mreža,O
@@ -115,7 +115,7 @@ sl-33,4,37,pomoč,,pomoč,Ncfsa,NOUN,O,,O
 sl-33,4,38,",",,",",Z,PUNCT,O,,O
 sl-33,4,39,«,,«,Z,PUNCT,O,,O
 sl-33,4,40,opisuje,,opisovati,Vmpr3s,VERB,O,,O
-sl-33,4,41,Bogataj,Bogataj,Bogataj,Npmsn,PROPN,B-PER,PER-Miha-Bogataj,O
+sl-33,4,41,Bogataj,Bogataj,Bogataj,Npmsn,PROPN,B-PER,PER-Miha-Bogataj,B-PER
 sl-33,4,42,.,,.,Z,PUNCT,O,,O
 sl-33,5,1,Številni,,številen,Agpmpn,ADJ,O,,O
 sl-33,5,2,starejši,,star,Agcmpn,ADJ,O,,O
@@ -127,7 +127,7 @@ sl-33,5,7,s,,z,Si,ADP,O,,O
 sl-33,5,8,prevozi,,prevoz,Ncmpi,NOUN,O,,O
 sl-33,5,9,",",,",",Z,PUNCT,O,,O
 sl-33,5,10,sploh,,sploh,Q,PART,O,,O
-sl-33,5,11,če,,če,Cs,SCONJ,O,,B-LOC
+sl-33,5,11,če,,če,Cs,SCONJ,O,,O
 sl-33,5,12,so,,biti,Va-r3p-n,VERB,O,,O
 sl-33,5,13,doma,,doma,Rgp,ADV,O,,O
 sl-33,5,14,zunaj,,zunaj,Sg,ADP,O,,O
@@ -275,7 +275,7 @@ sl-33,10,31,zaupal,,zaupati,Vmbp-sm,VERB,O,,O
 sl-33,10,32,Tomaž,Tomaž,Tomaž,Npmsn,PROPN,B-PER,PER-Tomaž-Vidmar,B-PER
 sl-33,10,33,Vidmar,Vidmar,Vidmar,Npmsn,PROPN,I-PER,PER-Tomaž-Vidmar,I-PER
 sl-33,10,34,iz,,iz,Sg,ADP,O,,O
-sl-33,10,35,Radovljice,Radovljica,Radovljica,Npfsg,PROPN,B-LOC,GPE-Radovljica,O
+sl-33,10,35,Radovljice,Radovljica,Radovljica,Npfsg,PROPN,B-LOC,GPE-Radovljica,B-LOC
 sl-33,10,36,.,,.,Z,PUNCT,O,,O
 sl-33,11,1,Vozniški,,vozniški,Agpmsny,ADJ,O,,O
 sl-33,11,2,izpit,,izpit,Ncmsn,NOUN,O,,O
@@ -330,7 +330,7 @@ sl-33,13,4,srečanja,,srečanje,Ncnsg,NOUN,O,,O
 sl-33,13,5,prostovoljnih,,prostovoljen,Agpmpg,ADJ,O,,O
 sl-33,13,6,voznikov,,voznik,Ncmpg,NOUN,O,,O
 sl-33,13,7,v,,v,Sl,ADP,O,,O
-sl-33,13,8,Radovljici,Radovljica,Radovljica,Npfsl,PROPN,B-LOC,GPE-Radovljica,O
+sl-33,13,8,Radovljici,Radovljica,Radovljica,Npfsl,PROPN,B-LOC,GPE-Radovljica,B-LOC
 sl-33,13,9,smo,,biti,Va-r1p-n,AUX,O,,O
 sl-33,13,10,opazili,,opaziti,Vmep-pm,VERB,O,,O
 sl-33,13,11,tudi,,tudi,Q,PART,O,,O
@@ -348,7 +348,7 @@ sl-33,14,7,Sabina,,Sabina,Npfsn,PROPN,O,,B-PER
 sl-33,14,8,",",,",",Z,PUNCT,O,,O
 sl-33,14,9,sicer,,sicer,Q,PART,O,,O
 sl-33,14,10,prebivalka,,prebivalka,Ncfsn,NOUN,O,,O
-sl-33,14,11,Zvirč,Zvirče,Zvirče,Npfpg,PROPN,B-LOC,GPE-Zvirče,O
+sl-33,14,11,Zvirč,Zvirče,Zvirče,Npfpg,PROPN,B-LOC,GPE-Zvirče,B-LOC
 sl-33,14,12,v,,v,Sl,ADP,O,,O
 sl-33,14,13,sosednji,,sosednji,Agpfsl,ADJ,O,,O
 sl-33,14,14,tržiški,,tržiški,Agpfsl,ADJ,O,,O
@@ -377,7 +377,7 @@ sl-33,16,7,prebrala,,prebrati,Vmep-sf,VERB,O,,O
 sl-33,16,8,",",,",",Z,PUNCT,O,,O
 sl-33,16,9,da,,da,Cs,SCONJ,O,,O
 sl-33,16,10,v,,v,Sl,ADP,O,,O
-sl-33,16,11,Radovljici,Radovljica,Radovljica,Npfsl,PROPN,B-LOC,GPE-Radovljica,O
+sl-33,16,11,Radovljici,Radovljica,Radovljica,Npfsl,PROPN,B-LOC,GPE-Radovljica,B-LOC
 sl-33,16,12,potrebujejo,,potrebovati,Vmpr3p,VERB,O,,O
 sl-33,16,13,prostovoljne,,prostovoljen,Agpmpa,ADJ,O,,O
 sl-33,16,14,voznike,,voznik,Ncmpa,NOUN,O,,O
@@ -394,7 +394,7 @@ sl-33,17,9,",",,",",Z,PUNCT,O,,O
 sl-33,17,10,da,,da,Cs,SCONJ,O,,O
 sl-33,17,11,se,,se,Px------y,PRON,O,,O
 sl-33,17,12,pridružim,,pridružiti,Vmer1s,VERB,O,,O
-sl-33,17,13,Radovljičanom,Radovljičani,Radovljičan,Npmpd,PROPN,B-PER,GPE-Radovljica,O
+sl-33,17,13,Radovljičanom,Radovljičani,Radovljičan,Npmpd,PROPN,B-PER,GPE-Radovljica,B-PER
 sl-33,17,14,.,,.,Z,PUNCT,O,,O
 sl-33,18,1,Tudi,,tudi,Q,PART,O,,O
 sl-33,18,2,sama,,sam,Agpfsn,ADJ,O,,O
@@ -448,7 +448,7 @@ sl-33,21,11,",",,",",Z,PUNCT,O,,O
 sl-33,21,12,«,,«,Z,PUNCT,O,,O
 sl-33,21,13,pravi,,praviti,Vmbr3s,VERB,O,,O
 sl-33,21,14,župan,,župan,Ncmsn,NOUN,O,,O
-sl-33,21,15,Radovljice,Radovljica,Radovljica,Npfsg,PROPN,B-LOC,GPE-Radovljica,O
+sl-33,21,15,Radovljice,Radovljica,Radovljica,Npfsg,PROPN,B-LOC,GPE-Radovljica,B-LOC
 sl-33,21,16,Ciril,Ciril,Ciril,Npmsn,PROPN,B-PER,PER-Ciril-Globočnik,B-PER
 sl-33,21,17,Globočnik,Globočnik,Globočnik,Npmsn,PROPN,I-PER,PER-Ciril-Globočnik,I-PER
 sl-33,21,18,.,,.,Z,PUNCT,O,,O
@@ -489,7 +489,7 @@ sl-33,23,12,kjer,,kjer,Cs,SCONJ,O,,O
 sl-33,23,13,so,,biti,Va-r3p-n,AUX,O,,O
 sl-33,23,14,povezave,,povezava,Ncfpn,NOUN,O,,O
 sl-33,23,15,z,,z,Si,ADP,O,,O
-sl-33,23,16,Radovljico,Radovljica,Radovljica,Npfsi,PROPN,B-LOC,GPE-Radovljica,O
+sl-33,23,16,Radovljico,Radovljica,Radovljica,Npfsi,PROPN,B-LOC,GPE-Radovljica,B-LOC
 sl-33,23,17,z,,z,Si,ADP,O,,O
 sl-33,23,18,javnim,,javen,Agpmsi,ADJ,O,,O
 sl-33,23,19,potniškim,,potniški,Agpmsi,ADJ,O,,O
@@ -536,7 +536,7 @@ sl-33,25,21,domov,,domov,Rgp,ADV,O,,O
 sl-33,25,22,",",,",",Z,PUNCT,O,,O
 sl-33,25,23,«,,«,Z,PUNCT,O,,O
 sl-33,25,24,opisuje,,opisovati,Vmpr3s,VERB,O,,O
-sl-33,25,25,Bogataj,Bogataj,Bogataj,Npmsn,PROPN,B-PER,PER-Miha-Bogataj,O
+sl-33,25,25,Bogataj,Bogataj,Bogataj,Npmsn,PROPN,B-PER,PER-Miha-Bogataj,B-PER
 sl-33,25,26,.,,.,Z,PUNCT,O,,O
 sl-33,26,1,»,,»,Z,PUNCT,O,,O
 sl-33,26,2,Kar,,kar,Rgp,ADV,O,,O
@@ -595,7 +595,7 @@ sl-33,29,2,Povsod,,povsod,Rgp,ADV,O,,O
 sl-33,29,3,",",,",",Z,PUNCT,O,,O
 sl-33,29,4,kjer,,kjer,Cs,SCONJ,O,,O
 sl-33,29,5,deluje,,delovati,Vmpr3s,VERB,O,,O
-sl-33,29,6,Prostofer,Prostofer,Prostofer,Npmsn,PROPN,B-PRO,PRO-Prostofer,O
+sl-33,29,6,Prostofer,Prostofer,Prostofer,Npmsn,PROPN,B-PRO,PRO-Prostofer,B-ORG
 sl-33,29,7,",",,",",Z,PUNCT,O,,O
 sl-33,29,8,pa,,pa,Cc,CCONJ,O,,O
 sl-33,29,9,se,,se,Px------y,PRON,O,,O

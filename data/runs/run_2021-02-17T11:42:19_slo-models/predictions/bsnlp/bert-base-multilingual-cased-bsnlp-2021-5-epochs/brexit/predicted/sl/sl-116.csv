@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-116,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-116,0,2,brez,,brez,Sg,ADP,O,,O
 sl-116,0,3,dogovora,,dogovor,Ncmsg,NOUN,O,,O
@@ -38,7 +38,7 @@ sl-116,2,13,uradni,,uraden,Agpmpn,ADJ,O,,O
 sl-116,2,14,dokumenti,,dokument,Ncmpn,NOUN,O,,O
 sl-116,2,15,o,,o,Sl,ADP,O,,O
 sl-116,2,16,operaciji,,operacija,Ncfsl,NOUN,O,,O
-sl-116,2,17,Yellowhammer,Yellowhammer,Yellowhammer,Npmsn,PROPN,B-EVT,EVT-Operation-Yellowhammer,B-PRO
+sl-116,2,17,Yellowhammer,Yellowhammer,Yellowhammer,Npmsn,PROPN,B-EVT,EVT-Operation-Yellowhammer,B-EVT
 sl-116,2,18,",",,",",Z,PUNCT,O,,O
 sl-116,2,19,ki,,ki,Cs,SCONJ,O,,O
 sl-116,2,20,jih,,on,Pp3mpa--y,PRON,O,,O

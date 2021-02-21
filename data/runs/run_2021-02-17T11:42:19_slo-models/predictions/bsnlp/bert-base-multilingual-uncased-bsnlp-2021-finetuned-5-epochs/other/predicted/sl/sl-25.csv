@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-25,0,1,Zakaj,,zakaj,Rgp,ADV,O,,O
 sl-25,0,2,tisti,,tisti,Pd-mpn,DET,O,,O
 sl-25,0,3,",",,",",Z,PUNCT,O,,O
@@ -165,8 +165,8 @@ sl-25,7,9,o,,o,Sl,ADP,O,,O
 sl-25,7,10,izsledkih,,izsledek,Ncmpl,NOUN,O,,O
 sl-25,7,11,študije,,študija,Ncfsg,NOUN,O,,O
 sl-25,7,12,pravi,,praviti,Vmbr3s,VERB,O,,O
-sl-25,7,13,Ryan,Ryan,Ryan,Npmsn,PROPN,B-PER,PER-Ryan-Buell,O
-sl-25,7,14,Buell,Buell,Buell,Npmsn,PROPN,I-PER,PER-Ryan-Buell,O
+sl-25,7,13,Ryan,Ryan,Ryan,Npmsn,PROPN,B-PER,PER-Ryan-Buell,B-PER
+sl-25,7,14,Buell,Buell,Buell,Npmsn,PROPN,I-PER,PER-Ryan-Buell,I-PER
 sl-25,7,15,",",,",",Z,PUNCT,O,,O
 sl-25,7,16,vodja,,vodja,Ncmsn,NOUN,O,,O
 sl-25,7,17,raziskave,,raziskava,Ncfsg,NOUN,O,,O
@@ -222,7 +222,7 @@ sl-25,9,24,«,,«,Z,PUNCT,O,,O
 sl-25,9,25,je,,biti,Va-r3s-n,AUX,O,,O
 sl-25,9,26,razložil,,razložiti,Vmep-sm,VERB,O,,O
 sl-25,9,27,za,,za,Sa,ADP,O,,O
-sl-25,9,28,Guardian,Guardian,Guardian,Npmsan,PROPN,B-PRO,PRO-The-Guardian,O
+sl-25,9,28,Guardian,Guardian,Guardian,Npmsan,PROPN,B-PRO,PRO-The-Guardian,B-ORG
 sl-25,9,29,.,,.,Z,PUNCT,O,,O
 sl-25,10,1,»,,»,Z,PUNCT,O,,O
 sl-25,10,2,Če,,če,Cs,SCONJ,O,,O
@@ -253,10 +253,10 @@ sl-25,10,26,nekdo,,nekdo,Pi-msn,PRON,O,,O
 sl-25,10,27,",",,",",Z,PUNCT,O,,O
 sl-25,10,28,«,,«,Z,PUNCT,O,,O
 sl-25,10,29,je,,biti,Va-r3s-n,AUX,O,,O
-sl-25,10,30,še,,še,Q,PART,O,,O
+sl-25,10,30,še,,še,Q,PART,O,,B-PER
 sl-25,10,31,dejal,,dejati,Vmep-sm,VERB,O,,O
 sl-25,10,32,.,,.,Z,PUNCT,O,,O
-sl-25,11,1,Buella,Buell,Buell,Npmsay,PROPN,B-PER,PER-Ryan-Buell,O
+sl-25,11,1,Buella,Buell,Buell,Npmsay,PROPN,B-PER,PER-Ryan-Buell,B-PER
 sl-25,11,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-25,11,3,za,,za,Sa,ADP,O,,O
 sl-25,11,4,raziskavo,,raziskava,Ncfsa,NOUN,O,,O

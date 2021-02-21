@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-8,0,1,Za,,za,Sa,ADP,O,,O
 sl-8,0,2,pomoč,,pomoč,Ncfsa,NOUN,O,,O
 sl-8,0,3,psihologa,,psiholog,Ncmsg,NOUN,O,,O
@@ -7,7 +7,7 @@ sl-8,0,5,še,,še,Q,PART,O,,O
 sl-8,0,6,nismo,,biti,Va-r1p-y,AUX,O,,O
 sl-8,0,7,zaprosili,,zaprositi,Vmep-pm,VERB,O,,O
 sl-8,1,1,Ko,,ko,Cs,SCONJ,O,,O
-sl-8,1,2,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,1,2,se,,se,Px------y,PRON,O,,O
 sl-8,1,3,usedemo,,usesti,Vmer1p,VERB,O,,O
 sl-8,1,4,za,,za,Sa,ADP,O,,O
 sl-8,1,5,volanski,,volanski,Agpmsay,ADJ,O,,O
@@ -54,7 +54,7 @@ sl-8,5,6,so,,biti,Va-r3p-n,AUX,O,,O
 sl-8,5,7,najbolj,,najbolj,Rgs,ADV,O,,O
 sl-8,5,8,športnega,,športen,Agpmsg,ADJ,O,,O
 sl-8,5,9,serijskega,,serijski,Agpmsa,ADJ,O,,O
-sl-8,5,10,seata,seat,seat,Ncmsay,NOUN,B-PRO,PRO-Seat,O
+sl-8,5,10,seata,seat,seat,Ncmsay,NOUN,B-PRO,PRO-Seat,B-PRO
 sl-8,5,11,doslej,,doslej,Rgp,ADV,O,,O
 sl-8,5,12,",",,",",Z,PUNCT,O,,O
 sl-8,5,13,ki,,ki,Cs,SCONJ,O,,O
@@ -62,7 +62,7 @@ sl-8,5,14,sliši,,slišati,Vmbr3s,VERB,O,,O
 sl-8,5,15,na,,na,Sa,ADP,O,,O
 sl-8,5,16,ime,,ime,Ncnsa,NOUN,O,,O
 sl-8,5,17,leon,Leon,leon,Ncmsn,NOUN,B-PRO,PRO-Seat-Leon-Cupra-R,B-PRO
-sl-8,5,18,cupra,Cupra,cupra,Ncmsn,NOUN,I-PRO,PRO-Seat-Leon-Cupra-R,B-PRO
+sl-8,5,18,cupra,Cupra,cupra,Ncmsn,NOUN,I-PRO,PRO-Seat-Leon-Cupra-R,I-PRO
 sl-8,5,19,R,R,R,Ncmsn,NOUN,I-PRO,PRO-Seat-Leon-Cupra-R,I-PRO
 sl-8,5,20,",",,",",Z,PUNCT,O,,O
 sl-8,5,21,izdelali,,izdelati,Vmep-pm,VERB,O,,O
@@ -81,7 +81,7 @@ sl-8,6,7,odmevna,,odmeven,Agpfsn,ADJ,O,,O
 sl-8,6,8,novica,,novica,Ncfsn,NOUN,O,,O
 sl-8,6,9,",",,",",Z,PUNCT,O,,O
 sl-8,6,10,če,,če,Cs,SCONJ,O,,O
-sl-8,6,11,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,6,11,se,,se,Px------y,PRON,O,,O
 sl-8,6,12,njeno,,njen,Ps3nsnsf,DET,O,,O
 sl-8,6,13,nadaljevanje,,nadaljevanje,Ncnsn,NOUN,O,,O
 sl-8,6,14,ne,,ne,Q,PART,O,,O
@@ -103,7 +103,7 @@ sl-8,7,6,slovenskim,,slovenski,Agpmpd,ADJ,O,,O
 sl-8,7,7,izbrancem,,izbranec,Ncmpd,NOUN,O,,O
 sl-8,7,8,.,,.,Z,PUNCT,O,,O
 sl-8,8,1,Zgodilo,,zgoditi,Vmep-sn,VERB,O,,O
-sl-8,8,2,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,8,2,se,,se,Px------y,PRON,O,,O
 sl-8,8,3,nam,,jaz,Pp1-pd,PRON,O,,O
 sl-8,8,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-8,8,5,torej,,torej,Rgp,ADV,O,,O
@@ -112,7 +112,7 @@ sl-8,8,7,nenavadnega,,nenavaden,Agpnsg,ADJ,O,,O
 sl-8,8,8,",",,",",Z,PUNCT,O,,O
 sl-8,8,9,vozili,,voziti,Vmpp-pm,VERB,O,,O
 sl-8,8,10,smo,,biti,Va-r1p-n,AUX,O,,O
-sl-8,8,11,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,8,11,se,,se,Px------y,PRON,O,,O
 sl-8,8,12,s,,z,Si,ADP,O,,O
 sl-8,8,13,štirikolesnikom,,štirikolesnik,Ncmsi,NOUN,O,,O
 sl-8,8,14,",",,",",Z,PUNCT,O,,O
@@ -156,9 +156,9 @@ sl-8,10,20,.,,.,Z,PUNCT,O,,O
 sl-8,11,1,A,,a,Cc,CCONJ,O,,O
 sl-8,11,2,najprej,,najprej,Rgs,ADV,O,,O
 sl-8,11,3,smo,,biti,Va-r1p-n,AUX,O,,O
-sl-8,11,4,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,11,4,se,,se,Px------y,PRON,O,,O
 sl-8,11,5,želeli,,želeti,Vmpp-pm,VERB,O,,O
-sl-8,11,6,prepričati,,prepričati,Vmen,VERB,O,,B-PRO
+sl-8,11,6,prepričati,,prepričati,Vmen,VERB,O,,O
 sl-8,11,7,",",,",",Z,PUNCT,O,,O
 sl-8,11,8,ali,,ali,Rgp,ADV,O,,O
 sl-8,11,9,je,,biti,Va-r3s-n,AUX,O,,O
@@ -189,7 +189,7 @@ sl-8,13,1,V,,v,Sl,ADP,O,,O
 sl-8,13,2,bližini,,bližina,Ncfsl,NOUN,O,,O
 sl-8,13,3,športnega,,športen,Agpmsg,ADJ,O,,O
 sl-8,13,4,avtomobila,,avtomobil,Ncmsg,NOUN,O,,O
-sl-8,13,5,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,13,5,se,,se,Px------y,PRON,O,,O
 sl-8,13,6,nam,,jaz,Pp1-pd,PRON,O,,O
 sl-8,13,7,vedno,,vedno,Rgp,ADV,O,,O
 sl-8,13,8,zgodi,,zgoditi,Vmer3s,VERB,O,,O
@@ -203,7 +203,7 @@ sl-8,13,15,seks,,seks,Ncmsan,NOUN,O,,O
 sl-8,13,16,.,,.,Z,PUNCT,O,,O
 sl-8,14,1,Nismo,,biti,Va-r1p-y,AUX,O,,O
 sl-8,14,2,še,,še,Q,PART,O,,O
-sl-8,14,3,prosili,,prositi,Vmpp-pm,VERB,O,,B-PRO
+sl-8,14,3,prosili,,prositi,Vmpp-pm,VERB,O,,O
 sl-8,14,4,za,,za,Sa,ADP,O,,O
 sl-8,14,5,pomoč,,pomoč,Ncfsa,NOUN,O,,O
 sl-8,14,6,psihologa,,psiholog,Ncmsg,NOUN,O,,O
@@ -226,7 +226,7 @@ sl-8,14,22,vas,,ti,Pp2-pa,PRON,O,,O
 sl-8,14,23,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-8,14,24,kot,,kot,Cs,SCONJ,O,,O
 sl-8,14,25,lastnika,,lastnik,Ncmsay,NOUN,O,,O
-sl-8,14,26,cupre,Cupra,cupra,Ncfsg,NOUN,B-PRO,PRO-Seat-Leon-Cupra-R,O
+sl-8,14,26,cupre,Cupra,cupra,Ncfsg,NOUN,B-PRO,PRO-Seat-Leon-Cupra-R,B-PRO
 sl-8,14,27,R,R,R,Ncmsn,NOUN,I-PRO,PRO-Seat-Leon-Cupra-R,I-PRO
 sl-8,14,28,ženske,,ženska,Ncfpn,NOUN,O,,O
 sl-8,14,29,cukale,,cukati,Vmpp-pf,VERB,O,,O
@@ -250,7 +250,7 @@ sl-8,15,6,pomenu,,pomen,Ncmsl,NOUN,O,,O
 sl-8,15,7,pomeni,,pomeniti,Vmbr3s,VERB,O,,O
 sl-8,15,8,",",,",",Z,PUNCT,O,,O
 sl-8,15,9,pa,,pa,Cc,CCONJ,O,,O
-sl-8,15,10,prav,,prav,Q,PART,O,,B-PRO
+sl-8,15,10,prav,,prav,Q,PART,O,,O
 sl-8,15,11,tako,,tako,Rgp,ADV,O,,O
 sl-8,15,12,vemo,,vedeti,Vmpr1p,VERB,O,,O
 sl-8,15,13,–,,–,Z,PUNCT,O,,O
@@ -288,7 +288,7 @@ sl-8,17,15,.,,.,Z,PUNCT,O,,O
 sl-8,18,1,Natančneje,,natančno,Rgc,ADV,O,,O
 sl-8,18,2,",",,",",Z,PUNCT,O,,O
 sl-8,18,3,kako,,kako,Rgp,ADV,O,,O
-sl-8,18,4,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,18,4,se,,se,Px------y,PRON,O,,O
 sl-8,18,5,počuti,,počutiti,Vmpr3s,VERB,O,,O
 sl-8,18,6,",",,",",Z,PUNCT,O,,O
 sl-8,18,7,ko,,ko,Cs,SCONJ,O,,O
@@ -298,7 +298,7 @@ sl-8,18,10,hitrostjo,,hitrost,Ncfsi,NOUN,O,,O
 sl-8,18,11,",",,",",Z,PUNCT,O,,O
 sl-8,18,12,tik,,tik,Rgp,ADV,O,,O
 sl-8,18,13,preden,,preden,Cs,SCONJ,O,,O
-sl-8,18,14,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,18,14,se,,se,Px------y,PRON,O,,O
 sl-8,18,15,dvigne,,dvigniti,Vmer3s,VERB,O,,O
 sl-8,18,16,",",,",",Z,PUNCT,O,,O
 sl-8,18,17,drvi,,drveti,Vmpr3s,VERB,O,,O
@@ -307,7 +307,7 @@ sl-8,18,19,tleh,,tla,Ncnpl,NOUN,O,,O
 sl-8,18,20,.,,.,Z,PUNCT,O,,O
 sl-8,19,1,Tako,,tako,Rgp,ADV,O,,O
 sl-8,19,2,smo,,biti,Va-r1p-n,AUX,O,,O
-sl-8,19,3,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,19,3,se,,se,Px------y,PRON,O,,O
 sl-8,19,4,namreč,,namreč,Cc,CCONJ,O,,O
 sl-8,19,5,počutili,,počutiti,Vmpp-pm,VERB,O,,O
 sl-8,19,6,",",,",",Z,PUNCT,O,,O
@@ -371,7 +371,7 @@ sl-8,20,15,",",,",",Z,PUNCT,O,,O
 sl-8,20,16,da,,da,Cs,SCONJ,O,,O
 sl-8,20,17,nam,,jaz,Pp1-pd,PRON,O,,O
 sl-8,20,18,manjka,,manjkati,Vmpr3s,VERB,O,,O
-sl-8,20,19,le,,le,Q,PART,O,,B-PRO
+sl-8,20,19,le,,le,Q,PART,O,,O
 sl-8,20,20,eno,,en,Mlpnsn,NUM,O,,O
 sl-8,20,21,–,,–,Z,PUNCT,O,,O
 sl-8,20,22,krila,,krilo,Ncnpn,NOUN,O,,O
@@ -433,7 +433,7 @@ sl-8,25,2,dobro,,dobro,Rgp,ADV,O,,O
 sl-8,25,3,vemo,,vedeti,Vmpr1p,VERB,O,,O
 sl-8,25,4,",",,",",Z,PUNCT,O,,O
 sl-8,25,5,kako,,kako,Rgp,ADV,O,,O
-sl-8,25,6,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,25,6,se,,se,Px------y,PRON,O,,O
 sl-8,25,7,počuti,,počutiti,Vmpr3s,VERB,O,,O
 sl-8,25,8,sopotnik,,sopotnik,Ncmsn,NOUN,O,,O
 sl-8,25,9,",",,",",Z,PUNCT,O,,O
@@ -450,7 +450,7 @@ sl-8,25,19,za,,za,Sa,ADP,O,,O
 sl-8,25,20,plin,,plin,Ncmsan,NOUN,O,,O
 sl-8,25,21,.,,.,Z,PUNCT,O,,O
 sl-8,26,1,Ko,,ko,Cs,SCONJ,O,,O
-sl-8,26,2,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,26,2,se,,se,Px------y,PRON,O,,O
 sl-8,26,3,cesta,,cesta,Ncfsn,NOUN,O,,O
 sl-8,26,4,navidezno,,navidezno,Rgp,ADV,O,,O
 sl-8,26,5,zoži,,zožiti,Vmer3s,VERB,O,,O
@@ -468,9 +468,9 @@ sl-8,27,3,bi,,biti,Va-c,AUX,O,,O
 sl-8,27,4,izpustili,,izpustiti,Vmep-pm,VERB,O,,O
 sl-8,27,5,priložnost,,priložnost,Ncfsa,NOUN,O,,O
 sl-8,27,6,in,,in,Cc,CCONJ,O,,O
-sl-8,27,7,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,27,7,se,,se,Px------y,PRON,O,,O
 sl-8,27,8,s,,z,Si,ADP,O,,O
-sl-8,27,9,cupro,Cupra,cupra,Ncfsi,NOUN,B-PRO,PRO-Seat-Leon-Cupra-R,O
+sl-8,27,9,cupro,Cupra,cupra,Ncfsi,NOUN,B-PRO,PRO-Seat-Leon-Cupra-R,B-PRO
 sl-8,27,10,R,R,R,Ncmsn,NOUN,I-PRO,PRO-Seat-Leon-Cupra-R,I-PRO
 sl-8,27,11,po,,po,Sl,ADP,O,,O
 sl-8,27,12,ovinkasti,,ovinkast,Agpfsl,ADJ,O,,O
@@ -538,7 +538,7 @@ sl-8,30,25,maksimalne,,maksimalen,Agpfsg,ADJ,O,,O
 sl-8,30,26,meje,,meja,Ncfsg,NOUN,O,,O
 sl-8,30,27,6500.,,6500.,Mdo,NUM,O,,O
 sl-8,31,1,Ko,,ko,Cs,SCONJ,O,,O
-sl-8,31,2,cupra,Cupra,cupra,Ncmsn,NOUN,B-PRO,PRO-Seat-Leon-Cupra-R,O
+sl-8,31,2,cupra,Cupra,cupra,Ncmsn,NOUN,B-PRO,PRO-Seat-Leon-Cupra-R,B-PRO
 sl-8,31,3,R,R,R,Ncmsn,NOUN,I-PRO,PRO-Seat-Leon-Cupra-R,I-PRO
 sl-8,31,4,udejanja,,udejanjati,Vmpr3s,VERB,O,,O
 sl-8,31,5,to,,ta,Pd-nsa,DET,O,,O
@@ -599,7 +599,7 @@ sl-8,33,29,sploh,,sploh,Q,PART,O,,O
 sl-8,33,30,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-8,33,31,mar.,,mar.,Y,X,O,,O
 sl-8,33,32,Avto,,avto,Ncmsn,NOUN,O,,O
-sl-8,33,33,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,33,33,se,,se,Px------y,PRON,O,,O
 sl-8,33,34,namreč,,namreč,Cc,CCONJ,O,,O
 sl-8,33,35,zlahka,,zlahka,Rgp,ADV,O,,O
 sl-8,33,36,iz,,iz,Sg,ADP,O,,O
@@ -655,12 +655,12 @@ sl-8,35,10,tem,,ta,Pd-msl,DET,O,,O
 sl-8,35,11,primeru,,primer,Ncmsl,NOUN,O,,O
 sl-8,35,12,konjičkov,,konjiček,Ncmpg,NOUN,O,,O
 sl-8,35,13,»,,»,Z,PUNCT,O,,O
-sl-8,35,14,le,,le,Q,PART,O,,B-PRO
+sl-8,35,14,le,,le,Q,PART,O,,O
 sl-8,35,15,«,,«,Z,PUNCT,O,,O
 sl-8,35,16,300,,300,Mdc,NUM,O,,O
 sl-8,35,17,",",,",",Z,PUNCT,O,,O
 sl-8,35,18,a,,a,Cc,CCONJ,O,,O
-sl-8,35,19,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,35,19,se,,se,Px------y,PRON,O,,O
 sl-8,35,20,to,,ta,Pd-nsn,DET,O,,O
 sl-8,35,21,vsaj,,vsaj,Q,PART,O,,O
 sl-8,35,22,na,,na,Sl,ADP,O,,O
@@ -679,7 +679,7 @@ sl-8,36,6,štiri,,štirje,Mlcfpn,NUM,O,,O
 sl-8,36,7,»,,»,Z,PUNCT,O,,O
 sl-8,36,8,slovenske,,slovenski,Agpfpn,ADJ,O,,O
 sl-8,36,9,«,,«,Z,PUNCT,O,,O
-sl-8,36,10,cupre,Cupra,cupra,Ncfpn,NOUN,B-PRO,PRO-Seat-Leon-Cupra-R,O
+sl-8,36,10,cupre,Cupra,cupra,Ncfpn,NOUN,B-PRO,PRO-Seat-Leon-Cupra-R,B-PRO
 sl-8,36,11,R,R,R,Ncmsn,NOUN,I-PRO,PRO-Seat-Leon-Cupra-R,I-PRO
 sl-8,36,12,romale,,romati,Vmbp-pf,VERB,O,,O
 sl-8,36,13,v,,v,Sa,ADP,O,,O
@@ -710,7 +710,7 @@ sl-8,36,37,.,,.,Z,PUNCT,O,,O
 sl-8,37,1,Prav,,prav,Q,PART,O,,O
 sl-8,37,2,lahko,,lahko,Rgp,ADV,O,,O
 sl-8,37,3,bi,,biti,Va-c,AUX,O,,O
-sl-8,37,4,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,37,4,se,,se,Px------y,PRON,O,,O
 sl-8,37,5,namreč,,namreč,Cc,CCONJ,O,,O
 sl-8,37,6,zgodilo,,zgoditi,Vmep-sn,VERB,O,,O
 sl-8,37,7,",",,",",Z,PUNCT,O,,O
@@ -733,7 +733,7 @@ sl-8,37,23,znal,,znati,Vmpp-sm,VERB,O,,O
 sl-8,37,24,izkoristiti,,izkoristiti,Vmen,VERB,O,,O
 sl-8,37,25,.,,.,Z,PUNCT,O,,O
 sl-8,38,1,Žal,,žal,Rgp,ADV,O,,O
-sl-8,38,2,se,,se,Px------y,PRON,O,,B-PRO
+sl-8,38,2,se,,se,Px------y,PRON,O,,O
 sl-8,38,3,to,,ta,Pd-nsn,DET,O,,O
 sl-8,38,4,zgodi,,zgoditi,Vmer3s,VERB,O,,O
 sl-8,38,5,prepogosto,,prepogosto,Rgp,ADV,O,,O

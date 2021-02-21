@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-67,0,1,Letošnje,,letošnji,Agpnsn,ADJ,O,,O
 sl-67,0,2,leto,,leto,Ncnsa,NOUN,O,,O
 sl-67,0,3,pa,,pa,Cc,CCONJ,O,,O
@@ -161,7 +161,7 @@ sl-67,4,30,in,,in,Cc,CCONJ,O,,O
 sl-67,4,31,sindikalisti,,sindikalist,Ncmpi,NOUN,O,,O
 sl-67,4,32,.,,.,Z,PUNCT,O,,O
 sl-67,5,1,Iz,,iz,Sg,ADP,O,,O
-sl-67,5,2,Benetk,Benetke,Benetke,Npfpg,PROPN,B-LOC,GPE-Venice,B-LOC
+sl-67,5,2,Benetk,Benetke,Benetke,Npfpg,PROPN,B-LOC,GPE-Venice,B-PER
 sl-67,5,3,",",,",",Z,PUNCT,O,,O
 sl-67,5,4,Trsta,Trst,Trst,Npmsg,PROPN,B-LOC,GPE-Trieste,B-LOC
 sl-67,5,5,in,,in,Cc,CCONJ,O,,O
@@ -544,7 +544,7 @@ sl-67,20,28,še,,še,Q,PART,O,,O
 sl-67,20,29,zlasti,,zlasti,Q,PART,O,,O
 sl-67,20,30,poleti,,poleti,Rgp,ADV,O,,O
 sl-67,20,31,.,,.,Z,PUNCT,O,,O
-sl-67,21,1,Julija,,julij,Ncmsg,NOUN,O,,O
+sl-67,21,1,Julija,,julij,Ncmsg,NOUN,O,,B-LOC
 sl-67,21,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-67,21,3,vsaj,,vsaj,Q,PART,O,,O
 sl-67,21,4,trikrat,,trikrat,Rgp,ADV,O,,O
@@ -583,7 +583,7 @@ sl-67,22,13,za,,za,Si,ADP,O,,O
 sl-67,22,14,njimi,,on,Pp3mpi,PRON,O,,O
 sl-67,22,15,pa,,pa,Cc,CCONJ,O,,O
 sl-67,22,16,še,,še,Q,PART,O,,O
-sl-67,22,17,nemški,,nemški,Agpmpn,ADJ,O,,B-LOC
+sl-67,22,17,nemški,,nemški,Agpmpn,ADJ,O,,O
 sl-67,22,18,",",,",",Z,PUNCT,O,,O
 sl-67,22,19,švedski,,švedski,Agpmpn,ADJ,O,,B-LOC
 sl-67,22,20,in,,in,Cc,CCONJ,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-191,0,1,Vedno,,vedno,Rgp,ADV,O,,O
 sl-191,0,2,več,,več,Rgc,DET,O,,O
 sl-191,0,3,britanskih,,britanski,Agpmpg,ADJ,O,,O
@@ -33,7 +33,7 @@ sl-191,2,3,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-191,2,4,britanskega,,britanski,Agpmsg,ADJ,O,,O
 sl-191,2,5,parlamenta,,parlament,Ncmsg,NOUN,O,,O
 sl-191,2,6,John,John,John,Npmsn,PROPN,B-PER,PER-John-Bercow,B-PER
-sl-191,2,7,Bercow,Bercow,Bercow,Npmsn,PROPN,I-PER,PER-John-Bercow,B-PER
+sl-191,2,7,Bercow,Bercow,Bercow,Npmsn,PROPN,I-PER,PER-John-Bercow,I-PER
 sl-191,2,8,drevi,,drevi,Rgp,ADV,O,,O
 sl-191,2,9,odobril,,odobriti,Vmep-sm,VERB,O,,O
 sl-191,2,10,razpravo,,razprava,Ncfsa,NOUN,O,,O
@@ -85,7 +85,7 @@ sl-191,4,10,nagovoril,,nagovoriti,Vmep-sm,VERB,O,,O
 sl-191,4,11,britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-191,4,12,premier,,premier,Ncmsn,NOUN,O,,O
 sl-191,4,13,Boris,Boris,Boris,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
-sl-191,4,14,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,B-PER
+sl-191,4,14,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,I-PER
 sl-191,4,15,",",,",",Z,PUNCT,O,,O
 sl-191,4,16,ki,,ki,Cs,SCONJ,O,,O
 sl-191,4,17,naj,,naj,Q,PART,O,,O
@@ -201,7 +201,7 @@ sl-191,9,6,v,,v,Sa,ADP,O,,O
 sl-191,9,7,lordsko,lordska,lordski,Agpfsa,ADJ,B-ORG,ORG-House-of-Lords,B-ORG
 sl-191,9,8,zbornico,zbornica,zbornica,Ncfsa,NOUN,I-ORG,ORG-House-of-Lords,I-ORG
 sl-191,9,9,.,,.,Z,PUNCT,O,,O
-sl-191,10,1,Vlada,,vlada,Ncfsn,NOUN,O,,O
+sl-191,10,1,Vlada,,vlada,Ncfsn,NOUN,O,,B-LOC
 sl-191,10,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-191,10,3,sicer,,sicer,Q,PART,O,,O
 sl-191,10,4,v,,v,Sa,ADP,O,,O

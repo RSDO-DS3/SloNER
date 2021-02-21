@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-88,0,1,Ali,,ali,Rgp,ADV,O,,O
 sl-88,0,2,veste,,vedeti,Vmpr2p,VERB,O,,O
 sl-88,0,3,",",,",",Z,PUNCT,O,,O
@@ -30,7 +30,7 @@ sl-88,1,16,skrit,,skrit,Appmsnn,ADJ,O,,O
 sl-88,1,17,psihološki,,psihološki,Agpmsny,ADJ,O,,O
 sl-88,1,18,razlog,,razlog,Ncmsn,NOUN,O,,O
 sl-88,1,19,?,,?,Z,PUNCT,O,,O
-sl-88,2,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-88,2,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-88,2,2,(,,(,Z,PUNCT,O,,O
 sl-88,2,3,modra,,moder,Agpfsn,ADJ,O,,O
 sl-88,2,4,",",,",",Z,PUNCT,O,,O
@@ -40,12 +40,12 @@ sl-88,2,7,intenzivno,,intenzivno,Rgp,ADV,O,,O
 sl-88,2,8,rumeno,,rumen,Agpfsi,ADJ,O,,O
 sl-88,2,9,),,),Z,PUNCT,O,,O
 sl-88,2,10,",",,",",Z,PUNCT,O,,O
-sl-88,2,11,British,British,British,Npmsn,PROPN,B-ORG,ORG-British-Airways,O
-sl-88,2,12,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-British-Airways,O
+sl-88,2,11,British,British,British,Npmsn,PROPN,B-ORG,ORG-British-Airways,B-ORG
+sl-88,2,12,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-British-Airways,I-ORG
 sl-88,2,13,",",,",",Z,PUNCT,O,,O
 sl-88,2,14,pa,,pa,Cc,CCONJ,O,,O
-sl-88,2,15,American,American,American,Npmsn,PROPN,B-ORG,ORG-American-Airlines,O
-sl-88,2,16,Airlines,Airlines,Airlines,Npmsn,PROPN,I-ORG,ORG-American-Airlines,O
+sl-88,2,15,American,American,American,Npmsn,PROPN,B-ORG,ORG-American-Airlines,B-ORG
+sl-88,2,16,Airlines,Airlines,Airlines,Npmsn,PROPN,I-ORG,ORG-American-Airlines,I-ORG
 sl-88,2,17,(,,(,Z,PUNCT,O,,O
 sl-88,2,18,sicer,,sicer,Q,PART,O,,O
 sl-88,2,19,svetovno,,svetovno,Rgp,ADV,O,,O
@@ -252,8 +252,8 @@ sl-88,9,25,",",,",",Z,PUNCT,O,,O
 sl-88,9,26,kot,,kot,Cs,SCONJ,O,,O
 sl-88,9,27,je,,biti,Va-r3s-n,AUX,O,,O
 sl-88,9,28,recimo,,reči,Vmem1p,VERB,O,,O
-sl-88,9,29,British,British,British,Npmsn,PROPN,B-ORG,ORG-British-Airways,O
-sl-88,9,30,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-British-Airways,O
+sl-88,9,29,British,British,British,Npmsn,PROPN,B-ORG,ORG-British-Airways,B-ORG
+sl-88,9,30,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-British-Airways,I-ORG
 sl-88,9,31,.,,.,Z,PUNCT,O,,O
 sl-88,10,1,Čeprav,,čeprav,Cs,SCONJ,O,,O
 sl-88,10,2,so,,biti,Va-r3p-n,AUX,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-90,0,1,Od,,od,Sg,ADP,O,,O
 sl-90,0,2,danes,,danes,Rgp,ADV,O,,O
 sl-90,0,3,na,,na,Sa,ADP,O,,O

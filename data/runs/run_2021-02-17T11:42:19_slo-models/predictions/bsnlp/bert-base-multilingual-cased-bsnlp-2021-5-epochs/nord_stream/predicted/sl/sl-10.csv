@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-10,0,1,Kremelj,Kremelj,Kremelj,Npmsn,PROPN,B-ORG,ORG-Kremlin,B-ORG
 sl-10,0,2,:,,:,Z,PUNCT,O,,O
 sl-10,0,3,Severni,Severni,severen,Agpmsny,ADJ,B-PRO,PRO-Nord-Stream-2,B-PRO
@@ -180,7 +180,7 @@ sl-10,8,29,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
 sl-10,8,30,z,,z,Si,ADP,O,,O
 sl-10,8,31,Nemčijo,Nemčija,Nemčija,Npfsi,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-10,8,32,in,,in,Cc,CCONJ,O,,O
-sl-10,8,33,Evropo,Evropa,Evropa,Npfsi,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-10,8,33,Evropo,Evropa,Evropa,Npfsi,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-10,8,34,.,,.,Z,PUNCT,O,,O
 sl-10,9,1,Problematizirajo,,problematizirati,Vmbr3p,VERB,O,,O
 sl-10,9,2,tudi,,tudi,Q,PART,O,,O

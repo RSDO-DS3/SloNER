@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-18,0,1,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-18,0,2,in,,in,Cc,CCONJ,O,,O
 sl-18,0,3,Ukrajina,Ukrajina,Ukrajina,Npfsn,PROPN,B-LOC,GPE-Ukraine,B-LOC
@@ -27,7 +27,7 @@ sl-18,1,14,mirovni,,miroven,Agpmsay,ADJ,O,,O
 sl-18,1,15,proces,,proces,Ncmsan,NOUN,O,,O
 sl-18,1,16,na,,na,Sl,ADP,O,,O
 sl-18,1,17,vzhodu,vzhod,vzhod,Ncmsl,NOUN,B-LOC,LOC-East-Ukraine,B-LOC
-sl-18,1,18,Ukrajine,Ukrajine,Ukrajina,Npfsg,PROPN,I-LOC,LOC-East-Ukraine,B-LOC
+sl-18,1,18,Ukrajine,Ukrajine,Ukrajina,Npfsg,PROPN,I-LOC,LOC-East-Ukraine,I-LOC
 sl-18,1,19,",",,",",Z,PUNCT,O,,O
 sl-18,1,20,kjer,,kjer,Cs,SCONJ,O,,O
 sl-18,1,21,se,,se,Px------y,PRON,O,,O
@@ -98,7 +98,7 @@ sl-18,3,4,skleniti,,skleniti,Vmen,VERB,O,,O
 sl-18,3,5,do,,do,Sg,ADP,O,,O
 sl-18,3,6,začetka,,začetek,Ncmsg,NOUN,O,,O
 sl-18,3,7,leta,,leto,Ncnsg,NOUN,O,,O
-sl-18,3,8,2020,,2020,Mdc,NUM,O,,I-PRO
+sl-18,3,8,2020,,2020,Mdc,NUM,O,,O
 sl-18,4,1,Šefčovič,Šefčovič,Šefčovič,Npmsn,PROPN,B-PER,PER-Maros-Sefcovic,B-PER
 sl-18,4,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-18,4,3,po,,po,Sl,ADP,O,,O
@@ -244,7 +244,7 @@ sl-18,8,20,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
 sl-18,8,21,v,,v,Sl,ADP,O,,O
 sl-18,8,22,Ukrajini,Ukrajina,Ukrajina,Npfsl,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-18,8,23,.,,.,Z,PUNCT,O,,O
-sl-18,9,1,Kijev,Kijev,Kijev,Npmsn,PROPN,B-LOC,GPE-Kiev,B-LOC
+sl-18,9,1,Kijev,Kijev,Kijev,Npmsn,PROPN,B-LOC,GPE-Kiev,B-PER
 sl-18,9,2,se,,se,Px------y,PRON,O,,O
 sl-18,9,3,boji,,bati,Vmpr3s,VERB,O,,O
 sl-18,9,4,",",,",",Z,PUNCT,O,,O
@@ -286,7 +286,7 @@ sl-18,10,27,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-18,10,28,od,,od,Sg,ADP,O,,O
 sl-18,10,29,Rusije,Rusija,Rusija,Npfsg,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-18,10,30,.,,.,Z,PUNCT,O,,O
-sl-18,11,1,Moskva,Moskva,Moskva,Npfsn,PROPN,B-LOC,GPE-Moscow,B-LOC
+sl-18,11,1,Moskva,Moskva,Moskva,Npfsn,PROPN,B-LOC,GPE-Moscow,B-PER
 sl-18,11,2,pa,,pa,Cc,CCONJ,O,,O
 sl-18,11,3,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-18,11,4,",",,",",Z,PUNCT,O,,O

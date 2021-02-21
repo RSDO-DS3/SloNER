@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-64,0,1,Vnovična,,vnovičen,Agpfsn,ADJ,O,,O
 sl-64,0,2,omejitev,,omejitev,Ncfsn,NOUN,O,,O
 sl-64,0,3,ročne,,ročen,Agpfsg,ADJ,O,,O
@@ -12,7 +12,7 @@ sl-64,0,10,tudi,,tudi,Q,PART,O,,O
 sl-64,0,11,za,,za,Sa,ADP,O,,O
 sl-64,0,12,oddane,,oddan,Appmpa,ADJ,O,,O
 sl-64,0,13,kovčke,,kovček,Ncmpa,NOUN,O,,O
-sl-64,1,1,Irski,,irski,Agpmsny,ADJ,O,,B-LOC
+sl-64,1,1,Irski,,irski,Agpmsny,ADJ,O,,O
 sl-64,1,2,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-64,1,3,",",,",",Z,PUNCT,O,,O
 sl-64,1,4,največji,,velik,Agsmsny,ADJ,O,,O
@@ -133,7 +133,7 @@ sl-64,4,60,pristojnbinam,,pristojnbina,Ncfpd,NOUN,O,,O
 sl-64,4,61,pri,,pri,Sl,ADP,O,,O
 sl-64,4,62,oddaji,,oddaja,Ncfsl,NOUN,O,,O
 sl-64,4,63,prtljage,,prtljaga,Ncfsg,NOUN,O,,O
-sl-64,4,64,.,,.,Z,PUNCT,O,,O
+sl-64,4,64,.,,.,Z,PUNCT,O,,
 sl-64,5,1,Na,,na,Sl,ADP,O,,O
 sl-64,5,2,vratih,,vrata,Ncnpl,NOUN,O,,O
 sl-64,5,3,se,,se,Px------y,PRON,O,,O
@@ -620,10 +620,10 @@ sl-64,24,37,za,,za,Sa,ADP,O,,O
 sl-64,24,38,spodnje,,spodnji,Agpfpa,ADJ,O,,O
 sl-64,24,39,hlačke,,hlačke,Ncfpa,NOUN,O,,O
 sl-64,24,40,.,,.,Z,PUNCT,O,,O
-sl-64,25,1,Breaking,,breaking,Xf,X,O,,B-ORG
+sl-64,25,1,Breaking,,breaking,Xf,X,O,,O
 sl-64,25,2,News,,news,Xf,X,O,,O
 sl-64,25,3,:,,:,Z,PUNCT,O,,O
-sl-64,25,4,#Ryanair,Ryanair,#ryanair,Xf,X,B-ORG,ORG-Ryanair,O
+sl-64,25,4,#Ryanair,Ryanair,#ryanair,Xf,X,B-ORG,ORG-Ryanair,B-ORG
 sl-64,25,5,to,,to,Xf,X,O,,O
 sl-64,25,6,allow,,allow,Xf,X,O,,O
 sl-64,25,7,only,,only,Xf,X,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-185,0,1,Morales,Morales,Morales,Npmsn,PROPN,B-PER,PER-Evo-Morales,B-PER
 sl-185,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-185,0,3,",",,",",Z,PUNCT,O,,O
@@ -14,7 +14,7 @@ sl-185,0,12,udar,,udar,Ncmsn,NOUN,O,,O
 sl-185,1,1,Bolivijski,Bolivija,bolivijski,Agpmsny,ADJ,B-LOC,GPE-Bolivia,B-LOC
 sl-185,1,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-185,1,3,Evo,Evo,Evo,Npmsn,PROPN,B-PER,PER-Evo-Morales,B-PER
-sl-185,1,4,Morales,Morales,Morales,Npmsn,PROPN,I-PER,PER-Evo-Morales,B-PER
+sl-185,1,4,Morales,Morales,Morales,Npmsn,PROPN,I-PER,PER-Evo-Morales,I-PER
 sl-185,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-185,1,6,po,,po,Sl,ADP,O,,O
 sl-185,1,7,odstopu,,odstop,Ncmsl,NOUN,O,,O
@@ -55,7 +55,7 @@ sl-185,3,3,še,,še,Q,PART,O,,O
 sl-185,3,4,",",,",",Z,PUNCT,O,,O
 sl-185,3,5,da,,da,Cs,SCONJ,O,,O
 sl-185,3,6,se,,se,Px------y,PRON,O,,O
-sl-185,3,7,policija,,policija,Ncfsn,NOUN,O,,B-ORG
+sl-185,3,7,policija,,policija,Ncfsn,NOUN,O,,O
 sl-185,3,8,pripravlja,,pripravljati,Vmpr3s,VERB,O,,O
 sl-185,3,9,na,,na,Sa,ADP,O,,O
 sl-185,3,10,njegovo,,njegov,Ps3fsasm,DET,O,,O
@@ -92,7 +92,7 @@ sl-185,4,20,vojske,,vojska,Ncfsg,NOUN,O,,O
 sl-185,4,21,in,,in,Cc,CCONJ,O,,O
 sl-185,4,22,policije,,policija,Ncfsg,NOUN,O,,O
 sl-185,4,23,.,,.,Z,PUNCT,O,,O
-sl-185,5,1,Nato,,nato,Rgp,ADV,O,,B-ORG
+sl-185,5,1,Nato,,nato,Rgp,ADV,O,,B-PER
 sl-185,5,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-185,5,3,izjavil,,izjaviti,Vmep-sm,VERB,O,,O
 sl-185,5,4,",",,",",Z,PUNCT,O,,O
@@ -227,7 +227,7 @@ sl-185,12,15,Costas,Costas,Costas,Npmsn,PROPN,I-PER,PER-Antonio-Costas,I-PER
 sl-185,12,16,",",,",",Z,PUNCT,O,,O
 sl-185,12,17,je,,biti,Va-r3s-n,AUX,O,,O
 sl-185,12,18,sporočila,,sporočiti,Vmep-sf,VERB,O,,O
-sl-185,12,19,policija,,policija,Ncfsn,NOUN,O,,B-ORG
+sl-185,12,19,policija,,policija,Ncfsn,NOUN,O,,O
 sl-185,12,20,.,,.,Z,PUNCT,O,,O
 sl-185,13,1,Skupno,,skupno,Rgp,ADV,O,,O
 sl-185,13,2,naj,,naj,Q,PART,O,,O
@@ -327,7 +327,7 @@ sl-185,17,15,10,,10,Mdc,NUM,O,,O
 sl-185,17,16,odstotnih,,odstoten,Agpfpg,ADJ,O,,O
 sl-185,17,17,točk,,točka,Ncfpg,NOUN,O,,O
 sl-185,17,18,.,,.,Z,PUNCT,O,,O
-sl-185,18,1,Tako,,tako,Rgp,ADV,O,,O
+sl-185,18,1,Tako,,tako,Rgp,ADV,O,,B-PER
 sl-185,18,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-185,18,3,za,,za,Sa,ADP,O,,O
 sl-185,18,4,las,,las,Ncmsan,NOUN,O,,O

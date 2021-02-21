@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-72,0,1,Sydney,Sydney,Sydney,Npmsn,PROPN,B-LOC,GPE-Sydney,B-LOC
 sl-72,0,2,:,,:,Z,PUNCT,O,,O
 sl-72,0,3,6,,6,Mdc,NUM,O,,O
@@ -70,7 +70,7 @@ sl-72,3,19,",",,",",Z,PUNCT,O,,O
 sl-72,3,20,last,,last,Ncfsn,NOUN,O,,O
 sl-72,3,21,letalske,,letalski,Agpfsg,ADJ,O,,O
 sl-72,3,22,družbe,,družba,Ncfsg,NOUN,O,,O
-sl-72,3,23,Sydney,Sydney,Sydney,Npmsn,PROPN,B-ORG,ORG-Sydney-Seaplanes,B-LOC
+sl-72,3,23,Sydney,Sydney,Sydney,Npmsn,PROPN,B-ORG,ORG-Sydney-Seaplanes,B-ORG
 sl-72,3,24,Seaplanes,Seaplanes,Seaplanes,Npmsn,PROPN,I-ORG,ORG-Sydney-Seaplanes,I-ORG
 sl-72,3,25,.,,.,Z,PUNCT,O,,O
 sl-72,4,1,Nepotrjena,,nepotrjen,Agpnpn,ADJ,O,,O

@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-103,0,1,Evropsko-britanska,,evropskonbritanski,Agpfsn,ADJ,O,,B-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-103,0,1,Evropsko-britanska,,evropskonbritanski,Agpfsn,ADJ,O,,O
 sl-103,0,2,ločitvena,,ločitven,Agpfsn,ADJ,O,,O
 sl-103,0,3,saga,,saga,Ncfsn,NOUN,O,,O
 sl-103,0,4,podaljšana,,podaljšan,Appfsn,ADJ,O,,O
@@ -8,12 +8,12 @@ sl-103,0,6,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-103,0,7,bo,,biti,Va-f3s-n,VERB,O,,O
 sl-103,0,8,najkasneje,,kasno,Rgs,ADV,O,,O
 sl-103,0,9,na,,na,Sa,ADP,O,,O
-sl-103,0,10,noč,noč,noč,Ncfsa,NOUN,B-EVT,EVT-Halloween,O
+sl-103,0,10,noč,noč,noč,Ncfsa,NOUN,B-EVT,EVT-Halloween,B-EVT
 sl-103,0,11,čarovnic,čarovnic,čarovnica,Ncfpg,NOUN,I-EVT,EVT-Halloween,I-EVT
 sl-103,1,1,Večurni,,večuren,Agpmpn,ADJ,O,,O
 sl-103,1,2,pogovori,,pogovor,Ncmpn,NOUN,O,,O
 sl-103,1,3,izrednega,,izreden,Agpmsg,ADJ,O,,O
-sl-103,1,4,vrha,,vrh,Ncmsg,NOUN,O,,B-EVT
+sl-103,1,4,vrha,,vrh,Ncmsg,NOUN,O,,O
 sl-103,1,5,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-103,1,6,za,,za,Sa,ADP,O,,O
 sl-103,1,7,dodelitev,,dodelitev,Ncfsa,NOUN,O,,O
@@ -33,7 +33,7 @@ sl-103,1,20,pozno,,pozno,Rgp,ADV,O,,O
 sl-103,1,21,v,,v,Sa,ADP,O,,O
 sl-103,1,22,noč,,noč,Ncfsa,NOUN,O,,O
 sl-103,1,23,.,,.,Z,PUNCT,O,,O
-sl-103,2,1,Evropski,,evropski,Agpmpn,ADJ,O,,B-PER
+sl-103,2,1,Evropski,,evropski,Agpmpn,ADJ,O,,O
 sl-103,2,2,voditelji,,voditelj,Ncmpn,NOUN,O,,O
 sl-103,2,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-103,2,4,si,,se,Px---d--y,PRON,O,,O
@@ -59,7 +59,7 @@ sl-103,3,5,jasno,,jasen,Agpnsn,ADJ,O,,O
 sl-103,3,6,",",,",",Z,PUNCT,O,,O
 sl-103,3,7,da,,da,Cs,SCONJ,O,,O
 sl-103,3,8,se,,se,Px------y,PRON,O,,O
-sl-103,3,9,evropski,,evropski,Agpmpn,ADJ,O,,O
+sl-103,3,9,evropski,,evropski,Agpmpn,ADJ,O,,B-LOC
 sl-103,3,10,voditelji,,voditelj,Ncmpn,NOUN,O,,O
 sl-103,3,11,premikajo,,premikati,Vmpr3p,VERB,O,,O
 sl-103,3,12,proti,,proti,Sd,ADP,O,,O
@@ -130,7 +130,7 @@ sl-103,5,15,pregled,,pregled,Ncmsan,NOUN,O,,O
 sl-103,5,16,britanskega,,britanski,Agpnsg,ADJ,O,,O
 sl-103,5,17,obnašanja,,obnašanje,Ncnsg,NOUN,O,,O
 sl-103,5,18,v,,v,Sl,ADP,O,,O
-sl-103,5,19,Evropski,Evropska,evropski,Agpfsl,ADJ,B-ORG,ORG-European-Union,B-PER
+sl-103,5,19,Evropski,Evropska,evropski,Agpfsl,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-103,5,20,uniji,unija,unija,Ncfsl,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-103,5,21,.,,.,Z,PUNCT,O,,O
 sl-103,6,1,Tako,,tako,Rgp,ADV,O,,O
@@ -189,7 +189,7 @@ sl-103,7,27,in,,in,Cc,CCONJ,O,,O
 sl-103,7,28,26.,,26.,Mdo,NUM,O,,O
 sl-103,7,29,majem,,maj,Ncmsi,NOUN,O,,O
 sl-103,7,30,.,,.,Z,PUNCT,O,,O
-sl-103,8,1,May,May,May,Npmsn,PROPN,B-PER,PER-Theresa-May,I-PER
+sl-103,8,1,May,May,May,Npmsn,PROPN,B-PER,PER-Theresa-May,O
 sl-103,8,2,:,,:,Z,PUNCT,O,,O
 sl-103,8,3,politiki,,politik,Ncmpn,NOUN,O,,O
 sl-103,8,4,bodo,,biti,Va-f3p-n,AUX,O,,O
@@ -284,7 +284,7 @@ sl-103,12,22,iz,,iz,Sg,ADP,O,,O
 sl-103,12,23,slepe,,slep,Agpfsg,ADJ,O,,O
 sl-103,12,24,ulice,,ulica,Ncfsg,NOUN,O,,O
 sl-103,12,25,v,,v,Sl,ADP,O,,O
-sl-103,12,26,parlamentu,,parlament,Ncmsl,NOUN,O,,I-ORG
+sl-103,12,26,parlamentu,,parlament,Ncmsl,NOUN,O,,O
 sl-103,12,27,.,,.,Z,PUNCT,O,,O
 sl-103,13,1,A,,a,Cc,CCONJ,O,,O
 sl-103,13,2,opozorila,,opozoriti,Vmep-sf,VERB,O,,O
@@ -405,7 +405,7 @@ sl-103,17,20,pojasnil,,pojasniti,Vmep-sm,VERB,O,,O
 sl-103,17,21,slovenski,,slovenski,Agpmsny,ADJ,O,,O
 sl-103,17,22,premier,,premier,Ncmsn,NOUN,O,,O
 sl-103,17,23,Marjan,Marjan,Marjan,Npmsn,PROPN,B-PER,PER-Marjan-Šarec,B-PER
-sl-103,17,24,Šarec,Šarec,Šarec,Npmsn,PROPN,I-PER,PER-Marjan-Šarec,B-PER
+sl-103,17,24,Šarec,Šarec,Šarec,Npmsn,PROPN,I-PER,PER-Marjan-Šarec,I-PER
 sl-103,17,25,.,,.,Z,PUNCT,O,,O
 sl-103,18,1,»,,»,Z,PUNCT,O,,O
 sl-103,18,2,To,,ta,Pd-nsn,DET,O,,O
@@ -428,7 +428,7 @@ sl-103,18,18,vrhu,,vrh,Ncmsl,NOUN,O,,O
 sl-103,18,19,dejala,,dejati,Vmep-sf,VERB,O,,O
 sl-103,18,20,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
 sl-103,18,21,.,,.,Z,PUNCT,O,,O
-sl-103,19,1,Bila,,biti,Va-p-sf,AUX,O,,O
+sl-103,19,1,Bila,,biti,Va-p-sf,AUX,O,,B-LOC
 sl-103,19,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-103,19,3,zadovoljna,,zadovoljen,Agpfsn,ADJ,O,,O
 sl-103,19,4,",",,",",Z,PUNCT,O,,O
@@ -545,13 +545,13 @@ sl-103,23,33,že,,že,Q,PART,O,,O
 sl-103,23,34,prej,,prej,Rgc,ADV,O,,O
 sl-103,23,35,kot,,kot,Cs,SCONJ,O,,O
 sl-103,23,36,na,,na,Sa,ADP,O,,O
-sl-103,23,37,noč,noč,noč,Ncfsa,NOUN,B-EVT,EVT-Halloween,O
+sl-103,23,37,noč,noč,noč,Ncfsa,NOUN,B-EVT,EVT-Halloween,B-EVT
 sl-103,23,38,čarovnic,čarovnic,čarovnica,Ncfpg,NOUN,I-EVT,EVT-Halloween,I-EVT
 sl-103,23,39,",",,",",Z,PUNCT,O,,O
 sl-103,23,40,če,,če,Cs,SCONJ,O,,O
 sl-103,23,41,bi,,biti,Va-c,AUX,O,,O
 sl-103,23,42,britanski,britanski,britanski,Agpmsay,ADJ,B-ORG,ORG-British-Parlament,B-ORG
-sl-103,23,43,parlament,parlament,parlament,Ncmsan,NOUN,I-ORG,ORG-British-Parlament,O
+sl-103,23,43,parlament,parlament,parlament,Ncmsan,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-103,23,44,potrdil,,potrditi,Vmep-sm,VERB,O,,O
 sl-103,23,45,že,,že,Q,PART,O,,O
 sl-103,23,46,izpogajani,,izpogajan,Appmsay,ADJ,O,,O
@@ -627,7 +627,7 @@ sl-103,27,14,podaljšanju,,podaljšanje,Ncnsl,NOUN,O,,O
 sl-103,27,15,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-103,27,16,utegnili,,utegniti,Vmbp-pm,VERB,O,,O
 sl-103,27,17,nagajati,,nagajati,Vmpn,VERB,O,,O
-sl-103,27,18,Evropski,Evropska,evropski,Agpfsd,ADJ,B-ORG,ORG-European-Union,B-PER
+sl-103,27,18,Evropski,Evropska,evropski,Agpfsd,ADJ,B-ORG,ORG-European-Union,B-ORG
 sl-103,27,19,uniji,unija,unija,Ncfsd,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-103,27,20,pri,,pri,Sl,ADP,O,,O
 sl-103,27,21,njenem,,njen,Ps3nslsf,DET,O,,O
@@ -700,7 +700,7 @@ sl-103,32,3,",",,",",Z,PUNCT,O,,O
 sl-103,32,4,kako,,kako,Rgp,ADV,O,,O
 sl-103,32,5,so,,biti,Va-r3p-n,AUX,O,,O
 sl-103,32,6,bili,,biti,Va-p-pm,AUX,O,,O
-sl-103,32,7,evropski,,evropski,Agpmpn,ADJ,O,,O
+sl-103,32,7,evropski,,evropski,Agpmpn,ADJ,O,,B-LOC
 sl-103,32,8,voditelji,,voditelj,Ncmpn,NOUN,O,,O
 sl-103,32,9,zadovoljni,,zadovoljen,Agpmpn,ADJ,O,,O
 sl-103,32,10,s,,z,Si,ADP,O,,O
@@ -761,7 +761,7 @@ sl-103,34,23,sprejetje,,sprejetje,Ncnsa,NOUN,O,,O
 sl-103,34,24,ločitvenega,,ločitven,Agpmsg,ADJ,O,,O
 sl-103,34,25,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-103,34,26,.,,.,Z,PUNCT,O,,O
-sl-103,35,1,Evropski,,evropski,Agpmpn,ADJ,O,,B-PER
+sl-103,35,1,Evropski,,evropski,Agpmpn,ADJ,O,,O
 sl-103,35,2,voditelji,,voditelj,Ncmpn,NOUN,O,,O
 sl-103,35,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-103,35,4,sicer,,sicer,Q,PART,O,,O

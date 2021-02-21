@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-53,0,1,Zaposlene,,zaposlen,Appmpa,ADJ,O,,O
 sl-53,0,2,v,,v,Sl,ADP,O,,O
 sl-53,0,3,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG
@@ -186,7 +186,7 @@ sl-53,10,13,krčenja,,krčenje,Ncnsg,NOUN,O,,O
 sl-53,10,14,delovnih,,deloven,Agpnpg,ADJ,O,,O
 sl-53,10,15,mest,,mesto,Ncnpg,NOUN,O,,O
 sl-53,10,16,.,,.,Z,PUNCT,O,,O
-sl-53,11,1,Hkrati,,hkrati,Rgp,ADV,O,,O
+sl-53,11,1,Hkrati,,hkrati,Rgp,ADV,O,,B-ORG
 sl-53,11,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-53,11,3,na,,na,Sl,ADP,O,,O
 sl-53,11,4,Poljskem,Poljska,Poljsko,Npnsl,PROPN,B-LOC,GPE-Poland,B-LOC

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-39,0,1,Prvi,,prvi,Mlomsn,ADJ,O,,O
 sl-39,0,2,mož,,mož,Ncmsn,NOUN,O,,O
 sl-39,0,3,Lufthanse,Lufthansa,Lufthansa,Npfsg,PROPN,B-ORG,ORG-Lufthansa,B-ORG
@@ -8,7 +8,7 @@ sl-39,0,6,in,,in,Cc,CCONJ,O,,O
 sl-39,0,7,trajnostno,,trajnosten,Agpfsa,ADJ,O,,O
 sl-39,0,8,rast,,rast,Ncfsa,NOUN,O,,O
 sl-39,0,9,panoge,,panoga,Ncfsg,NOUN,O,,O
-sl-39,1,1,Kot,,kot,Cs,SCONJ,O,,O
+sl-39,1,1,Kot,,kot,Cs,SCONJ,O,,B-PER
 sl-39,1,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-39,1,3,v,,v,Sl,ADP,O,,O
 sl-39,1,4,ponedeljkovem,,ponedeljkov,Aspmsl,ADJ,O,,O

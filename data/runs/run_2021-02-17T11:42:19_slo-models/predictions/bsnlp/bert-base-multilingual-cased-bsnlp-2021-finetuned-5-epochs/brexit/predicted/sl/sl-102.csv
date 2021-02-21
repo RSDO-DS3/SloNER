@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-102,0,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-102,0,2,želi,,želeti,Vmpr3s,VERB,O,,O
 sl-102,0,3,zagotoviti,,zagotoviti,Vmen,VERB,O,,O
@@ -130,7 +130,7 @@ sl-102,3,56,izstopu,,izstop,Ncmsl,NOUN,O,,O
 sl-102,3,57,na,,na,Sl,ADP,O,,O
 sl-102,3,58,podlagi,,podlaga,Ncfsl,NOUN,O,,O
 sl-102,3,59,ločitvenega,,ločitven,Agpmsg,ADJ,O,,O
-sl-102,3,60,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
+sl-102,3,60,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-102,3,61,.,,.,Z,PUNCT,O,,O
 sl-102,4,1,Pojasnila,,pojasniti,Vmep-sf,VERB,O,,O
 sl-102,4,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -276,7 +276,7 @@ sl-102,8,7,s,,z,Si,ADP,O,,O
 sl-102,8,8,ciljem,,cilj,Ncmsi,NOUN,O,,O
 sl-102,8,9,potrditve,,potrditev,Ncfsg,NOUN,O,,O
 sl-102,8,10,ločitvenega,,ločitven,Agpmsg,ADJ,O,,O
-sl-102,8,11,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
+sl-102,8,11,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-102,8,12,",",,",",Z,PUNCT,O,,O
 sl-102,8,13,ki,,ki,Cs,SCONJ,O,,O
 sl-102,8,14,naj,,naj,Q,PART,O,,O
@@ -428,7 +428,7 @@ sl-102,12,30,maja,,maj,Ncmsg,NOUN,O,,O
 sl-102,12,31,ne,,ne,Q,PART,O,,O
 sl-102,12,32,potrdi,,potrditi,Vmer3s,VERB,O,,O
 sl-102,12,33,ločitvenega,,ločitven,Agpmsg,ADJ,O,,O
-sl-102,12,34,sporazuma,,sporazum,Ncmsg,NOUN,O,,I-PRO
+sl-102,12,34,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-102,12,35,.,,.,Z,PUNCT,O,,O
 sl-102,12,36,“,,“,Z,PUNCT,O,,O
 sl-102,12,37,Če,,če,Cs,SCONJ,O,,O

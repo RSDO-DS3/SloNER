@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-119,0,1,Turčija,Turčija,Turčija,Npfsn,PROPN,B-LOC,GPE-Turkey,B-LOC
 sl-119,0,2,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-119,0,3,",",,",",Z,PUNCT,O,,O
@@ -275,9 +275,9 @@ sl-119,12,10,po,,po,Sl,ADP,O,,O
 sl-119,12,11,pisanju,,pisanje,Ncnsl,NOUN,O,,O
 sl-119,12,12,ameriškega,,ameriški,Agpmsg,ADJ,O,,O
 sl-119,12,13,časnika,,časnik,Ncmsg,NOUN,O,,O
-sl-119,12,14,New,New,New,Npmsn,PROPN,B-ORG,ORG-New-York-Times,B-PRO
-sl-119,12,15,York,York,York,Npmsn,PROPN,I-ORG,ORG-New-York-Times,B-PRO
-sl-119,12,16,Times,Times,Times,Npmsn,PROPN,I-ORG,ORG-New-York-Times,I-PRO
+sl-119,12,14,New,New,New,Npmsn,PROPN,B-ORG,ORG-New-York-Times,B-ORG
+sl-119,12,15,York,York,York,Npmsn,PROPN,I-ORG,ORG-New-York-Times,I-ORG
+sl-119,12,16,Times,Times,Times,Npmsn,PROPN,I-ORG,ORG-New-York-Times,I-ORG
 sl-119,12,17,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-119,12,18,znano,,znan,Appnsn,ADJ,O,,O
 sl-119,12,19,",",,",",Z,PUNCT,O,,O
@@ -311,7 +311,7 @@ sl-119,13,20,vojske,,vojska,Ncfsg,NOUN,O,,O
 sl-119,13,21,.,,.,Z,PUNCT,O,,O
 sl-119,14,1,Domnevno,,domnevno,Rgp,ADV,O,,O
 sl-119,14,2,48-letni,,4rvleten,Agpmsny,ADJ,O,,O
-sl-119,14,3,Iračan,,Iračan,Npmsn,PROPN,O,,B-PER
+sl-119,14,3,Iračan,,Iračan,Npmsn,PROPN,O,,O
 sl-119,14,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-119,14,5,nasilno,,nasilen,Agpnsa,ADJ,O,,O
 sl-119,14,6,džihadistično,,džihadističen,Agpnsa,ADJ,O,,O

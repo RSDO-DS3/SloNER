@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-18,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-18,0,2,v,,v,Sl,ADP,O,,O
 sl-18,0,3,škripcih,,škripec,Ncmpl,NOUN,O,,O
@@ -139,7 +139,7 @@ sl-18,5,16,delajo,,delati,Vmpr3p,VERB,O,,O
 sl-18,5,17,",",,",",Z,PUNCT,O,,O
 sl-18,5,18,in,,in,Cc,CCONJ,O,,O
 sl-18,5,19,ne,,ne,Q,PART,O,,O
-sl-18,5,20,irsko,,irski,Agpfsa,ADJ,O,,O
+sl-18,5,20,irsko,,irski,Agpfsa,ADJ,O,,B-LOC
 sl-18,5,21,zakonodajo,,zakonodaja,Ncfsa,NOUN,O,,O
 sl-18,5,22,.,,.,Z,PUNCT,O,,O
 sl-18,6,1,Prav,,prav,Q,PART,O,,O

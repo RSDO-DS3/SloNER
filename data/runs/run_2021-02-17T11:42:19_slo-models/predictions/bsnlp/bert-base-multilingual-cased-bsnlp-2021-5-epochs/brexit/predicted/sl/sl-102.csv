@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-102,0,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-102,0,2,želi,,želeti,Vmpr3s,VERB,O,,O
 sl-102,0,3,zagotoviti,,zagotoviti,Vmen,VERB,O,,O
@@ -117,8 +117,8 @@ sl-102,3,43,močno,,močno,Rgp,ADV,O,,O
 sl-102,3,44,obžaluje,,obžalovati,Vmpr3s,VERB,O,,O
 sl-102,3,45,",",,",",Z,PUNCT,O,,O
 sl-102,3,46,da,,da,Cs,SCONJ,O,,O
-sl-102,3,47,britanski,britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,O
-sl-102,3,48,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,O
+sl-102,3,47,britanski,britanski,britanski,Agpmsny,ADJ,B-ORG,ORG-British-Parlament,B-ORG
+sl-102,3,48,parlament,parlament,parlament,Ncmsn,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-102,3,49,še,,še,Q,PART,O,,O
 sl-102,3,50,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-102,3,51,uspel,,uspeti,Vmep-sm,VERB,O,,O

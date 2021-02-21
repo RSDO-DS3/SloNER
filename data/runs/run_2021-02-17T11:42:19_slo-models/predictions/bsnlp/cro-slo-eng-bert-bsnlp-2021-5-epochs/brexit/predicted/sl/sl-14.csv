@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-14,0,1,Pravilno,,pravilno,Rgp,ADV,O,,O
 sl-14,0,2,napovedal,,napovedati,Vmep-sm,VERB,O,,O
 sl-14,0,3,zmago,,zmaga,Ncfsa,NOUN,O,,O
@@ -36,7 +36,7 @@ sl-14,3,1,Britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-14,3,2,napovedovalec,,napovedovalec,Ncmsn,NOUN,O,,O
 sl-14,3,3,prihodnosti,,prihodnost,Ncfsg,NOUN,O,,O
 sl-14,3,4,Craig,Craig,Craig,Npmsn,PROPN,B-PER,PER-Craig-Hamilton-Parker,B-PER
-sl-14,3,5,Hamilton-Parker,Hamilton-Parker,Hamilton'parker,Npmsn,PROPN,I-PER,PER-Craig-Hamilton-Parker,B-PER
+sl-14,3,5,Hamilton-Parker,Hamilton-Parker,Hamilton'parker,Npmsn,PROPN,I-PER,PER-Craig-Hamilton-Parker,I-PER
 sl-14,3,6,",",,",",Z,PUNCT,O,,O
 sl-14,3,7,ki,,ki,Cs,SCONJ,O,,O
 sl-14,3,8,je,,biti,Va-r3s-n,AUX,O,,O
@@ -44,7 +44,7 @@ sl-14,3,9,pravilno,,pravilno,Rgp,ADV,O,,O
 sl-14,3,10,napovedal,,napovedati,Vmep-sm,VERB,O,,O
 sl-14,3,11,zmago,,zmaga,Ncfsa,NOUN,O,,O
 sl-14,3,12,Donalda,Donald,Donald,Npmsg,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-14,3,13,Trumpa,Trump,Trump,Npmsg,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-14,3,13,Trumpa,Trump,Trump,Npmsg,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-14,3,14,na,,na,Sl,ADP,O,,O
 sl-14,3,15,ameriških,,ameriški,Agpfpl,ADJ,O,,O
 sl-14,3,16,volitvah,,volitev,Ncfpl,NOUN,O,,O
@@ -198,7 +198,7 @@ sl-14,14,2,.,,.,Z,PUNCT,O,,O
 sl-14,15,1,Zdajšnji,,zdajšnji,Agpmsny,ADJ,O,,O
 sl-14,15,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-14,15,3,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-14,15,4,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-14,15,4,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-14,15,5,naj,,naj,Q,PART,O,,O
 sl-14,15,6,bi,,biti,Va-c,AUX,O,,O
 sl-14,15,7,moral,,morati,Vmpp-sm,VERB,O,,O
@@ -238,7 +238,7 @@ sl-14,16,13,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-14,16,14,neuspešni,,neuspešen,Agpmpn,ADJ,O,,O
 sl-14,16,15,.,,.,Z,PUNCT,O,,O
 sl-14,17,1,Pravzaprav,,pravzaprav,Q,PART,O,,O
-sl-14,17,2,Hamilton-Parker,Hamilton-Parker,Hamilton'parker,Npmsn,PROPN,B-PER,PER-Craig-Hamilton-Parker,O
+sl-14,17,2,Hamilton-Parker,Hamilton-Parker,Hamilton'parker,Npmsn,PROPN,B-PER,PER-Craig-Hamilton-Parker,B-PER
 sl-14,17,3,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-14,17,4,",",,",",Z,PUNCT,O,,O
 sl-14,17,5,da,,da,Cs,SCONJ,O,,O
@@ -407,7 +407,7 @@ sl-14,27,21,z,,z,Sg,ADP,O,,O
 sl-14,27,22,mesta,,mesto,Ncnsg,NOUN,O,,O
 sl-14,27,23,predsednika,,predsednik,Ncmsg,NOUN,O,,O
 sl-14,27,24,Severne,Severne,severen,Agpfsg,ADJ,B-LOC,GPE-North-Korea,B-LOC
-sl-14,27,25,Koreje,Koreje,Koreja,Npfsg,PROPN,I-LOC,GPE-North-Korea,B-LOC
+sl-14,27,25,Koreje,Koreje,Koreja,Npfsg,PROPN,I-LOC,GPE-North-Korea,I-LOC
 sl-14,27,26,.,,.,Z,PUNCT,O,,O
 sl-14,28,1,To,,ta,Pd-nsn,DET,O,,O
 sl-14,28,2,naj,,naj,Q,PART,O,,O

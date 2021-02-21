@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-123,0,1,Betka,Betka,Betka,Npfsn,PROPN,B-PER,PER-Betka-Šuhel-Mikolič,B-PER
 sl-123,0,2,Šuhel,Šuhel,Šuhel,Npfsn,PROPN,I-PER,PER-Betka-Šuhel-Mikolič,I-PER
 sl-123,0,3,Mikolič,Mikolič,Mikolič,Npfsn,PROPN,I-PER,PER-Betka-Šuhel-Mikolič,I-PER
@@ -53,10 +53,10 @@ sl-123,3,15,letom,,leto,Ncnsi,NOUN,O,,O
 sl-123,3,16,bolj,,bolj,Rgc,ADV,O,,O
 sl-123,3,17,priljubljeno,,priljubljen,Agpfsa,ADJ,O,,O
 sl-123,3,18,zgodbo,,zgodba,Ncfsa,NOUN,O,,O
-sl-123,3,19,Od,Od,od,Sg,ADP,B-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,3,20,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,3,21,do,do,do,Sg,ADP,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,3,22,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
+sl-123,3,19,Od,Od,od,Sg,ADP,B-PRO,PRO-Od-vzhoda-do-vzhoda,B-PRO
+sl-123,3,20,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
+sl-123,3,21,do,do,do,Sg,ADP,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
+sl-123,3,22,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
 sl-123,3,23,",",,",",Z,PUNCT,O,,O
 sl-123,3,24,ki,,ki,Cs,SCONJ,O,,O
 sl-123,3,25,h,,k,Sd,ADP,O,,O
@@ -104,7 +104,7 @@ sl-123,5,6,zraka,,zrak,Ncmsg,NOUN,O,,O
 sl-123,5,7,postanejo,,postati,Vmer3p,VERB,O,,O
 sl-123,5,8,manjše,,majhen,Agcfpn,ADJ,O,,O
 sl-123,5,9,.,,.,Z,PUNCT,O,,O
-sl-123,6,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,6,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,6,2,:,,:,Z,PUNCT,O,,O
 sl-123,6,3,Pred,,pred,Si,ADP,O,,O
 sl-123,6,4,časom,,čas,Ncmsi,NOUN,O,,O
@@ -251,7 +251,7 @@ sl-123,13,33,tisti,,tisti,Pd-msa,DET,O,,O
 sl-123,13,34,dan,,dan,Ncmsan,NOUN,O,,O
 sl-123,13,35,prinaša,,prinašati,Vmpr3s,VERB,O,,O
 sl-123,13,36,...,,...,Y,X,O,,O
-sl-123,14,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,14,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,14,2,:,,:,Z,PUNCT,O,,O
 sl-123,14,3,Kako,,kako,Rgp,ADV,O,,O
 sl-123,14,4,sicer,,sicer,Q,PART,O,,O
@@ -370,7 +370,7 @@ sl-123,20,33,.,,.,Z,PUNCT,O,,O
 sl-123,20,34,(,,(,Z,PUNCT,O,,O
 sl-123,20,35,smeh,,smeh,Ncmsn,NOUN,O,,O
 sl-123,20,36,),,),Z,PUNCT,O,,O
-sl-123,21,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,21,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,21,2,:,,:,Z,PUNCT,O,,O
 sl-123,21,3,Zakaj,,zakaj,Rgp,ADV,O,,O
 sl-123,21,4,ste,,biti,Va-r2p-n,AUX,O,,O
@@ -688,10 +688,10 @@ sl-123,44,7,",",,",",Z,PUNCT,O,,O
 sl-123,44,8,ki,,ki,Cs,SCONJ,O,,O
 sl-123,44,9,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-123,44,10,projekt,,projekt,Ncmsn,NOUN,O,,O
-sl-123,44,11,Od,Od,od,Sg,ADP,B-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,44,12,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,44,13,do,do,do,Sg,ADP,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
-sl-123,44,14,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,O
+sl-123,44,11,Od,Od,od,Sg,ADP,B-PRO,PRO-Od-vzhoda-do-vzhoda,B-PRO
+sl-123,44,12,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
+sl-123,44,13,do,do,do,Sg,ADP,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
+sl-123,44,14,vzhoda,vzhoda,vzhod,Ncmsg,NOUN,I-PRO,PRO-Od-vzhoda-do-vzhoda,I-PRO
 sl-123,44,15,premakne,,premakniti,Vmer3s,VERB,O,,O
 sl-123,44,16,iz,,iz,Sg,ADP,O,,O
 sl-123,44,17,cone,,cona,Ncfsg,NOUN,O,,O
@@ -724,7 +724,7 @@ sl-123,44,43,za,,za,Sa,ADP,O,,O
 sl-123,44,44,nadaljevanje,,nadaljevanje,Ncnsa,NOUN,O,,O
 sl-123,44,45,projekta,,projekt,Ncmsg,NOUN,O,,O
 sl-123,44,46,.,,.,Z,PUNCT,O,,O
-sl-123,45,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,45,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,45,2,:,,:,Z,PUNCT,O,,O
 sl-123,45,3,Kaj,,kaj,Pq-nsn,PRON,O,,O
 sl-123,45,4,vam,,ti,Pp2-pd,PRON,O,,O
@@ -881,7 +881,7 @@ sl-123,57,13,na,,na,Sa,ADP,O,,O
 sl-123,57,14,plodna,,ploden,Agpnpa,ADJ,O,,O
 sl-123,57,15,tla,,tla,Ncnpa,NOUN,O,,O
 sl-123,57,16,.,,.,Z,PUNCT,O,,O
-sl-123,58,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,58,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,58,2,:,,:,Z,PUNCT,O,,O
 sl-123,58,3,Poskrbeli,,poskrbeti,Vmep-pm,VERB,O,,O
 sl-123,58,4,ste,,biti,Va-r2p-n,AUX,O,,O
@@ -1035,7 +1035,7 @@ sl-123,67,47,...,,...,Y,X,O,,O
 sl-123,67,48,(,,(,Z,PUNCT,O,,O
 sl-123,67,49,smeh,,smeh,Ncmsn,NOUN,O,,O
 sl-123,67,50,),,),Z,PUNCT,O,,O
-sl-123,68,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,68,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,68,2,:,,:,Z,PUNCT,O,,O
 sl-123,68,3,Se,,se,Px------y,PRON,O,,O
 sl-123,68,4,ljudje,,človek,Ncmpn,NOUN,O,,O
@@ -1210,7 +1210,7 @@ sl-123,82,14,na,,na,Sl,ADP,O,,O
 sl-123,82,15,bolniškem,,bolniški,Agpmsl,ADJ,O,,O
 sl-123,82,16,dopustu,,dopust,Ncmsl,NOUN,O,,O
 sl-123,82,17,.,,.,Z,PUNCT,O,,O
-sl-123,83,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,83,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,83,2,:,,:,Z,PUNCT,O,,O
 sl-123,83,3,Kdaj,,kdaj,Rgp,ADV,O,,O
 sl-123,83,4,ste,,biti,Va-r2p-n,AUX,O,,O
@@ -1408,12 +1408,12 @@ sl-123,96,44,šest,,šest,Mlc-pa,NUM,O,,O
 sl-123,96,45,svetovnih,,svetoven,Agpmpg,ADJ,O,,O
 sl-123,96,46,maratonov,,maraton,Ncmpg,NOUN,O,,O
 sl-123,96,47,(,,(,Z,PUNCT,O,,O
-sl-123,96,48,World,,World,Npmsn,PROPN,O,,B-EVT
+sl-123,96,48,World,,World,Npmsn,PROPN,O,,O
 sl-123,96,49,Marathon,,Marathon,Npmsn,PROPN,O,,O
 sl-123,96,50,Majors,,Majors,Npmsn,PROPN,O,,O
 sl-123,96,51,),,),Z,PUNCT,O,,O
 sl-123,96,52,.,,.,Z,PUNCT,O,,O
-sl-123,97,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,97,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,97,2,:,,:,Z,PUNCT,O,,O
 sl-123,97,3,Največkrat,,največkrat,Rgs,ADV,O,,O
 sl-123,97,4,je,,biti,Va-r3s-n,AUX,O,,O
@@ -1609,7 +1609,7 @@ sl-123,112,5,in,,in,Cc,CCONJ,O,,O
 sl-123,112,6,proti,,proti,Sd,ADP,O,,O
 sl-123,112,7,stresu,,stres,Ncmsd,NOUN,O,,O
 sl-123,112,8,.,,.,Z,PUNCT,O,,O
-sl-123,113,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,113,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,113,2,:,,:,Z,PUNCT,O,,O
 sl-123,113,3,Imate,,imeti,Vmpr2p-n,VERB,O,,O
 sl-123,113,4,kakšen,,kakšen,Pq-msa,DET,O,,O
@@ -1706,7 +1706,7 @@ sl-123,123,11,.,,.,Z,PUNCT,O,,O
 sl-123,123,12,(,,(,Z,PUNCT,O,,O
 sl-123,123,13,smeh,,smeh,Ncmsn,NOUN,O,,O
 sl-123,123,14,),,),Z,PUNCT,O,,O
-sl-123,124,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,124,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,124,2,:,,:,Z,PUNCT,O,,O
 sl-123,124,3,Kdaj,,kdaj,Rgp,ADV,O,,O
 sl-123,124,4,sami,,sam,Agpmpn,ADJ,O,,O
@@ -1774,7 +1774,7 @@ sl-123,131,6,prediham,,predihati,Vmer1s,VERB,O,,O
 sl-123,131,7,in,,in,Cc,CCONJ,O,,O
 sl-123,131,8,izdiham,,izdihati,Vmer1s,VERB,O,,O
 sl-123,131,9,.,,.,Z,PUNCT,O,,O
-sl-123,132,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-PRO
+sl-123,132,1,Story,Story,Story,Npmsn,PROPN,B-ORG,ORG-Story,B-ORG
 sl-123,132,2,:,,:,Z,PUNCT,O,,O
 sl-123,132,3,Prenašate,,prenašati,Vmpr2p,VERB,O,,O
 sl-123,132,4,te,,ta,Pd-fpa,DET,O,,O
@@ -1888,7 +1888,7 @@ sl-123,143,15,s,,z,Si,ADP,O,,O
 sl-123,143,16,plesnimi,,plesen,Agpmpi,ADJ,O,,O
 sl-123,143,17,treningi,,trening,Ncmpi,NOUN,O,,O
 sl-123,143,18,.,,.,Z,PUNCT,O,,O
-sl-123,144,1,Mali,,mali,Agpmsny,ADJ,O,,B-LOC
+sl-123,144,1,Mali,,mali,Agpmsny,ADJ,O,,O
 sl-123,144,2,Etijen,Etijen,Etijen,Npmsn,PROPN,B-PER,PER-Etijen,B-PER
 sl-123,144,3,pa,,pa,Cc,CCONJ,O,,O
 sl-123,144,4,talentiran,,talentiran,Appmsnn,ADJ,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-19,0,1,Bank,Bank,bank,Xf,X,B-ORG,ORG-Bank-of-England,B-ORG
 sl-19,0,2,of,of,of,Xf,X,I-ORG,ORG-Bank-of-England,I-ORG
 sl-19,0,3,England,England,England,Npmsn,PROPN,I-ORG,ORG-Bank-of-England,I-ORG
@@ -32,7 +32,7 @@ sl-19,1,15,transakcij,,transakcija,Ncfpg,NOUN,O,,O
 sl-19,1,16,",",,",",Z,PUNCT,O,,O
 sl-19,1,17,in,,in,Cc,CCONJ,O,,O
 sl-19,1,18,centralna,,centralen,Agpfsn,ADJ,O,,B-ORG
-sl-19,1,19,banka,,banka,Ncfsn,NOUN,O,,I-ORG
+sl-19,1,19,banka,,banka,Ncfsn,NOUN,O,,O
 sl-19,1,20,je,,biti,Va-r3s-n,AUX,O,,O
 sl-19,1,21,v,,v,Sl,ADP,O,,O
 sl-19,1,22,povzetku,,povzetek,Ncmsl,NOUN,O,,O
@@ -78,7 +78,7 @@ sl-19,2,8,izstopnega,,izstopen,Agpmsg,ADJ,O,,O
 sl-19,2,9,dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-19,2,10,po,,po,Sl,ADP,O,,O
 sl-19,2,11,opozorilih,,opozorilo,Ncnpl,NOUN,O,,O
-sl-19,2,12,centralne,,centralen,Agpfsg,ADJ,O,,B-ORG
+sl-19,2,12,centralne,,centralen,Agpfsg,ADJ,O,,O
 sl-19,2,13,banke,,banka,Ncfsg,NOUN,O,,O
 sl-19,2,14,ne,,ne,Q,PART,O,,O
 sl-19,2,15,bi,,biti,Va-c,AUX,O,,O
@@ -124,7 +124,7 @@ sl-19,3,23,«,,«,Z,PUNCT,O,,O
 sl-19,3,24,je,,biti,Va-r3s-n,AUX,O,,O
 sl-19,3,25,ocenila,,oceniti,Vmep-sf,VERB,O,,O
 sl-19,3,26,britanska,britanska,britanski,Agpfsn,ADJ,B-ORG,ORG-Bank-of-England,B-ORG
-sl-19,3,27,centralna,centralna,centralen,Agpfsn,ADJ,I-ORG,ORG-Bank-of-England,B-ORG
+sl-19,3,27,centralna,centralna,centralen,Agpfsn,ADJ,I-ORG,ORG-Bank-of-England,I-ORG
 sl-19,3,28,banka,banka,banka,Ncfsn,NOUN,I-ORG,ORG-Bank-of-England,I-ORG
 sl-19,3,29,in,,in,Cc,CCONJ,O,,O
 sl-19,3,30,dodala,,dodati,Vmep-sf,VERB,O,,O
@@ -217,7 +217,7 @@ sl-19,8,5,še,,še,Q,PART,O,,O
 sl-19,8,6,okrepili,,okrepiti,Vmep-pm,VERB,O,,O
 sl-19,8,7,operacije,,operacija,Ncfpa,NOUN,O,,O
 sl-19,8,8,refinanciranja,,refinanciranje,Ncnsg,NOUN,O,,O
-sl-19,8,9,bank,,banka,Ncfpg,NOUN,O,,I-ORG
+sl-19,8,9,bank,,banka,Ncfpg,NOUN,O,,O
 sl-19,8,10,",",,",",Z,PUNCT,O,,O
 sl-19,8,11,ki,,ki,Cs,SCONJ,O,,O
 sl-19,8,12,bodo,,biti,Va-f3p-n,VERB,O,,O
@@ -296,7 +296,7 @@ sl-19,12,4,mora,,morati,Vmpr3s,VERB,O,,O
 sl-19,12,5,po,,po,Sl,ADP,O,,O
 sl-19,12,6,navedbah,,navedba,Ncfpl,NOUN,O,,O
 sl-19,12,7,centralne,,centralen,Agpfsg,ADJ,O,,B-ORG
-sl-19,12,8,banke,,banka,Ncfsg,NOUN,O,,O
+sl-19,12,8,banke,,banka,Ncfsg,NOUN,O,,I-ORG
 sl-19,12,9,pripraviti,,pripraviti,Vmen,VERB,O,,O
 sl-19,12,10,tudi,,tudi,Q,PART,O,,O
 sl-19,12,11,na,,na,Sa,ADP,O,,O

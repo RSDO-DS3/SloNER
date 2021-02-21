@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-118,0,1,Farage,Farage,Farage,Npmsn,PROPN,B-PER,PER-Nigel-Farage,B-PER
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-118,0,1,Farage,Farage,Farage,Npmsn,PROPN,B-PER,PER-Nigel-Farage,O
 sl-118,0,2,poziva,,pozivati,Vmpr3s,VERB,O,,O
 sl-118,0,3,Johnsona,Johnson,Johnson,Npmsay,PROPN,B-PER,PER-Boris-Johnson,B-PER
 sl-118,0,4,k,,k,Sd,ADP,O,,O
@@ -113,7 +113,7 @@ sl-118,4,16,",",,",",Z,PUNCT,O,,O
 sl-118,4,17,se,,se,Px------y,PRON,O,,O
 sl-118,4,18,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-118,4,19,Farageova,Farage,Farageov,Aspfsn,ADJ,B-PER,PER-Nigel-Farage,B-PER
-sl-118,4,20,stranka,,stranka,Ncfsn,NOUN,O,,I-ORG
+sl-118,4,20,stranka,,stranka,Ncfsn,NOUN,O,,O
 sl-118,4,21,na,,na,Sl,ADP,O,,O
 sl-118,4,22,volitvah,,volitev,Ncfpl,NOUN,O,,O
 sl-118,4,23,12.,,12.,Mdo,NUM,O,,O
@@ -124,7 +124,7 @@ sl-118,4,27,podpornike,,podpornik,Ncmpa,NOUN,O,,O
 sl-118,4,28,izstopa,,izstop,Ncmsg,NOUN,O,,O
 sl-118,4,29,v,,v,Sl,ADP,O,,O
 sl-118,4,30,vseh,,ves,Pg-npl,DET,O,,O
-sl-118,4,31,britanskih,,britanski,Agpnpl,ADJ,O,,B-ORG
+sl-118,4,31,britanskih,,britanski,Agpnpl,ADJ,O,,O
 sl-118,4,32,okrožjih,,okrožje,Ncnpl,NOUN,O,,O
 sl-118,4,33,.,,.,Z,PUNCT,O,,O
 sl-118,5,1,"""",,"""",Z,PUNCT,O,,O
@@ -157,17 +157,17 @@ sl-118,7,2,sekretar,,sekretar,Ncmsn,NOUN,O,,O
 sl-118,7,3,konservativne,konservativna,konservativen,Agpfsg,ADJ,B-ORG,ORG-Conservative-and-Unionist-Party-UK,B-ORG
 sl-118,7,4,stranke,stranka,stranka,Ncfsg,NOUN,I-ORG,ORG-Conservative-and-Unionist-Party-UK,I-ORG
 sl-118,7,5,James,James,James,Npmsn,PROPN,B-PER,PER-James-Cleverly,B-PER
-sl-118,7,6,Cleverly,Cleverly,Cleverly,Npmsn,PROPN,I-PER,PER-James-Cleverly,B-PER
+sl-118,7,6,Cleverly,Cleverly,Cleverly,Npmsn,PROPN,I-PER,PER-James-Cleverly,I-PER
 sl-118,7,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-118,7,8,zavrnil,,zavrniti,Vmep-sm,VERB,O,,O
 sl-118,7,9,ponudbo,,ponudba,Ncfsa,NOUN,O,,O
-sl-118,7,10,stranke,,stranka,Ncfsg,NOUN,O,,I-ORG
+sl-118,7,10,stranke,,stranka,Ncfsg,NOUN,O,,O
 sl-118,7,11,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-118,7,12,.,,.,Z,PUNCT,O,,O
 sl-118,8,1,"""",,"""",Z,PUNCT,O,,O
 sl-118,8,2,Glas,,glas,Ncmsn,NOUN,O,,O
 sl-118,8,3,za,,za,Sa,ADP,O,,O
-sl-118,8,4,Faragea,Farage,Farage,Npmsay,PROPN,B-PER,PER-Nigel-Farage,B-PRO
+sl-118,8,4,Faragea,Farage,Farage,Npmsay,PROPN,B-PER,PER-Nigel-Farage,B-ORG
 sl-118,8,5,pomeni,,pomeniti,Vmbr3s,VERB,O,,O
 sl-118,8,6,tveganje,,tveganje,Ncnsa,NOUN,O,,O
 sl-118,8,7,",",,",",Z,PUNCT,O,,O
@@ -214,7 +214,7 @@ sl-118,9,10,znova,,znova,Rgp,ADV,O,,O
 sl-118,9,11,privedlo,,privesti,Vmep-sn,VERB,O,,O
 sl-118,9,12,do,,do,Sg,ADP,O,,O
 sl-118,9,13,blokiranega,,blokiran,Appmsg,ADJ,O,,O
-sl-118,9,14,parlamenta,,parlament,Ncmsg,NOUN,O,,I-ORG
+sl-118,9,14,parlamenta,,parlament,Ncmsg,NOUN,O,,O
 sl-118,9,15,",",,",",Z,PUNCT,O,,O
 sl-118,9,16,ki,,ki,Cs,SCONJ,O,,O
 sl-118,9,17,ne,,ne,Q,PART,O,,O
@@ -332,7 +332,7 @@ sl-118,15,3,uživajo,,uživati,Vmpr3p,VERB,O,,O
 sl-118,15,4,liberalni,liberalni,liberalen,Agpmpn,ADJ,B-PER,ORG-Sozialdemokratische-Partei-Deutschlands,B-ORG
 sl-118,15,5,demokrati,demokrati,demokrat,Ncmpn,NOUN,I-PER,ORG-Sozialdemokratische-Partei-Deutschlands,I-ORG
 sl-118,15,6,",",,",",Z,PUNCT,O,,O
-sl-118,15,7,stranka,,stranka,Ncfsn,NOUN,O,,I-ORG
+sl-118,15,7,stranka,,stranka,Ncfsn,NOUN,O,,O
 sl-118,15,8,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-118,15,9,pa,,pa,Cc,CCONJ,O,,O
 sl-118,15,10,je,,biti,Va-r3s-n,VERB,O,,O
@@ -370,7 +370,7 @@ sl-118,17,4,",",,",",Z,PUNCT,O,,O
 sl-118,17,5,potem,,potem,Rgp,ADV,O,,O
 sl-118,17,6,ko,,ko,Cs,SCONJ,O,,O
 sl-118,17,7,so,,biti,Va-r3p-n,AUX,O,,O
-sl-118,17,8,britanski,,britanski,Agpmpn,ADJ,O,,B-ORG
+sl-118,17,8,britanski,,britanski,Agpmpn,ADJ,O,,O
 sl-118,17,9,poslanci,,poslanec,Ncmpn,NOUN,O,,I-PER
 sl-118,17,10,v,,v,Sa,ADP,O,,O
 sl-118,17,11,torek,,torek,Ncmsan,NOUN,O,,O

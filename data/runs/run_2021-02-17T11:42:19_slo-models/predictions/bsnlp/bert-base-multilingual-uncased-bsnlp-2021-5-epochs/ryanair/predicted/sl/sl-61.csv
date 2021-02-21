@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-61,0,1,Italija,Italija,Italija,Npfsn,PROPN,B-LOC,GPE-Italy,O
 sl-61,0,2,zaradi,,zaradi,Sg,ADP,O,,O
 sl-61,0,3,sprememb,,sprememba,Ncfpg,NOUN,O,,O
@@ -8,11 +8,11 @@ sl-61,0,6,zvezi,,zveza,Ncfsl,NOUN,O,,O
 sl-61,0,7,s,,z,Si,ADP,O,,O
 sl-61,0,8,prtljago,,prtljaga,Ncfsi,NOUN,O,,O
 sl-61,0,9,nad,,nad,Sa,ADP,O,,O
-sl-61,0,10,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-61,0,10,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-LOC
 sl-61,0,11,in,,in,Cc,CCONJ,O,,O
-sl-61,0,12,Wizz,Wizz,Wizz,Npmsn,PROPN,B-ORG,ORG-Wizz-Air,O
+sl-61,0,12,Wizz,Wizz,Wizz,Npmsn,PROPN,B-ORG,ORG-Wizz-Air,B-LOC
 sl-61,0,13,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Wizz-Air,O
-sl-61,1,1,Italijanski,,italijanski,Agpmsny,ADJ,O,,O
+sl-61,1,1,Italijanski,,italijanski,Agpmsny,ADJ,O,,B-ORG
 sl-61,1,2,varuh,,varuh,Ncmsn,NOUN,O,,I-ORG
 sl-61,1,3,konkurence,,konkurenca,Ncfsg,NOUN,O,,I-ORG
 sl-61,1,4,je,,biti,Va-r3s-n,AUX,O,,O
@@ -46,7 +46,7 @@ sl-61,1,31,navaja,,navajati,Vmpr3s,VERB,O,,O
 sl-61,1,32,francoska,,francoski,Agpfsn,ADJ,O,,O
 sl-61,1,33,tiskovna,,tiskoven,Agpfsn,ADJ,O,,O
 sl-61,1,34,agencija,,agencija,Ncfsn,NOUN,O,,O
-sl-61,1,35,AFP,AFP,AFP,Npmsn,PROPN,B-ORG,ORG-AFP-Agence-France-Press,O
+sl-61,1,35,AFP,AFP,AFP,Npmsn,PROPN,B-ORG,ORG-AFP-Agence-France-Press,B-ORG
 sl-61,1,36,.,,.,Z,PUNCT,O,,O
 sl-61,2,1,Oba,,oba,Pg-mdn,DET,O,,O
 sl-61,2,2,letalska,,letalski,Agpmdn,ADJ,O,,O
@@ -123,10 +123,10 @@ sl-61,4,34,prejšnji,,prejšnji,Agpmsay,ADJ,O,,O
 sl-61,4,35,teden,,teden,Ncmsan,NOUN,O,,O
 sl-61,4,36,sporočil,,sporočiti,Vmep-sm,VERB,O,,O
 sl-61,4,37,italijanski,,italijanski,Agpmsny,ADJ,O,,O
-sl-61,4,38,varuh,,varuh,Ncmsn,NOUN,O,,I-ORG
-sl-61,4,39,konkurence,,konkurenca,Ncfsg,NOUN,O,,I-ORG
+sl-61,4,38,varuh,,varuh,Ncmsn,NOUN,O,,O
+sl-61,4,39,konkurence,,konkurenca,Ncfsg,NOUN,O,,O
 sl-61,4,40,.,,.,Z,PUNCT,O,,O
-sl-61,5,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,O
+sl-61,5,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-PER
 sl-61,5,2,:,,:,Z,PUNCT,O,,O
 sl-61,5,3,Novost,,novost,Ncfsn,NOUN,O,,O
 sl-61,5,4,so,,biti,Va-r3p-n,AUX,O,,O
@@ -134,7 +134,7 @@ sl-61,5,5,vsi,,ves,Pg-mpn,DET,O,,O
 sl-61,5,6,dobro,,dobro,Rgp,ADV,O,,O
 sl-61,5,7,sprejeli,,sprejeti,Vmep-pm,VERB,O,,O
 sl-61,6,1,V,,v,Sl,ADP,O,,O
-sl-61,6,2,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,O
+sl-61,6,2,Ryanairu,Ryanair,Ryanair,Npmsl,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-61,6,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-61,6,4,sicer,,sicer,Q,PART,O,,O
 sl-61,6,5,poudarili,,poudariti,Vmep-pm,VERB,O,,O
@@ -162,7 +162,7 @@ sl-61,6,26,kot,,kot,Cs,SCONJ,O,,O
 sl-61,6,27,letališča,,letališče,Ncnsg,NOUN,O,,O
 sl-61,6,28,po,,po,Sl,ADP,O,,O
 sl-61,6,29,vsej,,ves,Pg-fsl,DET,O,,O
-sl-61,6,30,Evropi,Evropa,Evropa,Npfsl,PROPN,B-LOC,LOC-Europe,O
+sl-61,6,30,Evropi,Evropa,Evropa,Npfsl,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-61,6,31,.,,.,Z,PUNCT,O,,O
 sl-61,7,1,Prepričani,,prepričan,Appmpn,ADJ,O,,O
 sl-61,7,2,so,,biti,Va-r3p-n,AUX,O,,O

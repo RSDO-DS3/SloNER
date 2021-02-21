@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-9,0,1,Domišljija,,domišljija,Ncfsn,NOUN,O,,O
 sl-9,0,2,uličnih,,uličen,Agpmpg,ADJ,O,,O
 sl-9,0,3,performerjev,,performer,Ncmpg,NOUN,O,,O

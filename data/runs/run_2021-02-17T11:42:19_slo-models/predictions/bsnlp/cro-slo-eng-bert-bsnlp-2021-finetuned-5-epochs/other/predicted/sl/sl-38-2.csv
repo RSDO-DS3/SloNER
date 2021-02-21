@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-38-2,0,1,Pogrešate,,pogrešati,Vmpr2p,VERB,O,,O
 sl-38-2,0,2,sneg,,sneg,Ncmsan,NOUN,O,,O
 sl-38-2,0,3,?,,?,Z,PUNCT,O,,O
@@ -14,7 +14,7 @@ sl-38-2,2,1,Zadnje,,zadnji,Agpmpa,ADJ,O,,O
 sl-38-2,2,2,dni,,dan,Ncmpa,NOUN,O,,O
 sl-38-2,2,3,se,,se,Px------y,PRON,O,,O
 sl-38-2,2,4,številni,,številen,Agpmpn,ADJ,O,,O
-sl-38-2,2,5,-,,-,Z,PUNCT,O,,B-LOC
+sl-38-2,2,5,-,,-,Z,PUNCT,O,,O
 sl-38-2,2,6,ne,,ne,Q,PART,O,,O
 sl-38-2,2,7,samo,,samo,Q,PART,O,,O
 sl-38-2,2,8,žičničarji,,žičničar,Ncmpn,NOUN,O,,O
@@ -286,7 +286,7 @@ sl-38-2,14,29,občasnimi,,občasen,Agpfpi,ADJ,O,,O
 sl-38-2,14,30,posameznimi,,posamezen,Agpfpi,ADJ,O,,O
 sl-38-2,14,31,snežinkami,,snežinka,Ncfpi,NOUN,O,,O
 sl-38-2,14,32,.,,.,Z,PUNCT,O,,O
-sl-38-2,15,1,Severni,,severen,Agpmsny,ADJ,O,,B-LOC
+sl-38-2,15,1,Severni,,severen,Agpmsny,ADJ,O,,O
 sl-38-2,15,2,fen,,fen,Ncmsn,NOUN,O,,O
 sl-38-2,15,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-38-2,15,4,močan,,močen,Agpmsnn,ADJ,O,,O
@@ -337,8 +337,8 @@ sl-38-2,17,21,pojavlja,,pojavljati,Vmpr3s,VERB,O,,O
 sl-38-2,17,22,tudi,,tudi,Q,PART,O,,O
 sl-38-2,17,23,v,,v,Sl,ADP,O,,O
 sl-38-2,17,24,dolini,dolina,dolina,Ncfsl,NOUN,B-LOC,LOC-Sava-Bohinjka-Valley,B-LOC
-sl-38-2,17,25,Save,Save,Sava,Npfsg,PROPN,I-LOC,LOC-Sava-Bohinjka-Valley,B-LOC
-sl-38-2,17,26,Bohinjke,Bohinjke,Bohinjka,Npfsg,PROPN,I-LOC,LOC-Sava-Bohinjka-Valley,B-LOC
+sl-38-2,17,25,Save,Save,Sava,Npfsg,PROPN,I-LOC,LOC-Sava-Bohinjka-Valley,I-LOC
+sl-38-2,17,26,Bohinjke,Bohinjke,Bohinjka,Npfsg,PROPN,I-LOC,LOC-Sava-Bohinjka-Valley,I-LOC
 sl-38-2,17,27,",",,",",Z,PUNCT,O,,O
 sl-38-2,17,28,pod,,pod,Si,ADP,O,,O
 sl-38-2,17,29,Kamniško-Savinjskimi,Kamniško-Savinjske,kamniškovsavinjski,Agpfpi,ADJ,B-LOC,LOC-Kamnik-Savinja-Alps,B-LOC
@@ -464,7 +464,7 @@ sl-38-2,22,12,jugovzhodni,jugovzhodna,jugovzhoden,Agpfsd,ADJ,B-LOC,LOC-Southeast
 sl-38-2,22,13,in,,in,Cc,CCONJ,O,,O
 sl-38-2,22,14,deloma,,deloma,Rgp,ADV,O,,O
 sl-38-2,22,15,vzhodni,vzhodna,vzhoden,Agpfsd,ADJ,B-LOC,LOC-Eastern-Europe,B-LOC
-sl-38-2,22,16,Evropi,Evropa,Evropa,Npfsd,PROPN,I-LOC,LOC-Eastern-Europe,B-LOC
+sl-38-2,22,16,Evropi,Evropa,Evropa,Npfsd,PROPN,I-LOC,LOC-Eastern-Europe,I-LOC
 sl-38-2,22,17,.,,.,Z,PUNCT,O,,O
 sl-38-2,23,1,Nad,,nad,Si,ADP,O,,O
 sl-38-2,23,2,našimi,,naš,Ps1mpip,DET,O,,O

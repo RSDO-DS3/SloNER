@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-4,0,1,Skoraj,,skoraj,Q,PART,O,,B-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-4,0,1,Skoraj,,skoraj,Q,PART,O,,O
 sl-4,0,2,tradicionalen,,tradicionalen,Agpmsnn,ADJ,O,,O
 sl-4,0,3,preplah,,preplah,Ncmsn,NOUN,O,,O
 sl-4,0,4,na,,na,Sl,ADP,O,,O
@@ -43,8 +43,8 @@ sl-4,2,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,2,11,najverjetneje,,verjetno,Rgs,ADV,O,,O
 sl-4,2,12,negativno,,negativno,Rgp,ADV,O,,O
 sl-4,2,13,vplival,,vplivati,Vmpp-sm,VERB,O,,O
-sl-4,2,14,orkan,orkan,orkan,Ncmsn,NOUN,B-EVT,EVT-Hurricane-Florence,O
-sl-4,2,15,Florence,Florence,Florenca,Npfsg,PROPN,I-EVT,EVT-Hurricane-Florence,B-EVT
+sl-4,2,14,orkan,orkan,orkan,Ncmsn,NOUN,B-EVT,EVT-Hurricane-Florence,B-EVT
+sl-4,2,15,Florence,Florence,Florenca,Npfsg,PROPN,I-EVT,EVT-Hurricane-Florence,I-EVT
 sl-4,2,16,",",,",",Z,PUNCT,O,,O
 sl-4,2,17,so,,biti,Va-r3p-n,AUX,O,,O
 sl-4,2,18,se,,se,Px------y,PRON,O,,O
@@ -240,7 +240,7 @@ sl-4,8,7,z,,z,Si,ADP,O,,O
 sl-4,8,8,izgubo,,izguba,Ncfsi,NOUN,O,,O
 sl-4,8,9,",",,",",Z,PUNCT,O,,O
 sl-4,8,10,S,S,z,Si,ADP,B-PRO,PRO-S&P-500-Index,B-ORG
-sl-4,8,11,&,&,&,Z,SYM,I-PRO,PRO-S&P-500-Index,O
+sl-4,8,11,&,&,&,Z,SYM,I-PRO,PRO-S&P-500-Index,I-ORG
 sl-4,8,12,P,P,p,Ncmsn,NOUN,I-PRO,PRO-S&P-500-Index,I-ORG
 sl-4,8,13,je,,biti,Va-r3s-n,AUX,O,,O
 sl-4,8,14,teden,,teden,Ncmsan,NOUN,O,,O
@@ -252,7 +252,7 @@ sl-4,8,19,",",,",",Z,PUNCT,O,,O
 sl-4,8,20,medtem,,medtem,Rgp,ADV,O,,O
 sl-4,8,21,ko,,ko,Cs,SCONJ,O,,O
 sl-4,8,22,je,,biti,Va-r3s-n,AUX,O,,O
-sl-4,8,23,Nasdaq,Nasdaq,Nasdaq,Npmsn,PROPN,B-ORG,ORG-Nasdaq-trading-exchange,B-ORG
+sl-4,8,23,Nasdaq,Nasdaq,Nasdaq,Npmsn,PROPN,B-ORG,ORG-Nasdaq-trading-exchange,B-PRO
 sl-4,8,24,teden,,teden,Ncmsan,NOUN,O,,O
 sl-4,8,25,končal,,končati,Vmep-sm,VERB,O,,O
 sl-4,8,26,s,,z,Si,ADP,O,,O
@@ -341,7 +341,7 @@ sl-4,10,35,obliki,,oblika,Ncfsl,NOUN,O,,O
 sl-4,10,36,delnic,,delnica,Ncfpg,NOUN,O,,O
 sl-4,10,37,.,,.,Z,PUNCT,O,,O
 sl-4,11,1,Na,,na,Sa,ADP,O,,O
-sl-4,11,2,evropske,,evropski,Agpmpa,ADJ,O,,O
+sl-4,11,2,evropske,,evropski,Agpmpa,ADJ,O,,B-LOC
 sl-4,11,3,delniške,,delniški,Agpmpa,ADJ,O,,O
 sl-4,11,4,trge,,trg,Ncmpa,NOUN,O,,O
 sl-4,11,5,je,,biti,Va-r3s-n,AUX,O,,O

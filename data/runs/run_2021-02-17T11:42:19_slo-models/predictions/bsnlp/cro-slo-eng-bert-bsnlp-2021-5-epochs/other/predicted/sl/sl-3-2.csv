@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-3-2,0,1,KONTROLORJI,,kontrolor,Ncmpn,NOUN,O,,O
 sl-3-2,1,1,Se,,se,Px------y,PRON,O,,O
 sl-3-2,1,2,odpravljate,,odpravljati,Vmpr2p,VERB,O,,O
@@ -24,7 +24,7 @@ sl-3-2,3,10,leti,,leto,Ncndn,NOUN,O,,O
 sl-3-2,3,11,Adrie,Adria,Adria,Npfsg,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-3-2,3,12,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
 sl-3-2,3,13,iz,,iz,Sg,ADP,O,,O
-sl-3-2,3,14,ljubljanskega,,ljubljanski,Agpnsg,ADJ,O,,O
+sl-3-2,3,14,ljubljanskega,,ljubljanski,Agpnsg,ADJ,O,,B-LOC
 sl-3-2,3,15,letališča,,letališče,Ncnsg,NOUN,O,,O
 sl-3-2,3,16,v,,v,Sa,ADP,O,,O
 sl-3-2,3,17,belgijsko,,belgijski,Agpfsa,ADJ,O,,B-LOC
@@ -36,7 +36,7 @@ sl-3-2,4,3,Kontrolorji,,kontrolor,Ncmpn,NOUN,O,,O
 sl-3-2,4,4,zračnega,,zračen,Agpmsg,ADJ,O,,O
 sl-3-2,4,5,prometa,,promet,Ncmsg,NOUN,O,,O
 sl-3-2,4,6,na,,na,Sl,ADP,O,,O
-sl-3-2,4,7,bruseljskem,,bruseljski,Agpnsl,ADJ,O,,B-LOC
+sl-3-2,4,7,bruseljskem,,bruseljski,Agpnsl,ADJ,O,,O
 sl-3-2,4,8,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-3-2,4,9,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-3-2,4,10,danes,,danes,Rgp,ADV,O,,O
@@ -74,7 +74,7 @@ sl-3-2,5,10,leti,,leto,Ncndn,NOUN,O,,O
 sl-3-2,5,11,Adrie,Adria,Adria,Npfsg,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-3-2,5,12,Airways,Airways,Airways,Npmsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
 sl-3-2,5,13,iz,,iz,Sg,ADP,O,,O
-sl-3-2,5,14,ljubljanskega,,ljubljanski,Agpnsg,ADJ,O,,O
+sl-3-2,5,14,ljubljanskega,,ljubljanski,Agpnsg,ADJ,O,,B-LOC
 sl-3-2,5,15,letališča,,letališče,Ncnsg,NOUN,O,,O
 sl-3-2,5,16,v,,v,Sa,ADP,O,,O
 sl-3-2,5,17,belgijsko,,belgijski,Agpfsa,ADJ,O,,B-LOC
@@ -112,8 +112,8 @@ sl-3-2,7,24,.,,.,Z,PUNCT,O,,O
 sl-3-2,8,1,V,,v,Sl,ADP,O,,O
 sl-3-2,8,2,belgijski,Belgija,belgijski,Agpfsl,ADJ,B-LOC,GPE-Belgium,O
 sl-3-2,8,3,kontroli,,kontrola,Ncfsl,NOUN,O,,O
-sl-3-2,8,4,zračnega,,zračen,Agpmsg,ADJ,O,,O
-sl-3-2,8,5,prometa,,promet,Ncmsg,NOUN,O,,O
+sl-3-2,8,4,zračnega,,zračen,Agpmsg,ADJ,O,,I-ORG
+sl-3-2,8,5,prometa,,promet,Ncmsg,NOUN,O,,I-ORG
 sl-3-2,8,6,Skeyes,Skeyes,Skeyes,Npmsn,PROPN,B-ORG,ORG-Skeyes,B-ORG
 sl-3-2,8,7,so,,biti,Va-r3p-n,AUX,O,,O
 sl-3-2,8,8,pojasnili,,pojasniti,Vmep-pm,VERB,O,,O
@@ -254,7 +254,7 @@ sl-3-2,15,5,Bruselj,Bruselj,Bruselj,Npmsn,PROPN,B-LOC,GPE-Brussles,B-LOC
 sl-3-2,15,6,",",,",",Z,PUNCT,O,,O
 sl-3-2,15,7,dom,,dom,Ncmsn,NOUN,O,,O
 sl-3-2,15,8,zveze,,zveza,Ncfsg,NOUN,O,,O
-sl-3-2,15,9,Nato,Nato,Nato,Npmsn,PROPN,B-ORG,ORG-NATO,B-ORG
+sl-3-2,15,9,Nato,Nato,Nato,Npmsn,PROPN,B-ORG,ORG-NATO,I-ORG
 sl-3-2,15,10,",",,",",Z,PUNCT,O,,O
 sl-3-2,15,11,gostil,,gostiti,Vmpp-sm,VERB,O,,O
 sl-3-2,15,12,srečanje,,srečanje,Ncnsa,NOUN,O,,O
@@ -281,8 +281,8 @@ sl-3-2,16,17,zasedanje,,zasedanje,Ncnsa,NOUN,O,,O
 sl-3-2,16,18,.,,.,Z,PUNCT,O,,O
 sl-3-2,17,1,Drugo,,drug,Mlpnsn,ADJ,O,,O
 sl-3-2,17,2,največje,,velik,Agsnsn,ADJ,O,,O
-sl-3-2,17,3,belgijsko,,belgijski,Agpnsn,ADJ,O,,B-LOC
-sl-3-2,17,4,letališče,,letališče,Ncnsn,NOUN,O,,O
+sl-3-2,17,3,belgijsko,,belgijski,Agpnsn,ADJ,O,,O
+sl-3-2,17,4,letališče,,letališče,Ncnsn,NOUN,O,,B-LOC
 sl-3-2,17,5,Charleroi,Charleroi,Charleroi,Npmsn,PROPN,B-ORG,ORG-Brussels-South-Charleroi-Airport,B-LOC
 sl-3-2,17,6,",",,",",Z,PUNCT,O,,O
 sl-3-2,17,7,ki,,ki,Cs,SCONJ,O,,O

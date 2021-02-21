@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-122,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-122,0,2,potonil,,potoniti,Vmep-sm,VERB,O,,O
 sl-122,0,3,v,,v,Sa,ADP,O,,O
@@ -126,8 +126,8 @@ sl-122,4,48,prejšnji,,prejšnji,Agpmsay,ADJ,O,,O
 sl-122,4,49,teden,,teden,Ncmsan,NOUN,O,,O
 sl-122,4,50,prepričal,,prepričati,Vmep-sm,VERB,O,,O
 sl-122,4,51,kraljico,,kraljica,Ncfsa,NOUN,O,,O
-sl-122,4,52,Elizabeto,Elizabeta,Elizabeta,Npfsa,PROPN,B-PER,PER-Queen-Elizabeth-II,O
-sl-122,4,53,II.,II.,II.,Mro,NUM,I-PER,PER-Queen-Elizabeth-II,O
+sl-122,4,52,Elizabeto,Elizabeta,Elizabeta,Npfsa,PROPN,B-PER,PER-Queen-Elizabeth-II,B-PER
+sl-122,4,53,II.,II.,II.,Mro,NUM,I-PER,PER-Queen-Elizabeth-II,I-PER
 sl-122,4,54,",",,",",Z,PUNCT,O,,O
 sl-122,4,55,da,,da,Cs,SCONJ,O,,O
 sl-122,4,56,mu,,on,Pp3msd--y,PRON,O,,O
@@ -212,7 +212,7 @@ sl-122,8,4,vključno,,vključno,Rgp,ADV,O,,O
 sl-122,8,5,z,,z,Si,ADP,O,,O
 sl-122,8,6,najmanj,,najmanj,Rgs,ADV,O,,O
 sl-122,8,7,15,,15,Mdc,NUM,O,,O
-sl-122,8,8,konservativci,Konservativci,konservativec,Ncmpi,NOUN,B-ORG,ORG-Conservative-and-Unionist-Party-UK,B-ORG
+sl-122,8,8,konservativci,Konservativci,konservativec,Ncmpi,NOUN,B-ORG,ORG-Conservative-and-Unionist-Party-UK,B-PER
 sl-122,8,9,",",,",",Z,PUNCT,O,,O
 sl-122,8,10,proti,,proti,Sd,ADP,O,,O
 sl-122,8,11,brexitu,brexit,brexit,Ncmsd,NOUN,B-EVT,EVT-Brexit,B-EVT
@@ -248,8 +248,8 @@ sl-122,9,26,glavo,,glava,Ncfsa,NOUN,O,,O
 sl-122,9,27,.,,.,Z,PUNCT,O,,O
 sl-122,10,1,Konservativci,Konservativci,konservativec,Ncmpn,NOUN,B-ORG,ORG-Conservative-and-Unionist-Party-UK,B-ORG
 sl-122,10,2,in,,in,Cc,CCONJ,O,,O
-sl-122,10,3,severnoirski,severnoirski,severnoirski,Agpmpn,ADJ,B-ORG,ORG-DUP-Democratic-Unionist-Party,B-PER
-sl-122,10,4,unionisti,unionisti,unionist,Ncmpn,NOUN,I-ORG,ORG-DUP-Democratic-Unionist-Party,I-PER
+sl-122,10,3,severnoirski,severnoirski,severnoirski,Agpmpn,ADJ,B-ORG,ORG-DUP-Democratic-Unionist-Party,B-ORG
+sl-122,10,4,unionisti,unionisti,unionist,Ncmpn,NOUN,I-ORG,ORG-DUP-Democratic-Unionist-Party,I-ORG
 sl-122,10,5,",",,",",Z,PUNCT,O,,O
 sl-122,10,6,ki,,ki,Cs,SCONJ,O,,O
 sl-122,10,7,so,,biti,Va-r3p-n,AUX,O,,O
@@ -288,7 +288,7 @@ sl-122,11,16,to,,ta,Pd-nsn,DET,O,,O
 sl-122,11,17,skoraj,,skoraj,Q,PART,O,,O
 sl-122,11,18,nepomembno,,nepomemben,Agpnsn,ADJ,O,,O
 sl-122,11,19,.,,.,Z,PUNCT,O,,O
-sl-122,12,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
+sl-122,12,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,O
 sl-122,12,2,neposlušnim,,neposlušen,Agpmpd,ADJ,O,,O
 sl-122,12,3,poslancem,,poslanec,Ncmpd,NOUN,O,,O
 sl-122,12,4,ves,,ves,Pg-msa,DET,O,,O
@@ -297,7 +297,7 @@ sl-122,12,6,grozi,,groziti,Vmpr3s,VERB,O,,O
 sl-122,12,7,z,,z,Si,ADP,O,,O
 sl-122,12,8,izključitvijo,,izključitev,Ncfsi,NOUN,O,,O
 sl-122,12,9,iz,,iz,Sg,ADP,O,,O
-sl-122,12,10,stranke,,stranka,Ncfsg,NOUN,O,,I-ORG
+sl-122,12,10,stranke,,stranka,Ncfsg,NOUN,O,,O
 sl-122,12,11,ter,,ter,Cc,CCONJ,O,,O
 sl-122,12,12,nenehno,,nenehno,Rgp,ADV,O,,O
 sl-122,12,13,žuga,,žugati,Vmpr3s,VERB,O,,O
@@ -329,7 +329,7 @@ sl-122,13,14,jih,,on,Pp3mpg--y,PRON,O,,O
 sl-122,13,15,noče,,hoteti,Vmpr3s-y,VERB,O,,O
 sl-122,13,16,nihče,,nihče,Pz-msn,PRON,O,,O
 sl-122,13,17,.,,.,Z,PUNCT,O,,O
-sl-122,14,1,Premier,,premier,Ncmsn,NOUN,O,,O
+sl-122,14,1,Premier,,premier,Ncmsn,NOUN,O,,B-PER
 sl-122,14,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-122,14,3,poslancem,,poslanec,Ncmpd,NOUN,O,,O
 sl-122,14,4,prvi,,prvi,Mlomsa,ADJ,O,,O

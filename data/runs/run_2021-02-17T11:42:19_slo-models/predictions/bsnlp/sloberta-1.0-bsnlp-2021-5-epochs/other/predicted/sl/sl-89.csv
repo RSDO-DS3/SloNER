@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-89,0,1,Kako,,kako,Rgp,ADV,O,,O
 sl-89,0,2,letalske,,letalski,Agpfpn,ADJ,O,,O
 sl-89,0,3,družbe,,družba,Ncfpn,NOUN,O,,O
@@ -20,7 +20,7 @@ sl-89,1,11,cenovnih,,cenoven,Agpmpg,ADJ,O,,O
 sl-89,1,12,razredov,,razred,Ncmpg,NOUN,O,,O
 sl-89,1,13,",",,",",Z,PUNCT,O,,O
 sl-89,1,14,po,,po,Sl,ADP,O,,O
-sl-89,1,15,katerih,,kateri,Pq-fpl,DET,O,,I-LOC
+sl-89,1,15,katerih,,kateri,Pq-fpl,DET,O,,O
 sl-89,1,16,lahko,,lahko,Rgp,ADV,O,,O
 sl-89,1,17,kupimo,,kupiti,Vmer1p,VERB,O,,O
 sl-89,1,18,vozovnice,,vozovnica,Ncfpa,NOUN,O,,O
@@ -264,7 +264,7 @@ sl-89,15,8,letenje,,letenje,Ncnsa,NOUN,O,,O
 sl-89,15,9,običajno,,običajno,Rgp,ADV,O,,O
 sl-89,15,10,dražji,,drag,Agcmpn,ADJ,O,,O
 sl-89,15,11,",",,",",Z,PUNCT,O,,O
-sl-89,15,12,saj,,saj,Cc,CCONJ,O,,I-LOC
+sl-89,15,12,saj,,saj,Cc,CCONJ,O,,O
 sl-89,15,13,je,,biti,Va-r3s-n,AUX,O,,O
 sl-89,15,14,takrat,,takrat,Rgp,ADV,O,,O
 sl-89,15,15,povpraševanje,,povpraševanje,Ncnsn,NOUN,O,,O

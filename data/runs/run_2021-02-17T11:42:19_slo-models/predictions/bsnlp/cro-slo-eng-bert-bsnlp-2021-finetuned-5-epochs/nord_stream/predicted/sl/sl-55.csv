@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-55,0,1,Merklova,Merkel,Merklov,Aspfsn,ADJ,B-PER,PER-Angela-Merkel,B-PER
 sl-55,0,2,in,,in,Cc,CCONJ,O,,O
 sl-55,0,3,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
@@ -19,7 +19,7 @@ sl-55,1,5,in,,in,Cc,CCONJ,O,,O
 sl-55,1,6,ruski,,ruski,Agpmsny,ADJ,O,,O
 sl-55,1,7,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-55,1,8,Vladimir,Vladimir,Vladimir,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
-sl-55,1,9,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,B-PER
+sl-55,1,9,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,I-PER
 sl-55,1,10,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-55,1,11,se,,se,Px------y,PRON,O,,O
 sl-55,1,12,v,,v,Sa,ADP,O,,O
@@ -52,8 +52,8 @@ sl-55,1,38,.,,.,Z,PUNCT,O,,O
 sl-55,2,1,Po,,po,Sl,ADP,O,,O
 sl-55,2,2,pogovorih,,pogovor,Ncmpl,NOUN,O,,O
 sl-55,2,3,na,,na,Sl,ADP,O,,O
-sl-55,2,4,gradu,grad,grad,Ncmsl,NOUN,B-LOC,GPE-Schloss-Meseberg,B-ORG
-sl-55,2,5,Meseberg,Meseberg,Meseberg,Npmsn,PROPN,I-LOC,GPE-Schloss-Meseberg,B-LOC
+sl-55,2,4,gradu,grad,grad,Ncmsl,NOUN,B-LOC,GPE-Schloss-Meseberg,B-LOC
+sl-55,2,5,Meseberg,Meseberg,Meseberg,Npmsn,PROPN,I-LOC,GPE-Schloss-Meseberg,I-LOC
 sl-55,2,6,pri,,pri,Sl,ADP,O,,O
 sl-55,2,7,Berlinu,Berlin,Berlin,Npmsl,PROPN,B-LOC,GPE-Berlin,B-LOC
 sl-55,2,8,je,,biti,Va-r3s-n,AUX,O,,O
@@ -307,7 +307,7 @@ sl-55,13,11,unija,unija,unija,Ncfsn,NOUN,I-ORG,ORG-European-Union,I-ORG
 sl-55,13,12,uvedla,,uvesti,Vmep-sf,VERB,O,,O
 sl-55,13,13,po,,po,Sl,ADP,O,,O
 sl-55,13,14,priključitvi,,priključitev,Ncfsl,NOUN,O,,O
-sl-55,13,15,polotoka,,polotok,Ncmsg,NOUN,O,,B-LOC
+sl-55,13,15,polotoka,,polotok,Ncmsg,NOUN,O,,O
 sl-55,13,16,Krim,Krim,Krim,Npmsn,PROPN,B-LOC,GPE-Crimea,B-LOC
 sl-55,13,17,Rusiji,Rusija,Rusija,Npfsd,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-55,13,18,",",,",",Z,PUNCT,O,,O
@@ -343,7 +343,7 @@ sl-55,14,16,predsednika,,predsednik,Ncmsg,NOUN,O,,O
 sl-55,14,17,Donalda,Donald,Donald,Npmsg,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-55,14,18,Trumpa,Trump,Trump,Npmsg,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-55,14,19,.,,.,Z,PUNCT,O,,O
-sl-55,15,1,Ta,,ta,Pd-msn,DET,O,,O
+sl-55,15,1,Ta,,ta,Pd-msn,DET,O,,B-PER
 sl-55,15,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-55,15,3,med,,med,Si,ADP,O,,O
 sl-55,15,4,drugim,,drug,Mlpnsi,ADJ,O,,O
@@ -402,7 +402,7 @@ sl-55,17,14,avstrijskem,avstrijska,avstrijski,Agpnsl,ADJ,B-LOC,GPE-Austrian-Styr
 sl-55,17,15,Štajerskem,Štajerska,Štajersko,Npnsl,PROPN,I-LOC,GPE-Austrian-Styria,I-LOC
 sl-55,17,16,udeležil,,udeležiti,Vmep-sm,VERB,O,,O
 sl-55,17,17,poroke,,poroka,Ncfsg,NOUN,O,,O
-sl-55,17,18,avstrijske,Avstrija,avstrijski,Agpfsg,ADJ,B-LOC,GPE-Austria,O
+sl-55,17,18,avstrijske,Avstrija,avstrijski,Agpfsg,ADJ,B-LOC,GPE-Austria,B-LOC
 sl-55,17,19,zunanje,,zunanji,Agpfsg,ADJ,O,,O
 sl-55,17,20,ministrice,,ministrica,Ncfsg,NOUN,O,,O
 sl-55,17,21,Karin,Karin,Karin,Npfsn,PROPN,B-PER,PER-Karin-Kneissl,B-PER

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-11,0,1,Gazprom,Gazprom,Gazprom,Npmsn,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-11,0,2,položil,,položiti,Vmep-sm,VERB,O,,O
 sl-11,0,3,okoli,,okoli,Rgp,ADV,O,,O
@@ -22,7 +22,7 @@ sl-11,1,9,položil,,položiti,Vmep-sm,VERB,O,,O
 sl-11,1,10,nekaj,,nekaj,Rgp,DET,O,,O
 sl-11,1,11,manj,,manj,Rgc,DET,O,,O
 sl-11,1,12,kot,,kot,Cs,SCONJ,O,,O
-sl-11,1,13,1000,,1000,Mdc,NUM,O,,I-PRO
+sl-11,1,13,1000,,1000,Mdc,NUM,O,,O
 sl-11,1,14,kilometrov,,kilometer,Ncmpg,NOUN,O,,O
 sl-11,1,15,cevi,,cev,Ncfpg,NOUN,O,,O
 sl-11,1,16,za,,za,Sa,ADP,O,,O
@@ -259,7 +259,7 @@ sl-11,7,43,pisal,,pisati,Vmpp-sm,VERB,O,,O
 sl-11,7,44,bruseljski,,bruseljski,Agpmsny,ADJ,O,,O
 sl-11,7,45,spletni,,spleten,Agpmsny,ADJ,O,,O
 sl-11,7,46,medij,,medij,Ncmsn,NOUN,O,,O
-sl-11,7,47,Euractiv,Euractiv,Euractiv,Npmsn,PROPN,B-PRO,PRO-EURACTIV,B-ORG
+sl-11,7,47,Euractiv,Euractiv,Euractiv,Npmsn,PROPN,B-PRO,PRO-EURACTIV,B-PRO
 sl-11,7,48,",",,",",Z,PUNCT,O,,O
 sl-11,7,49,lahko,,lahko,Rgp,ADV,O,,O
 sl-11,7,50,ogrožena,,ogrožen,Appfsn,ADJ,O,,O
@@ -289,7 +289,7 @@ sl-11,8,22,.,,.,Z,PUNCT,O,,O
 sl-11,9,1,Podjetje,,podjetje,Ncnsn,NOUN,O,,O
 sl-11,9,2,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-11,9,3,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-11,9,4,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-11,9,4,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-11,9,5,",",,",",Z,PUNCT,O,,O
 sl-11,9,6,Gazpromovo,Gazprom,Gazpromov,Aspnsn,ADJ,B-ORG,ORG-Gazprom,B-ORG
 sl-11,9,7,hčerinsko,,hčerinski,Agpnsn,ADJ,O,,O
@@ -314,7 +314,7 @@ sl-11,9,25,Danske,Danska,Danska,Npfsg,PROPN,B-LOC,GPE-Denmark,B-LOC
 sl-11,9,26,",",,",",Z,PUNCT,O,,O
 sl-11,9,27,temveč,,temveč,Cc,CCONJ,O,,O
 sl-11,9,28,čez,,čez,Sa,ADP,O,,O
-sl-11,9,29,dansko,,danski,Agpfsa,ADJ,O,,B-LOC
+sl-11,9,29,dansko,,danski,Agpfsa,ADJ,O,,O
 sl-11,9,30,ekskluzivno,,ekskluziven,Agpfsa,ADJ,O,,O
 sl-11,9,31,ekonomsko,,ekonomski,Agpfsa,ADJ,O,,O
 sl-11,9,32,cono,,cona,Ncfsa,NOUN,O,,O
@@ -323,7 +323,7 @@ sl-11,10,1,V,,v,Sl,ADP,O,,O
 sl-11,10,2,družbi,,družba,Ncfsl,NOUN,O,,O
 sl-11,10,3,Nord,Nord,Nord,Npmsn,PROPN,B-ORG,ORG-Nord-Stream-2-AG,B-ORG
 sl-11,10,4,Stream,Stream,Stream,Npmsn,PROPN,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
-sl-11,10,5,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-PRO
+sl-11,10,5,2,2,2,Mdc,NUM,I-ORG,ORG-Nord-Stream-2-AG,I-ORG
 sl-11,10,6,zdaj,,zdaj,Rgp,ADV,O,,O
 sl-11,10,7,pričakujejo,,pričakovati,Vmpr3p,VERB,O,,O
 sl-11,10,8,presojo,,presoja,Ncfsa,NOUN,O,,O
@@ -336,10 +336,10 @@ sl-11,10,14,",",,",",Z,PUNCT,O,,O
 sl-11,10,15,pri,,pri,Sl,ADP,O,,O
 sl-11,10,16,čemer,,kar,Pr-nsl,PRON,O,,O
 sl-11,10,17,pristojna,,pristojen,Agpfsn,ADJ,O,,O
-sl-11,10,18,danska,Danska,danski,Agpfsn,ADJ,B-LOC,GPE-Denmark,O
-sl-11,10,19,agencija,,agencija,Ncfsn,NOUN,O,,O
-sl-11,10,20,za,,za,Sa,ADP,O,,O
-sl-11,10,21,okolje,,okolje,Ncnsa,NOUN,O,,O
+sl-11,10,18,danska,Danska,danski,Agpfsn,ADJ,B-LOC,GPE-Denmark,B-ORG
+sl-11,10,19,agencija,,agencija,Ncfsn,NOUN,O,,I-ORG
+sl-11,10,20,za,,za,Sa,ADP,O,,I-ORG
+sl-11,10,21,okolje,,okolje,Ncnsa,NOUN,O,,I-ORG
 sl-11,10,22,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-11,10,23,dokončno,,dokončno,Rgp,ADV,O,,O
 sl-11,10,24,zavrnila,,zavrniti,Vmep-sf,VERB,O,,O
@@ -351,7 +351,7 @@ sl-11,10,29,.,,.,Z,PUNCT,O,,O
 sl-11,11,1,A,,a,Cc,CCONJ,O,,O
 sl-11,11,2,po,,po,Sl,ADP,O,,O
 sl-11,11,3,pisanju,,pisanje,Ncnsl,NOUN,O,,O
-sl-11,11,4,Euractiva,Euractiv,Euractiv,Npmsg,PROPN,B-PRO,PRO-EURACTIV,B-ORG
+sl-11,11,4,Euractiva,Euractiv,Euractiv,Npmsg,PROPN,B-PRO,PRO-EURACTIV,B-PRO
 sl-11,11,5,naj,,naj,Q,PART,O,,O
 sl-11,11,6,bi,,biti,Va-c,AUX,O,,O
 sl-11,11,7,bila,,biti,Va-p-sf,AUX,O,,O
@@ -363,7 +363,7 @@ sl-11,11,12,trasa,,trasa,Ncfsn,NOUN,O,,O
 sl-11,11,13,v,,v,Sl,ADP,O,,O
 sl-11,11,14,vodah,,voda,Ncfpl,NOUN,O,,O
 sl-11,11,15,med,,med,Si,ADP,O,,O
-sl-11,11,16,danskim,,danski,Agpmsi,ADJ,O,,B-LOC
+sl-11,11,16,danskim,,danski,Agpmsi,ADJ,O,,O
 sl-11,11,17,otokom,,otok,Ncmsi,NOUN,O,,O
 sl-11,11,18,Bornholm,Bornholm,Bornholm,Npmsn,PROPN,B-LOC,LOC-Bornholm,B-LOC
 sl-11,11,19,in,,in,Cc,CCONJ,O,,O
@@ -471,7 +471,7 @@ sl-11,15,15,do,,do,Sg,ADP,O,,O
 sl-11,15,16,sprememb,,sprememba,Ncfpg,NOUN,O,,O
 sl-11,15,17,direktive,,direktiva,Ncfsg,NOUN,O,,O
 sl-11,15,18,o,,o,Sl,ADP,O,,O
-sl-11,15,19,plinu,,plin,Ncmsl,NOUN,O,,O
+sl-11,15,19,plinu,,plin,Ncmsl,NOUN,O,,I-PRO
 sl-11,15,20,",",,",",Z,PUNCT,O,,O
 sl-11,15,21,ki,,ki,Cs,SCONJ,O,,O
 sl-11,15,22,je,,biti,Va-r3s-n,AUX,O,,O
@@ -485,7 +485,7 @@ sl-11,16,2,jezik,,jezik,Ncmsan,NOUN,O,,O
 sl-11,16,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-11,16,4,nato,,nato,Rgp,ADV,O,,O
 sl-11,16,5,Svet,Svet,svet,Ncmsn,NOUN,B-ORG,ORG-EU-Council,B-ORG
-sl-11,16,6,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-EU-Council,B-ORG
+sl-11,16,6,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-EU-Council,I-ORG
 sl-11,16,7,našel,,najti,Vmep-sm,VERB,O,,O
 sl-11,16,8,še,,še,Q,PART,O,,O
 sl-11,16,9,z,,z,Si,ADP,O,,O
@@ -523,7 +523,7 @@ sl-11,18,7,nadzor,,nadzor,Ncmsan,NOUN,O,,O
 sl-11,18,8,nad,,nad,Si,ADP,O,,O
 sl-11,18,9,plinovodi,,plinovod,Ncmpi,NOUN,O,,O
 sl-11,18,10,",",,",",Z,PUNCT,O,,O
-sl-11,18,11,evropska,,evropski,Agpfsn,ADJ,O,,O
+sl-11,18,11,evropska,,evropski,Agpfsn,ADJ,O,,B-LOC
 sl-11,18,12,zakonodaja,,zakonodaja,Ncfsn,NOUN,O,,O
 sl-11,18,13,naj,,naj,Q,PART,O,,O
 sl-11,18,14,bi,,biti,Va-c,AUX,O,,O

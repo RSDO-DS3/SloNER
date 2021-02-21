@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-159,0,1,Brexit,brexit,Brexit,Npmsn,PROPN,B-EVT,EVT-Brexit,B-EVT
 sl-159,0,2,bi,,biti,Va-c,AUX,O,,O
 sl-159,0,3,Britance,Britanci,Britanec,Npmpa,PROPN,B-PER,GPE-Great-Britain,B-PER
@@ -45,7 +45,7 @@ sl-159,2,1,Po,,po,Sl,ADP,O,,O
 sl-159,2,2,njem,,on,Pp3msl,PRON,O,,O
 sl-159,2,3,bi,,biti,Va-c,AUX,O,,O
 sl-159,2,4,brexit,brexit,brexit,Ncmsn,NOUN,B-EVT,EVT-Brexit,B-EVT
-sl-159,2,5,Britance,Britanci,Britanec,Npmpa,PROPN,B-PER,GPE-Great-Britain,O
+sl-159,2,5,Britance,Britanci,Britanec,Npmpa,PROPN,B-PER,GPE-Great-Britain,B-PER
 sl-159,2,6,stal,,stati,Vmpp-sm,VERB,O,,O
 sl-159,2,7,482.000,,482.000,Mdc,NUM,O,,O
 sl-159,2,8,delovnih,,deloven,Agpnpg,ADJ,O,,O
@@ -92,7 +92,7 @@ sl-159,4,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-159,4,6,v,,v,Sl,ADP,O,,O
 sl-159,4,7,referendumski,,referendumski,Agpfsl,ADJ,O,,O
 sl-159,4,8,kampanji,,kampanja,Ncfsl,NOUN,O,,O
-sl-159,4,9,brexitu,brexit,brexit,Ncmsd,NOUN,B-EVT,EVT-Brexit,O
+sl-159,4,9,brexitu,brexit,brexit,Ncmsd,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-159,4,10,nasprotoval,,nasprotovati,Vmpp-sm,VERB,O,,O
 sl-159,4,11,",",,",",Z,PUNCT,O,,O
 sl-159,4,12,je,,biti,Va-r3s-n,AUX,O,,O
@@ -110,7 +110,7 @@ sl-159,4,23,potencialnih,,potencialen,Agpfpg,ADJ,O,,O
 sl-159,4,24,gospodarskih,,gospodarski,Agpfpg,ADJ,O,,O
 sl-159,4,25,groženj,,grožnja,Ncfpg,NOUN,O,,O
 sl-159,4,26,in,,in,Cc,CCONJ,O,,O
-sl-159,4,27,cene,,cena,Ncfsg,NOUN,O,,B-PER
+sl-159,4,27,cene,,cena,Ncfsg,NOUN,O,,O
 sl-159,4,28,",",,",",Z,PUNCT,O,,O
 sl-159,4,29,ki,,ki,Cs,SCONJ,O,,O
 sl-159,4,30,jo,,on,Pp3fsa--y,PRON,O,,O
@@ -119,7 +119,7 @@ sl-159,4,32,morali,,morati,Vmpp-pm,VERB,O,,O
 sl-159,4,33,plačati,,plačati,Vmen,VERB,O,,O
 sl-159,4,34,državljani,,državljan,Ncmpn,NOUN,O,,O
 sl-159,4,35,.,,.,Z,PUNCT,O,,O
-sl-159,5,1,Vladi,,vlada,Ncfsd,NOUN,O,,B-LOC
+sl-159,5,1,Vladi,,vlada,Ncfsd,NOUN,O,,O
 sl-159,5,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-159,5,3,ob,,ob,Sl,ADP,O,,O
 sl-159,5,4,tem,,ta,Pd-nsl,DET,O,,O
@@ -127,7 +127,7 @@ sl-159,5,5,očital,,očitati,Vmpp-sm,VERB,O,,O
 sl-159,5,6,nepripravljenost,,nepripravljenost,Ncfsa,NOUN,O,,O
 sl-159,5,7,na,,na,Sa,ADP,O,,O
 sl-159,5,8,vplive,,vpliv,Ncmpa,NOUN,O,,O
-sl-159,5,9,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,O
+sl-159,5,9,brexita,brexit,brexit,Ncmsg,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-159,5,10,in,,in,Cc,CCONJ,O,,O
 sl-159,5,11,njihovo,,njihov,Ps3nsap,DET,O,,O
 sl-159,5,12,podcenjevanje,,podcenjevanje,Ncnsa,NOUN,O,,O
@@ -136,9 +136,9 @@ sl-159,6,1,Tiskovna,,tiskoven,Agpfsn,ADJ,O,,O
 sl-159,6,2,predstavnica,,predstavnica,Ncfsn,NOUN,O,,O
 sl-159,6,3,ministra,,minister,Ncmsg,NOUN,O,,O
 sl-159,6,4,za,,za,Sa,ADP,O,,O
-sl-159,6,5,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,O
+sl-159,6,5,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-159,6,6,Davida,David,David,Npmsg,PROPN,B-PER,PER-David-Davis,B-PER
-sl-159,6,7,Davisa,Davis,Davis,Npmsg,PROPN,I-PER,PER-David-Davis,O
+sl-159,6,7,Davisa,Davis,Davis,Npmsg,PROPN,I-PER,PER-David-Davis,I-PER
 sl-159,6,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-159,6,9,vse,,ves,Pg-mpa,DET,O,,O
 sl-159,6,10,strahove,,strah,Ncmpa,NOUN,O,,O

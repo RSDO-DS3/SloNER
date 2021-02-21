@@ -1,7 +1,7 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-156,0,1,Migranti,,migrant,Ncmpn,NOUN,O,,O
 sl-156,0,2,v,,v,Sl,ADP,O,,O
-sl-156,0,3,Beli,Bela,bel,Agpfsl,ADJ,B-LOC,LOC-White-Carniola,O
+sl-156,0,3,Beli,Bela,bel,Agpfsl,ADJ,B-LOC,LOC-White-Carniola,B-LOC
 sl-156,0,4,krajini,krajina,krajina,Ncfsl,NOUN,I-LOC,LOC-White-Carniola,I-LOC
 sl-156,0,5,vdirajo,,vdirati,Vmpr3p,VERB,O,,O
 sl-156,0,6,v,,v,Sa,ADP,O,,O
@@ -9,13 +9,13 @@ sl-156,0,7,domove,,dom,Ncmpa,NOUN,O,,O
 sl-156,0,8,?,,?,Z,PUNCT,O,,O
 sl-156,1,1,Policija,,policija,Ncfsn,NOUN,O,,O
 sl-156,1,2,trdi,,trditi,Vmpr3s,VERB,O,,O
-sl-156,1,3,drugače,,drugače,Rgp,ADV,O,,O
+sl-156,1,3,drugače,,drugače,Rgp,ADV,O,,B-PER
 sl-156,1,4,.,,.,Z,PUNCT,O,,O
 sl-156,2,1,Na,,na,Sl,ADP,O,,O
 sl-156,2,2,spletni,,spleten,Agpfsl,ADJ,O,,O
 sl-156,2,3,strani,,stran,Ncfsl,NOUN,O,,O
 sl-156,2,4,tednika,,tednik,Ncmsg,NOUN,O,,O
-sl-156,2,5,Demokracija,Demokracija,demokracija,Ncfsn,NOUN,B-PRO,PRO-Demokracija-newspaper,O
+sl-156,2,5,Demokracija,Demokracija,demokracija,Ncfsn,NOUN,B-PRO,PRO-Demokracija-newspaper,B-PRO
 sl-156,2,6,"""",,"""",Z,PUNCT,O,,O
 sl-156,2,7,razkrivajo,,razkrivati,Vmpr3p,VERB,O,,O
 sl-156,2,8,"""",,"""",Z,PUNCT,O,,O
@@ -23,7 +23,7 @@ sl-156,2,9,",",,",",Z,PUNCT,O,,O
 sl-156,2,10,kako,,kako,Rgp,ADV,O,,O
 sl-156,2,11,migranti,,migrant,Ncmpn,NOUN,O,,O
 sl-156,2,12,v,,v,Sl,ADP,O,,O
-sl-156,2,13,Beli,Bela,bel,Agpfsl,ADJ,B-LOC,LOC-White-Carniola,O
+sl-156,2,13,Beli,Bela,bel,Agpfsl,ADJ,B-LOC,LOC-White-Carniola,B-LOC
 sl-156,2,14,krajini,krajina,krajina,Ncfsl,NOUN,I-LOC,LOC-White-Carniola,I-LOC
 sl-156,2,15,vdirajo,,vdirati,Vmpr3p,VERB,O,,O
 sl-156,2,16,v,,v,Sa,ADP,O,,O
@@ -48,7 +48,7 @@ sl-156,3,16,mrežo,,mreža,Ncfsa,NOUN,O,,O
 sl-156,3,17,predvolilnega,,predvolilen,Agpmsg,ADJ,O,,O
 sl-156,3,18,projekta,,projekt,Ncmsg,NOUN,O,,O
 sl-156,3,19,stranke,,stranka,Ncfsg,NOUN,O,,O
-sl-156,3,20,SDS,SDS,SDS,Npfsg,PROPN,B-ORG,ORG-Slovenian-Democratic-Party,O
+sl-156,3,20,SDS,SDS,SDS,Npfsg,PROPN,B-ORG,ORG-Slovenian-Democratic-Party,B-ORG
 sl-156,3,21,.,,.,Z,PUNCT,O,,O
 sl-156,4,1,Pridobili,,pridobiti,Vmep-pm,VERB,O,,O
 sl-156,4,2,smo,,biti,Va-r1p-n,AUX,O,,O
@@ -60,7 +60,7 @@ sl-156,5,1,Na,,na,Sl,ADP,O,,O
 sl-156,5,2,spletni,,spleten,Agpfsl,ADJ,O,,O
 sl-156,5,3,strani,,stran,Ncfsl,NOUN,O,,O
 sl-156,5,4,tednika,,tednik,Ncmsg,NOUN,O,,O
-sl-156,5,5,Demokracija,Demokracija,demokracija,Ncfsn,NOUN,B-PRO,PRO-Demokracija-newspaper,O
+sl-156,5,5,Demokracija,Demokracija,demokracija,Ncfsn,NOUN,B-PRO,PRO-Demokracija-newspaper,B-PRO
 sl-156,5,6,",",,",",Z,PUNCT,O,,O
 sl-156,5,7,ki,,ki,Cs,SCONJ,O,,O
 sl-156,5,8,ga,,on,Pp3msa--y,PRON,O,,O
@@ -71,7 +71,7 @@ sl-156,5,12,obzorja,obzorja,obzorje,Ncnpn,NOUN,I-ORG,ORG-Nova-obzorja-PRESS,O
 sl-156,5,13,v,,v,Sl,ADP,O,,O
 sl-156,5,14,solasti,,solast,Ncfsl,NOUN,O,,O
 sl-156,5,15,stranke,,stranka,Ncfsg,NOUN,O,,O
-sl-156,5,16,SDS,SDS,SDS,Npfsg,PROPN,B-ORG,ORG-Slovenian-Democratic-Party,O
+sl-156,5,16,SDS,SDS,SDS,Npfsg,PROPN,B-ORG,ORG-Slovenian-Democratic-Party,B-ORG
 sl-156,5,17,",",,",",Z,PUNCT,O,,O
 sl-156,5,18,lahko,,lahko,Rgp,ADV,O,,O
 sl-156,5,19,preberemo,,prebrati,Vmer1p,VERB,O,,O
@@ -81,7 +81,7 @@ sl-156,5,22,"""",,"""",Z,PUNCT,O,,O
 sl-156,5,23,da,,da,Cs,SCONJ,O,,O
 sl-156,5,24,migranti,,migrant,Ncmpn,NOUN,O,,O
 sl-156,5,25,v,,v,Sl,ADP,O,,O
-sl-156,5,26,Beli,Bela,bel,Agpfsl,ADJ,B-LOC,LOC-White-Carniola,O
+sl-156,5,26,Beli,Bela,bel,Agpfsl,ADJ,B-LOC,LOC-White-Carniola,B-LOC
 sl-156,5,27,krajini,krajina,krajina,Ncfsl,NOUN,I-LOC,LOC-White-Carniola,I-LOC
 sl-156,5,28,vdirajo,,vdirati,Vmpr3p,VERB,O,,O
 sl-156,5,29,v,,v,Sa,ADP,O,,O
@@ -150,7 +150,7 @@ sl-156,8,22,da,,da,Cs,SCONJ,O,,O
 sl-156,8,23,je,,biti,Va-r3s-n,AUX,O,,O
 sl-156,8,24,obiskovalec,,obiskovalec,Ncmsn,NOUN,O,,O
 sl-156,8,25,preplaval,,preplavati,Vmep-sm,VERB,O,,O
-sl-156,8,26,Kolpo,Kolpa,Kolpa,Npfsa,PROPN,B-LOC,LOC-River-Kupa,O
+sl-156,8,26,Kolpo,Kolpa,Kolpa,Npfsa,PROPN,B-LOC,LOC-River-Kupa,B-LOC
 sl-156,8,27,.,,.,Z,PUNCT,O,,O
 sl-156,9,1,Nato,,nato,Rgp,ADV,O,,O
 sl-156,9,2,mu,,on,Pp3msd--y,PRON,O,,O
@@ -200,7 +200,7 @@ sl-156,11,14,preberemo,,prebrati,Vmer1p,VERB,O,,O
 sl-156,11,15,na,,na,Sl,ADP,O,,O
 sl-156,11,16,spletni,,spleten,Agpfsl,ADJ,O,,O
 sl-156,11,17,strani,,stran,Ncfsl,NOUN,O,,O
-sl-156,11,18,Demokracije,Demokracija,demokracija,Ncfsg,NOUN,B-PRO,PRO-Demokracija-newspaper,O
+sl-156,11,18,Demokracije,Demokracija,demokracija,Ncfsg,NOUN,B-PRO,PRO-Demokracija-newspaper,B-PRO
 sl-156,11,19,.,,.,Z,PUNCT,O,,O
 sl-156,12,1,Ker,,ker,Cs,SCONJ,O,,O
 sl-156,12,2,v,,v,Sl,ADP,O,,O
@@ -226,9 +226,9 @@ sl-156,12,21,smo,,biti,Va-r1p-n,AUX,O,,O
 sl-156,12,22,za,,za,Sa,ADP,O,,O
 sl-156,12,23,pojasnila,,pojasnilo,Ncnpa,NOUN,O,,O
 sl-156,12,24,zaprosili,,zaprositi,Vmep-pm,VERB,O,,O
-sl-156,12,25,novomeško,novomeška,novomeški,Agpfsa,ADJ,B-ORG,ORG-Police-Directorate-Novo-mesto,O
-sl-156,12,26,policijsko,policijska,policijski,Agpfsa,ADJ,I-ORG,ORG-Police-Directorate-Novo-mesto,O
-sl-156,12,27,upravo,uprava,uprava,Ncfsa,NOUN,I-ORG,ORG-Police-Directorate-Novo-mesto,O
+sl-156,12,25,novomeško,novomeška,novomeški,Agpfsa,ADJ,B-ORG,ORG-Police-Directorate-Novo-mesto,B-ORG
+sl-156,12,26,policijsko,policijska,policijski,Agpfsa,ADJ,I-ORG,ORG-Police-Directorate-Novo-mesto,I-ORG
+sl-156,12,27,upravo,uprava,uprava,Ncfsa,NOUN,I-ORG,ORG-Police-Directorate-Novo-mesto,I-ORG
 sl-156,12,28,.,,.,Z,PUNCT,O,,O
 sl-156,13,1,"""",,"""",Z,PUNCT,O,,O
 sl-156,13,2,Policisti,,policist,Ncmpn,NOUN,O,,O
@@ -372,8 +372,8 @@ sl-156,18,27,policiji,,policija,Ncfsl,NOUN,O,,O
 sl-156,18,28,.,,.,Z,PUNCT,O,,O
 sl-156,19,1,Statistika,,statistika,Ncfsn,NOUN,O,,O
 sl-156,20,1,Na,,na,Sl,ADP,O,,O
-sl-156,20,2,območju,,območje,Ncnsl,NOUN,O,,O
-sl-156,20,3,Črnomlja,Črnomelj,Črnomelj,Npmsg,PROPN,B-LOC,GPE-Črnomelj,O
+sl-156,20,2,območju,,območje,Ncnsl,NOUN,O,,B-LOC
+sl-156,20,3,Črnomlja,Črnomelj,Črnomelj,Npmsg,PROPN,B-LOC,GPE-Črnomelj,I-LOC
 sl-156,20,4,so,,biti,Va-r3p-n,AUX,O,,O
 sl-156,20,5,policisti,,policist,Ncmpn,NOUN,O,,O
 sl-156,20,6,letos,,letos,Rgp,ADV,O,,O
@@ -381,11 +381,11 @@ sl-156,20,7,obravnavali,,obravnavati,Vmpp-pm,VERB,O,,O
 sl-156,20,8,153,,153,Mdc,NUM,O,,O
 sl-156,20,9,nezakonitih,,nezakonit,Agpmpg,ADJ,O,,O
 sl-156,20,10,prehodov,,prehod,Ncmpg,NOUN,O,,O
-sl-156,20,11,državne,,državen,Agpfsg,ADJ,O,,O
+sl-156,20,11,državne,,državen,Agpfsg,ADJ,O,,B-LOC
 sl-156,20,12,meje,,meja,Ncfsg,NOUN,O,,O
 sl-156,20,13,",",,",",Z,PUNCT,O,,O
 sl-156,20,14,na,,na,Sl,ADP,O,,O
-sl-156,20,15,območju,,območje,Ncnsl,NOUN,O,,O
-sl-156,20,16,Metlike,Metlika,Metlika,Npfsg,PROPN,B-LOC,GPE-Črnomelj,O
+sl-156,20,15,območju,,območje,Ncnsl,NOUN,O,,B-LOC
+sl-156,20,16,Metlike,Metlika,Metlika,Npfsg,PROPN,B-LOC,GPE-Črnomelj,I-LOC
 sl-156,20,17,pa,,pa,Cc,CCONJ,O,,O
 sl-156,20,18,39.,,39.,Mdo,NUM,O,,O

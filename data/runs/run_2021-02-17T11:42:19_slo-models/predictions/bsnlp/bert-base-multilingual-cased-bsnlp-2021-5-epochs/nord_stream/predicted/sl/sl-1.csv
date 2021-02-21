@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-1,0,1,Porošenko,Porošenko,Porošenko,Npmsn,PROPN,B-PER,PER-Petro-Poroshenko,B-PER
 sl-1,0,2,pozval,,pozvati,Vmep-sm,VERB,O,,O
 sl-1,0,3,Nato,Nato,Nato,Npmsan,PROPN,B-ORG,ORG-NATO,B-ORG
@@ -21,7 +21,7 @@ sl-1,0,19,',,',Z,PUNCT,O,,O
 sl-1,1,1,Ukrajinski,Ukrajina,ukrajinski,Agpmsny,ADJ,B-LOC,GPE-Ukraine,B-LOC
 sl-1,1,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-1,1,3,Petro,Petro,Petro,Npmsn,PROPN,B-PER,PER-Petro-Poroshenko,B-PER
-sl-1,1,4,Porošenko,Porošenko,Porošenko,Npmsn,PROPN,I-PER,PER-Petro-Poroshenko,B-PER
+sl-1,1,4,Porošenko,Porošenko,Porošenko,Npmsn,PROPN,I-PER,PER-Petro-Poroshenko,I-PER
 sl-1,1,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,1,6,zvezo,,zveza,Ncfsa,NOUN,O,,O
 sl-1,1,7,Nato,Nato,Nato,Npmsn,PROPN,B-ORG,ORG-NATO,B-ORG
@@ -79,7 +79,7 @@ sl-1,3,12,celotno,,celoten,Agpfsa,ADJ,O,,O
 sl-1,3,13,Ukrajino,Ukrajina,Ukrajina,Npfsa,PROPN,B-LOC,GPE-Ukraine,B-LOC
 sl-1,3,14,.,,.,Z,PUNCT,O,,O
 sl-1,4,1,Petro,Petro,Petra,Npfsa,PROPN,B-PER,PER-Petro-Poroshenko,B-PER
-sl-1,4,2,Porošenko,Porošenko,Porošenka,Npfsa,PROPN,I-PER,PER-Petro-Poroshenko,B-PER
+sl-1,4,2,Porošenko,Porošenko,Porošenka,Npfsa,PROPN,I-PER,PER-Petro-Poroshenko,I-PER
 sl-1,4,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-1,4,4,v,,v,Sl,ADP,O,,O
 sl-1,4,5,pogovoru,,pogovor,Ncmsl,NOUN,O,,O
@@ -221,7 +221,7 @@ sl-1,9,17,stari,,star,Agpmsay,ADJ,O,,O
 sl-1,9,18,ruski,,ruski,Agpmsay,ADJ,O,,O
 sl-1,9,19,imperij,,imperij,Ncmsan,NOUN,O,,O
 sl-1,9,20,.,,.,Z,PUNCT,O,,O
-sl-1,10,1,Sebe,,se,Px---a,PRON,O,,B-PRO
+sl-1,10,1,Sebe,,se,Px---a,PRON,O,,B-PER
 sl-1,10,2,vidi,,videti,Vmbr3s,VERB,O,,O
 sl-1,10,3,kot,,kot,Cs,SCONJ,O,,O
 sl-1,10,4,ruskega,,ruski,Agpmsa,ADJ,O,,O
@@ -305,8 +305,8 @@ sl-1,13,6,tudi,,tudi,Q,PART,O,,O
 sl-1,13,7,zaustavitev,,zaustavitev,Ncfsn,NOUN,O,,O
 sl-1,13,8,projekta,,projekt,Ncmsg,NOUN,O,,O
 sl-1,13,9,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
-sl-1,13,10,Severni,,severen,Agpmsny,ADJ,O,,O
-sl-1,13,11,tok,,tok,Ncmsn,NOUN,O,,O
+sl-1,13,10,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
+sl-1,13,11,tok,,tok,Ncmsn,NOUN,O,,I-PRO
 sl-1,13,12,2.,,2.,Mdo,NUM,O,,O
 sl-1,14,1,Ukrajinski,Ukrajina,ukrajinski,Agpmsny,ADJ,B-LOC,GPE-Ukraine,B-LOC
 sl-1,14,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O

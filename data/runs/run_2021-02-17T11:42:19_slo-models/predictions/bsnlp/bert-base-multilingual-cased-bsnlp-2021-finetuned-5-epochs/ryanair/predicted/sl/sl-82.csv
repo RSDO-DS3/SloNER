@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-82,0,1,(,,(,Z,PUNCT,O,,O
 sl-82,0,2,VIDEO,,video,Ncmsn,NOUN,O,,O
 sl-82,0,3,),,),Z,PUNCT,O,,O

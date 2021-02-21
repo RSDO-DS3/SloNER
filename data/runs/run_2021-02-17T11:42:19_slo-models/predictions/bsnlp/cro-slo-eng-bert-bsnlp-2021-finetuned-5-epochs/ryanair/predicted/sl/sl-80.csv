@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-80,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-80,0,2,in,,in,Cc,CCONJ,O,,O
 sl-80,0,3,nemški,,nemški,Agpmpn,ADJ,O,,O
@@ -150,7 +150,7 @@ sl-80,8,17,zaposleni,,zaposlen,Appmpn,ADJ,O,,O
 sl-80,8,18,v,,v,Sl,ADP,O,,O
 sl-80,8,19,skladu,,sklad,Ncmsl,NOUN,O,,O
 sl-80,8,20,z,,z,Si,ADP,O,,O
-sl-80,8,21,irsko,,irski,Agpfsi,ADJ,O,,O
+sl-80,8,21,irsko,,irski,Agpfsi,ADJ,O,,B-LOC
 sl-80,8,22,zakonodajo,,zakonodaja,Ncfsi,NOUN,O,,O
 sl-80,8,23,.,,.,Z,PUNCT,O,,O
 sl-80,9,1,To,,ta,Pd-nsn,DET,O,,O
@@ -276,7 +276,7 @@ sl-80,16,9,v,,v,Sl,ADP,O,,O
 sl-80,16,10,37,,37,Mdc,NUM,O,,O
 sl-80,16,11,državah,,država,Ncfpl,NOUN,O,,O
 sl-80,16,12,.,,.,Z,PUNCT,O,,O
-sl-80,17,1,Podjetje,,podjetje,Ncnsn,NOUN,O,,O
+sl-80,17,1,Podjetje,,podjetje,Ncnsn,NOUN,O,,B-ORG
 sl-80,17,2,zaposluje,,zaposlovati,Vmpr3s,VERB,O,,O
 sl-80,17,3,okoli,,okoli,Rgp,ADV,O,,O
 sl-80,17,4,14.500,,14.500,Mdc,NUM,O,,O

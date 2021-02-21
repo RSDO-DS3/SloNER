@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-3-2,0,1,KONTROLORJI,,kontrolor,Ncmpn,NOUN,O,,B-LOC
 sl-3-2,1,1,Se,,se,Px------y,PRON,O,,O
 sl-3-2,1,2,odpravljate,,odpravljati,Vmpr2p,VERB,O,,O
@@ -110,7 +110,7 @@ sl-3-2,7,22,promet,,promet,Ncmsn,NOUN,O,,O
 sl-3-2,7,23,obstal,,obstati,Vmep-sm,VERB,O,,O
 sl-3-2,7,24,.,,.,Z,PUNCT,O,,O
 sl-3-2,8,1,V,,v,Sl,ADP,O,,O
-sl-3-2,8,2,belgijski,Belgija,belgijski,Agpfsl,ADJ,B-LOC,GPE-Belgium,B-LOC
+sl-3-2,8,2,belgijski,Belgija,belgijski,Agpfsl,ADJ,B-LOC,GPE-Belgium,O
 sl-3-2,8,3,kontroli,,kontrola,Ncfsl,NOUN,O,,O
 sl-3-2,8,4,zračnega,,zračen,Agpmsg,ADJ,O,,O
 sl-3-2,8,5,prometa,,promet,Ncmsg,NOUN,O,,O
@@ -167,7 +167,7 @@ sl-3-2,9,21,in,,in,Cc,CCONJ,O,,O
 sl-3-2,9,22,nujni,,nujen,Agpmpn,ADJ,O,,O
 sl-3-2,9,23,leti,,let,Ncmpn,NOUN,O,,O
 sl-3-2,9,24,.,,.,Z,PUNCT,O,,O
-sl-3-2,10,1,Skeyes,Skeyes,Skeyes,Ncmpn,NOUN,B-ORG,ORG-Skeyes,B-PER
+sl-3-2,10,1,Skeyes,Skeyes,Skeyes,Ncmpn,NOUN,B-ORG,ORG-Skeyes,B-ORG
 sl-3-2,10,2,sicer,,sicer,Q,PART,O,,O
 sl-3-2,10,3,nadzorujejo,,nadzorovati,Vmpr3p,VERB,O,,O
 sl-3-2,10,4,zračni,,zračen,Agpmsay,ADJ,O,,O
@@ -282,8 +282,8 @@ sl-3-2,16,18,.,,.,Z,PUNCT,O,,O
 sl-3-2,17,1,Drugo,,drug,Mlpnsn,ADJ,O,,O
 sl-3-2,17,2,največje,,velik,Agsnsn,ADJ,O,,O
 sl-3-2,17,3,belgijsko,,belgijski,Agpnsn,ADJ,O,,B-LOC
-sl-3-2,17,4,letališče,,letališče,Ncnsn,NOUN,O,,I-LOC
-sl-3-2,17,5,Charleroi,Charleroi,Charleroi,Npmsn,PROPN,B-ORG,ORG-Brussels-South-Charleroi-Airport,B-LOC
+sl-3-2,17,4,letališče,,letališče,Ncnsn,NOUN,O,,B-LOC
+sl-3-2,17,5,Charleroi,Charleroi,Charleroi,Npmsn,PROPN,B-ORG,ORG-Brussels-South-Charleroi-Airport,I-LOC
 sl-3-2,17,6,",",,",",Z,PUNCT,O,,O
 sl-3-2,17,7,ki,,ki,Cs,SCONJ,O,,O
 sl-3-2,17,8,je,,biti,Va-r3s-n,AUX,O,,O

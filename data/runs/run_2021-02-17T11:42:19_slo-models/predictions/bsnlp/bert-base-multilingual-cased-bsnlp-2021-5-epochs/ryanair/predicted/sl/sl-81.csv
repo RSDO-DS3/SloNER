@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-81,0,1,',,',Z,PUNCT,O,,O
 sl-81,0,2,Ne,,ne,Q,PART,O,,O
 sl-81,0,3,pogovarjaj,,pogovarjati,Vmpm2s,VERB,O,,O
@@ -153,7 +153,7 @@ sl-81,6,15,bojkotom,,bojkot,Ncmsi,NOUN,O,,O
 sl-81,6,16,letalske,,letalski,Agpfsg,ADJ,O,,O
 sl-81,6,17,družbe,,družba,Ncfsg,NOUN,O,,O
 sl-81,6,18,.,,.,Z,PUNCT,O,,O
-sl-81,7,1,Ta,,ta,Pd-fsn,DET,O,,O
+sl-81,7,1,Ta,,ta,Pd-fsn,DET,O,,B-PER
 sl-81,7,2,sicer,,sicer,Q,PART,O,,O
 sl-81,7,3,odgovarja,,odgovarjati,Vmpr3s,VERB,O,,O
 sl-81,7,4,",",,",",Z,PUNCT,O,,O
@@ -395,7 +395,7 @@ sl-81,16,8,mati,,mati,Ncfsn,NOUN,O,,O
 sl-81,16,9,pripada,,pripadati,Vmpr3s,VERB,O,,O
 sl-81,16,10,t.,,t.,Y,X,O,,O
 sl-81,16,11,i.,,i.,Y,X,O,,O
-sl-81,16,12,Windrush,,windrus,Agpfsd,ADJ,O,,B-PER
+sl-81,16,12,Windrush,,windrus,Agpfsd,ADJ,O,,B-ORG
 sl-81,16,13,generaciji,,generacija,Ncfsd,NOUN,O,,O
 sl-81,16,14,",",,",",Z,PUNCT,O,,O
 sl-81,16,15,ki,,ki,Cs,SCONJ,O,,O

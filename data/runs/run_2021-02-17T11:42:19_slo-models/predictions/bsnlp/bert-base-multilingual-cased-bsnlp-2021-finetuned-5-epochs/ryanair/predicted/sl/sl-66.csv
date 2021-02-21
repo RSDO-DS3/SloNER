@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-66,0,1,Zamudil,,zamuditi,Vmep-sm,VERB,O,,O
 sl-66,0,2,letalo,,letalo,Ncnsa,NOUN,O,,O
 sl-66,0,3,",",,",",Z,PUNCT,O,,O
@@ -52,7 +52,7 @@ sl-66,2,7,saj,,saj,Cc,CCONJ,O,,O
 sl-66,2,8,so,,biti,Va-r3p-n,AUX,O,,O
 sl-66,2,9,ga,,on,Pp3msa--y,PRON,O,,O
 sl-66,2,10,irski,,irski,Agpmpn,ADJ,O,,O
-sl-66,2,11,policisti,,policist,Ncmpn,NOUN,O,,I-PER
+sl-66,2,11,policisti,,policist,Ncmpn,NOUN,O,,O
 sl-66,2,12,in,,in,Cc,CCONJ,O,,O
 sl-66,2,13,zaposleni,,zaposlen,Appmpn,ADJ,O,,O
 sl-66,2,14,pri,,pri,Sl,ADP,O,,O
@@ -72,7 +72,7 @@ sl-66,3,7,urah,,ura,Ncfpl,NOUN,O,,O
 sl-66,3,8,se,,se,Px------y,PRON,O,,O
 sl-66,3,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-66,3,10,na,,na,Sl,ADP,O,,O
-sl-66,3,11,letališču,,letališče,Ncnsl,NOUN,O,,B-LOC
+sl-66,3,11,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-66,3,12,v,,v,Sl,ADP,O,,O
 sl-66,3,13,Dublinu,Dublin,Dublin,Npmsl,PROPN,B-LOC,GPE-Dublin,B-LOC
 sl-66,3,14,pripetil,,pripetiti,Vmep-sm,VERB,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-67,0,1,Letošnje,,letošnji,Agpnsn,ADJ,O,,O
 sl-67,0,2,leto,,leto,Ncnsa,NOUN,O,,O
 sl-67,0,3,pa,,pa,Cc,CCONJ,O,,O
@@ -77,7 +77,7 @@ sl-67,1,69,",",,",",Z,PUNCT,O,,O
 sl-67,1,70,ne,,ne,Q,PART,O,,O
 sl-67,1,71,pa,,pa,Cc,CCONJ,O,,O
 sl-67,1,72,na,,na,Sl,ADP,O,,O
-sl-67,1,73,irski,,irski,Agpfsl,ADJ,O,,O
+sl-67,1,73,irski,,irski,Agpfsl,ADJ,O,,B-LOC
 sl-67,1,74,zakonodaji,,zakonodaja,Ncfsl,NOUN,O,,O
 sl-67,1,75,kot,,kot,Cs,SCONJ,O,,O
 sl-67,1,76,doslej,,doslej,Rgp,ADV,O,,O
@@ -476,7 +476,7 @@ sl-67,18,15,generalni,,generalen,Agpmsny,ADJ,O,,O
 sl-67,18,16,sekretar,,sekretar,Ncmsn,NOUN,O,,O
 sl-67,18,17,belgijskega,,belgijski,Agpmsg,ADJ,O,,O
 sl-67,18,18,letalskega,,letalski,Agpmsg,ADJ,O,,O
-sl-67,18,19,sindikata,,sindikat,Ncmsg,NOUN,O,,O
+sl-67,18,19,sindikata,,sindikat,Ncmsg,NOUN,O,,I-ORG
 sl-67,18,20,",",,",",Z,PUNCT,O,,O
 sl-67,18,21,in,,in,Cc,CCONJ,O,,O
 sl-67,18,22,napoveduje,,napovedovati,Vmpr3s,VERB,O,,O
@@ -575,7 +575,7 @@ sl-67,22,5,se,,se,Px------y,PRON,O,,O
 sl-67,22,6,stavkovnemu,,stavkoven,Agpmsd,ADJ,O,,O
 sl-67,22,7,valu,,val,Ncmsd,NOUN,O,,O
 sl-67,22,8,pridružili,,pridružiti,Vmep-pm,VERB,O,,O
-sl-67,22,9,irski,,irski,Agpmpn,ADJ,O,,O
+sl-67,22,9,irski,,irski,Agpmpn,ADJ,O,,B-PER
 sl-67,22,10,piloti,,pilot,Ncmpn,NOUN,O,,O
 sl-67,22,11,",",,",",Z,PUNCT,O,,O
 sl-67,22,12,teden,,teden,Ncmsn,NOUN,O,,O
@@ -585,7 +585,7 @@ sl-67,22,15,pa,,pa,Cc,CCONJ,O,,O
 sl-67,22,16,še,,še,Q,PART,O,,O
 sl-67,22,17,nemški,,nemški,Agpmpn,ADJ,O,,O
 sl-67,22,18,",",,",",Z,PUNCT,O,,O
-sl-67,22,19,švedski,,švedski,Agpmpn,ADJ,O,,B-LOC
+sl-67,22,19,švedski,,švedski,Agpmpn,ADJ,O,,O
 sl-67,22,20,in,,in,Cc,CCONJ,O,,O
 sl-67,22,21,belgijski,Belgija,belgijski,Agpmpn,ADJ,B-LOC,GPE-Belgium,O
 sl-67,22,22,.,,.,Z,PUNCT,O,,O

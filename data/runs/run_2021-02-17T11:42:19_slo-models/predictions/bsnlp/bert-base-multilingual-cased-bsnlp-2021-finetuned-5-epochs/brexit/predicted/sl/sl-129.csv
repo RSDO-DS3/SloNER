@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-129,0,1,Natanko,,natanko,Rgp,ADV,O,,O
 sl-129,0,2,848,,848,Mdc,NUM,O,,O
 sl-129,0,3,dni,,dan,Ncmpg,NOUN,O,,O
@@ -40,7 +40,7 @@ sl-129,3,4,razpravah,,razprava,Ncfpl,NOUN,O,,O
 sl-129,3,5,na,,na,Sl,ADP,O,,O
 sl-129,3,6,dvodnevnem,,dvodneven,Agpmsl,ADJ,O,,O
 sl-129,3,7,vrhu,,vrh,Ncmsl,NOUN,O,,O
-sl-129,3,8,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-129,3,8,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-129,3,9,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-129,3,10,sporazum,,sporazum,Ncmsn,NOUN,O,,O
 sl-129,3,11,o,,o,Sl,ADP,O,,O
@@ -134,8 +134,8 @@ sl-129,6,4,brexit,brexit,brexit,Ncmsan,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-129,6,5,se,,se,Px------y,PRON,O,,O
 sl-129,6,6,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-129,6,7,podaljšalo,,podaljšati,Vmep-sn,VERB,O,,O
-sl-129,7,1,Uradna,,uraden,Agpmdn,ADJ,O,,B-ORG
-sl-129,7,2,London,London,London,Npmsn,PROPN,B-LOC,GPE-London,B-LOC
+sl-129,7,1,Uradna,,uraden,Agpmdn,ADJ,O,,B-LOC
+sl-129,7,2,London,London,London,Npmsn,PROPN,B-LOC,GPE-London,I-LOC
 sl-129,7,3,in,,in,Cc,CCONJ,O,,O
 sl-129,7,4,Bruselj,Bruselj,Bruselj,Npmsn,PROPN,B-LOC,GPE-Brussles,B-LOC
 sl-129,7,5,sta,,biti,Va-r3d-n,AUX,O,,O
@@ -214,7 +214,7 @@ sl-129,9,22,ljudi,,človek,Ncmpg,NOUN,O,,O
 sl-129,9,23,.,,.,Z,PUNCT,O,,O
 sl-129,10,1,A,,a,Cc,CCONJ,O,,O
 sl-129,10,2,v,,v,Sl,ADP,O,,O
-sl-129,10,3,EU,EU,EU,Npfsl,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-129,10,3,EU,EU,EU,Npfsl,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-129,10,4,opozarjajo,,opozarjati,Vmpr3p,VERB,O,,O
 sl-129,10,5,",",,",",Z,PUNCT,O,,O
 sl-129,10,6,da,,da,Cs,SCONJ,O,,O
@@ -275,7 +275,7 @@ sl-129,13,14,",",,",",Z,PUNCT,O,,O
 sl-129,13,15,je,,biti,Va-r3s-n,VERB,O,,O
 sl-129,13,16,pred,,pred,Si,ADP,O,,O
 sl-129,13,17,vrhom,,vrh,Ncmsi,NOUN,O,,O
-sl-129,13,18,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-129,13,18,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-129,13,19,",",,",",Z,PUNCT,O,,O
 sl-129,13,20,ki,,ki,Cs,SCONJ,O,,O
 sl-129,13,21,se,,se,Px------y,PRON,O,,O
@@ -347,7 +347,7 @@ sl-129,15,5,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-129,15,6,prinesla,,prinesti,Vmep-sf,VERB,O,,O
 sl-129,15,7,",",,",",Z,PUNCT,O,,O
 sl-129,15,8,toda,,toda,Cc,CCONJ,O,,O
-sl-129,15,9,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-129,15,9,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-129,15,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-129,15,11,za,,za,Sa,ADP,O,,O
 sl-129,15,12,premik,,premik,Ncmsan,NOUN,O,,O
@@ -425,9 +425,9 @@ sl-129,17,19,med,,med,Si,ADP,O,,O
 sl-129,17,20,Združenim,Združeno,združen,Appnsi,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-129,17,21,kraljestvom,kraljestvo,kraljestvo,Ncnsi,NOUN,I-LOC,GPE-Great-Britain,I-LOC
 sl-129,17,22,in,,in,Cc,CCONJ,O,,O
-sl-129,17,23,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-129,17,23,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-129,17,24,.,,.,Z,PUNCT,O,,O
-sl-129,18,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-129,18,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-LOC
 sl-129,18,2,namreč,,namreč,Cc,CCONJ,O,,O
 sl-129,18,3,vztraja,,vztrajati,Vmpr3s,VERB,O,,O
 sl-129,18,4,pri,,pri,Sl,ADP,O,,O
@@ -439,7 +439,7 @@ sl-129,18,9,Irska,Irska,Irska,Npfsn,PROPN,I-LOC,GPE-Northern-Ireland,I-LOC
 sl-129,18,10,ostane,,ostati,Vmer3s,VERB,O,,O
 sl-129,18,11,del,,del,Ncmsn,NOUN,O,,O
 sl-129,18,12,carinske,,carinski,Agpfsg,ADJ,O,,O
-sl-129,18,13,unije,,unija,Ncfsg,NOUN,O,,I-ORG
+sl-129,18,13,unije,,unija,Ncfsg,NOUN,O,,O
 sl-129,18,14,in,,in,Cc,CCONJ,O,,O
 sl-129,18,15,notranjega,,notranji,Agpmsg,ADJ,O,,O
 sl-129,18,16,trga,,trg,Ncmsg,NOUN,O,,O
@@ -464,7 +464,7 @@ sl-129,19,9,",",,",",Z,PUNCT,O,,O
 sl-129,19,10,ki,,ki,Cs,SCONJ,O,,O
 sl-129,19,11,ostaja,,ostajati,Vmpr3s,VERB,O,,O
 sl-129,19,12,del,,del,Ncmsan,NOUN,O,,O
-sl-129,19,13,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-129,19,13,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-129,19,14,",",,",",Z,PUNCT,O,,O
 sl-129,19,15,in,,in,Cc,CCONJ,O,,O
 sl-129,19,16,Severno,Severna,severen,Agpfsa,ADJ,B-LOC,GPE-Northern-Ireland,B-LOC
@@ -484,7 +484,7 @@ sl-129,19,29,nadzora,,nadzor,Ncmsg,NOUN,O,,O
 sl-129,19,30,.,,.,Z,PUNCT,O,,O
 sl-129,20,1,Glavni,,glaven,Agpmsny,ADJ,O,,O
 sl-129,20,2,pogajalec,,pogajalec,Ncmsn,NOUN,O,,O
-sl-129,20,3,unije,,unija,Ncfsg,NOUN,O,,I-ORG
+sl-129,20,3,unije,,unija,Ncfsg,NOUN,O,,O
 sl-129,20,4,o,,o,Sl,ADP,O,,O
 sl-129,20,5,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-129,20,6,Michel,Michel,Michel,Npmsn,PROPN,B-PER,PER-Michel-Barnier,B-PER
@@ -627,7 +627,7 @@ sl-129,28,6,odpadel,,odpasti,Vmep-sm,VERB,O,,O
 sl-129,28,7,novembrski,,novembrski,Agpmsny,ADJ,O,,O
 sl-129,28,8,izredni,,izreden,Agpmsny,ADJ,O,,O
 sl-129,28,9,vrh,,vrh,Ncmsn,NOUN,O,,O
-sl-129,28,10,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-129,28,10,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-129,28,11,",",,",",Z,PUNCT,O,,O
 sl-129,28,12,na,,na,Sl,ADP,O,,O
 sl-129,28,13,katerem,,kateri,Pq-msl,DET,O,,O
@@ -647,7 +647,7 @@ sl-129,28,26,z,,z,Si,ADP,O,,O
 sl-129,28,27,Veliko,Velika,velik,Agpfsi,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-129,28,28,Britanijo,Britanija,Britanija,Npfsi,PROPN,I-LOC,GPE-Great-Britain,I-LOC
 sl-129,28,29,.,,.,Z,PUNCT,O,,O
-sl-129,29,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,I-ORG
+sl-129,29,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-LOC
 sl-129,29,2,in,,in,Cc,CCONJ,O,,O
 sl-129,29,3,Združeno,Združeno,združen,Appnsn,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-129,29,4,kraljestvo,kraljestvo,kraljestvo,Ncnsn,NOUN,I-LOC,GPE-Great-Britain,I-LOC

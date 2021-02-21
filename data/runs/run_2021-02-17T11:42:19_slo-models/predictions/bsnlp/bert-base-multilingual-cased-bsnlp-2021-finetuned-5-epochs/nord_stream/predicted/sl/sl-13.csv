@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-13,0,1,Dolgočasen,,dolgočasen,Agpmsnn,ADJ,O,,O
 sl-13,0,2,borzni,,borzen,Agpmsny,ADJ,O,,O
 sl-13,0,3,teden,,teden,Ncmsn,NOUN,O,,O
@@ -39,10 +39,10 @@ sl-13,2,10,mora,,morati,Vmpr3s,VERB,O,,O
 sl-13,2,11,priti,,priti,Vmen,VERB,O,,O
 sl-13,2,12,na,,na,Sa,ADP,O,,O
 sl-13,2,13,srečanje,,srečanje,Ncnsa,NOUN,O,,O
-sl-13,2,14,skupine,,skupina,Ncfsg,NOUN,O,,O
+sl-13,2,14,skupine,,skupina,Ncfsg,NOUN,O,,B-EVT
 sl-13,2,15,G20,G20,G20,Npmsn,PROPN,B-ORG,ORG-G20,I-EVT
 sl-13,2,16,v,,v,Sl,ADP,O,,O
-sl-13,2,17,Osaki,Osaka,Osak,Npmsl,PROPN,B-LOC,GPE-Osaka,B-LOC
+sl-13,2,17,Osaki,Osaka,Osak,Npmsl,PROPN,B-LOC,GPE-Osaka,I-EVT
 sl-13,2,18,konec,,konec,Sg,ADP,O,,O
 sl-13,2,19,tega,,ta,Pd-msg,DET,O,,O
 sl-13,2,20,meseca,,mesec,Ncmsg,NOUN,O,,O
@@ -95,7 +95,7 @@ sl-13,4,12,deluje,,delovati,Vmpr3s,VERB,O,,O
 sl-13,4,13,naravnost,,naravnost,Rgp,ADV,O,,O
 sl-13,4,14,otročje,,otročje,Ncnsn,NOUN,O,,O
 sl-13,4,15,.,,.,Z,PUNCT,O,,O
-sl-13,5,1,Ker,,ker,Cs,SCONJ,O,,O
+sl-13,5,1,Ker,,ker,Cs,SCONJ,O,,B-PER
 sl-13,5,2,Trumpu,Trump,Trump,Npmsd,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-13,5,3,konflikti,,konflikt,Ncmpn,NOUN,O,,O
 sl-13,5,4,s,,z,Si,ADP,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-73,0,1,Potniki,,potnik,Ncmpn,NOUN,O,,O
 sl-73,0,2,zaradi,,zaradi,Sg,ADP,O,,O
 sl-73,0,3,pijanega,,pijan,Agpmsg,ADJ,O,,O

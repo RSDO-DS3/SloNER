@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-26,0,1,Perry,Perry,Perry,Npmsn,PROPN,B-PER,PER-Rick-Perry,B-PER
 sl-26,0,2,za,,za,Sa,ADP,O,,O
 sl-26,0,3,razpršitev,,razpršitev,Ncfsa,NOUN,O,,O
@@ -8,13 +8,13 @@ sl-26,0,6,držav,,država,Ncfpg,NOUN,O,,O
 sl-26,0,7,Srednje,Srednji,srednji,Agpfsg,ADJ,B-LOC,LOC-Central-Europe,B-LOC
 sl-26,0,8,in,,in,Cc,CCONJ,O,,O
 sl-26,0,9,Vzhodne,Vzhodna,vzhoden,Agpfsg,ADJ,B-LOC,LOC-Eastern-Europe,B-LOC
-sl-26,0,10,Evrope,Evropa,Evropa,Npfsg,PROPN,I-LOC,LOC-Eastern-Europe,B-LOC
+sl-26,0,10,Evrope,Evropa,Evropa,Npfsg,PROPN,I-LOC,LOC-Eastern-Europe,I-LOC
 sl-26,1,1,Ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-26,1,2,minister,,minister,Ncmsn,NOUN,O,,O
 sl-26,1,3,za,,za,Sa,ADP,O,,O
 sl-26,1,4,energetiko,,energetika,Ncfsa,NOUN,O,,O
 sl-26,1,5,Rick,Rick,Rick,Npmsn,PROPN,B-PER,PER-Rick-Perry,B-PER
-sl-26,1,6,Perry,Perry,Perry,Npmsn,PROPN,I-PER,PER-Rick-Perry,B-PER
+sl-26,1,6,Perry,Perry,Perry,Npmsn,PROPN,I-PER,PER-Rick-Perry,I-PER
 sl-26,1,7,se,,se,Px------y,PRON,O,,O
 sl-26,1,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-26,1,9,ob,,ob,Sl,ADP,O,,O
@@ -22,7 +22,7 @@ sl-26,1,10,današnjem,,današnji,Agpmsl,ADJ,O,,O
 sl-26,1,11,obisku,,obisk,Ncmsl,NOUN,O,,O
 sl-26,1,12,vrha,vrh,vrh,Ncmsg,NOUN,B-EVT,EVT-Summit-Of-Three-Seas-Initiative,B-EVT
 sl-26,1,13,pobude,pobude,pobuda,Ncfsg,NOUN,I-EVT,EVT-Summit-Of-Three-Seas-Initiative,B-EVT
-sl-26,1,14,Tri,Tri,trije,Mlcnpa,NUM,I-EVT,EVT-Summit-Of-Three-Seas-Initiative,B-LOC
+sl-26,1,14,Tri,Tri,trije,Mlcnpa,NUM,I-EVT,EVT-Summit-Of-Three-Seas-Initiative,I-EVT
 sl-26,1,15,morja,morja,morje,Ncnpa,NOUN,I-EVT,EVT-Summit-Of-Three-Seas-Initiative,I-EVT
 sl-26,1,16,v,,v,Sl,ADP,O,,O
 sl-26,1,17,Ljubljani,Ljubljana,Ljubljana,Npfsl,PROPN,B-LOC,GPE-Ljubljana,B-LOC
@@ -36,9 +36,9 @@ sl-26,1,24,držav,,država,Ncfpg,NOUN,O,,O
 sl-26,1,25,Srednje,Srednji,srednji,Agpfsg,ADJ,B-LOC,LOC-Central-Europe,B-LOC
 sl-26,1,26,in,,in,Cc,CCONJ,O,,O
 sl-26,1,27,Vzhodne,Vzhodna,vzhoden,Agpfsg,ADJ,B-LOC,LOC-Eastern-Europe,B-LOC
-sl-26,1,28,Evrope,Evropa,Evropa,Npfsg,PROPN,I-LOC,LOC-Eastern-Europe,B-LOC
+sl-26,1,28,Evrope,Evropa,Evropa,Npfsg,PROPN,I-LOC,LOC-Eastern-Europe,I-LOC
 sl-26,1,29,.,,.,Z,PUNCT,O,,O
-sl-26,2,1,Te,,ta,Pd-fpn,DET,O,,O
+sl-26,2,1,Te,,ta,Pd-fpn,DET,O,,B-LOC
 sl-26,2,2,morajo,,morati,Vmpr3p,VERB,O,,O
 sl-26,2,3,",",,",",Z,PUNCT,O,,O
 sl-26,2,4,kot,,kot,Cs,SCONJ,O,,O
@@ -58,7 +58,7 @@ sl-26,2,17,za,,za,Sa,ADP,O,,O
 sl-26,2,18,to,,ta,Pd-nsa,DET,O,,O
 sl-26,2,19,pa,,pa,Cc,CCONJ,O,,O
 sl-26,2,20,poleg,,poleg,Sg,ADP,O,,O
-sl-26,2,21,ameriškega,,ameriški,Agpmsg,ADJ,O,,B-LOC
+sl-26,2,21,ameriškega,,ameriški,Agpmsg,ADJ,O,,O
 sl-26,2,22,plina,,plin,Ncmsg,NOUN,O,,O
 sl-26,2,23,vidi,,videti,Vmbr3s,VERB,O,,O
 sl-26,2,24,v,,v,Sl,ADP,O,,O
@@ -120,9 +120,9 @@ sl-26,5,1,Prav,,prav,Q,PART,O,,O
 sl-26,5,2,zato,,zato,Cc,CCONJ,O,,O
 sl-26,5,3,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-26,5,4,podpirajo,,podpirati,Vmpr3p,VERB,O,,O
-sl-26,5,5,pobudo,pobuda,pobuda,Ncfsa,NOUN,B-PRO,PRO-Three-Seas-Initiative,O
-sl-26,5,6,Tri,Tri,trije,Mlcnpa,NUM,I-PRO,PRO-Three-Seas-Initiative,B-LOC
-sl-26,5,7,morja,morja,morje,Ncnpa,NOUN,I-PRO,PRO-Three-Seas-Initiative,I-EVT
+sl-26,5,5,pobudo,pobuda,pobuda,Ncfsa,NOUN,B-PRO,PRO-Three-Seas-Initiative,B-PRO
+sl-26,5,6,Tri,Tri,trije,Mlcnpa,NUM,I-PRO,PRO-Three-Seas-Initiative,B-PRO
+sl-26,5,7,morja,morja,morje,Ncnpa,NOUN,I-PRO,PRO-Three-Seas-Initiative,I-PRO
 sl-26,5,8,in,,in,Cc,CCONJ,O,,O
 sl-26,5,9,oblikovanje,,oblikovanje,Ncnsa,NOUN,O,,O
 sl-26,5,10,energetske,,energetski,Agpfsg,ADJ,O,,O
@@ -306,7 +306,7 @@ sl-26,9,28,",",,",",Z,PUNCT,O,,O
 sl-26,9,29,vendar,,vendar,Cc,CCONJ,O,,O
 sl-26,9,30,pa,,pa,Cc,CCONJ,O,,O
 sl-26,9,31,so,,biti,Va-r3p-n,AUX,O,,O
-sl-26,9,32,ameriške,,ameriški,Agpfpn,ADJ,O,,B-LOC
+sl-26,9,32,ameriške,,ameriški,Agpfpn,ADJ,O,,O
 sl-26,9,33,zaloge,,zaloga,Ncfpn,NOUN,O,,O
 sl-26,9,34,plina,,plin,Ncmsg,NOUN,O,,O
 sl-26,9,35,ogromne,,ogromen,Agpfpn,ADJ,O,,O
@@ -411,7 +411,7 @@ sl-26,11,13,države,,država,Ncfpa,NOUN,O,,O
 sl-26,11,14,Srednje,Srednji,srednji,Agpfsg,ADJ,B-LOC,LOC-Central-Europe,B-LOC
 sl-26,11,15,in,,in,Cc,CCONJ,O,,O
 sl-26,11,16,Vzhodne,Vzhodna,vzhoden,Agpfsg,ADJ,B-LOC,LOC-Eastern-Europe,B-LOC
-sl-26,11,17,Evrope,Evropa,Evropa,Npfsg,PROPN,I-LOC,LOC-Eastern-Europe,B-LOC
+sl-26,11,17,Evrope,Evropa,Evropa,Npfsg,PROPN,I-LOC,LOC-Eastern-Europe,I-LOC
 sl-26,11,18,",",,",",Z,PUNCT,O,,O
 sl-26,11,19,krepiti,,krepiti,Vmpn,VERB,O,,O
 sl-26,11,20,tudi,,tudi,Q,PART,O,,O
@@ -488,7 +488,7 @@ sl-26,12,10,odločevalci,,odločevalec,Ncmpi,NOUN,O,,O
 sl-26,12,11,povečati,,povečati,Vmen,VERB,O,,O
 sl-26,12,12,zanimanje,,zanimanje,Ncnsa,NOUN,O,,O
 sl-26,12,13,za,,za,Sa,ADP,O,,O
-sl-26,12,14,ameriške,,ameriški,Agpmpa,ADJ,O,,B-LOC
+sl-26,12,14,ameriške,,ameriški,Agpmpa,ADJ,O,,O
 sl-26,12,15,male,,mali,Agpmpa,ADJ,O,,O
 sl-26,12,16,modularne,,modularen,Agpmpa,ADJ,O,,O
 sl-26,12,17,jedrske,,jedrski,Agpmpa,ADJ,O,,O
@@ -601,7 +601,7 @@ sl-26,15,21,novega,,nov,Agpmsg,ADJ,O,,O
 sl-26,15,22,bloka,,blok,Ncmsg,NOUN,O,,O
 sl-26,15,23,.,,.,Z,PUNCT,O,,O
 sl-26,16,1,Napredek,,napredek,Ncmsan,NOUN,O,,O
-sl-26,16,2,ameriške,,ameriški,Agpfsg,ADJ,O,,B-LOC
+sl-26,16,2,ameriške,,ameriški,Agpfsg,ADJ,O,,O
 sl-26,16,3,tehnologije,,tehnologija,Ncfsg,NOUN,O,,O
 sl-26,16,4,na,,na,Sl,ADP,O,,O
 sl-26,16,5,tem,,ta,Pd-nsl,DET,O,,O
@@ -700,8 +700,8 @@ sl-26,18,17,panelu,,panel,Ncmsl,NOUN,O,,O
 sl-26,18,18,v,,v,Sl,ADP,O,,O
 sl-26,18,19,okviru,,okvir,Ncmsl,NOUN,O,,O
 sl-26,18,20,vrha,vrh,vrh,Ncmsg,NOUN,B-EVT,EVT-Summit-Of-Three-Seas-Initiative,B-EVT
-sl-26,18,21,pobude,pobude,pobuda,Ncfsg,NOUN,I-EVT,EVT-Summit-Of-Three-Seas-Initiative,B-EVT
-sl-26,18,22,Tri,Tri,trije,Mlcnpa,NUM,I-EVT,EVT-Summit-Of-Three-Seas-Initiative,B-LOC
+sl-26,18,21,pobude,pobude,pobuda,Ncfsg,NOUN,I-EVT,EVT-Summit-Of-Three-Seas-Initiative,I-EVT
+sl-26,18,22,Tri,Tri,trije,Mlcnpa,NUM,I-EVT,EVT-Summit-Of-Three-Seas-Initiative,I-EVT
 sl-26,18,23,morja,morja,morje,Ncnpa,NOUN,I-EVT,EVT-Summit-Of-Three-Seas-Initiative,I-EVT
 sl-26,18,24,",",,",",Z,PUNCT,O,,O
 sl-26,18,25,na,,na,Sl,ADP,O,,O

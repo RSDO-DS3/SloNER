@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-16,0,1,Žaljivi,,žaljiv,Agpmsny,ADJ,O,,O
 sl-16,0,2,računovodja,,računovodja,Ncmsn,NOUN,O,,O
 sl-16,0,3,za,,za,Si,ADP,O,,O
@@ -42,8 +42,8 @@ sl-16,2,9,",",,",",Z,PUNCT,O,,O
 sl-16,2,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,2,11,iz,,iz,Sg,ADP,O,,O
 sl-16,2,12,Michaela,Michael,Michael,Npmsg,PROPN,B-PER,PER-Michael-O'Leary,B-PER
-sl-16,2,13,O,O,o,Sl,ADP,I-PER,PER-Michael-O'Leary,B-PER
-sl-16,2,14,‘,‘,‘,Z,PUNCT,I-PER,PER-Michael-O'Leary,O
+sl-16,2,13,O,O,o,Sl,ADP,I-PER,PER-Michael-O'Leary,I-PER
+sl-16,2,14,‘,‘,‘,Z,PUNCT,I-PER,PER-Michael-O'Leary,I-PER
 sl-16,2,15,Learja,Leary,Lear,Npmsg,PROPN,I-PER,PER-Michael-O'Leary,I-PER
 sl-16,2,16,",",,",",Z,PUNCT,O,,O
 sl-16,2,17,generalnega,,generalen,Agpmsg,ADJ,O,,O
@@ -118,12 +118,12 @@ sl-16,3,45,pri,,pri,Sl,ADP,O,,O
 sl-16,3,46,povezavi,,povezava,Ncfsl,NOUN,O,,O
 sl-16,3,47,med,,med,Si,ADP,O,,O
 sl-16,3,48,britanskim,,britanski,Agpnsi,ADJ,O,,O
-sl-16,3,49,letališčem,letališče,letališče,Ncnsi,NOUN,B-LOC,LOC-Stansted-airport,O
-sl-16,3,50,Stansted,Stansted,Stansted,Npmsn,PROPN,I-LOC,LOC-Stansted-airport,B-LOC
+sl-16,3,49,letališčem,letališče,letališče,Ncnsi,NOUN,B-LOC,LOC-Stansted-airport,B-LOC
+sl-16,3,50,Stansted,Stansted,Stansted,Npmsn,PROPN,I-LOC,LOC-Stansted-airport,I-LOC
 sl-16,3,51,in,,in,Cc,CCONJ,O,,O
-sl-16,3,52,letališčem,letališče,letališče,Ncnsi,NOUN,B-LOC,ORG-Edvard-Rusjan-Airport,O
-sl-16,3,53,Edvarda,Edvarda,Edvard,Npmsg,PROPN,I-LOC,ORG-Edvard-Rusjan-Airport,B-PER
-sl-16,3,54,Rusjana,Rusjana,Rusjan,Npmsg,PROPN,I-LOC,ORG-Edvard-Rusjan-Airport,I-PER
+sl-16,3,52,letališčem,letališče,letališče,Ncnsi,NOUN,B-LOC,ORG-Edvard-Rusjan-Airport,B-LOC
+sl-16,3,53,Edvarda,Edvarda,Edvard,Npmsg,PROPN,I-LOC,ORG-Edvard-Rusjan-Airport,I-LOC
+sl-16,3,54,Rusjana,Rusjana,Rusjan,Npmsg,PROPN,I-LOC,ORG-Edvard-Rusjan-Airport,I-LOC
 sl-16,3,55,.,,.,Z,PUNCT,O,,O
 sl-16,4,1,V,,v,Sl,ADP,O,,O
 sl-16,4,2,časih,,čas,Ncmpl,NOUN,O,,O
@@ -153,7 +153,7 @@ sl-16,5,2,marca,,marec,Ncmsg,NOUN,O,,O
 sl-16,5,3,2008,,2008,Mdc,NUM,O,,O
 sl-16,5,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,5,5,z,,z,Sg,ADP,O,,O
-sl-16,5,6,letališča,,letališče,Ncnsg,NOUN,O,,O
+sl-16,5,6,letališča,,letališče,Ncnsg,NOUN,O,,B-LOC
 sl-16,5,7,pri,,pri,Sl,ADP,O,,O
 sl-16,5,8,Mariboru,Maribor,Maribor,Npmsl,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-16,5,9,proti,,proti,Sd,ADP,O,,O
@@ -254,10 +254,10 @@ sl-16,7,51,.,,.,Z,PUNCT,O,,O
 sl-16,8,1,Katerega,,kateri,Pq-msg,DET,O,,O
 sl-16,8,2,dela,,del,Ncmsg,NOUN,O,,O
 sl-16,8,3,izraza,,izraz,Ncmsg,NOUN,O,,O
-sl-16,8,4,',,',Z,PUNCT,O,,B-PER
+sl-16,8,4,',,',Z,PUNCT,O,,O
 sl-16,8,5,brez,,brez,Sg,ADP,O,,O
 sl-16,8,6,nadomestila,,nadomestilo,Ncnsg,NOUN,O,,O
-sl-16,8,7,',,',Z,PUNCT,O,,B-PER
+sl-16,8,7,',,',Z,PUNCT,O,,O
 sl-16,8,8,ne,,ne,Q,PART,O,,O
 sl-16,8,9,razumete,,razumeti,Vmbr2p,VERB,O,,O
 sl-16,8,10,?,,?,Z,PUNCT,O,,O
@@ -404,7 +404,7 @@ sl-16,12,11,Ryanair,Ryanairov,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-16,12,12,razvpiti,,razvpit,Appmsny,ADJ,O,,O
 sl-16,12,13,šef,,šef,Ncmsn,NOUN,O,,O
 sl-16,12,14,Michael,Michael,Michael,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
-sl-16,12,15,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,I-PER,PER-Michael-O'Leary,O
+sl-16,12,15,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,I-PER,PER-Michael-O'Leary,I-PER
 sl-16,12,16,;,,;,Z,PUNCT,O,,O
 sl-16,12,17,za,,za,Si,ADP,O,,O
 sl-16,12,18,krmilom,,krmilo,Ncnsi,NOUN,O,,O
@@ -479,7 +479,7 @@ sl-16,13,35,kot,,kot,Cs,SCONJ,O,,O
 sl-16,13,36,leto,,leto,Ncnsa,NOUN,O,,O
 sl-16,13,37,prej,,prej,Rgc,ADV,O,,O
 sl-16,13,38,.,,.,Z,PUNCT,O,,O
-sl-16,14,1,Podjetje,,podjetje,Ncnsn,NOUN,O,,O
+sl-16,14,1,Podjetje,,podjetje,Ncnsn,NOUN,O,,B-LOC
 sl-16,14,2,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-16,14,3,v,,v,Sl,ADP,O,,O
 sl-16,14,4,lasti,,last,Ncfsl,NOUN,O,,O
@@ -531,7 +531,7 @@ sl-16,15,18,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,15,19,prav,,prav,Q,PART,O,,O
 sl-16,15,20,Slovenija,Slovenija,Slovenija,Npfsn,PROPN,B-LOC,GPE-Slovenia,B-LOC
 sl-16,15,21,.,,.,Z,PUNCT,O,,O
-sl-16,16,1,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-16,16,1,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-16,16,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,16,3,v,,v,Sl,ADP,O,,O
 sl-16,16,4,svoji,,svoj,Px-fsl,DET,O,,O
@@ -554,7 +554,7 @@ sl-16,16,20,spoštovanju,,spoštovanje,Ncnsl,NOUN,O,,O
 sl-16,16,21,svojih,,svoj,Px-fpg,DET,O,,O
 sl-16,16,22,strank,,stranka,Ncfpg,NOUN,O,,O
 sl-16,16,23,.,,.,Z,PUNCT,O,,O
-sl-16,17,1,Irec,Irec,Irec,Npmsn,PROPN,B-PER,GPE-Ireland,B-PER
+sl-16,17,1,Irec,Irec,Irec,Npmsn,PROPN,B-PER,GPE-Ireland,O
 sl-16,17,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,17,3,potnike,,potnik,Ncmpa,NOUN,O,,O
 sl-16,17,4,v,,v,Sl,ADP,O,,O
@@ -658,7 +658,7 @@ sl-16,21,8,",",,",",Z,PUNCT,O,,O
 sl-16,21,9,ki,,ki,Cs,SCONJ,O,,O
 sl-16,21,10,ga,,on,Pp3msa--y,PRON,O,,O
 sl-16,21,11,je,,biti,Va-r3s-n,AUX,O,,O
-sl-16,21,12,O'Learyjev,O'Leary,O'Learyjev,Aspmsnn,ADJ,B-PER,PER-Michael-O'Leary,O
+sl-16,21,12,O'Learyjev,O'Leary,O'Learyjev,Aspmsnn,ADJ,B-PER,PER-Michael-O'Leary,B-ORG
 sl-16,21,13,Ryaniar,Ryanair,Ryaniar,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-16,21,14,izpopolnil,,izpopolniti,Vmep-sm,VERB,O,,O
 sl-16,21,15,v,,v,Sl,ADP,O,,O
@@ -753,7 +753,7 @@ sl-16,22,36,letalske,,letalski,Agpfsg,ADJ,O,,O
 sl-16,22,37,industrije,,industrija,Ncfsg,NOUN,O,,O
 sl-16,22,38,nepredstavljivo,,nepredstavljiv,Agpnsn,ADJ,O,,O
 sl-16,22,39,.,,.,Z,PUNCT,O,,O
-sl-16,23,1,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-16,23,1,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-16,23,2,poslovnega,,posloven,Agpmsg,ADJ,O,,O
 sl-16,23,3,modela,,model,Ncmsg,NOUN,O,,O
 sl-16,23,4,ni,,biti,Va-r3s-y,AUX,O,,O
@@ -786,7 +786,7 @@ sl-16,24,4,drugi,,drug,Mlpmpn,ADJ,O,,O
 sl-16,24,5,šefi,,šef,Ncmpn,NOUN,O,,O
 sl-16,24,6,letalskih,,letalski,Agpfpg,ADJ,O,,O
 sl-16,24,7,družb,,družba,Ncfpg,NOUN,O,,O
-sl-16,24,8,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-16,24,8,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-16,24,9,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-16,24,10,pilot,,pilot,Ncmsn,NOUN,O,,O
 sl-16,24,11,po,,po,Sl,ADP,O,,O
@@ -803,7 +803,7 @@ sl-16,25,2,leta,,leto,Ncnsg,NOUN,O,,O
 sl-16,25,3,1961,,1961,Mdc,NUM,O,,O
 sl-16,25,4,na,,na,Sl,ADP,O,,O
 sl-16,25,5,jugu,jug,jug,Ncmsl,NOUN,B-LOC,GPE-Ireland,O
-sl-16,25,6,Irske,Irske,Irska,Npfsg,PROPN,I-LOC,GPE-Ireland,B-LOC
+sl-16,25,6,Irske,Irske,Irska,Npfsg,PROPN,I-LOC,GPE-Ireland,I-LOC
 sl-16,25,7,v,,v,Sl,ADP,O,,O
 sl-16,25,8,bližini,,bližina,Ncfsl,NOUN,O,,O
 sl-16,25,9,mesta,,mesto,Ncnsg,NOUN,O,,O
@@ -812,10 +812,10 @@ sl-16,25,11,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,25,12,diplomiral,,diplomirati,Vmbp-sm,VERB,O,,O
 sl-16,25,13,na,,na,Sl,ADP,O,,O
 sl-16,25,14,prestižnem,,prestižen,Agpmsl,ADJ,O,,O
-sl-16,25,15,kolidžu,Kolidž,kolidž,Ncmsl,NOUN,B-ORG,ORG-Trinity-College-Dublin,O
-sl-16,25,16,Trinity,Trinity,Trinity,Npmsn,PROPN,I-ORG,ORG-Trinity-College-Dublin,B-ORG
-sl-16,25,17,v,,v,Sl,ADP,O,,O
-sl-16,25,18,Dublinu,Dublin,Dublin,Npmsl,PROPN,B-LOC,GPE-Dublin,B-LOC
+sl-16,25,15,kolidžu,Kolidž,kolidž,Ncmsl,NOUN,B-ORG,ORG-Trinity-College-Dublin,B-LOC
+sl-16,25,16,Trinity,Trinity,Trinity,Npmsn,PROPN,I-ORG,ORG-Trinity-College-Dublin,I-LOC
+sl-16,25,17,v,,v,Sl,ADP,O,,I-LOC
+sl-16,25,18,Dublinu,Dublin,Dublin,Npmsl,PROPN,B-LOC,GPE-Dublin,I-LOC
 sl-16,25,19,iz,,iz,Sg,ADP,O,,O
 sl-16,25,20,ekonomskih,,ekonomski,Agpfpg,ADJ,O,,O
 sl-16,25,21,in,,in,Cc,CCONJ,O,,O
@@ -828,7 +828,7 @@ sl-16,25,27,zaposlil,,zaposliti,Vmep-sm,VERB,O,,O
 sl-16,25,28,pri,,pri,Sl,ADP,O,,O
 sl-16,25,29,svetovalni,,svetovalen,Agpfsl,ADJ,O,,O
 sl-16,25,30,družbi,,družba,Ncfsl,NOUN,O,,O
-sl-16,25,31,Stokes,Stokes,Stokes,Npmsn,PROPN,B-ORG,ORG-Stokes-Kennedy-Crowley,B-PER
+sl-16,25,31,Stokes,Stokes,Stokes,Npmsn,PROPN,B-ORG,ORG-Stokes-Kennedy-Crowley,B-ORG
 sl-16,25,32,Kennedy,Kennedy,Kennedy,Npmsn,PROPN,I-ORG,ORG-Stokes-Kennedy-Crowley,I-ORG
 sl-16,25,33,Crowley,Crowley,Crowley,Npmsn,PROPN,I-ORG,ORG-Stokes-Kennedy-Crowley,I-ORG
 sl-16,25,34,",",,",",Z,PUNCT,O,,O
@@ -844,7 +844,7 @@ sl-16,25,43,irski,,irski,Agpmsay,ADJ,O,,O
 sl-16,25,44,davčni,,davčen,Agpmsay,ADJ,O,,O
 sl-16,25,45,sistem,,sistem,Ncmsan,NOUN,O,,O
 sl-16,25,46,.,,.,Z,PUNCT,O,,O
-sl-16,26,1,Tam,,tam,Rgp,ADV,O,,O
+sl-16,26,1,Tam,,tam,Rgp,ADV,O,,B-PER
 sl-16,26,2,se,,se,Px------y,PRON,O,,O
 sl-16,26,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,26,4,seznanil,,seznaniti,Vmep-sm,VERB,O,,O
@@ -890,7 +890,7 @@ sl-16,27,23,zašla,,zaiti,Vmep-sf,VERB,O,,O
 sl-16,27,24,v,,v,Sa,ADP,O,,O
 sl-16,27,25,izgubo,,izguba,Ncfsa,NOUN,O,,O
 sl-16,27,26,.,,.,Z,PUNCT,O,,O
-sl-16,28,1,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-16,28,1,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,I-PER
 sl-16,28,2,se,,se,Px------y,PRON,O,,O
 sl-16,28,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,28,4,podjetju,,podjetje,Ncnsd,NOUN,O,,O
@@ -1001,7 +1001,7 @@ sl-16,31,5,Ryanaira,Ryanair,Ryanair,Npmsg,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-16,31,6,se,,se,Px------y,PRON,O,,O
 sl-16,31,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,31,8,ostrobesedni,,ostrobeseden,Agpmsny,ADJ,O,,O
-sl-16,31,9,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-16,31,9,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-16,31,10,zvesto,,zvesto,Rgp,ADV,O,,O
 sl-16,31,11,držal,,držati,Vmpp-sm,VERB,O,,O
 sl-16,31,12,načela,,načelo,Ncnpa,NOUN,O,,O
@@ -1038,7 +1038,7 @@ sl-16,32,7,navajajo,,navajati,Vmpr3p,VERB,O,,O
 sl-16,32,8,njegov,,njegov,Ps3msasm,DET,O,,O
 sl-16,32,9,luksuzni,,luksuzen,Agpmsay,ADJ,O,,O
 sl-16,32,10,mercedes,mercedes,mercedes,Ncmsan,NOUN,B-PRO,PRO-Mercedes-S500,B-PRO
-sl-16,32,11,S500,S500,s500,X,X,I-PRO,PRO-Mercedes-S500,B-PRO
+sl-16,32,11,S500,S500,s500,X,X,I-PRO,PRO-Mercedes-S500,I-PRO
 sl-16,32,12,",",,",",Z,PUNCT,O,,O
 sl-16,32,13,ki,,ki,Cs,SCONJ,O,,O
 sl-16,32,14,ga,,on,Pp3msa--y,PRON,O,,O
@@ -1077,7 +1077,7 @@ sl-16,33,5,ki,,ki,Cs,SCONJ,O,,O
 sl-16,33,6,se,,se,Px------y,PRON,O,,O
 sl-16,33,7,jim,,on,Pp3mpd--y,PRON,O,,O
 sl-16,33,8,je,,biti,Va-r3s-n,AUX,O,,O
-sl-16,33,9,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-16,33,9,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-16,33,10,zameril,,zameriti,Vmep-sm,VERB,O,,O
 sl-16,33,11,",",,",",Z,PUNCT,O,,O
 sl-16,33,12,so,,biti,Va-r3p-n,AUX,O,,O
@@ -1179,7 +1179,7 @@ sl-16,35,3,karieri,,kariera,Ncfsl,NOUN,O,,O
 sl-16,35,4,si,,se,Px---d--y,PRON,O,,O
 sl-16,35,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,35,6,namreč,,namreč,Cc,CCONJ,O,,O
-sl-16,35,7,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-16,35,7,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-16,35,8,nabral,,nabrati,Vmep-sm,VERB,O,,O
 sl-16,35,9,veliko,,veliko,Rgp,DET,O,,O
 sl-16,35,10,premoženja,,premoženje,Ncnsg,NOUN,O,,O
@@ -1223,9 +1223,9 @@ sl-16,37,5,navijač,,navijač,Ncmsn,NOUN,O,,O
 sl-16,37,6,nogometnega,nogometni,nogometen,Agpmsg,ADJ,B-ORG,ORG-Manchester-City-FC,O
 sl-16,37,7,kluba,klub,klub,Ncmsg,NOUN,I-ORG,ORG-Manchester-City-FC,O
 sl-16,37,8,Manchester,Manchester,Manchester,Npmsn,PROPN,I-ORG,ORG-Manchester-City-FC,B-ORG
-sl-16,37,9,City,City,City,Npmsn,PROPN,I-ORG,ORG-Manchester-City-FC,B-ORG
+sl-16,37,9,City,City,City,Npmsn,PROPN,I-ORG,ORG-Manchester-City-FC,I-ORG
 sl-16,37,10,.,,.,Z,PUNCT,O,,O
-sl-16,38,1,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-16,38,1,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-16,38,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-16,38,3,v,,v,Sl,ADP,O,,O
 sl-16,38,4,svoji,,svoj,Px-fsl,DET,O,,O
@@ -1345,7 +1345,7 @@ sl-16,44,2,svojem,,svoj,Px-msl,DET,O,,O
 sl-16,44,3,bojevitem,,bojevit,Agpmsl,ADJ,O,,O
 sl-16,44,4,slogu,,slog,Ncmsl,NOUN,O,,O
 sl-16,44,5,je,,biti,Va-r3s-n,AUX,O,,O
-sl-16,44,6,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-16,44,6,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-16,44,7,zavrnil,,zavrniti,Vmep-sm,VERB,O,,O
 sl-16,44,8,možnost,,možnost,Ncfsa,NOUN,O,,O
 sl-16,44,9,plačila,,plačilo,Ncnsg,NOUN,O,,O

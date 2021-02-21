@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-37,0,1,Napadalec,,napadalec,Ncmsn,NOUN,O,,O
 sl-37,0,2,do,,do,Sg,ADP,O,,O
 sl-37,0,3,smrti,,smrt,Ncfsg,NOUN,O,,O
@@ -13,12 +13,12 @@ sl-37,1,3,Weizsäcker,Weizsäcker,Weizsäcker,Npmsn,PROPN,I-PER,PER-Fritz-von-We
 sl-37,2,1,Zdravnik,,zdravnik,Ncmsn,NOUN,O,,O
 sl-37,2,2,Fritz,Fritz,Fritz,Npmsn,PROPN,B-PER,PER-Fritz-von-Weizsäcker,B-PER
 sl-37,2,3,von,von,von,Xf,X,I-PER,PER-Fritz-von-Weizsäcker,I-PER
-sl-37,2,4,Weizsäcker,Weizsäcker,Weizsäcker,Npmsn,PROPN,I-PER,PER-Fritz-von-Weizsäcker,O
+sl-37,2,4,Weizsäcker,Weizsäcker,Weizsäcker,Npmsn,PROPN,I-PER,PER-Fritz-von-Weizsäcker,I-PER
 sl-37,2,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-37,2,6,na,,na,Sl,ADP,O,,O
 sl-37,2,7,berlinski,,berlinski,Agpfsl,ADJ,O,,O
-sl-37,2,8,kliniki,klinika,klinika,Ncfsl,NOUN,B-LOC,LOC-Schlosspark-Klinik,O
-sl-37,2,9,Schlosspark,Schlosspark,Schlosspark,Npmsn,PROPN,I-LOC,LOC-Schlosspark-Klinik,B-LOC
+sl-37,2,8,kliniki,klinika,klinika,Ncfsl,NOUN,B-LOC,LOC-Schlosspark-Klinik,B-LOC
+sl-37,2,9,Schlosspark,Schlosspark,Schlosspark,Npmsn,PROPN,I-LOC,LOC-Schlosspark-Klinik,I-LOC
 sl-37,2,10,v,,v,Sa,ADP,O,,O
 sl-37,2,11,torek,,torek,Ncmsan,NOUN,O,,O
 sl-37,2,12,predaval,,predavati,Vmpp-sm,VERB,O,,O
@@ -132,8 +132,8 @@ sl-37,9,13,splošno,,splošen,Agpnsa,ADJ,O,,O
 sl-37,9,14,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-37,9,15,maral,,marati,Vmpp-sm,VERB,O,,O
 sl-37,9,16,družine,,družina,Ncfsg,NOUN,O,,O
-sl-37,9,17,von,von,von,Xf,X,B-PER,PER-von-Weizsäcker,I-PER
-sl-37,9,18,Weizsäcker,Weizsäcker,Weizsäcker,Npmsn,PROPN,I-PER,PER-von-Weizsäcker,O
+sl-37,9,17,von,von,von,Xf,X,B-PER,PER-von-Weizsäcker,B-PER
+sl-37,9,18,Weizsäcker,Weizsäcker,Weizsäcker,Npmsn,PROPN,I-PER,PER-von-Weizsäcker,I-PER
 sl-37,9,19,",",,",",Z,PUNCT,O,,O
 sl-37,9,20,še,,še,Q,PART,O,,O
 sl-37,9,21,navaja,,navajati,Vmpr3s,VERB,O,,O
@@ -141,7 +141,7 @@ sl-37,9,22,tožilstvo,,tožilstvo,Ncnsa,NOUN,O,,O
 sl-37,9,23,.,,.,Z,PUNCT,O,,O
 sl-37,10,1,Fritz,Fritz,Fritz,Npmsn,PROPN,B-PER,PER-Fritz-von-Weizsäcker,B-PER
 sl-37,10,2,von,von,von,Xf,X,I-PER,PER-Fritz-von-Weizsäcker,I-PER
-sl-37,10,3,Weizsäcker,Weizsäcker,Weizsäcker,Npmsn,PROPN,I-PER,PER-Fritz-von-Weizsäcker,O
+sl-37,10,3,Weizsäcker,Weizsäcker,Weizsäcker,Npmsn,PROPN,I-PER,PER-Fritz-von-Weizsäcker,I-PER
 sl-37,10,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-37,10,5,bil,,biti,Va-p-sm,AUX,O,,O
 sl-37,10,6,ugleden,,ugleden,Appmsnn,ADJ,O,,O
@@ -165,7 +165,7 @@ sl-37,11,9,1990,,1990,Mdc,NUM,O,,O
 sl-37,11,10,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-37,11,11,Zvezne,Zvezna,zvezen,Agpfsg,ADJ,B-LOC,GPE-West-Germany,B-LOC
 sl-37,11,12,republike,republika,republika,Ncfsg,NOUN,I-LOC,GPE-West-Germany,I-LOC
-sl-37,11,13,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,I-LOC,GPE-West-Germany,B-LOC
+sl-37,11,13,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,I-LOC,GPE-West-Germany,I-LOC
 sl-37,11,14,",",,",",Z,PUNCT,O,,O
 sl-37,11,15,med,,med,Si,ADP,O,,O
 sl-37,11,16,letoma,,leto,Ncndi,NOUN,O,,O
@@ -175,7 +175,7 @@ sl-37,11,19,1994,,1994,Mdc,NUM,O,,O
 sl-37,11,20,pa,,pa,Cc,CCONJ,O,,O
 sl-37,11,21,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-37,11,22,združene,združena,združen,Appfsg,ADJ,B-LOC,GPE-Germany,B-LOC
-sl-37,11,23,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,I-LOC,GPE-Germany,B-LOC
+sl-37,11,23,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,I-LOC,GPE-Germany,I-LOC
 sl-37,11,24,.,,.,Z,PUNCT,O,,O
 sl-37,12,1,Pred,,pred,Si,ADP,O,,O
 sl-37,12,2,tem,,ta,Pd-nsi,DET,O,,O
@@ -203,7 +203,7 @@ sl-37,14,2,pisanju,,pisanje,Ncnsl,NOUN,O,,O
 sl-37,14,3,nemške,,nemški,Agpfsg,ADJ,O,,O
 sl-37,14,4,politične,,političen,Agpfsg,ADJ,O,,O
 sl-37,14,5,revije,,revija,Ncfsg,NOUN,O,,O
-sl-37,14,6,Spiegel,Spiegel,Spiegel,Npmsn,PROPN,B-PRO,PRO-Der-Spiegel,B-ORG
+sl-37,14,6,Spiegel,Spiegel,Spiegel,Npmsn,PROPN,B-PRO,PRO-Der-Spiegel,B-PRO
 sl-37,14,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-37,14,8,napadalec,,napadalec,Ncmsn,NOUN,O,,O
 sl-37,14,9,raziskoval,,raziskovati,Vmpp-sm,VERB,O,,O
@@ -253,5 +253,5 @@ sl-37,15,21,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-37,15,22,uporabile,,uporabiti,Vmep-pf,VERB,O,,O
 sl-37,15,23,v,,v,Sl,ADP,O,,O
 sl-37,15,24,vietnamski,vietnamska,vietnamski,Agpfsl,ADJ,B-EVT,EVT-Vietnam-War,B-EVT
-sl-37,15,25,vojni,vojna,vojna,Ncfsl,NOUN,I-EVT,EVT-Vietnam-War,O
+sl-37,15,25,vojni,vojna,vojna,Ncfsl,NOUN,I-EVT,EVT-Vietnam-War,I-EVT
 sl-37,15,26,.,,.,Z,PUNCT,O,,O

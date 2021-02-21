@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-1,0,1,Zaradi,,zaradi,Sg,ADP,O,,O
 sl-1,0,2,ženske,,ženska,Ncfsg,NOUN,O,,O
 sl-1,0,3,",",,",",Z,PUNCT,O,,O
@@ -196,7 +196,7 @@ sl-1,6,35,njeno,,njen,Ps3fsasf,DET,O,,O
 sl-1,6,36,takojšnjo,,takojšnji,Agpfsa,ADJ,O,,O
 sl-1,6,37,usmrtitev,,usmrtitev,Ncfsa,NOUN,O,,O
 sl-1,6,38,.,,.,Z,PUNCT,O,,O
-sl-1,7,1,Pakistanske,,pakistanski,Agpfpn,ADJ,O,,B-LOC
+sl-1,7,1,Pakistanske,,pakistanski,Agpfpn,ADJ,O,,O
 sl-1,7,2,oblasti,,oblast,Ncfpn,NOUN,O,,O
 sl-1,7,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-1,7,4,se,,se,Px------y,PRON,O,,O
@@ -254,7 +254,7 @@ sl-1,8,17,v,,v,Sa,ADP,O,,O
 sl-1,8,18,drugo,,drug,Mlpfsa,ADJ,O,,O
 sl-1,8,19,državo,,država,Ncfsa,NOUN,O,,O
 sl-1,8,20,.,,.,Z,PUNCT,O,,O
-sl-1,9,1,Pakistanske,,pakistanski,Agpfpn,ADJ,O,,B-LOC
+sl-1,9,1,Pakistanske,,pakistanski,Agpfpn,ADJ,O,,O
 sl-1,9,2,oblasti,,oblast,Ncfpn,NOUN,O,,O
 sl-1,9,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-1,9,4,to,,ta,Pd-fsa,DET,O,,O
@@ -337,7 +337,7 @@ sl-1,11,27,njegovem,,njegov,Ps3nslsm,DET,O,,O
 sl-1,11,28,mnenju,,mnenje,Ncnsl,NOUN,O,,O
 sl-1,11,29,prenevarno,,prenevaren,Agpnsn,ADJ,O,,O
 sl-1,11,30,.,,.,Z,PUNCT,O,,O
-sl-1,12,1,Tako,,tako,Rgp,ADV,O,,O
+sl-1,12,1,Tako,,tako,Rgp,ADV,O,,B-LOC
 sl-1,12,2,naj,,naj,Q,PART,O,,O
 sl-1,12,3,bi,,biti,Va-c,AUX,O,,O
 sl-1,12,4,jim,,on,Pp3mpd--y,PRON,O,,O
@@ -348,7 +348,7 @@ sl-1,12,8,že,,že,Q,PART,O,,O
 sl-1,12,9,ponudilo,,ponuditi,Vmep-sn,VERB,O,,O
 sl-1,12,10,pomoč,,pomoč,Ncfsa,NOUN,O,,O
 sl-1,12,11,.,,.,Z,PUNCT,O,,O
-sl-1,13,1,Pakistanske,,pakistanski,Agpfpn,ADJ,O,,B-LOC
+sl-1,13,1,Pakistanske,,pakistanski,Agpfpn,ADJ,O,,O
 sl-1,13,2,oblasti,,oblast,Ncfpn,NOUN,O,,O
 sl-1,13,3,",",,",",Z,PUNCT,O,,O
 sl-1,13,4,ki,,ki,Cs,SCONJ,O,,O
@@ -395,7 +395,7 @@ sl-1,14,10,znova,,znova,Rgp,ADV,O,,O
 sl-1,14,11,izbruhnili,,izbruhniti,Vmep-pm,VERB,O,,O
 sl-1,14,12,protesti,,protest,Ncmpn,NOUN,O,,O
 sl-1,14,13,podpornikov,,podpornik,Ncmpg,NOUN,O,,O
-sl-1,14,14,islamističnih,,islamističen,Agpfpg,ADJ,O,,O
+sl-1,14,14,islamističnih,,islamističen,Agpfpg,ADJ,O,,B-ORG
 sl-1,14,15,strank,,stranka,Ncfpg,NOUN,O,,O
 sl-1,14,16,in,,in,Cc,CCONJ,O,,O
 sl-1,14,17,pozivali,,pozivati,Vmpp-pm,VERB,O,,O

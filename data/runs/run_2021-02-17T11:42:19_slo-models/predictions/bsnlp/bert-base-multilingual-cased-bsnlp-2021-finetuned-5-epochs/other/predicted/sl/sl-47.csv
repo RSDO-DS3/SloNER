@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-47,0,1,Romunija,Romunija,Romunija,Npfsn,PROPN,B-LOC,GPE-Romania,B-LOC
 sl-47,0,2,kot,,kot,Cs,SCONJ,O,,O
 sl-47,0,3,volk,,volk,Ncmsn,NOUN,O,,O
@@ -22,8 +22,8 @@ sl-47,2,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-47,2,3,prevzela,,prevzeti,Vmep-sf,VERB,O,,O
 sl-47,2,4,šestmesečno,,šestmesečen,Agpnsa,ADJ,O,,O
 sl-47,2,5,predsedstvo,,predsedstvo,Ncnsa,NOUN,O,,O
-sl-47,2,6,sveta,svet,svet,Ncmsg,NOUN,B-ORG,ORG-EU-Council,I-ORG
-sl-47,2,7,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-EU-Council,B-ORG
+sl-47,2,6,sveta,svet,svet,Ncmsg,NOUN,B-ORG,ORG-EU-Council,B-ORG
+sl-47,2,7,EU,EU,EU,Npfsg,PROPN,I-ORG,ORG-EU-Council,I-ORG
 sl-47,2,8,",",,",",Z,PUNCT,O,,O
 sl-47,2,9,torej,,torej,Cc,CCONJ,O,,O
 sl-47,2,10,za,,za,Sa,ADP,O,,O
@@ -152,7 +152,7 @@ sl-47,7,11,EU,EU,EU,Npfsg,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-47,7,12,",",,",",Z,PUNCT,O,,O
 sl-47,7,13,katerih,,kateri,Pq-fpg,DET,O,,O
 sl-47,7,14,vladajoče,,vladajoč,Appfpn,ADJ,O,,O
-sl-47,7,15,stranke,,stranka,Ncfpn,NOUN,O,,I-ORG
+sl-47,7,15,stranke,,stranka,Ncfpn,NOUN,O,,O
 sl-47,7,16,propagirajo,,propagirati,Vmpr3p,VERB,O,,O
 sl-47,7,17,evroskepticizem,,evroskepticizem,Ncmsan,NOUN,O,,O
 sl-47,7,18,",",,",",Z,PUNCT,O,,O
@@ -247,7 +247,7 @@ sl-47,9,33,.,,.,Z,PUNCT,O,,O
 sl-47,10,1,Vladno,,vladen,Agpnsn,ADJ,O,,O
 sl-47,10,2,podrejanje,,podrejanje,Ncnsn,NOUN,O,,O
 sl-47,10,3,tožilstva,,tožilstvo,Ncnsg,NOUN,O,,O
-sl-47,11,1,Romunske,,romunski,Agpfpn,ADJ,O,,B-LOC
+sl-47,11,1,Romunske,,romunski,Agpfpn,ADJ,O,,O
 sl-47,11,2,vladne,,vladen,Agpfpn,ADJ,O,,O
 sl-47,11,3,politike,,politika,Ncfpn,NOUN,O,,O
 sl-47,11,4,vse,,vse,Rgp,ADV,O,,O
@@ -278,10 +278,10 @@ sl-47,11,28,vladajoče,,vladajoč,Appfsg,ADJ,O,,O
 sl-47,11,29,socialdemokratske,socialdemokrati,socialdemokratski,Agpfsg,ADJ,B-ORG,ORG-Social-Democratic-Party-Romania,B-ORG
 sl-47,11,30,stranke,,stranka,Ncfsg,NOUN,O,,I-ORG
 sl-47,11,31,Livia,Liviu,Livia,Npfsn,PROPN,B-PER,PER-Liviu-Dragnea,B-PER
-sl-47,11,32,Dragneo,Dragnea,Dragneo,Npfsn,PROPN,I-PER,PER-Liviu-Dragnea,B-PER
+sl-47,11,32,Dragneo,Dragnea,Dragneo,Npfsn,PROPN,I-PER,PER-Liviu-Dragnea,I-PER
 sl-47,11,33,zaprli,,zapreti,Vmep-pm,VERB,O,,O
 sl-47,11,34,.,,.,Z,PUNCT,O,,O
-sl-47,12,1,Ta,,ta,Pd-msn,DET,O,,O
+sl-47,12,1,Ta,,ta,Pd-msn,DET,O,,B-PER
 sl-47,12,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-47,12,3,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-47,12,4,poslanske,,poslanski,Agpfsg,ADJ,O,,O
@@ -340,7 +340,7 @@ sl-47,14,6,ker,,ker,Cs,SCONJ,O,,O
 sl-47,14,7,naj,,naj,Q,PART,O,,O
 sl-47,14,8,bi,,biti,Va-c,AUX,O,,O
 sl-47,14,9,zlorabil,,zlorabiti,Vmep-sm,VERB,O,,O
-sl-47,14,10,evropska,,evropski,Agpnpa,ADJ,O,,B-ORG
+sl-47,14,10,evropska,,evropski,Agpnpa,ADJ,O,,O
 sl-47,14,11,sredstva,,sredstvo,Ncnpa,NOUN,O,,O
 sl-47,14,12,.,,.,Z,PUNCT,O,,O
 sl-47,15,1,Tako,,tako,Rgp,ADV,O,,O
@@ -505,7 +505,7 @@ sl-47,23,12,",",,",",Z,PUNCT,O,,O
 sl-47,23,13,ko,,ko,Cs,SCONJ,O,,O
 sl-47,23,14,je,,biti,Va-r3s-n,AUX,O,,O
 sl-47,23,15,bila,,biti,Va-p-sf,AUX,O,,O
-sl-47,23,16,evropska,,evropski,Agpfsn,ADJ,O,,B-ORG
+sl-47,23,16,evropska,,evropski,Agpfsn,ADJ,O,,O
 sl-47,23,17,poslanka,,poslanka,Ncfsn,NOUN,O,,O
 sl-47,23,18,",",,",",Z,PUNCT,O,,O
 sl-47,23,19,izjavila,,izjaviti,Vmep-sf,VERB,O,,O

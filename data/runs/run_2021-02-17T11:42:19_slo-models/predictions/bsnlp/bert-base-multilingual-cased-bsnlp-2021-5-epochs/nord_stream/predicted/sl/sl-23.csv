@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-23,0,1,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-23,0,2,si,,se,Px---d--y,PRON,O,,O
 sl-23,0,3,krepi,,krepiti,Vmpr3s,VERB,O,,O
@@ -30,10 +30,10 @@ sl-23,2,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-23,2,3,Xi,Xi,XI,Npmsn,PROPN,B-PER,PER-Xi-Jinping,B-PER
 sl-23,2,4,Jinping,Jinping,Jinping,Npmsn,PROPN,I-PER,PER-Xi-Jinping,I-PER
 sl-23,2,5,in,,in,Cc,CCONJ,O,,O
-sl-23,2,6,ruski,,ruski,Agpmsny,ADJ,O,,B-LOC
+sl-23,2,6,ruski,,ruski,Agpmsny,ADJ,O,,O
 sl-23,2,7,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-23,2,8,Vladimir,Vladimir,Vladimir,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
-sl-23,2,9,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,B-PER
+sl-23,2,9,Putin,Putin,Putin,Npmsn,PROPN,I-PER,PER-Vladimir-Putin,I-PER
 sl-23,2,10,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-23,2,11,prek,,prek,Sg,ADP,O,,O
 sl-23,2,12,videokonference,,videokonferenca,Ncfsg,NOUN,O,,O
@@ -76,7 +76,7 @@ sl-23,3,19,",",,",",Z,PUNCT,O,,O
 sl-23,3,20,odprla,,odpreti,Vmep-sf,VERB,O,,O
 sl-23,3,21,do,,do,Sg,ADP,O,,O
 sl-23,3,22,poletja,,poletje,Ncnsg,NOUN,O,,O
-sl-23,3,23,2020.,,2020.,Mdo,NUM,O,,I-PRO
+sl-23,3,23,2020.,,2020.,Mdo,NUM,O,,O
 sl-23,4,1,Druga,,drug,Mlpfsn,ADJ,O,,O
 sl-23,4,2,dva,,dva,Mlcmdn,NUM,O,,O
 sl-23,4,3,sta,,biti,Va-r3d-n,AUX,O,,O
@@ -143,7 +143,7 @@ sl-23,8,4,ki,,ki,Cs,SCONJ,O,,O
 sl-23,8,5,nosi,,nositi,Vmpr3s,VERB,O,,O
 sl-23,8,6,ime,,ime,Ncnsa,NOUN,O,,O
 sl-23,8,7,Moč,Moč,moč,Ncfsa,NOUN,B-PRO,PRO-Power-of-Siberia-gas-pipeline,B-PRO
-sl-23,8,8,Sibirije,Sibirije,Sibirija,Npfsg,PROPN,I-PRO,PRO-Power-of-Siberia-gas-pipeline,B-LOC
+sl-23,8,8,Sibirije,Sibirije,Sibirija,Npfsg,PROPN,I-PRO,PRO-Power-of-Siberia-gas-pipeline,I-PRO
 sl-23,8,9,",",,",",Z,PUNCT,O,,O
 sl-23,8,10,vsekakor,,vsekakor,Q,PART,O,,O
 sl-23,8,11,krepi,,krepiti,Vmpr3s,VERB,O,,O
@@ -179,7 +179,7 @@ sl-23,9,9,s,,z,Si,ADP,O,,O
 sl-23,9,10,katero,,kateri,Pq-fsi,DET,O,,O
 sl-23,9,11,se,,se,Px------y,PRON,O,,O
 sl-23,9,12,je,,biti,Va-r3s-n,AUX,O,,O
-sl-23,9,13,ruski,,ruski,Agpmsny,ADJ,O,,B-LOC
+sl-23,9,13,ruski,,ruski,Agpmsny,ADJ,O,,O
 sl-23,9,14,energetski,,energetski,Agpmsny,ADJ,O,,O
 sl-23,9,15,gigant,,gigant,Ncmsn,NOUN,O,,O
 sl-23,9,16,zavezal,,zavezati,Vmep-sm,VERB,O,,O
@@ -322,7 +322,7 @@ sl-23,15,8,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-23,15,9,pomembne,,pomemben,Agpfpa,ADJ,O,,O
 sl-23,15,10,alternative,,alternativa,Ncfpa,NOUN,O,,O
 sl-23,15,11,zunaj,,zunaj,Sg,ADP,O,,O
-sl-23,15,12,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-23,15,12,Evrope,Evropa,Evropa,Npfsg,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-23,15,13,",",,",",Z,PUNCT,O,,O
 sl-23,15,14,ker,,ker,Cs,SCONJ,O,,O
 sl-23,15,15,pa,,pa,Cc,CCONJ,O,,O

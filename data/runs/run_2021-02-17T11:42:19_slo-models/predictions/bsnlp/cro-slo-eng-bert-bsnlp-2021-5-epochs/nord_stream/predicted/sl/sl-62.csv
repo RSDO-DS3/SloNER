@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-62,0,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-62,0,2,proti,,proti,Sd,ADP,O,,O
 sl-62,0,3,nekaterim,,nekateri,Pi-mpd,DET,O,,O
@@ -24,9 +24,9 @@ sl-62,1,13,plinovodu,,plinovod,Ncmsl,NOUN,O,,O
 sl-62,1,14,do,,do,Sg,ADP,O,,O
 sl-62,1,15,Nemčije,Nemčija,Nemčija,Npfsg,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-62,1,16,–,,–,Z,PUNCT,O,,O
-sl-62,1,17,Severni,,severen,Agpmsny,ADJ,O,,B-PRO
-sl-62,1,18,tok,,tok,Ncmsn,NOUN,O,,I-PRO
-sl-62,1,19,2.,,2.,Mdo,NUM,O,,I-PRO
+sl-62,1,17,Severni,,severen,Agpmsny,ADJ,O,,O
+sl-62,1,18,tok,,tok,Ncmsn,NOUN,O,,O
+sl-62,1,19,2.,,2.,Mdo,NUM,O,,O
 sl-62,1,20,Kremelj,Kremelj,Kremelj,Npmsn,PROPN,B-ORG,ORG-Kremlin,B-ORG
 sl-62,1,21,in,,in,Cc,CCONJ,O,,O
 sl-62,1,22,Berlin,Berlin,Berlin,Npmsn,PROPN,B-LOC,GPE-Berlin,B-LOC
@@ -273,7 +273,7 @@ sl-62,12,29,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
 sl-62,12,30,z,,z,Si,ADP,O,,O
 sl-62,12,31,Nemčijo,Nemčija,Nemčija,Npfsi,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-62,12,32,in,,in,Cc,CCONJ,O,,O
-sl-62,12,33,Evropo,Evropa,Evropa,Npfsi,PROPN,B-LOC,LOC-Europe,I-LOC
+sl-62,12,33,Evropo,Evropa,Evropa,Npfsi,PROPN,B-LOC,LOC-Europe,B-LOC
 sl-62,12,34,.,,.,Z,PUNCT,O,,O
 sl-62,13,1,Problematizirajo,,problematizirati,Vmbr3p,VERB,O,,O
 sl-62,13,2,tudi,,tudi,Q,PART,O,,O
@@ -360,7 +360,7 @@ sl-62,16,12,energetskega,,energetski,Agpmsg,ADJ,O,,O
 sl-62,16,13,velikana,,velikan,Ncmsg,NOUN,O,,O
 sl-62,16,14,Gazprom,Gazprom,Gazprom,Npmsn,PROPN,B-ORG,ORG-Gazprom,B-ORG
 sl-62,16,15,.,,.,Z,PUNCT,O,,O
-sl-62,17,1,Rusi,Rusi,Rus,Npmpn,PROPN,B-PER,GPE-Russia,B-PER
+sl-62,17,1,Rusi,Rusi,Rus,Npmpn,PROPN,B-PER,GPE-Russia,B-LOC
 sl-62,17,2,napovedujejo,,napovedovati,Vmpr3p,VERB,O,,O
 sl-62,17,3,",",,",",Z,PUNCT,O,,O
 sl-62,17,4,da,,da,Cs,SCONJ,O,,O

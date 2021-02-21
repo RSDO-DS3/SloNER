@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-89,0,1,Kako,,kako,Rgp,ADV,O,,O
 sl-89,0,2,letalske,,letalski,Agpfpn,ADJ,O,,O
 sl-89,0,3,družbe,,družba,Ncfpn,NOUN,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-81,0,1,',,',Z,PUNCT,O,,O
 sl-81,0,2,Ne,,ne,Q,PART,O,,O
 sl-81,0,3,pogovarjaj,,pogovarjati,Vmpm2s,VERB,O,,O
@@ -153,7 +153,7 @@ sl-81,6,15,bojkotom,,bojkot,Ncmsi,NOUN,O,,O
 sl-81,6,16,letalske,,letalski,Agpfsg,ADJ,O,,O
 sl-81,6,17,družbe,,družba,Ncfsg,NOUN,O,,O
 sl-81,6,18,.,,.,Z,PUNCT,O,,O
-sl-81,7,1,Ta,,ta,Pd-fsn,DET,O,,O
+sl-81,7,1,Ta,,ta,Pd-fsn,DET,O,,B-PER
 sl-81,7,2,sicer,,sicer,Q,PART,O,,O
 sl-81,7,3,odgovarja,,odgovarjati,Vmpr3s,VERB,O,,O
 sl-81,7,4,",",,",",Z,PUNCT,O,,O
@@ -234,7 +234,7 @@ sl-81,10,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-81,10,5,kasneje,,kasno,Rgc,ADV,O,,O
 sl-81,10,6,za,,za,Sa,ADP,O,,O
 sl-81,10,7,The,The,the,Xf,X,B-PRO,PRO-Huffington-Post,B-PRO
-sl-81,10,8,Huffington,Huffington,Huffington,Npmsan,PROPN,I-PRO,PRO-Huffington-Post,B-PRO
+sl-81,10,8,Huffington,Huffington,Huffington,Npmsan,PROPN,I-PRO,PRO-Huffington-Post,I-PRO
 sl-81,10,9,Post,Post,Post,Npmsan,PROPN,I-PRO,PRO-Huffington-Post,I-PRO
 sl-81,10,10,povedala,,povedati,Vmep-sf,VERB,O,,O
 sl-81,10,11,",",,",",Z,PUNCT,O,,O
@@ -270,7 +270,7 @@ sl-81,10,40,svojega,,svoj,Px-msg,DET,O,,O
 sl-81,10,41,sedeža,,sedež,Ncmsg,NOUN,O,,O
 sl-81,10,42,.,,.,Z,PUNCT,O,,O
 sl-81,11,1,David,David,David,Npmsn,PROPN,B-PER,PER-David-Lawrence,B-PER
-sl-81,11,2,Lawrence,Lawrence,Lawrence,Npmsn,PROPN,I-PER,PER-David-Lawrence,B-PER
+sl-81,11,2,Lawrence,Lawrence,Lawrence,Npmsn,PROPN,I-PER,PER-David-Lawrence,I-PER
 sl-81,11,3,",",,",",Z,PUNCT,O,,O
 sl-81,11,4,ki,,ki,Cs,SCONJ,O,,O
 sl-81,11,5,je,,biti,Va-r3s-n,AUX,O,,O
@@ -279,9 +279,9 @@ sl-81,11,7,posnel,,posneti,Vmep-sm,VERB,O,,O
 sl-81,11,8,",",,",",Z,PUNCT,O,,O
 sl-81,11,9,je,,biti,Va-r3s-n,AUX,O,,O
 sl-81,11,10,za,,za,Sa,ADP,O,,O
-sl-81,11,11,BBC,BBC,BBC,Npmsan,PROPN,B-PRO,PRO-BBC-Radio-5,B-ORG
-sl-81,11,12,Radio,Radio,radio,Ncmsn,NOUN,I-PRO,PRO-BBC-Radio-5,I-ORG
-sl-81,11,13,5,5,5,Mdc,NUM,I-PRO,PRO-BBC-Radio-5,I-ORG
+sl-81,11,11,BBC,BBC,BBC,Npmsan,PROPN,B-PRO,PRO-BBC-Radio-5,B-PRO
+sl-81,11,12,Radio,Radio,radio,Ncmsn,NOUN,I-PRO,PRO-BBC-Radio-5,I-PRO
+sl-81,11,13,5,5,5,Mdc,NUM,I-PRO,PRO-BBC-Radio-5,I-PRO
 sl-81,11,14,povedal,,povedati,Vmep-sm,VERB,O,,O
 sl-81,11,15,:,,:,Z,PUNCT,O,,O
 sl-81,11,16,"""",,"""",Z,PUNCT,O,,O
@@ -395,7 +395,7 @@ sl-81,16,8,mati,,mati,Ncfsn,NOUN,O,,O
 sl-81,16,9,pripada,,pripadati,Vmpr3s,VERB,O,,O
 sl-81,16,10,t.,,t.,Y,X,O,,O
 sl-81,16,11,i.,,i.,Y,X,O,,O
-sl-81,16,12,Windrush,,windrus,Agpfsd,ADJ,O,,B-PER
+sl-81,16,12,Windrush,,windrus,Agpfsd,ADJ,O,,O
 sl-81,16,13,generaciji,,generacija,Ncfsd,NOUN,O,,O
 sl-81,16,14,",",,",",Z,PUNCT,O,,O
 sl-81,16,15,ki,,ki,Cs,SCONJ,O,,O

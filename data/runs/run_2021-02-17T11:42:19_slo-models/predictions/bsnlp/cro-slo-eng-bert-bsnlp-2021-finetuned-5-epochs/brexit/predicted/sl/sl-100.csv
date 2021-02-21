@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-100,0,1,Britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-100,0,2,premier,,premier,Ncmsn,NOUN,O,,O
 sl-100,0,3,se,,se,Px------y,PRON,O,,O
@@ -89,7 +89,7 @@ sl-100,3,4,konservativcev,konservativec,konservativec,Ncmpg,NOUN,B-PER,ORG-Conse
 sl-100,3,5,pod,,pod,Si,ADP,O,,O
 sl-100,3,6,vodstvom,,vodstvo,Ncnsi,NOUN,O,,O
 sl-100,3,7,Borisa,Boris,Boris,Npmsg,PROPN,B-PER,PER-Boris-Johnson,B-PER
-sl-100,3,8,Johnsona,Johnson,Johnson,Npmsg,PROPN,I-PER,PER-Boris-Johnson,B-PER
+sl-100,3,8,Johnsona,Johnson,Johnson,Npmsg,PROPN,I-PER,PER-Boris-Johnson,I-PER
 sl-100,3,9,",",,",",Z,PUNCT,O,,O
 sl-100,3,10,ki,,ki,Cs,SCONJ,O,,O
 sl-100,3,11,pa,,pa,Cc,CCONJ,O,,O
@@ -122,7 +122,7 @@ sl-100,4,14,tako,,tako,Rgp,ADV,O,,O
 sl-100,4,15,kot,,kot,Cs,SCONJ,O,,O
 sl-100,4,16,druge,,drug,Mlpfpn,ADJ,O,,O
 sl-100,4,17,opozicijske,,opozicijski,Agpfpn,ADJ,O,,O
-sl-100,4,18,stranke,,stranka,Ncfpn,NOUN,O,,I-ORG
+sl-100,4,18,stranke,,stranka,Ncfpn,NOUN,O,,O
 sl-100,4,19,",",,",",Z,PUNCT,O,,O
 sl-100,4,20,podpirajo,,podpirati,Vmpr3p,VERB,O,,O
 sl-100,4,21,razpis,,razpis,Ncmsan,NOUN,O,,O
@@ -199,7 +199,7 @@ sl-100,8,11,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-100,8,12,obnašal,,obnašati,Vmpp-sm,VERB,O,,O
 sl-100,8,13,kot,,kot,Cs,SCONJ,O,,O
 sl-100,8,14,vodja,,vodja,Ncmsn,NOUN,O,,O
-sl-100,8,15,stranke,,stranka,Ncfsg,NOUN,O,,I-ORG
+sl-100,8,15,stranke,,stranka,Ncfsg,NOUN,O,,O
 sl-100,8,16,",",,",",Z,PUNCT,O,,O
 sl-100,8,17,ki,,ki,Cs,SCONJ,O,,O
 sl-100,8,18,preprič-ljivo,,preprič-ljivo,Rgp,ADV,O,,O
@@ -318,7 +318,7 @@ sl-100,10,10,dvominut-no,,dvominutun,Agpfsa,ADJ,O,,O
 sl-100,10,11,parodijo,,parodija,Ncfsa,NOUN,O,,O
 sl-100,10,12,romantične,,romantičen,Agpfsg,ADJ,O,,O
 sl-100,10,13,komedije,,komedija,Ncfsg,NOUN,O,,O
-sl-100,10,14,Pravzaprav,Pravzaprav,pravzaprav,Q,PART,B-PRO,PRO-Love-Actually,B-EVT
+sl-100,10,14,Pravzaprav,Pravzaprav,pravzaprav,Q,PART,B-PRO,PRO-Love-Actually,O
 sl-100,10,15,ljubezen,ljubezen,ljubezen,Ncfsn,NOUN,I-PRO,PRO-Love-Actually,O
 sl-100,10,16,",",,",",Z,PUNCT,O,,O
 sl-100,10,17,v,,v,Sl,ADP,O,,O
@@ -359,7 +359,7 @@ sl-100,10,51,kocki,,kocka,Ncfsl,NOUN,O,,O
 sl-100,10,52,12.,,12.,Mdo,NUM,O,,O
 sl-100,10,53,decembra,,december,Ncmsg,NOUN,O,,O
 sl-100,10,54,.,,.,Z,PUNCT,O,,O
-sl-100,11,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
+sl-100,11,1,Johnson,Johnson,Johnson,Npmsn,PROPN,B-PER,PER-Boris-Johnson,O
 sl-100,11,2,konča,,končati,Vmer3s,VERB,O,,O
 sl-100,11,3,video,,video,Ncmsn,NOUN,O,,O
 sl-100,11,4,s,,z,Si,ADP,O,,O
@@ -431,7 +431,7 @@ sl-100,14,40,alternativa,,alternativa,Ncfsn,NOUN,O,,O
 sl-100,14,41,stališču,,stališče,Ncnsd,NOUN,O,,O
 sl-100,14,42,največje,,velik,Agsfsg,ADJ,O,,O
 sl-100,14,43,opozicijske,,opozicijski,Agpfsg,ADJ,O,,O
-sl-100,14,44,stranke,,stranka,Ncfsg,NOUN,O,,I-ORG
+sl-100,14,44,stranke,,stranka,Ncfsg,NOUN,O,,O
 sl-100,14,45,",",,",",Z,PUNCT,O,,O
 sl-100,14,46,ki,,ki,Cs,SCONJ,O,,O
 sl-100,14,47,-,,-,Z,PUNCT,O,,O
@@ -463,7 +463,7 @@ sl-100,15,6,ločitvenega,,ločitven,Agpmsg,ADJ,O,,O
 sl-100,15,7,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-100,15,8,v,,v,Sl,ADP,O,,O
 sl-100,15,9,britanskem,britanski,britanski,Agpmsl,ADJ,B-ORG,ORG-British-Parlament,B-ORG
-sl-100,15,10,parlamentu,parlament,parlament,Ncmsl,NOUN,I-ORG,ORG-British-Parlament,O
+sl-100,15,10,parlamentu,parlament,parlament,Ncmsl,NOUN,I-ORG,ORG-British-Parlament,I-ORG
 sl-100,15,11,končala,,končati,Vmep-sf,VERB,O,,O
 sl-100,15,12,šele,,šele,Q,PART,O,,O
 sl-100,15,13,prva,,prvi,Mlofsn,ADJ,O,,O
@@ -495,7 +495,7 @@ sl-100,16,5,v,,v,Sl,ADP,O,,O
 sl-100,16,6,kampanji,,kampanja,Ncfsl,NOUN,O,,O
 sl-100,16,7,stavila,,staviti,Vmbp-sf,VERB,O,,O
 sl-100,16,8,vladajoča,,vladajoč,Appfsn,ADJ,O,,O
-sl-100,16,9,stranka,,stranka,Ncfsn,NOUN,O,,I-ORG
+sl-100,16,9,stranka,,stranka,Ncfsn,NOUN,O,,O
 sl-100,16,10,.,,.,Z,PUNCT,O,,O
 sl-100,17,1,Čeprav,,čeprav,Cs,SCONJ,O,,O
 sl-100,17,2,ji,,on,Pp3fsd--y,PRON,O,,O
@@ -524,7 +524,7 @@ sl-100,18,5,se,,se,Px------y,PRON,O,,O
 sl-100,18,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-100,18,7,razlika,,razlika,Ncfsn,NOUN,O,,O
 sl-100,18,8,med,,med,Si,ADP,O,,O
-sl-100,18,9,konservativci,konservativec,konservativec,Ncmpi,NOUN,B-PER,ORG-Conservative-and-Unionist-Party-UK,B-PER
+sl-100,18,9,konservativci,konservativec,konservativec,Ncmpi,NOUN,B-PER,ORG-Conservative-and-Unionist-Party-UK,B-ORG
 sl-100,18,10,in,,in,Cc,CCONJ,O,,O
 sl-100,18,11,laburisti,laburist,laburist,Ncmpi,NOUN,B-PER,ORG-Labour-Party-UK,B-PER
 sl-100,18,12,nekoliko,,nekoliko,Rgp,ADV,O,,O
@@ -593,7 +593,7 @@ sl-100,19,18,scenariji,,scenarij,Ncmpn,NOUN,O,,O
 sl-100,19,19,:,,:,Z,PUNCT,O,,O
 sl-100,19,20,v,,v,Sl,ADP,O,,O
 sl-100,19,21,prvem,,prvi,Mlomsl,ADJ,O,,O
-sl-100,19,22,konservativci,konservativec,konservativec,Ncmpn,NOUN,B-PER,ORG-Conservative-and-Unionist-Party-UK,B-PER
+sl-100,19,22,konservativci,konservativec,konservativec,Ncmpn,NOUN,B-PER,ORG-Conservative-and-Unionist-Party-UK,B-ORG
 sl-100,19,23,dobijo,,dobiti,Vmer3p,VERB,O,,O
 sl-100,19,24,absolut-no,,absolutun,Agpfsa,ADJ,O,,O
 sl-100,19,25,večino,,večina,Ncfsa,NOUN,O,,O
@@ -619,16 +619,16 @@ sl-100,19,44,odvisni,,odvisen,Agpmpn,ADJ,O,,O
 sl-100,19,45,od,,od,Sg,ADP,O,,O
 sl-100,19,46,poslancev,,poslanec,Ncmpg,NOUN,O,,O
 sl-100,19,47,severnoirskih,,severnoirski,Agpmpg,ADJ,O,,B-PER
-sl-100,19,48,demokratičnih,demokratični,demokratičen,Agpmpg,ADJ,B-PER,ORG-Democratic-Unionist-Party,B-PER
+sl-100,19,48,demokratičnih,demokratični,demokratičen,Agpmpg,ADJ,B-PER,ORG-Democratic-Unionist-Party,I-PER
 sl-100,19,49,unionistov,unionist,unionist,Ncmpg,NOUN,I-PER,ORG-Democratic-Unionist-Party,I-PER
 sl-100,19,50,",",,",",Z,PUNCT,O,,O
 sl-100,19,51,v,,v,Sl,ADP,O,,O
 sl-100,19,52,tretjem,,tretji,Mlomsl,ADJ,O,,O
-sl-100,19,53,laburisti,laburist,laburist,Ncmpn,NOUN,B-PER,ORG-Labour-Party-UK,B-PER
+sl-100,19,53,laburisti,laburist,laburist,Ncmpn,NOUN,B-PER,ORG-Labour-Party-UK,B-ORG
 sl-100,19,54,in,,in,Cc,CCONJ,O,,O
 sl-100,19,55,druge,,drug,Mlpfpn,ADJ,O,,O
 sl-100,19,56,opozicijske,,opozicijski,Agpfpn,ADJ,O,,O
-sl-100,19,57,stranke,,stranka,Ncfpn,NOUN,O,,I-ORG
+sl-100,19,57,stranke,,stranka,Ncfpn,NOUN,O,,O
 sl-100,19,58,dobijo,,dobiti,Vmer3p,VERB,O,,O
 sl-100,19,59,dovolj,,dovolj,Rgp,DET,O,,O
 sl-100,19,60,glasov,,glas,Ncmpg,NOUN,O,,O
@@ -759,7 +759,7 @@ sl-100,24,12,za,,za,Sa,ADP,O,,O
 sl-100,24,13,Delo,Delo,delo,Ncnsa,NOUN,B-ORG,ORG-Delo,B-PRO
 sl-100,24,14,pojasnil,,pojasniti,Vmep-sm,VERB,O,,O
 sl-100,24,15,Nicolas,Nicolas,Nicolas,Npmsn,PROPN,B-PER,Nicolas Véron,B-PER
-sl-100,24,16,Véron,Véron,Véron,Npmsn,PROPN,I-PER,Nicolas Véron,B-PER
+sl-100,24,16,Véron,Véron,Véron,Npmsn,PROPN,I-PER,Nicolas Véron,I-PER
 sl-100,24,17,",",,",",Z,PUNCT,O,,O
 sl-100,24,18,ekonomist,,ekonomist,Ncmsn,NOUN,O,,O
 sl-100,24,19,pri,,pri,Sl,ADP,O,,O
@@ -801,7 +801,7 @@ sl-100,26,19,na,,na,Sl,ADP,O,,O
 sl-100,26,20,podlagi,,podlaga,Ncfsl,NOUN,O,,O
 sl-100,26,21,katere,,kateri,Pq-fsg,DET,O,,O
 sl-100,26,22,bi,,biti,Va-c,AUX,O,,O
-sl-100,26,23,stranka,,stranka,Ncfsn,NOUN,O,,I-ORG
+sl-100,26,23,stranka,,stranka,Ncfsn,NOUN,O,,O
 sl-100,26,24,lahko,,lahko,Rgp,ADV,O,,O
 sl-100,26,25,hitro,,hitro,Rgp,ADV,O,,O
 sl-100,26,26,ratificirala,,ratificirati,Vmbp-sf,VERB,O,,O
@@ -861,7 +861,7 @@ sl-100,28,9,boljši,,dober,Agcmsay,ADJ,O,,O
 sl-100,28,10,razplet,,razplet,Ncmsan,NOUN,O,,O
 sl-100,28,11,.,,.,Z,PUNCT,O,,O
 sl-100,28,12,«,,«,Z,PUNCT,O,,O
-sl-100,29,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+sl-100,29,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-LOC
 sl-100,29,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-100,29,3,na,,na,Sl,ADP,O,,O
 sl-100,29,4,tej,,ta,Pd-fsl,DET,O,,O

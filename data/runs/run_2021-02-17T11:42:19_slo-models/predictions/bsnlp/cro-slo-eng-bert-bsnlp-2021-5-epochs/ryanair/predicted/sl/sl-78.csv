@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-78,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-78,0,2,med,,med,Si,ADP,O,,O
 sl-78,0,3,top,,top,Ncmsn,NOUN,O,,O
@@ -83,7 +83,7 @@ sl-78,4,20,po,,po,Sa,ADP,O,,O
 sl-78,4,21,ena,,en,Mlpfsn,NUM,O,,O
 sl-78,4,22,poljska,,poljski,Agpfsn,ADJ,O,,O
 sl-78,4,23,in,,in,Cc,CCONJ,O,,O
-sl-78,4,24,bolgarska,,bolgarski,Agpfsn,ADJ,O,,B-LOC
+sl-78,4,24,bolgarska,,bolgarski,Agpfsn,ADJ,O,,O
 sl-78,4,25,.,,.,Z,PUNCT,O,,O
 sl-78,5,1,Iz,,iz,Sg,ADP,O,,O
 sl-78,5,2,podatkov,,podatek,Ncmpg,NOUN,O,,O
@@ -213,11 +213,11 @@ sl-78,8,25,energije,,energija,Ncfsg,NOUN,O,,O
 sl-78,8,26,uporabljajo,,uporabljati,Vmpr3p,VERB,O,,O
 sl-78,8,27,lignit,,lignit,Ncmsan,NOUN,O,,O
 sl-78,8,28,.,,.,Z,PUNCT,O,,O
-sl-78,9,1,Agencija,Agencija,agencija,Ncfsn,NOUN,B-ORG,ORG-European-Environment-Agency,O
-sl-78,9,2,za,za,za,Sa,ADP,I-ORG,ORG-European-Environment-Agency,O
-sl-78,9,3,transport,transport,transport,Ncmsan,NOUN,I-ORG,ORG-European-Environment-Agency,O
+sl-78,9,1,Agencija,Agencija,agencija,Ncfsn,NOUN,B-ORG,ORG-European-Environment-Agency,B-ORG
+sl-78,9,2,za,za,za,Sa,ADP,I-ORG,ORG-European-Environment-Agency,I-ORG
+sl-78,9,3,transport,transport,transport,Ncmsan,NOUN,I-ORG,ORG-European-Environment-Agency,I-ORG
 sl-78,9,4,in,in,in,Cc,CCONJ,I-ORG,ORG-European-Environment-Agency,O
-sl-78,9,5,okolje,okolje,okolje,Ncnsa,NOUN,I-ORG,ORG-European-Environment-Agency,O
+sl-78,9,5,okolje,okolje,okolje,Ncnsa,NOUN,I-ORG,ORG-European-Environment-Agency,I-ORG
 sl-78,9,6,zavoljo,,zavoljo,Sg,ADP,O,,O
 sl-78,9,7,sestave,,sestava,Ncfsg,NOUN,O,,O
 sl-78,9,8,seznama,,seznam,Ncmsg,NOUN,O,,O
@@ -300,9 +300,9 @@ sl-78,12,13,sistemom,sistem,sistem,Ncmsi,NOUN,B-ORG,ORG-ETS-EU-Emissions-Trading
 sl-78,12,14,za,za,za,Sa,ADP,I-ORG,ORG-ETS-EU-Emissions-Trading-System,O
 sl-78,12,15,trgovanje,trgovanje,trgovanje,Ncnsa,NOUN,I-ORG,ORG-ETS-EU-Emissions-Trading-System,O
 sl-78,12,16,z,z,z,Si,ADP,I-ORG,ORG-ETS-EU-Emissions-Trading-System,O
-sl-78,12,17,izpusti,izpusti,izpust,Ncmpi,NOUN,I-ORG,ORG-ETS-EU-Emissions-Trading-System,O
+sl-78,12,17,izpusti,izpusti,izpust,Ncmpi,NOUN,I-ORG,ORG-ETS-EU-Emissions-Trading-System,I-PRO
 sl-78,12,18,(,,(,Z,PUNCT,O,,O
-sl-78,12,19,ETS,ETS,ETS,Npmsn,PROPN,B-ORG,ORG-ETS-EU-Emissions-Trading-System,B-ORG
+sl-78,12,19,ETS,ETS,ETS,Npmsn,PROPN,B-ORG,ORG-ETS-EU-Emissions-Trading-System,B-PRO
 sl-78,12,20,),,),Z,PUNCT,O,,O
 sl-78,12,21,",",,",",Z,PUNCT,O,,O
 sl-78,12,22,ki,,ki,Cs,SCONJ,O,,O

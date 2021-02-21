@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-11-2,0,1,Obsojen,,obsojen,Appmsnn,ADJ,O,,O
 sl-11-2,0,2,na,,na,Sa,ADP,O,,O
 sl-11-2,0,3,20,,20,Mdc,NUM,O,,O
@@ -33,7 +33,7 @@ sl-11-2,3,6,nadaljnjih,,nadaljnji,Agpnpg,ADJ,O,,O
 sl-11-2,3,7,20,,20,Mdc,NUM,O,,O
 sl-11-2,3,8,let,,leto,Ncnpg,NOUN,O,,O
 sl-11-2,3,9,.,,.,Z,PUNCT,O,,O
-sl-11-2,4,1,MARIBOR,MARIBOR,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,O
+sl-11-2,4,1,MARIBOR,MARIBOR,Maribor,Npmsn,PROPN,B-LOC,GPE-Maribor,B-LOC
 sl-11-2,4,2,–,,–,Z,PUNCT,O,,O
 sl-11-2,4,3,»,,»,Z,PUNCT,O,,O
 sl-11-2,4,4,Tega,,ta,Pd-nsg,DET,O,,O
@@ -398,7 +398,7 @@ sl-11-2,20,13,svojem,,svoj,Px-nsl,DET,O,,O
 sl-11-2,20,14,stanovanju,,stanovanje,Ncnsl,NOUN,O,,O
 sl-11-2,20,15,v,,v,Sl,ADP,O,,O
 sl-11-2,20,16,Kettejevi,Kettejeva,Kettejev,Aspfsl,ADJ,B-LOC,LOC-Kettejeva-Ulica,B-LOC
-sl-11-2,20,17,ulici,ulica,ulica,Ncfsl,NOUN,I-LOC,LOC-Kettejeva-Ulica,O
+sl-11-2,20,17,ulici,ulica,ulica,Ncfsl,NOUN,I-LOC,LOC-Kettejeva-Ulica,I-LOC
 sl-11-2,20,18,zahrbtno,,zahrbtno,Rgp,ADV,O,,O
 sl-11-2,20,19,umoril,,umoriti,Vmep-sm,VERB,O,,O
 sl-11-2,20,20,30,,30,Mdc,NUM,O,,O

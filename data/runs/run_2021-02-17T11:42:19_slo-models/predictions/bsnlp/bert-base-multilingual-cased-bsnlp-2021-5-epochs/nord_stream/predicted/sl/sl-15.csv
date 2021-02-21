@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-15,0,1,Putin,Putin,Putin,Npmsn,PROPN,B-PER,PER-Vladimir-Putin,B-PER
 sl-15,0,2,iz,,iz,Sg,ADP,O,,O
 sl-15,0,3,poroke,,poroka,Ncfsg,NOUN,O,,O
@@ -327,7 +327,7 @@ sl-15,17,15,predsednika,,predsednik,Ncmsg,NOUN,O,,O
 sl-15,17,16,Donalda,Donald,Donald,Npmsg,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-15,17,17,Trumpa,Trump,Trump,Npmsg,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-15,17,18,.,,.,Z,PUNCT,O,,O
-sl-15,18,1,Ta,,ta,Pd-msn,DET,O,,O
+sl-15,18,1,Ta,,ta,Pd-msn,DET,O,,B-PER
 sl-15,18,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-15,18,3,med,,med,Si,ADP,O,,O
 sl-15,18,4,drugim,,drug,Mlpnsi,ADJ,O,,O

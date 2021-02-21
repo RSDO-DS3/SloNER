@@ -1,11 +1,11 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-70,0,1,Prtljaga,,prtljaga,Ncfsn,NOUN,O,,O
 sl-70,0,2,",",,",",Z,PUNCT,O,,O
 sl-70,0,3,ki,,ki,Cs,SCONJ,O,,O
-sl-70,0,4,vam,,ti,Pp2-pd,PRON,O,,I-EVT
+sl-70,0,4,vam,,ti,Pp2-pd,PRON,O,,O
 sl-70,0,5,sledi,,slediti,Vmpr3s,VERB,O,,O
 sl-70,1,1,Ljubitelji,,ljubitelj,Ncmpn,NOUN,O,,O
-sl-70,1,2,romanov,,roman,Ncmpg,NOUN,O,,B-PRO
+sl-70,1,2,romanov,,roman,Ncmpg,NOUN,O,,O
 sl-70,1,3,pokojnega,,pokojen,Agpmsg,ADJ,O,,O
 sl-70,1,4,britanskega,,britanski,Agpmsg,ADJ,O,,O
 sl-70,1,5,pisatelja,,pisatelj,Ncmsg,NOUN,O,,O
@@ -16,7 +16,7 @@ sl-70,1,9,",",,",",Z,PUNCT,O,,O
 sl-70,1,10,ki,,ki,Cs,SCONJ,O,,O
 sl-70,1,11,je,,biti,Va-r3s-n,AUX,O,,O
 sl-70,1,12,ustvaril,,ustvariti,Vmep-sm,VERB,O,,O
-sl-70,1,13,obsežno,,obsežen,Agpfsa,ADJ,O,,B-ORG
+sl-70,1,13,obsežno,,obsežen,Agpfsa,ADJ,O,,O
 sl-70,1,14,serijo,,serija,Ncfsa,NOUN,O,,O
 sl-70,1,15,komičnih,,komičen,Agpmpg,ADJ,O,,O
 sl-70,1,16,fantazijskih,,fantazijski,Agpmpg,ADJ,O,,O
@@ -31,7 +31,7 @@ sl-70,1,24,že,,že,Q,PART,O,,O
 sl-70,1,25,od,,od,Sg,ADP,O,,O
 sl-70,1,26,nekdaj,,nekdaj,Rgp,ADV,O,,O
 sl-70,1,27,sanjajo,,sanjati,Vmpr3p,VERB,O,,O
-sl-70,1,28,o,,o,Sl,ADP,O,,B-ORG
+sl-70,1,28,o,,o,Sl,ADP,O,,O
 sl-70,1,29,magičnem,,magičen,Agpmsl,ADJ,O,,O
 sl-70,1,30,kovčku,,kovček,Ncmsl,NOUN,O,,O
 sl-70,1,31,",",,",",Z,PUNCT,O,,O
@@ -45,11 +45,11 @@ sl-70,1,38,čez,,čez,Sa,ADP,O,,O
 sl-70,1,39,drn,,drn,Ncmsan,NOUN,O,,O
 sl-70,1,40,in,,in,Cc,CCONJ,O,,O
 sl-70,1,41,strn,,strn,Ncmsan,NOUN,O,,O
-sl-70,1,42,ter,,ter,Cc,CCONJ,O,,I-PER
+sl-70,1,42,ter,,ter,Cc,CCONJ,O,,O
 sl-70,1,43,poskrbeti,,poskrbeti,Vmen,VERB,O,,O
 sl-70,1,44,",",,",",Z,PUNCT,O,,O
 sl-70,1,45,da,,da,Cs,SCONJ,O,,O
-sl-70,1,46,v,,v,Sl,ADP,O,,I-EVT
+sl-70,1,46,v,,v,Sl,ADP,O,,O
 sl-70,1,47,njem,,on,Pp3msl,PRON,O,,O
 sl-70,1,48,spravljeno,,spravljen,Appnsn,ADJ,O,,O
 sl-70,1,49,lastnikovo,,lastnikov,Aspnsn,ADJ,O,,O
@@ -122,7 +122,7 @@ sl-70,5,10,pojavil,,pojaviti,Vmep-sm,VERB,O,,O
 sl-70,5,11,avtonomni,,avtonomen,Agpmsny,ADJ,O,,O
 sl-70,5,12,kovček,,kovček,Ncmsn,NOUN,O,,O
 sl-70,5,13,cowarobot,cowarobot,cowarobot,Ncmsn,NOUN,B-PRO,PRO-Indiegogo-Cowarobot-r1,B-PRO
-sl-70,5,14,r1,r1,r1,Mdc,NUM,I-PRO,PRO-Indiegogo-Cowarobot-r1,O
+sl-70,5,14,r1,r1,r1,Mdc,NUM,I-PRO,PRO-Indiegogo-Cowarobot-r1,I-PRO
 sl-70,5,15,in,,in,Cc,CCONJ,O,,O
 sl-70,5,16,za,,za,Sa,ADP,O,,O
 sl-70,5,17,skoraj,,skoraj,Q,PART,O,,O
@@ -134,7 +134,7 @@ sl-70,5,22,zbiranja,,zbiranje,Ncnsg,NOUN,O,,O
 sl-70,5,23,naročil,,naročilo,Ncnpg,NOUN,O,,O
 sl-70,5,24,.,,.,Z,PUNCT,O,,O
 sl-70,6,1,Cowarobot,cowarobot,Cowarobot,Npmsn,PROPN,B-PRO,PRO-Indiegogo-Cowarobot-r1,B-PRO
-sl-70,6,2,r1,r1,r1,Mdc,NUM,I-PRO,PRO-Indiegogo-Cowarobot-r1,O
+sl-70,6,2,r1,r1,r1,Mdc,NUM,I-PRO,PRO-Indiegogo-Cowarobot-r1,I-PRO
 sl-70,6,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-70,6,4,imel,,imeti,Vmpp-sm,VERB,O,,O
 sl-70,6,5,senzorje,,senzor,Ncmpa,NOUN,O,,O
@@ -178,7 +178,7 @@ sl-70,7,11,kar,,kar,Rgp,ADV,O,,O
 sl-70,7,12,nekaj,,nekaj,Rgp,DET,O,,O
 sl-70,7,13,podjetij,,podjetje,Ncnpg,NOUN,O,,O
 sl-70,7,14,.,,.,Z,PUNCT,O,,O
-sl-70,8,1,Večina,,večina,Ncfsn,NOUN,O,,O
+sl-70,8,1,Večina,,večina,Ncfsn,NOUN,O,,B-LOC
 sl-70,8,2,še,,še,Q,PART,O,,O
 sl-70,8,3,vedno,,vedno,Rgp,ADV,O,,O
 sl-70,8,4,sledi,,slediti,Vmpr3s,VERB,O,,O
@@ -221,8 +221,8 @@ sl-70,9,20,",",,",",Z,PUNCT,O,,O
 sl-70,9,21,ki,,ki,Cs,SCONJ,O,,O
 sl-70,9,22,lastnika,,lastnik,Ncmsay,NOUN,O,,O
 sl-70,9,23,večinoma,,večinoma,Rgp,ADV,O,,O
-sl-70,9,24,gleda,,gledati,Vmpr3s,VERB,O,,B-ORG
-sl-70,9,25,v,,v,Sa,ADP,O,,I-EVT
+sl-70,9,24,gleda,,gledati,Vmpr3s,VERB,O,,O
+sl-70,9,25,v,,v,Sa,ADP,O,,O
 sl-70,9,26,hrbet,,hrbet,Ncmsan,NOUN,O,,O
 sl-70,9,27,.,,.,Z,PUNCT,O,,O
 sl-70,10,1,Med,,med,Si,ADP,O,,O
@@ -238,7 +238,7 @@ sl-70,10,10,na,,na,Sa,ADP,O,,O
 sl-70,10,11,nekatere,,nekateri,Pi-mpa,DET,O,,O
 sl-70,10,12,drznejše,,drzen,Agcmpa,ADJ,O,,O
 sl-70,10,13,.,,.,Z,PUNCT,O,,O
-sl-70,11,1,Kužek,kužek1,kužek,Ncmsn,NOUN,B-PRO,PRO-Xiaomi-Puppy-1,B-PER
+sl-70,11,1,Kužek,kužek1,kužek,Ncmsn,NOUN,B-PRO,PRO-Xiaomi-Puppy-1,O
 sl-70,11,2,na,,na,Sl,ADP,O,,O
 sl-70,11,3,dveh,,dva,Mlcfdl,NUM,O,,O
 sl-70,11,4,nogah,,noga,Ncfdl,NOUN,O,,O
@@ -257,7 +257,7 @@ sl-70,12,12,tehnološkega,,tehnološki,Agpmsg,ADJ,O,,O
 sl-70,12,13,velikana,,velikan,Ncmsg,NOUN,O,,O
 sl-70,12,14,Xiaomi,Xiaomi,Xiaomi,Npmsn,PROPN,B-ORG,ORG-Xiaomi,B-ORG
 sl-70,12,15,.,,.,Z,PUNCT,O,,O
-sl-70,13,1,Svoj,,svoj,Px-msa,DET,O,,I-EVT
+sl-70,13,1,Svoj,,svoj,Px-msa,DET,O,,O
 sl-70,13,2,avtonomni,,avtonomen,Agpmsay,ADJ,O,,O
 sl-70,13,3,kovček,,kovček,Ncmsan,NOUN,O,,O
 sl-70,13,4,so,,biti,Va-r3p-n,AUX,O,,O
@@ -272,7 +272,7 @@ sl-70,13,12,avtonomnih,,avtonomen,Agpmpg,ADJ,O,,O
 sl-70,13,13,kovčkov,,kovček,Ncmpg,NOUN,O,,O
 sl-70,13,14,pa,,pa,Cc,CCONJ,O,,O
 sl-70,13,15,se,,se,Px------y,PRON,O,,O
-sl-70,13,16,kužek,kužek1,kužek,Ncmsn,NOUN,B-PRO,PRO-Xiaomi-Puppy-1,O
+sl-70,13,16,kužek,kužek1,kužek,Ncmsn,NOUN,B-PRO,PRO-Xiaomi-Puppy-1,B-PRO
 sl-70,13,17,loči,,ločiti,Vmbr3s,VERB,O,,O
 sl-70,13,18,že,,že,Q,PART,O,,O
 sl-70,13,19,po,,po,Sl,ADP,O,,O
@@ -329,7 +329,7 @@ sl-70,15,3,drugih,,drug,Mlpmpl,ADJ,O,,O
 sl-70,15,4,avtonomnih,,avtonomen,Agpmpl,ADJ,O,,O
 sl-70,15,5,kovčkih,,kovček,Ncmpl,NOUN,O,,O
 sl-70,15,6,tudi,,tudi,Q,PART,O,,O
-sl-70,15,7,kužek,kužek1,kužek,Ncmsn,NOUN,B-PRO,PRO-Xiaomi-Puppy-1,O
+sl-70,15,7,kužek,kužek1,kužek,Ncmsn,NOUN,B-PRO,PRO-Xiaomi-Puppy-1,B-PRO
 sl-70,15,8,lastniku,,lastnik,Ncmsd,NOUN,O,,O
 sl-70,15,9,sledi,,slediti,Vmpr3s,VERB,O,,O
 sl-70,15,10,s,,z,Si,ADP,O,,O
@@ -379,10 +379,10 @@ sl-70,18,3,pravijo,,praviti,Vmbr3p,VERB,O,,O
 sl-70,18,4,",",,",",Z,PUNCT,O,,O
 sl-70,18,5,da,,da,Cs,SCONJ,O,,O
 sl-70,18,6,bo,,biti,Va-f3s-n,AUX,O,,O
-sl-70,18,7,v,,v,Sl,ADP,O,,I-EVT
+sl-70,18,7,v,,v,Sl,ADP,O,,O
 sl-70,18,8,končni,,končen,Agpfsl,ADJ,O,,O
 sl-70,18,9,različici,,različica,Ncfsl,NOUN,O,,O
-sl-70,18,10,kužek,kužek1,kužek,Ncmsn,NOUN,B-PRO,PRO-Xiaomi-Puppy-1,O
+sl-70,18,10,kužek,kužek1,kužek,Ncmsn,NOUN,B-PRO,PRO-Xiaomi-Puppy-1,B-PRO
 sl-70,18,11,sledil,,slediti,Vmpp-sm,VERB,O,,O
 sl-70,18,12,sponki,,sponka,Ncfsd,NOUN,O,,O
 sl-70,18,13,",",,",",Z,PUNCT,O,,O
@@ -453,9 +453,9 @@ sl-70,21,7,podjetje,,podjetje,Ncnsn,NOUN,O,,O
 sl-70,21,8,predstavilo,,predstaviti,Vmep-sn,VERB,O,,O
 sl-70,21,9,na,,na,Sl,ADP,O,,O
 sl-70,21,10,letošnjem,,letošnji,Agpmsl,ADJ,O,,O
-sl-70,21,11,sejmu,,sejem,Ncmsl,NOUN,O,,B-EVT
+sl-70,21,11,sejmu,,sejem,Ncmsl,NOUN,O,,O
 sl-70,21,12,CES,CES,CES,Npmsn,PROPN,B-EVT,EVT-CES-Consumer-Electronic-Show,I-EVT
-sl-70,21,13,v,,v,Sl,ADP,O,,I-EVT
+sl-70,21,13,v,,v,Sl,ADP,O,,O
 sl-70,21,14,Las,Las,Las,Npmsn,PROPN,B-LOC,GPE-Las-Vegas,B-LOC
 sl-70,21,15,Vegasu,Vegas,Vegas,Npmsl,PROPN,I-LOC,GPE-Las-Vegas,I-LOC
 sl-70,21,16,",",,",",Z,PUNCT,O,,O
@@ -505,7 +505,7 @@ sl-70,23,3,pomeni,,pomeniti,Vmbr3s,VERB,O,,O
 sl-70,23,4,",",,",",Z,PUNCT,O,,O
 sl-70,23,5,da,,da,Cs,SCONJ,O,,O
 sl-70,23,6,boste,,biti,Va-f2p-n,AUX,O,,O
-sl-70,23,7,v,,v,Sl,ADP,O,,I-EVT
+sl-70,23,7,v,,v,Sl,ADP,O,,O
 sl-70,23,8,naglici,,naglica,Ncfsl,NOUN,O,,O
 sl-70,23,9,kovček,,kovček,Ncmsan,NOUN,O,,O
 sl-70,23,10,še,,še,Q,PART,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-51,0,1,Po,,po,Sl,ADP,O,,O
 sl-51,0,2,stečaju,,stečaj,Ncmsl,NOUN,O,,O
 sl-51,0,3,Adrie,Adria,Adria,Npfsg,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
@@ -39,9 +39,9 @@ sl-51,2,14,linije,,linija,Ncfpa,NOUN,O,,O
 sl-51,2,15,z,,z,Sg,ADP,O,,O
 sl-51,2,16,Brnika,Brnik,Brnik,Npmsg,PROPN,B-LOC,LOC-Ljubljana-Jože-Pučnik-Airport,B-LOC
 sl-51,2,17,.,,.,Z,PUNCT,O,,O
-sl-51,3,1,Ameriški,,ameriški,Agpmpn,ADJ,O,,O
+sl-51,3,1,Ameriški,,ameriški,Agpmpn,ADJ,O,,B-LOC
 sl-51,3,2,in,,in,Cc,CCONJ,O,,O
-sl-51,3,3,evropski,Evropa,evropski,Agpmpn,ADJ,B-LOC,LOC-Europe,O
+sl-51,3,3,evropski,Evropa,evropski,Agpmpn,ADJ,B-LOC,LOC-Europe,B-LOC
 sl-51,3,4,letalski,,letalski,Agpmpn,ADJ,O,,O
 sl-51,3,5,prevozniki,,prevoznik,Ncmpn,NOUN,O,,O
 sl-51,3,6,dominirajo,,dominirati,Vmpr3p,VERB,O,,O
@@ -55,7 +55,7 @@ sl-51,3,13,ugotavljajo,,ugotavljati,Vmpr3p,VERB,O,,O
 sl-51,3,14,pri,,pri,Sl,ADP,O,,O
 sl-51,3,15,spletnem,,spleten,Agpnsl,ADJ,O,,O
 sl-51,3,16,portalu,,portalo,Ncnsl,NOUN,O,,O
-sl-51,3,17,Airport-technology,Airport-technology,Airport-technology,Npmsn,PROPN,B-PRO,PRO-Airport-technology,B-ORG
+sl-51,3,17,Airport-technology,Airport-technology,Airport-technology,Npmsn,PROPN,B-PRO,PRO-Airport-technology,B-PRO
 sl-51,3,18,",",,",",Z,PUNCT,O,,O
 sl-51,3,19,kjer,,kjer,Cs,SCONJ,O,,O
 sl-51,3,20,so,,biti,Va-r3p-n,AUX,O,,O
@@ -84,7 +84,7 @@ sl-51,4,4,se,,se,Px------y,PRON,O,,O
 sl-51,4,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-51,4,6,znašla,,znajti,Vmep-sf,VERB,O,,O
 sl-51,4,7,Lufthansa,Lufthansa,Lufthansa,Npfsn,PROPN,B-ORG,ORG-Lufthansa,B-ORG
-sl-51,4,8,Group,Group,Group,Npfsn,PROPN,I-ORG,ORG-Lufthansa,B-ORG
+sl-51,4,8,Group,Group,Group,Npfsn,PROPN,I-ORG,ORG-Lufthansa,I-ORG
 sl-51,4,9,",",,",",Z,PUNCT,O,,O
 sl-51,4,10,ki,,ki,Cs,SCONJ,O,,O
 sl-51,4,11,je,,biti,Va-r3s-n,AUX,O,,O
@@ -151,7 +151,7 @@ sl-51,7,5,(,,(,Z,PUNCT,O,,O
 sl-51,7,6,vključno,,vključno,Rgp,ADV,O,,O
 sl-51,7,7,z,,z,Si,ADP,O,,O
 sl-51,7,8,oddelkom,,oddelek,Ncmsi,NOUN,O,,O
-sl-51,7,9,Regional,Regional,Regional,Npmsn,PROPN,B-ORG,ORG-Lufthansa-Regional,B-ORG
+sl-51,7,9,Regional,Regional,Regional,Npmsn,PROPN,B-ORG,ORG-Lufthansa-Regional,B-PRO
 sl-51,7,10,),,),Z,PUNCT,O,,O
 sl-51,7,11,",",,",",Z,PUNCT,O,,O
 sl-51,7,12,torej,,torej,Cc,CCONJ,O,,O
@@ -188,7 +188,7 @@ sl-51,8,12,pa,,pa,Cc,CCONJ,O,,O
 sl-51,8,13,so,,biti,Va-r3p-n,AUX,O,,O
 sl-51,8,14,družbe,,družba,Ncfpn,NOUN,O,,O
 sl-51,8,15,Swiss,Swiss,Swiss,Npmsn,PROPN,B-ORG,ORG-Swiss-International-Air-Lines,B-ORG
-sl-51,8,16,international,international,international,Xf,X,I-ORG,ORG-Swiss-International-Air-Lines,B-ORG
+sl-51,8,16,international,international,international,Xf,X,I-ORG,ORG-Swiss-International-Air-Lines,I-ORG
 sl-51,8,17,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Swiss-International-Air-Lines,I-ORG
 sl-51,8,18,Lines,Lines,Lines,Npmsn,PROPN,I-ORG,ORG-Swiss-International-Air-Lines,I-ORG
 sl-51,8,19,",",,",",Z,PUNCT,O,,O
@@ -297,7 +297,7 @@ sl-51,11,40,v,,v,Sl,ADP,O,,O
 sl-51,11,41,193,,193,Mdc,NUM,O,,O
 sl-51,11,42,državah,,država,Ncfpl,NOUN,O,,O
 sl-51,11,43,.,,.,Z,PUNCT,O,,O
-sl-51,12,1,Bila,,biti,Va-p-sf,AUX,O,,O
+sl-51,12,1,Bila,,biti,Va-p-sf,AUX,O,,B-LOC
 sl-51,12,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-51,12,3,"""",,"""",Z,PUNCT,O,,O
 sl-51,12,4,leteča,,leteč,Appfsn,ADJ,O,,O
@@ -365,7 +365,7 @@ sl-51,14,25,odstotna,,odstoten,Agpfsn,ADJ,O,,O
 sl-51,14,26,.,,.,Z,PUNCT,O,,O
 sl-51,15,1,Družba,,družba,Ncfsn,NOUN,O,,O
 sl-51,15,2,Swiss,Swiss,Swiss,Npmsn,PROPN,B-ORG,ORG-Swiss-International-Air-Lines,B-ORG
-sl-51,15,3,international,international,international,Ncmsn,NOUN,I-ORG,ORG-Swiss-International-Air-Lines,B-ORG
+sl-51,15,3,international,international,international,Ncmsn,NOUN,I-ORG,ORG-Swiss-International-Air-Lines,I-ORG
 sl-51,15,4,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Swiss-International-Air-Lines,I-ORG
 sl-51,15,5,Lines,Lines,Lines,Npmsn,PROPN,I-ORG,ORG-Swiss-International-Air-Lines,I-ORG
 sl-51,15,6,je,,biti,Va-r3s-n,AUX,O,,O
@@ -395,7 +395,7 @@ sl-51,15,29,letal,,letalo,Ncnpg,NOUN,O,,O
 sl-51,15,30,in,,in,Cc,CCONJ,O,,O
 sl-51,15,31,osebja,,osebje,Ncnsg,NOUN,O,,O
 sl-51,15,32,.,,.,Z,PUNCT,O,,O
-sl-51,16,1,Od,,od,Sg,ADP,O,,B-PER
+sl-51,16,1,Od,,od,Sg,ADP,O,,O
 sl-51,16,2,leta,,leto,Ncnsg,NOUN,O,,O
 sl-51,16,3,2005,,2005,Mdc,NUM,O,,O
 sl-51,16,4,Swiss,SWISS,Swiss,Npmsn,PROPN,B-ORG,ORG-Swiss-International-Air-Lines,B-ORG
@@ -560,9 +560,9 @@ sl-51,22,16,predložijo,,predložiti,Vmer3p,VERB,O,,O
 sl-51,22,17,uradno,,uraden,Agpnsa,ADJ,O,,O
 sl-51,22,18,obvestilo,,obvestilo,Ncnsa,NOUN,O,,O
 sl-51,22,19,Agencije,Agencija,agencija,Ncfsg,NOUN,B-ORG,ORG-CAA-Civil-Aviation-Agency-of-the-Republic-of-Slovenia,B-ORG
-sl-51,22,20,za,za,za,Sa,ADP,I-ORG,ORG-CAA-Civil-Aviation-Agency-of-the-Republic-of-Slovenia,O
-sl-51,22,21,civilno,civilno,civilen,Agpnsa,ADJ,I-ORG,ORG-CAA-Civil-Aviation-Agency-of-the-Republic-of-Slovenia,O
-sl-51,22,22,letalstvo,letalstvo,letalstvo,Ncnsa,NOUN,I-ORG,ORG-CAA-Civil-Aviation-Agency-of-the-Republic-of-Slovenia,O
+sl-51,22,20,za,za,za,Sa,ADP,I-ORG,ORG-CAA-Civil-Aviation-Agency-of-the-Republic-of-Slovenia,I-ORG
+sl-51,22,21,civilno,civilno,civilen,Agpnsa,ADJ,I-ORG,ORG-CAA-Civil-Aviation-Agency-of-the-Republic-of-Slovenia,I-ORG
+sl-51,22,22,letalstvo,letalstvo,letalstvo,Ncnsa,NOUN,I-ORG,ORG-CAA-Civil-Aviation-Agency-of-the-Republic-of-Slovenia,I-ORG
 sl-51,22,23,.,,.,Z,PUNCT,O,,O
 sl-51,23,1,To,,ta,Pd-nsn,DET,O,,O
 sl-51,23,2,lahko,,lahko,Rgp,ADV,O,,O
@@ -607,7 +607,7 @@ sl-51,24,17,in,,in,Cc,CCONJ,O,,O
 sl-51,24,18,devetnajst,,devetnajst,Mlc-pa,NUM,O,,O
 sl-51,24,19,Airbusov,Airbus,Airbus,Npmpg,PROPN,B-PRO,PRO-Airbus-A320,B-PRO
 sl-51,24,20,A320,A320,A320,Npmsn,PROPN,I-PRO,PRO-Airbus-A320,I-PRO
-sl-51,24,21,.,,.,Z,PUNCT,O,,O
+sl-51,24,21,.,,.,Z,PUNCT,O,,I-PRO
 sl-51,25,1,V,,v,Sl,ADP,O,,O
 sl-51,25,2,letu,,leto,Ncnsl,NOUN,O,,O
 sl-51,25,3,2018,,2018,Mdc,NUM,O,,O
@@ -664,7 +664,7 @@ sl-51,27,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-51,27,9,kadarkoli,,kadarkoli,Rgp,ADV,O,,O
 sl-51,27,10,pristalo,,pristati,Vmep-sn,VERB,O,,O
 sl-51,27,11,na,,na,Sl,ADP,O,,O
-sl-51,27,12,mariborskem,,mariborski,Agpnsl,ADJ,O,,B-LOC
+sl-51,27,12,mariborskem,,mariborski,Agpnsl,ADJ,O,,O
 sl-51,27,13,letališču,,letališče,Ncnsl,NOUN,O,,O
 sl-51,27,14,(,,(,Z,PUNCT,O,,O
 sl-51,27,15,12.,,12.,Mdo,NUM,O,,O
@@ -684,7 +684,7 @@ sl-51,27,28,International,international,International,Npmsn,PROPN,I-ORG,ORG-Swis
 sl-51,27,29,Air,Air,Air,Npmsn,PROPN,I-ORG,ORG-Swiss-International-Air-Lines,I-ORG
 sl-51,27,30,Lines,Lines,Lines,Npmsn,PROPN,I-ORG,ORG-Swiss-International-Air-Lines,I-ORG
 sl-51,27,31,.,,.,Z,PUNCT,O,,O
-sl-51,28,1,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-51,28,1,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-51,28,2,napoveduje,,napovedovati,Vmpr3s,VERB,O,,O
 sl-51,28,3,konsolidacijo,,konsolidacija,Ncfsa,NOUN,O,,O
 sl-51,29,1,Pomemben,,pomemben,Agpmsnn,ADJ,O,,O
@@ -736,14 +736,14 @@ sl-51,31,13,Prvi,,prvi,Mlomsn,ADJ,O,,O
 sl-51,31,14,mož,,mož,Ncmsn,NOUN,O,,O
 sl-51,31,15,družbe,,družba,Ncfsg,NOUN,O,,O
 sl-51,31,16,Michael,Michael,Michael,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
-sl-51,31,17,O,O,o,Sl,ADP,I-PER,PER-Michael-O'Leary,B-PER
-sl-51,31,18,‘,‘,‘,Z,PUNCT,I-PER,PER-Michael-O'Leary,O
-sl-51,31,19,Leary,Leary,Leary,Npmsn,PROPN,I-PER,PER-Michael-O'Leary,B-PER
+sl-51,31,17,O,O,o,Sl,ADP,I-PER,PER-Michael-O'Leary,I-PER
+sl-51,31,18,‘,‘,‘,Z,PUNCT,I-PER,PER-Michael-O'Leary,I-PER
+sl-51,31,19,Leary,Leary,Leary,Npmsn,PROPN,I-PER,PER-Michael-O'Leary,I-PER
 sl-51,31,20,je,,biti,Va-r3s-n,AUX,O,,O
 sl-51,31,21,v,,v,Sl,ADP,O,,O
 sl-51,31,22,intervjuju,,intervju,Ncmsl,NOUN,O,,O
 sl-51,31,23,za,,za,Sa,ADP,O,,O
-sl-51,31,24,Reuters,Reuters,Reuters,Npmsan,PROPN,B-ORG,ORG-Reuters,B-ORG
+sl-51,31,24,Reuters,Reuters,Reuters,Npmsan,PROPN,B-ORG,ORG-Reuters,B-PRO
 sl-51,31,25,v,,v,Sa,ADP,O,,O
 sl-51,31,26,torek,,torek,Ncmsan,NOUN,O,,O
 sl-51,31,27,povedal,,povedati,Vmep-sm,VERB,O,,O
@@ -760,7 +760,7 @@ sl-51,31,37,prizemljilo,,prizemljiti,Vmep-sn,VERB,O,,O
 sl-51,31,38,več,,več,Rgc,DET,O,,O
 sl-51,31,39,prevoznikov,,prevoznik,Ncmpg,NOUN,O,,O
 sl-51,31,40,.,,.,Z,PUNCT,O,,O
-sl-51,32,1,Ostro,,ostro,Rgp,ADV,O,,O
+sl-51,32,1,Ostro,,ostro,Rgp,ADV,O,,B-PER
 sl-51,32,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-51,32,3,obsodil,,obsoditi,Vmep-sm,VERB,O,,O
 sl-51,32,4,predloge,,predlog,Ncmpa,NOUN,O,,O
@@ -790,7 +790,7 @@ sl-51,33,8,",",,",",Z,PUNCT,O,,O
 sl-51,33,9,"""",,"""",Z,PUNCT,O,,O
 sl-51,33,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-51,33,11,napovedal,,napovedati,Vmep-sm,VERB,O,,O
-sl-51,33,12,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-51,33,12,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-51,33,13,in,,in,Cc,CCONJ,O,,O
 sl-51,33,14,dodal,,dodati,Vmep-sm,VERB,O,,O
 sl-51,33,15,",",,",",Z,PUNCT,O,,O
@@ -816,7 +816,7 @@ sl-51,33,34,prevoznikom,,prevoznik,Ncmpd,NOUN,O,,O
 sl-51,33,35,",",,",",Z,PUNCT,O,,O
 sl-51,33,36,kot,,kot,Cs,SCONJ,O,,O
 sl-51,33,37,sta,,biti,Va-r3d-n,AUX,O,,O
-sl-51,33,38,Air,Air,Air,Npmsn,PROPN,B-ORG,ORG-Air-France,I-ORG
+sl-51,33,38,Air,Air,Air,Npmsn,PROPN,B-ORG,ORG-Air-France,B-ORG
 sl-51,33,39,France,France,France,Npmsn,PROPN,I-ORG,ORG-Air-France,I-ORG
 sl-51,33,40,in,,in,Cc,CCONJ,O,,O
 sl-51,33,41,KLM,KLM,KLM,Npmsn,PROPN,B-ORG,ORG-KLM,B-ORG
@@ -920,7 +920,7 @@ sl-51,36,30,"""",,"""",Z,PUNCT,O,,O
 sl-51,36,31,je,,biti,Va-r3s-n,AUX,O,,O
 sl-51,36,32,še,,še,Q,PART,O,,O
 sl-51,36,33,izjavil,,izjaviti,Vmep-sm,VERB,O,,O
-sl-51,36,34,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-51,36,34,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-51,36,35,",",,",",Z,PUNCT,O,,O
 sl-51,36,36,ki,,ki,Cs,SCONJ,O,,O
 sl-51,36,37,rad,,rad,Rgp,ADV,O,,O
@@ -1053,7 +1053,7 @@ sl-51,40,16,",",,",",Z,PUNCT,O,,O
 sl-51,40,17,"""",,"""",Z,PUNCT,O,,O
 sl-51,40,18,je,,biti,Va-r3s-n,AUX,O,,O
 sl-51,40,19,izpostavil,,izpostaviti,Vmep-sm,VERB,O,,O
-sl-51,40,20,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,O
+sl-51,40,20,O'Leary,O'Leary,O'Leary,Npmsn,PROPN,B-PER,PER-Michael-O'Leary,B-PER
 sl-51,40,21,",",,",",Z,PUNCT,O,,O
 sl-51,40,22,ki,,ki,Cs,SCONJ,O,,O
 sl-51,40,23,dodaja,,dodajati,Vmpr3s,VERB,O,,O
@@ -1089,7 +1089,7 @@ sl-51,41,12,družb,,družba,Ncfpg,NOUN,O,,O
 sl-51,41,13,v,,v,Sl,ADP,O,,O
 sl-51,41,14,prihodnosti,,prihodnost,Ncfsl,NOUN,O,,O
 sl-51,41,15,.,,.,Z,PUNCT,O,,O
-sl-51,42,1,Trenutno,,trenutno,Rgp,ADV,O,,O
+sl-51,42,1,Trenutno,,trenutno,Rgp,ADV,O,,B-PER
 sl-51,42,2,so,,biti,Va-r3p-n,AUX,O,,O
 sl-51,42,3,v,,v,Sl,ADP,O,,O
 sl-51,42,4,dogovorih,,dogovor,Ncmpl,NOUN,O,,O
@@ -1124,13 +1124,13 @@ sl-51,43,7,"""",,"""",Z,PUNCT,O,,O
 sl-51,43,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-51,43,9,dodal,,dodati,Vmep-sm,VERB,O,,O
 sl-51,43,10,.,,.,Z,PUNCT,O,,O
-sl-51,44,1,Vlada,,vlada,Ncfsn,NOUN,O,,O
+sl-51,44,1,Vlada,,vlada,Ncfsn,NOUN,O,,B-LOC
 sl-51,44,2,sprejela,,sprejeti,Vmep-sf,VERB,O,,O
 sl-51,44,3,dopolnilo,,dopolnilo,Ncnsa,NOUN,O,,O
 sl-51,44,4,zakona,,zakon,Ncmsg,NOUN,O,,O
 sl-51,44,5,o,,o,Sl,ADP,O,,O
 sl-51,44,6,letalstvu,,letalstvo,Ncnsl,NOUN,O,,O
-sl-51,45,1,Vlada,,vlada,Ncfsn,NOUN,O,,O
+sl-51,45,1,Vlada,,vlada,Ncfsn,NOUN,O,,B-LOC
 sl-51,45,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-51,45,3,po,,po,Sl,ADP,O,,O
 sl-51,45,4,začetku,,začetek,Ncmsl,NOUN,O,,O
@@ -1184,7 +1184,7 @@ sl-51,46,5,",",,",",Z,PUNCT,O,,O
 sl-51,46,6,da,,da,Cs,SCONJ,O,,O
 sl-51,46,7,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-51,46,8,Fraportu,Fraport,Fraport,Npmsd,PROPN,B-ORG,ORG-Fraport-Slovenia,B-ORG
-sl-51,46,9,Slovenija,Slovenija,Slovenija,Npfsn,PROPN,I-ORG,ORG-Fraport-Slovenia,B-LOC
+sl-51,46,9,Slovenija,Slovenija,Slovenija,Npfsn,PROPN,I-ORG,ORG-Fraport-Slovenia,I-ORG
 sl-51,46,10,uspelo,,uspeti,Vmep-sn,VERB,O,,O
 sl-51,46,11,po,,po,Sl,ADP,O,,O
 sl-51,46,12,stečaju,,stečaj,Ncmsl,NOUN,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-43,0,1,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
 sl-43,0,2,evropsko,,evropski,Agpfsa,ADJ,O,,O
 sl-43,0,3,turnejo,,turneja,Ncfsa,NOUN,O,,O
@@ -49,7 +49,7 @@ sl-43,2,8,",",,",",Z,PUNCT,O,,O
 sl-43,2,9,da,,da,Cs,SCONJ,O,,O
 sl-43,2,10,je,,biti,Va-r3s-n,AUX,O,,O
 sl-43,2,11,Mike,Mike,Mike,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
-sl-43,2,12,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,B-PER
+sl-43,2,12,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,I-PER,PER-Mike-Pompeo,I-PER
 sl-43,2,13,šele,,šele,Q,PART,O,,O
 sl-43,2,14,leto,,leto,Ncnsa,NOUN,O,,O
 sl-43,2,15,po,,po,Sl,ADP,O,,O
@@ -85,7 +85,7 @@ sl-43,3,16,",",,",",Z,PUNCT,O,,O
 sl-43,3,17,ko,,ko,Cs,SCONJ,O,,O
 sl-43,3,18,je,,biti,Va-r3s-n,AUX,O,,O
 sl-43,3,19,Bela,Bela,bel,Agpfsn,ADJ,B-LOC,LOC-White-House,B-LOC
-sl-43,3,20,hiša,hiša,hiša,Ncfsn,NOUN,I-LOC,LOC-White-House,B-LOC
+sl-43,3,20,hiša,hiša,hiša,Ncfsn,NOUN,I-LOC,LOC-White-House,I-LOC
 sl-43,3,21,začela,,začeti,Vmep-sf,VERB,O,,O
 sl-43,3,22,govoriti,,govoriti,Vmpn,VERB,O,,O
 sl-43,3,23,o,,o,Sl,ADP,O,,O
@@ -116,7 +116,7 @@ sl-43,4,18,postavljanja,,postavljanje,Ncnsg,NOUN,O,,O
 sl-43,4,19,telekomunikacijskega,,telekomunikacijski,Agpnsg,ADJ,O,,O
 sl-43,4,20,omrežja,,omrežje,Ncnsg,NOUN,O,,O
 sl-43,4,21,5,,5,Mdc,NUM,O,,B-PRO
-sl-43,4,22,G.,,G.,Y,X,O,,B-PRO
+sl-43,4,22,G.,,G.,Y,X,O,,O
 sl-43,4,23,Po,,po,Sl,ADP,O,,O
 sl-43,4,24,srečanju,,srečanje,Ncnsl,NOUN,O,,O
 sl-43,4,25,z,,z,Si,ADP,O,,O
@@ -172,7 +172,7 @@ sl-43,5,9,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-43,5,10,z,,z,Si,ADP,O,,O
 sl-43,5,11,državami,,država,Ncfpi,NOUN,O,,O
 sl-43,5,12,s,,z,Si,ADP,O,,O
-sl-43,5,13,Huaweijevim,,Huaweijev,Aspnsi,ADJ,O,,B-ORG
+sl-43,5,13,Huaweijevim,,Huaweijev,Aspnsi,ADJ,O,,O
 sl-43,5,14,omrežjem,,omrežje,Ncnsi,NOUN,O,,O
 sl-43,5,15,ne,,ne,Q,PART,O,,O
 sl-43,5,16,bodo,,biti,Va-f3p-n,AUX,O,,O
@@ -191,7 +191,7 @@ sl-43,6,8,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-43,6,9,pri,,pri,Sl,ADP,O,,O
 sl-43,6,10,uvajanju,,uvajanje,Ncnsl,NOUN,O,,O
 sl-43,6,11,5,5,5,Mdc,NUM,B-PRO,PRO-5G,B-PRO
-sl-43,6,12,G,G,g,Ncmsn,NOUN,I-PRO,PRO-5G,B-PRO
+sl-43,6,12,G,G,g,Ncmsn,NOUN,I-PRO,PRO-5G,I-PRO
 sl-43,6,13,zahteva,,zahtevati,Vmbr3s,VERB,O,,O
 sl-43,6,14,visoke,,visok,Agpmpa,ADJ,O,,O
 sl-43,6,15,varnostne,,varnosten,Agpmpa,ADJ,O,,O
@@ -237,9 +237,9 @@ sl-43,8,32,cilja,,cilj,Ncmsg,NOUN,O,,O
 sl-43,8,33,.,,.,Z,PUNCT,O,,O
 sl-43,9,1,Nemčija,Nemčija,Nemčija,Npfsn,PROPN,B-LOC,GPE-Germany,B-LOC
 sl-43,9,2,podpira,,podpirati,Vmpr3s,VERB,O,,O
-sl-43,9,3,jedrski,jedrski,jedrski,Agpmsay,ADJ,B-PRO,PRO-Iran-nuclear-deal,O
-sl-43,9,4,sporazum,sporazum,sporazum,Ncmsan,NOUN,I-PRO,PRO-Iran-nuclear-deal,O
-sl-43,9,5,s,s,z,Si,ADP,I-PRO,PRO-Iran-nuclear-deal,O
+sl-43,9,3,jedrski,jedrski,jedrski,Agpmsay,ADJ,B-PRO,PRO-Iran-nuclear-deal,B-PRO
+sl-43,9,4,sporazum,sporazum,sporazum,Ncmsan,NOUN,I-PRO,PRO-Iran-nuclear-deal,I-PRO
+sl-43,9,5,s,s,z,Si,ADP,I-PRO,PRO-Iran-nuclear-deal,I-PRO
 sl-43,9,6,Teheranom,Teheranom,Teheran,Npmsi,PROPN,I-PRO,PRO-Iran-nuclear-deal,I-PRO
 sl-43,9,7,",",,",",Z,PUNCT,O,,O
 sl-43,9,8,od,,od,Sg,ADP,O,,O
@@ -386,8 +386,8 @@ sl-43,14,19,iz,,iz,Sg,ADP,O,,O
 sl-43,14,20,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
 sl-43,14,21,.,,.,Z,PUNCT,O,,O
 sl-43,15,1,Na,,na,Sl,ADP,O,,O
-sl-43,15,2,univerzi,univerza,univerza,Ncfsl,NOUN,B-ORG,ORG-Harvard-University,O
-sl-43,15,3,Harvard,Harvard,Harvard,Npmsn,PROPN,I-ORG,ORG-Harvard-University,B-ORG
+sl-43,15,2,univerzi,univerza,univerza,Ncfsl,NOUN,B-ORG,ORG-Harvard-University,B-ORG
+sl-43,15,3,Harvard,Harvard,Harvard,Npmsn,PROPN,I-ORG,ORG-Harvard-University,I-ORG
 sl-43,15,4,je,,biti,Va-r3s-n,AUX,O,,O
 sl-43,15,5,namreč,,namreč,Cc,CCONJ,O,,O
 sl-43,15,6,govorila,,govoriti,Vmpp-sf,VERB,O,,O

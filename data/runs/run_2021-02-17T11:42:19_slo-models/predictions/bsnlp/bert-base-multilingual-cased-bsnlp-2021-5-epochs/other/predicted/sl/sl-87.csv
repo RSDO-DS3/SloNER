@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-87,0,1,Prtljaga,,prtljaga,Ncfsn,NOUN,O,,O
 sl-87,0,2,",",,",",Z,PUNCT,O,,O
 sl-87,0,3,ki,,ki,Cs,SCONJ,O,,O
@@ -484,7 +484,7 @@ sl-87,21,1,K,,k,Sd,ADP,O,,O
 sl-87,21,2,sreči,,sreča,Ncfsd,NOUN,O,,O
 sl-87,21,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-87,21,4,hitrost,,hitrost,Ncfsn,NOUN,O,,O
-sl-87,21,5,kužka,kužek,kužek,Ncmsg,NOUN,B-PRO,PRO-Xiaomi-Puppy-1,O
+sl-87,21,5,kužka,kužek,kužek,Ncmsg,NOUN,B-PRO,PRO-Xiaomi-Puppy-1,B-PRO
 sl-87,21,6,zaradi,,zaradi,Sg,ADP,O,,O
 sl-87,21,7,varnostnih,,varnosten,Agpmpg,ADJ,O,,O
 sl-87,21,8,razlogov,,razlog,Ncmpg,NOUN,O,,O

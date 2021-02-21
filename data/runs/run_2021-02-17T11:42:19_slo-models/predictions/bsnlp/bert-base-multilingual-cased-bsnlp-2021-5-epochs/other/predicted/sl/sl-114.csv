@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-114,0,1,Skupina,,skupina,Ncfsn,NOUN,O,,O
 sl-114,0,2,migrantov,,migrant,Ncmpg,NOUN,O,,O
 sl-114,0,3,v,,v,Sl,ADP,O,,O
@@ -102,7 +102,7 @@ sl-114,3,22,potrdil,,potrditi,Vmep-sm,VERB,O,,O
 sl-114,3,23,tiskovni,,tiskoven,Agpmsny,ADJ,O,,O
 sl-114,3,24,predstavnik,,predstavnik,Ncmsn,NOUN,O,,O
 sl-114,3,25,kantonalne,,kantonalen,Agpfsg,ADJ,O,,O
-sl-114,3,26,policije,,policija,Ncfsg,NOUN,O,,I-ORG
+sl-114,3,26,policije,,policija,Ncfsg,NOUN,O,,O
 sl-114,3,27,Ale,Ale,ale,Npmsn,PROPN,B-PER,PER-Ale-Šiljdedić,B-PER
 sl-114,3,28,Šiljdedić,Šiljdedić,Šiljdedić,Npmsn,PROPN,I-PER,PER-Ale-Šiljdedić,I-PER
 sl-114,3,29,.,,.,Z,PUNCT,O,,O
@@ -144,11 +144,11 @@ sl-114,4,35,je,,biti,Va-r3s-n,AUX,O,,O
 sl-114,4,36,dodal,,dodati,Vmep-sm,VERB,O,,O
 sl-114,4,37,.,,.,Z,PUNCT,O,,O
 sl-114,5,1,Načelnik,,načelnik,Ncmsn,NOUN,O,,O
-sl-114,5,2,hrvaške,hrvaška,hrvaški,Agpfsg,ADJ,B-ORG,ORG-Croatian-Border-Police,B-LOC
+sl-114,5,2,hrvaške,hrvaška,hrvaški,Agpfsg,ADJ,B-ORG,ORG-Croatian-Border-Police,B-ORG
 sl-114,5,3,obmejne,obmejna,obmejen,Agpfsg,ADJ,I-ORG,ORG-Croatian-Border-Police,I-ORG
 sl-114,5,4,policije,policija,policija,Ncfsg,NOUN,I-ORG,ORG-Croatian-Border-Police,I-ORG
 sl-114,5,5,Zoran,Zoran,Zoran,Npmsn,PROPN,B-PER,PER-Zoran-Ničeno,B-PER
-sl-114,5,6,Ničeno,Ničeno,Ničeno,Npmsn,PROPN,I-PER,PER-Zoran-Ničeno,B-PER
+sl-114,5,6,Ničeno,Ničeno,Ničeno,Npmsn,PROPN,I-PER,PER-Zoran-Ničeno,I-PER
 sl-114,5,7,je,,biti,Va-r3s-n,AUX,O,,O
 sl-114,5,8,pred,,pred,Si,ADP,O,,O
 sl-114,5,9,kratkim,,kratek,Agpmsi,ADJ,O,,O

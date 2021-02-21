@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-35,0,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-35,0,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,O
 sl-35,0,2,za,,za,Sa,ADP,O,,O
 sl-35,0,3,ameriški,,ameriški,Agpmsay,ADJ,O,,O
 sl-35,0,4,plin,,plin,Ncmsan,NOUN,O,,O
@@ -126,7 +126,7 @@ sl-35,4,2,ZDA,ZDA,ZDA,Npfpa,PROPN,B-LOC,GPE-USA,B-LOC
 sl-35,4,3,zanimivejši,,zanimiv,Agcmpn,ADJ,O,,O
 sl-35,4,4,azijski,,azijski,Agpmpn,ADJ,O,,O
 sl-35,4,5,trgi,,trg,Ncmpn,NOUN,O,,O
-sl-35,5,1,Ali,,ali,Rgp,ADV,O,,O
+sl-35,5,1,Ali,,ali,Rgp,ADV,O,,B-PER
 sl-35,5,2,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-35,5,3,že,,že,Q,PART,O,,O
 sl-35,5,4,na,,na,Sl,ADP,O,,O
@@ -274,11 +274,11 @@ sl-35,9,7,podatkov,,podatek,Ncmpg,NOUN,O,,O
 sl-35,9,8,o,,o,Sl,ADP,O,,O
 sl-35,9,9,rasti,,rast,Ncfsl,NOUN,O,,O
 sl-35,9,10,uvoza,,uvoz,Ncmsg,NOUN,O,,O
-sl-35,9,11,ameriškega,,ameriški,Agpmsg,ADJ,O,,O
-sl-35,9,12,utekočinjena,,utekočinjen,Appmsg,ADJ,O,,O
-sl-35,9,13,plina,,plin,Ncmsg,NOUN,O,,O
+sl-35,9,11,ameriškega,,ameriški,Agpmsg,ADJ,O,,B-PRO
+sl-35,9,12,utekočinjena,,utekočinjen,Appmsg,ADJ,O,,I-PRO
+sl-35,9,13,plina,,plin,Ncmsg,NOUN,O,,I-PRO
 sl-35,9,14,(,,(,Z,PUNCT,O,,O
-sl-35,9,15,LNG,LNG,LNG,Ncmsn,NOUN,B-PRO,PRO-LNG,B-ORG
+sl-35,9,15,LNG,LNG,LNG,Ncmsn,NOUN,B-PRO,PRO-LNG,B-PRO
 sl-35,9,16,),,),Z,PUNCT,O,,O
 sl-35,9,17,pokazati,,pokazati,Vmen,VERB,O,,O
 sl-35,9,18,",",,",",Z,PUNCT,O,,O
@@ -359,7 +359,7 @@ sl-35,11,22,zemeljskega,,zemeljski,Agpmsg,ADJ,O,,O
 sl-35,11,23,plina,,plin,Ncmsg,NOUN,O,,O
 sl-35,11,24,.,,.,Z,PUNCT,O,,O
 sl-35,12,1,Največji,,velik,Agsmpn,ADJ,O,,O
-sl-35,12,2,ameriški,,ameriški,Agpmpn,ADJ,O,,O
+sl-35,12,2,ameriški,,ameriški,Agpmpn,ADJ,O,,B-LOC
 sl-35,12,3,trgi,,trg,Ncmpn,NOUN,O,,O
 sl-35,12,4,(,,(,Z,PUNCT,O,,O
 sl-35,12,5,prodaja,,prodaja,Ncfsn,NOUN,O,,O
@@ -378,7 +378,7 @@ sl-35,12,17,),,),Z,PUNCT,O,,O
 sl-35,12,18,so,,biti,Va-r3p-n,VERB,O,,O
 sl-35,12,19,v,,v,Sl,ADP,O,,O
 sl-35,12,20,Južni,Južna,južen,Agpfsl,ADJ,B-LOC,GPE-South-Korea,B-LOC
-sl-35,12,21,Koreji,Koreja,Koreja,Npfsl,PROPN,I-LOC,GPE-South-Korea,B-LOC
+sl-35,12,21,Koreji,Koreja,Koreja,Npfsl,PROPN,I-LOC,GPE-South-Korea,I-LOC
 sl-35,12,22,",",,",",Z,PUNCT,O,,O
 sl-35,12,23,Mehiki,Mehika,Mehika,Npfsl,PROPN,B-LOC,GPE-Mexico,B-LOC
 sl-35,12,24,",",,",",Z,PUNCT,O,,O
@@ -394,7 +394,7 @@ sl-35,13,5,90,,90,Mdc,NUM,O,,O
 sl-35,13,6,odstotkov,,odstotek,Ncmpg,NOUN,O,,O
 sl-35,13,7,ameriške,,ameriški,Agpfsg,ADJ,O,,O
 sl-35,13,8,proizvodnje,,proizvodnja,Ncfsg,NOUN,O,,O
-sl-35,13,9,LNG,LNG,LNG,Npmsn,PROPN,B-PRO,PRO-LNG,B-ORG
+sl-35,13,9,LNG,LNG,LNG,Npmsn,PROPN,B-PRO,PRO-LNG,B-PRO
 sl-35,13,10,",",,",",Z,PUNCT,O,,O
 sl-35,13,11,ki,,ki,Cs,SCONJ,O,,O
 sl-35,13,12,jo,,on,Pp3fsa--y,PRON,O,,O
@@ -428,7 +428,7 @@ sl-35,14,13,na,,na,Sl,ADP,O,,O
 sl-35,14,14,svetovnem,,svetoven,Agpmsl,ADJ,O,,O
 sl-35,14,15,trgu,,trg,Ncmsl,NOUN,O,,O
 sl-35,14,16,po,,po,Sa,ADP,O,,O
-sl-35,14,17,LNG,LNG,LNG,Npmsn,PROPN,B-PRO,PRO-LNG,B-ORG
+sl-35,14,17,LNG,LNG,LNG,Npmsn,PROPN,B-PRO,PRO-LNG,O
 sl-35,14,18,pa,,pa,Cc,CCONJ,O,,O
 sl-35,14,19,naj,,naj,Q,PART,O,,O
 sl-35,14,20,bi,,biti,Va-c,AUX,O,,O
@@ -490,7 +490,7 @@ sl-35,17,13,uvoz,,uvoz,Ncmsn,NOUN,O,,O
 sl-35,17,14,je,,biti,Va-r3s-n,AUX,O,,O
 sl-35,17,15,torej,,torej,Rgp,ADV,O,,O
 sl-35,17,16,v,,v,Sl,ADP,O,,O
-sl-35,17,17,evropski,Evropa,evropski,Agpfsl,ADJ,B-LOC,LOC-Europe,B-LOC
+sl-35,17,17,evropski,Evropa,evropski,Agpfsl,ADJ,B-LOC,LOC-Europe,O
 sl-35,17,18,porabi,,poraba,Ncfsl,NOUN,O,,O
 sl-35,17,19,predstavljal,,predstavljati,Vmpp-sm,VERB,O,,O
 sl-35,17,20,zgolj,,zgolj,Q,PART,O,,O
@@ -532,7 +532,7 @@ sl-35,19,16,.,,.,Z,PUNCT,O,,O
 sl-35,20,1,Oviro,,ovira,Ncfsa,NOUN,O,,O
 sl-35,20,2,večjemu,,velik,Agcmsd,ADJ,O,,O
 sl-35,20,3,uvozu,,uvoz,Ncmsd,NOUN,O,,O
-sl-35,20,4,LNG,LNG,LNG,Npmsn,PROPN,B-PRO,PRO-LNG,B-ORG
+sl-35,20,4,LNG,LNG,LNG,Npmsn,PROPN,B-PRO,PRO-LNG,B-PRO
 sl-35,20,5,v,,v,Sa,ADP,O,,O
 sl-35,20,6,EU,EU,EU,Npfsl,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-35,20,7,vsaj,,vsaj,Q,PART,O,,O
@@ -595,13 +595,13 @@ sl-35,22,19,plinom,,plin,Ncmsi,NOUN,O,,O
 sl-35,22,20,",",,",",Z,PUNCT,O,,O
 sl-35,22,21,«,,«,Z,PUNCT,O,,O
 sl-35,22,22,ocenjuje,,ocenjevati,Vmpr3s,VERB,O,,O
-sl-35,22,23,Jean-Claude,Jean-Claude,Jeanlclaude,Npmsn,PROPN,B-PER,PER-Jean-Claude-Juncker,O
+sl-35,22,23,Jean-Claude,Jean-Claude,Jeanlclaude,Npmsn,PROPN,B-PER,PER-Jean-Claude-Juncker,B-PER
 sl-35,22,24,Juncker,Juncker,Juncker,Npmsn,PROPN,I-PER,PER-Jean-Claude-Juncker,I-PER
 sl-35,22,25,.,,.,Z,PUNCT,O,,O
 sl-35,23,1,Največji,,velik,Agsmpn,ADJ,O,,O
 sl-35,23,2,evropski,Evropa,evropski,Agpmpn,ADJ,B-LOC,LOC-Europe,B-LOC
 sl-35,23,3,dobavitelji,,dobavitelj,Ncmpn,NOUN,O,,O
-sl-35,23,4,LNG,LNG,LNG,Npmsn,PROPN,B-PRO,PRO-LNG,B-ORG
+sl-35,23,4,LNG,LNG,LNG,Npmsn,PROPN,B-PRO,PRO-LNG,O
 sl-35,23,5,so,,biti,Va-r3p-n,AUX,O,,O
 sl-35,23,6,Katar,Katar,Katar,Npmsn,PROPN,B-LOC,GPE-Qatar,B-LOC
 sl-35,23,7,",",,",",Z,PUNCT,O,,O
@@ -642,7 +642,7 @@ sl-35,24,14,utekočinjenega,,utekočinjen,Appmsg,ADJ,O,,O
 sl-35,24,15,plina,,plin,Ncmsg,NOUN,O,,O
 sl-35,24,16,.,,.,Z,PUNCT,O,,O
 sl-35,25,1,Ker,,ker,Cs,SCONJ,O,,O
-sl-35,25,2,LNG,LNG,LNG,Npmsn,PROPN,B-PRO,PRO-LNG,B-ORG
+sl-35,25,2,LNG,LNG,LNG,Npmsn,PROPN,B-PRO,PRO-LNG,B-PRO
 sl-35,25,3,še,,še,Q,PART,O,,O
 sl-35,25,4,zdaleč,,zdaleč,Rgp,ADV,O,,O
 sl-35,25,5,ni,,biti,Va-r3s-y,AUX,O,,O
@@ -704,7 +704,7 @@ sl-35,27,17,plina,,plin,Ncmsg,NOUN,O,,O
 sl-35,27,18,uvoznih,,uvozen,Agpfpg,ADJ,O,,O
 sl-35,27,19,zmogljivosti,,zmogljivost,Ncfpg,NOUN,O,,O
 sl-35,27,20,.,,.,Z,PUNCT,O,,O
-sl-35,28,1,Tako,,tako,Rgp,ADV,O,,O
+sl-35,28,1,Tako,,tako,Rgp,ADV,O,,B-LOC
 sl-35,28,2,želi,,želeti,Vmpr3s,VERB,O,,O
 sl-35,28,3,ob,,ob,Sl,ADP,O,,O
 sl-35,28,4,diverzifikaciji,,diverzifikacija,Ncfsl,NOUN,O,,O

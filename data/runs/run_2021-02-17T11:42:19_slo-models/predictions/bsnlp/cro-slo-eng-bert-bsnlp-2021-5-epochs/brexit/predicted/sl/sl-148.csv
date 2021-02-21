@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-148,0,1,Mayeva,May,Mayev,Aspfsn,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-148,0,2,poslancem,,poslanec,Ncmpd,NOUN,O,,O
 sl-148,0,3,:,,:,Z,PUNCT,O,,O
@@ -28,7 +28,7 @@ sl-148,1,9,Posodobljeno,,posodobljen,Appnsn,ADJ,O,,O
 sl-148,1,10,pred,,pred,Si,ADP,O,,O
 sl-148,1,11,4,,4,Mdc,NUM,O,,O
 sl-148,1,12,minutami,,minuta,Ncfpi,NOUN,O,,O
-sl-148,2,1,Britanska,,britanski,Agpfsn,ADJ,O,,B-ORG
+sl-148,2,1,Britanska,,britanski,Agpfsn,ADJ,O,,O
 sl-148,2,2,premierka,,premierka,Ncfsn,NOUN,O,,O
 sl-148,2,3,Theresa,Theresa,Theresa,Npfsn,PROPN,B-PER,PER-Theresa-May,B-PER
 sl-148,2,4,May,May,May,Npfsn,PROPN,I-PER,PER-Theresa-May,I-PER
@@ -45,7 +45,7 @@ sl-148,2,14,sporazuma,,sporazum,Ncmsg,NOUN,O,,O
 sl-148,2,15,z,,z,Si,ADP,O,,O
 sl-148,2,16,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-148,2,17,glede,,glede,Sg,ADP,O,,O
-sl-148,2,18,irskega,,irski,Agpnsg,ADJ,O,,B-LOC
+sl-148,2,18,irskega,,irski,Agpnsg,ADJ,O,,O
 sl-148,2,19,varovala,,varovalo,Ncnsg,NOUN,O,,O
 sl-148,2,20,.,,.,Z,PUNCT,O,,O
 sl-148,3,1,Drevi,,drevi,Rgp,ADV,O,,O
@@ -189,7 +189,7 @@ sl-148,6,68,sploh,,sploh,Q,PART,O,,O
 sl-148,6,69,ne,,ne,Q,PART,O,,O
 sl-148,6,70,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-148,6,71,zapustila,,zapustiti,Vmep-sf,VERB,O,,O
-sl-148,6,72,unije,,unija,Ncfsg,NOUN,O,,I-ORG
+sl-148,6,72,unije,,unija,Ncfsg,NOUN,O,,O
 sl-148,6,73,.,,.,Z,PUNCT,O,,O
 sl-148,7,1,"""",,"""",Z,PUNCT,O,,O
 sl-148,7,2,Če,,če,Cs,SCONJ,O,,O
@@ -238,7 +238,7 @@ sl-148,8,7,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-148,8,8,prinaša,,prinašati,Vmpr3s,VERB,O,,O
 sl-148,8,9,dogovor,,dogovor,Ncmsn,NOUN,O,,O
 sl-148,8,10,z,,z,Si,ADP,O,,O
-sl-148,8,11,unijo,,unija,Ncfsi,NOUN,O,,I-ORG
+sl-148,8,11,unijo,,unija,Ncfsi,NOUN,O,,O
 sl-148,8,12,.,,.,Z,PUNCT,O,,O
 sl-148,9,1,Vključuje,,vključevati,Vmpr3s,VERB,O,,O
 sl-148,9,2,konec,,konec,Ncmsan,NOUN,O,,O
@@ -466,7 +466,7 @@ sl-148,16,9,tožilca,,tožilec,Ncmsay,NOUN,O,,O
 sl-148,16,10,",",,",",Z,PUNCT,O,,O
 sl-148,16,11,je,,biti,Va-r3s-n,AUX,O,,O
 sl-148,16,12,vodja,,vodja,Ncmsn,NOUN,O,,O
-sl-148,16,13,laburistov,laburisti,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-PER
+sl-148,16,13,laburistov,laburisti,laburist,Ncmpg,NOUN,B-ORG,ORG-Labour-Party-UK,B-ORG
 sl-148,16,14,Jeremy,Jeremy,Jeremy,Npmsn,PROPN,B-PER,PER-Jeremy-Corbyn,B-PER
 sl-148,16,15,Corbyn,Corbyn,Corbyn,Npmsn,PROPN,I-PER,PER-Jeremy-Corbyn,I-PER
 sl-148,16,16,že,,že,Q,PART,O,,O
@@ -521,8 +521,8 @@ sl-148,18,1,Dogovora,,dogovor,Ncmsg,NOUN,O,,O
 sl-148,18,2,ne,,ne,Q,PART,O,,O
 sl-148,18,3,podpirajo,,podpirati,Vmpr3p,VERB,O,,O
 sl-148,18,4,niti,,niti,Q,PART,O,,O
-sl-148,18,5,severnoirski,severnoirski,severnoirski,Agpmpn,ADJ,B-ORG,ORG-DUP-Democratic-Unionist-Party,B-PER
-sl-148,18,6,unionisti,unionisti,unionist,Ncmpn,NOUN,I-ORG,ORG-DUP-Democratic-Unionist-Party,I-PER
+sl-148,18,5,severnoirski,severnoirski,severnoirski,Agpmpn,ADJ,B-ORG,ORG-DUP-Democratic-Unionist-Party,B-ORG
+sl-148,18,6,unionisti,unionisti,unionist,Ncmpn,NOUN,I-ORG,ORG-DUP-Democratic-Unionist-Party,I-ORG
 sl-148,18,7,(,,(,Z,PUNCT,O,,O
 sl-148,18,8,DUP,DUP,DUP,Npmsn,PROPN,B-ORG,ORG-DUP-Democratic-Unionist-Party,B-ORG
 sl-148,18,9,),,),Z,PUNCT,O,,O
@@ -660,7 +660,7 @@ sl-148,24,16,o,,o,Sl,ADP,O,,O
 sl-148,24,17,brexitu,brexit,brexit,Ncmsl,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-148,24,18,–,,–,Z,PUNCT,O,,O
 sl-148,24,19,britanski,,britanski,Agpmsny,ADJ,O,,O
-sl-148,24,20,parlament,,parlament,Ncmsn,NOUN,O,,O
+sl-148,24,20,parlament,,parlament,Ncmsn,NOUN,O,,I-ORG
 sl-148,24,21,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-148,24,22,namreč,,namreč,Cc,CCONJ,O,,O
 sl-148,24,23,o,,o,Sl,ADP,O,,O
@@ -708,7 +708,7 @@ sl-148,25,21,mej,,meja,Ncfpg,NOUN,O,,O
 sl-148,25,22,o,,o,Sl,ADP,O,,O
 sl-148,25,23,"""",,"""",Z,PUNCT,O,,O
 sl-148,25,24,med,,med,Si,ADP,O,,O
-sl-148,25,25,Irsko,Irska,Irska,Npfsi,PROPN,B-LOC,GPE-Ireland,I-LOC
+sl-148,25,25,Irsko,Irska,Irska,Npfsi,PROPN,B-LOC,GPE-Ireland,B-LOC
 sl-148,25,26,in,,in,Cc,CCONJ,O,,O
 sl-148,25,27,Severno,Severna,severen,Agpfsi,ADJ,B-LOC,GPE-Northern-Ireland,B-LOC
 sl-148,25,28,Irsko,Irska,Irska,Npfsi,PROPN,I-LOC,GPE-Northern-Ireland,I-LOC
@@ -843,7 +843,7 @@ sl-148,28,10,glede,,glede,Sg,ADP,O,,O
 sl-148,28,11,irskega,,irski,Agpnsg,ADJ,O,,O
 sl-148,28,12,varovala,,varovalo,Ncnsg,NOUN,O,,O
 sl-148,28,13,.,,.,Z,PUNCT,O,,O
-sl-148,29,1,Juncker,Juncker,Juncker,Npmsn,PROPN,B-PER,PER-Jean-Claude-Juncker,B-PER
+sl-148,29,1,Juncker,Juncker,Juncker,Npmsn,PROPN,B-PER,PER-Jean-Claude-Juncker,B-ORG
 sl-148,29,2,:,,:,Z,PUNCT,O,,O
 sl-148,29,3,Tretje,,tretji,Mlofsg,ADJ,O,,O
 sl-148,29,4,možnosti,,možnost,Ncfpn,NOUN,O,,O
@@ -873,8 +873,8 @@ sl-148,30,21,.,,.,Z,PUNCT,O,,O
 sl-148,31,1,A,,a,Cc,CCONJ,O,,O
 sl-148,31,2,Jean,Jean,Jean,Npmsn,PROPN,B-PER,PER-Jean-Claude-Juncker,B-PER
 sl-148,31,3,-,-,-,Z,PUNCT,I-PER,PER-Jean-Claude-Juncker,B-PER
-sl-148,31,4,Claude,Claude,Claude,Npmsn,PROPN,I-PER,PER-Jean-Claude-Juncker,B-PER
-sl-148,31,5,Juncker,Juncker,Juncker,Npmsn,PROPN,I-PER,PER-Jean-Claude-Juncker,B-PER
+sl-148,31,4,Claude,Claude,Claude,Npmsn,PROPN,I-PER,PER-Jean-Claude-Juncker,I-PER
+sl-148,31,5,Juncker,Juncker,Juncker,Npmsn,PROPN,I-PER,PER-Jean-Claude-Juncker,I-PER
 sl-148,31,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-148,31,7,na,,na,Sl,ADP,O,,O
 sl-148,31,8,novinarski,,novinarski,Agpfsl,ADJ,O,,O

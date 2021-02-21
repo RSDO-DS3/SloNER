@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-25,0,1,Rusija,Rusija,Rusija,Npfsn,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-25,0,2,in,,in,Cc,CCONJ,O,,O
 sl-25,0,3,Ukrajina,Ukrajina,Ukrajina,Npfsn,PROPN,B-LOC,GPE-Ukraine,B-LOC
@@ -106,7 +106,7 @@ sl-25,4,4,dpa,dpa,DPA,Npmsn,PROPN,B-ORG,ORG-DPA,B-ORG
 sl-25,4,5,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-25,4,6,se,,se,Px------y,PRON,O,,O
 sl-25,4,7,veliki,,velik,Agpfdn,ADJ,O,,O
-sl-25,4,8,vzhodnoevropski,,vzhodnoevropski,Agpfdn,ADJ,O,,B-LOC
+sl-25,4,8,vzhodnoevropski,,vzhodnoevropski,Agpfdn,ADJ,O,,O
 sl-25,4,9,sosedi,,soseda,Ncfdn,NOUN,O,,O
 sl-25,4,10,",",,",",Z,PUNCT,O,,O
 sl-25,4,11,ki,,ki,Cs,SCONJ,O,,O
@@ -256,7 +256,7 @@ sl-25,9,11,priključitev,,priključitev,Ncfsn,NOUN,O,,O
 sl-25,9,12,Krima,Krim,Krim,Npmsg,PROPN,B-LOC,GPE-Crimea,B-LOC
 sl-25,9,13,Rusiji,Rusija,Rusija,Npfsd,PROPN,B-LOC,GPE-Russia,B-LOC
 sl-25,9,14,leta,,leto,Ncnsg,NOUN,O,,O
-sl-25,9,15,2014,,2014,Mdc,NUM,O,,I-PRO
+sl-25,9,15,2014,,2014,Mdc,NUM,O,,O
 sl-25,9,16,in,,in,Cc,CCONJ,O,,O
 sl-25,9,17,ruska,,ruski,Agpfsn,ADJ,O,,O
 sl-25,9,18,podpora,,podpora,Ncfsn,NOUN,O,,O
@@ -265,7 +265,7 @@ sl-25,9,20,proruskih,,proruski,Agpmpg,ADJ,O,,O
 sl-25,9,21,upornikov,,upornik,Ncmpg,NOUN,O,,O
 sl-25,9,22,na,,na,Sl,ADP,O,,O
 sl-25,9,23,vzhodu,,vzhod,Ncmsl,NOUN,O,,O
-sl-25,9,24,države,,država,Ncfsg,NOUN,O,,B-LOC
+sl-25,9,24,države,,država,Ncfsg,NOUN,O,,O
 sl-25,9,25,",",,",",Z,PUNCT,O,,O
 sl-25,9,26,zaradi,,zaradi,Sg,ADP,O,,O
 sl-25,9,27,katerih,,kateri,Pq-mpg,DET,O,,O
@@ -330,7 +330,7 @@ sl-25,10,52,ogrozil,,ogroziti,Vmep-sm,VERB,O,,O
 sl-25,10,53,njeno,,njen,Ps3nsasf,DET,O,,O
 sl-25,10,54,gospodarstvo,,gospodarstvo,Ncnsa,NOUN,O,,O
 sl-25,10,55,.,,.,Z,PUNCT,O,,O
-sl-25,11,1,Država,,država,Ncfsn,NOUN,O,,O
+sl-25,11,1,Država,,država,Ncfsn,NOUN,O,,B-LOC
 sl-25,11,2,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-25,11,3,namreč,,namreč,Cc,CCONJ,O,,O
 sl-25,11,4,prikrajšana,,prikrajšan,Appfsn,ADJ,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-9,0,1,Domišljija,,domišljija,Ncfsn,NOUN,O,,O
 sl-9,0,2,uličnih,,uličen,Agpmpg,ADJ,O,,O
 sl-9,0,3,performerjev,,performer,Ncmpg,NOUN,O,,O
@@ -16,7 +16,7 @@ sl-9,1,6,Zadra,Zadar,Zadar,Npmsg,PROPN,B-LOC,GPE-Zadar,B-LOC
 sl-9,1,7,",",,",",Z,PUNCT,O,,O
 sl-9,1,8,objavljena,,objavljen,Appfsn,ADJ,O,,O
 sl-9,1,9,na,,na,Sl,ADP,O,,O
-sl-9,1,10,družbenih,,družben,Agpmpl,ADJ,O,,B-LOC
+sl-9,1,10,družbenih,,družben,Agpmpl,ADJ,O,,O
 sl-9,1,11,medijih,,medij,Ncmpl,NOUN,O,,O
 sl-9,1,12,.,,.,Z,PUNCT,O,,O
 sl-9,2,1,Poglejte,,pogledati,Vmem2p,VERB,O,,O
@@ -56,7 +56,7 @@ sl-9,4,10,nekoliko,,nekoliko,Rgp,ADV,O,,O
 sl-9,4,11,drugačnimi,,drugačen,Agpmpi,ADJ,O,,O
 sl-9,4,12,nastopi,,nastop,Ncmpi,NOUN,O,,O
 sl-9,4,13,.,,.,Z,PUNCT,O,,O
-sl-9,5,1,Za,,za,Sa,ADP,O,,B-LOC
+sl-9,5,1,Za,,za,Sa,ADP,O,,O
 sl-9,5,2,slednji,,slednji,Agpmsay,ADJ,O,,O
 sl-9,5,3,pristop,,pristop,Ncmsan,NOUN,O,,O
 sl-9,5,4,k,,k,Sd,ADP,O,,O
@@ -65,7 +65,7 @@ sl-9,5,6,zabavi,,zabava,Ncfsd,NOUN,O,,O
 sl-9,5,7,se,,se,Px------y,PRON,O,,O
 sl-9,5,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-9,5,9,v,,v,Sl,ADP,O,,O
-sl-9,5,10,Zadru,Zadar,Zadar,Npmsl,PROPN,B-LOC,GPE-Zadar,O
+sl-9,5,10,Zadru,Zadar,Zadar,Npmsl,PROPN,B-LOC,GPE-Zadar,B-LOC
 sl-9,5,11,najverjetneje,,verjetno,Rgs,ADV,O,,O
 sl-9,5,12,odločil,,odločiti,Vmep-sm,VERB,O,,O
 sl-9,5,13,nekdo,,nekdo,Pi-msn,PRON,O,,O
@@ -176,7 +176,7 @@ sl-9,10,3,morda,,morda,Q,PART,O,,O
 sl-9,10,4,na,,na,Sl,ADP,O,,O
 sl-9,10,5,počitnicah,,počitnice,Ncfpl,NOUN,O,,O
 sl-9,10,6,v,,v,Sl,ADP,O,,O
-sl-9,10,7,Zadru,Zadar,Zadar,Npmsl,PROPN,B-LOC,GPE-Zadar,O
+sl-9,10,7,Zadru,Zadar,Zadar,Npmsl,PROPN,B-LOC,GPE-Zadar,B-LOC
 sl-9,10,8,",",,",",Z,PUNCT,O,,O
 sl-9,10,9,le,,le,Q,PART,O,,O
 sl-9,10,10,pohitite,,pohiteti,Vmem2p,VERB,O,,O

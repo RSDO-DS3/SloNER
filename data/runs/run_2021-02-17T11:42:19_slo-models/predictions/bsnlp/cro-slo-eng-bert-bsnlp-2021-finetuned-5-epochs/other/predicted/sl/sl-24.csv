@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-24,0,1,Sodobni,,sodoben,Agpmpn,ADJ,O,,O
 sl-24,0,2,mediji,,medij,Ncmpn,NOUN,O,,O
 sl-24,0,3,",",,",",Z,PUNCT,O,,O
@@ -29,7 +29,7 @@ sl-24,2,6,in,,in,Cc,CCONJ,O,,O
 sl-24,2,7,podjetnik,,podjetnik,Ncmsn,NOUN,O,,O
 sl-24,2,8,",",,",",Z,PUNCT,O,,O
 sl-24,2,9,v,,v,Sl,ADP,O,,O
-sl-24,2,10,Ljubljani,Ljubljana,Ljubljana,Npfsl,PROPN,B-LOC,GPE-Ljubljana,O
+sl-24,2,10,Ljubljani,Ljubljana,Ljubljana,Npfsl,PROPN,B-LOC,GPE-Ljubljana,B-LOC
 sl-24,2,11,o,,o,Sl,ADP,O,,O
 sl-24,2,12,konstruktivnem,,konstruktiven,Agpnsl,ADJ,O,,O
 sl-24,2,13,novinarstvu,,novinarstvo,Ncnsl,NOUN,O,,O
@@ -67,7 +67,7 @@ sl-24,4,8,sedaj,,sedaj,Rgp,ADV,O,,O
 sl-24,4,9,vodite,,voditi,Vmpr2p,VERB,O,,O
 sl-24,4,10,podjetje,,podjetje,Ncnsa,NOUN,O,,O
 sl-24,4,11,Purple,Purple,Purple,Npmsn,PROPN,B-ORG,ORG-Purple-Bridge-Media,B-ORG
-sl-24,4,12,Bridge,Bridge,Bridge,Npmsn,PROPN,I-ORG,ORG-Purple-Bridge-Media,B-ORG
+sl-24,4,12,Bridge,Bridge,Bridge,Npmsn,PROPN,I-ORG,ORG-Purple-Bridge-Media,I-ORG
 sl-24,4,13,Media,Media,Media,Npmsn,PROPN,I-ORG,ORG-Purple-Bridge-Media,I-ORG
 sl-24,4,14,",",,",",Z,PUNCT,O,,O
 sl-24,4,15,ki,,ki,Cs,SCONJ,O,,O
@@ -91,8 +91,8 @@ sl-24,5,3,ste,,biti,Va-r2p-n,AUX,O,,O
 sl-24,5,4,prišli,,priti,Vmep-pm,VERB,O,,O
 sl-24,5,5,na,,na,Sa,ADP,O,,O
 sl-24,5,6,povabilo,,povabilo,Ncnsa,NOUN,O,,O
-sl-24,5,7,Društva,Društvo,društvo,Ncnsg,NOUN,B-ORG,ORG-Slovene-Association-of-Journalists,O
-sl-24,5,8,novinarjev,novinarjev,novinar,Ncmpg,NOUN,I-ORG,ORG-Slovene-Association-of-Journalists,O
+sl-24,5,7,Društva,Društvo,društvo,Ncnsg,NOUN,B-ORG,ORG-Slovene-Association-of-Journalists,B-ORG
+sl-24,5,8,novinarjev,novinarjev,novinar,Ncmpg,NOUN,I-ORG,ORG-Slovene-Association-of-Journalists,I-ORG
 sl-24,5,9,Slovenije,Slovenije,Slovenija,Npfsg,PROPN,I-ORG,ORG-Slovene-Association-of-Journalists,I-ORG
 sl-24,5,10,.,,.,Z,PUNCT,O,,O
 sl-24,6,1,Kako,,kako,Rgp,ADV,O,,O
@@ -908,7 +908,7 @@ sl-24,49,10,posamezne,,posamezen,Agpmpa,ADJ,O,,O
 sl-24,49,11,bralce,,bralec,Ncmpa,NOUN,O,,O
 sl-24,49,12,.,,.,Z,PUNCT,O,,O
 sl-24,50,1,New,New,New,Npmsn,PROPN,B-PRO,PRO-The-New-York-Times,B-PRO
-sl-24,50,2,York,York,York,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,B-PRO
+sl-24,50,2,York,York,York,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,I-PRO
 sl-24,50,3,Times,Times,Times,Npmsn,PROPN,I-PRO,PRO-The-New-York-Times,I-PRO
 sl-24,50,4,denimo,,deti,Vmem1p,VERB,O,,O
 sl-24,50,5,sodeluje,,sodelovati,Vmpr3s,VERB,O,,O
@@ -1242,7 +1242,7 @@ sl-24,71,9,naredil,,narediti,Vmep-sm,VERB,O,,O
 sl-24,71,10,zgodbo,,zgodba,Ncfsa,NOUN,O,,O
 sl-24,71,11,z,,z,Sg,ADP,O,,O
 sl-24,71,12,jugovzhoda,jugovzhod,jugovzhod,Ncmsg,NOUN,B-LOC,LOC-Southeast-England,B-LOC
-sl-24,71,13,Anglije,Anglije,Anglija,Npfsg,PROPN,I-LOC,LOC-Southeast-England,B-LOC
+sl-24,71,13,Anglije,Anglije,Anglija,Npfsg,PROPN,I-LOC,LOC-Southeast-England,I-LOC
 sl-24,71,14,o,,o,Sl,ADP,O,,O
 sl-24,71,15,podjetju,,podjetje,Ncnsl,NOUN,O,,O
 sl-24,71,16,",",,",",Z,PUNCT,O,,O
@@ -2519,7 +2519,7 @@ sl-24,145,10,se,,se,Px------y,PRON,O,,O
 sl-24,145,11,pripravljeni,,pripravljen,Appmpn,ADJ,O,,O
 sl-24,145,12,odzvati,,odzvati,Vmen,VERB,O,,O
 sl-24,145,13,.,,.,Z,PUNCT,O,,O
-sl-24,146,1,BBC,BBC,BBC,Npmsn,PROPN,B-ORG,ORG-BBC-Ltd,B-ORG
+sl-24,146,1,BBC,BBC,BBC,Npmsn,PROPN,B-ORG,ORG-BBC-Ltd,B-PER
 sl-24,146,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-24,146,3,ugotovil,,ugotoviti,Vmep-sm,VERB,O,,O
 sl-24,146,4,",",,",",Z,PUNCT,O,,O

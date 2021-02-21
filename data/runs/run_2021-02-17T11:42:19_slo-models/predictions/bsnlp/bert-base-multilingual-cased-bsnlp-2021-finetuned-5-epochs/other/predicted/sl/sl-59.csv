@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-59,0,1,Občinam,,občina,Ncfpd,NOUN,O,,O
 sl-59,0,2,prihodnje,,prihodnji,Agpnsa,ADJ,O,,O
 sl-59,0,3,leto,,leto,Ncnsa,NOUN,O,,O
@@ -22,7 +22,7 @@ sl-59,1,14,Bertoncljem,Bertoncelj,Bertoncelj,Npmsi,PROPN,I-PER,PER-Andrej-Berton
 sl-59,1,15,in,,in,Cc,CCONJ,O,,O
 sl-59,1,16,tremi,,trije,Mlcnpi,NUM,O,,O
 sl-59,1,17,združenji,,združenje,Ncnpi,NOUN,O,,O
-sl-59,1,18,občin,,občina,Ncfpg,NOUN,O,,I-ORG
+sl-59,1,18,občin,,občina,Ncfpg,NOUN,O,,O
 sl-59,1,19,niso,,biti,Va-r3p-y,AUX,O,,O
 sl-59,1,20,prinesla,,prinesti,Vmep-pn,VERB,O,,O
 sl-59,1,21,dogovora,,dogovor,Ncmsg,NOUN,O,,O
@@ -154,7 +154,7 @@ sl-59,8,3,izračunih,,izračun,Ncmpl,NOUN,O,,O
 sl-59,8,4,so,,biti,Va-r3p-n,AUX,O,,O
 sl-59,8,5,dejanski,,dejanski,Agpmpn,ADJ,O,,O
 sl-59,8,6,stroški,,strošek,Ncmpn,NOUN,O,,O
-sl-59,8,7,občin,,občina,Ncfpg,NOUN,O,,I-ORG
+sl-59,8,7,občin,,občina,Ncfpg,NOUN,O,,O
 sl-59,8,8,lani,,lani,Rgp,ADV,O,,O
 sl-59,8,9,znašali,,znašati,Vmpp-pm,VERB,O,,O
 sl-59,8,10,631,,631,Mdc,NUM,O,,O
@@ -231,7 +231,7 @@ sl-59,11,13,oba,,oba,Pg-mdn,DET,O,,O
 sl-59,11,14,ministra,,minister,Ncmdn,NOUN,O,,O
 sl-59,11,15,razumeta,,razumeti,Vmbr3d,VERB,O,,O
 sl-59,11,16,težave,,težava,Ncfpa,NOUN,O,,O
-sl-59,11,17,občin,,občina,Ncfpg,NOUN,O,,I-ORG
+sl-59,11,17,občin,,občina,Ncfpg,NOUN,O,,O
 sl-59,11,18,",",,",",Z,PUNCT,O,,O
 sl-59,11,19,zato,,zato,Cc,CCONJ,O,,O
 sl-59,11,20,so,,biti,Va-r3p-n,AUX,O,,O
@@ -247,13 +247,13 @@ sl-59,11,29,pogovarjajo,,pogovarjati,Vmpr3p,VERB,O,,O
 sl-59,11,30,o,,o,Sl,ADP,O,,O
 sl-59,11,31,znižanju,,znižanje,Ncnsl,NOUN,O,,O
 sl-59,11,32,stroškov,,strošek,Ncmpg,NOUN,O,,O
-sl-59,11,33,občin,,občina,Ncfpg,NOUN,O,,I-ORG
+sl-59,11,33,občin,,občina,Ncfpg,NOUN,O,,O
 sl-59,11,34,in,,in,Cc,CCONJ,O,,O
 sl-59,11,35,odpravi,,odprava,Ncfsl,NOUN,O,,O
 sl-59,11,36,birokratskih,,birokratski,Agpfpg,ADJ,O,,O
 sl-59,11,37,ovir,,ovira,Ncfpg,NOUN,O,,O
 sl-59,11,38,.,,.,Z,PUNCT,O,,O
-sl-59,12,1,Minister,,minister,Ncmsn,NOUN,O,,O
+sl-59,12,1,Minister,,minister,Ncmsn,NOUN,O,,B-PER
 sl-59,12,2,za,,za,Sa,ADP,O,,O
 sl-59,12,3,javno,,javen,Agpfsa,ADJ,O,,O
 sl-59,12,4,upravo,,uprava,Ncfsa,NOUN,O,,O
@@ -269,7 +269,7 @@ sl-59,12,13,prizadevanja,,prizadevanje,Ncnpa,NOUN,O,,O
 sl-59,12,14,za,,za,Sa,ADP,O,,O
 sl-59,12,15,zmanjševanje,,zmanjševanje,Ncnsa,NOUN,O,,O
 sl-59,12,16,stroškov,,strošek,Ncmpg,NOUN,O,,O
-sl-59,12,17,občin,,občina,Ncfpg,NOUN,O,,I-ORG
+sl-59,12,17,občin,,občina,Ncfpg,NOUN,O,,O
 sl-59,12,18,",",,",",Z,PUNCT,O,,O
 sl-59,12,19,v,,v,Sa,ADP,O,,O
 sl-59,12,20,prihodnje,,prihodnji,Agpnsa,ADJ,O,,O
@@ -280,7 +280,7 @@ sl-59,12,24,zavzeli,,zavzeti,Vmep-pm,VERB,O,,O
 sl-59,12,25,za,,za,Sa,ADP,O,,O
 sl-59,12,26,takšno,,takšen,Pd-nsa,DET,O,,O
 sl-59,12,27,financiranje,,financiranje,Ncnsa,NOUN,O,,O
-sl-59,12,28,občin,,občina,Ncfpg,NOUN,O,,I-ORG
+sl-59,12,28,občin,,občina,Ncfpg,NOUN,O,,O
 sl-59,12,29,",",,",",Z,PUNCT,O,,O
 sl-59,12,30,da,,da,Cs,SCONJ,O,,O
 sl-59,12,31,ne,,ne,Q,PART,O,,O

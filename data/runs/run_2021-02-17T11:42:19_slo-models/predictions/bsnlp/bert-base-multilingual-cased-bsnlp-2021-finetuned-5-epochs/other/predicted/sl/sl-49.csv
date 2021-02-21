@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-49,0,1,Adria,Adria,Adria,Npfsn,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-49,0,2,Airways,Airways,Airways,Npfsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
 sl-49,0,3,do,,do,Sg,ADP,O,,O
@@ -363,7 +363,7 @@ sl-49,13,32,prevozniku,,prevoznik,Ncmsd,NOUN,O,,O
 sl-49,13,33,Air,Air,Air,Npmsn,PROPN,B-ORG,ORG-Air-Serbia,B-ORG
 sl-49,13,34,Serbia,Serbia,Serbia,Npmsn,PROPN,I-ORG,ORG-Air-Serbia,I-ORG
 sl-49,13,35,.,,.,Z,PUNCT,O,,O
-sl-49,14,1,Ta,,ta,Pd-fsn,DET,O,,O
+sl-49,14,1,Ta,,ta,Pd-fsn,DET,O,,B-LOC
 sl-49,14,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-49,14,3,v,,v,Sl,ADP,O,,O
 sl-49,14,4,51-odstotni,,5yvodstoten,Agpfsl,ADJ,O,,O

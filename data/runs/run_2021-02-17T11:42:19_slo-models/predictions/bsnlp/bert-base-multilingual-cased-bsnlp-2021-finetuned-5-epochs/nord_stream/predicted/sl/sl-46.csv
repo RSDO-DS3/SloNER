@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-46,0,1,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
 sl-46,0,2,v,,v,Sl,ADP,O,,O
 sl-46,0,3,Berlinu,Berlin,Berlin,Npmsl,PROPN,B-LOC,GPE-Berlin,B-LOC
@@ -160,7 +160,7 @@ sl-46,6,8,vizijo,,vizija,Ncfsa,NOUN,O,,O
 sl-46,6,9,avtoritarizma,,avtoritarizem,Ncmsg,NOUN,O,,O
 sl-46,6,10,"""",,"""",Z,PUNCT,O,,O
 sl-46,6,11,.,,.,Z,PUNCT,O,,O
-sl-46,7,1,Kitajska,Kitajska,kitajski,Agpfsn,ADJ,B-ORG,ORG-Chinese-Communist-Party,B-LOC
+sl-46,7,1,Kitajska,Kitajska,kitajski,Agpfsn,ADJ,B-ORG,ORG-Chinese-Communist-Party,B-ORG
 sl-46,7,2,komunistična,komunistična,komunističen,Agpfsn,ADJ,I-ORG,ORG-Chinese-Communist-Party,I-ORG
 sl-46,7,3,partija,partija,partija,Ncfsn,NOUN,I-ORG,ORG-Chinese-Communist-Party,I-ORG
 sl-46,7,4,pa,,pa,Cc,CCONJ,O,,O
@@ -228,7 +228,7 @@ sl-46,9,35,AFP,AFP,AFP,Npmsn,PROPN,B-ORG,ORG-AFP-Agence-France-Press,B-ORG
 sl-46,9,36,poudaril,,poudariti,Vmep-sm,VERB,O,,O
 sl-46,9,37,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
 sl-46,9,38,.,,.,Z,PUNCT,O,,O
-sl-46,10,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
+sl-46,10,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-PER
 sl-46,10,2,in,,in,Cc,CCONJ,O,,O
 sl-46,10,3,zaveznice,,zaveznica,Ncfpn,NOUN,O,,O
 sl-46,10,4,bi,,biti,Va-c,AUX,O,,O
@@ -307,7 +307,7 @@ sl-46,12,25,),,),Z,PUNCT,O,,O
 sl-46,12,26,Putina,Putin,Putin,Npmsg,PROPN,B-PER,PER-Vladimir-Putin,B-PER
 sl-46,12,27,"""",,"""",Z,PUNCT,O,,O
 sl-46,12,28,.,,.,Z,PUNCT,O,,O
-sl-46,13,1,Gre,,iti,Vmbr3s,VERB,O,,I-PRO
+sl-46,13,1,Gre,,iti,Vmbr3s,VERB,O,,O
 sl-46,13,2,za,,za,Sa,ADP,O,,O
 sl-46,13,3,gradnjo,,gradnja,Ncfsa,NOUN,O,,O
 sl-46,13,4,plinovoda,,plinovod,Ncmsg,NOUN,O,,O
@@ -344,7 +344,7 @@ sl-46,14,4,tudi,,tudi,Q,PART,O,,O
 sl-46,14,5,pred,,pred,Si,ADP,O,,O
 sl-46,14,6,namerami,,namera,Ncfpi,NOUN,O,,O
 sl-46,14,7,"""",,"""",Z,PUNCT,O,,O
-sl-46,14,8,kitajskih,,kitajski,Agpnpg,ADJ,O,,B-LOC
+sl-46,14,8,kitajskih,,kitajski,Agpnpg,ADJ,O,,O
 sl-46,14,9,podjetij,,podjetje,Ncnpg,NOUN,O,,O
 sl-46,14,10,za,,za,Sa,ADP,O,,O
 sl-46,14,11,izgradnjo,,izgradnja,Ncfsa,NOUN,O,,O
@@ -481,8 +481,8 @@ sl-46,20,21,.,,.,Z,PUNCT,O,,O
 sl-46,21,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-46,21,2,navaja,,navajati,Vmpr3s,VERB,O,,O
 sl-46,21,3,portal,,portal,Ncmsn,NOUN,O,,O
-sl-46,21,4,Deutsche,Deutsche,Deutsche,Npmsn,PROPN,B-PRO,PRO-Deutsche-Welle,B-ORG
-sl-46,21,5,Welle,Welle,Welle,Npmsn,PROPN,I-PRO,PRO-Deutsche-Welle,I-ORG
+sl-46,21,4,Deutsche,Deutsche,Deutsche,Npmsn,PROPN,B-PRO,PRO-Deutsche-Welle,B-PRO
+sl-46,21,5,Welle,Welle,Welle,Npmsn,PROPN,I-PRO,PRO-Deutsche-Welle,I-PRO
 sl-46,21,6,",",,",",Z,PUNCT,O,,O
 sl-46,21,7,so,,biti,Va-r3p-n,AUX,O,,O
 sl-46,21,8,berlinske,,berlinski,Agpfpn,ADJ,O,,O
@@ -539,7 +539,7 @@ sl-46,23,15,ne,,ne,Q,PART,O,,O
 sl-46,23,16,želi,,želeti,Vmpr3s,VERB,O,,O
 sl-46,23,17,",",,",",Z,PUNCT,O,,O
 sl-46,23,18,dodaja,,dodajati,Vmpr3s,VERB,O,,O
-sl-46,23,19,Deutsche,Deutsche,Deutsche,Npmsn,PROPN,B-PRO,PRO-Deutsche-Welle,B-ORG
+sl-46,23,19,Deutsche,Deutsche,Deutsche,Npmsn,PROPN,B-PRO,PRO-Deutsche-Welle,B-PRO
 sl-46,23,20,Welle,Welle,Welle,Npmsn,PROPN,I-PRO,PRO-Deutsche-Welle,I-ORG
 sl-46,23,21,.,,.,Z,PUNCT,O,,O
 sl-46,24,1,Pompeo,Pompeo,Pompeo,Npmsn,PROPN,B-PER,PER-Mike-Pompeo,B-PER
@@ -595,7 +595,7 @@ sl-46,26,7,pred,,pred,Si,ADP,O,,O
 sl-46,26,8,dejansko,,dejanski,Agpfsi,ADJ,O,,O
 sl-46,26,9,obletnico,,obletnica,Ncfsi,NOUN,O,,O
 sl-46,26,10,padca,,padec,Ncmsg,NOUN,O,,O
-sl-46,26,11,zidu,,zid,Ncmsg,NOUN,O,,I-EVT
+sl-46,26,11,zidu,,zid,Ncmsg,NOUN,O,,O
 sl-46,26,12,v,,v,Sa,ADP,O,,O
 sl-46,26,13,soboto,,sobota,Ncfsa,NOUN,O,,O
 sl-46,26,14,odpotovati,,odpotovati,Vmen,VERB,O,,O

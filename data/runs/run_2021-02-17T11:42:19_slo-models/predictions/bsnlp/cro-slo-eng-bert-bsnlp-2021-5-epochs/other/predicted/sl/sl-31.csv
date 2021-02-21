@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-31,0,1,Hrvaška,Hrvaška,hrvaški,Agpfsn,ADJ,B-LOC,GPE-Croatia,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-31,0,1,Hrvaška,Hrvaška,hrvaški,Agpfsn,ADJ,B-LOC,GPE-Croatia,O
 sl-31,0,2,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-31,0,3,se,,se,Px------y,PRON,O,,O
 sl-31,0,4,ni,,biti,Va-r3s-y,AUX,O,,O
@@ -12,10 +12,10 @@ sl-31,1,2,sogovornika,,sogovornik,Ncmdn,NOUN,O,,O
 sl-31,1,3,sta,,biti,Va-r3d-n,AUX,O,,O
 sl-31,1,4,ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-31,1,5,proizvajalec,,proizvajalec,Ncmsn,NOUN,O,,O
-sl-31,1,6,letal,letala,letalo,Ncnpg,NOUN,B-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,O
+sl-31,1,6,letal,letala,letalo,Ncnpg,NOUN,B-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,I-PRO
 sl-31,1,7,F-16,F-16,f-16,Mdc,NUM,I-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,I-PRO
 sl-31,1,8,Lockheed,Lockheed,Lockheed,Npmsn,PROPN,B-ORG,ORG-Lockheed-Martin,B-ORG
-sl-31,1,9,Martin,Martin,Martin,Npmsn,PROPN,I-ORG,ORG-Lockheed-Martin,B-ORG
+sl-31,1,9,Martin,Martin,Martin,Npmsn,PROPN,I-ORG,ORG-Lockheed-Martin,I-ORG
 sl-31,1,10,in,,in,Cc,CCONJ,O,,O
 sl-31,1,11,švedski,Švedska,švedski,Agpmsny,ADJ,B-LOC,GPE-Sweden,O
 sl-31,1,12,Saab,Saab,Saab,Npmsn,PROPN,B-ORG,ORG-Saab-Automobile,B-ORG
@@ -24,7 +24,7 @@ sl-31,1,14,ki,,ki,Cs,SCONJ,O,,O
 sl-31,1,15,izdeluje,,izdelovati,Vmpr3s,VERB,O,,O
 sl-31,1,16,lovce,,lovec,Ncmpa,NOUN,O,,O
 sl-31,1,17,JAS-39,JAS-39,jas-39,Mdc,NUM,B-PRO,PRO-Saab-JAS-39-Gripen,B-PRO
-sl-31,1,18,gripen,gripen,gripen,Ncmsn,NOUN,I-PRO,PRO-Saab-JAS-39-Gripen,B-PRO
+sl-31,1,18,gripen,gripen,gripen,Ncmsn,NOUN,I-PRO,PRO-Saab-JAS-39-Gripen,I-PRO
 sl-31,1,19,.,,.,Z,PUNCT,O,,O
 sl-31,2,1,Hrvaška,Hrvaška,Hrvaška,Npfsn,PROPN,B-LOC,GPE-Croatia,B-LOC
 sl-31,2,2,je,,biti,Va-r3s-n,AUX,O,,O
@@ -69,7 +69,7 @@ sl-31,3,12,prodajo,,prodaja,Ncfsa,NOUN,O,,O
 sl-31,3,13,svojih,,svoj,Px-npg,DET,O,,O
 sl-31,3,14,letal,,letalo,Ncnpg,NOUN,O,,O
 sl-31,3,15,kot,,kot,Cs,SCONJ,O,,O
-sl-31,3,16,ameriška,,ameriški,Agpfsn,ADJ,O,,O
+sl-31,3,16,ameriška,,ameriški,Agpfsn,ADJ,O,,B-LOC
 sl-31,3,17,.,,.,Z,PUNCT,O,,O
 sl-31,4,1,Je,,biti,Va-r3s-n,AUX,O,,O
 sl-31,4,2,tudi,,tudi,Q,PART,O,,O
@@ -209,7 +209,7 @@ sl-31,8,19,nove,,nov,Agpmpa,ADJ,O,,O
 sl-31,8,20,lovce,,lovec,Ncmpa,NOUN,O,,O
 sl-31,8,21,čakajo,,čakati,Vmpr3p,VERB,O,,O
 sl-31,8,22,Združeni,Združeni,združen,Appmpn,ADJ,B-LOC,GPE-UEA-United-Arab-Emirates,B-LOC
-sl-31,8,23,arabski,arabski,arabski,Agpmpn,ADJ,I-LOC,GPE-UEA-United-Arab-Emirates,B-LOC
+sl-31,8,23,arabski,arabski,arabski,Agpmpn,ADJ,I-LOC,GPE-UEA-United-Arab-Emirates,I-LOC
 sl-31,8,24,emirati,emirati,emirat,Ncmpn,NOUN,I-LOC,GPE-UEA-United-Arab-Emirates,I-LOC
 sl-31,8,25,",",,",",Z,PUNCT,O,,O
 sl-31,8,26,Slovaška,Slovaška,Slovaška,Npfsn,PROPN,B-LOC,GPE-Slovakia,B-LOC
@@ -223,14 +223,14 @@ sl-31,9,4,ponuditi,,ponuditi,Vmen,VERB,O,,O
 sl-31,9,5,niti,,niti,Q,PART,O,,O
 sl-31,9,6,svojih,,svoj,Px-npg,DET,O,,O
 sl-31,9,7,rabljenih,,rabljen,Appnpg,ADJ,O,,O
-sl-31,9,8,letal,letala,letalo,Ncnpg,NOUN,B-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,O
-sl-31,9,9,F-16,F-16,f-16,Mdc,NUM,I-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,O
+sl-31,9,8,letal,letala,letalo,Ncnpg,NOUN,B-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,B-PRO
+sl-31,9,9,F-16,F-16,f-16,Mdc,NUM,I-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,I-PRO
 sl-31,9,10,",",,",",Z,PUNCT,O,,O
 sl-31,9,11,ker,,ker,Cs,SCONJ,O,,O
 sl-31,9,12,zamuja,,zamujati,Vmpr3s,VERB,O,,O
 sl-31,9,13,dobava,,dobava,Ncfsn,NOUN,O,,O
 sl-31,9,14,novih,,nov,Agpmpg,ADJ,O,,O
-sl-31,9,15,F-35,F-35,Fr3en,Npmpg,PROPN,B-PRO,PRO-Lockheed-Martin-F-35-Lightning-II,O
+sl-31,9,15,F-35,F-35,Fr3en,Npmpg,PROPN,B-PRO,PRO-Lockheed-Martin-F-35-Lightning-II,B-PRO
 sl-31,9,16,",",,",",Z,PUNCT,O,,O
 sl-31,9,17,s,,z,Si,ADP,O,,O
 sl-31,9,18,katerimi,,kateri,Pq-mpi,DET,O,,O
@@ -355,7 +355,7 @@ sl-31,13,21,za,,za,Sa,ADP,O,,O
 sl-31,13,22,svoje,,svoj,Px-fpa,DET,O,,O
 sl-31,13,23,patrie,,patrie,Ncfpa,NOUN,O,,O
 sl-31,13,24,.,,.,Z,PUNCT,O,,O
-sl-31,14,1,Časnik,,časnik,Ncmsn,NOUN,O,,O
+sl-31,14,1,Časnik,,časnik,Ncmsn,NOUN,O,,B-PER
 sl-31,14,2,meni,,meniti,Vmpr3s,VERB,O,,O
 sl-31,14,3,",",,",",Z,PUNCT,O,,O
 sl-31,14,4,da,,da,Cs,SCONJ,O,,O
@@ -368,8 +368,8 @@ sl-31,14,10,bradleyjev,bradleyji,bradley,Ncmpg,NOUN,B-PRO,PRO-Bradley-Fighting-V
 sl-31,14,11,prišla,,priti,Vmep-sf,VERB,O,,O
 sl-31,14,12,tudi,,tudi,Q,PART,O,,O
 sl-31,14,13,do,,do,Sg,ADP,O,,O
-sl-31,14,14,letal,letala,letalo,Ncnpg,NOUN,B-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,O
-sl-31,14,15,F-16,F-16,f-16,Mdc,NUM,I-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,O
+sl-31,14,14,letal,letala,letalo,Ncnpg,NOUN,B-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,B-PRO
+sl-31,14,15,F-16,F-16,f-16,Mdc,NUM,I-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,I-PRO
 sl-31,14,16,"""",,"""",Z,PUNCT,O,,O
 sl-31,14,17,ter,,ter,Cc,CCONJ,O,,O
 sl-31,14,18,potrdila,,potrditi,Vmep-sf,VERB,O,,O
@@ -378,7 +378,7 @@ sl-31,14,20,partnerstvo,,partnerstvo,Ncnsa,NOUN,O,,O
 sl-31,14,21,z,,z,Si,ADP,O,,O
 sl-31,14,22,ZDA,ZDA,ZDA,Npfpi,PROPN,B-LOC,GPE-USA,B-LOC
 sl-31,14,23,.,,.,Z,PUNCT,O,,O
-sl-31,15,1,Hrvaška,Hrvaška,hrvaški,Agpfsn,ADJ,B-LOC,GPE-Croatia,B-LOC
+sl-31,15,1,Hrvaška,Hrvaška,hrvaški,Agpfsn,ADJ,B-LOC,GPE-Croatia,B-ORG
 sl-31,15,2,vlada,,vlada,Ncfsn,NOUN,O,,O
 sl-31,15,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-31,15,4,morala,,morati,Vmpp-sf,VERB,O,,O
@@ -388,8 +388,8 @@ sl-31,15,7,razveljaviti,,razveljaviti,Vmen,VERB,O,,O
 sl-31,15,8,že,,že,Q,PART,O,,O
 sl-31,15,9,dogovorjeni,,dogovorjen,Appmsay,ADJ,O,,O
 sl-31,15,10,nakup,,nakup,Ncmsan,NOUN,O,,O
-sl-31,15,11,letal,letala,letalo,Ncnpg,NOUN,B-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,O
-sl-31,15,12,F-16,F-16,f-16,Mdc,NUM,I-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,O
+sl-31,15,11,letal,letala,letalo,Ncnpg,NOUN,B-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,B-PRO
+sl-31,15,12,F-16,F-16,f-16,Mdc,NUM,I-PRO,PRO-Lockheed-Martin-F-16-Fighting-Falcon,I-PRO
 sl-31,15,13,barak,,baraka,Ncfpg,NOUN,O,,O
 sl-31,15,14,od,,od,Sg,ADP,O,,O
 sl-31,15,15,Izraela,Izrael,Izrael,Npmsg,PROPN,B-LOC,GPE-Israel,B-LOC
@@ -397,7 +397,7 @@ sl-31,15,16,",",,",",Z,PUNCT,O,,O
 sl-31,15,17,potem,,potem,Rgp,ADV,O,,O
 sl-31,15,18,ko,,ko,Cs,SCONJ,O,,O
 sl-31,15,19,Tel,Tel,Tel,Npmsn,PROPN,B-LOC,GPE-Tel-Aviv,B-LOC
-sl-31,15,20,Aviv,Aviv,Aviv,Npmsn,PROPN,I-LOC,GPE-Tel-Aviv,B-LOC
+sl-31,15,20,Aviv,Aviv,Aviv,Npmsn,PROPN,I-LOC,GPE-Tel-Aviv,I-LOC
 sl-31,15,21,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-31,15,22,dobil,,dobiti,Vmep-sm,VERB,O,,O
 sl-31,15,23,odobritve,,odobritev,Ncfsg,NOUN,O,,O

@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-27,0,1,Ryanair,Ryanair,Ryanair,Npmsn,PROPN,B-ORG,ORG-Ryanair,B-ORG
 sl-27,0,2,prevzema,,prevzemati,Vmpr3s,VERB,O,,O
 sl-27,0,3,Nikijevega,Nikijev,Nikijev,Aspmsg,ADJ,B-ORG,ORG-Niki-airline,B-ORG
@@ -20,7 +20,7 @@ sl-27,1,13,družbe,,družba,Ncfsg,NOUN,O,,O
 sl-27,1,14,nemškega,,nemški,Agpmsg,ADJ,O,,O
 sl-27,1,15,Air,Air,Air,Npmsg,PROPN,B-ORG,ORG-Air-Berlin,B-ORG
 sl-27,1,16,Berlina,Berlin,Berlin,Npmsg,PROPN,I-ORG,ORG-Air-Berlin,I-ORG
-sl-27,1,17,Niki,Niki,Niki,Npmsn,PROPN,I-ORG,ORG-Air-Berlin,B-ORG
+sl-27,1,17,Niki,Niki,Niki,Npmsn,PROPN,I-ORG,ORG-Air-Berlin,I-ORG
 sl-27,1,18,.,,.,Z,PUNCT,O,,O
 sl-27,2,1,Njen,,njen,Ps3msnsf,DET,O,,O
 sl-27,2,2,ustanovitelj,,ustanovitelj,Ncmsn,NOUN,O,,O
@@ -28,7 +28,7 @@ sl-27,2,3,",",,",",Z,PUNCT,O,,O
 sl-27,2,4,nekdanji,,nekdanji,Agpmsny,ADJ,O,,O
 sl-27,2,5,dirkač,,dirkač,Ncmsn,NOUN,O,,O
 sl-27,2,6,formule,formula,formula,Ncfsg,NOUN,B-EVT,EVT-Formula-1,O
-sl-27,2,7,1,1,1,Mdc,NUM,I-EVT,EVT-Formula-1,O
+sl-27,2,7,1,1,1,Mdc,NUM,I-EVT,EVT-Formula-1,I-EVT
 sl-27,2,8,Lauda,Lauda,Lauda,Npmsn,PROPN,B-PER,PER-Niki-Lauda,B-PER
 sl-27,2,9,",",,",",Z,PUNCT,O,,O
 sl-27,2,10,je,,biti,Va-r3s-n,AUX,O,,O

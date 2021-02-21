@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-124,0,1,Minister,,minister,Ncmsn,NOUN,O,,O
 sl-124,0,2,BiH,BiH,Bih,Npfsg,PROPN,B-LOC,GPE-Bosnia-and-Herzegovina,B-LOC
 sl-124,0,3,trdi,,trditi,Vmpr3s,VERB,O,,O
@@ -9,7 +9,7 @@ sl-124,0,7,dokaze,,dokaz,Ncmpa,NOUN,O,,O
 sl-124,0,8,o,,o,Sl,ADP,O,,O
 sl-124,0,9,neprimernem,,neprimeren,Agpnsl,ADJ,O,,O
 sl-124,0,10,ravnanju,,ravnanje,Ncnsl,NOUN,O,,O
-sl-124,0,11,hrvaških,,hrvaški,Agpmpg,ADJ,O,,B-LOC
+sl-124,0,11,hrvaških,,hrvaški,Agpmpg,ADJ,O,,O
 sl-124,0,12,policistov,,policist,Ncmpg,NOUN,O,,O
 sl-124,0,13,z,,z,Si,ADP,O,,O
 sl-124,0,14,migranti,,migrant,Ncmpi,NOUN,O,,O
@@ -186,7 +186,7 @@ sl-124,6,44,.,,.,Z,PUNCT,O,,O
 sl-124,7,1,O,,o,Sl,ADP,O,,O
 sl-124,7,2,nezakonitem,,nezakonit,Agpnsl,ADJ,O,,O
 sl-124,7,3,prehajanju,,prehajanje,Ncnsl,NOUN,O,,O
-sl-124,7,4,hrvaških,,hrvaški,Agpmpg,ADJ,O,,B-LOC
+sl-124,7,4,hrvaških,,hrvaški,Agpmpg,ADJ,O,,O
 sl-124,7,5,policistov,,policist,Ncmpg,NOUN,O,,O
 sl-124,7,6,v,,v,Sl,ADP,O,,O
 sl-124,7,7,BiH,BiH,Bih,Npfsl,PROPN,B-LOC,GPE-Bosnia-and-Herzegovina,B-LOC
@@ -194,7 +194,7 @@ sl-124,7,8,je,,biti,Va-r3s-n,AUX,O,,O
 sl-124,7,9,v,,v,Sa,ADP,O,,O
 sl-124,7,10,sredo,,sreda,Ncfsa,NOUN,O,,O
 sl-124,7,11,s,,z,Si,ADP,O,,O
-sl-124,7,12,hrvaškim,,hrvaški,Agpmsi,ADJ,O,,B-LOC
+sl-124,7,12,hrvaškim,,hrvaški,Agpmsi,ADJ,O,,O
 sl-124,7,13,veleposlanikom,,veleposlanik,Ncmsi,NOUN,O,,O
 sl-124,7,14,v,,v,Sl,ADP,O,,O
 sl-124,7,15,Sarajevu,Sarajevo,Sarajevo,Npnsl,PROPN,B-LOC,GPE-Sarajevo,B-LOC
@@ -269,7 +269,7 @@ sl-124,9,30,teden,,teden,Ncmsan,NOUN,O,,O
 sl-124,9,31,v,,v,Sl,ADP,O,,O
 sl-124,9,32,pogovoru,,pogovor,Ncmsl,NOUN,O,,O
 sl-124,9,33,za,,za,Sa,ADP,O,,O
-sl-124,9,34,hrvaški,Hrvaška,hrvaški,Agpmsay,ADJ,B-LOC,GPE-Croatia,B-LOC
+sl-124,9,34,hrvaški,Hrvaška,hrvaški,Agpmsay,ADJ,B-LOC,GPE-Croatia,O
 sl-124,9,35,časnik,,časnik,Ncmsan,NOUN,O,,O
 sl-124,9,36,Jutarnji,Jutarnji,jutarnji,Agpmsny,ADJ,B-PRO,ORG-Jutarnji-list,B-PRO
 sl-124,9,37,list,list,list,Ncmsn,NOUN,I-PRO,ORG-Jutarnji-list,I-PRO
@@ -366,7 +366,7 @@ sl-124,13,10,z,,z,Si,ADP,O,,O
 sl-124,13,11,odvračanjem,,odvračanje,Ncnsi,NOUN,O,,O
 sl-124,13,12,migrantov,,migrant,Ncmpg,NOUN,O,,O
 sl-124,13,13,.,,.,Z,PUNCT,O,,O
-sl-124,14,1,Hrvaške,Hrvaška,hrvaški,Agpmpa,ADJ,B-LOC,GPE-Croatia,B-LOC
+sl-124,14,1,Hrvaške,Hrvaška,hrvaški,Agpmpa,ADJ,B-LOC,GPE-Croatia,O
 sl-124,14,2,policiste,,policist,Ncmpa,NOUN,O,,O
 sl-124,14,3,na,,na,Sl,ADP,O,,O
 sl-124,14,4,meji,,meja,Ncfsl,NOUN,O,,O

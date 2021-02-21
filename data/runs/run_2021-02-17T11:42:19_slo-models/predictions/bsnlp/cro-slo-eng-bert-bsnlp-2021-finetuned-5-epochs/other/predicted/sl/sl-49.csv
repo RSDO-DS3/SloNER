@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-49,0,1,Adria,Adria,Adria,Npfsn,PROPN,B-ORG,ORG-Adria-Airways,B-ORG
 sl-49,0,2,Airways,Airways,Airways,Npfsn,PROPN,I-ORG,ORG-Adria-Airways,I-ORG
 sl-49,0,3,do,,do,Sg,ADP,O,,O
@@ -77,9 +77,9 @@ sl-49,4,10,",",,",",Z,PUNCT,O,,O
 sl-49,4,11,kot,,kot,Cs,SCONJ,O,,O
 sl-49,4,12,sta,STA,biti,Va-r3d-n,AUX,B-ORG,ORG-Slovenian-Press-Agency,O
 sl-49,4,13,portal,,portal,Ncmsn,NOUN,O,,O
-sl-49,4,14,Siol,Siol,Siol,Npmsn,PROPN,B-PRO,PRO-Siol.net,B-PRO
+sl-49,4,14,Siol,Siol,Siol,Npmsn,PROPN,B-PRO,PRO-Siol.net,B-ORG
 sl-49,4,15,in,,in,Cc,CCONJ,O,,O
-sl-49,4,16,Delo,Delo,delo,Ncnsn,NOUN,B-PRO,PRO-Delo,B-PRO
+sl-49,4,16,Delo,Delo,delo,Ncnsn,NOUN,B-PRO,PRO-Delo,B-ORG
 sl-49,4,17,",",,",",Z,PUNCT,O,,O
 sl-49,4,18,pojasnili,,pojasniti,Vmep-pm,VERB,O,,O
 sl-49,4,19,",",,",",Z,PUNCT,O,,O
@@ -91,7 +91,7 @@ sl-49,4,24,nočne,,nočen,Agpmpa,ADJ,O,,O
 sl-49,4,25,lete,,let,Ncmpa,NOUN,O,,O
 sl-49,4,26,na,,na,Sl,ADP,O,,O
 sl-49,4,27,relaciji,,relacija,Ncfsl,NOUN,O,,O
-sl-49,4,28,Ljubljana-Skopje-Ljubljana,,Ljubljanansenabljubljublja,Npmsg,PROPN,O,,B-LOC
+sl-49,4,28,Ljubljana-Skopje-Ljubljana,,Ljubljanansenabljubljublja,Npmsg,PROPN,O,,O
 sl-49,4,29,in,,in,Cc,CCONJ,O,,O
 sl-49,4,30,Ljubljana-Priština-Ljubljana,,Ljubljanaqpiblabljubljubljan,Npmsg,PROPN,O,,O
 sl-49,4,31,",",,",",Z,PUNCT,O,,O
@@ -200,14 +200,14 @@ sl-49,8,4,večinski,,večinski,Agpfsl,ADJ,O,,O
 sl-49,8,5,lasti,,last,Ncfsl,NOUN,O,,O
 sl-49,8,6,družbe,,družba,Ncfsg,NOUN,O,,O
 sl-49,8,7,AA,AA,AA,Npmsn,PROPN,B-ORG,ORG-AA-International-Aviation-Holding,B-ORG
-sl-49,8,8,International,International,International,Npmsn,PROPN,I-ORG,ORG-AA-International-Aviation-Holding,B-ORG
+sl-49,8,8,International,International,International,Npmsn,PROPN,I-ORG,ORG-AA-International-Aviation-Holding,I-ORG
 sl-49,8,9,Aviation,Aviation,Aviation,Npmsn,PROPN,I-ORG,ORG-AA-International-Aviation-Holding,I-ORG
 sl-49,8,10,Holding,Holding,holding,Ncmsn,NOUN,I-ORG,ORG-AA-International-Aviation-Holding,I-ORG
 sl-49,8,11,oz.,,oz.,Y,X,O,,O
 sl-49,8,12,nemškega,,nemški,Agpmsg,ADJ,O,,O
 sl-49,8,13,sklada,,sklad,Ncmsg,NOUN,O,,O
 sl-49,8,14,4,4,4,Mdc,NUM,B-ORG,ORG-4K-Invest,B-ORG
-sl-49,8,15,K,K,k,Sd,ADP,I-ORG,ORG-4K-Invest,B-ORG
+sl-49,8,15,K,K,k,Sd,ADP,I-ORG,ORG-4K-Invest,I-ORG
 sl-49,8,16,Investments,Investments,Investments,Npmsn,PROPN,I-ORG,ORG-4K-Invest,I-ORG
 sl-49,8,17,predvidevajo,,predvidevati,Vmpr3p,VERB,O,,O
 sl-49,8,18,",",,",",Z,PUNCT,O,,O
@@ -221,7 +221,7 @@ sl-49,8,25,začetkom,,začetek,Ncmsi,NOUN,O,,O
 sl-49,8,26,julija,,julij,Ncmsg,NOUN,O,,O
 sl-49,8,27,.,,.,Z,PUNCT,O,,O
 sl-49,9,1,Na,,na,Sl,ADP,O,,O
-sl-49,9,2,Siolu,Siol,SiOL,Npmsl,PROPN,B-PRO,PRO-Siol.net,B-PRO
+sl-49,9,2,Siolu,Siol,SiOL,Npmsl,PROPN,B-PRO,PRO-Siol.net,B-ORG
 sl-49,9,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-49,9,4,medtem,,medtem,Rgp,ADV,O,,O
 sl-49,9,5,zapisali,,zapisati,Vmep-pm,VERB,O,,O
@@ -472,7 +472,7 @@ sl-49,17,27,z,,z,Si,ADP,O,,O
 sl-49,17,28,EU,EU,EU,Npfsi,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-49,17,29,.,,.,Z,PUNCT,O,,O
 sl-49,18,1,Na,,na,Sl,ADP,O,,O
-sl-49,18,2,Siolu,Siol,SiOL,Npmsl,PROPN,B-PRO,PRO-Siol.net,B-PRO
+sl-49,18,2,Siolu,Siol,SiOL,Npmsl,PROPN,B-PRO,PRO-Siol.net,B-ORG
 sl-49,18,3,so,,biti,Va-r3p-n,AUX,O,,O
 sl-49,18,4,spomnili,,spomniti,Vmep-pm,VERB,O,,O
 sl-49,18,5,",",,",",Z,PUNCT,O,,O

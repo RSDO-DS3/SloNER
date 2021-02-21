@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-45,0,1,Rimska,,rimski,Agpfsn,ADJ,O,,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-45,0,1,Rimska,,rimski,Agpfsn,ADJ,O,,O
 sl-45,0,2,županja,,županja,Ncfsn,NOUN,O,,O
 sl-45,0,3,Raggi,Raggi,Raggi,Npfsn,PROPN,B-PER,PER-Virginia-Raggi,B-PER
 sl-45,0,4,oproščena,,oproščen,Appfsn,ADJ,O,,O
@@ -67,7 +67,7 @@ sl-45,4,7,.,,.,Z,PUNCT,O,,O
 sl-45,5,1,Vodja,,vodja,Ncmsn,NOUN,O,,O
 sl-45,5,2,gibanja,,gibanje,Ncnsg,NOUN,O,,O
 sl-45,5,3,Pet,Pet,pet,Mlc-pn,NUM,B-ORG,ORG-Five-Star-Movement,B-ORG
-sl-45,5,4,zvezd,zvezd,zvezda,Ncfpg,NOUN,I-ORG,ORG-Five-Star-Movement,B-ORG
+sl-45,5,4,zvezd,zvezd,zvezda,Ncfpg,NOUN,I-ORG,ORG-Five-Star-Movement,I-ORG
 sl-45,5,5,Luigi,Luigi,Luigi,Npmsn,PROPN,B-PER,PER-Luigi-Di-Maio,B-PER
 sl-45,5,6,Di,Di,di,Npmsn,PROPN,I-PER,PER-Luigi-Di-Maio,I-PER
 sl-45,5,7,Maio,Maio,Maio,Npmsn,PROPN,I-PER,PER-Luigi-Di-Maio,I-PER
@@ -141,7 +141,7 @@ sl-45,9,13,ter,,ter,Cc,CCONJ,O,,O
 sl-45,9,14,masakrirajo,,masakrirati,Vmbr3p,VERB,O,,O
 sl-45,9,15,gibanje,,gibanje,Ncnsa,NOUN,O,,O
 sl-45,9,16,Pet,Pet,pet,Mlc-pa,NUM,B-ORG,ORG-Five-Star-Movement,B-ORG
-sl-45,9,17,zvezd,zvezd,zvezda,Ncfpg,NOUN,I-ORG,ORG-Five-Star-Movement,B-ORG
+sl-45,9,17,zvezd,zvezd,zvezda,Ncfpg,NOUN,I-ORG,ORG-Five-Star-Movement,I-ORG
 sl-45,9,18,",",,",",Z,PUNCT,O,,O
 sl-45,9,19,skušajo,,skušati,Vmpr3p,VERB,O,,O
 sl-45,9,20,zrušiti,,zrušiti,Vmen,VERB,O,,O
@@ -186,7 +186,7 @@ sl-45,11,23,je,,biti,Va-r3s-n,AUX,O,,O
 sl-45,11,24,sama,,sam,Agpfsn,ADJ,O,,O
 sl-45,11,25,imenovala,,imenovati,Vmbp-sf,VERB,O,,O
 sl-45,11,26,Renata,Renato,Renata,Npfsn,PROPN,B-PER,PER-Renato-Marro,B-PER
-sl-45,11,27,Marro,Marro,Marro,Npfsn,PROPN,I-PER,PER-Renato-Marro,B-PER
+sl-45,11,27,Marro,Marro,Marro,Npfsn,PROPN,I-PER,PER-Renato-Marro,I-PER
 sl-45,11,28,na,,na,Sa,ADP,O,,O
 sl-45,11,29,položaj,,položaj,Ncmsan,NOUN,O,,O
 sl-45,11,30,vodje,,vodja,Ncmsg,NOUN,O,,O

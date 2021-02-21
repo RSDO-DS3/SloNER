@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-94,0,1,V,,v,Sl,ADP,O,,O
 sl-94,0,2,Bolgariji,Bolgarija,Bolgarija,Npfsl,PROPN,B-LOC,GPE-Bulgaria,O
 sl-94,0,3,v,,v,Sl,ADP,O,,O
@@ -26,9 +26,9 @@ sl-94,1,14,«,,«,Z,PUNCT,O,,O
 sl-94,1,15,je,,biti,Va-r3s-n,AUX,O,,O
 sl-94,1,16,za,,za,Sa,ADP,O,,O
 sl-94,1,17,televizijo,,televizija,Ncfsa,NOUN,O,,O
-sl-94,1,18,bTV,bTV,bTV,Npmsn,PROPN,B-PRO,PRO-BTV,O
+sl-94,1,18,bTV,bTV,bTV,Npmsn,PROPN,B-PRO,PRO-BTV,B-ORG
 sl-94,1,19,potrdil,,potrditi,Vmep-sm,VERB,O,,O
-sl-94,1,20,Marinov,Marinov,Marinov,Npmsn,PROPN,B-PER,PER-Mladen-Marinov,O
+sl-94,1,20,Marinov,Marinov,Marinov,Npmsn,PROPN,B-PER,PER-Mladen-Marinov,B-PER
 sl-94,1,21,.,,.,Z,PUNCT,O,,O
 sl-94,2,1,S,,z,Si,ADP,O,,O
 sl-94,2,2,tem,,ta,Pd-nsi,DET,O,,O
@@ -71,7 +71,7 @@ sl-94,3,23,tujcev,,tujec,Ncmpg,NOUN,O,,O
 sl-94,3,24,in,,in,Cc,CCONJ,O,,O
 sl-94,3,25,podjetij,,podjetje,Ncnpg,NOUN,O,,O
 sl-94,3,26,.,,.,Z,PUNCT,O,,O
-sl-94,4,1,Bolgarija,Bolgarija,Bolgarija,Npfsn,PROPN,B-LOC,GPE-Bulgaria,O
+sl-94,4,1,Bolgarija,Bolgarija,Bolgarija,Npfsn,PROPN,B-LOC,GPE-Bulgaria,B-LOC
 sl-94,4,2,ima,,imeti,Vmpr3s-n,VERB,O,,O
 sl-94,4,3,sicer,,sicer,Q,PART,O,,O
 sl-94,4,4,sedem,,sedem,Mlc-pa,NUM,O,,O
@@ -105,11 +105,11 @@ sl-94,6,5,drugim,,drug,Mlpnsi,ADJ,O,,O
 sl-94,6,6,zahtevali,,zahtevati,Vmbp-pm,VERB,O,,O
 sl-94,6,7,izpustitev,,izpustitev,Ncfsa,NOUN,O,,O
 sl-94,6,8,ustanovitelja,,ustanovitelj,Ncmsg,NOUN,O,,O
-sl-94,6,9,Wikileaksa,Wikileaks,Wikileaks,Npmsg,PROPN,B-PRO,PRO-Wikileaks,O
-sl-94,6,10,Juliana,Julian,Julian,Npmsg,PROPN,B-PER,PER-Julian-Assange,O
-sl-94,6,11,Assangea,Assange,Assange,Npmsg,PROPN,I-PER,PER-Julian-Assange,O
+sl-94,6,9,Wikileaksa,Wikileaks,Wikileaks,Npmsg,PROPN,B-PRO,PRO-Wikileaks,B-ORG
+sl-94,6,10,Juliana,Julian,Julian,Npmsg,PROPN,B-PER,PER-Julian-Assange,I-PER
+sl-94,6,11,Assangea,Assange,Assange,Npmsg,PROPN,I-PER,PER-Julian-Assange,I-PER
 sl-94,6,12,.,,.,Z,PUNCT,O,,O
-sl-94,7,1,Marinov,Marinov,Marinov,Npmsn,PROPN,B-PER,PER-Mladen-Marinov,O
+sl-94,7,1,Marinov,Marinov,Marinov,Npmsn,PROPN,B-PER,PER-Mladen-Marinov,B-PER
 sl-94,7,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-94,7,3,danes,,danes,Rgp,ADV,O,,O
 sl-94,7,4,še,,še,Q,PART,O,,O
@@ -146,8 +146,8 @@ sl-94,8,1,Zaradi,,zaradi,Sg,ADP,O,,O
 sl-94,8,2,vdora,,vdor,Ncmsg,NOUN,O,,O
 sl-94,8,3,je,,biti,Va-r3s-n,AUX,O,,O
 sl-94,8,4,premier,,premier,Ncmsn,NOUN,O,,O
-sl-94,8,5,Bojko,Bojko,Bojko,Npmsn,PROPN,B-PER,PER-Boyko-Borisov,O
-sl-94,8,6,Borisov,Borisov,Borisov,Npmsn,PROPN,I-PER,PER-Boyko-Borisov,O
+sl-94,8,5,Bojko,Bojko,Bojko,Npmsn,PROPN,B-PER,PER-Boyko-Borisov,B-PER
+sl-94,8,6,Borisov,Borisov,Borisov,Npmsn,PROPN,I-PER,PER-Boyko-Borisov,I-PER
 sl-94,8,7,sklical,,sklicati,Vmep-sm,VERB,O,,O
 sl-94,8,8,varnostni,,varnosten,Agpmsay,ADJ,O,,O
 sl-94,8,9,svet,,svet,Ncmsan,NOUN,O,,O

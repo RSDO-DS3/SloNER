@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-42,0,1,Ryanairovo,Ryanairovi,Ryanairov,Aspnsn,ADJ,B-ORG,ORG-Ryanair,B-ORG
 sl-42,0,2,nemško,,nemški,Agpnsn,ADJ,O,,O
 sl-42,0,3,osebje,,osebje,Ncnsn,NOUN,O,,O
@@ -137,7 +137,7 @@ sl-42,6,4,približno,,približno,Rgp,ADV,O,,O
 sl-42,6,5,55.000,,55.000,Mdc,NUM,O,,O
 sl-42,6,6,potnikov,,potnik,Ncmpg,NOUN,O,,O
 sl-42,6,7,.,,.,Z,PUNCT,O,,O
-sl-42,7,1,Sindikat,,sindikat,Ncmsn,NOUN,O,,B-ORG
+sl-42,7,1,Sindikat,,sindikat,Ncmsn,NOUN,O,,O
 sl-42,7,2,Verdi,Verdi,Verdi,Npmsn,PROPN,B-ORG,ORG-Ver.di-Trade-Union,B-ORG
 sl-42,7,3,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-42,7,4,tokrat,,tokrat,Rgp,ADV,O,,O

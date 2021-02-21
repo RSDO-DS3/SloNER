@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-105,0,1,DRAMA,,drama,Ncfsn,NOUN,O,,O
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-105,0,1,DRAMA,,drama,Ncfsn,NOUN,O,,B-LOC
 sl-105,0,2,V,,v,Sl,ADP,O,,O
 sl-105,0,3,LOGATCU,Logatec,Logatec,Npmsl,PROPN,B-LOC,GPE-Logatec,B-LOC
 sl-105,1,1,VIDEO,,video,Ncmsn,NOUN,O,,O
@@ -9,7 +9,7 @@ sl-105,1,4,obtožbe,,obtožba,Ncfpa,NOUN,O,,O
 sl-105,1,5,na,,na,Sa,ADP,O,,O
 sl-105,1,6,račun,,račun,Ncmsan,NOUN,O,,O
 sl-105,1,7,slovenskega,,slovenski,Agpmsg,ADJ,O,,O
-sl-105,1,8,policista,,policist,Ncmsg,NOUN,O,,B-PER
+sl-105,1,8,policista,,policist,Ncmsg,NOUN,O,,O
 sl-105,1,9,:,,:,Z,PUNCT,O,,O
 sl-105,1,10,13-letnik,,13-letnik,Ncmsn,NOUN,O,,O
 sl-105,1,11,trdi,,trditi,Vmpr3s,VERB,O,,O
@@ -167,7 +167,7 @@ sl-105,7,39,Logatcu,Logatec,Logatec,Npmsl,PROPN,B-LOC,GPE-Logatec,B-LOC
 sl-105,7,40,.,,.,Z,PUNCT,O,,O
 sl-105,8,1,Ko,,ko,Cs,SCONJ,O,,O
 sl-105,8,2,so,,biti,Va-r3p-n,AUX,O,,O
-sl-105,8,3,policisti,,policist,Ncmpn,NOUN,O,,B-PER
+sl-105,8,3,policisti,,policist,Ncmpn,NOUN,O,,O
 sl-105,8,4,prispeli,,prispeti,Vmep-pm,VERB,O,,O
 sl-105,8,5,na,,na,Sa,ADP,O,,O
 sl-105,8,6,kraj,,kraj,Ncmsan,NOUN,O,,O
@@ -186,7 +186,7 @@ sl-105,8,18,so,,biti,Va-r3p-n,AUX,O,,O
 sl-105,8,19,se,,se,Px------y,PRON,O,,O
 sl-105,8,20,ob,,ob,Sl,ADP,O,,O
 sl-105,8,21,prihodu,,prihod,Ncmsl,NOUN,O,,O
-sl-105,8,22,policistov,,policist,Ncmpg,NOUN,O,,B-PER
+sl-105,8,22,policistov,,policist,Ncmpg,NOUN,O,,O
 sl-105,8,23,razbežali,,razbežati,Vmep-pm,VERB,O,,O
 sl-105,8,24,.,,.,Z,PUNCT,O,,O
 sl-105,9,1,Policisti,,policist,Ncmpn,NOUN,O,,O
@@ -212,7 +212,7 @@ sl-105,10,9,da,,da,Cs,SCONJ,O,,O
 sl-105,10,10,ga,,on,Pp3msa--y,PRON,O,,O
 sl-105,10,11,je,,biti,Va-r3s-n,AUX,O,,O
 sl-105,10,12,udaril,,udariti,Vmep-sm,VERB,O,,O
-sl-105,10,13,policist,,policist,Ncmsn,NOUN,O,,B-PER
+sl-105,10,13,policist,,policist,Ncmsn,NOUN,O,,O
 sl-105,11,1,»,,»,Z,PUNCT,O,,O
 sl-105,11,2,Eden,,eden,Mlpmsn,NUM,O,,O
 sl-105,11,3,od,,od,Sg,ADP,O,,O
@@ -235,7 +235,7 @@ sl-105,11,19,da,,da,Cs,SCONJ,O,,O
 sl-105,11,20,ga,,on,Pp3msa--y,PRON,O,,O
 sl-105,11,21,je,,biti,Va-r3s-n,AUX,O,,O
 sl-105,11,22,udaril,,udariti,Vmep-sm,VERB,O,,O
-sl-105,11,23,policist,,policist,Ncmsn,NOUN,O,,B-PER
+sl-105,11,23,policist,,policist,Ncmsn,NOUN,O,,O
 sl-105,11,24,in,,in,Cc,CCONJ,O,,O
 sl-105,11,25,da,,da,Cs,SCONJ,O,,O
 sl-105,11,26,zato,,zato,Rgp,ADV,O,,O
@@ -281,7 +281,7 @@ sl-105,13,26,je,,biti,Va-r3s-n,AUX,O,,O
 sl-105,13,27,pojasnila,,pojasniti,Vmep-sf,VERB,O,,O
 sl-105,13,28,tiskovna,,tiskoven,Agpfsn,ADJ,O,,O
 sl-105,13,29,predstavnica,,predstavnica,Ncfsn,NOUN,O,,O
-sl-105,13,30,policije,,policija,Ncfsg,NOUN,O,,I-ORG
+sl-105,13,30,policije,,policija,Ncfsg,NOUN,O,,O
 sl-105,13,31,Aleksandra,Aleksandra,Aleksander,Npmsg,PROPN,B-PER,PER-Aleksandra-Golec,B-PER
 sl-105,13,32,Golec,Golec,Golec,Npfsn,PROPN,I-PER,PER-Aleksandra-Golec,I-PER
 sl-105,13,33,.,,.,Z,PUNCT,O,,O

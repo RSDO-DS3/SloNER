@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-37,0,1,Napadalec,,napadalec,Ncmsn,NOUN,O,,O
 sl-37,0,2,do,,do,Sg,ADP,O,,O
 sl-37,0,3,smrti,,smrt,Ncfsg,NOUN,O,,O
@@ -18,7 +18,7 @@ sl-37,2,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-37,2,6,na,,na,Sl,ADP,O,,O
 sl-37,2,7,berlinski,,berlinski,Agpfsl,ADJ,O,,O
 sl-37,2,8,kliniki,klinika,klinika,Ncfsl,NOUN,B-LOC,LOC-Schlosspark-Klinik,O
-sl-37,2,9,Schlosspark,Schlosspark,Schlosspark,Npmsn,PROPN,I-LOC,LOC-Schlosspark-Klinik,B-LOC
+sl-37,2,9,Schlosspark,Schlosspark,Schlosspark,Npmsn,PROPN,I-LOC,LOC-Schlosspark-Klinik,I-LOC
 sl-37,2,10,v,,v,Sa,ADP,O,,O
 sl-37,2,11,torek,,torek,Ncmsan,NOUN,O,,O
 sl-37,2,12,predaval,,predavati,Vmpp-sm,VERB,O,,O
@@ -132,7 +132,7 @@ sl-37,9,13,splošno,,splošen,Agpnsa,ADJ,O,,O
 sl-37,9,14,ni,,biti,Va-r3s-y,AUX,O,,O
 sl-37,9,15,maral,,marati,Vmpp-sm,VERB,O,,O
 sl-37,9,16,družine,,družina,Ncfsg,NOUN,O,,O
-sl-37,9,17,von,von,von,Xf,X,B-PER,PER-von-Weizsäcker,I-PER
+sl-37,9,17,von,von,von,Xf,X,B-PER,PER-von-Weizsäcker,B-PER
 sl-37,9,18,Weizsäcker,Weizsäcker,Weizsäcker,Npmsn,PROPN,I-PER,PER-von-Weizsäcker,I-PER
 sl-37,9,19,",",,",",Z,PUNCT,O,,O
 sl-37,9,20,še,,še,Q,PART,O,,O
@@ -244,7 +244,7 @@ sl-37,15,12,za,,za,Sa,ADP,O,,O
 sl-37,15,13,izdelavo,,izdelava,Ncfsa,NOUN,O,,O
 sl-37,15,14,kemikalije,,kemikalija,Ncfsg,NOUN,O,,O
 sl-37,15,15,agent,agent,agent,Ncmsn,NOUN,B-PRO,PRO-agent-orange,B-PRO
-sl-37,15,16,orange,orange,orange,Ncmsn,NOUN,I-PRO,PRO-agent-orange,B-PRO
+sl-37,15,16,orange,orange,orange,Ncmsn,NOUN,I-PRO,PRO-agent-orange,I-PRO
 sl-37,15,17,",",,",",Z,PUNCT,O,,O
 sl-37,15,18,ki,,ki,Cs,SCONJ,O,,O
 sl-37,15,19,so,,biti,Va-r3p-n,AUX,O,,O

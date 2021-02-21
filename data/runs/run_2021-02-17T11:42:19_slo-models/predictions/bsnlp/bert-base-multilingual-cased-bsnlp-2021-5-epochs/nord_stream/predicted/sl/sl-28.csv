@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-28,0,1,EU,EU,EU,Npfsn,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-28,0,2,močno,,močno,Rgp,ADV,O,,O
 sl-28,0,3,povečala,,povečati,Vmep-sf,VERB,O,,O
@@ -35,8 +35,8 @@ sl-28,1,23,zemeljskega,,zemeljski,Agpmsg,ADJ,O,,O
 sl-28,1,24,plina,,plin,Ncmsg,NOUN,O,,O
 sl-28,1,25,iz,,iz,Sg,ADP,O,,O
 sl-28,1,26,ZDA,ZDA,ZDA,Npfpg,PROPN,B-LOC,GPE-USA,B-LOC
-sl-28,1,27,za,,za,Sa,ADP,O,,I-ORG
-sl-28,1,28,272,,272,Mdc,NUM,O,,I-PRO
+sl-28,1,27,za,,za,Sa,ADP,O,,O
+sl-28,1,28,272,,272,Mdc,NUM,O,,O
 sl-28,1,29,odstotkov,,odstotek,Ncmpg,NOUN,O,,O
 sl-28,1,30,.,,.,Z,PUNCT,O,,O
 sl-28,2,1,Evropska,Evropska,evropski,Agpfsn,ADJ,B-ORG,ORG-European-Commission,B-ORG
@@ -162,10 +162,10 @@ sl-28,7,8,Bruslju,Bruselj,Bruselj,Npmsl,PROPN,B-LOC,GPE-Brussles,B-LOC
 sl-28,7,9,ponovil,,ponoviti,Vmep-sm,VERB,O,,O
 sl-28,7,10,ameriški,,ameriški,Agpmsny,ADJ,O,,O
 sl-28,7,11,minister,,minister,Ncmsn,NOUN,O,,O
-sl-28,7,12,za,,za,Sa,ADP,O,,I-ORG
+sl-28,7,12,za,,za,Sa,ADP,O,,O
 sl-28,7,13,energetiko,,energetika,Ncfsa,NOUN,O,,O
 sl-28,7,14,Rick,Rick,Rick,Npmsn,PROPN,B-PER,PER-Rick-Perry,B-PER
-sl-28,7,15,Perry,Perry,Perry,Npmsn,PROPN,I-PER,PER-Rick-Perry,B-PER
+sl-28,7,15,Perry,Perry,Perry,Npmsn,PROPN,I-PER,PER-Rick-Perry,I-PER
 sl-28,7,16,.,,.,Z,PUNCT,O,,O
 sl-28,8,1,Zaradi,,zaradi,Sg,ADP,O,,O
 sl-28,8,2,Severnega,Severni,severen,Agpmsg,ADJ,B-PRO,PRO-Nord-Stream-2,B-PRO
@@ -371,13 +371,13 @@ sl-28,17,4,besedah,,beseda,Ncfpl,NOUN,O,,O
 sl-28,17,5,ne,,ne,Q,PART,O,,O
 sl-28,17,6,gre,,iti,Vmbr3s,VERB,O,,O
 sl-28,17,7,le,,le,Q,PART,O,,O
-sl-28,17,8,za,,za,Sa,ADP,O,,I-ORG
+sl-28,17,8,za,,za,Sa,ADP,O,,O
 sl-28,17,9,ceno,,cena,Ncfsa,NOUN,O,,O
 sl-28,17,10,",",,",",Z,PUNCT,O,,O
 sl-28,17,11,pač,,pač,Q,PART,O,,O
 sl-28,17,12,pa,,pa,Cc,CCONJ,O,,O
 sl-28,17,13,tudi,,tudi,Q,PART,O,,O
-sl-28,17,14,za,,za,Sa,ADP,O,,I-ORG
+sl-28,17,14,za,,za,Sa,ADP,O,,O
 sl-28,17,15,zanesljivost,,zanesljivost,Ncfsa,NOUN,O,,O
 sl-28,17,16,.,,.,Z,PUNCT,O,,O
 sl-28,18,1,"""",,"""",Z,PUNCT,O,,O
@@ -457,7 +457,7 @@ sl-28,22,2,meni,,meniti,Vmpr3s,VERB,O,,O
 sl-28,22,3,tudi,,tudi,Q,PART,O,,O
 sl-28,22,4,nemška,,nemški,Agpfsn,ADJ,O,,O
 sl-28,22,5,strokovnjakinja,,strokovnjakinja,Ncfsn,NOUN,O,,O
-sl-28,22,6,za,,za,Sa,ADP,O,,I-ORG
+sl-28,22,6,za,,za,Sa,ADP,O,,O
 sl-28,22,7,energetiko,,energetika,Ncfsa,NOUN,O,,O
 sl-28,22,8,Claudia,Claudia,Claudia,Npfsn,PROPN,B-PER,PER-Claudia-Kemfert,B-PER
 sl-28,22,9,Kemfert,Kemfert,Kemfert,Npfsn,PROPN,I-PER,PER-Claudia-Kemfert,I-PER
@@ -506,7 +506,7 @@ sl-28,23,35,",",,",",Z,PUNCT,O,,O
 sl-28,23,36,"""",,"""",Z,PUNCT,O,,O
 sl-28,23,37,je,,biti,Va-r3s-n,AUX,O,,O
 sl-28,23,38,dejala,,dejati,Vmep-sf,VERB,O,,O
-sl-28,23,39,za,,za,Sa,ADP,O,,I-ORG
+sl-28,23,39,za,,za,Sa,ADP,O,,O
 sl-28,23,40,dpa,dpa,dpa,Npfsa,PROPN,B-ORG,ORG-DPA,B-ORG
 sl-28,23,41,.,,.,Z,PUNCT,O,,O
 sl-28,24,1,Ponudba,,ponudba,Ncfsn,NOUN,O,,O
@@ -527,7 +527,7 @@ sl-28,25,8,trge,,trg,Ncmpa,NOUN,O,,O
 sl-28,25,9,in,,in,Cc,CCONJ,O,,O
 sl-28,25,10,izkoriščajo,,izkoriščati,Vmpr3p,VERB,O,,O
 sl-28,25,11,plin,,plin,Ncmsan,NOUN,O,,O
-sl-28,25,12,za,,za,Sa,ADP,O,,I-ORG
+sl-28,25,12,za,,za,Sa,ADP,O,,O
 sl-28,25,13,sredstvo,,sredstvo,Ncnsa,NOUN,O,,O
 sl-28,25,14,političnega,,političen,Agpmsg,ADJ,O,,O
 sl-28,25,15,pritiska,,pritisk,Ncmsg,NOUN,O,,O

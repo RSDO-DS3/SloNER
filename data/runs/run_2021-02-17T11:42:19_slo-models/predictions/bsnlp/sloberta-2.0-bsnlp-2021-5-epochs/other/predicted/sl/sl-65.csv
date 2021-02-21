@@ -1,5 +1,5 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
-sl-65,0,1,Švedska,Švedska,Švedska,Npfsn,PROPN,B-LOC,GPE-Sweden,B-LOC
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
+sl-65,0,1,Švedska,Švedska,Švedska,Npfsn,PROPN,B-LOC,GPE-Sweden,O
 sl-65,0,2,izdala,,izdati,Vmep-sf,VERB,O,,O
 sl-65,0,3,priročnik,,priročnik,Ncmsan,NOUN,O,,O
 sl-65,0,4,feministične,,feminističen,Agpfsg,ADJ,O,,O
@@ -48,7 +48,7 @@ sl-65,1,41,na,,na,Sl,ADP,O,,O
 sl-65,1,42,angleški,,angleški,Agpfsl,ADJ,O,,O
 sl-65,1,43,različici,,različica,Ncfsl,NOUN,O,,O
 sl-65,1,44,spletne,,spleten,Agpfsg,ADJ,O,,O
-sl-65,1,45,strani,,stran,Ncfsg,NOUN,O,,B-PER
+sl-65,1,45,strani,,stran,Ncfsg,NOUN,O,,O
 sl-65,1,46,švedske,Švedska,švedski,Agpfsg,ADJ,B-LOC,GPE-Sweden,B-LOC
 sl-65,1,47,vlade,,vlada,Ncfsg,NOUN,O,,O
 sl-65,1,48,.,,.,Z,PUNCT,O,,O
@@ -56,7 +56,7 @@ sl-65,2,1,»,,»,Z,PUNCT,O,,O
 sl-65,2,2,Ena,,en,Mlpfsn,NUM,O,,O
 sl-65,2,3,od,,od,Sg,ADP,O,,O
 sl-65,2,4,izhodiščnih,,izhodiščen,Agpfpg,ADJ,O,,O
-sl-65,2,5,točk,,točka,Ncfpg,NOUN,O,,B-PER
+sl-65,2,5,točk,,točka,Ncfpg,NOUN,O,,O
 sl-65,2,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,2,7,",",,",",Z,PUNCT,O,,O
 sl-65,2,8,da,,da,Cs,SCONJ,O,,O
@@ -81,7 +81,7 @@ sl-65,2,26,ciljev,,cilj,Ncmpg,NOUN,O,,O
 sl-65,2,27,",",,",",Z,PUNCT,O,,O
 sl-65,2,28,kot,,kot,Cs,SCONJ,O,,O
 sl-65,2,29,so,,biti,Va-r3p-n,AUX,O,,O
-sl-65,2,30,mir,,mir,Ncmsn,NOUN,O,,I-PER
+sl-65,2,30,mir,,mir,Ncmsn,NOUN,O,,O
 sl-65,2,31,",",,",",Z,PUNCT,O,,O
 sl-65,2,32,varnost,,varnost,Ncfsn,NOUN,O,,O
 sl-65,2,33,in,,in,Cc,CCONJ,O,,O
@@ -104,12 +104,12 @@ sl-65,2,49,.,,.,Z,PUNCT,O,,O
 sl-65,3,1,Politika,,politika,Ncfsn,NOUN,O,,O
 sl-65,3,2,",",,",",Z,PUNCT,O,,O
 sl-65,3,3,ki,,ki,Cs,SCONJ,O,,O
-sl-65,3,4,jo,,on,Pp3fsa--y,PRON,O,,B-LOC
+sl-65,3,4,jo,,on,Pp3fsa--y,PRON,O,,O
 sl-65,3,5,vodi,,voditi,Vmpr3s,VERB,O,,O
 sl-65,3,6,zunanja,,zunanji,Agpfsn,ADJ,O,,O
 sl-65,3,7,ministrica,,ministrica,Ncfsn,NOUN,O,,O
 sl-65,3,8,Margot,Margot,Margot,Npfsn,PROPN,B-PER,PER-Margot-Wallström,B-PER
-sl-65,3,9,Wallström,Wallström,Wallström,Npfsn,PROPN,I-PER,PER-Margot-Wallström,B-PER
+sl-65,3,9,Wallström,Wallström,Wallström,Npfsn,PROPN,I-PER,PER-Margot-Wallström,I-PER
 sl-65,3,10,",",,",",Z,PUNCT,O,,O
 sl-65,3,11,vključuje,,vključevati,Vmpr3s,VERB,O,,O
 sl-65,3,12,promocijo,,promocija,Ncfsa,NOUN,O,,O
@@ -180,7 +180,7 @@ sl-65,7,1,Priročnik,,priročnik,Ncmsn,NOUN,O,,O
 sl-65,7,2,vsebuje,,vsebovati,Vmpr3s,VERB,O,,O
 sl-65,7,3,različne,,različen,Agpmpa,ADJ,O,,O
 sl-65,7,4,primere,,primer,Ncmpa,NOUN,O,,O
-sl-65,7,5,švedske,Švedska,švedski,Agpfsg,ADJ,B-LOC,GPE-Sweden,O
+sl-65,7,5,švedske,Švedska,švedski,Agpfsg,ADJ,B-LOC,GPE-Sweden,B-LOC
 sl-65,7,6,zunanje,,zunanji,Agpfsg,ADJ,O,,O
 sl-65,7,7,politike,,politika,Ncfsg,NOUN,O,,O
 sl-65,7,8,",",,",",Z,PUNCT,O,,O
@@ -212,7 +212,7 @@ sl-65,8,2,vključuje,,vključevati,Vmpr3s,VERB,O,,O
 sl-65,8,3,opolnomočenje,,opolnomočenje,Ncnsa,NOUN,O,,O
 sl-65,8,4,žensk,,ženska,Ncfpg,NOUN,O,,O
 sl-65,8,5,.,,.,Z,PUNCT,O,,O
-sl-65,9,1,Wallströmova,Wallström,Wallströmov,Aspfsn,ADJ,B-PER,PER-Margot-Wallström,O
+sl-65,9,1,Wallströmova,Wallström,Wallströmov,Aspfsn,ADJ,B-PER,PER-Margot-Wallström,B-PER
 sl-65,9,2,je,,biti,Va-r3s-n,AUX,O,,O
 sl-65,9,3,dodala,,dodati,Vmep-sf,VERB,O,,O
 sl-65,9,4,",",,",",Z,PUNCT,O,,O
@@ -284,7 +284,7 @@ sl-65,11,5,pomembnejšo,,pomemben,Agcfsa,ADJ,O,,O
 sl-65,11,6,vlogo,,vloga,Ncfsa,NOUN,O,,O
 sl-65,11,7,tudi,,tudi,Q,PART,O,,O
 sl-65,11,8,v,,v,Sl,ADP,O,,O
-sl-65,11,9,švedski,Švedska,švedski,Agpfsl,ADJ,B-LOC,GPE-Sweden,O
+sl-65,11,9,švedski,Švedska,švedski,Agpfsl,ADJ,B-LOC,GPE-Sweden,B-LOC
 sl-65,11,10,zunanji,,zunanji,Agpfsl,ADJ,O,,O
 sl-65,11,11,politiki,,politika,Ncfsl,NOUN,O,,O
 sl-65,11,12,.,,.,Z,PUNCT,O,,O

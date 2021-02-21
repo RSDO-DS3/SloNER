@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-127,0,1,Trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-127,0,2,brexit,brexit,brexit,Ncmsn,NOUN,B-EVT,EVT-Brexit,B-EVT
 sl-127,0,3,vse,,vse,Rgp,ADV,O,,O
@@ -6,7 +6,7 @@ sl-127,0,4,bolj,,bolj,Rgc,ADV,O,,O
 sl-127,0,5,verjeten,,verjeten,Agpmsnn,ADJ,O,,O
 sl-127,1,1,Zagovornice,,zagovornica,Ncfpn,NOUN,O,,O
 sl-127,1,2,in,,in,Cc,CCONJ,O,,O
-sl-127,1,3,zagovorniki,,zagovornik,Ncmpn,NOUN,O,,B-LOC
+sl-127,1,3,zagovorniki,,zagovornik,Ncmpn,NOUN,O,,O
 sl-127,1,4,britanskega,,britanski,Agpmsg,ADJ,O,,O
 sl-127,1,5,obstanka,,obstanek,Ncmsg,NOUN,O,,O
 sl-127,1,6,v,,v,Sl,ADP,O,,O
@@ -25,13 +25,13 @@ sl-127,2,5,pogajanja,,pogajanje,Ncnpa,NOUN,O,,O
 sl-127,2,6,glede,,glede,Sg,ADP,O,,O
 sl-127,2,7,tako,,tako,Rgp,ADV,O,,O
 sl-127,2,8,imenovanega,,imenovan,Appnsg,ADJ,O,,O
-sl-127,2,9,irskega,,irski,Agpnsg,ADJ,O,,B-LOC
+sl-127,2,9,irskega,,irski,Agpnsg,ADJ,O,,O
 sl-127,2,10,varovala,,varovalo,Ncnsg,NOUN,O,,O
 sl-127,2,11,.,,.,Z,PUNCT,O,,O
 sl-127,3,1,Britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-127,3,2,premier,,premier,Ncmsn,NOUN,O,,O
 sl-127,3,3,Boris,Boris,Boris,Npmsn,PROPN,B-PER,PER-Boris-Johnson,B-PER
-sl-127,3,4,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,B-PER
+sl-127,3,4,Johnson,Johnson,Johnson,Npmsn,PROPN,I-PER,PER-Boris-Johnson,I-PER
 sl-127,3,5,je,,biti,Va-r3s-n,AUX,O,,O
 sl-127,3,6,pred,,pred,Si,ADP,O,,O
 sl-127,3,7,jutrišnjim,,jutrišnji,Agpmsi,ADJ,O,,O
@@ -83,7 +83,7 @@ sl-127,4,5,predsedniku,,predsednik,Ncmsd,NOUN,O,,O
 sl-127,4,6,Evropskega,Evropski,evropski,Agpmsg,ADJ,B-ORG,ORG-European-Council,B-ORG
 sl-127,4,7,sveta,svet,svet,Ncmsg,NOUN,I-ORG,ORG-European-Council,I-ORG
 sl-127,4,8,Donaldu,Donald,Donald,Npmsd,PROPN,B-PER,PER-Donald-Tusk,B-PER
-sl-127,4,9,Tusku,Tusk,Tusko,Npmsd,PROPN,I-PER,PER-Donald-Tusk,B-PER
+sl-127,4,9,Tusku,Tusk,Tusko,Npmsd,PROPN,I-PER,PER-Donald-Tusk,I-PER
 sl-127,4,10,in,,in,Cc,CCONJ,O,,O
 sl-127,4,11,predlagal,,predlagati,Vmbp-sm,VERB,O,,O
 sl-127,4,12,črtanje,,črtanje,Ncnsa,NOUN,O,,O
@@ -142,9 +142,9 @@ sl-127,5,14,skoraj,,skoraj,Q,PART,O,,O
 sl-127,5,15,ultimativno,,ultimativno,Rgp,ADV,O,,O
 sl-127,5,16,zahteval,,zahtevati,Vmbp-sm,VERB,O,,O
 sl-127,5,17,zamenjavo,,zamenjava,Ncfsa,NOUN,O,,O
-sl-127,5,18,irskega,,irski,Agpnsg,ADJ,O,,O
+sl-127,5,18,irskega,,irski,Agpnsg,ADJ,O,,B-LOC
 sl-127,5,19,varovala,,varovalo,Ncnsg,NOUN,O,,O
-sl-127,5,20,z,,z,Si,ADP,O,,B-LOC
+sl-127,5,20,z,,z,Si,ADP,O,,O
 sl-127,5,21,zavezami,,zaveza,Ncfpi,NOUN,O,,O
 sl-127,5,22,glede,,glede,Sg,ADP,O,,O
 sl-127,5,23,prihodnjih,,prihodnji,Agpfpg,ADJ,O,,O
@@ -192,7 +192,7 @@ sl-127,5,64,s,,z,Si,ADP,O,,O
 sl-127,5,65,suverenostjo,,suverenost,Ncfsi,NOUN,O,,O
 sl-127,5,66,Združenega,Združeno,združen,Appnsg,ADJ,B-LOC,GPE-Great-Britain,B-LOC
 sl-127,5,67,kraljestva,kraljestvo,kraljestvo,Ncnsg,NOUN,I-LOC,GPE-Great-Britain,I-LOC
-sl-127,5,68,.,,.,Z,PUNCT,O,,O
+sl-127,5,68,.,,.,Z,PUNCT,O,,
 sl-127,6,1,"""",,"""",Z,PUNCT,O,,O
 sl-127,6,2,Predlagam,,predlagati,Vmbr1s,VERB,O,,O
 sl-127,6,3,",",,",",Z,PUNCT,O,,O
@@ -200,7 +200,7 @@ sl-127,6,4,da,,da,Cs,SCONJ,O,,O
 sl-127,6,5,se,,se,Px------y,PRON,O,,O
 sl-127,6,6,varovalo,,varovati,Vmpp-sn,VERB,O,,O
 sl-127,6,7,nadomesti,,nadomestiti,Vmer3s,VERB,O,,O
-sl-127,6,8,z,,z,Si,ADP,O,,B-LOC
+sl-127,6,8,z,,z,Si,ADP,O,,O
 sl-127,6,9,zavezo,,zaveza,Ncfsi,NOUN,O,,O
 sl-127,6,10,",",,",",Z,PUNCT,O,,O
 sl-127,6,11,da,,da,Cs,SCONJ,O,,O
@@ -244,7 +244,7 @@ sl-127,7,15,primeru,,primer,Ncmsl,NOUN,O,,O
 sl-127,7,16,zapustila,,zapustiti,Vmep-sf,VERB,O,,O
 sl-127,7,17,EU,EU,EU,Npfsa,PROPN,B-ORG,ORG-European-Union,B-ORG
 sl-127,7,18,",",,",",Z,PUNCT,O,,O
-sl-127,7,19,z,,z,Si,ADP,O,,B-LOC
+sl-127,7,19,z,,z,Si,ADP,O,,O
 sl-127,7,20,dogovorom,,dogovor,Ncmsi,NOUN,O,,O
 sl-127,7,21,ali,,ali,Cc,CCONJ,O,,O
 sl-127,7,22,brez,,brez,Sg,ADP,O,,O
@@ -351,7 +351,7 @@ sl-127,11,21,ohraniti,,ohraniti,Vmen,VERB,O,,O
 sl-127,11,22,odprta,,odprt,Appfsn,ADJ,O,,O
 sl-127,11,23,meja,,meja,Ncfsn,NOUN,O,,O
 sl-127,11,24,med,,med,Si,ADP,O,,O
-sl-127,11,25,Irsko,Irsko,Irska,Npfsi,PROPN,B-LOC,GPE-Ireland,I-LOC
+sl-127,11,25,Irsko,Irsko,Irska,Npfsi,PROPN,B-LOC,GPE-Ireland,B-LOC
 sl-127,11,26,in,,in,Cc,CCONJ,O,,O
 sl-127,11,27,britansko,,britanski,Agpfsi,ADJ,O,,O
 sl-127,11,28,Severno,Severna,severen,Agpfsi,ADJ,B-LOC,GPE-Northern-Ireland,B-LOC
@@ -444,7 +444,7 @@ sl-127,14,13,nadzora,,nadzor,Ncmsg,NOUN,O,,O
 sl-127,14,14,na,,na,Sl,ADP,O,,O
 sl-127,14,15,meji,,meja,Ncfsl,NOUN,O,,O
 sl-127,14,16,med,,med,Si,ADP,O,,O
-sl-127,14,17,Irsko,Irsko,Irska,Npfsi,PROPN,B-LOC,GPE-Ireland,I-LOC
+sl-127,14,17,Irsko,Irsko,Irska,Npfsi,PROPN,B-LOC,GPE-Ireland,B-LOC
 sl-127,14,18,in,,in,Cc,CCONJ,O,,O
 sl-127,14,19,Severno,Severna,severen,Agpfsi,ADJ,B-LOC,GPE-Northern-Ireland,B-LOC
 sl-127,14,20,Irsko,Irska,Irska,Npfsi,PROPN,I-LOC,GPE-Northern-Ireland,I-LOC
@@ -511,8 +511,8 @@ sl-127,15,24,se,,se,Px------y,PRON,O,,O
 sl-127,15,25,je,,biti,Va-r3s-n,AUX,O,,O
 sl-127,15,26,odzvala,,odzvati,Vmep-sf,VERB,O,,O
 sl-127,15,27,pričakovano,,pričakovan,Appfsa,ADJ,O,,O
-sl-127,15,28,-,,-,Z,PUNCT,O,,B-PER
-sl-127,15,29,z,,z,Si,ADP,O,,B-LOC
+sl-127,15,28,-,,-,Z,PUNCT,O,,O
+sl-127,15,29,z,,z,Si,ADP,O,,O
 sl-127,15,30,zavrnitvijo,,zavrnitev,Ncfsi,NOUN,O,,O
 sl-127,15,31,britanskega,,britanski,Agpnsg,ADJ,O,,O
 sl-127,15,32,izsiljevanja,,izsiljevanje,Ncnsg,NOUN,O,,O
@@ -551,7 +551,7 @@ sl-127,17,4,",",,",",Z,PUNCT,O,,O
 sl-127,17,5,da,,da,Cs,SCONJ,O,,O
 sl-127,17,6,je,,biti,Va-r3s-n,AUX,O,,O
 sl-127,17,7,stališče,,stališče,Ncnsn,NOUN,O,,O
-sl-127,17,8,komisije,,komisija,Ncfsg,NOUN,O,,I-ORG
+sl-127,17,8,komisije,,komisija,Ncfsg,NOUN,O,,O
 sl-127,17,9,",",,",",Z,PUNCT,O,,O
 sl-127,17,10,ki,,ki,Cs,SCONJ,O,,O
 sl-127,17,11,jo,,on,Pp3fsa--y,PRON,O,,O

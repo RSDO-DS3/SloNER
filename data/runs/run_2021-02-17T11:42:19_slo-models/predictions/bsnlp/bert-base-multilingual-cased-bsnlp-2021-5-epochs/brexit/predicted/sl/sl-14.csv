@@ -1,4 +1,4 @@
-docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNer
+docId,sentenceId,tokenId,text,lemma,calcLemma,upos,xpos,ner,clID,calcNER
 sl-14,0,1,Pravilno,,pravilno,Rgp,ADV,O,,O
 sl-14,0,2,napovedal,,napovedati,Vmep-sm,VERB,O,,O
 sl-14,0,3,zmago,,zmaga,Ncfsa,NOUN,O,,O
@@ -23,7 +23,7 @@ sl-14,1,9,bi,,biti,Va-c,AUX,O,,O
 sl-14,1,10,padel,,pasti,Vmep-sm,VERB,O,,O
 sl-14,1,11,celo,,celo,Q,PART,O,,O
 sl-14,1,12,meteorit,,meteorit,Ncmsn,NOUN,O,,O
-sl-14,1,13,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,1,13,.,,.,Z,PUNCT,O,,O
 sl-14,2,1,Preberite,,prebrati,Vmem2p,VERB,O,,O
 sl-14,2,2,",",,",",Z,PUNCT,O,,O
 sl-14,2,3,kje,,kje,Rgp,ADV,O,,O
@@ -31,12 +31,12 @@ sl-14,2,4,naj,,naj,Q,PART,O,,O
 sl-14,2,5,bi,,biti,Va-c,AUX,O,,O
 sl-14,2,6,se,,se,Px------y,PRON,O,,O
 sl-14,2,7,dogajalo,,dogajati,Vmpp-sn,VERB,O,,O
-sl-14,2,8,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,2,8,.,,.,Z,PUNCT,O,,O
 sl-14,3,1,Britanski,,britanski,Agpmsny,ADJ,O,,O
 sl-14,3,2,napovedovalec,,napovedovalec,Ncmsn,NOUN,O,,O
 sl-14,3,3,prihodnosti,,prihodnost,Ncfsg,NOUN,O,,O
 sl-14,3,4,Craig,Craig,Craig,Npmsn,PROPN,B-PER,PER-Craig-Hamilton-Parker,B-PER
-sl-14,3,5,Hamilton-Parker,Hamilton-Parker,Hamilton'parker,Npmsn,PROPN,I-PER,PER-Craig-Hamilton-Parker,B-PER
+sl-14,3,5,Hamilton-Parker,Hamilton-Parker,Hamilton'parker,Npmsn,PROPN,I-PER,PER-Craig-Hamilton-Parker,I-PER
 sl-14,3,6,",",,",",Z,PUNCT,O,,O
 sl-14,3,7,ki,,ki,Cs,SCONJ,O,,O
 sl-14,3,8,je,,biti,Va-r3s-n,AUX,O,,O
@@ -44,7 +44,7 @@ sl-14,3,9,pravilno,,pravilno,Rgp,ADV,O,,O
 sl-14,3,10,napovedal,,napovedati,Vmep-sm,VERB,O,,O
 sl-14,3,11,zmago,,zmaga,Ncfsa,NOUN,O,,O
 sl-14,3,12,Donalda,Donald,Donald,Npmsg,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-14,3,13,Trumpa,Trump,Trump,Npmsg,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-14,3,13,Trumpa,Trump,Trump,Npmsg,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-14,3,14,na,,na,Sl,ADP,O,,O
 sl-14,3,15,ameriških,,ameriški,Agpfpl,ADJ,O,,O
 sl-14,3,16,volitvah,,volitev,Ncfpl,NOUN,O,,O
@@ -63,7 +63,7 @@ sl-14,3,28,vam,,ti,Pp2-pd,PRON,O,,O
 sl-14,3,29,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-14,3,30,zaledenela,,zaledeneti,Vmep-sf,VERB,O,,O
 sl-14,3,31,kri,,kri,Ncfsn,NOUN,O,,O
-sl-14,3,32,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,3,32,.,,.,Z,PUNCT,O,,O
 sl-14,4,1,Za,,za,Sa,ADP,O,,O
 sl-14,4,2,praktično,,praktično,Rgp,ADV,O,,O
 sl-14,4,3,ves,,ves,Pg-msa,DET,O,,O
@@ -81,7 +81,7 @@ sl-14,4,14,",",,",",Z,PUNCT,O,,O
 sl-14,4,15,gospodarstva,,gospodarstvo,Ncnsg,NOUN,O,,O
 sl-14,4,16,in,,in,Cc,CCONJ,O,,O
 sl-14,4,17,sociale,,sociala,Ncfsg,NOUN,O,,O
-sl-14,4,18,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,4,18,.,,.,Z,PUNCT,O,,O
 sl-14,5,1,Odhod,,odhod,Ncmsn,NOUN,O,,O
 sl-14,5,2,Mayeve,May,Mayev,Aspfsg,ADJ,B-PER,PER-Theresa-May,B-PER
 sl-14,5,3,in,,in,Cc,CCONJ,O,,O
@@ -115,14 +115,14 @@ sl-14,6,25,razmere,,razmera,Ncfpn,NOUN,O,,O
 sl-14,6,26,dokaj,,dokaj,Rgp,ADV,O,,O
 sl-14,6,27,hitro,,hitro,Rgp,ADV,O,,O
 sl-14,6,28,stabilizirale,,stabilizirati,Vmbp-pf,VERB,O,,O
-sl-14,6,29,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,6,29,.,,.,Z,PUNCT,O,,O
 sl-14,7,1,Slabo,,slabo,Rgp,ADV,O,,O
 sl-14,7,2,pa,,pa,Cc,CCONJ,O,,O
 sl-14,7,3,se,,se,Px------y,PRON,O,,O
 sl-14,7,4,piše,,pisati,Vmpr3s,VERB,O,,O
 sl-14,7,5,Theresi,Theresa,Theresi,Npfsn,PROPN,B-PER,PER-Theresa-May,B-PER
 sl-14,7,6,May,May,May,Npmsn,PROPN,I-PER,PER-Theresa-May,I-PER
-sl-14,7,7,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,7,7,.,,.,Z,PUNCT,O,,O
 sl-14,8,1,Ta,,ta,Pd-fsn,DET,O,,O
 sl-14,8,2,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-14,8,3,po,,po,Sl,ADP,O,,O
@@ -133,7 +133,7 @@ sl-14,8,7,odstopiti,,odstopiti,Vmen,VERB,O,,O
 sl-14,8,8,z,,z,Sg,ADP,O,,O
 sl-14,8,9,mesta,,mesto,Ncnsg,NOUN,O,,O
 sl-14,8,10,premierke,,premierka,Ncfsg,NOUN,O,,O
-sl-14,8,11,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,8,11,.,,.,Z,PUNCT,O,,O
 sl-14,9,1,Na,,na,Sa,ADP,O,,O
 sl-14,9,2,njen,,njen,Ps3msasf,DET,O,,O
 sl-14,9,3,stol,,stol,Ncmsan,NOUN,O,,O
@@ -153,7 +153,7 @@ sl-14,9,16,poznali,,poznati,Vmpp-pm,VERB,O,,O
 sl-14,9,17,kot,,kot,Cs,SCONJ,O,,O
 sl-14,9,18,zunanjega,,zunanji,Agpmsa,ADJ,O,,O
 sl-14,9,19,ministra,,minister,Ncmsay,NOUN,O,,O
-sl-14,9,20,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,9,20,.,,.,Z,PUNCT,O,,O
 sl-14,10,1,Otoku,otok,otok,Ncmsd,NOUN,B-LOC,GPE-Great-Britain,B-LOC
 sl-14,10,2,napoveduje,,napovedovati,Vmpr3s,VERB,O,,O
 sl-14,10,3,tudi,,tudi,Q,PART,O,,O
@@ -176,7 +176,7 @@ sl-14,10,19,tovarni,,tovarna,Ncfsl,NOUN,O,,O
 sl-14,10,20,plina,,plin,Ncmsg,NOUN,O,,O
 sl-14,10,21,in,,in,Cc,CCONJ,O,,O
 sl-14,10,22,kemikalij,,kemikalija,Ncfpg,NOUN,O,,O
-sl-14,10,23,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,10,23,.,,.,Z,PUNCT,O,,O
 sl-14,11,1,Trumpu,Trump,Trump,Npmsd,PROPN,B-PER,PER-Donald-Trump,B-PER
 sl-14,11,2,še,,še,Q,PART,O,,O
 sl-14,11,3,drugi,,drug,Mlpmsny,ADJ,O,,O
@@ -190,15 +190,15 @@ sl-14,12,6,v,,v,Sl,ADP,O,,O
 sl-14,12,7,sporu,,spor,Ncmsl,NOUN,O,,O
 sl-14,12,8,z,,z,Si,ADP,O,,O
 sl-14,12,9,Rusijo,Rusija,Rusija,Npfsi,PROPN,B-LOC,GPE-Russia,B-LOC
-sl-14,12,10,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,12,10,.,,.,Z,PUNCT,O,,O
 sl-14,13,1,Razlog,,razlog,Ncmsn,NOUN,O,,O
 sl-14,13,2,?,,?,Z,PUNCT,O,,O
 sl-14,14,1,Sirija,Sirija,Sirija,Npfsn,PROPN,B-LOC,GPE-Syria,B-LOC
-sl-14,14,2,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,14,2,.,,.,Z,PUNCT,O,,O
 sl-14,15,1,Zdajšnji,,zdajšnji,Agpmsny,ADJ,O,,O
 sl-14,15,2,predsednik,,predsednik,Ncmsn,NOUN,O,,O
 sl-14,15,3,Donald,Donald,Donald,Npmsn,PROPN,B-PER,PER-Donald-Trump,B-PER
-sl-14,15,4,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,B-PER
+sl-14,15,4,Trump,Trump,Trump,Npmsn,PROPN,I-PER,PER-Donald-Trump,I-PER
 sl-14,15,5,naj,,naj,Q,PART,O,,O
 sl-14,15,6,bi,,biti,Va-c,AUX,O,,O
 sl-14,15,7,moral,,morati,Vmpp-sm,VERB,O,,O
@@ -221,7 +221,7 @@ sl-14,15,23,jo,,on,Pp3fsa--y,PRON,O,,O
 sl-14,15,24,bo,,biti,Va-f3s-n,AUX,O,,O
 sl-14,15,25,komaj,,komaj,Rgp,ADV,O,,O
 sl-14,15,26,preživel,,preživeti,Vmep-sm,VERB,O,,O
-sl-14,15,27,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,15,27,.,,.,Z,PUNCT,O,,O
 sl-14,16,1,Napadi,,napad,Ncmpn,NOUN,O,,O
 sl-14,16,2,na,,na,Sa,ADP,O,,O
 sl-14,16,3,Trumpa,Trump,Trump,Npmsay,PROPN,B-PER,PER-Donald-Trump,B-PER
@@ -236,9 +236,9 @@ sl-14,16,11,",",,",",Z,PUNCT,O,,O
 sl-14,16,12,a,,a,Cc,CCONJ,O,,O
 sl-14,16,13,bodo,,biti,Va-f3p-n,AUX,O,,O
 sl-14,16,14,neuspešni,,neuspešen,Agpmpn,ADJ,O,,O
-sl-14,16,15,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,16,15,.,,.,Z,PUNCT,O,,O
 sl-14,17,1,Pravzaprav,,pravzaprav,Q,PART,O,,O
-sl-14,17,2,Hamilton-Parker,Hamilton-Parker,Hamilton'parker,Npmsn,PROPN,B-PER,PER-Craig-Hamilton-Parker,O
+sl-14,17,2,Hamilton-Parker,Hamilton-Parker,Hamilton'parker,Npmsn,PROPN,B-PER,PER-Craig-Hamilton-Parker,B-PER
 sl-14,17,3,trdi,,trditi,Vmpr3s,VERB,O,,O
 sl-14,17,4,",",,",",Z,PUNCT,O,,O
 sl-14,17,5,da,,da,Cs,SCONJ,O,,O
@@ -247,7 +247,7 @@ sl-14,17,7,osvojil,,osvojiti,Vmep-sm,VERB,O,,O
 sl-14,17,8,še,,še,Q,PART,O,,O
 sl-14,17,9,drugi,,drug,Mlpmsay,ADJ,O,,O
 sl-14,17,10,mandat,,mandat,Ncmsan,NOUN,O,,O
-sl-14,17,11,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,17,11,.,,.,Z,PUNCT,O,,O
 sl-14,18,1,ZDA,ZDA,ZDA,Npfpn,PROPN,B-LOC,GPE-USA,B-LOC
 sl-14,18,2,",",,",",Z,PUNCT,O,,O
 sl-14,18,3,predvsem,,predvsem,Q,PART,O,,O
@@ -261,14 +261,14 @@ sl-14,18,10,prizadeli,,prizadeti,Vmep-pm,VERB,O,,O
 sl-14,18,11,orkani,,orkan,Ncmpn,NOUN,O,,O
 sl-14,18,12,in,,in,Cc,CCONJ,O,,O
 sl-14,18,13,poplave,,poplava,Ncfpn,NOUN,O,,O
-sl-14,18,14,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,18,14,.,,.,Z,PUNCT,O,,O
 sl-14,19,1,Napoveduje,,napovedovati,Vmpr3s,VERB,O,,O
 sl-14,19,2,tudi,,tudi,Q,PART,O,,O
 sl-14,19,3,smrt,,smrt,Ncfsa,NOUN,O,,O
 sl-14,19,4,znanega,,znan,Appmsg,ADJ,O,,O
 sl-14,19,5,estradnega,,estraden,Agpmsg,ADJ,O,,O
 sl-14,19,6,para,,par,Ncmsg,NOUN,O,,O
-sl-14,19,7,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,19,7,.,,.,Z,PUNCT,O,,O
 sl-14,20,1,Prihaja,,prihajati,Vmpr3s,VERB,O,,O
 sl-14,20,2,kriza,,kriza,Ncfsn,NOUN,O,,O
 sl-14,21,1,Kar,,kar,Pr-nsn,PRON,O,,O
@@ -289,7 +289,7 @@ sl-14,21,15,desnih,,desen,Agpfpg,ADJ,O,,O
 sl-14,21,16,strank,,stranka,Ncfpg,NOUN,O,,O
 sl-14,21,17,in,,in,Cc,CCONJ,O,,O
 sl-14,21,18,evroskeptikov,,evroskeptik,Ncmpg,NOUN,O,,O
-sl-14,21,19,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,21,19,.,,.,Z,PUNCT,O,,O
 sl-14,22,1,Utegne,,utegniti,Vmbr3s,VERB,O,,O
 sl-14,22,2,se,,se,Px------y,PRON,O,,O
 sl-14,22,3,celo,,celo,Q,PART,O,,O
@@ -321,7 +321,7 @@ sl-14,22,28,in,,in,Cc,CCONJ,O,,O
 sl-14,22,29,članstvo,,članstvo,Ncnsa,NOUN,O,,O
 sl-14,22,30,v,,v,Sl,ADP,O,,O
 sl-14,22,31,njej,,on,Pp3fsl,PRON,O,,O
-sl-14,22,32,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,22,32,.,,.,Z,PUNCT,O,,O
 sl-14,23,1,Angela,Angela,angela,Ncfsn,NOUN,B-PER,PER-Angela-Merkel,B-PER
 sl-14,23,2,Merkel,Merkel,Merkel,Npfsn,PROPN,I-PER,PER-Angela-Merkel,I-PER
 sl-14,23,3,naj,,naj,Q,PART,O,,O
@@ -340,7 +340,7 @@ sl-14,23,15,z,,z,Si,ADP,O,,O
 sl-14,23,16,izvozom,,izvoz,Ncmsi,NOUN,O,,O
 sl-14,23,17,v,,v,Sl,ADP,O,,O
 sl-14,23,18,ZDA,ZDA,ZDA,Npfpl,PROPN,B-LOC,GPE-USA,B-LOC
-sl-14,23,19,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,23,19,.,,.,Z,PUNCT,O,,O
 sl-14,24,1,Kot,,kot,Cs,SCONJ,O,,O
 sl-14,24,2,pojasnjuje,,pojasnjevati,Vmpr3s,VERB,O,,O
 sl-14,24,3,",",,",",Z,PUNCT,O,,O
@@ -362,7 +362,7 @@ sl-14,24,18,popolnoma,,popolnoma,Rgp,ADV,O,,O
 sl-14,24,19,ustavila,,ustaviti,Vmep-sf,VERB,O,,O
 sl-14,24,20,njihov,,njihov,Ps3msap,DET,O,,O
 sl-14,24,21,uvoz,,uvoz,Ncmsan,NOUN,O,,O
-sl-14,24,22,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,24,22,.,,.,Z,PUNCT,O,,O
 sl-14,25,1,Migrantska,,migrantski,Agpfsn,ADJ,O,,O
 sl-14,25,2,kriza,,kriza,Ncfsn,NOUN,O,,O
 sl-14,25,3,se,,se,Px------y,PRON,O,,O
@@ -378,7 +378,7 @@ sl-14,25,12,primerjav,,primerjava,Ncfpl,NOUN,O,,O
 sl-14,25,13,s,,z,Si,ADP,O,,O
 sl-14,25,14,funtom,,funt,Ncmsi,NOUN,O,,O
 sl-14,25,15,padla,,pasti,Vmep-sf,VERB,O,,O
-sl-14,25,16,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,25,16,.,,.,Z,PUNCT,O,,O
 sl-14,26,1,Ogromna,,ogromen,Agpfsn,ADJ,O,,O
 sl-14,26,2,škoda,,škoda,Ncfsn,NOUN,O,,O
 sl-14,26,3,zaradi,,zaradi,Sg,ADP,O,,O
@@ -408,7 +408,7 @@ sl-14,27,22,mesta,,mesto,Ncnsg,NOUN,O,,O
 sl-14,27,23,predsednika,,predsednik,Ncmsg,NOUN,O,,O
 sl-14,27,24,Severne,Severne,severen,Agpfsg,ADJ,B-LOC,GPE-North-Korea,B-LOC
 sl-14,27,25,Koreje,Koreje,Koreja,Npfsg,PROPN,I-LOC,GPE-North-Korea,I-LOC
-sl-14,27,26,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,27,26,.,,.,Z,PUNCT,O,,O
 sl-14,28,1,To,,ta,Pd-nsn,DET,O,,O
 sl-14,28,2,naj,,naj,Q,PART,O,,O
 sl-14,28,3,bi,,biti,Va-c,AUX,O,,O
@@ -422,7 +422,7 @@ sl-14,28,10,z,,z,Si,ADP,O,,O
 sl-14,28,11,Ameriko,Amerika,Amerika,Npfsi,PROPN,B-LOC,GPE-USA,B-LOC
 sl-14,28,12,dosegel,,doseči,Vmep-sm,VERB,O,,O
 sl-14,28,13,dogovor,,dogovor,Ncmsan,NOUN,O,,O
-sl-14,28,14,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,28,14,.,,.,Z,PUNCT,O,,O
 sl-14,29,1,Nič,,nič,Pz-nsn,PRON,O,,O
 sl-14,29,2,dobrega,,dober,Agpnsg,ADJ,O,,O
 sl-14,29,3,ne,,ne,Q,PART,O,,O
@@ -430,7 +430,7 @@ sl-14,29,4,napoveduje,,napovedovati,Vmpr3s,VERB,O,,O
 sl-14,29,5,niti,,niti,Q,PART,O,,O
 sl-14,29,6,za,,za,Sa,ADP,O,,O
 sl-14,29,7,Nepal,Nepal,Nepal,Npmsan,PROPN,B-LOC,GPE-Nepal,B-LOC
-sl-14,29,8,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,29,8,.,,.,Z,PUNCT,O,,O
 sl-14,30,1,Znova,,znova,Rgp,ADV,O,,O
 sl-14,30,2,naj,,naj,Q,PART,O,,O
 sl-14,30,3,bi,,biti,Va-c,AUX,O,,O
@@ -438,4 +438,4 @@ sl-14,30,4,jih,,on,Pp3mpa--y,PRON,O,,O
 sl-14,30,5,prizadel,,prizadeti,Vmep-sm,VERB,O,,O
 sl-14,30,6,silovit,,silovit,Agpmsnn,ADJ,O,,O
 sl-14,30,7,potres,,potres,Ncmsn,NOUN,O,,O
-sl-14,30,8,.,,.,Z,PUNCT,O,,B-LOC
+sl-14,30,8,.,,.,Z,PUNCT,O,,O
