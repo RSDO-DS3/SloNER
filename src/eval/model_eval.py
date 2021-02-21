@@ -5,6 +5,7 @@ import logging
 import sys
 import multiprocessing
 import pandas as pd
+import random
 
 from torch.cuda import device_count
 from collections import defaultdict
@@ -45,15 +46,18 @@ def looper(
     run_path: str,
     clang: str,
     model: str,
+    categorize_misc: bool = True,
 ) -> dict:
     loader = LoadBSNLPDocuments(lang=clang, year='2021')
-    tag2code, code2tag = LoadBSNLP(lang=clang, year='2021', merge_misc=False).encoding()
+    tag2code, code2tag = LoadBSNLP(lang=clang, year='2021', merge_misc=True).encoding()
+    misctag2code, misccode2tag = LoadBSNLP(lang='sl', year='2021', merge_misc=False, misc_data_only=True).encoding()
 
     model_name = model.split('/')[-1]
     model_path = f'{run_path}/models/{model}'
+    misc_model, _ = list_dir(f'{run_path}/misc_models')
 
     predictor = ExtractPredictions(model_path=model_path)
-    pred_misc = None  # if clang != 'sl' else MakePrediction(model_path='TODO', use_device=1 if device_count() > 1 else -1)
+    pred_misc = None if not categorize_misc else ExtractPredictions(model_path=f'./{run_path}/misc_models/{misc_model[0]}')
     logger.info(f"Predicting for {model_name}")
 
     updater = UpdateBSNLPDocuments(lang=clang, path=f'{run_path}/predictions/bsnlp/{model_name}')
@@ -68,10 +72,28 @@ def looper(
             predictions[dataset][lang] = {}
             tlang.set_description(f'Lang: {tlang}')
             for docId, doc in tqdm.tqdm(docs.items(), desc="Docs"):
-                scores, pred_data = predictor.predict(pd.DataFrame(doc['content']), tag2code, code2tag)
+                to_pred = pd.DataFrame(doc['content'])
+                if categorize_misc:
+                    # randomly choose a category for (B|I)-MISC category
+                    # cat = random.choice(['PRO', 'EVT'])
+                    # to_pred.loc[(to_pred['ner'] == 'B-MISC'), 'ner'] = f'B-{cat}'
+                    # to_pred.loc[(to_pred['ner'] == 'I-MISC'), 'ner'] = f'I-{cat}'
+                    # categorize the PRO and EVT to MISC, as the model only knows about it
+                    to_pred.loc[to_pred['ner'].isin(['B-PRO', 'B-EVT']), 'ner'] = f'B-MISC'
+                    to_pred.loc[to_pred['ner'].isin(['I-PRO', 'I-EVT']), 'ner'] = f'I-MISC'
+                scores, pred_data = predictor.predict(to_pred, tag2code, code2tag)
                 logger.info(f'\n{scores["report"]}')
+                if pred_misc is not None and len(pred_data.loc[pred_data['ner'].isin(['B-MISC', 'I-MISC'])]) > 0:
+                # if pred_misc is not None and len(pred_data.loc[pred_data['ner'].isin(['B-PRO', 'I-PRO', 'B-EVT', 'I-EVT'])]) > 0:
+                    misc_data = pd.DataFrame(doc['content'])
+                    misc_data.loc[~(misc_data['ner'].isin(['B-PRO', 'B-EVT', 'I-PRO', 'I-EVT'])), 'ner'] = 'O'
+                    scores_misc, misc_pred = pred_misc.predict(misc_data, misctag2code, misccode2tag)
+                    pred_data['ner'] = pd.DataFrame(doc['content'])['ner']
+                    # update the entries
+                    pred_data.loc[misc_pred['calcNER'].isin(['B-PRO', 'B-EVT', 'I-PRO', 'I-EVT']), 'calcNER'] = misc_pred.loc[misc_pred['calcNER'].isin(['B-PRO', 'B-EVT', 'I-PRO', 'I-EVT']), 'calcNER']
                 doc['content'] = pred_data.to_dict(orient='records')
-                predictions[dataset][lang][docId] = pred_data.loc[~(pred_data['calcNER'] == 'O')].to_dict()
+                predictions[dataset][lang][docId] = pred_data.loc[~(pred_data['calcNER'] == 'O')].to_dict(orient='records')
+        break
     updater.update_merged(data)
     logger.info(f"Done predicting for {model_name}")
     return {
