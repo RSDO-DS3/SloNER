@@ -48,13 +48,15 @@ def looper(
     model: str,
     categorize_misc: bool = True,
 ) -> dict:
-    loader = LoadBSNLPDocuments(lang=clang, year='2021')
+    loader = LoadBSNLPDocuments(lang=clang, year='all')
     tag2code, code2tag = LoadBSNLP(lang=clang, year='2021', merge_misc=True).encoding()
     misctag2code, misccode2tag = LoadBSNLP(lang='sl', year='2021', merge_misc=False, misc_data_only=True).encoding()
 
     model_name = model.split('/')[-1]
     model_path = f'{run_path}/models/{model}'
     misc_model, _ = list_dir(f'{run_path}/misc_models')
+    if categorize_misc:
+        logger.info(f"Using misc model: {misc_model[0]}")
 
     predictor = ExtractPredictions(model_path=model_path)
     pred_misc = None if not categorize_misc else ExtractPredictions(model_path=f'./{run_path}/misc_models/{misc_model[0]}')
@@ -74,26 +76,28 @@ def looper(
             for docId, doc in tqdm.tqdm(docs.items(), desc="Docs"):
                 to_pred = pd.DataFrame(doc['content'])
                 if categorize_misc:
-                    # randomly choose a category for (B|I)-MISC category
-                    # cat = random.choice(['PRO', 'EVT'])
-                    # to_pred.loc[(to_pred['ner'] == 'B-MISC'), 'ner'] = f'B-{cat}'
-                    # to_pred.loc[(to_pred['ner'] == 'I-MISC'), 'ner'] = f'I-{cat}'
                     # categorize the PRO and EVT to MISC, as the model only knows about it
                     to_pred.loc[to_pred['ner'].isin(['B-PRO', 'B-EVT']), 'ner'] = f'B-MISC'
                     to_pred.loc[to_pred['ner'].isin(['I-PRO', 'I-EVT']), 'ner'] = f'I-MISC'
                 scores, pred_data = predictor.predict(to_pred, tag2code, code2tag)
                 logger.info(f'\n{scores["report"]}')
                 if pred_misc is not None and len(pred_data.loc[pred_data['ner'].isin(['B-MISC', 'I-MISC'])]) > 0:
-                # if pred_misc is not None and len(pred_data.loc[pred_data['ner'].isin(['B-PRO', 'I-PRO', 'B-EVT', 'I-EVT'])]) > 0:
                     misc_data = pd.DataFrame(doc['content'])
+                    if len(misc_data.loc[~(misc_data['ner'].isin(['B-MISC', 'I-MISC']))]) > 0:
+                        # randomly choose a category for (B|I)-MISC category
+                        cat = random.choice(['PRO', 'EVT'])
+                        misc_data.loc[(misc_data['ner'] == 'B-MISC'), 'ner'] = f'B-{cat}'
+                        misc_data.loc[(misc_data['ner'] == 'I-MISC'), 'ner'] = f'I-{cat}'
                     misc_data.loc[~(misc_data['ner'].isin(['B-PRO', 'B-EVT', 'I-PRO', 'I-EVT'])), 'ner'] = 'O'
                     scores_misc, misc_pred = pred_misc.predict(misc_data, misctag2code, misccode2tag)
                     pred_data['ner'] = pd.DataFrame(doc['content'])['ner']
                     # update the entries
+                    # update wherever there is misc in the original prediction
+                    pred_data.loc[pred_data['calcNER'].isin(['B-MISC', 'I-MISC']), 'calcNER'] = misc_pred.loc[pred_data['calcNER'].isin(['B-MISC', 'I-MISC']), 'calcNER']
+                    # update wherever the new predictor made a prediction
                     pred_data.loc[misc_pred['calcNER'].isin(['B-PRO', 'B-EVT', 'I-PRO', 'I-EVT']), 'calcNER'] = misc_pred.loc[misc_pred['calcNER'].isin(['B-PRO', 'B-EVT', 'I-PRO', 'I-EVT']), 'calcNER']
                 doc['content'] = pred_data.to_dict(orient='records')
                 predictions[dataset][lang][docId] = pred_data.loc[~(pred_data['calcNER'] == 'O')].to_dict(orient='records')
-        break
     updater.update_merged(data)
     logger.info(f"Done predicting for {model_name}")
     return {
