@@ -166,15 +166,15 @@ class ExtractPredictions:
         token_ids = []  # converted sentence tokens
         tags = []  # NER tags
 
-        for sentence, data in input_data.groupby("sentence"):
+        for (doc, sentence), data in input_data.groupby(["docId", "sentenceId"]):
             sentence_tokens = []
             sentence_tags = []
             sentence_ids = []
             for id, word_row in data.iterrows():
-                word_tokens = self.tokenizer.tokenize(str(word_row["word"]))
+                word_tokens = self.tokenizer.tokenize(str(word_row["text"]))
                 sentence_tokens.extend(word_tokens)
                 sentence_tags.extend([tag2code[word_row["ner"]]] * len(word_tokens))
-                token_id_str = f'{sentence};{word_row["tokenId"]}'
+                token_id_str = f'{doc};{sentence};{word_row["tokenId"]}'
                 all_ids.append(token_id_str)
                 token_id = len(all_ids) - 1
                 sentence_ids.extend([token_id] * len(word_tokens))
@@ -232,6 +232,9 @@ class ExtractPredictions:
             for p, l, t, i in zip(preds, labs, toks, ids):
                 if l == tag2code["PAD"]:
                     continue
+                if p == tag2code["PAD"]:
+                    logger.info(f"PREDICTED `PAD`! {p}, {l}, {t}, {i}")
+                    continue
                 sentence_tokens.append(t)
                 sentence_predictions.append(code2tag[p])
                 sentence_labels.append(code2tag[l])
@@ -253,7 +256,7 @@ class ExtractPredictions:
         eval_steps, eval_examples = 0, 0
         eval_ids, eval_tokens, eval_predictions, eval_labels = [], [], [], []
         self.model.eval()
-        for batch in tqdm(data):
+        for batch in data:
             batch_ids, batch_tokens, batch_masks, batch_tags = tuple(t.to(self.device) for t in batch)
             with torch.no_grad():
                 outputs = self.model(
@@ -275,7 +278,6 @@ class ExtractPredictions:
 
             eval_examples += batch_tokens.size(0)
             eval_steps += 1
-            break
         eval_loss = eval_loss / eval_steps
         flatten = lambda x: [j for i in x for j in i]
 
@@ -286,10 +288,10 @@ class ExtractPredictions:
         #         logger.info(f"row = {t}, {p}, {v}, {i}")
 
         predicted_data = pd.DataFrame(data={
-            'sentence_ids': flatten(sentence_ids),
+            'sentence_id': flatten(sentence_ids),
             'tokens': flatten(tokens),
-            'predicted_tags': flatten(predicted_tags),
-            'valid_tags': flatten(valid_tags),
+            'predicted_tag': flatten(predicted_tags),
+            'valid_tag': flatten(valid_tags),
         })
 
         scores = {
@@ -303,15 +305,41 @@ class ExtractPredictions:
 
         return scores, predicted_data
 
+    def __merge_data(self,
+        data: pd.DataFrame,
+        pred_data: pd.DataFrame,
+    ) -> pd.DataFrame:
+        data['calcNER'] = ''
+        for sent_id, sent_data in pred_data.groupby('sentence_id'):
+            ids = sent_id.split(';')
+            did = ids[0]
+            sid = int(ids[1])
+            tid = int(ids[2])
+            max_cat = max(sent_data['predicted_tag'].value_counts().to_dict().items(), key=itemgetter(1))[0]
+            data.loc[(data['docId'] == did) & (data['sentenceId'] == sid) & (data['tokenId'] == tid), 'calcNER'] = max_cat
+        return data
+
+    def predict(self,
+        data: pd.DataFrame,
+        tag2code: dict,
+        code2tag: dict,
+    ) -> (dict, pd.DataFrame):
+        in_data, ids = self.convert_input(data, tag2code)
+        scores, pred_data = self.test(in_data, ids, tag2code, code2tag)
+        merged = self.__merge_data(data, pred_data)
+        return scores, merged
+
 
 if __name__ == '__main__':
     # model_path = f'./data/models/bert-base-multilingual-cased-other'
     model_path = './data/runs/run_2021-02-17T11:42:19_slo-models/models/sloberta-1.0-bsnlp-2021-5-epochs'
-    tag2code, code2tag = LoadBSNLP(lang='sl', year='2021').encoding()
-    loader = LoadBSNLP(lang="sl", year='2021', data_set='asia_bibi', merge_misc=False)
+    tag2code, code2tag = LoadBSNLP(lang='sl', year='2021', merge_misc=False).encoding()
+    logger.info(f'{tag2code}')
+    logger.info(f'{code2tag}')
+    loader = LoadBSNLP(lang="sl", year='2021', merge_misc=False)
     predictor = ExtractPredictions(model_path)
-    data, ids = predictor.convert_input(loader.test(), tag2code)
-    scores, pred_data = predictor.test(data, ids, tag2code, code2tag)
+    data = loader.test()
+    scores, pred_data = predictor.predict(data, tag2code, code2tag)
     logger.info(f'{json.dumps(scores, indent=4)}')
     logger.info(f'\n{scores["report"]}')
     logger.info(f'\n{pred_data}')

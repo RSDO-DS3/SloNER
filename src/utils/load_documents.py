@@ -71,7 +71,7 @@ class LoadBSNLPDocuments(LoadDocuments):
 
     def load_merged(self) -> dict:
         def merged_loader(fpath: str) -> dict:
-            df = pd.read_csv(fpath).to_dict(orient='records')
+            df = pd.read_csv(fpath, dtype={'docId': str, 'clID': str}).to_dict(orient='records')
             docId = df[0]['docId']
             return {
                 'docId': docId,

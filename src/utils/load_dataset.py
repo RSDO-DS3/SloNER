@@ -137,8 +137,6 @@ class LoadBSNLP(LoadDataset):
                     df['ner'] = df['ner'].map(lambda x: x.replace("PRO", "MISC").replace("EVT", "MISC"))
                 if self.misc_data_only:
                     df['ner'] = df['ner'].map(lambda x: "O" if x[2:] in ["PER", "LOC", "ORG"] else x)
-                df = df[['sentenceId', 'tokenId', 'text', 'ner']]
-                df = df.rename(columns={"sentenceId": "sentence", "text": "word", "ner": "ner"})
                 data = pd.concat([data, df])
         return data
 
