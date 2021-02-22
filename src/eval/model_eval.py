@@ -52,14 +52,17 @@ def looper(
     tag2code, code2tag = LoadBSNLP(lang=clang, year='2021', merge_misc=False).encoding()
     misctag2code, misccode2tag = LoadBSNLP(lang='sl', year='2021', merge_misc=False, misc_data_only=True).encoding()
 
+    logger.info(f"tag2code: {tag2code}")
+    logger.info(f"code2tag: {code2tag}")
+
     model_name = model.split('/')[-1]
     model_path = f'{run_path}/models/{model}'
     misc_model, _ = list_dir(f'{run_path}/misc_models')
     if categorize_misc:
         logger.info(f"Using misc model: {misc_model[0]}")
 
-    predictor = ExtractPredictions(model_path=model_path)
-    pred_misc = None if not categorize_misc else ExtractPredictions(model_path=f'./{run_path}/misc_models/{misc_model[0]}')
+    predictor = ExtractPredictions(model_path=model_path, tag2code=tag2code, code2tag=code2tag)
+    pred_misc = None if not categorize_misc else ExtractPredictions(model_path=f'./{run_path}/misc_models/{misc_model[0]}', tag2code=misctag2code, code2tag=misccode2tag)
     if categorize_misc:
         logger.info(f"Predicting for {model_name}")
 

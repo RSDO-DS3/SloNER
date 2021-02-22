@@ -133,6 +133,8 @@ class MakePrediction:
 class ExtractPredictions:
     def __init__(
         self,
+        tag2code: dict,
+        code2tag: dict,
         model_path: str = f'./data/models/bert-base-multilingual-cased-other',
     ):
         """
@@ -144,7 +146,10 @@ class ExtractPredictions:
         self.model = AutoModelForTokenClassification.from_pretrained(
             model_path,
             output_attentions=False,
-            output_hidden_states=False
+            output_hidden_states=False,
+            num_labels=len(tag2code),
+            label2id=tag2code,
+            id2label=code2tag,
         ).to(self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(
             model_path,

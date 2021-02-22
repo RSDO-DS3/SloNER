@@ -70,14 +70,14 @@ class UpdateBSNLPDocuments(UpdateDocuments):
         nes = nes.to_dict(orient='records')
         merged = []
         for i, ne in enumerate(nes):
-            if ne['calcNer'].startswith('I-'):
+            if ne['calcNER'].startswith('I-'):
                 continue
             j = i + 1
-            while j < len(nes) and not nes[j]['calcNer'].startswith('B-'):
+            while j < len(nes) and not nes[j]['calcNER'].startswith('B-'):
                 ne['text'] = f'{ne["text"]} {nes[j]["text"]}'
                 ne['calcLemma'] = f'{ne["calcLemma"]} {nes[j]["calcLemma"]}'
                 j += 1
-            ne['calcNer'] = ne['calcNer'][2:]
+            ne['calcNER'] = ne['calcNER'][2:]
             merged.append(ne)
         return pd.DataFrame(merged)
 
@@ -88,8 +88,12 @@ class UpdateBSNLPDocuments(UpdateDocuments):
                 print(f"MISSING LEMMA: `{fpath}`")
                 df['calcLemma'] = 'xxx'
             df['calcClId'] = 'xxx'
-            df = df[['text', 'calcLemma', 'calcNer', 'calcClId']]
-            df = df.loc[~df['calcNer'].isin(['O'])]
+            if 'calcNer' in df.columns:
+                df = df.rename(columns={'calcNer': 'calcNER'})
+            df = df[['text', 'calcLemma', 'calcNER', 'calcClId']]
+            if len(df.loc[df['calcNER'].isna()]) > 0:
+                df.loc[df['calcNER'].isna(), 'calcNER'] = 'O'
+            df = df.loc[~df['calcNER'].isin(['O'])]
             df = self.__merge_records(df)
             df = df.drop_duplicates(subset=['text'])
             with open(f'{fpath}.out', 'w') as f:
