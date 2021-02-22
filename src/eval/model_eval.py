@@ -31,6 +31,7 @@ warnings = []
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lang', type=str, default='all')
+    parser.add_argument('--merge-misc', type=bool, default=False)
     parser.add_argument('--run-path', type=str, default=None)
     return parser.parse_args()
 
@@ -41,6 +42,12 @@ def group_sentences(document: list) -> dict:
         sentences[token['sentenceId']] = f"{sentences[token['sentenceId']]} {token['text']}"
     return dict(sentences)
 
+def get_label_dicts(path: str) -> (dict, dict):
+    with open(f'{path}/config.json') as f:
+        config = json.load(f)
+        code2tag = {int(k): v for k, v in config['id2label'].items()}
+        return config['label2id'], code2tag
+
 
 def looper(
     run_path: str,
@@ -48,23 +55,23 @@ def looper(
     model: str,
     categorize_misc: bool = False,
 ) -> dict:
-    loader = LoadBSNLPDocuments(lang=clang, year='2021')
-    tag2code, code2tag = LoadBSNLP(lang=clang, year='2021', merge_misc=False).encoding()
+    loader = LoadBSNLPDocuments(lang=clang, year='2021')    
     misctag2code, misccode2tag = LoadBSNLP(lang='sl', year='2021', merge_misc=False, misc_data_only=True).encoding()
 
+    model_name = model.split('/')[-1]
+    logger.info(f"Predicting for {model_name}")
+    model_path = f'{run_path}/models/{model}'
+    tag2code, code2tag = get_label_dicts(model_path)
     logger.info(f"tag2code: {tag2code}")
     logger.info(f"code2tag: {code2tag}")
 
-    model_name = model.split('/')[-1]
-    model_path = f'{run_path}/models/{model}'
     misc_model, _ = list_dir(f'{run_path}/misc_models')
     if categorize_misc:
         logger.info(f"Using misc model: {misc_model[0]}")
+        misctag2code, misccode2tag = get_label_dicts(f'{run_path}/misc_models/{misc_model[0]}')
 
     predictor = ExtractPredictions(model_path=model_path, tag2code=tag2code, code2tag=code2tag)
     pred_misc = None if not categorize_misc else ExtractPredictions(model_path=f'./{run_path}/misc_models/{misc_model[0]}', tag2code=misctag2code, code2tag=misccode2tag)
-    if categorize_misc:
-        logger.info(f"Predicting for {model_name}")
 
     updater = UpdateBSNLPDocuments(lang=clang, path=f'{run_path}/predictions/bsnlp/{model_name}')
     predictions = {}
@@ -114,12 +121,14 @@ def main():
     args = parse_args()
     run_path = args.run_path if args.run_path is not None else "./data/models/"
     lang = args.lang
+    merge_misc = args.merge_misc
 
     print(f"Run path: {run_path}")
     print(f"Langs: {lang}")
+    print(f"Merge misc: {merge_misc}")
 
     models, _ = list_dir(f'{run_path}/models')
-    logger.info(f"Models to predict: {models}")
+    logger.info(f"Models to predict: {json.dumps(models, indent=4)}")
 
     # tmodel = tqdm.tqdm(list(map(lambda x: (run_path, lang, x), models)), desc="Model")
     # predictions = pool.map(looper, tmodel)
