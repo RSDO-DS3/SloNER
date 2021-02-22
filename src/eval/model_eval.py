@@ -46,10 +46,10 @@ def looper(
     run_path: str,
     clang: str,
     model: str,
-    categorize_misc: bool = True,
+    categorize_misc: bool = False,
 ) -> dict:
-    loader = LoadBSNLPDocuments(lang=clang, year='all')
-    tag2code, code2tag = LoadBSNLP(lang=clang, year='2021', merge_misc=True).encoding()
+    loader = LoadBSNLPDocuments(lang=clang, year='2021')
+    tag2code, code2tag = LoadBSNLP(lang=clang, year='2021', merge_misc=False).encoding()
     misctag2code, misccode2tag = LoadBSNLP(lang='sl', year='2021', merge_misc=False, misc_data_only=True).encoding()
 
     model_name = model.split('/')[-1]
@@ -60,7 +60,8 @@ def looper(
 
     predictor = ExtractPredictions(model_path=model_path)
     pred_misc = None if not categorize_misc else ExtractPredictions(model_path=f'./{run_path}/misc_models/{misc_model[0]}')
-    logger.info(f"Predicting for {model_name}")
+    if categorize_misc:
+        logger.info(f"Predicting for {model_name}")
 
     updater = UpdateBSNLPDocuments(lang=clang, path=f'{run_path}/predictions/bsnlp/{model_name}')
     predictions = {}
