@@ -299,6 +299,11 @@ class ExtractPredictions:
             'valid_tag': flatten(valid_tags),
         })
 
+        if len([tag for sent in valid_tags for tag in sent if tag[:2] in ['B-', 'I-']]) == 0:
+            valid_tags.append(["O"])
+            predicted_tags.append(["B-ORG"])
+
+
         scores = {
             "loss": eval_loss,
             "acc": accuracy_score(valid_tags, predicted_tags),
