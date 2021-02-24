@@ -29,5 +29,5 @@ def convert_files(
 if __name__ == '__main__':
     args = parser_args()
     print(args.run_path)
-    convert_files(args.run_path)
+    convert_files(args.run_path, lang=args.lang)
 
