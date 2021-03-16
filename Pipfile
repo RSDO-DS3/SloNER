@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pip-check-reqs = "*"
+
+[packages]
+beautifulsoup4 = "==4.9.3"
+matplotlib = "==3.3.4"
+pandas = "==1.2.3"
+pyconll = "==3.0.4"
+seqeval = "==1.2.2"
+tensorflow = "==2.4.1"
+transformers = "==4.3.3"
+keras = "==2.4.3"
+TorchCRF = "*"
+flask = "*"
+setuptools = "*"
+flasgger = "*"
+
+[requires]
+python_version = "3.8"

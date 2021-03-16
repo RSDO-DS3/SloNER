@@ -1,0 +1,9 @@
+*/__pycache__
+data/*
+bin/*
+containers/*
+deployment/*
+figures/*
+instance/*
+logs/*
+results/*

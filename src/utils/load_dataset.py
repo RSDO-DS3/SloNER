@@ -1,10 +1,10 @@
+from typing import Dict, Tuple
+
 import pandas as pd
 import pyconll
 import numpy as np
 
-from sklearn.model_selection import train_test_split
 from src.utils.utils import list_dir
-from typing import Iterable
 
 # pd.set_option('display.max_rows', None)  # only for debugging purposes
 
@@ -30,7 +30,7 @@ class LoadDataset:
     def test(self) -> pd.DataFrame:
         return pd.DataFrame()
 
-    def encoding(self) -> (dict, dict):
+    def encoding(self) -> Tuple[Dict, Dict]:
         data = self.train()
         possible_tags = np.append(data["ner"].unique(), ["PAD"])
         tag2code = {tag: code for code, tag in enumerate(possible_tags)}
@@ -95,7 +95,7 @@ class LoadBSNLP(LoadDataset):
         )
         # assert year
         if year not in self.datasets:
-            raise Exception(f"Invalid year chosen: {year}")
+            raise ValueError(f"Invalid year chosen: {year}")
 
         # assert dataset
         if data_set in self.datasets[year]:
@@ -103,7 +103,7 @@ class LoadBSNLP(LoadDataset):
         elif data_set == 'all':
             self.data_set = self.datasets[year]
         else:
-            raise Exception(f"Invalid dataset chosen: {data_set}")
+            raise ValueError(f"Invalid dataset chosen: {data_set}")
 
         # assert language
         if lang in self.available_langs:
@@ -111,13 +111,14 @@ class LoadBSNLP(LoadDataset):
         elif lang == 'all':
             self.langs = self.available_langs
         else:
-            raise Exception(f"Invalid language option: {lang}")
+            raise ValueError(f"Invalid language option: {lang}")
 
         self.random_state = 42
         self.merge_misc = merge_misc
         if merge_misc and misc_data_only:
             print("WARNING: weird combination? merge misc and misc data only?")
         self.misc_data_only = misc_data_only
+
 
     def load(self, dset: str) -> pd.DataFrame:
         dirs, _ = list_dir(self.base_fname)
@@ -140,14 +141,17 @@ class LoadBSNLP(LoadDataset):
                 data = pd.concat([data, df])
         return data
 
+
     def train(self) -> pd.DataFrame:
         return self.load('train')
+
 
     def dev(self) -> pd.DataFrame:
         """
             This is the validation data
         """
         return self.load('dev')
+
 
     def test(self) -> pd.DataFrame:
         return self.load('test')

@@ -1,18 +1,23 @@
 # Named Entity Recognition
 
 ## Setup
+
 Create a new environment using [venv](https://docs.python.org/3/library/venv.html).
 Make sure it is a python 3.8 environment:
+
 ```bash
 # to create the environement:
 python3 -m venv NER-env
 ```
+
 Activate the environment:
+
 ```bash
 source NER-env/bin/activate
 ```
 
 Install all the dependendencies
+
 ```bash
 # in case you install new packages you have to update the environment:
 # NOTE: delete the prefix at the end, might cause issues on different environments
@@ -22,6 +27,7 @@ python install -r requirements.txt
 Or just do it via your IDE, e.g. PyCharm, the point is to install the dependencies from `requirements.txt` :)
 
 Running the files:
+
 ```bash
 # !!! assuming the workdir is the repository path.
 
@@ -39,6 +45,7 @@ Once there, you can run the [SloNERT](./src/train/crosloeng.py) by runnig:
 ```bash
 ./bin/run.sh
 ```
+
 Which will setup the environment for you, and run the training, and testing of the model.
 The tasks are dependent and will execute consecutevely via [SLURM](https://slurm.schedmd.com/) using the [`sbatch` command](https://slurm.schedmd.com/sbatch.html).
 
@@ -47,6 +54,7 @@ Should you wish to have an interactive environment, for debugging and online dev
 ```bash
 ./bin/run-container.sh
 ```
+
 Which will start the created container with an interactive `bash` console.
 
 Should you wish to create a new container, run the following command:
@@ -63,3 +71,31 @@ srun \
 ```
 
 For more examples, please inspect the scripts within the [`bin`](./bin/) directory named with the `run-*.sh` pattern.
+
+## Named Entity Recognition API
+
+Named Entity Recognition can be run as a standalone service which exposes a RESTful API. It accepts an arbitrary text and returns annotated text, word by word, with recognised named entities.
+
+### Docker Container
+
+#### Build
+
+To build a model serving Docker container, from the project's root folder, execute
+
+```bash
+$ bin/docker-build-api.sh
+```
+
+Upon a sucessfull build, the resulting container image is named `rsdo-ds3-ner-api:v1`.
+
+#### Run
+
+To run a model serving Docker container, from the project's root folder, execute
+
+```bash
+$ bin/docker-run-api.sh
+```
+
+The container is named `rsdo-ds3-ner-api`. Inspect with Docker logs to find out when the respective Flask server starts listening and accepting HTTP requests.
+
+Then fire up your web browser and navigate to `http://localhost:5000/apidocs`. A Swagger's UI should show up where one can explore all the exposed endpoints.

@@ -1,0 +1,41 @@
+tags:
+  - predict
+definitions:
+  NamedEntityWord:
+    type: object
+    properties:
+      entity:
+        type: string
+        enum: ['B-PER', 'I-PER', 'B-LOC', 'I-LOC', 'B-ORG', 'I-ORG', 'B-MISC', 'I-MISC', 'O']
+      word:
+        type: string
+    score:
+        type: float
+  NamedEntities:
+    type: object
+    properties:
+      named_entities:
+        type: array
+        items:
+          $ref: '#/definitions/NamedEntityWord'
+requestBody:
+  description: Input text in Slovenian language.
+  required: true
+  content:
+    text/plain:
+      schema:
+        type: string
+      example: 'V Mariboru dežuje'
+responses:
+  200:
+    description: A list of sentences, each containing a list of words with annotations.
+    content:
+      application/json:
+        schema:
+          type: object
+          items:
+            $ref: '#/definitions/NamedEntities'
+          example:
+            named_entities: [{'entity': 'O', 'score': 0.9957671761512756, 'word': 'V'}, {'entity': 'B-LOC', 'score': 0.9975635707378387, 'word': 'Mariboru'}, {'entity': 'O', 'score': 0.9966411590576172, 'word': 'dežuje'}]
+  413:
+    description: Content too long, exceeding 1 MiB

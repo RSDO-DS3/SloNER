@@ -1,0 +1,15 @@
+# contains python 3.8, conda 4.9.1
+FROM python:3.8
+
+WORKDIR /app
+
+COPY    ./src                   /app/src
+COPY    ./requirements.txt      /app/
+
+RUN     pip install \
+            torch==1.8.0+cpu \
+            torchvision==0.9.0+cpu \
+            torchaudio==0.8.0 \
+            -f https://download.pytorch.org/whl/torch_stable.html && \
+        pip install -r requirements.txt
+
