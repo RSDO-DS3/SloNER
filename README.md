@@ -90,6 +90,12 @@ Upon a sucessfull build, the resulting container image is named `rsdo-ds3-ner-ap
 
 #### Run
 
+The resulting Docker container image from the above build action **does not include** a trained Named Entity Recognition model; therefore, it has to be mounted as a Docker volume. The container expects a model to be mounted into a path, defined by `NER_MODEL_PATH` environment variable.
+
+Save a trained model into some directory, e.g., `/data/models/bert-based`. It should be stored into a directory, following the same file structure as the models on the HuggingFace repository.
+
+Edit `bin/docker-run-api.sh` accordingly, to point to the path of your trained model.
+
 To run a model serving Docker container, from the project's root folder, execute
 
 ```bash
