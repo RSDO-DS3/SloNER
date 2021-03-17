@@ -4,7 +4,9 @@ V tem repozitoriju se nahaja rezultat aktivnosti A3.2 - R3.2.1 Orodje za prepozn
 
 ---
 
-## Setup
+## 1. Training
+
+### 1.1. Environment setup (local)
 
 Create a new environment using [venv](https://docs.python.org/3/library/venv.html).
 Make sure it is a python 3.8 environment:
@@ -41,7 +43,7 @@ PYTHONPATH=. python <path_to_file>
 PYTHONPATH=. python train/crosloeng.py
 ```
 
-## Running on the DGX A100 cluster
+### 1.2. Environment setup (DGX A100)
 
 Before you begin, make sure you have the code from the repository on the cluster.
 Once there, you can run the [SloNERT](./src/train/crosloeng.py) by runnig:
@@ -76,13 +78,15 @@ srun \
 
 For more examples, please inspect the scripts within the [`bin`](./bin/) directory named with the `run-*.sh` pattern.
 
-## Named Entity Recognition API
+## 2. Inference
+
+### 2.2. Named Entity Recognition API
 
 Named Entity Recognition can be run as a standalone service which exposes a RESTful API. It accepts an arbitrary text and returns annotated text, word by word, with recognised named entities.
 
-### Docker Container
+#### 2.2.1. Docker Container
 
-#### Build
+##### Build
 
 To build a model serving Docker container, from the project's root folder, execute
 
@@ -92,7 +96,7 @@ $ bin/docker-build-api.sh
 
 Upon a sucessfull build, the resulting container image is named `rsdo-ds3-ner-api:v1`.
 
-#### Run
+##### Run
 
 The resulting Docker container image from the above build action **does not include** a trained Named Entity Recognition model; therefore, it has to be mounted as a Docker volume. The container expects a model to be mounted into a path, defined by `NER_MODEL_PATH` environment variable.
 
