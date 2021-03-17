@@ -1,4 +1,8 @@
-# Named Entity Recognition
+# SloNER - Named Entity Recognition for Slovene language
+
+V tem repozitoriju se nahaja rezultat aktivnosti A3.2 - R3.2.1 Orodje za prepoznavanje imenskih entitet, ki je nastalo v okviru projekta [Razvoj slovenščine v digitalnem okolju](https://slovenscina.eu).
+
+---
 
 ## Setup
 
@@ -105,3 +109,9 @@ $ bin/docker-run-api.sh
 The container is named `rsdo-ds3-ner-api`. Inspect with Docker logs to find out when the respective Flask server starts listening and accepting HTTP requests.
 
 Then fire up your web browser and navigate to `http://localhost:5000/apidocs`. A Swagger's UI should show up where one can explore all the exposed endpoints.
+
+---
+
+> Operacijo Razvoj slovenščine v digitalnem okolju sofinancirata Republika Slovenija in Evropska unija iz Evropskega sklada za regionalni razvoj. Operacija se izvaja v okviru Operativnega programa za izvajanje evropske kohezijske politike v obdobju 2014-2020.
+
+![](Logo_EKP_sklad_za_regionalni_razvoj_SLO_slogan.jpg)
