@@ -1,0 +1,1 @@
+docker build -t rsdo-ds3-ner-api-cpu:v1 -f deployment/Dockerfile.cpu.api .

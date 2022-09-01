@@ -94,11 +94,13 @@ To build a model serving Docker container, from the project's root folder, execu
 $ bin/docker-build-api.sh
 ```
 
-Upon a sucessfull build, the resulting container image is named `rsdo-ds3-ner-api:v1`.
+Upon a sucessfull build, the resulting container image is named `rsdo-ds3-ner-api:v1`. By default gpu images are used. For CPU-only images use commands with name ending `-cpu`.
 
 ##### Run
 
 The resulting Docker container image from the above build action **does not include** a trained Named Entity Recognition model; therefore, it has to be mounted as a Docker volume. The container expects a model to be mounted into a path, defined by `NER_MODEL_PATH` environment variable.
+
+A build model is available on [CJVT NAS](https://nas.cjvt.si/index.php/f/2246207) (access needed).
 
 Save a trained model into some directory, e.g., `/data/models/bert-based`. It should be stored into a directory, following the same file structure as the models on the HuggingFace repository.
 

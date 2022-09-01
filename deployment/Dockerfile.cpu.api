@@ -1,0 +1,27 @@
+# contains python 3.8, conda 4.9.1
+FROM python:3.8
+
+LABEL   author=slavko.zitnik@fri.uni-lj.si
+
+WORKDIR /app
+
+COPY    ./requirements-api.txt  /app/
+COPY    ./src/api/              /app/src/api/
+COPY    ./src/eval/predict.py   /app/src/eval/
+
+RUN     pip install \
+            torch==1.8.0+cpu \
+            torchvision==0.9.0+cpu \
+            torchaudio==0.8.0 \
+            -f https://download.pytorch.org/whl/torch_stable.html && \
+        pip install -r requirements-api.txt
+
+
+ENV     FLASK_APP="src.api" \
+        PYTHONPATH="/app"
+
+EXPOSE  5000
+
+ENTRYPOINT  ["flask", "run"]
+CMD         ["--host=0.0.0.0", "--port=5000"]
+
