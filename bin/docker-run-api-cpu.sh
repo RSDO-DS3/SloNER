@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 docker run \
-	-d --rm \
+	-d \
+	--restart always \
 	--name rsdo-ds3-ner-api-cpu \
 	-p 5000:5000 \
 	--env NER_MODEL_PATH="/app/data/models/bert-based/" \
