@@ -116,6 +116,21 @@ The container is named `rsdo-ds3-ner-api`. Inspect with Docker logs to find out 
 
 Then fire up your web browser and navigate to `http://localhost:5000/apidocs`. A Swagger's UI should show up where one can explore all the exposed endpoints.
 
+## 3. Results
+### 3.1 Experimentation setup
+
+The SloNER model was trained on the [SUK 1.0 corpus](https://www.clarin.si/repository/xmlui/handle/11356/1747). We present the results for 5 different versions of the model, that differ in the pretrained language model that was used. The beset performance was achieved using the [sloberta-2.0](https://www.clarin.si/repository/xmlui/handle/11356/1397) pretrained model.
+
+| **model_name**                 | **precision_score** | **recall_score** | **f1_score** |
+|--------------------------------|---------------------|------------------|--------------|
+| cro-slo-eng-bert               |                0,91 |             0,93 |         0,92 |
+| bert-base-multilingual-cased   |                0,90 |             0,93 |         0,91 |
+| bert-base-multilingual-uncased |                0,60 |             0,63 |         0,61 |
+| sloberta-1.0                   |                0,91 |             0,94 |         0,93 |
+| sloberta-2.0                   |                0,91 |             0,94 |         0,93 |
+
+The best performing pretrained model is published in the [Clarin repository](http://hdl.handle.net/11356/1758).
+
 ---
 
 > Operacijo Razvoj slovenščine v digitalnem okolju sofinancirata Republika Slovenija in Evropska unija iz Evropskega sklada za regionalni razvoj. Operacija se izvaja v okviru Operativnega programa za izvajanje evropske kohezijske politike v obdobju 2014-2020.
