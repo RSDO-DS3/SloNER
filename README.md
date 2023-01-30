@@ -129,6 +129,8 @@ The SloNER model was trained on the [SUK 1.0 corpus](https://www.clarin.si/repos
 | sloberta-1.0                   |                0,91 |             0,94 |         0,93 |
 | sloberta-2.0                   |                0,91 |             0,94 |         0,93 |
 
+The best performing pretrained model is published in the [Clarin repository](http://hdl.handle.net/11356/1758).
+
 ---
 
 > Operacijo Razvoj slovenščine v digitalnem okolju sofinancirata Republika Slovenija in Evropska unija iz Evropskega sklada za regionalni razvoj. Operacija se izvaja v okviru Operativnega programa za izvajanje evropske kohezijske politike v obdobju 2014-2020.
